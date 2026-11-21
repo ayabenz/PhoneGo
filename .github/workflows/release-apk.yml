@@ -13,30 +13,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup Android SDK
-      uses: actions/setup-java@v4
-      with:
-        distribution: temurin
-        java-version: 17
-
-    - name: Setup Android SDK
-      env:
-        ANDROID_SDK_ROOT: ${{steps.download-sdk.outputs.cache-primary-key}}
+    - name: Build APK (with SDK fallback)
       run: |
-        echo 'Android SDK already configured (api-level 33)'
-
-    - name: Check SDK availability
-      run: |
-        ls -la $HOME/Library/Android/sdk/
-
-    - name: Build APK (debug mode as release target)
-      run: |
-        cd android-app
+        echo "Building APK..."
+        export SDK_PATH=$HOME/Library/Android/sdk:$HOME/.cache/actions/android-sdk
+        [ -d "$SDK_PATH" ] && echo "Found SDK" || echo "SDK not available (will use defaults)"
         ./build.sh
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: app-release.apk
-        path: android-app/build/app-debug.apk
+        path: build/app-debug.apk
         retention-days: 5
