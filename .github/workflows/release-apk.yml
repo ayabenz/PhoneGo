@@ -14,10 +14,16 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - run: |
-          ANDROID_HOME=$HOME/.android-sdk ANDROID_SDK_ROOT=$ANDROID_HOME ./android-app/build.sh
+      - name: Build APK
+        run: |
+          # Override SDK path to one that should work
+          export ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
+          printf "Using SDK: %s
+" "$ANDROID_SDK_ROOT"
+          ./android-app/build.sh
       - uses: actions/upload-artifact@v4
         with:
           name: app-release.apk
           path: build/app-debug.apk
           retention-days: 5
+
