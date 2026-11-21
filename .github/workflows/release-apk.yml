@@ -28,23 +28,23 @@ jobs:
 
           if [ -z "$SDKMANAGER" ]; then
             echo "sdkmanager not found"
-            find "$ANDROID_HOME" -maxdepth 4 -type f -name sdkmanager
             exit 1
           fi
 
-          echo "SDKMANAGER=$SDKMANAGER"
-          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
+          "$SDKMANAGER" --install \
+            "platforms;android-33" \
+            "build-tools;35.0.0"
 
-          "$SDKMANAGER" --install "build-tools;35.0.0" "platforms;android-35"
           yes | "$SDKMANAGER" --licenses || true
 
           mkdir -p /home/runner/Library/Android
           ln -sfn "$ANDROID_HOME" /home/runner/Library/Android/sdk
 
-      - name: Check Android SDK
+      - name: Verify Android SDK
         run: |
-          ls -la "$ANDROID_HOME/build-tools/35.0.0/"
+          test -f "$ANDROID_HOME/platforms/android-33/android.jar"
           test -f "$ANDROID_HOME/build-tools/35.0.0/aapt2"
+          ls -lh "$ANDROID_HOME/platforms/android-33/android.jar"
 
       - name: Build APK
         working-directory: android-app
