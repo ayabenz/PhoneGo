@@ -19,11 +19,22 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Check Android SDK
+      - name: Setup Android SDK
         run: |
           echo "ANDROID_HOME=$ANDROID_HOME"
           echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
-          ls -la "$ANDROID_HOME"
+
+          sdkmanager --install "build-tools;35.0.0" "platforms;android-35"
+
+          yes | sdkmanager --licenses || true
+
+          mkdir -p /home/runner/Library/Android
+          ln -s "$ANDROID_HOME" /home/runner/Library/Android/sdk
+
+      - name: Check Android SDK
+        run: |
+          ls -la /home/runner/Library/Android/sdk/build-tools/35.0.0/
+          test -f /home/runner/Library/Android/sdk/build-tools/35.0.0/aapt2
 
       - name: Build APK
         working-directory: android-app
