@@ -13,23 +13,20 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
       with:
-        java-version: '17'
-        distribution: 'temurin'
+        api-level: 33
+        build-tools: 35.0.0
 
-    - name: Build Release APK
+    - name: Build APK (debug mode as release target)
       run: |
         cd android-app
-        ./gradlew clean assembleRelease
+        ./build.sh
 
-    - name: Upload Release APK
+    - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: app-release.apk
-        path: android-app/app/build/outputs/apk/release/app-release.apk
-
-    - name: Display APK info
-      run: |
-        filesize android-app/app/build/outputs/apk/release/app-release.apk
+        path: android-app/build/app-debug.apk
+        retention-days: 5
