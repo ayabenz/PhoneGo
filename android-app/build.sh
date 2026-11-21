@@ -25,8 +25,8 @@ echo "[2/6] aapt2 link"
     -I "$PLATFORM" \
     --manifest app/src/main/AndroidManifest.xml \
     --java "$OUT/gen" \
-    --min-sdk-version 31 \
-    --target-sdk-version 33 \
+    --min-sdk-version 34 \
+    --target-sdk-version 34 \
     "$OUT/compiled/res.zip"
 
 echo "[3/6] javac"
@@ -38,7 +38,7 @@ javac -source 17 -target 17 -nowarn \
     $(find app/src/main/java "$OUT/gen" -name '*.java')
 
 echo "[4/6] d8"
-"$BT/d8" --lib "$PLATFORM" --min-api 31 --output "$OUT/dex" \
+"$BT/d8" --lib "$PLATFORM" --min-api 34 --output "$OUT/dex" \
     $(find "$OUT/classes" -name '*.class')
 
 echo "[5/6] package + align"
