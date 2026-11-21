@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: fix
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -24,17 +26,32 @@ jobs:
           echo "ANDROID_HOME=$ANDROID_HOME"
           echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
 
-          sdkmanager --install "build-tools;35.0.0" "platforms;android-35"
+          SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f 2>/dev/null | head -n 1)
 
-          yes | sdkmanager --licenses || true
+          if [ -z "$SDKMANAGER" ]; then
+            echo "ERROR: sdkmanager not found"
+            exit 1
+          fi
+
+          "$SDKMANAGER" --install \
+            "platforms;android-33" \
+            "platforms;android-35" \
+            "build-tools;35.0.0"
+
+          yes | "$SDKMANAGER" --licenses || true
 
           mkdir -p /home/runner/Library/Android
-          ln -s "$ANDROID_HOME" /home/runner/Library/Android/sdk
+          ln -sfn "$ANDROID_HOME" /home/runner/Library/Android/sdk
 
-      - name: Check Android SDK
+      - name: Verify Android SDK
         run: |
-          ls -la /home/runner/Library/Android/sdk/build-tools/35.0.0/
-          test -f /home/runner/Library/Android/sdk/build-tools/35.0.0/aapt2
+          echo "Checking Android SDK..."
+
+          test -f "$ANDROID_HOME/platforms/android-33/android.jar"
+          test -f "$ANDROID_HOME/platforms/android-35/android.jar"
+          test -f "$ANDROID_HOME/build-tools/35.0.0/aapt2"
+
+          echo "Android SDK is ready."
 
       - name: Build APK
         working-directory: android-app
