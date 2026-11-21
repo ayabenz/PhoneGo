@@ -1,63 +1,93 @@
-name: Build Release APK
+name: Android APK Build
 
 on:
   push:
     branches:
       - fix
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build:
+    name: Build Android APK
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: fix
 
-      - name: Setup Java
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: '17'
 
-      - name: Setup Android SDK
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK packages
         run: |
-          echo "ANDROID_HOME=$ANDROID_HOME"
-          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          sdkmanager --install \
+            "platform-tools" \
+            "platforms;android-34" \
+            "build-tools;34.0.0"
 
-          SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f 2>/dev/null | head -n 1)
+      - name: Set up Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
 
-          if [ -z "$SDKMANAGER" ]; then
-            echo "ERROR: sdkmanager not found"
+      - name: Prepare helper JAR
+        run: |
+          if [ ! -f build-helper/pa-helper.jar ]; then
+            if [ -f pa-helper.jar ]; then
+              mkdir -p build-helper
+              cp pa-helper.jar build-helper/pa-helper.jar
+            else
+              echo "::error::Missing build-helper/pa-helper.jar"
+              exit 1
+            fi
+          fi
+
+      - name: Sync Python sources
+        working-directory: android-app
+        run: bash sync-python.sh
+
+      - name: Sync maps
+        working-directory: android-app
+        run: bash sync-maps.sh
+
+      - name: Sync helper JAR
+        working-directory: android-app
+        run: bash sync-helper.sh
+
+      - name: Build Debug APK
+        env:
+          BUILD_PYTHON: python3
+        run: gradle -p android-app :app:assembleDebug --no-daemon
+
+      - name: Verify APK
+        run: |
+          APK="android-app/app/build/outputs/apk/debug/app-debug.apk"
+
+          if [ ! -f "$APK" ]; then
+            echo "::error::APK was not generated"
             exit 1
           fi
 
-          "$SDKMANAGER" --install \
-            "platforms;android-34" \
-            "build-tools;35.0.0"
-
-          yes | "$SDKMANAGER" --licenses || true
-
-          mkdir -p /home/runner/Library/Android
-          ln -sfn "$ANDROID_HOME" /home/runner/Library/Android/sdk
-
-      - name: Verify Android SDK
-        run: |
-          test -f "$ANDROID_HOME/platforms/android-34/android.jar"
-          test -f "$ANDROID_HOME/build-tools/35.0.0/aapt2"
-          echo "Android SDK API 34 is ready."
-
-      - name: Build APK
-        working-directory: android-app
-        run: |
-          chmod +x build.sh
-          ./build.sh
+          ls -lh "$APK"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug
-          path: android-app/build/app-debug.apk
+          name: phoneagent-debug-apk
+          path: android-app/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
-          retention-days: 5
+          retention-days: 14
