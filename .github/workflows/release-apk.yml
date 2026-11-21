@@ -55,15 +55,10 @@ jobs:
       # Prepare helper JAR
       - name: Prepare helper JAR
         run: |
-          if [ ! -f build-helper/pa-helper.jar ]; then
-            if [ -f pa-helper.jar ]; then
-              mkdir -p build-helper
-              cp pa-helper.jar build-helper/pa-helper.jar
-            else
-              echo "::error::Missing build-helper/pa-helper.jar"
-              exit 1
-            fi
-          fi
+          test -f android-app/app/src/main/assets/pa-helper.jar || {
+            echo "::error::pa-helper.jar not found in app/src/main/assets"
+            exit 1
+          }
 
       # Sync Python sources
       - name: Sync Python sources
