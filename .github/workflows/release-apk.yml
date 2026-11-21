@@ -68,7 +68,16 @@ jobs:
       # Sync maps
       - name: Sync maps
         working-directory: android-app
-        run: bash sync-maps.sh
+        run: |
+         MAP_DIR="../phoneagent/maps"
+
+         if [ -f "$MAP_DIR/k90_settings_inapp.yaml" ] && \
+          [ -f "$MAP_DIR/k90_clock_inapp.yaml" ]; then
+          bash sync-maps.sh
+         else
+          echo "::warning::Prebuilt maps not found. App will need to build maps on device."
+          mkdir -p app/src/main/assets/maps
+         fi
 
       # Sync helper JAR
       - name: Sync helper JAR
