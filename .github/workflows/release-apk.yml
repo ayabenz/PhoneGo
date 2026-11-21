@@ -24,17 +24,27 @@ jobs:
           echo "ANDROID_HOME=$ANDROID_HOME"
           echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
 
-          sdkmanager --install "build-tools;35.0.0" "platforms;android-35"
+          SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f 2>/dev/null | head -n 1)
 
-          yes | sdkmanager --licenses || true
+          if [ -z "$SDKMANAGER" ]; then
+            echo "sdkmanager not found"
+            find "$ANDROID_HOME" -maxdepth 4 -type f -name sdkmanager
+            exit 1
+          fi
+
+          echo "SDKMANAGER=$SDKMANAGER"
+          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
+
+          "$SDKMANAGER" --install "build-tools;35.0.0" "platforms;android-35"
+          yes | "$SDKMANAGER" --licenses || true
 
           mkdir -p /home/runner/Library/Android
-          ln -s "$ANDROID_HOME" /home/runner/Library/Android/sdk
+          ln -sfn "$ANDROID_HOME" /home/runner/Library/Android/sdk
 
       - name: Check Android SDK
         run: |
-          ls -la /home/runner/Library/Android/sdk/build-tools/35.0.0/
-          test -f /home/runner/Library/Android/sdk/build-tools/35.0.0/aapt2
+          ls -la "$ANDROID_HOME/build-tools/35.0.0/"
+          test -f "$ANDROID_HOME/build-tools/35.0.0/aapt2"
 
       - name: Build APK
         working-directory: android-app
