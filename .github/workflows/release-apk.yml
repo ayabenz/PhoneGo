@@ -34,8 +34,7 @@ jobs:
           fi
 
           "$SDKMANAGER" --install \
-            "platforms;android-33" \
-            "platforms;android-35" \
+            "platforms;android-34" \
             "build-tools;35.0.0"
 
           yes | "$SDKMANAGER" --licenses || true
@@ -45,13 +44,9 @@ jobs:
 
       - name: Verify Android SDK
         run: |
-          echo "Checking Android SDK..."
-
-          test -f "$ANDROID_HOME/platforms/android-33/android.jar"
-          test -f "$ANDROID_HOME/platforms/android-35/android.jar"
+          test -f "$ANDROID_HOME/platforms/android-34/android.jar"
           test -f "$ANDROID_HOME/build-tools/35.0.0/aapt2"
-
-          echo "Android SDK is ready."
+          echo "Android SDK API 34 is ready."
 
       - name: Build APK
         working-directory: android-app
