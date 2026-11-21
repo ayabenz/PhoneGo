@@ -13,16 +13,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Build APK (with SDK fallback)
+    - name: Build APK
       run: |
         echo "Building APK..."
-        export SDK_PATH=$HOME/Library/Android/sdk:$HOME/.cache/actions/android-sdk
-        [ -d "$SDK_PATH" ] && echo "Found SDK" || echo "SDK not available (will use defaults)"
+        cd android-app
+        echo "Current directory: $(pwd)"
+        ls -la build.sh
         ./build.sh
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: app-release.apk
-        path: build/app-debug.apk
+        path: android-app/build/app-debug.apk
         retention-days: 5
