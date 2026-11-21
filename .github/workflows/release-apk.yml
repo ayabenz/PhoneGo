@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: fix
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -27,12 +29,13 @@ jobs:
           SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f 2>/dev/null | head -n 1)
 
           if [ -z "$SDKMANAGER" ]; then
-            echo "sdkmanager not found"
+            echo "ERROR: sdkmanager not found"
             exit 1
           fi
 
           "$SDKMANAGER" --install \
             "platforms;android-33" \
+            "platforms;android-35" \
             "build-tools;35.0.0"
 
           yes | "$SDKMANAGER" --licenses || true
@@ -42,9 +45,13 @@ jobs:
 
       - name: Verify Android SDK
         run: |
+          echo "Checking Android SDK..."
+
           test -f "$ANDROID_HOME/platforms/android-33/android.jar"
+          test -f "$ANDROID_HOME/platforms/android-35/android.jar"
           test -f "$ANDROID_HOME/build-tools/35.0.0/aapt2"
-          ls -lh "$ANDROID_HOME/platforms/android-33/android.jar"
+
+          echo "Android SDK is ready."
 
       - name: Build APK
         working-directory: android-app
