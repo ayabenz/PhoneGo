@@ -6,24 +6,41 @@ on:
       - fix
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+build:
+runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+steps:
+- name: Checkout code
+uses: actions/checkout@v4
 
-    - name: Build APK
-      run: |
-        echo "Building APK..."
-        cd android-app
-        echo "Current directory: $(pwd)"
-        ls -la build.sh
-        ./build.sh
+- name: Setup Java (Android needs JDK)
+uses: actions/setup-java@v4
+with:
+distribution: temurin
+java-version: 17
 
-    - name: Upload APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-release.apk
-        path: android-app/build/app-debug.apk
-        retention-days: 5
+- name: Setup Android SDK
+env:
+ANDROID_SDK_ROOT: ${{env.HOME}}/.cache/actions/android-sdk
+run: |
+echo "Android SDK root: $ANDROID_SDK_ROOT"
+
+- name: Build APK
+run: |
+echo "Building APK..."
+# Use aapt2 path from current SDK
+export AAPT2=$HOME/.cache/actions/android-sdk/build-tools/33.0.2/aapt2
+if [ -f "$AAPT2" ]; then
+echo "Using aapt2 at: $AAPT2"
+else
+echo "aapt2 not present"
+fi
+./android-app/build.sh
+
+- name: Upload APK
+uses: actions/upload-artifact@v4
+with:
+name: app-release.apk
+path: app/build/app-debug.apk
+retention-days: 5
+
