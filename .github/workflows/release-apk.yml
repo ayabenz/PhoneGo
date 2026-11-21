@@ -8,22 +8,44 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
-      - name: Build APK
-        run: |
-          # Override SDK path to one that should work
-          export ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
-          printf "Using SDK: %s
-" "$ANDROID_SDK_ROOT"
-          ./android-app/build.sh
-      - uses: actions/upload-artifact@v4
-        with:
-          name: app-release.apk
-          path: build/app-debug.apk
-          retention-days: 5
 
+      - name: Setup Android SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+
+          sdkmanager --install "build-tools;35.0.0" "platforms;android-35"
+
+          yes | sdkmanager --licenses || true
+
+          mkdir -p /home/runner/Library/Android
+          ln -s "$ANDROID_HOME" /home/runner/Library/Android/sdk
+
+      - name: Check Android SDK
+        run: |
+          ls -la /home/runner/Library/Android/sdk/build-tools/35.0.0/
+          test -f /home/runner/Library/Android/sdk/build-tools/35.0.0/aapt2
+
+      - name: Build APK
+        working-directory: android-app
+        run: |
+          chmod +x build.sh
+          ./build.sh
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          path: android-app/build/app-debug.apk
+          if-no-files-found: error
+          retention-days: 5
