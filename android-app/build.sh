@@ -26,7 +26,7 @@ echo "[2/6] aapt2 link"
     --manifest app/src/main/AndroidManifest.xml \
     --java "$OUT/gen" \
     --min-sdk-version 31 \
-    --target-sdk-version 33 \
+    --target-sdk-version 35 \
     "$OUT/compiled/res.zip"
 
 echo "[3/6] javac"
