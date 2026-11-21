@@ -297,7 +297,7 @@ def force_stop(bundle_id: str, wda_url: str = None, session_id: str = None) -> b
 
 KNOWN_BUNDLE_IDS = {
     "Safari": "com.apple.mobilesafari",
-    "备忘录": "com.apple.mobilenotes",
+    "[CH]": "com.apple.mobilenotes",
     "Notes": "com.apple.mobilenotes",
     "Settings": "com.apple.Preferences",
     "Messages": "com.apple.MobileSMS",

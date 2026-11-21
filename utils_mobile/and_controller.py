@@ -188,7 +188,7 @@ class AndroidController:
         # adb_command = f'adb -s {self.device} input keyevent KEYCODE_MOVE_END'
         # ret = self.execute_adb(adb_command, self.type)
 
-        # 删除当前选中的框中的文本
+        # Delete[CH]
         adb_command = f'adb -s {self.device} shell input keyevent --press $(for i in {{1..100}}; do echo -n "67 "; done)'
         ret = self.execute_adb(adb_command, self.type)
 
@@ -281,4 +281,4 @@ class AndroidController:
 
 if __name__ == '__main__':
     And = AndroidController("emulator-5554")
-    And.text("北京南站")
+    And.text("[CH]")

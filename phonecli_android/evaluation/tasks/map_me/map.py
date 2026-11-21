@@ -159,7 +159,7 @@ class SingleTask_Mapme_10(SingleTask):
 class SingleTask_Mapme_11(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "My places "、"Home" 和 "Work "
+        # [CH]YesNo[CH] "My places "、"Home" 和 "Work "
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "My places "):
             return False
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "Home"):
@@ -189,7 +189,7 @@ class SingleTask_Mapme_11(SingleTask):
 class SingleTask_Mapme_12(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH]YesNo[CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "Stanford"):
             return False
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "My location"):
@@ -208,7 +208,7 @@ class SingleTask_Mapme_12(SingleTask):
 class SingleTask_Mapme_13(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH]YesNo[CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "University South"):
             return False
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "My location"):
@@ -227,7 +227,7 @@ class SingleTask_Mapme_13(SingleTask):
 class SingleTask_Mapme_14(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH]YesNo[CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "OpenAI"):
             return False
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "My location"):
@@ -246,7 +246,7 @@ class SingleTask_Mapme_14(SingleTask):
 class SingleTask_Mapme_15(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH]YesNo[CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "University of California, Berkeley"):
             return False
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "My location"):

@@ -86,14 +86,14 @@ def find_subtrees_of_parents_with_key(tree, search_key):
 
 def get_avd_serial_number(avd_name):
     try:
-        # 获取所有连接的设备及其序列号
+        # [CH]YesConnectionDevice[CH]
         result = subprocess.run(['adb', 'devices'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         devices_output = result.stdout
 
-        # 提取设备序列号
+        # [CH]Device[CH]
         devices = [line.split()[0] for line in devices_output.splitlines() if 'device' in line and 'List' not in line]
 
-        # 遍历设备，查找对应的AVD名字
+        # [CH]Device，[CH]AVD[CH]
         for device in devices:
             result = subprocess.run(['adb', '-s', device, 'emu', 'avd', 'name'], stdout=subprocess.PIPE,
                                     stderr=subprocess.PIPE, text=True)
@@ -113,7 +113,7 @@ def extract_bounds(node, path=""):
     result = []
     for key, value in node.items():
         current_path = key
-        # 如果要展示完整路径，可以改成{path}{key}
+        # [CH]Path，[CH]{path}{key}
         if isinstance(value, dict):
             result.extend(extract_bounds(value, current_path))
         elif key == "bounds":

@@ -1,4 +1,4 @@
-English · [中文](manual.zh.md)
+English · [Chinese](manual.zh.md)
 
 # PhoneGo manual
 
@@ -71,7 +71,7 @@ Some steps need you:
 
 | The agent asks | You reply |
 |---|---|
-| *This step spends money: "Submit order", amount ¥2401. Continue?* | reply 「继续」 / *go ahead* to allow, anything else cancels |
+| *This step spends money: "Submit order", amount ¥2401. Continue?* | reply 「Continue」 / *go ahead* to allow, anything else cancels |
 | *Needs your answer* (a captcha, a login, a choice) | do it on the phone, then reply anything |
 | *PhoneGo needs a moment from you* | same — the task is paused, not failed |
 
@@ -187,7 +187,7 @@ Hold the Settings chip for the system pages:
 | **Battery optimisation** | the system page to set PhoneGo to unrestricted, so the cleaner does not kill it in the background |
 | **Export backup** | writes a zip to *Download* with the pairing identity, the maps, the chats and the model settings. **The API key inside is plain text** — do not share the file |
 | **Import backup** | restores that zip and restarts the agent; use it after a reinstall or on a new phone |
-| **Language** | Follow system · 中文 · English |
+| **Language** | Follow system · Chinese · English |
 
 ---
 

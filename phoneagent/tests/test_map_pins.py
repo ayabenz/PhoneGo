@@ -78,15 +78,15 @@ def test_a_crawl_takes_over_from_a_shipped_map_with_the_same_screens(tmp_path):
     crawled.mkdir()
     asset = shipped / "settings.yaml"
     asset.write_text("app_name: settings\n")
-    crawl = crawled / "设置.yaml"
-    crawl.write_text("app_name: 设置\n")
+    crawl = crawled / "Settings.yaml"
+    crawl.write_text("app_name: Settings\n")
     os.utime(asset, (time.time(), time.time()))          # newest on disk
     os.utime(crawl, (time.time() - 3600, time.time() - 3600))
 
     entries = [(str(asset), FakeMap("com.android.settings", 16)),
                (str(crawl), FakeMap("com.android.settings", 16))]
     chosen = choose(entries, {}, shipped_dirs=(str(shipped),))
-    assert os.path.basename(chosen[0][0]) == "设置.yaml"
+    assert os.path.basename(chosen[0][0]) == "Settings.yaml"
 
     # without the hint the newer file wins, which is the old behaviour
     plain = choose(entries, {})

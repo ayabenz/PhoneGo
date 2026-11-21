@@ -9,7 +9,7 @@ from .utils import call_dino, plot_bbox
 
 
 def remove_leading_zeros_in_string(s):
-    # 使用正则表达式匹配列表中的每个数值并去除前导零
+    # [CH]
     return re.sub(r'\b0+(\d)', r'\1', s)
 
 class TextOnlyExecutor:
@@ -133,10 +133,10 @@ class TextOnlyExecutor:
             self.call_api(**kwargs)
         else:
             raise NotImplementedError()
-        # self.__update_screenshot__() # update screenshot 全部移到recoder内
+        # self.__update_screenshot__() # update screenshot All[CH]recoder内
 
     def get_relative_bbox_center(self, instruction, screenshot):
-        # 获取相对 bbox
+        # [CH] bbox
         relative_bbox = call_dino(instruction, screenshot)
 
         viewport_width, viewport_height = self.controller.get_device_size()
@@ -146,7 +146,7 @@ class TextOnlyExecutor:
         width_x = (relative_bbox[2] - relative_bbox[0]) * viewport_width / 1000
         height_y = (relative_bbox[3] - relative_bbox[1]) * viewport_height / 1000
 
-        # 点击计算出的中心点坐标
+        # [CH]Center[CH]
         # print(center_x, center_y)
         plot_bbox([int(center_x - width_x / 2), int(center_y - height_y / 2), int(width_x), int(height_y)], screenshot,
                   instruction)
@@ -237,7 +237,7 @@ class TextOnlyExecutor:
     '''
     def call_api(self, **kwargs):
         assert "instruction" in kwargs, "instruction is required for call_api"
-        glm4_template = "你需要根据以下化简版本的XML数据,对提问进行回答。你需要直接回答问题。\n\nXML数据：\n\n{xml_compression}\n\n提问:{question}\n\n提示：你的输出应当不超过100字"
+        glm4_template = "[CH]VersionXML[CH],[CH]。[CH]。\n\nXML[CH]：\n\n{xml_compression}\n\n[CH]:{question}\n\nTip：[CH]Output[CH]100字"
         instruction = kwargs.get("instruction")
         if kwargs.get("with_screen_info"):
             with_screen_info = kwargs.get("with_screen_info")

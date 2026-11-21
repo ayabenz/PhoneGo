@@ -17,19 +17,19 @@ import time
 #: Longest page text handed to the model in one go.
 MAX_TEXT = 6000
 
-#: What a block page says. Kept deliberately narrow: searching for "验证码"
+#: What a block page says. Kept deliberately narrow: searching for "Verify码"
 #: produces a page whose title contains that word, and treating that as a wall
 #: would hand every such search to the user.
 BLOCK_TITLES = (
-    "just a moment", "attention required", "access denied", "安全验证",
-    "人机验证", "forbidden", "访问受限", "异常访问",
+    "just a moment", "attention required", "access denied", "SecurityVerify",
+    "[CH]Verify", "forbidden", "Access[CH]", "[CH]Access",
 )
 #: Phrases a verification wall puts at the top of the page, where a search
 #: result's snippets do not reach.
 BLOCK_TEXTS = (
-    "拖动滑块", "拖动下方滑块", "请完成验证", "完成安全验证", "人机身份验证",
+    "[CH]", "[CH]", "请DoneVerify", "DoneSecurityVerify", "[CH]Verify",
     "verify you are human", "checking your browser", "unusual traffic",
-    "are you a robot", "please complete the security check", "访问过于频繁",
+    "are you a robot", "please complete the security check", "Access[CH]",
 )
 
 
@@ -260,7 +260,7 @@ class WebPage:
     # -- acting ----------------------------------------------------------
 
     #: Clicking by label is what the model asks for, and the order matters: a
-    #: submit button that says 百度一下 is the search button, while an <a> that
+    #: submit button that says [CH] is the search button, while an <a> that
     #: merely contains those words is a hot-search link (measured: clicking the
     #: link searched for someone else's trending topic).
     _CLICK_JS = (

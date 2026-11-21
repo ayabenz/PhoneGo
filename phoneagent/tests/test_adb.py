@@ -108,7 +108,7 @@ def test_input_text_quotes_and_escapes_spaces(adb):
 def test_input_text_rejects_unicode(adb):
     device, _ = adb
     with pytest.raises(UnicodeTextUnsupported):
-        device.input_text("你好")
+        device.input_text("[CH]")
 
 
 def test_current_app_parses_dumpsys_focus(adb):

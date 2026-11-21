@@ -257,7 +257,7 @@ class MacroExecutor:
 
         A macro's steps are coordinates measured on a drawn screen. Launching
         an app and waiting a fixed three seconds is not the same thing: measured
-        on 小红书, the app took longer than that to draw, the next step's tap
+        on [CH], the app took longer than that to draw, the next step's tap
         landed on the status bar of the launcher, and the notification shade came
         down on top of the task -- three times in one run.
         """

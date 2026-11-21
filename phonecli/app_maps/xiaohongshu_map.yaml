@@ -1,4 +1,4 @@
-app: 小红书
+app: [CH]
 package: com.xingin.discover
 screen_w: 402
 screen_h: 874
@@ -13,7 +13,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -25,7 +25,7 @@ screens:
     fixed: true
     leads_to: screen_2
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -37,7 +37,7 @@ screens:
     fixed: true
     leads_to: screen_3
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -49,7 +49,7 @@ screens:
     fixed: true
     leads_to: screen_4
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -61,7 +61,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 小红书
+    - [CH]
     - Xiaohongshu
     - rednote
     semantic_type: label
@@ -73,7 +73,7 @@ screens:
     fixed: true
     leads_to: screen_2
     aliases:
-    - 热门
+    - [CH]
     - trending
     - popular
     semantic_type: tab
@@ -85,7 +85,7 @@ screens:
     fixed: true
     leads_to: screen_2
     aliases:
-    - 直播
+    - [CH]
     - streaming
     - broadcast
     semantic_type: tab
@@ -97,7 +97,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 系列
+    - [CH]
     - collections
     - episodes
     semantic_type: tab
@@ -109,7 +109,7 @@ screens:
     fixed: true
     leads_to: screen_6
     aliases:
-    - 职业
+    - [CH]
     - jobs
     - work
     semantic_type: tab
@@ -121,7 +121,7 @@ screens:
     fixed: false
     leads_to: screen_7
     aliases:
-    - 最近浏览
+    - [CH]
     - history
     - recent
     semantic_type: menu_item
@@ -133,7 +133,7 @@ screens:
     fixed: true
     leads_to: screen_8
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -145,7 +145,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -157,7 +157,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -199,7 +199,7 @@ screens:
     fixed: true
     leads_to: screen_13
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -211,7 +211,7 @@ screens:
     fixed: true
     leads_to: screen_2
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -223,7 +223,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -235,7 +235,7 @@ screens:
     fixed: false
     leads_to: screen_9
     aliases:
-    - 朋友
+    - [CH]
     - friends
     - contacts
     semantic_type: tab
@@ -246,7 +246,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -258,7 +258,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -270,7 +270,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -312,7 +312,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -324,7 +324,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -336,7 +336,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -348,7 +348,7 @@ screens:
     fixed: true
     leads_to: screen_4
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -360,7 +360,7 @@ screens:
     fixed: true
     leads_to: screen_14
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -372,7 +372,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -384,7 +384,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - chat
     semantic_type: tab
@@ -426,7 +426,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -438,7 +438,7 @@ screens:
     fixed: true
     leads_to: screen_14
     aliases:
-    - 发现
+    - [CH]
     - discover
     - browse
     semantic_type: tab
@@ -450,7 +450,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 附近
+    - [CH]
     - local
     - near me
     semantic_type: tab
@@ -466,7 +466,7 @@ screens:
     - whole city
     - all city
     semantic_type: tab
-  - text: 推荐
+  - text: [CH]
     center:
     - 0.2413
     - 0.1453
@@ -486,7 +486,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -498,7 +498,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -510,7 +510,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -542,7 +542,7 @@ screens:
     - more options
     - menu
     - overflow
-    - 三点
+    - [CH]
     semantic_type: button
   description: Image detail view with pagination dots indicating multiple images can
     be swiped horizontally.
@@ -558,7 +558,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -570,7 +570,7 @@ screens:
     fixed: true
     leads_to: screen_14
     aliases:
-    - 发现
+    - [CH]
     - discover
     - browse
     semantic_type: tab
@@ -581,7 +581,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 附近
+    - [CH]
     - local
     - around me
     semantic_type: tab
@@ -596,7 +596,7 @@ screens:
     - all city
     - entire city
     semantic_type: tab
-  - text: 推荐
+  - text: [CH]
     center:
     - 0.2413
     - 0.1453
@@ -607,7 +607,7 @@ screens:
     - for you
     - suggestions
     semantic_type: tab
-  - text: 美食
+  - text: [CH]
     center:
     - 0.3831
     - 0.1453
@@ -619,7 +619,7 @@ screens:
     - delicacies
     - restaurants
     semantic_type: menu_item
-  - text: 热门打卡地
+  - text: [CH]Lag地
     center:
     - 0.5771
     - 0.1453
@@ -631,7 +631,7 @@ screens:
     - trending places
     - hot check-in spots
     semantic_type: menu_item
-  - text: 周末出行
+  - text: [CH]
     center:
     - 0.806
     - 0.1453
@@ -651,7 +651,7 @@ screens:
     fixed: true
     leads_to: screen_18
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -663,7 +663,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     - mall
@@ -676,7 +676,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     - chats
@@ -707,7 +707,7 @@ screens:
     - upvote
     semantic_type: button
   description: Explore screen with tabs for Following, Explore, and Nearby, showing
-    category filters like 全城, 推荐, 美食, 热门打卡地, and 周末出行, along with bottom navigation
+    category filters like [CH], [CH], [CH], [CH]Lag地, and [CH], along with bottom navigation
     for Home, Market, Messages, Me, and Like.
   scrollable: true
   scroll_direction: vertical
@@ -721,7 +721,7 @@ screens:
     fixed: true
     leads_to: screen_19
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -732,11 +732,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 切换
+    - [CH]
     - shift key
     - caps
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.1915
     - 0.8913
@@ -745,11 +745,11 @@ screens:
     leads_to: screen_20
     aliases:
     - emoji
-    - 表情
+    - [CH]
     - emoticon
-    - 笑脸
+    - [CH]
     semantic_type: button
-  - text: 搜索
+  - text: Search
     center:
     - 0.8756
     - 0.8913
@@ -758,9 +758,9 @@ screens:
     leads_to: screen_21
     aliases:
     - search
-    - 查找
+    - [CH]
     - find
-    - 搜索框
+    - Search框
     semantic_type: input
   description: Search screen with a text field for entering queries, a return button,
     and an emoji icon for expression input.
@@ -776,7 +776,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -787,7 +787,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 探索
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -799,7 +799,7 @@ screens:
     fixed: true
     leads_to: screen_16
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -811,7 +811,7 @@ screens:
     fixed: true
     leads_to: screen_4
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -823,7 +823,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 小红书
+    - [CH]
     - Xiaohongshu
     - rednote
     semantic_type: label
@@ -835,7 +835,7 @@ screens:
     fixed: true
     leads_to: screen_15
     aliases:
-    - 趋势
+    - [CH]
     - trending
     - hot topics
     semantic_type: tab
@@ -847,7 +847,7 @@ screens:
     fixed: true
     leads_to: screen_14
     aliases:
-    - 直播
+    - [CH]
     - streaming
     - broadcast
     semantic_type: tab
@@ -859,7 +859,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 系列
+    - [CH]
     - collections
     - episodes
     semantic_type: tab
@@ -871,7 +871,7 @@ screens:
     fixed: true
     leads_to: screen_6
     aliases:
-    - 职业
+    - [CH]
     - jobs
     - employment
     semantic_type: tab
@@ -895,7 +895,7 @@ screens:
     fixed: true
     leads_to: screen_15
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -907,7 +907,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -919,7 +919,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -949,7 +949,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -960,7 +960,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -972,7 +972,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 附近
+    - [CH]
     - local
     - near me
     semantic_type: tab
@@ -984,7 +984,7 @@ screens:
     fixed: true
     leads_to: screen_4
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -1008,7 +1008,7 @@ screens:
     fixed: false
     leads_to: screen_14
     aliases:
-    - 最近浏览
+    - [CH]
     - history
     - recent
     semantic_type: menu_item
@@ -1020,7 +1020,7 @@ screens:
     fixed: true
     leads_to: screen_23
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -1031,7 +1031,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -1042,7 +1042,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - chat
     semantic_type: tab
@@ -1070,7 +1070,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 订单
+    - Order
     - purchases
     - my orders
     semantic_type: menu_item
@@ -1082,7 +1082,7 @@ screens:
     fixed: false
     leads_to: screen_24
     aliases:
-    - 购物车
+    - [CH]
     - basket
     - shopping cart
     semantic_type: tab
@@ -1093,7 +1093,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 优惠券
+    - [CH]
     - vouchers
     - discounts
     semantic_type: menu_item
@@ -1104,7 +1104,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 客服
+    - Customer Service
     - customer service
     - help
     semantic_type: menu_item
@@ -1116,7 +1116,7 @@ screens:
     fixed: false
     leads_to: screen_25
     aliases:
-    - 历史
+    - [CH]
     - browsing history
     - recent
     semantic_type: menu_item
@@ -1127,7 +1127,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全部
+    - All
     - everything
     - all categories
     semantic_type: tab
@@ -1139,7 +1139,7 @@ screens:
     fixed: true
     leads_to: screen_26
     aliases:
-    - 兴趣
+    - [CH]
     - interests
     - hobby
     semantic_type: tab
@@ -1151,7 +1151,7 @@ screens:
     fixed: true
     leads_to: screen_27
     aliases:
-    - 包包
+    - [CH]
     - handbags
     - bags category
     semantic_type: tab
@@ -1163,7 +1163,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 美妆
+    - [CH]
     - cosmetics
     - makeup
     semantic_type: tab
@@ -1175,7 +1175,7 @@ screens:
     fixed: true
     leads_to: screen_7
     aliases:
-    - 家居
+    - [CH]
     - home decor
     - household
     semantic_type: tab
@@ -1187,7 +1187,7 @@ screens:
     fixed: true
     leads_to: screen_28
     aliases:
-    - 商城
+    - [CH]
     - shop
     - marketplace
     semantic_type: tab
@@ -1199,7 +1199,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - notifications
     - inbox
     semantic_type: tab
@@ -1229,9 +1229,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
-    - 私信
+    - [CH]
     - chats
     semantic_type: tab
   - text: Home
@@ -1242,10 +1242,10 @@ screens:
     fixed: true
     leads_to: screen_12
     aliases:
-    - 首页
+    - Home
     - feed
     - discover
-    - 主页
+    - Home
     semantic_type: tab
   - text: Market
     center:
@@ -1255,10 +1255,10 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
-    - 购物
+    - [CH]
     semantic_type: tab
   - text: Me
     center:
@@ -1270,7 +1270,7 @@ screens:
     aliases:
     - 我
     - profile
-    - 我的
+    - My
     - account
     semantic_type: tab
   description: 'Bottom navigation bar with 4 tabs: Home, Market, Messages, Me'
@@ -1285,7 +1285,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 扫码
+    - [CH]
     - QR scan
     - scan code
     semantic_type: button
@@ -1296,7 +1296,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 分享
+    - Share
     - send to
     - share with
     semantic_type: button
@@ -1308,7 +1308,7 @@ screens:
     fixed: false
     leads_to: screen_29
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -1320,11 +1320,11 @@ screens:
     fixed: false
     leads_to: screen_30
     aliases:
-    - 历史
+    - [CH]
     - recent
     - viewed
     semantic_type: menu_item
-  - text: 看过的笔记
+  - text: [CH]
     center:
     - 0.1219
     - 0.4176
@@ -1344,11 +1344,11 @@ screens:
     fixed: false
     leads_to: screen_31
     aliases:
-    - 钱包
+    - [CH]
     - balance
     - payments
     semantic_type: menu_item
-  - text: 查看详情
+  - text: View[CH]
     center:
     - 0.7488
     - 0.4176
@@ -1367,7 +1367,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 笔记
+    - [CH]
     - posts
     - my content
     semantic_type: tab
@@ -1379,7 +1379,7 @@ screens:
     fixed: true
     leads_to: screen_32
     aliases:
-    - 收藏
+    - [CH]
     - bookmarks
     - saved
     semantic_type: tab
@@ -1403,7 +1403,7 @@ screens:
     fixed: true
     leads_to: screen_34
     aliases:
-    - 发布
+    - [CH]
     - create
     - upload
     semantic_type: button
@@ -1415,7 +1415,7 @@ screens:
     fixed: true
     leads_to: screen_12
     aliases:
-    - 首页
+    - Home
     - feed
     - discover
     semantic_type: tab
@@ -1427,7 +1427,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -1439,7 +1439,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - chat
     semantic_type: tab
@@ -1468,7 +1468,7 @@ screens:
     fixed: true
     leads_to: screen_13
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -1480,7 +1480,7 @@ screens:
     fixed: true
     leads_to: screen_7
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -1492,7 +1492,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -1504,7 +1504,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -1516,7 +1516,7 @@ screens:
     fixed: true
     leads_to: screen_13
     aliases:
-    - 小红书
+    - [CH]
     - Xiaohongshu
     - rednote
     semantic_type: label
@@ -1528,7 +1528,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 趋势
+    - [CH]
     - trending
     - hot topics
     semantic_type: tab
@@ -1540,7 +1540,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 直播
+    - [CH]
     - streaming
     - broadcast
     semantic_type: tab
@@ -1552,7 +1552,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 系列
+    - [CH]
     - collections
     - episodes
     semantic_type: tab
@@ -1564,7 +1564,7 @@ screens:
     fixed: true
     leads_to: screen_36
     aliases:
-    - 职业
+    - [CH]
     - jobs
     - employment
     semantic_type: tab
@@ -1576,7 +1576,7 @@ screens:
     fixed: true
     leads_to: screen_37
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -1588,7 +1588,7 @@ screens:
     fixed: true
     leads_to: screen_38
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -1600,7 +1600,7 @@ screens:
     fixed: true
     leads_to: screen_39
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -1641,7 +1641,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -1653,7 +1653,7 @@ screens:
     fixed: true
     leads_to: screen_12
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -1665,7 +1665,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -1677,7 +1677,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -1689,7 +1689,7 @@ screens:
     fixed: true
     leads_to: screen_40
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -1701,7 +1701,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - chat
     semantic_type: tab
@@ -1742,7 +1742,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -1754,7 +1754,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -1766,7 +1766,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -1778,7 +1778,7 @@ screens:
     fixed: true
     leads_to: screen_4
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -1790,7 +1790,7 @@ screens:
     fixed: true
     leads_to: screen_1
     aliases:
-    - 小红书
+    - [CH]
     - Xiaohongshu
     - rednote
     semantic_type: label
@@ -1802,7 +1802,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 热门
+    - [CH]
     - trending
     - popular
     semantic_type: tab
@@ -1814,7 +1814,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 直播
+    - [CH]
     - streaming
     - broadcast
     semantic_type: tab
@@ -1826,7 +1826,7 @@ screens:
     fixed: true
     leads_to: screen_5
     aliases:
-    - 系列
+    - [CH]
     - collection
     - episodes
     semantic_type: tab
@@ -1838,7 +1838,7 @@ screens:
     fixed: true
     leads_to: screen_6
     aliases:
-    - 汽车
+    - [CH]
     - auto
     - vehicles
     semantic_type: tab
@@ -1862,7 +1862,7 @@ screens:
     fixed: false
     leads_to: screen_19
     aliases:
-    - 最近浏览
+    - [CH]
     - history
     - recent
     semantic_type: menu_item
@@ -1874,7 +1874,7 @@ screens:
     fixed: true
     leads_to: screen_7
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -1886,7 +1886,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -1898,7 +1898,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -1930,7 +1930,7 @@ screens:
     fixed: true
     leads_to: screen_42
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -1942,7 +1942,7 @@ screens:
     fixed: true
     leads_to: screen_7
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -1954,7 +1954,7 @@ screens:
     fixed: true
     leads_to: screen_43
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -1966,7 +1966,7 @@ screens:
     fixed: true
     leads_to: screen_4
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -1978,7 +1978,7 @@ screens:
     fixed: true
     leads_to: screen_44
     aliases:
-    - 小红书
+    - [CH]
     - Xiaohongshu
     - rednote
     semantic_type: label
@@ -1990,7 +1990,7 @@ screens:
     fixed: true
     leads_to: screen_45
     aliases:
-    - 趋势
+    - [CH]
     - trending
     - popular
     semantic_type: tab
@@ -2002,7 +2002,7 @@ screens:
     fixed: true
     leads_to: screen_39
     aliases:
-    - 直播
+    - [CH]
     - streaming
     - broadcast
     semantic_type: tab
@@ -2014,7 +2014,7 @@ screens:
     fixed: true
     leads_to: screen_46
     aliases:
-    - 系列
+    - [CH]
     - collections
     - episodes
     semantic_type: tab
@@ -2026,7 +2026,7 @@ screens:
     fixed: true
     leads_to: screen_6
     aliases:
-    - 汽车
+    - [CH]
     - vehicles
     - auto
     semantic_type: tab
@@ -2038,7 +2038,7 @@ screens:
     fixed: true
     leads_to: screen_47
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -2050,7 +2050,7 @@ screens:
     fixed: true
     leads_to: screen_48
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -2062,7 +2062,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -2103,7 +2103,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -2114,7 +2114,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 发现
+    - [CH]
     - discover
     - browse
     semantic_type: tab
@@ -2125,7 +2125,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 附近
+    - [CH]
     - local
     - around me
     semantic_type: tab
@@ -2140,7 +2140,7 @@ screens:
     - all city
     - entire city
     semantic_type: tab
-  - text: 推荐
+  - text: [CH]
     center:
     - 0.2338
     - 0.1453
@@ -2151,7 +2151,7 @@ screens:
     - for you
     - suggestions
     semantic_type: tab
-  - text: 美食
+  - text: [CH]
     center:
     - 0.3756
     - 0.1453
@@ -2163,7 +2163,7 @@ screens:
     - restaurants
     - delicacies
     semantic_type: menu_item
-  - text: 热门打卡地
+  - text: [CH]Lag地
     center:
     - 0.5697
     - 0.1453
@@ -2174,7 +2174,7 @@ screens:
     - hot check-in places
     - trending locations
     semantic_type: menu_item
-  - text: 周末出行
+  - text: [CH]
     center:
     - 0.7985
     - 0.1453
@@ -2203,7 +2203,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -2214,7 +2214,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     - mall
@@ -2226,7 +2226,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     - chats
@@ -2244,7 +2244,7 @@ screens:
     - my page
     semantic_type: tab
   description: Main explore/discover screen with tabs for Following, Explore, and
-    Nearby, showing content categories like 全城, 推荐, 美食, 热门打卡地, and 周末出行, along with
+    Nearby, showing content categories like [CH], [CH], [CH], [CH]Lag地, and [CH], along with
     bottom navigation for Home, Market, Messages, and Me.
   scrollable: true
   scroll_direction: vertical
@@ -2257,7 +2257,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -2268,7 +2268,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 发现
+    - [CH]
     - discover
     - browse
     semantic_type: tab
@@ -2279,7 +2279,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 附近
+    - [CH]
     - local
     - around me
     semantic_type: tab
@@ -2294,7 +2294,7 @@ screens:
     - all city
     - entire city
     semantic_type: tab
-  - text: 美食
+  - text: [CH]
     center:
     - 0.1468
     - 0.1453
@@ -2306,7 +2306,7 @@ screens:
     - restaurants
     - delicacies
     semantic_type: menu_item
-  - text: 热门打卡地
+  - text: [CH]Lag地
     center:
     - 0.3408
     - 0.1453
@@ -2317,7 +2317,7 @@ screens:
     - hot spots
     - trending places
     semantic_type: menu_item
-  - text: 周末出行
+  - text: [CH]
     center:
     - 0.5697
     - 0.1453
@@ -2328,7 +2328,7 @@ screens:
     - weekend getaways
     - weekend outings
     semantic_type: menu_item
-  - text: 购物市集
+  - text: [CH]
     center:
     - 0.7811
     - 0.1453
@@ -2339,7 +2339,7 @@ screens:
     - bazaar
     - flea market
     semantic_type: menu_item
-  - text: 酒吧派对
+  - text: [CH]
     center:
     - 0.9925
     - 0.1453
@@ -2357,7 +2357,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -2368,7 +2368,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     - mall
@@ -2380,7 +2380,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     - chats
@@ -2398,7 +2398,7 @@ screens:
     - my page
     semantic_type: tab
   description: Explore screen with tabs for Following, Explore, and Nearby, showing
-    category filters like 全城, 美食, 热门打卡地, 周末出行, 购物市集, 酒吧派对, and a bottom navigation
+    category filters like [CH], [CH], [CH]Lag地, [CH], [CH], [CH], and a bottom navigation
     bar with Home, Market, Messages, Me.
   scrollable: true
   scroll_direction: vertical
@@ -2411,7 +2411,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 点赞
+    - [CH]
     - favorite
     - heart
     semantic_type: tab
@@ -2422,7 +2422,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -2433,7 +2433,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 发现
+    - [CH]
     - discover
     - browse
     semantic_type: tab
@@ -2444,7 +2444,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -2459,7 +2459,7 @@ screens:
     - whole city
     - all city
     semantic_type: tab
-  - text: 推荐
+  - text: [CH]
     center:
     - 0.2413
     - 0.1453
@@ -2477,7 +2477,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -2488,7 +2488,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -2499,7 +2499,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -2515,7 +2515,7 @@ screens:
     - account
     semantic_type: tab
   description: 'Main tab bar with 5 tabs: Home, Market, Messages, Me, and a central
-    Explore tab with sub-options for Following, Explore, Nearby, and 全城/推荐.'
+    Explore tab with sub-options for Following, Explore, Nearby, and [CH]/[CH].'
   scrollable: false
   scroll_direction: ''
 - id: screen_19
@@ -2527,7 +2527,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -2538,7 +2538,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -2549,7 +2549,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 附近
+    - [CH]
     - local
     - near me
     semantic_type: tab
@@ -2560,7 +2560,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -2571,7 +2571,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -2582,7 +2582,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -2593,7 +2593,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -2621,7 +2621,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -2638,7 +2638,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -2649,7 +2649,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全部
+    - All
     - everything
     - all results
     semantic_type: tab
@@ -2660,7 +2660,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 用户
+    - [CH]
     - people
     - accounts
     semantic_type: tab
@@ -2671,7 +2671,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 视频
+    - [CH]
     - clips
     - shorts
     semantic_type: tab
@@ -2682,7 +2682,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 图片
+    - [CH]
     - photos
     - pictures
     semantic_type: tab
@@ -2693,7 +2693,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 立即提问
+    - [CH]
     - ask now
     - Q&A
     semantic_type: button
@@ -2704,7 +2704,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 热门
+    - [CH]
     - popular
     - hot
     semantic_type: tab
@@ -2715,11 +2715,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 最新
+    - [CH]
     - newest
     - recent
     semantic_type: tab
-  - text: 查看指南
+  - text: ViewGuide
     center:
     - 0.8507
     - 0.5
@@ -2730,7 +2730,7 @@ screens:
     - guide
     - instructions
     semantic_type: link
-  - text: 查看全部
+  - text: ViewAll
     center:
     - 0.8458
     - 0.5686
@@ -2739,7 +2739,7 @@ screens:
     aliases:
     - view all
     - see all
-    - 全部
+    - All
     semantic_type: link
   description: Search results page with tabs for Users, Videos, Images, and AskNow,
     and sort options Top and Latest, showing a guide and a 'view all' option.
@@ -2754,7 +2754,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -2765,7 +2765,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -2776,7 +2776,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 附近
+    - [CH]
     - local
     - around
     semantic_type: tab
@@ -2787,7 +2787,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -2798,7 +2798,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 小红书
+    - [CH]
     - Xiaohongshu
     - red note
     semantic_type: label
@@ -2809,7 +2809,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 热门
+    - [CH]
     - trending
     - popular
     semantic_type: tab
@@ -2820,7 +2820,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 直播
+    - [CH]
     - streaming
     - broadcast
     semantic_type: tab
@@ -2831,7 +2831,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 系列
+    - [CH]
     - collections
     - episodes
     semantic_type: tab
@@ -2842,7 +2842,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 汽车
+    - [CH]
     - vehicles
     - auto
     semantic_type: tab
@@ -2853,7 +2853,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 最近浏览
+    - [CH]
     - history
     - recent
     semantic_type: menu_item
@@ -2864,7 +2864,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main
     - feed
     semantic_type: tab
@@ -2875,7 +2875,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -2886,7 +2886,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -2926,7 +2926,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -2937,7 +2937,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 发现
+    - [CH]
     - discover
     - search
     semantic_type: tab
@@ -2948,7 +2948,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 附近
+    - [CH]
     - local
     - near me
     semantic_type: tab
@@ -2959,7 +2959,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 推荐
+    - [CH]
     - recommendations
     - personalized
     semantic_type: tab
@@ -2970,7 +2970,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 最近浏览
+    - [CH]
     - history
     - recent
     semantic_type: menu_item
@@ -2981,7 +2981,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -2992,7 +2992,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -3003,7 +3003,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -3031,7 +3031,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全部
+    - All
     - everything
     - all items
     semantic_type: tab
@@ -3048,8 +3048,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 历史记录
-    - 浏览记录
+    - [CH]
+    - [CH]
     - recent
     semantic_type: menu_item
   description: User's browsing history page showing previously viewed content.
@@ -3064,7 +3064,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全部
+    - All
     - everything
     - all categories
     semantic_type: tab
@@ -3075,7 +3075,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 兴趣
+    - [CH]
     - interests
     - hobby
     semantic_type: tab
@@ -3086,7 +3086,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 包包
+    - [CH]
     - handbags
     - bags category
     semantic_type: tab
@@ -3097,7 +3097,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 美妆
+    - [CH]
     - cosmetics
     - makeup
     semantic_type: tab
@@ -3108,7 +3108,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家居
+    - [CH]
     - home decor
     - household
     semantic_type: tab
@@ -3119,7 +3119,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -3130,7 +3130,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -3158,7 +3158,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 美妆
+    - [CH]
     - cosmetics
     - makeup
     - beauty tips
@@ -3170,7 +3170,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     - discover
@@ -3182,7 +3182,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     - mall
@@ -3194,7 +3194,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     - chats
@@ -3235,7 +3235,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 订单
+    - Order
     - purchases
     - my orders
     semantic_type: menu_item
@@ -3246,7 +3246,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 购物车
+    - [CH]
     - shopping cart
     - basket
     semantic_type: tab
@@ -3257,7 +3257,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 优惠券
+    - [CH]
     - discounts
     - vouchers
     semantic_type: menu_item
@@ -3268,7 +3268,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 客服
+    - Customer Service
     - customer service
     - help
     semantic_type: menu_item
@@ -3279,7 +3279,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 历史记录
+    - [CH]
     - browsing history
     - recently viewed
     semantic_type: menu_item
@@ -3290,7 +3290,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全部
+    - All
     - everything
     - all categories
     semantic_type: tab
@@ -3301,7 +3301,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 兴趣
+    - [CH]
     - interests
     - hobby
     semantic_type: tab
@@ -3312,7 +3312,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 包包
+    - [CH]
     - handbags
     - bags category
     semantic_type: tab
@@ -3323,7 +3323,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 美妆
+    - [CH]
     - cosmetics
     - makeup
     semantic_type: tab
@@ -3334,7 +3334,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - homepage
     - main page
     semantic_type: tab
@@ -3345,7 +3345,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -3356,7 +3356,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - notifications
     - inbox
     semantic_type: tab
@@ -3385,8 +3385,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 好友
-    - 朋友
+    - [CH]
+    - [CH]
     - buddy
     semantic_type: tab
   - text: Following
@@ -3396,8 +3396,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
-    - 已关注
+    - [CH]
+    - [CH]
     - followed
     semantic_type: tab
   - text: All
@@ -3407,8 +3407,8 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 全部
-    - 所有
+    - All
+    - 所Yes
     - everything
     semantic_type: tab
   - text: Close
@@ -3418,7 +3418,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 关闭
+    - Close
     - close button
     - dismiss
     semantic_type: button
@@ -3429,8 +3429,8 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 关注
-    - 加关注
+    - [CH]
+    - [CH]
     - subscribe
     semantic_type: button
   description: User's social connections screen with tabs for Friends, Following,
@@ -3446,7 +3446,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 历史记录
+    - [CH]
     - recent
     - viewed
     semantic_type: menu_item
@@ -3457,7 +3457,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 管理
+    - Manage
     - settings
     - control
     semantic_type: menu_item
@@ -3468,7 +3468,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 笔记
+    - [CH]
     - posts
     - my content
     semantic_type: menu_item
@@ -3479,7 +3479,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 直播
+    - [CH]
     - streaming
     - broadcast
     semantic_type: menu_item
@@ -3500,31 +3500,31 @@ screens:
   scroll_direction: ''
 - id: screen_31
   elements:
-  - text: 我的钱包
+  - text: My[CH]
     center:
     - 0.5
     - 0.0961
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 钱包
+    - [CH]
     - wallet
     - my wallet
-    - 余额
+    - [CH]
     semantic_type: menu_item
-  - text: 我的资产
+  - text: My[CH]
     center:
     - 0.1393
     - 0.1716
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 资产
+    - [CH]
     - assets
     - my assets
-    - 财产
+    - [CH]
     semantic_type: menu_item
-  description: 我的钱包页面，显示用户的资产信息，可查看和管理余额、红包、优惠券等财务相关内容。
+  description: My[CH]Page，[CH]Info，可View和Manage[CH]、[CH]、[CH]。
   scrollable: true
   scroll_direction: vertical
 - id: screen_32
@@ -3536,9 +3536,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 扫描
+    - Scan
     - QR scan
-    - 扫一扫
+    - [CH]
     - scan code
     semantic_type: button
   - text: Share
@@ -3548,7 +3548,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 分享
+    - Share
     - send to
     - share with
     semantic_type: button
@@ -3559,7 +3559,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -3570,12 +3570,12 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 历史
+    - [CH]
     - recent
-    - 浏览记录
+    - [CH]
     - viewed
     semantic_type: menu_item
-  - text: 看过的笔记
+  - text: [CH]
     center:
     - 0.1219
     - 0.4176
@@ -3584,7 +3584,7 @@ screens:
     aliases:
     - viewed notes
     - history notes
-    - 浏览过的笔记
+    - [CH]
     - seen posts
     semantic_type: menu_item
   - text: Wallet
@@ -3594,12 +3594,12 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 钱包
+    - [CH]
     - balance
     - payment
     - red packet
     semantic_type: menu_item
-  - text: 查看详情
+  - text: View[CH]
     center:
     - 0.7488
     - 0.4176
@@ -3608,7 +3608,7 @@ screens:
     aliases:
     - view details
     - details
-    - 详情
+    - [CH]
     - see more
     semantic_type: button
   - text: Saves
@@ -3618,7 +3618,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收藏
+    - [CH]
     - bookmarks
     - saved
     - favorites
@@ -3632,7 +3632,7 @@ screens:
     aliases:
     - 赞
     - liked
-    - 点赞
+    - [CH]
     - hearted
     semantic_type: tab
   - text: Home
@@ -3642,10 +3642,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - feed
     - discover
-    - 主页
+    - Home
     semantic_type: tab
   - text: Market
     center:
@@ -3654,10 +3654,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
-    - 购物
+    - [CH]
     semantic_type: tab
   - text: Messages
     center:
@@ -3666,10 +3666,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
-    - 私信
+    - [CH]
     semantic_type: tab
   - text: Me
     center:
@@ -3680,7 +3680,7 @@ screens:
     aliases:
     - 我
     - profile
-    - 我的
+    - My
     - account
     semantic_type: tab
   description: User profile and activity hub with sections for scan, share, following,
@@ -3696,9 +3696,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 扫描
+    - Scan
     - QR scan
-    - 扫一扫
+    - [CH]
     semantic_type: button
   - text: Share
     center:
@@ -3707,9 +3707,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 分享
+    - Share
     - send to
-    - 转发
+    - [CH]
     semantic_type: button
   - text: shift
     center:
@@ -3718,11 +3718,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 切换
+    - [CH]
     - switch
     - change
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.1915
     - 0.8913
@@ -3730,10 +3730,10 @@ screens:
     fixed: true
     aliases:
     - emoji
-    - 表情
+    - [CH]
     - sticker
     semantic_type: button
-  - text: 搜索
+  - text: Search
     center:
     - 0.8756
     - 0.8913
@@ -3742,7 +3742,7 @@ screens:
     aliases:
     - search
     - find
-    - 查找
+    - [CH]
     semantic_type: input
   - text: Notes
     center:
@@ -3751,7 +3751,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 笔记
+    - [CH]
     - posts
     - my notes
     semantic_type: tab
@@ -3762,7 +3762,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收藏
+    - [CH]
     - bookmarks
     - saved items
     semantic_type: tab
@@ -3784,9 +3784,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - feed
-    - 主页
+    - Home
     semantic_type: tab
   - text: Market
     center:
@@ -3795,9 +3795,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
-    - 购物
+    - [CH]
     semantic_type: tab
   - text: Messages
     center:
@@ -3806,9 +3806,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
-    - 私信
+    - [CH]
     semantic_type: tab
   - text: Me
     center:
@@ -3819,7 +3819,7 @@ screens:
     aliases:
     - 我
     - profile
-    - 个人中心
+    - PersonalCenter
     semantic_type: tab
   description: User profile or personal content hub with tabs for Notes, Saves, Likes,
     and navigation to Home, Market, Messages, and Me.
@@ -3834,7 +3834,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全部
+    - All
     - all items
     - everything
     semantic_type: tab
@@ -3845,7 +3845,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 视频
+    - [CH]
     - video files
     - clips
     semantic_type: tab
@@ -3856,7 +3856,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 照片
+    - [CH]
     - images
     - pictures
     semantic_type: tab
@@ -3867,7 +3867,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 最近
+    - [CH]
     - recent items
     - history
     semantic_type: tab
@@ -3878,7 +3878,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 草稿
+    - [CH]
     - draft items
     - unpublished
     semantic_type: tab
@@ -3896,7 +3896,7 @@ screens:
     fixed: true
     aliases:
     - back
-    - 返回
+    - Back
     - go back
     semantic_type: button
   - text: cam
@@ -3907,8 +3907,8 @@ screens:
     fixed: true
     aliases:
     - camera
-    - 相机
-    - 拍照
+    - Camera
+    - Camera
     semantic_type: button
   - text: Follow
     center:
@@ -3917,7 +3917,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow user
     semantic_type: button
@@ -3928,7 +3928,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 不喜欢
+    - [CH]
     - thumbs down
     - not interested
     semantic_type: button
@@ -3939,7 +3939,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 模糊
+    - [CH]
     - blur effect
     - background blur
     semantic_type: button
@@ -4022,7 +4022,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4033,7 +4033,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow user
     semantic_type: button
@@ -4044,7 +4044,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 不喜欢
+    - [CH]
     - thumbs down
     - not interested
     semantic_type: button
@@ -4055,9 +4055,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 保存
+    - Save
     - bookmark
-    - 收藏
+    - [CH]
     - favorite
     semantic_type: button
   - text: Cmt
@@ -4067,10 +4067,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 评论
+    - [CH]
     - comment
     - reply
-    - 留言
+    - [CH]
     semantic_type: button
   description: Post detail screen with options to return, follow the author, dislike,
     save, and comment on the content.
@@ -4085,7 +4085,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4096,7 +4096,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow user
     semantic_type: button
@@ -4107,11 +4107,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 直播
+    - [CH]
     - live stream
     - broadcast
     semantic_type: label
-  - text: 地点
+  - text: [CH]
     center:
     - 0.1368
     - 0.8993
@@ -4119,7 +4119,7 @@ screens:
     fixed: true
     aliases:
     - location
-    - 位置
+    - [CH]
     - place
     - address
     semantic_type: label
@@ -4130,7 +4130,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 不喜欢
+    - [CH]
     - not interested
     - thumbs down
     semantic_type: button
@@ -4148,7 +4148,7 @@ screens:
     fixed: true
     aliases:
     - back
-    - 返回
+    - Back
     - go back
     semantic_type: button
   - text: Follow
@@ -4158,7 +4158,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow user
     semantic_type: button
@@ -4169,7 +4169,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 不喜欢
+    - [CH]
     - thumbs down
     - not interested
     semantic_type: button
@@ -4178,7 +4178,7 @@ screens:
   scroll_direction: ''
 - id: screen_40
   elements:
-  - text: ux设计
+  - text: ux[CH]
     center:
     - 0.3682
     - 0.1007
@@ -4187,7 +4187,7 @@ screens:
     aliases:
     - UX design
     - user experience design
-    - 用户体验设计
+    - [CH]
     semantic_type: menu_item
   - text: Orders
     center:
@@ -4196,7 +4196,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 订单
+    - Order
     - my orders
     - purchases
     semantic_type: tab
@@ -4207,7 +4207,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 购物车
+    - [CH]
     - shopping cart
     - basket
     semantic_type: tab
@@ -4218,7 +4218,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 优惠券
+    - [CH]
     - discounts
     - vouchers
     semantic_type: menu_item
@@ -4229,7 +4229,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 客服
+    - Customer Service
     - customer service
     - help
     semantic_type: menu_item
@@ -4240,7 +4240,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 历史记录
+    - [CH]
     - browsing history
     - recent
     semantic_type: menu_item
@@ -4251,7 +4251,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全部
+    - All
     - everything
     - all categories
     semantic_type: tab
@@ -4262,7 +4262,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -4273,7 +4273,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 商城
+    - [CH]
     - shop
     - store
     semantic_type: tab
@@ -4284,7 +4284,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - inbox
     - notifications
     semantic_type: tab
@@ -4312,7 +4312,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4323,11 +4323,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow user
     semantic_type: button
-  - text: 地点
+  - text: [CH]
     center:
     - 0.1368
     - 0.3478
@@ -4335,7 +4335,7 @@ screens:
     fixed: true
     aliases:
     - location
-    - 位置
+    - [CH]
     - place
     - address
     semantic_type: label
@@ -4346,7 +4346,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 不喜欢
+    - [CH]
     - thumbs down
     - not interested
     semantic_type: button
@@ -4363,7 +4363,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4374,7 +4374,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 更多
+    - [CH]
     - options
     - menu
     semantic_type: button
@@ -4385,7 +4385,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - add friend
     semantic_type: button
@@ -4396,7 +4396,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 已关注
+    - [CH]
     - subscribed
     - unfollow
     semantic_type: toggle
@@ -4407,9 +4407,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - chat
-    - 私信
+    - [CH]
     - DM
     semantic_type: button
   - text: Notes
@@ -4419,7 +4419,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 笔记
+    - [CH]
     - posts
     - content
     semantic_type: tab
@@ -4430,7 +4430,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 标签
+    - Tab
     - label
     - category
     semantic_type: label
@@ -4441,7 +4441,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 置顶
+    - [CH]
     - sticky
     - top
     semantic_type: label
@@ -4459,7 +4459,7 @@ screens:
     fixed: true
     aliases:
     - back
-    - 返回
+    - Back
     - go back
     semantic_type: button
   - text: Following
@@ -4470,7 +4470,7 @@ screens:
     fixed: true
     aliases:
     - follow
-    - 关注
+    - [CH]
     - subscribe
     semantic_type: toggle
   - text: Dislike
@@ -4481,7 +4481,7 @@ screens:
     fixed: true
     aliases:
     - thumbs down
-    - 不喜欢
+    - [CH]
     - downvote
     semantic_type: button
   - text: Like
@@ -4492,9 +4492,9 @@ screens:
     fixed: true
     aliases:
     - thumbs up
-    - 喜欢
+    - [CH]
     - heart
-    - 点赞
+    - [CH]
     semantic_type: button
   - text: Save
     center:
@@ -4504,7 +4504,7 @@ screens:
     fixed: true
     aliases:
     - bookmark
-    - 收藏
+    - [CH]
     - favorite
     semantic_type: button
   - text: Cmt
@@ -4515,7 +4515,7 @@ screens:
     fixed: true
     aliases:
     - comment
-    - 评论
+    - [CH]
     - reply
     semantic_type: button
   description: Post detail screen with options to return, follow the author, dislike,
@@ -4531,7 +4531,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4542,7 +4542,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 更多
+    - [CH]
     - options
     - menu
     semantic_type: button
@@ -4553,7 +4553,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - add friend
     semantic_type: button
@@ -4564,7 +4564,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 已关注
+    - [CH]
     - subscribed
     - unfollow
     semantic_type: toggle
@@ -4575,9 +4575,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 消息
+    - Message
     - chat
-    - 私信
+    - [CH]
     - DM
     semantic_type: button
   - text: Notes
@@ -4587,7 +4587,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 笔记
+    - [CH]
     - posts
     - content
     semantic_type: tab
@@ -4598,7 +4598,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收藏
+    - [CH]
     - bookmarks
     - saved items
     semantic_type: tab
@@ -4615,7 +4615,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4626,7 +4626,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 更多
+    - [CH]
     - options
     - menu
     semantic_type: button
@@ -4637,7 +4637,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - add friend
     semantic_type: button
@@ -4648,7 +4648,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 已关注
+    - [CH]
     - subscribed
     - unfollow
     semantic_type: toggle
@@ -4659,10 +4659,10 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 消息
+    - Message
     - chat
     - DM
-    - 私信
+    - [CH]
     semantic_type: button
   - text: Notes
     center:
@@ -4671,7 +4671,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 笔记
+    - [CH]
     - posts
     - content
     semantic_type: tab
@@ -4682,7 +4682,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收藏
+    - [CH]
     - bookmarks
     - saved items
     semantic_type: tab
@@ -4693,7 +4693,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 置顶
+    - [CH]
     - sticky
     - top
     semantic_type: label
@@ -4710,7 +4710,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4721,7 +4721,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - followed
     - subscriptions
     semantic_type: tab
@@ -4732,7 +4732,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 复制
+    - Copy
     - duplicate
     - copy text
     semantic_type: button
@@ -4749,7 +4749,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4760,7 +4760,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow user
     semantic_type: button
@@ -4771,7 +4771,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 评论
+    - [CH]
     - comment
     - reply
     - message
@@ -4783,7 +4783,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 不喜欢
+    - [CH]
     - thumbs down
     - not interested
     - dislike
@@ -4801,7 +4801,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - back
     - go back
     semantic_type: button
@@ -4812,7 +4812,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow user
     semantic_type: button
@@ -4823,7 +4823,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 复制
+    - Copy
     - duplicate
     - copy text
     semantic_type: button
@@ -4841,7 +4841,7 @@ screens:
     fixed: true
     aliases:
     - back
-    - 返回
+    - Back
     - go back
     - previous
     semantic_type: button
@@ -4852,7 +4852,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关注
+    - [CH]
     - subscribe
     - follow author
     semantic_type: button
@@ -4866,7 +4866,7 @@ screens:
     - 赞
     - favorite
     - heart
-    - 点赞
+    - [CH]
     semantic_type: toggle
   - text: Save
     center:
@@ -4875,10 +4875,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收藏
+    - [CH]
     - bookmark
     - favorite
-    - 保存
+    - Save
     semantic_type: toggle
   - text: Dislike
     center:
@@ -4887,10 +4887,10 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 不感兴趣
+    - [CH]
     - not interested
     - thumbs down
-    - 屏蔽
+    - [CH]
     semantic_type: button
   - text: Author
     center:
@@ -4899,10 +4899,10 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 作者
+    - [CH]
     - creator
     - poster
-    - 博主
+    - [CH]
     semantic_type: link
   description: Post interaction screen with options to follow the author, like, save,
     dislike, and return to previous page.

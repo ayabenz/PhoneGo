@@ -196,7 +196,7 @@ def action_tools(with_labels: bool = True, with_maps: bool = True,
     if with_labels:
         tools.insert(4, (
             "tap_text", "Click the control whose visible label contains this text.",
-            {"label": _str("exact or partial label, e.g. 蓝牙")}, ("label",)))
+            {"label": _str("exact or partial label, e.g. Bluetooth")}, ("label",)))
         tools.insert(5, (
             "scroll", "Scroll the current screen.",
             {"direction": _str("down or up")}, ("direction",)))
@@ -357,7 +357,7 @@ class AgentConfig:
     max_catalog_chars: int = 0  # 0 = no truncation
     history_window: int = 5
     macro_retries: int = 1  # re-run a macro once when it lands on the wrong screen
-    #: The instruction asked to be left on that screen ("停在小红书"). Then the
+    #: The instruction asked to be left on that screen ("[CH]"). Then the
     #: app stays where it is at the end instead of going back to our display.
     stay_on_user_display: bool = False
     planner_enabled: bool = True  # decompose multi-app tasks (needs >= 2 maps)
@@ -426,10 +426,10 @@ class _TeeSteps(list):
 
 
 #: Text that means the app has decided a person must prove they are one.
-#: Deliberately specific: "验证码" alone shows up in ordinary settings pages.
+#: Deliberately specific: "Verify码" alone shows up in ordinary settings pages.
 CHALLENGE_RE = re.compile(
-    r"(人机验证|安全验证|滑块验证|拖动滑块|请完成验证|滑动验证"
-    r"|图形验证码|请输入验证码|验证身份|行为验证)"
+    r"([CH]Verify|SecurityVerify|[CH]Verify|[CH]|请DoneVerify|[CH]Verify"
+    r"|[CH]Verify码|请InputVerify码|Verify[CH]|[CH]Verify)"
 )
 
 
@@ -578,8 +578,8 @@ class PhoneAgent:
             time.time() - getattr(self, "_heartbeat", time.time()))
         return self._result(
             False,
-            f"任务卡住了：{seconds} 秒没有进展，已经中止。可以重试一次，"
-            "如果还是停在同一处，那一步需要我人工看一下。",
+            f"[CH]Lag[CH]：{seconds} [CH]Yes[CH]，[CH]。[CH]Retry[CH]，"
+            "[CH]Yes[CH]，[CH]。",
             "stalled",
             round_no,
         )
@@ -632,9 +632,9 @@ class PhoneAgent:
             # happened and stop.
             self.steps.append(Step(0, "launch", exc.package, "refused"))
             answer = (
-                f"打不开「{exc.package}」：它的主界面声明为 singleTask，"
-                f"系统只会把它放回自己所在的那块屏幕，虚拟屏上起不来。"
-                f"换一个 App，或在手机上手动操作。"
+                f"[CH]「{exc.package}」：[CH]Interface[CH] singleTask，"
+                f"[CH]Screen，Virtual[CH]。"
+                f"[CH] App，[CH]PhoneaboveManual[CH]。"
             )
             return self._result(False, answer, "unlaunchable", 0)
 
@@ -750,7 +750,7 @@ class PhoneAgent:
     def _names_an_unmapped_app(self, task: str) -> bool:
         """True when the task is about an app this agent has no map for.
 
-        Measured: "登录淘宝账号" was routed to the WLAN operation, because the
+        Measured: "Login[CH]Account" was routed to the WLAN operation, because the
         router was handed a Settings catalogue and asked to find the closest
         match -- and it found one. A task that names an installed app we have
         no map for must go to the VLM instead of being forced onto a neighbour.
@@ -769,9 +769,9 @@ class PhoneAgent:
     def _is_web_task(task: str) -> bool:
         """A URL in the task means the built-in browser, nothing else.
 
-        Measured: the planner split "打开 https://example.com 并告诉我这页说了
-        什么" into subtasks, one of which was nonsense ("设置new") and launched
-        UC浏览器 -- a browser app the agent cannot drive.
+        Measured: the planner split "Open https://example.com [CH]
+        [CH]" into subtasks, one of which was nonsense ("Settingsnew") and launched
+        UC[CH] -- a browser app the agent cannot drive.
         """
         lowered = (task or "").lower()
         return "http://" in lowered or "https://" in lowered or "www." in lowered
@@ -794,7 +794,7 @@ class PhoneAgent:
         # Planning is for tasks that span apps. The upstream agent only tried it
         # when no map matched at all; gating on "two maps exist" instead made it
         # split single-app requests into two or three subtasks, each paying for
-        # its own system prompt -- measured on 小红书: 10 steps and 47k tokens
+        # its own system prompt -- measured on [CH]: 10 steps and 47k tokens
         # against the plain loop's 4 steps and 24k for the same question.
         named_maps = [
             m for m in self.maps
@@ -856,7 +856,7 @@ class PhoneAgent:
         # A subtask starts right after its app was launched, and a cold app
         # draws for several seconds: the first dump comes back with an empty
         # tree, and "nothing readable" then ended the subtask one second after
-        # it began (measured twice, on 小红书 and on 携程). Give it a moment.
+        # it began (measured twice, on [CH] and on [CH]). Give it a moment.
         xml = ""
         for attempt in range(6):
             try:
@@ -885,15 +885,15 @@ class PhoneAgent:
     # -- macro layer -----------------------------------------------------
 
 
-    #: 「搜索『深圳火锅』」「搜一下 附近的火锅」— the user's own words for a query.
-    QUERY_RE = __import__("re").compile(r"[搜查找]\s*[一下下]?\s*[『「\"'“]?([^』」\"'”，,。？?\n]{2,20})[』」\"'”]?")
+    #: 「Search『[CH]』」「[CH] [CH]」— the user's own words for a query.
+    QUERY_RE = __import__("re").compile(r"[[CH]]\s*[[CH]]?\s*[『「\"'“]?([^』」\"'”，,。？?\n]{2,20})[』」\"'”]?")
 
     @classmethod
     def _carried_entity(cls, carry: str) -> str:
         """The most recent 「…」 / 「…」 / "…" in what an earlier subtask said.
 
-        Our own answers quote the thing they found ("文中提到的第一家住宿是
-        「重庆大厦」"), which is exactly the value the next subtask needs.
+        Our own answers quote the thing they found ("[CH]Yes
+        「[CH]」"), which is exactly the value the next subtask needs.
         """
         found = ""
         for opener, closer in (("「", "」"), ("『", "』"), ("“", "”")):
@@ -923,7 +923,7 @@ class PhoneAgent:
             entity = cls._carried_entity(carry)
             if entity:
                 return entity
-        for marker in ("搜索", "搜一下", "搜一搜", "查找", "查一下"):
+        for marker in ("Search", "[CH]", "[CH]", "[CH]", "[CH]"):
             index = text.find(marker)
             if index < 0:
                 continue
@@ -996,7 +996,7 @@ class PhoneAgent:
                     and not recorded_on_user_display):
                 # Its macros were measured on a screen this app no longer runs
                 # on. Replaying them taps coordinates that belong to a
-                # different layout -- measured: the 搜索 macro's tap landed in
+                # different layout -- measured: the Search macro's tap landed in
                 # PhoneAgent's own header and pulled the notification shade down
                 # five times out of five.
                 self.history.append(
@@ -1036,7 +1036,7 @@ class PhoneAgent:
             # second call see "no escape" and replayed the macro anyway.
             escaped = self._pull_back_if_escaped(app_map.package)
             query = (self._explicit_query(task, getattr(self, "_carry", ""))
-                     if "搜索" in str(route.value) else "")
+                     if "Search" in str(route.value) else "")
             if query:
                 try:
                     xml_now = self.device.dump_ui()
@@ -1164,9 +1164,9 @@ class PhoneAgent:
             sub._depth = self._depth + 1
             sub._current_app_hint = app
             # A subtask about one app starts by putting that app in front.
-            # Without it, 携程's subtask answered from 小红书's page: the vision
+            # Without it, [CH]'s subtask answered from [CH]'s page: the vision
             # model read the note that was still on screen and replied with a
-            # hotel name, marking "search it in 携程" as done.
+            # hotel name, marking "search it in [CH]" as done.
             target = next((m for m in maps if m.app_name == app), None)
             package = getattr(target, "package", "") if target else ""
             if package:
@@ -1185,8 +1185,8 @@ class PhoneAgent:
             # Each subtask gets a share of what is left, not the whole pot and
             # not a fresh one. Handing the same counter to every subtask let the
             # first one spend it all -- measured on a two-step cross-app task:
-            # 33 rounds went to browsing 小红书 and 携程 got none, so the answer
-            # ended "这一步没做成" before that app was even opened.
+            # 33 rounds went to browsing [CH] and [CH] got none, so the answer
+            # ended "[CH]" before that app was even opened.
             shared = getattr(self, "_budget", None)
             if shared is not None:
                 left = getattr(shared, "left", None)
@@ -1241,17 +1241,17 @@ class PhoneAgent:
             # The full subtask sentence, not a 24-character prefix: the
             # prefix cut words in half ("search for hotels near H") and the
             # answer is the one thing the user reads.
-            answer = "做完了 " + "、".join(
+            answer = "[CH] " + "、".join(
                 f"「{name}」" for name in done_names) + "。"
             if failed_name:
-                answer += f"「{failed_name}」这一步没做成。"
+                answer += f"「{failed_name}」[CH]。"
                 # The page the agent stopped on is still on its own display;
                 # say so and offer it, instead of leaving the user guessing why
                 # the phone is back on this chat.
                 if getattr(self, "_drove_app", False):
-                    answer += "需要我把刚才那个页面切到你的屏幕上继续吗？"
+                    answer += "[CH]Page[CH]ScreenaboveContinue?？"
         else:
-            answer = "这条任务需要分几步做，第一步就没有走通。"
+            answer = "[CH]，[CH]Yes[CH]。"
         return self._result(False, answer, "partial" if answers else "planner",
                             rounds=len(steps))
 
@@ -1270,7 +1270,7 @@ class PhoneAgent:
     def _screen_verifier(self, app_map: AppMap):
         """A check that the screen a tap was recorded on is still the screen up.
 
-        A label like 添加闹钟 exists on several screens; pressing its coordinate
+        A label like [CH] exists on several screens; pressing its coordinate
         because it was there once is how a macro that looks right lands on the
         wrong page. Uncertainty (None) is allowed through -- only a confident
         disagreement aborts the replay.
@@ -1375,7 +1375,7 @@ class PhoneAgent:
         def worth_matching(part: str) -> bool:
             # One Chinese character is a word ("我", "赞"); one Latin character
             # is noise. Matching on length alone dropped 我 and left the router
-            # with no candidate for "看小红书我页面".
+            # with no candidate for "[CH]Page".
             return len(part) >= 2 or (len(part) == 1 and not part.isascii())
 
         score = 0.0
@@ -1468,7 +1468,7 @@ class PhoneAgent:
             self._budget = _Budget(self.config.max_rounds)
         for round_no in range(1, self.config.max_rounds + 1):
             if not self._budget.take():
-                missing = "这次任务能走的步数已经用完了。"
+                missing = "[CH]。"
                 achieved = self._achieved()
                 return self._result(
                     False,
@@ -1497,7 +1497,7 @@ class PhoneAgent:
 
             if self._shade_is_open(xml):
                 # The shade holds the user's own notifications, including
-                # "已连接到无线调试" -- one tap there turns off the connection the
+                # "已ConnectiontoNone线Debugging" -- one tap there turns off the connection the
                 # agent is running on. Closing it and carrying on was tried and
                 # thrashed: twelve of fifteen rounds were spent re-detecting it.
                 # Stopping is the honest answer.
@@ -1513,8 +1513,8 @@ class PhoneAgent:
                         self.history.append("the notification shade was open; closed it")
                         continue
                 raise _Stranded(
-                    "通知栏被拉下来了，上面是你的通知（其中一项能关掉无线调试），"
-                    "我不去碰它。\n请把它收起后再说一次，或者告诉我换个做法。"
+                    "Notification[CH]，[CH]Yes[CH]Notification（[CH]None线Debugging），"
+                    "[CH]。\n[CH]，[CH]。"
                 )
 
             # Whatever the app is showing, a challenge is the user's to answer.
@@ -1537,8 +1537,8 @@ class PhoneAgent:
                 repeated = ", ".join(self.actions[-self.config.loop_threshold:])
                 return self._result(
                     False,
-                    f"连续 {self.config.loop_threshold} 次做了同一个动作（{repeated}），"
-                    f"屏幕没有变化，已停止。",
+                    f"[CH] {self.config.loop_threshold} [CH]（{repeated}），"
+                    f"Screen没Yes[CH]，已Stop。",
                     "loop",
                     round_no,
                 )
@@ -1565,7 +1565,7 @@ class PhoneAgent:
                 pending_notice = STALE_SCREEN_NOTICE
                 stale_rounds = self.config.no_new_data_limit - 1
             elif stale_rounds >= self.config.no_new_data_limit:
-                missing = f"界面连续 {stale_rounds} 次没有变化，就停在这里了。"
+                missing = f"Interface[CH] {stale_rounds} [CH]Yes[CH]，[CH]。"
                 achieved = self._achieved()
                 return self._result(
                     False,
@@ -1741,14 +1741,14 @@ class PhoneAgent:
             if name == "tap_text" and args:
                 # "· tap_text" says nothing; the label is what was pressed.
                 label = str(args[0])
-                detail = label if ok else f"{label}（失败）"
+                detail = label if ok else f"{label}（Failed）"
             if name == "shell" and args:
                 # The transcript said only "shell", which tells a reader
                 # nothing. The command is the step.
                 command = str(args[0])
                 detail = command if len(command) <= 70 else command[:69] + "…"
                 if not ok:
-                    detail += "（失败）"
+                    detail += "（Failed）"
             self.steps.append(Step(round_no, "vlm", name, detail))
             # The call alone is not an observation: "tap_index(7)" says nothing
             # about whether the tap landed, and a model that cannot tell success
@@ -1760,12 +1760,12 @@ class PhoneAgent:
         # Running out of steps is not the same as failing: often the screen is
         # already where the user wanted it. Say what is on it instead of handing
         # back the word "max_rounds".
-        answer = "这条任务用完了步数上限，没来得及收尾。"
+        answer = "[CH]，[CH]。"
         try:
             last_xml = self.device.dump_ui()
             if self._shade_is_open(last_xml):
                 # Describe the app, not the notifications a stray tap pulled
-                # down: the first version answered with 小米商城通知 / 振铃器振动.
+                # down: the first version answered with [CH]Notification / [CH].
                 try:
                     self.device.press_back()
                     time.sleep(0.6)
@@ -1774,9 +1774,9 @@ class PhoneAgent:
                 last_xml = self.device.dump_ui()
             labels = [text for text, _x, _y in self._ui_texts(last_xml)[:6]]
             app = self._app_label(self._driving_package) if self._driving_package else ""
-            where = f"现在停在「{app}」" if app else "现在停在当前页面"
+            where = f"[CH]「{app}」" if app else "[CH]Page"
             if labels:
-                answer += where + "，屏幕上有：" + "、".join(labels) + "。"
+                answer += where + "，ScreenaboveYes：" + "、".join(labels) + "。"
             else:
                 answer += where + "。"
         except Exception:  # noqa: BLE001 - the answer must not fail the run
@@ -1790,17 +1790,17 @@ class PhoneAgent:
         )
 
     #: Words that make an answer a claim of success rather than a report of failure.
-    _SUCCESS_WORDS = ("已", "成功", "完成", "done", "opened")
-    #: A failure report is never second-guessed, and "没有完成" contains "完成",
+    _SUCCESS_WORDS = ("已", "Success", "Done", "done", "opened")
+    #: A failure report is never second-guessed, and "没YesDone" contains "Done",
     #: so negation is checked first.
-    _FAILURE_WORDS = ("没有", "没能", "未能", "未", "无法", "失败", "不能", "没",
+    _FAILURE_WORDS = ("没Yes", "[CH]", "[CH]", "未", "None法", "Failed", "[CH]", "没",
                       "not ", "couldn't", "cannot", "unable")
 
     #: A question the user asked, rather than an action to perform.
-    _QUESTION_HINTS = ("？", "?", "多少", "几点", "多大", "什么", "哪个")
+    _QUESTION_HINTS = ("？", "?", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]")
 
     #: Answers that decline to look, as opposed to reporting a failure.
-    _REFUSAL_WORDS = ("无法", "看不到", "看不见", "不能直接", "需要查看")
+    _REFUSAL_WORDS = ("None法", "[CH]", "[CH]", "[CH]", "[CH]View")
 
     #: Labels that spend money. Generated maps never contain these (the crawler
     #: refuses to tap them), so this guards the VLM path and hand-edited maps.
@@ -1812,14 +1812,14 @@ class PhoneAgent:
     #: about whether the agent is stuck.
     SCREENLESS_ACTIONS = ("shell", "web_text", "web_network", "wait")
 
-    SPEND_WORDS = ("支付", "付款", "购买", "下单", "提交订单", "确认订单",
-                   "结算", "充值", "打赏", "续费", "开通会员", "立即抢购")
+    SPEND_WORDS = ("Payment", "Payment", "Purchase", "Order", "[CH]Order", "ConfirmOrder",
+                   "[CH]", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]")
 
     #: What an amount looks like on screen, used to say how much is at stake.
-    _AMOUNT_RE = re.compile(r"[¥￥]\s*\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*元|合计.{0,12}元")
+    _AMOUNT_RE = re.compile(r"[¥￥]\s*\d+(?:\.\d+)?|\d+(?:\.\d+)?\s*元|[CH].{0,12}元")
 
     #: Replies that mean "go ahead".
-    _CONSENT_WORDS = ("继续", "确认", "同意", "可以", "好", "行", "yes", "ok", "go")
+    _CONSENT_WORDS = ("Continue", "Confirm", "[CH]", "[CH]", "good", "行", "yes", "ok", "go")
 
     @classmethod
     def _spends_money(cls, label: str) -> bool:
@@ -1829,7 +1829,7 @@ class PhoneAgent:
         if not reply:
             return False
         lowered = (reply or "").strip().lower()
-        if any(word in lowered for word in ("取消", "不要", "别", "no", "stop")):
+        if any(word in lowered for word in ("Cancel", "[CH]", "别", "no", "stop")):
             return False
         return any(word in lowered for word in self._CONSENT_WORDS)
 
@@ -1848,9 +1848,9 @@ class PhoneAgent:
             amount = self._amount_on_screen(self.device.dump_ui())
         except DeviceError:
             pass
-        what = f"「{label}」" + (f"，金额显示为 {amount}" if amount else "")
+        what = f"「{label}」" + (f"，[CH] {amount}" if amount else "")
         question = (
-            f"这一步会花钱：{what}。要继续吗？回复「继续」执行，回复其他任何内容都会取消。"
+            f"[CH]：{what}。wantContinue?？[CH]「Continue」[CH]，[CH]Cancel。"
         )
         if self.ask is None:
             self.steps.append(Step(round_no, "confirm", label, "no one to ask"))
@@ -1942,7 +1942,7 @@ class PhoneAgent:
 
     @staticmethod
     def _today_line() -> str:
-        """"明天" needs a date, and the model has no clock.
+        """"[CH]" needs a date, and the model has no clock.
 
         Measured: asked for tomorrow's weather on 2026-11-11, the agent answered
         with today's date, because nothing in the prompt said what today was.
@@ -1950,11 +1950,11 @@ class PhoneAgent:
         import datetime
 
         now = datetime.datetime.now()
-        week = "一二三四五六日"[now.weekday()]
+        week = "[CH]"[now.weekday()]
         return (
-            f"今天是 {now.year}-{now.month:02d}-{now.day:02d}（周{week}）"
+            f"[CH]Yes {now.year}-{now.month:02d}-{now.day:02d}（周{week}）"
             f" {now.hour:02d}:{now.minute:02d}。"
-            f"用户说「明天」指 {now.year}-{now.month:02d}-{now.day:02d} 的次日。"
+            f"[CH]「[CH]」指 {now.year}-{now.month:02d}-{now.day:02d} [CH]。"
         )
 
     def _vlm_user_prompt(
@@ -2054,13 +2054,13 @@ class PhoneAgent:
             ledger = self._ledger = []
         if ok:
             if name in ("launch", "macro", "open_app") and args:
-                line = f"{name}({args[0]}) 成功"
+                line = f"{name}({args[0]}) Success"
             elif name in ("type", "tap_text", "tap_index"):
-                line = f"{call} 成功"
+                line = f"{call} Success"
             else:
                 return                      # taps and scrolls are noise here
         else:
-            line = f"{call} 失败"
+            line = f"{call} Failed"
         ledger.append(line)
         # keep the shape: a couple of confirmations and the failures still open
         if len(ledger) > 12:
@@ -2070,7 +2070,7 @@ class PhoneAgent:
     def _system_prompt(self) -> str:
         """The instructions for this mode, not a union of both.
 
-        自动 offers macros and must say which ones; 看图 has none, and telling it
+        Auto offers macros and must say which ones; [CH] has none, and telling it
         to "prefer macro()" there was advice it could not follow.
         """
         base = COORDINATE_VLM_PROMPT_TOOLS
@@ -2102,8 +2102,8 @@ class PhoneAgent:
         carry = getattr(self, "_carry", "")
         if not carry:
             return ""
-        return ("## 前面几步已经查到的东西\n"
-                "直接用下面的结果，不要再去问用户已经能查到的信息：\n"
+        return ("## [CH]\n"
+                "[CH]，[CH]Info：\n"
                 + carry)
 
     def _stay_hint(self) -> str:
@@ -2124,15 +2124,15 @@ class PhoneAgent:
         ledger = getattr(self, "_ledger", None) or []
         limit = self.config.max_rounds
         left = max(limit - round_no, 0)
-        lines = [f"## 进度（第 {round_no}/{limit} 步，还剩 {left} 步）"]
+        lines = [f"## [CH]（第 {round_no}/{limit} 步，[CH] {left} 步）"]
         if ledger:
             # failures first: they are the ones worth not repeating
-            failed = [line for line in ledger if line.endswith("失败")][-3:]
-            done = [line for line in ledger if line.endswith("成功")][-4:]
-            lines += [f"  - 已完成：{line[:-3]}" for line in done]
-            lines += [f"  - 已失败：{line[:-3]}（不要重复）" for line in failed]
+            failed = [line for line in ledger if line.endswith("Failed")][-3:]
+            done = [line for line in ledger if line.endswith("Success")][-4:]
+            lines += [f"  - 已Done：{line[:-3]}" for line in done]
+            lines += [f"  - 已Failed：{line[:-3]}（[CH]）" for line in failed]
         else:
-            lines.append("  - 还没有确认任何步骤")
+            lines.append("  - [CH]YesConfirm[CH]")
         return "\n".join(lines)
 
     def _screen_hint(self, xml: str) -> tuple[str, str]:
@@ -2157,8 +2157,8 @@ class PhoneAgent:
     #: Actions after which the screen is expected to change, so the next
     #: observation waits for it to settle. Macro belongs here: a replayed
     #: navigation ends with a tap and its own one-second wait, and without the
-    #: settle the model looked at a half-drawn page -- measured on 小红书, where
-    #: it relaunched the app immediately after a successful 搜索 macro because
+    #: settle the model looked at a half-drawn page -- measured on [CH], where
+    #: it relaunched the app immediately after a successful Search macro because
     #: the screenshot still showed the feed.
     SCREEN_CHANGING = ("tap", "long_press", "swipe", "type", "tap_text", "scroll",
                        "back", "home", "launch", "macro")
@@ -2228,18 +2228,18 @@ class PhoneAgent:
                 try:
                     typed = bool(device.input_text(wanted))
                 except UnsupportedOperation:
-                    # 点评、小红书的搜索框不是无障碍输入框：dump 里连一个可编辑节点
-                    # 都没有，ACTION_SET_TEXT 无处可落，shell 的 `input text` 又只吃
-                    # ASCII。实测（2026-11-15）：它们能收到 ASCII 按键，并把拼音变成
-                    # 中文的搜索建议——所以让模型换拼音，再去点屏幕上那条中文建议。
+                    # [CH]、[CH]Search[CH]YesNone[CH]Input框：dump [CH]Edit[CH]
+                    # [CH]Yes，ACTION_SET_TEXT None[CH]，shell  `input text` [CH]
+                    # ASCII。[CH]（2026-11-15）：[CH] ASCII [CH]，[CH]
+                    # ChineseSearch[CH]——[CH]Model[CH]，[CH]Screen[CH]Chinese[CH]。
                     typed = False
                     if wanted.isascii():
                         raise
                     self.history.append(
-                        f"type({wanted!r}) 打不进去：这个输入框不是无障碍输入框，"
-                        f"只能收到 ASCII 按键。改用拼音再打一次（例如「火锅」→"
-                        f"「huoguo」），然后点屏幕上那条写着中文词的搜索建议，"
-                        f"它就等于替你输入了中文。"
+                        f"type({wanted!r}) [CH]：[CH]Input[CH]YesNone[CH]Input框，"
+                        f"[CH] ASCII [CH]。[CH]（[CH]「[CH]」→"
+                        f"「huoguo」），[CH]Screen[CH]Chinese[CH]Search[CH]，"
+                        f"[CH]InputChinese。"
                     )
                     self.log("[agent] type refused (not an accessible field); pinyin advised")
                     return False
@@ -2282,12 +2282,12 @@ class PhoneAgent:
                 # task was created on; standard (0) and singleTop (1) go where
                 # they are told. The first version of this check refused
                 # everything that was not exactly 1, which is every ordinary
-                # app -- "打开WLAN设置" was refused as if Settings were pinned.
+                # app -- "OpenWLANSettings" was refused as if Settings were pinned.
                 if mode in (2, 3):
                     # A singleTask activity is always delivered to the display
                     # its task already lives on, so it cannot be started on the
                     # virtual one. It can still be driven on the user's screen:
-                    # refusing outright left "现在几点了" unanswerable.
+                    # refusing outright left "[CH]" unanswerable.
                     follow = getattr(device, "follow_to_user_display", None)
                     if follow is not None and follow():
                         name_text = self._app_label(package)
@@ -2304,22 +2304,22 @@ class PhoneAgent:
                             return self._hand_over_app(exc.package)
                     name_text = self._app_label(package)
                     raise _Stranded(
-                        f"「{name_text}」的主界面声明为 singleTask，系统只会把它放在你自己的屏幕上，"
-                        f"而我现在没法跟过去。\n"
-                        f"如果要查的是公开信息，可以让我用内置浏览器查；"
-                        f"如果确实要用「{name_text}」本身，请自己打开它。"
+                        f"「{name_text}」[CH]Interface[CH] singleTask，[CH]Screenabove，"
+                        f"[CH]。\n"
+                        f"[CH]Yes[CH]Info，[CH]；"
+                        f"[CH]「{name_text}」[CH]，[CH]Open它。"
                     )
                 until = self._challenge_until.get(package, 0)
                 if until > time.time():
                     minutes = int((until - time.time()) // 60) + 1
                     raise _Stranded(
-                        f"「{self._app_label(package)}」刚才弹过安全验证，"
-                        f"我暂时不自动操作它（还要 {minutes} 分钟）。"
-                        f"如果验证已经完成，告诉我再试一次。"
+                        f"「{self._app_label(package)}」[CH]SecurityVerify，"
+                        f"[CH]Auto[CH]（[CH] {minutes} [CH]）。"
+                        f"[CH]Verify[CH]Done，[CH]。"
                     )
                 # Launching is a reset: it drops whatever progress the last
                 # action made. A model that keeps relaunching never gets past
-                # the first screen -- measured on 小红书, five launches in one
+                # the first screen -- measured on [CH], five launches in one
                 # task, each one undoing the step before it.
                 launches = getattr(self, "_launch_counts", None)
                 if launches is None:
@@ -2352,16 +2352,16 @@ class PhoneAgent:
                 self._drove_app = True
                 if self._already_in_front(device, package):
                     self.history.append(
-                        f"{self._app_label(package)} 已经开着，就在你眼前的屏幕上。"
-                        f"不要重启它：直接在当前页面操作——type() 输入、"
-                        f"tap_index() 点击、scroll() 滚动。"
+                        f"{self._app_label(package)} [CH]，[CH]Screenabove。"
+                        f"[CH]Restart它：[CH]Page[CH]——type() Input、"
+                        f"tap_index() [CH]、scroll() [CH]。"
                     )
                     self.log("[agent] launch skipped (already in front)")
                     return False
                 # `am start --display N` is delivered to the app's *existing*
                 # task, and a task sitting on the phone's display pulls the
                 # whole launch there. Measured in pure-GUI mode: every launch
-                # of 小红书 came back through pull, three of them, until the
+                # of [CH] came back through pull, three of them, until the
                 # launch cap ended the task. The map's macro does force_stop
                 # first for exactly this reason.
                 if self._only_on_other_display(device, package):
@@ -2605,9 +2605,9 @@ class PhoneAgent:
         minutes = int(CHALLENGE_COOLDOWN // 60)
         return self._result(
             False,
-            f"「{self._app_label(package) if package else '这个 App'}」弹出了安全验证，"
-            f"我已经把它挪到你的屏幕上。请你手动完成验证（或者告诉我换一种方式查），"
-            f"{minutes} 分钟内我不会再自动操作它——反复尝试验证码只会让账号更危险。",
+            f"「{self._app_label(package) if package else '[CH] App'}」Pop upSecurityVerify，"
+            f"[CH]Screenabove。[CH]ManualDoneVerify（[CH]），"
+            f"{minutes} [CH]Auto[CH]——[CH]Verify[CH]Account[CH]。",
             "challenge",
             round_no,
         )
@@ -2624,36 +2624,36 @@ class PhoneAgent:
         # asking them to take over is a pointless question with no answer.
         if self._launch_mode(package) in (2, 3):
             raise _Stranded(
-                f"「{name}」的主界面声明为 singleTask，系统只会把它放在你自己的屏幕上，"
-                f"agent 无法在它的屏幕上操作。\n"
-                f"如果你要查的是天气、新闻、价格这类公开信息，可以让我用内置浏览器查；"
-                f"如果确实要用「{name}」本身，请自己打开它。"
+                f"「{name}」[CH]Interface[CH] singleTask，[CH]Screenabove，"
+                f"agent None[CH]Screen[CH]。\n"
+                f"[CH]Yes[CH]、[CH]、Price[CH]Info，[CH]；"
+                f"[CH]「{name}」[CH]，[CH]Open它。"
             )
         if package in getattr(self, "_handed_over", set()):
             raise _Stranded(
-                f"「{name}」只能在你的屏幕上操作，已经帮你打开了，请自己完成剩下的步骤。"
+                f"「{name}」[CH]Screen[CH]，[CH]Open，[CH]Done[CH]。"
             )
         self._handed_over = getattr(self, "_handed_over", set())
         self._handed_over.add(package)
         if self.ask is None:
             raise _Stranded(
-                f"「{name}」只能在你的屏幕上操作，需要你自己打开并完成。"
+                f"「{name}」[CH]Screen[CH]，[CH]Open并Done。"
             )
         reply = self.ask(
-            f"「{name}」已经打开在你的屏幕上了，这一步需要你亲自完成（登录、验证码或授权）。\n"
-            "完成后回复「好了」，我会接着做；回复「取消」就放弃。"
+            f"「{name}」[CH]Open[CH]Screen[CH]，[CH]Done（Login、Verify[CH]Authorize）。\n"
+            "Done[CH]「[CH]」，[CH]；[CH]「Cancel」[CH]。"
         )
         self.steps.append(Step(0, "handover", package, f"{reply or 'no reply'}"))
-        if not reply or any(word in reply for word in ("取消", "算了", "放弃", "cancel", "no")):
+        if not reply or any(word in reply for word in ("Cancel", "[CH]", "[CH]", "cancel", "no")):
             self.history.append(f"hand_over: cancelled by the user ({reply!r})")
-            raise _Stranded(f"你取消了「{package}」这一步，任务停在这里。")
+            raise _Stranded(f"你Cancel「{package}」[CH]，[CH]。")
         try:
             self.device.launch(package)
             return True
         except NeedsHandover:
             raise _Stranded(
-                f"「{name}」只能在你自己的屏幕上运行，agent 无法在它的屏幕上继续。"
-                f"已经帮你打开了，剩下的步骤请自己完成。"
+                f"「{name}」[CH]Screen[CH]，agent None[CH]ScreenaboveContinue。"
+                f"[CH]Open，[CH]Done。"
             ) from None
         except DeviceError:
             return False
@@ -2663,7 +2663,7 @@ class PhoneAgent:
     #: Commands that drive the phone rather than look at it. `am start` from
     #: here opens the app on whichever display the system likes -- the escape
     #: the agent then has to undo (measured: 8 shell calls in one 38-step run,
-    #: most of them re-opening 小红书 or dumping window state). Launching has its
+    #: most of them re-opening [CH] or dumping window state). Launching has its
     #: own tool, which knows about displays; this one is for looking things up.
     SHELL_DRIVING = (
         "am start", "am force-stop", "am display", "monkey", "input ",
@@ -2688,8 +2688,8 @@ class PhoneAgent:
             self.history.append("shell: nobody to confirm a destructive command with")
             return False
         reply = self.ask(
-            f"这条命令会改动手机：\n{command}\n要继续吗？回复「继续」执行，"
-            "其他任何内容都会取消。"
+            f"[CH]Phone：\n{command}\nwantContinue?？[CH]「Continue」[CH]，"
+            "[CH]Cancel。"
         )
         allowed = self._consents(reply)
         self.steps.append(Step(0, "confirm", command[:40],
@@ -2700,7 +2700,7 @@ class PhoneAgent:
         """The app is running, but not as a task on the display being driven.
 
         `am start --display N` is delivered to the app's *existing* task, and
-        小红书's singleTask 首页 keeps its task on the phone's display: launching
+        [CH]'s singleTask Home keeps its task on the phone's display: launching
         it that way moved the whole app there (measured four times in one
         pure-GUI run, each followed by a pull-back). The map's macro does
         force_stop first, and that is why map mode starts on our display.
@@ -2716,7 +2716,7 @@ class PhoneAgent:
     def _already_in_front(self, device, package: str) -> bool:
         """The app is the one on screen right now, so launch() would be a reset.
 
-        Each reset re-opens 小红书's last page, and its search page moves the
+        Each reset re-opens [CH]'s last page, and its search page moves the
         whole task to the user's screen: measured, three launches and four
         pull-backs inside a 19-step run where the macro had already opened the
         page being asked for.
@@ -2878,11 +2878,11 @@ class PhoneAgent:
             return False
         weblib.ensure_open(self.device, url, display=0)
         reply = self.ask(
-            "这个网站要人机验证，已经把它打开在你的屏幕上了。\n"
-            "完成后回复「好了」，我会接着做；回复「取消」就放弃。"
+            "[CH]Verify，[CH]Open[CH]Screen[CH]。\n"
+            "Done[CH]「[CH]」，[CH]；[CH]「Cancel」[CH]。"
         )
         self.steps.append(Step(0, "handover", url[:80], f"{reply or 'no reply'}"))
-        if not reply or any(word in reply for word in ("取消", "算了", "放弃", "cancel", "no")):
+        if not reply or any(word in reply for word in ("Cancel", "[CH]", "[CH]", "cancel", "no")):
             self.history.append("web: the user declined the verification step")
             return False
         reopened = weblib.ensure_open(self.device, url)
@@ -2916,9 +2916,9 @@ class PhoneAgent:
             except DeviceError:
                 moved = False
         question = (
-            f"需要你亲自操作：{reason or '这一步只有你能做'}。\n"
-            + (f"「{package}」已经切到你的屏幕上。" if moved else "")
-            + "完成后回复「好了」，我会接着做；回复「取消」就放弃这一步。"
+            f"[CH]：{reason or '[CH]Yes[CH]'}。\n"
+            + (f"「{package}」[CH]Screenabove。" if moved else "")
+            + "Done[CH]「[CH]」，[CH]；[CH]「Cancel」[CH]。"
         )
         reply = self.ask(question)
         # whatever they did, the agent works on its own display: bring it back
@@ -2931,7 +2931,7 @@ class PhoneAgent:
         if reply is None:
             self.history.append("hand_over: no reply")
             return False
-        if any(word in reply for word in ("取消", "算了", "放弃", "cancel", "no")):
+        if any(word in reply for word in ("Cancel", "[CH]", "[CH]", "cancel", "no")):
             self.history.append(f"hand_over: cancelled by the user ({reply!r})")
             return False
         self.history.append(f"hand_over: done by the user ({reply!r})")
@@ -2972,7 +2972,7 @@ class PhoneAgent:
         # Pull first, follow only when pulling keeps failing.
         #
         # Following was the default because a pull costs a round and a fresh
-        # screenshot, and 小红书 pulled four times in one task. The price of
+        # screenshot, and [CH] pulled four times in one task. The price of
         # that choice is bigger than the rounds: the phone is taken over for
         # the rest of the task, which is what people notice. A pull is tried
         # first now; after two refusals for the same app the agent follows for
@@ -2999,7 +2999,7 @@ class PhoneAgent:
                     self._last_escape = "pull"
                     # Two rounds in which launching is refused: the app is on
                     # our display and on the page it was; relaunching it is
-                    # what re-opens 小红书's search page on the user's screen.
+                    # what re-opens [CH]'s search page on the user's screen.
                     self._launch_grace = 2
                     self.steps.append(
                         Step(round_no, "pull", self._app_label(package),
@@ -3025,8 +3025,8 @@ class PhoneAgent:
                              "moved to the user's display")
                     )
                     self.history.append(
-                        f"{self._app_label(package)} 的一个页面跳到了你的屏幕上，"
-                        f"我先在你的屏幕上继续做，结束后再挪回去。"
+                        f"{self._app_label(package)} [CH]Page[CH]Screenabove，"
+                        f"[CH]ScreenaboveContinue做，End[CH]。"
                     )
                     return True
             except DeviceError:
@@ -3041,15 +3041,15 @@ class PhoneAgent:
                     self._last_escape = "pull"
                     # Two rounds in which launching is refused: the app is on
                     # our display and on the page it was; relaunching it is
-                    # what re-opens 小红书's search page on the user's screen.
+                    # what re-opens [CH]'s search page on the user's screen.
                     self._launch_grace = 2
                     self.steps.append(
                         Step(round_no, "pull", self._app_label(package),
                              "moved back to the agent's display")
                     )
                     self.history.append(
-                        f"{self._app_label(package)} 的一个页面跳到了你的屏幕上，"
-                        f"我把它搬回了自己的屏幕，继续在后台做。"
+                        f"{self._app_label(package)} [CH]Page[CH]Screenabove，"
+                        f"[CH]Screen，Continue[CH]。"
                     )
                     return True
             except DeviceError:
@@ -3057,7 +3057,7 @@ class PhoneAgent:
         if getattr(self, "_dragged_back", False):
             # It came back once and escaped again: this app puts itself on the
             # user's display no matter what. Rather than stop, follow it -- the
-            # agent can drive display 0 exactly like its own, and 托管模式 is a
+            # agent can drive display 0 exactly like its own, and [CH]Mode is a
             # preference about where to start, not a permission.
             follow = getattr(self.device, "follow_to_user_display", None)
             if follow is not None and follow():
@@ -3085,9 +3085,9 @@ class PhoneAgent:
                 return True
             name_text = self._app_label(package)
             raise _Stranded(
-                f"「{name_text}」两次把自己放到了你自己的屏幕上，而我没法跟过去。\n"
-                f"请打开「设置 → 怎么操作手机 → 用你的屏幕操作（托管）」，"
-                f"或者你自己打开它，把要查的东西告诉我。"
+                f"「{name_text}」[CH]Screenabove，[CH]。\n"
+                f"请Open「Settings → [CH]Phone → [CH]Screen[CH]（[CH]）」，"
+                f"[CH]Open它，[CH]。"
             )
         self._dragged_back = True
         self._last_escape = "escaped"
@@ -3112,7 +3112,7 @@ class PhoneAgent:
         Measured on this phone: with the shade fully open the tree holds 260
         nodes, every one of them com.android.systemui, and the app's window is
         gone entirely. So the reliable test is "nothing but system chrome" --
-        an earlier version looked for "<app>通知：" titles, which MIUI renders as
+        an earlier version looked for "<app>Notification：" titles, which MIUI renders as
         content descriptions on a group header and not as text, so it never
         matched.
         """
@@ -3121,7 +3121,7 @@ class PhoneAgent:
         packages = {name for name in _PACKAGE_RE.findall(xml) if name}
         if not packages:
             return False
-        # Nothing but chrome. The earlier "several 通知： labels" rule was wrong:
+        # Nothing but chrome. The earlier "several Notification： labels" rule was wrong:
         # MIUI puts those labels on the status-bar icons, so they are present
         # with the shade closed -- every task then stopped on its first round
         # believing the shade was open.
@@ -3261,7 +3261,7 @@ class PhoneAgent:
                     launch_intent=app_map.launch_intent,
                 ).run(op.macro).ok
         # Say so, or the model tries the same unknown target until the loop
-        # detector stops the run: measured on "登录淘宝账号", where it called
+        # detector stops the run: measured on "Login[CH]Account", where it called
         # macro() three times for an app that has no map at all.
         self.history.append(f"macro: no target {target!r} in any loaded map")
         return False
@@ -3302,28 +3302,28 @@ class PhoneAgent:
         # running on another display says "skipped", not "ok".
         if any(step.kind == "macro" and str(step.detail).startswith("macro ok")
                for step in self.steps):
-            done.append("打开了目标页面")
+            done.append("Open[CH]Page")
         elif any(step.kind == "vlm" and step.action == "macro" and step.detail == "ok"
                  for step in self.steps):
-            done.append("沿已知路径操作过")
+            done.append("[CH]Path[CH]")
         if any(step.action == "launch" and step.detail == "ok" for step in self.steps):
-            done.append("启动过 App")
+            done.append("Start App")
         if any(step.action == "type" and step.detail == "ok" for step in self.steps):
-            done.append("输入过文字")
+            done.append("Input[CH]")
         # A decomposed task does its work in subtasks, so the parent sees none
-        # of the above: measured, a run that finished the 小红书 subtask and then
+        # of the above: measured, a run that finished the [CH] subtask and then
         # ran out of steps on the web one reported a bare failure.
         subtasks = [step for step in self.steps
                     if step.kind == "subtask" and str(step.detail).startswith("ok")]
         if subtasks:
-            done.append(f"完成了 {len(subtasks)} 个子任务")
+            done.append(f"Done {len(subtasks)} [CH]")
         return done
 
     def _partial_answer(self, missing: str) -> str:
         done = self._achieved()
         if not done:
             return missing
-        return "做到了一半：" + "、".join(done) + "。" + missing
+        return "[CH]：" + "、".join(done) + "。" + missing
 
     def _result(
         self,

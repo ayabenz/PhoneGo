@@ -130,14 +130,14 @@ def detect_answer_test(args):
 
 
 @backoff.on_exception(backoff.expo,
-                      Exception,  # 捕获所有异常
+                      Exception,  # [CH]Yes[CH]
                       max_tries=5,
-                      on_backoff=handle_backoff,  # 指定重试时的回调函数
-                      giveup=handle_giveup)  # 指定放弃重试时的回调函数
+                      on_backoff=handle_backoff,  # [CH]Retry[CH]
+                      giveup=handle_giveup)  # [CH]Retry[CH]
 def get_completion_glm(prompt, glm4_key):
     client = ZhipuAI(api_key=glm4_key)
     response = client.chat.completions.create(
-        model="glm-4",  # 填写需要调用的模型名称
+        model="glm-4",  # [CH]Model[CH]
         messages=[
             {"role": "user", "content": prompt},
         ],
@@ -145,10 +145,10 @@ def get_completion_glm(prompt, glm4_key):
     return response.choices[0].message.content
 
 @backoff.on_exception(backoff.expo,
-                      Exception,  # 捕获所有异常
+                      Exception,  # [CH]Yes[CH]
                       max_tries=5,
-                      on_backoff=handle_backoff,  # 指定重试时的回调函数
-                      giveup=handle_giveup)  # 指定放弃重试时的回调函数
+                      on_backoff=handle_backoff,  # [CH]Retry[CH]
+                      giveup=handle_giveup)  # [CH]Retry[CH]
 def get_completion_gpt(prompt, model_name):
     client = OpenAI()
     messages = [{

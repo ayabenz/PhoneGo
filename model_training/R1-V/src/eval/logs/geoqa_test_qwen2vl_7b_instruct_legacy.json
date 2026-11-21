@@ -602,7 +602,7 @@
         "ground_truth": "35°"
       },
       "ground_truth": "35°",
-      "model_output": "<think>\n根据平行线的性质，∠1和∠2是对顶角，所以它们的度数相等。因此，∠2的度数等于∠1的度数。\n</think>\n<answer>\n55.0</answer>",
+      "model_output": "<think>\n[CH]，∠1和∠2Yes[CH]，[CH]。[CH]，∠2[CH]∠1[CH]。\n</think>\n<answer>\n55.0</answer>",
       "extracted_answer": "55.0000000000000",
       "is_correct": false
     },
@@ -1526,7 +1526,7 @@
         "ground_truth": "10.8m"
       },
       "ground_truth": "10.8m",
-      "model_output": "<think>\n根据相似三角形的性质，树的高度与树的影子长度的比等于小明的高度与小明的影子长度的比。即：AB/BC = 1.8/1.5。解这个比例方程，我们可以找到树的高度AB。\n</think>\n<answer>\nAB = 1.8 * BC / 1.5 = 1.8 * 9.0 / 1.5 = 10.8\n</answer>",
+      "model_output": "<think>\n[CH]，[CH]。即：AB/BC = 1.8/1.5。[CH]，[CH]AB。\n</think>\n<answer>\nAB = 1.8 * BC / 1.5 = 1.8 * 9.0 / 1.5 = 10.8\n</answer>",
       "extracted_answer": "10.8000000000000",
       "is_correct": true
     },
@@ -1559,7 +1559,7 @@
         "ground_truth": "75cm"
       },
       "ground_truth": "75cm",
-      "model_output": "<think>根据相似三角形的性质，当物距和像距的比值相等时，物高和像高的比值也相等。即：物高/像高 = 物距/像距。所以，物高/像高 = 物距/像距，即：20.0/4.0 = 15.0/x。解这个方程，得到 x = 30.0。所以，距离应该为30.0。 </think>\n<answer>30.0</answer>",
+      "model_output": "<think>[CH]，[CH]，[CH]。即：[CH]/[CH] = [CH]/[CH]。[CH]，[CH]/[CH] = [CH]/[CH]，即：20.0/4.0 = 15.0/x。[CH]，[CH] x = 30.0。[CH]，[CH]30.0。 </think>\n<answer>30.0</answer>",
       "extracted_answer": "30.0000000000000",
       "is_correct": false
     },
@@ -1614,7 +1614,7 @@
         "ground_truth": "\\frac{4}{3}米"
       },
       "ground_truth": "\\frac{4}{3}米",
-      "model_output": "<think>根据题意，可以将问题转化为一个直角三角形的问题。已知球拍击球点到网的距离为4米，球拍击球点到落地点的距离为6米，球网高度为0.8米。根据勾股定理，可以求出球拍击球点到球落地点的水平距离。然后，根据球拍击球点到球落地点的水平距离和球网高度，可以求出球拍击球点的高度。具体计算过程如下：首先，根据勾股定理，可以求出球拍击球点到球落地点的水平距离为sqrt(4^2 + 6^2) = 7.2米。然后，根据球拍击球点到球落地点的水平距离和球网高度，可以求出球拍击球点的高度为sqrt(7.2^2 - 0.8^2) = 6.8米。因此，球拍击球点的高度为6.8米。</think>\n<answer>6.8</answer>",
+      "model_output": "<think>[CH]，[CH]。[CH]4米，[CH]6米，[CH]0.8米。[CH]，[CH]。[CH]，[CH]，[CH]。[CH]：[CH]，[CH]，[CH]sqrt(4^2 + 6^2) = 7.2米。[CH]，[CH]，[CH]sqrt(7.2^2 - 0.8^2) = 6.8米。[CH]，[CH]6.8米。</think>\n<answer>6.8</answer>",
       "extracted_answer": "6.80000000000000",
       "is_correct": false
     },
@@ -3525,9 +3525,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/320.png",
         "question": "As shown in the figure, a torus carpet is to be laid in the lobby of a hotel. The worker only measures the length of the chord AB of the great circle that is tangent to the small circle, and then calculates the area of ​​the torus. If the measured length of AB is 8.0, the area of ​​the torus is ()",
-        "ground_truth": "16π平方米"
+        "ground_truth": "16π[CH]"
       },
-      "ground_truth": "16π平方米",
+      "ground_truth": "16π[CH]",
       "model_output": "<think> The area of a torus is given by the formula \\( A = 2\\pi^2 Rr \\), where \\( R \\) is the distance from the center of the torus to the center of the tube, and \\( r \\) is the radius of the tube. In this case, we are given the length of the chord AB, which is 8.0. This chord is the diameter of the small circle, so the radius of the small circle is 4.0. We can use the Pythagorean theorem to find the distance from the center of the torus to the center of the tube, which is the radius of the large circle. Let's denote this distance as \\( R \\). We have \\( R^2 = 4.0^2 + 4.0^2 \\), so \\( R = \\sqrt{4.0^2 + 4.0^2} = 5.65685424949\\). Now we can calculate the area of the torus using the formula \\( A = 2\\pi^2 Rr \\), where \\( r = 4.0 \\) and \\( R = 5.65685424949 \\). So, \\( A = 2\\pi^2 \\times 5.65685424949 \\times 4.0 \\approx 351.73 \\). Therefore, the area of the torus is approximately 351.73 square units.</think>\n<answer>351.73</answer>",
       "extracted_answer": "351.730000000000",
       "is_correct": false
@@ -4419,7 +4419,7 @@
         "ground_truth": "142°"
       },
       "ground_truth": "142°",
-      "model_output": "<think>根据题意，汽车经过两次转弯后，回到原来的行驶方向，说明两次转弯的角度之和为180°。已知第一个转弯角度B为142°，所以第二个转弯角度C为180°-142°=38°。因此，第二个转弯角度C为38°。</think>\n<answer>38</answer>",
+      "model_output": "<think>[CH]，[CH]，[CH]，Instruction[CH]180°。[CH]Bfor142°，[CH]Cfor180°-142°=38°。[CH]，[CH]Cfor38°。</think>\n<answer>38</answer>",
       "extracted_answer": "38",
       "is_correct": false
     },
@@ -4999,10 +4999,10 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/454.png",
         "question": "As shown in the figure, a cargo ship sails from point A to point D in the east direction at a speed of 24.0 nautical mile/hour. At point A, a certain island C is measured in the direction 60.0 east by north. The cargo ship arrived at point B after sailing for 30.0 minutes. At this time, it was measured that the island is in the direction 30.0 east by north. Then the shortest distance between the cargo ship and the island C is ()",
-        "ground_truth": "6√{3}海里"
+        "ground_truth": "6√{3}[CH]"
       },
-      "ground_truth": "6√{3}海里",
-      "model_output": "<think>\n根据题意，我们可以知道，AB=24×0.5=12，∠CAB=60°，∠ABC=30°，所以∠ACB=90°，所以AC=12×tan60°=24√3，所以AB=24，所以BC=24√3-12，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=24√3，所以AB=24，所以BC=24√3-12，所以AC=",
+      "ground_truth": "6√{3}[CH]",
+      "model_output": "<think>\n[CH]，[CH]，AB=24×0.5=12，∠CAB=60°，∠ABC=30°，[CH]∠ACB=90°，[CH]AC=12×tan60°=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=24√3，[CH]AB=24，[CH]BC=24√3-12，[CH]AC=",
       "extracted_answer": "24",
       "is_correct": false
     },
@@ -5120,9 +5120,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/465.png",
         "question": "As shown in the figure, in triangle ABC, AB = 10.0, AC = 18.0, point M starts from point A and moves to point B at a speed of 2.0 per second, and point N starts from point C and moves to point A at a speed of 3.0 per second. One of the moving points reaches the endpoint, and the other moving point also stops. When triangle AMN is an isosceles triangle with MN as the base, the movement time is ()",
-        "ground_truth": "3.6秒"
+        "ground_truth": "3.6second"
       },
-      "ground_truth": "3.6秒",
+      "ground_truth": "3.6second",
       "model_output": "<think>Given that triangle AMN is an isosceles triangle with MN as the base, we can deduce that AM = AN. Since point M moves from A to B at a speed of 2.0 per second, and point N moves from C to A at a speed of 3.0 per second, we can set up the equation: 10 - 2t = 18 - 3t, where t is the time in seconds. Solving this equation, we get t = 2 seconds. Therefore, the movement time is 2 seconds.</think>\n<answer>2</answer>",
       "extracted_answer": "2",
       "is_correct": false
@@ -5296,9 +5296,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/481.png",
         "question": "As shown in the figure, it is known that the length of one waist AB of the isosceles triangle ABC is 4.0 centimetres. Cross any point D on the bottom edge BC to draw two waist parallel lines, and they intersect the two waists at E and F respectively, then the perimeter of the quadrilateral AEDF is ()",
-        "ground_truth": "8厘米"
+        "ground_truth": "8[CH]"
       },
-      "ground_truth": "8厘米",
+      "ground_truth": "8[CH]",
       "model_output": "<think> Since DE is parallel to AB and DF is parallel to AC, quadrilateral AEDF is a parallelogram. Therefore, the perimeter of quadrilateral AEDF is equal to the sum of the lengths of its four sides, which is equal to the sum of the lengths of the two bases and the two heights of the isosceles triangle ABC. Since the length of the base AB is 4.0 cm, the perimeter of quadrilateral AEDF is 4.0 cm + 4.0 cm = 8.2 cm.</think>\n<answer>8.2</answer>",
       "extracted_answer": "8.20000000000000",
       "is_correct": false
@@ -5318,9 +5318,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/483.png",
         "question": "A ship departs from point A on the sea level and travels 40.0 nautical miles to the west by south direction 40.0 to point B, and then travels 40.0 nautical miles from point B to the west by north 20.0 direction to point C, then the distance between A and C is ( )",
-        "ground_truth": "40海里"
+        "ground_truth": "40[CH]"
       },
-      "ground_truth": "40海里",
+      "ground_truth": "40[CH]",
       "model_output": "<think> The ship travels 40.0 nautical miles from point A to point B in the west by south direction, and then travels 40.0 nautical miles from point B to point C in the west by north 20.0 direction. This means that the ship travels in a straight line from point A to point C. Therefore, the distance between A and C is the same as the distance between point A and point B, which is 40.0 nautical miles.</think>\n<answer>40.0</answer>",
       "extracted_answer": "40.0000000000000",
       "is_correct": true
@@ -5549,9 +5549,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/504.png",
         "question": "As shown in the figure, it is known that there is a laser auxiliary signal within a certain range of the lighthouse M. A ship is sailing at a constant speed from south by north at a constant speed at sea. The ship measured at A and measured that the lighthouse M was in the direction 30.0 to the east by north, and it traveled 1.0. Arrived at point B after hours, and just entered the laser signal area of ​​lighthouse M at this time. It is measured that lighthouse M is in the direction of 45.0 east by north, then the time for the ship to pass the laser signal area of ​​lighthouse M is ()",
-        "ground_truth": "(√{3}+1)小时"
+        "ground_truth": "(√{3}+1)[CH]"
       },
-      "ground_truth": "(√{3}+1)小时",
+      "ground_truth": "(√{3}+1)[CH]",
       "model_output": "<think> The ship's movement forms a right triangle with the lighthouse M as the right angle. The angle at A is 30°, and the angle at B is 45°. The distance AB is 1.0. We can use the sine function to find the distance from the ship to the lighthouse M. Then, we can use the sine function again to find the time it takes for the ship to pass the laser signal area of the lighthouse M. The distance from the ship to the lighthouse M is 1.0 / sin(30°) = 2.306. The time it takes for the ship to pass the laser signal area of the lighthouse M is 2.306 / 1.0 = 2.306 hours. Therefore, the answer is 2.306. </think>\n<answer>2.306</answer>",
       "extracted_answer": "2.30600000000000",
       "is_correct": false
@@ -5560,9 +5560,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/505.png",
         "question": "As shown in the figure, at 8.0 in the morning, a ship departs from point A and sails northward at a speed of 15.0 nautical miles/hour, and arrives at point B at 9.0 and 40.0 minutes. From point A, lighthouse C is measured in the direction 26.0 west by north. From point B, lighthouse C is measured in the 52.0 direction west of north, then the distance from point B to lighthouse C is ()",
-        "ground_truth": "25海里"
+        "ground_truth": "25[CH]"
       },
-      "ground_truth": "25海里",
+      "ground_truth": "25[CH]",
       "model_output": "<think>\nThe distance from point B to lighthouse C can be calculated using the law of cosines. First, we need to find the distance AB. Since the ship sails at a speed of 15.0 nautical miles/hour, and the time taken to travel from A to B is 40.0 minutes, the distance AB is 15.0 * (40.0 / 60) = 10.0 nautical miles. Then, we can use the law of cosines to find the distance BC. The angle between AB and BC is 52.0 - 26.0 = 26.0 degrees. Therefore, the distance BC is √(10.0² + 10.0² - 2 * 10.0 * 10.0 * cos(26.0)) = 14.0 nautical miles.\n</think>\n<answer>14.4</answer>",
       "extracted_answer": "14.0000000000000",
       "is_correct": false
@@ -5571,10 +5571,10 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/506.png",
         "question": "At 9.0 in the morning, a ship departs from point A and sails in the direction due east at a speed of 40.0 nautical miles per hour, and arrives at point B at 9.0 and 30.0 minutes. As shown in the figure, the island M is measured from A and B. In the direction of 45.0 north by east and 15.0 north by east, then the distance between B and island M is ()",
-        "ground_truth": "20√{2}海里"
+        "ground_truth": "20√{2}[CH]"
       },
-      "ground_truth": "20√{2}海里",
-      "model_output": "<think>\n根据题意，我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们需要求出B点和M点之间的距离。\n首先，我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点，然后从B点出发，向北偏东45度和北偏东15度的方向航行，到达M点。我们可以知道，船从A点出发，向东航行，到达B点",
+      "ground_truth": "20√{2}[CH]",
+      "model_output": "<think>\n[CH]，[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]B[CH]M[CH]。\n[CH]，[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick，[CH]B[CH]，[CH]45[CH]15[CH]，[CH]Mclick。[CH]，[CH]A[CH]，[CH]，[CH]Bclick",
       "extracted_answer": null,
       "is_correct": false
     },
@@ -5593,9 +5593,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/508.png",
         "question": "As shown in the figure, it is known that a fisherman on a fishing boat sees lighthouse M in the direction 60.0 east by north at point A. This fishing boat sails eastward at a speed of 28.0 nautical miles/hour, and arrives at point B in half an hour, and sees it at point B The lighthouse M is in the 15.0 direction to the east by north. At this time, the distance between the lighthouse M and the fishing boat is ()",
-        "ground_truth": "7√{2}海里"
+        "ground_truth": "7√{2}[CH]"
       },
-      "ground_truth": "7√{2}海里",
+      "ground_truth": "7√{2}[CH]",
       "model_output": "<think>\nThe problem involves the application of trigonometry to find the distance between the lighthouse M and the fishing boat. The fishing boat moves from point A to point B in half an hour, covering a distance of 28.0 nautical miles. This means the fishing boat moves 14.0 nautical miles in the east direction. The angle between the north direction and the line AB is 60 degrees. We can use the cosine rule to find the distance between the lighthouse M and the fishing boat. The cosine rule states that in a triangle ABC, where AB = c, BC = a, AC = b, and angle BAC = α, the length of side AC can be found using the formula: AC^2 = AB^2 + BC^2 - 2 * AB * BC * cos(α). In this case, AB = 14.0, BC = 15.0, and angle BAC = 60 degrees. Substituting these values into the formula, we can find the distance between the lighthouse M and the fishing boat.\n</think>\n<answer>\n16.2 nautical miles",
       "extracted_answer": "16.2000000000000",
       "is_correct": false
@@ -5783,7 +5783,7 @@
         "ground_truth": "2√{5}"
       },
       "ground_truth": "2√{5}",
-      "model_output": "<think>\n根据题意，斜坡的坡度为1:2，即垂直高度与水平距离的比为1:2。已知垂直高度为2米，可以计算出水平距离为4米。因此，物体从A点到B点的距离为2米（垂直高度）+4米（水平距离）=6米。\n</think>\n<answer>\n6米",
+      "model_output": "<think>\n[CH]，[CH]1:2，[CH]1:2。[CH]2米，[CH]4米。[CH]，[CH]A[CH]B[CH]2米（[CH]）+4米（[CH]）=6米。\n</think>\n<answer>\n6米",
       "extracted_answer": "6",
       "is_correct": false
     },

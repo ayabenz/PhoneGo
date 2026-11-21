@@ -46,7 +46,7 @@ def print_image_size(image_path):
         return width, height
         
     except Exception as e:
-        print(f"读取图片时发生错误: {e}")
+        print(f"[CH]Error: {e}")
 
 SYSTEM_PROMPT_ANDROID_SFT_o1 = '''
 You are an intelligent agent that performs smartphone tasks by interacting with UI elements labeled with numeric tags.

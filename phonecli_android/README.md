@@ -1,6 +1,6 @@
 # phonecli_android
 
-**English** · [中文文档](./README_CN.md)
+**English** · [ChineseDocumentation](./README_CN.md)
 
 Android GUI-agent harness for the **AndroidLab** benchmark (9 apps / 138 tasks).
 It runs two agents over the same task suite:
@@ -167,7 +167,7 @@ screens:
         fixed: false
         found_at_scroll: 0
         leads_to: screen_0            # self-loop = no navigation
-        aliases: [闹钟, alarms, alarm tab]
+        aliases: [[CH], alarms, alarm tab]
         semantic_type: tab
 screen_macros:                        # full replay path from screen_0, absolute pixels
   screen_1:

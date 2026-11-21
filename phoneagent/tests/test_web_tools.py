@@ -84,11 +84,11 @@ def test_a_url_task_skips_the_planner_and_the_maps():
     from phoneagent.core.llm import MockLLM
 
     device = MockDevice()
-    llm = MockLLM(vision_responses=["finish(读完了)"])
+    llm = MockLLM(vision_responses=["finish([CH])"])
     agent = PhoneAgent(device, [], llm,
                        config=AgentConfig(max_rounds=3, planner_enabled=True),
                        sleep=lambda _s: None)
-    result = agent.run("打开 https://example.com 并告诉我这页说了什么")
+    result = agent.run("Open https://example.com [CH]")
 
     kinds = [step.kind for step in agent.steps]
     assert "plan" not in kinds and "subtask" not in kinds
@@ -117,7 +117,7 @@ def test_the_page_supplies_the_signature_on_a_webview_screen(monkeypatch):
 
 def test_a_verification_wall_goes_to_the_user_and_then_continues(monkeypatch):
     """The page is shown on the user's display, then reloaded and checked."""
-    state = {"blocked": "title says '安全验证'", "opens": []}
+    state = {"blocked": "title says 'SecurityVerify'", "opens": []}
 
     class Page:
         bridge = object()
@@ -137,11 +137,11 @@ def test_a_verification_wall_goes_to_the_user_and_then_continues(monkeypatch):
     monkeypatch.setattr("phoneagent.web.ensure_open", fake_ensure_open)
 
     asked = []
-    agent = _agent(MockDevice(), ask=lambda q: asked.append(q) or "好了",
+    agent = _agent(MockDevice(), ask=lambda q: asked.append(q) or "[CH]",
                    macro_enabled=False, planner_enabled=False)
 
     assert agent._clear_verification("https://example.com/verify") is True
-    assert asked and "验证" in asked[0]
+    assert asked and "Verify" in asked[0]
     assert state["opens"][0][1] == 0     # first on the user's display
     assert state["opens"][-1][1] == -1   # then back on the agent's
 
@@ -151,7 +151,7 @@ def test_declining_the_verification_stops_the_step(monkeypatch):
         bridge = object()
 
         def blocked(self):
-            return "title says '安全验证'"
+            return "title says 'SecurityVerify'"
 
         def url(self):
             return "https://example.com/verify"
@@ -159,7 +159,7 @@ def test_declining_the_verification_stops_the_step(monkeypatch):
     monkeypatch.setattr("phoneagent.web.page", lambda: Page())
     monkeypatch.setattr("phoneagent.web.ensure_open", lambda d, u, display=-1: u)
 
-    agent = _agent(MockDevice(), ask=lambda q: "取消",
+    agent = _agent(MockDevice(), ask=lambda q: "Cancel",
                    macro_enabled=False, planner_enabled=False)
     assert agent._clear_verification("https://example.com/verify") is False
     assert any("declined" in line for line in agent.history)

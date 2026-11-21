@@ -14,7 +14,7 @@ from phoneagent.redact import (
     redact_map,
 )
 
-MAP = """app: 设置
+MAP = """app: Settings
 package: com.android.settings
 screen_w: 1280
 screen_h: 2772
@@ -23,7 +23,7 @@ screens:
   elements:
   - text: yangqin
     center: [0.2, 0.3]
-  - text: 手机号：181****8488
+  - text: Phone号：181****8488
     center: [0.2, 0.4]
   - text: me@example.com
     center: [0.2, 0.5]
@@ -51,13 +51,13 @@ def _write(tmp_path: Path) -> Path:
 
 
 def test_redact_text_masks_phone_email_and_terms():
-    text, changed = _redact_text("手机号：181****8488", [])
+    text, changed = _redact_text("Phone号：181****8488", [])
     assert changed and PHONE_TOKEN in text and "181****8488" not in text
 
     text, changed = _redact_text("me@example.com", [])
     assert changed and text == EMAIL_TOKEN
 
-    text, changed = _redact_text("yangqin的REDMI K90", ["yangqin"])
+    text, changed = _redact_text("yangqinREDMI K90", ["yangqin"])
     assert changed and text.startswith(PERSONAL_TOKEN)
 
 

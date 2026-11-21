@@ -102,14 +102,14 @@ def describe(path: str, package: str) -> str:
         return ""
     note = str(entry.get("note", "") or "")
     if note:
-        return f"这个 App 被标记为有风控（{note}）"
+        return f"[CH] App [CH]Yes[CH]（{note}）"
     count = int(entry.get("count", 0))
     last = float(entry.get("last", 0) or 0)
     if not last:
         return ""
     minutes = int((time.time() - last) // 60)
-    when = f"{minutes} 分钟前" if minutes < 120 else f"{minutes // 60} 小时前"
-    return f"这个 App {when}弹过安全验证（第 {count} 次）"
+    when = f"{minutes} [CH]" if minutes < 120 else f"{minutes // 60} [CH]"
+    return f"[CH] App {when}[CH]SecurityVerify（第 {count} 次）"
 
 
 def _owner_only(path: str) -> None:

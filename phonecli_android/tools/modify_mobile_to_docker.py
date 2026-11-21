@@ -53,9 +53,9 @@ def main(avd_dir, device_name, save_dir):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Update AVD configuration files.")
-    parser.add_argument('--avd_dir', type=str, help='AVD文件存储的目录')
-    parser.add_argument('--device_name', type=str, help='要修改的AVD文件名')
-    parser.add_argument('--save_dir', type=str, help='修改后的AVD文件存储位置')
+    parser.add_argument('--avd_dir', type=str, help='AVDFile[CH]Directory')
+    parser.add_argument('--device_name', type=str, help='[CH]AVDFile名')
+    parser.add_argument('--save_dir', type=str, help='[CH]AVDFile[CH]')
 
     args = parser.parse_args()
 

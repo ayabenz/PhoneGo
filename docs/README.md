@@ -1,4 +1,4 @@
-English · [中文](README.zh.md)
+English · [Chinese](README.zh.md)
 
 # Documentation index
 
@@ -23,7 +23,7 @@ no longer resolve.
 | File | Contents |
 |---|---|
 | [showcase/app-xhs-hku-compare-3x.mp4](showcase/app-xhs-hku-compare-3x.mp4) | One instruction, one phone, both modes side by side at 3× (55 s, with a live step counter) |
-| [showcase/app-xhs-ctrip.mp4](showcase/app-xhs-ctrip.mp4) | One instruction across two apps: a note in 小红书, the hotel it names, tonight's price in 携程 (3:40) |
+| [showcase/app-xhs-ctrip.mp4](showcase/app-xhs-ctrip.mp4) | One instruction across two apps: a note in [CH], the hotel it names, tonight's price in [CH] (3:40) |
 | [showcase/app-xhs-ctrip-4x.mp4](showcase/app-xhs-ctrip-4x.mp4) | The same task at 4× with music (0:43) |
 | [showcase/app-xhs-ctrip-en.mp4](showcase/app-xhs-ctrip-en.mp4) | The same kind of task in the English interface (2:54) |
 | [showcase/app-xhs-ctrip-en-4x.mp4](showcase/app-xhs-ctrip-en-4x.mp4) | The English take at 4× with music (0:43) |

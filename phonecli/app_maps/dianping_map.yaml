@@ -5,7 +5,7 @@ screen_h: 874
 screens:
 - id: screen_0
   elements:
-  - text: 创建视频
+  - text: Create[CH]
     center:
     - 0.5
     - 0.9405
@@ -15,7 +15,7 @@ screens:
     aliases:
     - create video
     - make video
-    - 录制视频
+    - [CH]
     - video creation
     semantic_type: button
   - text: Barbecue
@@ -27,7 +27,7 @@ screens:
     leads_to: screen_2
     aliases:
     - BBQ
-    - 烧烤
+    - [CH]
     - grill
     semantic_type: menu_item
   - text: Coffee
@@ -39,7 +39,7 @@ screens:
     leads_to: screen_3
     aliases:
     - cafe
-    - 咖啡
+    - [CH]
     - coffee shop
     semantic_type: menu_item
   - text: Food
@@ -51,7 +51,7 @@ screens:
     leads_to: screen_4
     aliases:
     - restaurants
-    - 美食
+    - [CH]
     - dining
     - eat
     semantic_type: menu_item
@@ -64,7 +64,7 @@ screens:
     leads_to: screen_5
     aliases:
     - shopping centers
-    - 商场
+    - [CH]
     - shopping malls
     semantic_type: menu_item
   - text: Hotels
@@ -76,7 +76,7 @@ screens:
     leads_to: screen_6
     aliases:
     - accommodation
-    - 酒店
+    - [CH]
     - lodging
     semantic_type: menu_item
   - text: Tours
@@ -88,7 +88,7 @@ screens:
     leads_to: screen_7
     aliases:
     - sightseeing
-    - 旅游
+    - [CH]
     - travel
     - excursions
     semantic_type: menu_item
@@ -101,7 +101,7 @@ screens:
     leads_to: screen_8
     aliases:
     - entertainment
-    - 本地玩乐
+    - Local[CH]
     - activities
     - things to do
     semantic_type: menu_item
@@ -113,7 +113,7 @@ screens:
     fixed: false
     leads_to: screen_9
     aliases:
-    - 外卖
+    - [CH]
     - takeout
     - food delivery
     semantic_type: menu_item
@@ -125,7 +125,7 @@ screens:
     fixed: false
     aliases:
     - salon
-    - 美容
+    - [CH]
     - spa
     - hair
     semantic_type: menu_item
@@ -138,7 +138,7 @@ screens:
     leads_to: screen_10
     aliases:
     - pub
-    - 酒吧
+    - [CH]
     - nightlife
     - drinks
     semantic_type: menu_item
@@ -151,9 +151,9 @@ screens:
     leads_to: screen_11
     aliases:
     - cab
-    - 出租车
+    - [CH]
     - ride
-    - 打车
+    - [CH]
     semantic_type: menu_item
   - text: Duty-Free
     center:
@@ -163,11 +163,11 @@ screens:
     fixed: false
     leads_to: screen_10
     aliases:
-    - 免税店
+    - [CH]
     - tax free
     - duty free shop
     semantic_type: menu_item
-  - text: 美食订座
+  - text: [CH]
     center:
     - 0.1667
     - 0.3707
@@ -177,7 +177,7 @@ screens:
     aliases:
     - restaurant booking
     - reserve table
-    - 订位
+    - [CH]
     - dining reservation
     semantic_type: menu_item
   - text: Menu Translate
@@ -189,7 +189,7 @@ screens:
     leads_to: screen_13
     aliases:
     - translate menu
-    - 菜单翻译
+    - Menu[CH]
     - food translation
     semantic_type: button
   - text: Exchange Rate Calculation
@@ -201,7 +201,7 @@ screens:
     leads_to: screen_14
     aliases:
     - currency converter
-    - 汇率计算
+    - [CH]
     - money exchange
     semantic_type: button
   - text: Photo Search
@@ -213,7 +213,7 @@ screens:
     leads_to: screen_15
     aliases:
     - image search
-    - 图片搜索
+    - [CH]Search
     - visual search
     semantic_type: button
   - text: Home
@@ -224,7 +224,7 @@ screens:
     fixed: false
     leads_to: screen_2
     aliases:
-    - 首页
+    - Home
     - main page
     - homepage
     semantic_type: tab
@@ -236,7 +236,7 @@ screens:
     fixed: true
     leads_to: screen_16
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -249,7 +249,7 @@ screens:
     leads_to: screen_17
     aliases:
     - messages
-    - 消息
+    - Message
     - notifications
     - mailbox
     semantic_type: tab
@@ -261,7 +261,7 @@ screens:
     fixed: true
     leads_to: screen_18
     aliases:
-    - 我的
+    - My
     - account
     - me
     - personal
@@ -275,7 +275,7 @@ screens:
     leads_to: screen_2
     aliases:
     - view translation
-    - 查看翻译
+    - View[CH]
     - show translation
     semantic_type: button
   description: Home screen with category icons for dining, shopping, travel, and services,
@@ -284,7 +284,7 @@ screens:
   scroll_direction: vertical
 - id: screen_1
   elements:
-  - text: 搜索
+  - text: Search
     center:
     - 0.5274
     - 0.5606
@@ -293,11 +293,11 @@ screens:
     leads_to: screen_19
     aliases:
     - search
-    - 查找
+    - [CH]
     - find
-    - 搜索框
+    - Search框
     semantic_type: input
-  - text: 立即打卡
+  - text: [CH]Lag
     center:
     - 0.5
     - 0.9428
@@ -306,9 +306,9 @@ screens:
     leads_to: screen_20
     aliases:
     - check in
-    - 签到
+    - [CH]
     - clock in
-    - 打卡按钮
+    - hitLag[CH]
     semantic_type: button
   description: Home screen with a search bar and a check-in button for discovering
     and engaging with local businesses.
@@ -316,7 +316,7 @@ screens:
   scroll_direction: ''
 - id: screen_2
   elements:
-  - text: 创建视频
+  - text: Create[CH]
     center:
     - 0.5
     - 0.9405
@@ -327,7 +327,7 @@ screens:
     - create video
     - make video
     - upload video
-    - 视频创作
+    - [CH]
     semantic_type: button
   - text: Coffee
     center:
@@ -339,7 +339,7 @@ screens:
     aliases:
     - coffee shops
     - cafes
-    - 咖啡
+    - [CH]
     - café
     semantic_type: menu_item
   - text: Food
@@ -352,7 +352,7 @@ screens:
     aliases:
     - restaurants
     - dining
-    - 美食
+    - [CH]
     - eat
     semantic_type: menu_item
   - text: Malls
@@ -365,7 +365,7 @@ screens:
     aliases:
     - shopping malls
     - shopping centers
-    - 商场
+    - [CH]
     - plazas
     semantic_type: menu_item
   - text: Hotels
@@ -377,7 +377,7 @@ screens:
     leads_to: screen_6
     aliases:
     - accommodation
-    - 酒店
+    - [CH]
     - lodging
     - places to stay
     semantic_type: menu_item
@@ -390,7 +390,7 @@ screens:
     leads_to: screen_24
     aliases:
     - sightseeing
-    - 旅游
+    - [CH]
     - excursions
     - guided tours
     semantic_type: menu_item
@@ -403,7 +403,7 @@ screens:
     leads_to: screen_8
     aliases:
     - entertainment
-    - 本地玩乐
+    - Local[CH]
     - activities
     - things to do
     semantic_type: menu_item
@@ -415,7 +415,7 @@ screens:
     fixed: false
     leads_to: screen_9
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
     - takeout
     - order food
@@ -429,7 +429,7 @@ screens:
     aliases:
     - salon
     - spa
-    - 美容
+    - [CH]
     - wellness
     semantic_type: menu_item
   - text: Bars
@@ -442,7 +442,7 @@ screens:
     aliases:
     - pubs
     - nightlife
-    - 酒吧
+    - [CH]
     - clubs
     semantic_type: menu_item
   - text: Taxi
@@ -454,7 +454,7 @@ screens:
     leads_to: screen_25
     aliases:
     - ride hailing
-    - 打车
+    - [CH]
     - cab
     - car service
     semantic_type: menu_item
@@ -466,11 +466,11 @@ screens:
     fixed: false
     leads_to: screen_10
     aliases:
-    - 免税店
+    - [CH]
     - tax free shopping
     - airport shopping
     semantic_type: menu_item
-  - text: 美食订座
+  - text: [CH]
     center:
     - 0.1667
     - 0.3707
@@ -481,7 +481,7 @@ screens:
     - restaurant booking
     - reserve table
     - dining reservation
-    - 订位
+    - [CH]
     semantic_type: menu_item
   - text: Menu Translate
     center:
@@ -492,7 +492,7 @@ screens:
     leads_to: screen_13
     aliases:
     - translate menu
-    - 菜单翻译
+    - Menu[CH]
     - food translation
     - scan menu
     semantic_type: menu_item
@@ -505,7 +505,7 @@ screens:
     leads_to: screen_14
     aliases:
     - currency converter
-    - 汇率计算
+    - [CH]
     - forex
     - money converter
     semantic_type: menu_item
@@ -518,7 +518,7 @@ screens:
     leads_to: screen_15
     aliases:
     - image search
-    - 以图搜图
+    - [CH]
     - visual search
     - camera search
     semantic_type: menu_item
@@ -530,7 +530,7 @@ screens:
     fixed: false
     leads_to: screen_27
     aliases:
-    - 首页
+    - Home
     - main page
     - dashboard
     semantic_type: tab
@@ -542,7 +542,7 @@ screens:
     fixed: true
     leads_to: screen_28
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -555,7 +555,7 @@ screens:
     leads_to: screen_29
     aliases:
     - messages
-    - 消息
+    - Message
     - notifications
     - mailbox
     semantic_type: tab
@@ -567,7 +567,7 @@ screens:
     fixed: true
     leads_to: screen_18
     aliases:
-    - 我的
+    - My
     - account
     - settings
     - personal
@@ -580,7 +580,7 @@ screens:
     fixed: true
     leads_to: screen_27
     aliases:
-    - 查看翻译
+    - View[CH]
     - show translation
     - translate
     - view translation
@@ -602,9 +602,9 @@ screens:
     - shift key
     - caps
     - uppercase
-    - 大小写
+    - [CH]
     semantic_type: toggle
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.1915
     - 0.8913
@@ -613,10 +613,10 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
-    - 笑脸
+    - [CH]
+    - [CH]
     semantic_type: button
-  - text: 搜索
+  - text: Search
     center:
     - 0.8756
     - 0.8913
@@ -626,7 +626,7 @@ screens:
     aliases:
     - search
     - find
-    - 查找
+    - [CH]
     - magnifying glass
     semantic_type: input
   description: Emoji keyboard screen for searching and selecting emojis to input.
@@ -642,7 +642,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
     - takeout
     semantic_type: tab
@@ -654,11 +654,11 @@ screens:
     fixed: true
     leads_to: screen_30
     aliases:
-    - 支付
+    - Payment
     - pay
     - checkout
     semantic_type: button
-  - text: 附近500m
+  - text: [CH]500m
     center:
     - 0.1318
     - 0.4188
@@ -668,7 +668,7 @@ screens:
     aliases:
     - nearby 500m
     - within 500 meters
-    - 周边
+    - [CH]
     semantic_type: label
   - text: '[Account]'
     center:
@@ -678,7 +678,7 @@ screens:
     fixed: true
     leads_to: screen_32
     aliases:
-    - 账户
+    - Account
     - profile
     - my account
     semantic_type: tab
@@ -711,7 +711,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 地图
+    - [CH]
     - navigation
     - explore
     semantic_type: tab
@@ -723,7 +723,7 @@ screens:
     fixed: true
     leads_to: screen_36
     aliases:
-    - 问卷
+    - [CH]
     - feedback
     - poll
     semantic_type: button
@@ -735,7 +735,7 @@ screens:
     fixed: true
     leads_to: screen_22
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
     - language
     semantic_type: button
@@ -753,11 +753,11 @@ screens:
     fixed: true
     leads_to: screen_37
     aliases:
-    - 获取
-    - 领取
+    - [CH]
+    - [CH]
     - receive
     semantic_type: button
-  - text: 查看全部
+  - text: ViewAll
     center:
     - 0.6119
     - 0.3249
@@ -767,7 +767,7 @@ screens:
     aliases:
     - view all
     - see all
-    - 全部
+    - All
     semantic_type: link
   - text: Tips
     center:
@@ -777,11 +777,11 @@ screens:
     fixed: true
     leads_to: screen_39
     aliases:
-    - 小贴士
-    - 提示
+    - [CH]
+    - Tip
     - hints
     semantic_type: label
-  - text: 返现
+  - text: [CH]
     center:
     - 0.7662
     - 0.111
@@ -791,9 +791,9 @@ screens:
     aliases:
     - cashback
     - rebate
-    - 现金返还
+    - [CH]
     semantic_type: menu_item
-  - text: 我的优惠券
+  - text: My[CH]
     center:
     - 0.8955
     - 0.111
@@ -802,7 +802,7 @@ screens:
     leads_to: screen_41
     aliases:
     - my coupons
-    - 优惠券
+    - [CH]
     - vouchers
     semantic_type: menu_item
   - text: Malls
@@ -813,8 +813,8 @@ screens:
     fixed: false
     leads_to: screen_10
     aliases:
-    - 商场
-    - 购物中心
+    - [CH]
+    - [CH]Center
     - shopping centers
     semantic_type: tab
   - text: Luxury
@@ -825,11 +825,11 @@ screens:
     fixed: false
     leads_to: screen_10
     aliases:
-    - 奢侈品
-    - 高端
+    - [CH]
+    - [CH]
     - high-end
     semantic_type: tab
-  - text: 特产手信
+  - text: [CH]
     center:
     - 0.3333
     - 0.6979
@@ -849,11 +849,11 @@ screens:
     fixed: true
     leads_to: screen_36
     aliases:
-    - 问卷调查
-    - 问卷
+    - [CH]
+    - [CH]
     - questionnaire
     semantic_type: menu_item
-  - text: 综合商场
+  - text: [CH]
     center:
     - 0.3333
     - 0.6728
@@ -865,7 +865,7 @@ screens:
     - shopping malls
     - department stores
     semantic_type: tab
-  - text: 奢侈品
+  - text: [CH]
     center:
     - 0.3184
     - 0.9542
@@ -877,7 +877,7 @@ screens:
     - high-end products
     - luxe
     semantic_type: tab
-  - text: 药店
+  - text: [CH]
     center:
     - 0.3035
     - 0.9348
@@ -895,7 +895,7 @@ screens:
   scroll_direction: vertical
 - id: screen_6
   elements:
-  - text: 酒店民宿
+  - text: [CH]
     center:
     - 0.1816
     - 0.1476
@@ -904,10 +904,10 @@ screens:
     aliases:
     - hotel
     - B&B
-    - 住宿
+    - [CH]
     - guesthouse
     semantic_type: tab
-  - text: 机票火车票
+  - text: [CH]
     center:
     - 0.5199
     - 0.1476
@@ -917,10 +917,10 @@ screens:
     aliases:
     - flights
     - trains
-    - 交通票务
+    - [CH]
     - air tickets
     semantic_type: tab
-  - text: 旅游度假
+  - text: [CH]
     center:
     - 0.8607
     - 0.1476
@@ -931,9 +931,9 @@ screens:
     - travel
     - vacation
     - holiday
-    - 度假
+    - [CH]
     semantic_type: tab
-  - text: 国内
+  - text: [CH]
     center:
     - 0.1493
     - 0.2094
@@ -941,10 +941,10 @@ screens:
     fixed: false
     aliases:
     - domestic
-    - 国内游
+    - [CH]
     - inland
     semantic_type: tab
-  - text: 民宿公寓
+  - text: [CH]
     center:
     - 0.3831
     - 0.2094
@@ -954,10 +954,10 @@ screens:
     aliases:
     - homestay
     - apartment
-    - 民宿
-    - 公寓
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 钟点房
+  - text: [CH]
     center:
     - 0.6318
     - 0.2094
@@ -967,9 +967,9 @@ screens:
     aliases:
     - hourly room
     - short stay
-    - 钟点
+    - [CH]
     semantic_type: tab
-  - text: 海外
+  - text: [CH]
     center:
     - 0.8483
     - 0.2094
@@ -978,7 +978,7 @@ screens:
     aliases:
     - overseas
     - international
-    - 国外
+    - [CH]
     - abroad
     semantic_type: tab
   - text: '[Region]'
@@ -990,7 +990,7 @@ screens:
     aliases:
     - Hong Kong
     - HK
-    - 香港
+    - [CH]
     semantic_type: tab
   - text: 间·
     center:
@@ -1000,10 +1000,10 @@ screens:
     fixed: false
     aliases:
     - rooms
-    - 房间数
+    - [CH]
     - room count
     semantic_type: input
-  - text: 成人·
+  - text: [CH]·
     center:
     - 0.7687
     - 0.3799
@@ -1011,10 +1011,10 @@ screens:
     fixed: false
     aliases:
     - adults
-    - 成人数量
+    - [CH]
     - adult count
     semantic_type: input
-  - text: 儿童
+  - text: [CH]
     center:
     - 0.8706
     - 0.3799
@@ -1023,7 +1023,7 @@ screens:
     aliases:
     - children
     - kids
-    - 儿童数量
+    - [CH]
     - child count
     semantic_type: input
   - text: 找 酒 店
@@ -1035,9 +1035,9 @@ screens:
     aliases:
     - search hotel
     - find hotel
-    - 搜索酒店
+    - Search[CH]
     semantic_type: button
-  - text: 特色餐厅
+  - text: [CH]
     center:
     - 0.194
     - 0.7918
@@ -1046,9 +1046,9 @@ screens:
     aliases:
     - specialty restaurant
     - featured dining
-    - 餐厅
+    - [CH]
     semantic_type: menu_item
-  - text: 特色酒吧
+  - text: [CH]
     center:
     - 0.3308
     - 0.7918
@@ -1057,9 +1057,9 @@ screens:
     aliases:
     - specialty bar
     - featured bar
-    - 酒吧
+    - [CH]
     semantic_type: menu_item
-  - text: 游泳池
+  - text: [CH]
     center:
     - 0.1791
     - 0.8112
@@ -1068,9 +1068,9 @@ screens:
     aliases:
     - swimming pool
     - pool
-    - 泳池
+    - [CH]
     semantic_type: menu_item
-  - text: 健身房
+  - text: [CH]
     center:
     - 0.2886
     - 0.8112
@@ -1079,9 +1079,9 @@ screens:
     aliases:
     - gym
     - fitness center
-    - 健身
+    - [CH]
     semantic_type: menu_item
-  - text: 扫货便捷
+  - text: [CH]
     center:
     - 0.6816
     - 0.8192
@@ -1090,9 +1090,9 @@ screens:
     aliases:
     - shopping convenience
     - easy shopping
-    - 购物方便
+    - [CH]
     semantic_type: menu_item
-  - text: 情侣约会
+  - text: [CH]
     center:
     - 0.8184
     - 0.8192
@@ -1101,9 +1101,9 @@ screens:
     aliases:
     - couple date
     - romantic
-    - 约会
+    - [CH]
     semantic_type: menu_item
-  - text: 休闲度假
+  - text: [CH]
     center:
     - 0.6816
     - 0.8387
@@ -1112,9 +1112,9 @@ screens:
     aliases:
     - leisure vacation
     - relaxation
-    - 度假休闲
+    - [CH]
     semantic_type: menu_item
-  - text: 商务出行
+  - text: [CH]
     center:
     - 0.8184
     - 0.8387
@@ -1123,9 +1123,9 @@ screens:
     aliases:
     - business travel
     - corporate trip
-    - 出差
+    - [CH]
     semantic_type: menu_item
-  - text: 地铁周边
+  - text: [CH]
     center:
     - 0.3308
     - 0.5149
@@ -1134,9 +1134,9 @@ screens:
     aliases:
     - near metro
     - subway nearby
-    - 地铁附近
+    - [CH]
     semantic_type: menu_item
-  - text: 车站周边
+  - text: [CH]
     center:
     - 0.194
     - 0.5343
@@ -1145,9 +1145,9 @@ screens:
     aliases:
     - near station
     - train station nearby
-    - 车站附近
+    - [CH]
     semantic_type: menu_item
-  - text: 交通便捷
+  - text: [CH]
     center:
     - 0.3308
     - 0.5343
@@ -1156,9 +1156,9 @@ screens:
     aliases:
     - convenient transport
     - easy access
-    - 交通方便
+    - [CH]
     semantic_type: menu_item
-  - text: 行李寄存
+  - text: [CH]
     center:
     - 0.8209
     - 0.5423
@@ -1167,9 +1167,9 @@ screens:
     aliases:
     - luggage storage
     - baggage deposit
-    - 寄存行李
+    - [CH]
     semantic_type: menu_item
-  - text: 叫醒服务
+  - text: [CH]Service
     center:
     - 0.6841
     - 0.5606
@@ -1178,9 +1178,9 @@ screens:
     aliases:
     - wake-up call
     - morning call
-    - 叫醒
+    - [CH]
     semantic_type: menu_item
-  - text: 洗衣服务
+  - text: [CH]Service
     center:
     - 0.3284
     - 0.8696
@@ -1189,9 +1189,9 @@ screens:
     aliases:
     - laundry service
     - washing
-    - 洗衣
+    - [CH]
     semantic_type: menu_item
-  - text: 都市小憩
+  - text: [CH]
     center:
     - 0.6841
     - 0.905
@@ -1200,9 +1200,9 @@ screens:
     aliases:
     - city break
     - urban rest
-    - 城市休息
+    - [CH]
     semantic_type: menu_item
-  - text: 亲子时光
+  - text: [CH]
     center:
     - 0.194
     - 0.5767
@@ -1211,9 +1211,9 @@ screens:
     aliases:
     - family time
     - parent-child
-    - 亲子
+    - [CH]
     semantic_type: menu_item
-  - text: 停车场
+  - text: [CH]
     center:
     - 0.2886
     - 0.5961
@@ -1222,9 +1222,9 @@ screens:
     aliases:
     - parking lot
     - car park
-    - 停车
+    - [CH]
     semantic_type: menu_item
-  - text: 亲子酒店
+  - text: [CH]
     center:
     - 0.6841
     - 0.3741
@@ -1233,7 +1233,7 @@ screens:
     aliases:
     - family hotel
     - kid-friendly hotel
-    - 亲子
+    - [CH]
     semantic_type: menu_item
   description: Hotel and travel booking screen with search filters for destinations,
     dates, guests, and amenities like pools, gyms, and family-friendly options.
@@ -1241,19 +1241,19 @@ screens:
   scroll_direction: vertical
 - id: screen_7
   elements:
-  - text: 亲子出游
+  - text: [CH]
     center:
     - 0.3134
     - 0.27
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 亲子游
+    - [CH]
     - family trip
-    - 带娃出游
+    - [CH]
     - parent-child outing
     semantic_type: tab
-  - text: 景点
+  - text: [CH]
     center:
     - 0.2985
     - 0.4908
@@ -1263,9 +1263,9 @@ screens:
     - attractions
     - scenic spots
     - sights
-    - 旅游景点
+    - [CH]
     semantic_type: tab
-  - text: 自然景观
+  - text: [CH]
     center:
     - 0.3284
     - 0.7265
@@ -1273,11 +1273,11 @@ screens:
     fixed: false
     aliases:
     - natural scenery
-    - 自然风光
+    - [CH]
     - landscape
     - natural attractions
     semantic_type: menu_item
-  - text: 主题乐园
+  - text: Theme[CH]
     center:
     - 0.3284
     - 0.9622
@@ -1286,10 +1286,10 @@ screens:
     aliases:
     - theme park
     - amusement park
-    - 游乐园
-    - 主题公园
+    - [CH]
+    - Theme[CH]
     semantic_type: menu_item
-  - text: 水族馆
+  - text: [CH]
     center:
     - 0.0448
     - 0.4027
@@ -1297,10 +1297,10 @@ screens:
     fixed: false
     aliases:
     - aquarium
-    - 海洋馆
-    - 水族世界
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 人文古迹
+  - text: [CH]
     center:
     - 0.0597
     - 0.4027
@@ -1309,10 +1309,10 @@ screens:
     aliases:
     - historical sites
     - cultural relics
-    - 古迹
-    - 历史遗迹
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 观光街区
+  - text: [CH]
     center:
     - 0.0597
     - 0.4027
@@ -1321,10 +1321,10 @@ screens:
     aliases:
     - sightseeing street
     - tourist area
-    - 步行街
-    - 观光街
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 展览馆
+  - text: [CH]
     center:
     - 0.0448
     - 0.4027
@@ -1333,8 +1333,8 @@ screens:
     aliases:
     - exhibition hall
     - museum
-    - 博物馆
-    - 展馆
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Tips
     center:
@@ -1343,10 +1343,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提示
-    - 小贴士
+    - Tip
+    - [CH]
     - advice
-    - 旅行贴士
+    - [CH]
     semantic_type: label
   - text: Map
     center:
@@ -1355,8 +1355,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
-    - 导航
+    - [CH]
+    - [CH]
     - navigation
     - view map
     semantic_type: button
@@ -1367,10 +1367,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
-    - 调查
+    - [CH]
+    - [CH]
     - feedback
-    - 问卷调查
+    - [CH]
     semantic_type: button
   - text: See Translation
     center:
@@ -1379,10 +1379,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
-    - 翻译
+    - View[CH]
+    - [CH]
     - translate
-    - 显示翻译
+    - [CH]
     semantic_type: button
   description: Family travel screen with categories for attractions like natural scenery,
     theme parks, aquariums, historical sites, sightseeing streets, and exhibition
@@ -1391,7 +1391,7 @@ screens:
   scroll_direction: vertical
 - id: screen_8
   elements:
-  - text: 按摩SPA
+  - text: [CH]SPA
     center:
     - 0.6891
     - 0.2517
@@ -1399,7 +1399,7 @@ screens:
     fixed: true
     aliases:
     - Massage SPA
-    - 按摩
+    - [CH]
     - spa
     - bodywork
     semantic_type: menu_item
@@ -1410,11 +1410,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 电影院
+    - [CH]
     - movie theaters
-    - 影院
+    - [CH]
     semantic_type: menu_item
-  - text: 当地玩乐
+  - text: [CH]
     center:
     - 0.3333
     - 0.4565
@@ -1422,11 +1422,11 @@ screens:
     fixed: false
     aliases:
     - Local Fun
-    - 本地游玩
+    - Local[CH]
     - activities
-    - 当地活动
+    - [CH]
     semantic_type: menu_item
-  - text: SPA养生
+  - text: SPA[CH]
     center:
     - 0.3333
     - 0.5812
@@ -1434,9 +1434,9 @@ screens:
     fixed: false
     aliases:
     - SPA Wellness
-    - spa养生
+    - spa[CH]
     - wellness spa
-    - 水疗
+    - [CH]
     semantic_type: menu_item
   - text: Survey
     center:
@@ -1445,9 +1445,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷调查
+    - [CH]
     - feedback
-    - 调研
+    - [CH]
     semantic_type: button
   - text: See Translation
     center:
@@ -1456,8 +1456,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
-    - 翻译
+    - View[CH]
+    - [CH]
     - translate
     semantic_type: button
   description: Local services screen offering categories like massage, cinemas, local
@@ -1466,7 +1466,7 @@ screens:
   scroll_direction: vertical
 - id: screen_9
   elements:
-  - text: 返回
+  - text: Back
     center:
     - 0.0697
     - 0.0892
@@ -1475,9 +1475,9 @@ screens:
     aliases:
     - back
     - go back
-    - 返回按钮
+    - Back[CH]
     semantic_type: button
-  - text: 條款及細則
+  - text: [CH]
     center:
     - 0.5249
     - 0.9863
@@ -1487,9 +1487,9 @@ screens:
     - terms and conditions
     - terms of service
     - T&C
-    - 条款
+    - [CH]
     semantic_type: link
-  - text: 私隱政策
+  - text: [CH]
     center:
     - 0.6841
     - 0.9863
@@ -1497,10 +1497,10 @@ screens:
     fixed: true
     aliases:
     - privacy policy
-    - 隐私政策
+    - Privacy Policy
     - privacy
     semantic_type: link
-  - text: 語言
+  - text: [CH]
     center:
     - 0.8433
     - 0.1465
@@ -1508,7 +1508,7 @@ screens:
     fixed: true
     aliases:
     - language
-    - 语言
+    - Language
     - lang
     semantic_type: menu_item
   description: Settings page with options to view terms and conditions, privacy policy,
@@ -1537,11 +1537,11 @@ screens:
     fixed: true
     aliases:
     - Meituan Taxi
-    - 美团打车
+    - [CH]
     - Meituan ride-hailing
-    - 打车
+    - [CH]
     semantic_type: label
-  - text: 订单
+  - text: Order
     center:
     - 0.9328
     - 0.0927
@@ -1549,11 +1549,11 @@ screens:
     fixed: true
     aliases:
     - Orders
-    - 我的订单
+    - MyOrder
     - My Orders
-    - 行程
+    - [CH]
     semantic_type: tab
-  - text: 输入你的目的地
+  - text: Input[CH]
     center:
     - 0.301
     - 0.2906
@@ -1561,11 +1561,11 @@ screens:
     fixed: true
     aliases:
     - Enter your destination
-    - 目的地
+    - [CH]
     - Where to?
-    - 搜索目的地
+    - Search[CH]
     semantic_type: input
-  - text: 热门问题
+  - text: [CH]
     center:
     - 0.1443
     - 0.4165
@@ -1573,11 +1573,11 @@ screens:
     fixed: true
     aliases:
     - FAQ
-    - 常见问题
+    - FAQ
     - Hot Topics
-    - 帮助
+    - Help
     semantic_type: menu_item
-  - text: 联系客服
+  - text: ContactCustomer Service
     center:
     - 0.5224
     - 0.7975
@@ -1585,11 +1585,11 @@ screens:
     fixed: true
     aliases:
     - Contact Support
-    - 客服
     - Customer Service
-    - 帮助中心
+    - Customer Service
+    - HelpCenter
     semantic_type: button
-  - text: 服务授权
+  - text: ServiceAuthorize
     center:
     - 0.5
     - 0.3513
@@ -1597,11 +1597,11 @@ screens:
     fixed: true
     aliases:
     - Service Authorization
-    - 授权
+    - Authorize
     - Permissions
-    - 权限
+    - Permission
     semantic_type: label
-  - text: 暂不同意
+  - text: [CH]
     center:
     - 0.2637
     - 0.9336
@@ -1609,11 +1609,11 @@ screens:
     fixed: true
     aliases:
     - Disagree
-    - 拒绝
+    - [CH]
     - Decline
-    - 稍后
+    - [CH]
     semantic_type: button
-  - text: 同意并使用
+  - text: [CH]
     center:
     - 0.7338
     - 0.9336
@@ -1621,9 +1621,9 @@ screens:
     fixed: true
     aliases:
     - Agree and Use
-    - 同意
+    - [CH]
     - Accept
-    - 确认授权
+    - ConfirmAuthorize
     semantic_type: button
   description: Meituan ride-hailing service authorization screen prompting user to
     agree to terms before use, with options to contact customer service or view popular
@@ -1632,7 +1632,7 @@ screens:
   scroll_direction: ''
 - id: screen_12
   elements:
-  - text: 返回
+  - text: Back
     center:
     - 0.0697
     - 0.0892
@@ -1641,9 +1641,9 @@ screens:
     aliases:
     - back
     - go back
-    - 返回上一页
+    - Back[CH]
     semantic_type: button
-  - text: 订座
+  - text: [CH]
     center:
     - 0.5
     - 0.0904
@@ -1652,10 +1652,10 @@ screens:
     aliases:
     - reservation
     - book a seat
-    - 预订座位
+    - [CH]
     - reserve
     semantic_type: button
-  - text: 附近
+  - text: [CH]
     center:
     - 0.1493
     - 0.1396
@@ -1663,11 +1663,11 @@ screens:
     fixed: true
     aliases:
     - nearby
-    - 周边
+    - [CH]
     - near me
     - local
     semantic_type: tab
-  - text: 全部美食
+  - text: All[CH]
     center:
     - 0.4826
     - 0.1396
@@ -1676,10 +1676,10 @@ screens:
     aliases:
     - all restaurants
     - all food
-    - 全部餐厅
+    - All[CH]
     - food categories
     semantic_type: menu_item
-  - text: 智能排序
+  - text: [CH]
     center:
     - 0.8159
     - 0.1396
@@ -1688,7 +1688,7 @@ screens:
     aliases:
     - smart sort
     - sort by
-    - 排序
+    - [CH]
     - intelligent sorting
     semantic_type: button
   description: Restaurant search results page with filtering options for nearby dining
@@ -1697,7 +1697,7 @@ screens:
   scroll_direction: vertical
 - id: screen_13
   elements:
-  - text: 取消
+  - text: Cancel
     center:
     - 0.0896
     - 0.0961
@@ -1705,11 +1705,11 @@ screens:
     fixed: true
     aliases:
     - cancel
-    - 取消
+    - Cancel
     - dismiss
     - abort
     semantic_type: button
-  - text: 下一步
+  - text: Next
     center:
     - 0.8881
     - 0.0961
@@ -1717,11 +1717,11 @@ screens:
     fixed: true
     aliases:
     - next
-    - 下一步
+    - Next
     - continue
     - proceed
     semantic_type: button
-  - text: 相册
+  - text: Gallery
     center:
     - 0.2488
     - 0.9348
@@ -1729,11 +1729,11 @@ screens:
     fixed: true
     aliases:
     - album
-    - 相册
+    - Gallery
     - gallery
     - photos
     semantic_type: button
-  - text: 拍摄
+  - text: [CH]
     center:
     - 0.7488
     - 0.9348
@@ -1741,7 +1741,7 @@ screens:
     fixed: true
     aliases:
     - shoot
-    - 拍摄
+    - [CH]
     - take photo
     - capture
     - camera
@@ -1752,7 +1752,7 @@ screens:
   scroll_direction: ''
 - id: screen_14
   elements:
-  - text: 返回
+  - text: Back
     center:
     - 0.0697
     - 0.0892
@@ -1761,9 +1761,9 @@ screens:
     aliases:
     - back
     - go back
-    - 后退
+    - [CH]
     semantic_type: button
-  - text: 汇率
+  - text: [CH]
     center:
     - 0.5
     - 0.0904
@@ -1771,7 +1771,7 @@ screens:
     fixed: true
     aliases:
     - exchange rate
-    - 外汇
+    - [CH]
     - currency rate
     semantic_type: label
   - text: HKD
@@ -1782,10 +1782,10 @@ screens:
     fixed: true
     aliases:
     - Hong Kong Dollar
-    - 港币
-    - 港元
+    - [CH]
+    - [CH]
     semantic_type: label
-  - text: 港元 $
+  - text: [CH] $
     center:
     - 0.9055
     - 0.1957
@@ -1794,7 +1794,7 @@ screens:
     aliases:
     - Hong Kong Dollar
     - HKD
-    - 港币
+    - [CH]
     semantic_type: label
   - text: CNY
     center:
@@ -1804,10 +1804,10 @@ screens:
     fixed: true
     aliases:
     - Chinese Yuan
-    - 人民币
+    - [CH]
     - RMB
     semantic_type: label
-  - text: 市场参考价
+  - text: [CH]
     center:
     - 0.3284
     - 0.2712
@@ -1815,10 +1815,10 @@ screens:
     fixed: true
     aliases:
     - market reference price
-    - 参考汇率
+    - [CH]
     - benchmark rate
     semantic_type: label
-  - text: 人民币 ¥
+  - text: [CH] ¥
     center:
     - 0.8881
     - 0.3009
@@ -1838,7 +1838,7 @@ screens:
     aliases:
     - 7 days
     - 1 week
-    - 一周
+    - [CH]
     semantic_type: tab
   - text: 30日
     center:
@@ -1849,9 +1849,9 @@ screens:
     aliases:
     - 30 days
     - 1 month
-    - 一个月
+    - [CH]
     semantic_type: tab
-  - text: 3个月
+  - text: 3[CH]
     center:
     - 0.495
     - 0.9542
@@ -1860,9 +1860,9 @@ screens:
     aliases:
     - 3 months
     - quarterly
-    - 季度
+    - [CH]
     semantic_type: tab
-  - text: 6个月
+  - text: 6[CH]
     center:
     - 0.7114
     - 0.9542
@@ -1871,7 +1871,7 @@ screens:
     aliases:
     - 6 months
     - half year
-    - 半年
+    - [CH]
     semantic_type: tab
   - text: 1年
     center:
@@ -1882,7 +1882,7 @@ screens:
     aliases:
     - 1 year
     - annual
-    - 一年
+    - [CH]
     semantic_type: tab
   description: Currency exchange rate screen showing HKD to CNY conversion with market
     reference price and chart options for 7-day, 30-day, 3-month, 6-month, and 1-year
@@ -1891,7 +1891,7 @@ screens:
   scroll_direction: ''
 - id: screen_15
   elements:
-  - text: 我的相册
+  - text: MyGallery
     center:
     - 0.2413
     - 0.8593
@@ -1899,11 +1899,11 @@ screens:
     fixed: true
     aliases:
     - My Album
-    - 相册
-    - 我的照片
+    - Gallery
+    - My[CH]
     - My Photos
     semantic_type: menu_item
-  - text: 扫一扫
+  - text: [CH]
     center:
     - 0.3731
     - 0.7872
@@ -1911,11 +1911,11 @@ screens:
     fixed: true
     aliases:
     - Scan
-    - 扫码
+    - [CH]
     - QR scan
-    - 扫描二维码
+    - Scan[CH]
     semantic_type: button
-  - text: 搜同款
+  - text: [CH]
     center:
     - 0.6144
     - 0.7872
@@ -1923,11 +1923,11 @@ screens:
     fixed: true
     aliases:
     - Search Similar
-    - 找同款
+    - [CH]
     - Find Similar Items
-    - 同款搜索
+    - [CH]Search
     semantic_type: button
-  - text: 展开
+  - text: [CH]
     center:
     - 0.9204
     - 0.8604
@@ -1935,8 +1935,8 @@ screens:
     fixed: true
     aliases:
     - Expand
-    - 更多
-    - 展开更多
+    - [CH]
+    - [CH]
     - Show More
     semantic_type: button
   description: My Albums page with options to scan, search for similar items, and
@@ -1945,7 +1945,7 @@ screens:
   scroll_direction: vertical
 - id: screen_16
   elements:
-  - text: 创建视频
+  - text: Create[CH]
     center:
     - 0.5
     - 0.9405
@@ -1955,9 +1955,9 @@ screens:
     - create video
     - make video
     - new video
-    - 拍摄视频
+    - [CH]
     semantic_type: button
-  - text: 收藏
+  - text: [CH]
     center:
     - 0.9229
     - 0.5904
@@ -1976,7 +1976,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - homepage
     semantic_type: tab
@@ -1987,7 +1987,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -1998,10 +1998,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - messages
     - notifications
-    - 收件箱
+    - [CH]
     semantic_type: tab
   - text: Profile
     center:
@@ -2010,10 +2010,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 我的
+    - My
     - account
     - me
-    - 个人中心
+    - PersonalCenter
     semantic_type: tab
   description: 'Bottom navigation bar with 5 tabs: Home, Map, Inbox, Profile, and
     a central ''Create Video'' button, plus a ''Favorites'' option.'
@@ -2028,7 +2028,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 启用
+    - Enable
     - turn on
     - activate
     semantic_type: toggle
@@ -2039,7 +2039,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收件箱
+    - [CH]
     - messages
     - notifications
     semantic_type: tab
@@ -2050,7 +2050,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - discover
     semantic_type: tab
@@ -2061,7 +2061,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -2072,11 +2072,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 我的
+    - My
     - account
     - settings
     semantic_type: tab
-  - text: 大众点评
+  - text: [CH]
     center:
     - 0.3159
     - 0.6945
@@ -2084,7 +2084,7 @@ screens:
     fixed: true
     aliases:
     - Dianping
-    - 点评
+    - [CH]
     - app name
     semantic_type: label
   description: 'Bottom navigation bar with 5 tabs: Home, Inbox, Enable, Map, Profile,
@@ -2093,7 +2093,7 @@ screens:
   scroll_direction: ''
 - id: screen_18
   elements:
-  - text: 点击设置昵称
+  - text: [CH]SettingsNickname
     center:
     - 0.398
     - 0.1384
@@ -2101,7 +2101,7 @@ screens:
     fixed: false
     aliases:
     - set nickname
-    - 设置昵称
+    - SettingsNickname
     - tap to set nickname
     semantic_type: button
   - text: Profile
@@ -2111,7 +2111,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 个人资料
+    - Personal[CH]
     - my profile
     - account
     semantic_type: tab
@@ -2122,7 +2122,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 关注
+    - [CH]
     - following
     - followed
     semantic_type: tab
@@ -2133,9 +2133,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 喜欢
+    - [CH]
     - favorites
-    - 点赞
+    - [CH]
     semantic_type: tab
   - text: Reviews
     center:
@@ -2144,8 +2144,8 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 评价
-    - 评论
+    - [CH]
+    - [CH]
     - my reviews
     semantic_type: tab
   - text: Coupon
@@ -2155,8 +2155,8 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 优惠券
-    - 折扣券
+    - [CH]
+    - [CH]
     - voucher
     semantic_type: menu_item
   - text: Wallet
@@ -2166,7 +2166,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 钱包
+    - [CH]
     - balance
     - my wallet
     semantic_type: menu_item
@@ -2177,7 +2177,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 草稿
+    - [CH]
     - draft box
     - saved drafts
     semantic_type: menu_item
@@ -2188,11 +2188,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 订单
+    - Order
     - my orders
     - purchases
     semantic_type: menu_item
-  - text: 发笔记
+  - text: [CH]
     center:
     - 0.8731
     - 0.619
@@ -2201,9 +2201,9 @@ screens:
     aliases:
     - post note
     - create note
-    - 写笔记
+    - [CH]
     semantic_type: button
-  - text: 全部城市
+  - text: All[CH]
     center:
     - 0.1219
     - 0.9119
@@ -2211,10 +2211,10 @@ screens:
     fixed: true
     aliases:
     - all cities
-    - 城市列表
+    - [CH]
     - city list
     semantic_type: link
-  - text: 分类
+  - text: [CH]
     center:
     - 0.3134
     - 0.9119
@@ -2223,9 +2223,9 @@ screens:
     aliases:
     - categories
     - category
-    - 分类列表
+    - [CH]
     semantic_type: link
-  - text: 智能排序
+  - text: [CH]
     center:
     - 0.505
     - 0.9119
@@ -2233,7 +2233,7 @@ screens:
     fixed: true
     aliases:
     - smart sort
-    - 排序
+    - [CH]
     - sort by
     semantic_type: button
   - text: Home
@@ -2243,7 +2243,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - homepage
     semantic_type: tab
@@ -2254,7 +2254,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore map
     semantic_type: tab
@@ -2265,7 +2265,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - messages
     - notifications
     semantic_type: tab
@@ -2276,7 +2276,7 @@ screens:
   scroll_direction: vertical
 - id: screen_19
   elements:
-  - text: 取消
+  - text: Cancel
     center:
     - 0.9055
     - 0.3776
@@ -2285,10 +2285,10 @@ screens:
     aliases:
     - cancel
     - dismiss
-    - 撤销
-    - 关闭
+    - Undo
+    - Close
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.1915
     - 0.8913
@@ -2296,11 +2296,11 @@ screens:
     fixed: true
     aliases:
     - emoji
-    - 表情
+    - [CH]
     - emoticon
-    - 笑脸
+    - [CH]
     semantic_type: button
-  - text: 搜索
+  - text: Search
     center:
     - 0.8756
     - 0.8913
@@ -2308,9 +2308,9 @@ screens:
     fixed: true
     aliases:
     - search
-    - 查找
+    - [CH]
     - find
-    - 搜索框
+    - Search框
     semantic_type: input
   description: Emoji search screen with a cancel button and search field for finding
     emojis.
@@ -2318,19 +2318,19 @@ screens:
   scroll_direction: ''
 - id: screen_20
   elements:
-  - text: 确认
+  - text: Confirm
     center:
     - 0.8035
     - 0.5492
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 确定
+    - OK
     - confirm
     - ok
     - submit
     semantic_type: button
-  - text: 设为私密
+  - text: [CH]
     center:
     - 0.6816
     - 0.0961
@@ -2339,10 +2339,10 @@ screens:
     aliases:
     - make private
     - set private
-    - 私密
-    - 仅自己可见
+    - [CH]
+    - [CH]
     semantic_type: toggle
-  - text: 分享
+  - text: Share
     center:
     - 0.893
     - 0.0961
@@ -2350,34 +2350,34 @@ screens:
     fixed: true
     aliases:
     - share
-    - 转发
+    - [CH]
     - send to
     semantic_type: button
-  - text: 写下这里的感受
+  - text: [CH]
     center:
     - 0.6468
     - 0.476
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 写感受
+    - [CH]
     - add review
-    - 评论
+    - [CH]
     - write a note
     semantic_type: input
-  - text: 拍照留念一下
+  - text: Camera[CH]
     center:
     - 0.2886
     - 0.4966
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 拍照
+    - Camera
     - take photo
     - camera
-    - 照相
+    - [CH]
     semantic_type: button
-  - text: 完成
+  - text: Done
     center:
     - 0.5
     - 0.6796
@@ -2386,10 +2386,10 @@ screens:
     aliases:
     - done
     - finish
-    - 结束
+    - End
     - save
     semantic_type: button
-  - text: 查看历史打卡
+  - text: View[CH]Lag
     center:
     - 0.49
     - 0.7277
@@ -2397,16 +2397,16 @@ screens:
     fixed: true
     aliases:
     - history
-    - 历史记录
+    - [CH]
     - past check-ins
-    - 打卡记录
+    - hitLag[CH]
     semantic_type: link
-  description: 打卡详情页，用户可设为私密、分享、写感受、拍照留念、完成打卡或查看历史打卡。
+  description: hitLag[CH]，[CH]、Share、[CH]、Camera[CH]、DonehitLag或View[CH]Lag。
   scrollable: false
   scroll_direction: ''
 - id: screen_21
   elements:
-  - text: 搜索
+  - text: Search
     center:
     - 0.5274
     - 0.5606
@@ -2414,11 +2414,11 @@ screens:
     fixed: true
     aliases:
     - search
-    - 查找
+    - [CH]
     - find
-    - 搜索框
+    - Search框
     semantic_type: input
-  - text: 已打卡
+  - text: [CH]Lag
     center:
     - 0.8856
     - 0.6201
@@ -2426,11 +2426,11 @@ screens:
     fixed: false
     aliases:
     - checked in
-    - 签到成功
+    - [CH]Success
     - already checked in
-    - 打卡完成
+    - hitLagDone
     semantic_type: label
-  - text: 立即打卡
+  - text: [CH]Lag
     center:
     - 0.5
     - 0.9428
@@ -2438,11 +2438,11 @@ screens:
     fixed: true
     aliases:
     - check in now
-    - 签到
-    - 立即签到
-    - 打卡
+    - [CH]
+    - [CH]
+    - hitLag
     semantic_type: button
-  description: 打卡页面，显示搜索框、已打卡记录和立即打卡按钮，用户可查看打卡状态或进行打卡操作。
+  description: hitLagPage，[CH]Search框、[CH]Lag[CH]Lag[CH]，[CH]ViewhitLag[CH]Lag[CH]。
   scrollable: false
   scroll_direction: ''
 - id: screen_22
@@ -2454,7 +2454,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
     - takeout
     semantic_type: tab
@@ -2465,7 +2465,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 我的
+    - My
     - profile
     - user
     semantic_type: tab
@@ -2488,7 +2488,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -2499,7 +2499,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
+    - [CH]
     - feedback
     - poll
     semantic_type: button
@@ -2515,11 +2515,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 获取
-    - 领取
+    - [CH]
+    - [CH]
     - receive
     semantic_type: button
-  - text: 查看全部
+  - text: ViewAll
     center:
     - 0.6119
     - 0.3249
@@ -2528,7 +2528,7 @@ screens:
     aliases:
     - view all
     - see all
-    - 全部
+    - All
     semantic_type: link
   - text: Tips
     center:
@@ -2537,11 +2537,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 小费
-    - 贴士
-    - 提示
+    - [CH]
+    - [CH]
+    - Tip
     semantic_type: label
-  - text: 返现
+  - text: [CH]
     center:
     - 0.7662
     - 0.111
@@ -2550,9 +2550,9 @@ screens:
     aliases:
     - cashback
     - rebate
-    - 现金返还
+    - [CH]
     semantic_type: menu_item
-  - text: 我的优惠券
+  - text: My[CH]
     center:
     - 0.8955
     - 0.111
@@ -2560,7 +2560,7 @@ screens:
     fixed: true
     aliases:
     - my coupons
-    - 优惠券
+    - [CH]
     - coupons
     semantic_type: menu_item
   - text: Malls
@@ -2570,8 +2570,8 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 商场
-    - 购物中心
+    - [CH]
+    - [CH]Center
     - shopping malls
     semantic_type: tab
   - text: Luxury
@@ -2581,11 +2581,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 奢侈品
-    - 高端
+    - [CH]
+    - [CH]
     - luxury goods
     semantic_type: tab
-  - text: 特产手信
+  - text: [CH]
     center:
     - 0.3333
     - 0.6979
@@ -2594,7 +2594,7 @@ screens:
     aliases:
     - local specialties
     - souvenirs
-    - 伴手礼
+    - [CH]
     semantic_type: tab
   - text: Survey
     center:
@@ -2603,11 +2603,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
-    - 调查
-    - 调研
+    - [CH]
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 超市/便利店
+  - text: [CH]/[CH]
     center:
     - 0.3557
     - 0.9748
@@ -2616,10 +2616,10 @@ screens:
     aliases:
     - supermarket
     - convenience store
-    - 超市
-    - 便利店
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 综合商场
+  - text: [CH]
     center:
     - 0.3333
     - 0.6957
@@ -2628,9 +2628,9 @@ screens:
     aliases:
     - department store
     - shopping mall
-    - 综合购物中心
+    - [CH]Center
     semantic_type: menu_item
-  - text: 奢侈品
+  - text: [CH]
     center:
     - 0.3184
     - 0.8513
@@ -2638,10 +2638,10 @@ screens:
     fixed: false
     aliases:
     - luxury
-    - 高端品牌
+    - [CH]
     - luxury goods
     semantic_type: menu_item
-  - text: 购物场所
+  - text: [CH]
     center:
     - 0.3333
     - 0.833
@@ -2649,7 +2649,7 @@ screens:
     fixed: false
     aliases:
     - shopping places
-    - 购物地点
+    - [CH]
     - shopping venues
     semantic_type: label
   description: Shopping category screen with various merchant types like supermarkets,
@@ -2658,19 +2658,19 @@ screens:
   scroll_direction: vertical
 - id: screen_24
   elements:
-  - text: 亲子出游
+  - text: [CH]
     center:
     - 0.3134
     - 0.27
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 亲子游
+    - [CH]
     - family trip
     - parent-child outing
-    - 带娃出游
+    - [CH]
     semantic_type: menu_item
-  - text: 景点
+  - text: [CH]
     center:
     - 0.2985
     - 0.4908
@@ -2680,9 +2680,9 @@ screens:
     - attractions
     - scenic spots
     - sightseeing
-    - 旅游景点
+    - [CH]
     semantic_type: menu_item
-  - text: 自然景观
+  - text: [CH]
     center:
     - 0.3284
     - 0.7265
@@ -2691,9 +2691,9 @@ screens:
     aliases:
     - natural scenery
     - natural landscape
-    - 自然风光
+    - [CH]
     semantic_type: menu_item
-  - text: 观光街区
+  - text: [CH]
     center:
     - 0.3284
     - 0.9622
@@ -2702,10 +2702,10 @@ screens:
     aliases:
     - sightseeing district
     - tourist area
-    - 观光街
-    - 街区
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 水族馆
+  - text: [CH]
     center:
     - 0.0448
     - 0.4027
@@ -2713,10 +2713,10 @@ screens:
     fixed: false
     aliases:
     - aquarium
-    - 海洋馆
+    - [CH]
     - sea life center
     semantic_type: menu_item
-  - text: 人文古迹
+  - text: [CH]
     center:
     - 0.0597
     - 0.4027
@@ -2726,9 +2726,9 @@ screens:
     - historical sites
     - cultural relics
     - historic landmarks
-    - 古迹
+    - [CH]
     semantic_type: menu_item
-  - text: 主题乐园
+  - text: Theme[CH]
     center:
     - 0.0597
     - 0.4027
@@ -2737,10 +2737,10 @@ screens:
     aliases:
     - theme park
     - amusement park
-    - 游乐园
-    - 乐园
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 展览馆
+  - text: [CH]
     center:
     - 0.0448
     - 0.4027
@@ -2749,10 +2749,10 @@ screens:
     aliases:
     - exhibition hall
     - museum
-    - 博物馆
-    - 展馆
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 学校
+  - text: [CH]
     center:
     - 0.0299
     - 0.4027
@@ -2761,7 +2761,7 @@ screens:
     aliases:
     - school
     - educational institution
-    - 学院
+    - [CH]
     semantic_type: menu_item
   - text: Tips
     center:
@@ -2772,8 +2772,8 @@ screens:
     aliases:
     - hints
     - advice
-    - 小贴士
-    - 提示
+    - [CH]
+    - Tip
     semantic_type: tab
   - text: Map
     center:
@@ -2782,8 +2782,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
-    - 导航
+    - [CH]
+    - [CH]
     - navigation
     semantic_type: tab
   - text: Survey
@@ -2793,10 +2793,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
-    - 调查
+    - [CH]
+    - [CH]
     - feedback
-    - 调研
+    - [CH]
     semantic_type: tab
   - text: See Translation
     center:
@@ -2805,9 +2805,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
-    - 翻译
+    - [CH]
     semantic_type: button
   description: Family-friendly travel screen with categories like attractions, natural
     scenery, and aquariums, plus tips, map, and survey options.
@@ -2823,11 +2823,11 @@ screens:
     fixed: true
     aliases:
     - Meituan Taxi
-    - 美团打车
+    - [CH]
     - Meituan ride-hailing
-    - 打车
+    - [CH]
     semantic_type: tab
-  - text: 接得快
+  - text: [CH]
     center:
     - 0.4403
     - 0.0789
@@ -2836,9 +2836,9 @@ screens:
     aliases:
     - fast pickup
     - quick response
-    - 接单快
+    - [CH]
     semantic_type: label
-  - text: 省得多
+  - text: [CH]
     center:
     - 0.6194
     - 0.0789
@@ -2847,10 +2847,10 @@ screens:
     aliases:
     - save more
     - cost-effective
-    - 省钱
+    - [CH]
     - discount
     semantic_type: label
-  - text: 订单
+  - text: Order
     center:
     - 0.9328
     - 0.0927
@@ -2860,9 +2860,9 @@ screens:
     - orders
     - my orders
     - trips
-    - 行程
+    - [CH]
     semantic_type: tab
-  - text: 热门问题
+  - text: [CH]
     center:
     - 0.1443
     - 0.4165
@@ -2871,10 +2871,10 @@ screens:
     aliases:
     - FAQ
     - popular questions
-    - 常见问题
+    - FAQ
     - help topics
     semantic_type: menu_item
-  - text: 联系客服
+  - text: ContactCustomer Service
     center:
     - 0.5224
     - 0.7975
@@ -2883,10 +2883,10 @@ screens:
     aliases:
     - contact support
     - customer service
-    - 客服
+    - Customer Service
     - help
     semantic_type: button
-  - text: 服务授权
+  - text: ServiceAuthorize
     center:
     - 0.5
     - 0.3513
@@ -2895,10 +2895,10 @@ screens:
     aliases:
     - service authorization
     - permissions
-    - 授权
+    - Authorize
     - grant access
     semantic_type: setting
-  - text: 暂不同意
+  - text: [CH]
     center:
     - 0.2637
     - 0.9336
@@ -2908,9 +2908,9 @@ screens:
     - disagree
     - decline
     - not now
-    - 拒绝
+    - [CH]
     semantic_type: button
-  - text: 同意并使用
+  - text: [CH]
     center:
     - 0.7338
     - 0.9336
@@ -2919,7 +2919,7 @@ screens:
     aliases:
     - agree and use
     - accept
-    - 同意
+    - [CH]
     - confirm
     semantic_type: button
   description: Meituan ride-hailing service onboarding screen with service authorization
@@ -2928,7 +2928,7 @@ screens:
   scroll_direction: ''
 - id: screen_26
   elements:
-  - text: 返回
+  - text: Back
     center:
     - 0.0697
     - 0.0892
@@ -2939,7 +2939,7 @@ screens:
     - go back
     - return
     semantic_type: button
-  - text: 订座
+  - text: [CH]
     center:
     - 0.5
     - 0.0904
@@ -2951,7 +2951,7 @@ screens:
     - reservation
     - booking
     semantic_type: button
-  - text: 附近
+  - text: [CH]
     center:
     - 0.1493
     - 0.1396
@@ -2962,7 +2962,7 @@ screens:
     - near me
     - surrounding
     semantic_type: tab
-  - text: 全部美食
+  - text: All[CH]
     center:
     - 0.4826
     - 0.1396
@@ -2973,7 +2973,7 @@ screens:
     - all cuisines
     - all restaurants
     semantic_type: tab
-  - text: 智能排序
+  - text: [CH]
     center:
     - 0.8159
     - 0.1396
@@ -2985,7 +2985,7 @@ screens:
     - sorting
     - recommended sort
     semantic_type: button
-  - text: 中餐
+  - text: [CH]
     center:
     - 0.4826
     - 0.2449
@@ -2994,9 +2994,9 @@ screens:
     aliases:
     - Chinese food
     - Chinese cuisine
-    - 中菜
+    - [CH]
     semantic_type: menu_item
-  - text: 牛排
+  - text: [CH]
     center:
     - 0.4104
     - 0.4405
@@ -3005,9 +3005,9 @@ screens:
     aliases:
     - steak
     - beef steak
-    - 牛扒
+    - [CH]
     semantic_type: menu_item
-  - text: 鱼鲜海鲜
+  - text: [CH]
     center:
     - 0.5124
     - 0.6041
@@ -3016,7 +3016,7 @@ screens:
     aliases:
     - seafood
     - fish and seafood
-    - 海鲜
+    - [CH]
     semantic_type: menu_item
   - text: '[Account]'
     center:
@@ -3030,7 +3030,7 @@ screens:
     - my account
     - user
     semantic_type: tab
-  - text: 西餐
+  - text: [CH]
     center:
     - 0.4527
     - 0.746
@@ -3039,9 +3039,9 @@ screens:
     aliases:
     - Western food
     - Western cuisine
-    - 西式料理
+    - [CH]
     semantic_type: menu_item
-  - text: 火锅
+  - text: [CH]
     center:
     - 0.4826
     - 0.643
@@ -3052,7 +3052,7 @@ screens:
     - hotpot
     - steamboat
     semantic_type: menu_item
-  - text: 自助餐
+  - text: [CH]
     center:
     - 0.4254
     - 0.5904
@@ -3061,9 +3061,9 @@ screens:
     aliases:
     - buffet
     - all-you-can-eat
-    - 自助
+    - [CH]
     semantic_type: menu_item
-  - text: 美国菜
+  - text: [CH]
     center:
     - 0.4254
     - 0.754
@@ -3072,7 +3072,7 @@ screens:
     aliases:
     - American food
     - American cuisine
-    - 美式料理
+    - [CH]
     semantic_type: menu_item
   description: Restaurant search results page with filtering options for cuisine types
     and sorting, showing nearby dining options.
@@ -3080,7 +3080,7 @@ screens:
   scroll_direction: vertical
 - id: screen_27
   elements:
-  - text: 创建视频
+  - text: Create[CH]
     center:
     - 0.5
     - 0.9405
@@ -3089,7 +3089,7 @@ screens:
     aliases:
     - create video
     - make video
-    - 视频创作
+    - [CH]
     semantic_type: button
   - text: Coffee
     center:
@@ -3100,7 +3100,7 @@ screens:
     aliases:
     - cafe
     - coffee shop
-    - 咖啡
+    - [CH]
     semantic_type: menu_item
   - text: Buffet
     center:
@@ -3109,7 +3109,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 自助餐
+    - [CH]
     - all you can eat
     - buffet restaurant
     semantic_type: menu_item
@@ -3122,7 +3122,7 @@ screens:
     aliases:
     - restaurants
     - dining
-    - 美食
+    - [CH]
     semantic_type: menu_item
   - text: Malls
     center:
@@ -3132,7 +3132,7 @@ screens:
     fixed: false
     aliases:
     - shopping centers
-    - 商场
+    - [CH]
     - shopping malls
     semantic_type: menu_item
   - text: Hotels
@@ -3143,7 +3143,7 @@ screens:
     fixed: false
     aliases:
     - accommodation
-    - 酒店
+    - [CH]
     - lodging
     semantic_type: menu_item
   - text: Tours
@@ -3154,7 +3154,7 @@ screens:
     fixed: false
     aliases:
     - travel
-    - 旅游
+    - [CH]
     - sightseeing
     semantic_type: menu_item
   - text: Local Fun
@@ -3165,7 +3165,7 @@ screens:
     fixed: false
     aliases:
     - entertainment
-    - 本地玩乐
+    - Local[CH]
     - activities
     semantic_type: menu_item
   - text: Delivery
@@ -3175,7 +3175,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
     - takeout
     semantic_type: menu_item
@@ -3188,7 +3188,7 @@ screens:
     aliases:
     - spa
     - salon
-    - 美容
+    - [CH]
     semantic_type: menu_item
   - text: Bars
     center:
@@ -3198,7 +3198,7 @@ screens:
     fixed: false
     aliases:
     - pubs
-    - 酒吧
+    - [CH]
     - nightlife
     semantic_type: menu_item
   - text: Taxi
@@ -3209,7 +3209,7 @@ screens:
     fixed: false
     aliases:
     - ride hailing
-    - 出租车
+    - [CH]
     - cab
     semantic_type: menu_item
   - text: Duty-Free
@@ -3219,11 +3219,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 免税店
+    - [CH]
     - tax free
     - duty free shop
     semantic_type: menu_item
-  - text: 美食订座
+  - text: [CH]
     center:
     - 0.1667
     - 0.3707
@@ -3242,7 +3242,7 @@ screens:
     fixed: false
     aliases:
     - translate menu
-    - 菜单翻译
+    - Menu[CH]
     - food translation
     semantic_type: button
   - text: Exchange Rate Calculation
@@ -3253,7 +3253,7 @@ screens:
     fixed: false
     aliases:
     - currency converter
-    - 汇率计算
+    - [CH]
     - money exchange
     semantic_type: button
   - text: Photo Search
@@ -3264,7 +3264,7 @@ screens:
     fixed: false
     aliases:
     - image search
-    - 图片搜索
+    - [CH]Search
     - visual search
     semantic_type: button
   - text: Home
@@ -3274,7 +3274,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 首页
+    - Home
     - main page
     - homepage
     semantic_type: tab
@@ -3285,7 +3285,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -3297,7 +3297,7 @@ screens:
     fixed: true
     aliases:
     - messages
-    - 消息
+    - Message
     - notifications
     semantic_type: tab
   - text: Profile
@@ -3307,7 +3307,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 我的
+    - My
     - account
     - me
     semantic_type: tab
@@ -3319,7 +3319,7 @@ screens:
     fixed: true
     aliases:
     - view translation
-    - 查看翻译
+    - View[CH]
     - show translation
     semantic_type: button
   description: Main services grid screen offering various lifestyle categories like
@@ -3329,7 +3329,7 @@ screens:
   scroll_direction: vertical
 - id: screen_28
   elements:
-  - text: 创建视频
+  - text: Create[CH]
     center:
     - 0.5
     - 0.9405
@@ -3339,7 +3339,7 @@ screens:
     - create video
     - make video
     - new video
-    - 录制视频
+    - [CH]
     semantic_type: button
   - text: '[Account]'
     center:
@@ -3350,10 +3350,10 @@ screens:
     aliases:
     - account
     - my account
-    - 账户
-    - 个人中心
+    - Account
+    - PersonalCenter
     semantic_type: menu_item
-  - text: 收藏
+  - text: [CH]
     center:
     - 0.9229
     - 0.5904
@@ -3363,7 +3363,7 @@ screens:
     - favorites
     - bookmarks
     - saved
-    - 我的收藏
+    - My[CH]
     semantic_type: menu_item
   - text: Home
     center:
@@ -3372,7 +3372,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - homepage
     semantic_type: tab
@@ -3383,7 +3383,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore map
     semantic_type: tab
@@ -3394,10 +3394,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 消息
+    - Message
     - notifications
     - messages
-    - 收件箱
+    - [CH]
     semantic_type: tab
   - text: Profile
     center:
@@ -3406,10 +3406,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 我的
+    - My
     - me
     - personal profile
-    - 个人资料
+    - Personal[CH]
     semantic_type: tab
   description: User profile or account screen with options to create a video, view
     collections, and navigate via bottom tabs.
@@ -3424,11 +3424,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 启用
+    - Enable
     - turn on
     - activate
     semantic_type: toggle
-  - text: 创建视频
+  - text: Create[CH]
     center:
     - 0.5
     - 0.9405
@@ -3446,7 +3446,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收件箱
+    - [CH]
     - messages
     - notifications
     semantic_type: tab
@@ -3457,7 +3457,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 首页
+    - Home
     - main page
     - feed
     semantic_type: tab
@@ -3468,7 +3468,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -3479,7 +3479,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 我的
+    - My
     - account
     - personal
     semantic_type: tab
@@ -3496,9 +3496,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 购买
+    - Purchase
     - purchase
-    - 立即购买
+    - [CH]Purchase
     semantic_type: button
   - text: Detail
     center:
@@ -3507,11 +3507,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 详情
+    - [CH]
     - details
     - information
     semantic_type: tab
-  - text: 查看
+  - text: View
     center:
     - 0.0622
     - 0.0137
@@ -3522,7 +3522,7 @@ screens:
     - check
     - see
     semantic_type: button
-  - text: 领取
+  - text: [CH]
     center:
     - 0.0622
     - 0.0137
@@ -3541,10 +3541,10 @@ screens:
     fixed: true
     aliases:
     - promotion
-    - 优惠
+    - [CH]
     - deal
     semantic_type: label
-  - text: 去听听
+  - text: [CH]
     center:
     - 0.0448
     - 0.008
@@ -3553,9 +3553,9 @@ screens:
     aliases:
     - listen
     - go listen
-    - 试听
+    - [CH]
     semantic_type: button
-  - text: 正文
+  - text: [CH]
     center:
     - 0.0572
     - 0.0092
@@ -3573,9 +3573,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 好极了
+    - [CH]
     - excellent
-    - 很棒
+    - [CH]
     semantic_type: button
   - text: Fair
     center:
@@ -3584,11 +3584,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 一般
+    - [CH]
     - okay
-    - 还行
+    - [CH]
     semantic_type: button
-  - text: 问大家
+  - text: [CH]
     center:
     - 0.0597
     - 0.0114
@@ -3599,7 +3599,7 @@ screens:
     - questions
     - ask community
     semantic_type: link
-  - text: 提问
+  - text: [CH]
     center:
     - 0.0647
     - 0.016
@@ -3610,7 +3610,7 @@ screens:
     - post question
     - inquire
     semantic_type: button
-  - text: 查看全部
+  - text: ViewAll
     center:
     - 0.0597
     - 0.0092
@@ -3619,9 +3619,9 @@ screens:
     aliases:
     - view all
     - see all
-    - 全部
+    - All
     semantic_type: link
-  - text: 服务
+  - text: Service
     center:
     - 0.0348
     - 0.0114
@@ -3639,9 +3639,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 评论
+    - [CH]
     - evaluations
-    - 用户评价
+    - [CH]
     semantic_type: tab
   - text: See Translation
     center:
@@ -3650,11 +3650,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
-    - 翻译
+    - [CH]
     semantic_type: button
-  - text: 头像
+  - text: Avatar
     center:
     - 0.0373
     - 0.0172
@@ -3665,7 +3665,7 @@ screens:
     - profile picture
     - photo
     semantic_type: label
-  - text: 图片
+  - text: [CH]
     center:
     - 0.0149
     - 0.0046
@@ -3689,11 +3689,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
     - takeout
     semantic_type: tab
-  - text: 可用银联
+  - text: [CH]
     center:
     - 0.8433
     - 0.5572
@@ -3701,10 +3701,10 @@ screens:
     fixed: false
     aliases:
     - UnionPay accepted
-    - 银联支付
+    - [CH]Payment
     - UnionPay available
     semantic_type: label
-  - text: 附近500m
+  - text: [CH]500m
     center:
     - 0.0721
     - 0.1716
@@ -3713,7 +3713,7 @@ screens:
     aliases:
     - nearby 500m
     - 500 meters nearby
-    - 周边500米
+    - [CH]500米
     semantic_type: label
   - text: '[Account]'
     center:
@@ -3722,7 +3722,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 账户
+    - Account
     - my account
     - profile
     semantic_type: tab
@@ -3751,7 +3751,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby map
     - explore
     semantic_type: tab
@@ -3762,7 +3762,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
+    - [CH]
     - feedback
     - poll
     semantic_type: button
@@ -3773,9 +3773,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
-    - 显示翻译
+    - [CH]
     semantic_type: button
   description: Delivery order screen showing nearby available accounts within 500m,
     with map and survey options.
@@ -3790,7 +3790,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
     - takeout
     semantic_type: tab
@@ -3801,7 +3801,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 支付
+    - Payment
     - pay
     - checkout
     semantic_type: tab
@@ -3812,7 +3812,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 账户
+    - Account
     - profile
     - my account
     semantic_type: tab
@@ -3835,7 +3835,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - nearby
     - explore
     semantic_type: tab
@@ -3846,7 +3846,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
+    - [CH]
     - feedback
     - poll
     semantic_type: menu_item
@@ -3857,7 +3857,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
     - language
     semantic_type: button
@@ -3874,9 +3874,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
-    - 送餐
+    - [CH]
     semantic_type: tab
   - text: Japanese Cuisine
     center:
@@ -3885,11 +3885,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日料
-    - 日本料理
+    - [CH]
+    - [CH]
     - Japanese food
     semantic_type: menu_item
-  - text: 川菜
+  - text: [CH]
     center:
     - 0.0323
     - 0.1728
@@ -3897,10 +3897,10 @@ screens:
     fixed: true
     aliases:
     - Sichuan cuisine
-    - 四川菜
+    - [CH]
     - Szechuan food
     semantic_type: menu_item
-  - text: 茶餐厅
+  - text: [CH]
     center:
     - 0.3259
     - 0.5892
@@ -3909,7 +3909,7 @@ screens:
     aliases:
     - Cha chaan teng
     - Hong Kong style cafe
-    - 港式茶餐厅
+    - [CH]
     semantic_type: menu_item
   - text: '[Account]'
     center:
@@ -3918,11 +3918,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 我的
+    - My
     - profile
     - user center
     semantic_type: tab
-  - text: 可用银联
+  - text: [CH]
     center:
     - 0.0547
     - 0.1716
@@ -3930,10 +3930,10 @@ screens:
     fixed: true
     aliases:
     - UnionPay accepted
-    - 银联支付
+    - [CH]Payment
     - supports UnionPay
     semantic_type: toggle
-  - text: 附近500m
+  - text: [CH]500m
     center:
     - 0.0721
     - 0.1716
@@ -3942,7 +3942,7 @@ screens:
     aliases:
     - within 500 meters
     - nearby 500m
-    - 500米内
+    - 500[CH]
     semantic_type: toggle
   - text: '[Account]'
     center:
@@ -3975,7 +3975,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - view map
     - map view
     semantic_type: button
@@ -3986,9 +3986,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
+    - [CH]
     - feedback
-    - 调查
+    - [CH]
     semantic_type: button
   - text: See Translation
     center:
@@ -3997,11 +3997,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
-    - 显示翻译
+    - [CH]
     semantic_type: button
-  - text: 东南亚菜
+  - text: [CH]
     center:
     - 0.3433
     - 0.3673
@@ -4009,10 +4009,10 @@ screens:
     fixed: false
     aliases:
     - Southeast Asian cuisine
-    - 东南亚料理
+    - [CH]
     - ASEAN food
     semantic_type: menu_item
-  - text: 小吃快餐
+  - text: [CH]
     center:
     - 0.3433
     - 0.6556
@@ -4023,7 +4023,7 @@ screens:
     - fast food
     - quick bites
     semantic_type: menu_item
-  - text: 披萨
+  - text: [CH]
     center:
     - 0.3109
     - 0.476
@@ -4031,7 +4031,7 @@ screens:
     fixed: false
     aliases:
     - pizza
-    - 比萨
+    - [CH]
     - Italian pie
     semantic_type: menu_item
   description: Food delivery category selection screen with cuisine types, payment
@@ -4047,7 +4047,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 外卖
+    - [CH]
     - food delivery
     - takeout
     semantic_type: tab
@@ -4058,7 +4058,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 账户
+    - Account
     - profile
     - my account
     semantic_type: tab
@@ -4069,11 +4069,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 支付
+    - Payment
     - pay
     - checkout
     semantic_type: tab
-  - text: 附近500m
+  - text: [CH]500m
     center:
     - 0.0721
     - 0.1716
@@ -4082,7 +4082,7 @@ screens:
     aliases:
     - nearby 500m
     - within 500 meters
-    - 周边
+    - [CH]
     semantic_type: label
   - text: '[Account]'
     center:
@@ -4115,7 +4115,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地图
+    - [CH]
     - navigation
     - explore
     semantic_type: tab
@@ -4126,7 +4126,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷
+    - [CH]
     - feedback
     - poll
     semantic_type: button
@@ -4137,7 +4137,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
     - view translation
     semantic_type: button
@@ -4147,65 +4147,65 @@ screens:
   scroll_direction: vertical
 - id: screen_35
   elements:
-  - text: 美食地图
+  - text: [CH]
     center:
     - 0.5
     - 0.0927
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 美食地图
+    - [CH]
     - food map
     - gourmet map
-    - 美食导览
+    - [CH]
     semantic_type: menu_item
-  - text: 中餐
+  - text: [CH]
     center:
     - 0.8657
     - 0.8066
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 中餐
+    - [CH]
     - Chinese food
     - Chinese cuisine
-    - 中菜
+    - [CH]
     semantic_type: menu_item
-  - text: 收藏
+  - text: [CH]
     center:
     - 0.2338
     - 0.9211
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收藏
+    - [CH]
     - favorites
     - bookmarks
     - saved
     semantic_type: menu_item
-  - text: 搜周边
+  - text: [CH]
     center:
     - 0.4478
     - 0.9211
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 搜周边
+    - [CH]
     - search nearby
     - explore nearby
-    - 周边搜索
+    - [CH]Search
     semantic_type: button
-  - text: 路线
+  - text: [CH]
     center:
     - 0.7388
     - 0.9211
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 路线
+    - [CH]
     - route
     - directions
-    - 导航
+    - [CH]
     semantic_type: button
   description: Food map screen showing a map view with options to filter by Chinese
     cuisine, view favorites, search nearby, and get directions.
@@ -4213,7 +4213,7 @@ screens:
   scroll_direction: ''
 - id: screen_36
   elements:
-  - text: 返回
+  - text: Back
     center:
     - 0.0647
     - 0.0892
@@ -4222,9 +4222,9 @@ screens:
     aliases:
     - back
     - go back
-    - 返回上一页
+    - Back[CH]
     semantic_type: button
-  - text: 非常不满意
+  - text: [CH]
     center:
     - 0.1766
     - 0.2426
@@ -4233,9 +4233,9 @@ screens:
     aliases:
     - very dissatisfied
     - 1 star
-    - 极差
+    - [CH]
     semantic_type: button
-  - text: 比较不满意
+  - text: [CH]
     center:
     - 0.3383
     - 0.2426
@@ -4244,9 +4244,9 @@ screens:
     aliases:
     - dissatisfied
     - 2 stars
-    - 差评
+    - [CH]
     semantic_type: button
-  - text: 一般
+  - text: [CH]
     center:
     - 0.5
     - 0.2426
@@ -4256,9 +4256,9 @@ screens:
     - neutral
     - 3 stars
     - average
-    - 中等
+    - [CH]
     semantic_type: button
-  - text: 比较满意
+  - text: [CH]
     center:
     - 0.6617
     - 0.2426
@@ -4267,9 +4267,9 @@ screens:
     aliases:
     - satisfied
     - 4 stars
-    - 好评
+    - [CH]
     semantic_type: button
-  - text: 非常满意
+  - text: [CH]
     center:
     - 0.8234
     - 0.2426
@@ -4278,9 +4278,9 @@ screens:
     aliases:
     - very satisfied
     - 5 stars
-    - 极好
+    - [CH]
     semantic_type: button
-  - text: 提交
+  - text: [CH]
     center:
     - 0.5
     - 0.9314
@@ -4290,9 +4290,9 @@ screens:
     - submit
     - confirm
     - send
-    - 确认
+    - Confirm
     semantic_type: button
-  description: User satisfaction rating screen with five options from '非常不满意' to '非常满意'
+  description: User satisfaction rating screen with five options from '[CH]' to '[CH]'
     and a submit button.
   scrollable: false
   scroll_direction: ''
@@ -4305,7 +4305,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 使用
+    - [CH]
     - redeem
     - apply
     semantic_type: button
@@ -4316,11 +4316,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 获取
-    - 领取
+    - [CH]
+    - [CH]
     - obtain
     semantic_type: button
-  - text: 查看全部
+  - text: ViewAll
     center:
     - 0.6119
     - 0.3249
@@ -4329,7 +4329,7 @@ screens:
     aliases:
     - view all
     - see all
-    - 全部
+    - All
     semantic_type: link
   - text: Tips
     center:
@@ -4338,11 +4338,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提示
+    - Tip
     - hints
-    - 小贴士
+    - [CH]
     semantic_type: label
-  - text: 返现
+  - text: [CH]
     center:
     - 0.7662
     - 0.111
@@ -4351,9 +4351,9 @@ screens:
     aliases:
     - cashback
     - rebate
-    - 现金返还
+    - [CH]
     semantic_type: label
-  - text: 我的优惠券
+  - text: My[CH]
     center:
     - 0.8955
     - 0.111
@@ -4362,7 +4362,7 @@ screens:
     aliases:
     - my coupons
     - my vouchers
-    - 优惠券
+    - [CH]
     semantic_type: menu_item
   - text: Malls
     center:
@@ -4371,9 +4371,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 商场
+    - [CH]
     - shopping malls
-    - 购物中心
+    - [CH]Center
     semantic_type: tab
   - text: Luxury
     center:
@@ -4382,11 +4382,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 奢侈品
+    - [CH]
     - high-end
-    - 高端
+    - [CH]
     semantic_type: tab
-  - text: 查看更多
+  - text: View[CH]
     center:
     - 0.0149
     - 0.3364
@@ -4395,7 +4395,7 @@ screens:
     aliases:
     - see more
     - view more
-    - 更多
+    - [CH]
     semantic_type: link
   - text: Survey
     center:
@@ -4404,9 +4404,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷调查
+    - [CH]
     - questionnaire
-    - 调研
+    - [CH]
     semantic_type: menu_item
   description: My Coupons screen showing available coupons, tips, cashback, and categories
     like Malls and Luxury with options to view all or see more.
@@ -4414,18 +4414,18 @@ screens:
   scroll_direction: vertical
 - id: screen_38
   elements:
-  - text: 全部分类
+  - text: All[CH]
     center:
     - 0.2811
     - 0.1384
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 所有分类
+    - 所Yes[CH]
     - all categories
     - categories
     semantic_type: tab
-  - text: 药妆
+  - text: [CH]
     center:
     - 0.1891
     - 0.2071
@@ -4433,10 +4433,10 @@ screens:
     fixed: false
     aliases:
     - cosmeceutical
-    - 药用化妆品
-    - 药妆品
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 保健品
+  - text: [CH]
     center:
     - 0.204
     - 0.3696
@@ -4444,10 +4444,10 @@ screens:
     fixed: false
     aliases:
     - health supplements
-    - 营养品
+    - [CH]
     - dietary supplements
     semantic_type: tab
-  - text: 美妆
+  - text: [CH]
     center:
     - 0.1891
     - 0.8467
@@ -4455,11 +4455,11 @@ screens:
     fixed: true
     aliases:
     - beauty
-    - 化妆品
+    - [CH]
     - makeup
     - cosmetics
     semantic_type: tab
-  - text: 钱包
+  - text: [CH]
     center:
     - 0.8308
     - 0.0892
@@ -4468,9 +4468,9 @@ screens:
     aliases:
     - wallet
     - payment
-    - 支付
+    - Payment
     semantic_type: menu_item
-  - text: 分享
+  - text: Share
     center:
     - 0.9279
     - 0.0892
@@ -4478,10 +4478,10 @@ screens:
     fixed: true
     aliases:
     - share
-    - 分享给朋友
+    - Share[CH]
     - invite
     semantic_type: button
-  - text: 珠宝首饰
+  - text: [CH]
     center:
     - 0.2189
     - 0.3696
@@ -4489,7 +4489,7 @@ screens:
     fixed: true
     aliases:
     - jewelry
-    - 首饰
+    - [CH]
     - accessories
     semantic_type: tab
   description: Category selection screen listing product categories like cosmetics,
@@ -4505,7 +4505,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 使用
+    - [CH]
     - redeem
     - apply
     semantic_type: button
@@ -4516,10 +4516,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 获取
+    - [CH]
     - obtain
     - acquire
-    - 领取
+    - [CH]
     semantic_type: button
   - text: Tips
     center:
@@ -4528,12 +4528,12 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提示
+    - Tip
     - hints
     - advice
-    - 贴士
+    - [CH]
     semantic_type: label
-  - text: 我的优惠券
+  - text: My[CH]
     center:
     - 0.8955
     - 0.111
@@ -4542,7 +4542,7 @@ screens:
     aliases:
     - my coupons
     - my vouchers
-    - 我的券
+    - My券
     - coupons
     semantic_type: menu_item
   - text: Malls
@@ -4552,9 +4552,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 商场
+    - [CH]
     - shopping malls
-    - 购物中心
+    - [CH]Center
     semantic_type: tab
   - text: Luxury
     center:
@@ -4563,10 +4563,10 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 奢侈品
+    - [CH]
     - high-end
     - premium
-    - 奢侈
+    - [CH]
     semantic_type: tab
   - text: Survey
     center:
@@ -4575,10 +4575,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 问卷调查
+    - [CH]
     - questionnaire
-    - 调研
-    - 反馈
+    - [CH]
+    - Feedback
     semantic_type: menu_item
   description: My Coupons screen with tabs for Use, Get, Tips, and categories like
     Malls, Luxury, Survey.
@@ -4586,7 +4586,7 @@ screens:
   scroll_direction: vertical
 - id: screen_40
   elements:
-  - text: 全部
+  - text: All
     center:
     - 0.1418
     - 0.1934
@@ -4594,10 +4594,10 @@ screens:
     fixed: true
     aliases:
     - all
-    - 全部订单
+    - AllOrder
     - all orders
     semantic_type: tab
-  - text: 待返现
+  - text: [CH]
     center:
     - 0.3806
     - 0.1934
@@ -4605,10 +4605,10 @@ screens:
     fixed: true
     aliases:
     - pending cashback
-    - 待返现订单
+    - [CH]Order
     - to be refunded
     semantic_type: tab
-  - text: 已返现
+  - text: [CH]
     center:
     - 0.6194
     - 0.1934
@@ -4616,10 +4616,10 @@ screens:
     fixed: true
     aliases:
     - cashback received
-    - 已返现订单
+    - [CH]Order
     - refunded
     semantic_type: tab
-  - text: 已取消
+  - text: 已Cancel
     center:
     - 0.8582
     - 0.1934
@@ -4627,10 +4627,10 @@ screens:
     fixed: true
     aliases:
     - cancelled
-    - 已取消订单
+    - 已CancelOrder
     - canceled
     semantic_type: tab
-  - text: 一键领取
+  - text: [CH]
     center:
     - 0.8731
     - 0.7105
@@ -4639,9 +4639,9 @@ screens:
     aliases:
     - claim all
     - collect all
-    - 一键领取返现
+    - [CH]
     semantic_type: button
-  - text: 返现记录
+  - text: [CH]
     center:
     - 0.5
     - 0.0858
@@ -4649,10 +4649,10 @@ screens:
     fixed: true
     aliases:
     - cashback history
-    - 返现历史
+    - [CH]
     - rebate records
     semantic_type: link
-  - text: 珠宝首饰
+  - text: [CH]
     center:
     - 0.2189
     - 0.7243
@@ -4661,9 +4661,9 @@ screens:
     aliases:
     - jewelry
     - jewellery
-    - 首饰
+    - [CH]
     semantic_type: menu_item
-  - text: 保健品
+  - text: [CH]
     center:
     - 0.204
     - 0.9565
@@ -4672,9 +4672,9 @@ screens:
     aliases:
     - health supplements
     - supplements
-    - 保健食品
+    - [CH]
     semantic_type: menu_item
-  - text: 机场免税
+  - text: [CH]
     center:
     - 0.2189
     - 0.7643
@@ -4683,9 +4683,9 @@ screens:
     aliases:
     - airport duty-free
     - duty free
-    - 免税店
+    - [CH]
     semantic_type: menu_item
-  - text: 药妆电器
+  - text: [CH]
     center:
     - 0.2189
     - 0.9405
@@ -4693,10 +4693,10 @@ screens:
     fixed: false
     aliases:
     - cosmeceuticals & electronics
-    - 药妆和电器
+    - [CH]
     - beauty and electronics
     semantic_type: menu_item
-  - text: 美妆
+  - text: [CH]
     center:
     - 0.1891
     - 0.6922
@@ -4705,14 +4705,14 @@ screens:
     aliases:
     - beauty
     - cosmetics
-    - 化妆品
+    - [CH]
     semantic_type: menu_item
-  description: 返现记录页面，包含全部、待返现、已返现、已取消四个分类标签，以及珠宝首饰、保健品等商品类别和一键领取按钮
+  description: [CH]Page，[CH]All、[CH]、[CH]、已Cancel[CH]Tab，[CH]、[CH]
   scrollable: true
   scroll_direction: vertical
 - id: screen_41
   elements:
-  - text: 去使用
+  - text: [CH]
     center:
     - 0.8657
     - 0.2117
@@ -4721,9 +4721,9 @@ screens:
     aliases:
     - use now
     - go use
-    - 立即使用
+    - [CH]
     semantic_type: button
-  - text: 一键领取
+  - text: [CH]
     center:
     - 0.8731
     - 0.413
@@ -4732,9 +4732,9 @@ screens:
     aliases:
     - claim all
     - one-click claim
-    - 领取全部
+    - [CH]All
     semantic_type: button
-  - text: 免费领
+  - text: [CH]
     center:
     - 0.8458
     - 0.4771
@@ -4743,9 +4743,9 @@ screens:
     aliases:
     - free claim
     - get free
-    - 免费领取
+    - [CH]
     semantic_type: button
-  - text: 我的优惠券
+  - text: My[CH]
     center:
     - 0.5
     - 0.087
@@ -4754,9 +4754,9 @@ screens:
     aliases:
     - my coupons
     - my vouchers
-    - 优惠券
+    - [CH]
     semantic_type: menu_item
-  - text: 推荐更多优惠
+  - text: [CH]
     center:
     - 0.5
     - 0.3581
@@ -4765,9 +4765,9 @@ screens:
     aliases:
     - recommend more deals
     - more offers
-    - 更多优惠
+    - [CH]
     semantic_type: link
-  - text: 珠宝首饰
+  - text: [CH]
     center:
     - 0.2189
     - 0.4268
@@ -4776,9 +4776,9 @@ screens:
     aliases:
     - jewelry
     - accessories
-    - 首饰
+    - [CH]
     semantic_type: tab
-  - text: 保健品
+  - text: [CH]
     center:
     - 0.204
     - 0.5069
@@ -4787,9 +4787,9 @@ screens:
     aliases:
     - health supplements
     - supplements
-    - 保健
+    - [CH]
     semantic_type: tab
-  - text: 机场免税
+  - text: [CH]
     center:
     - 0.2189
     - 0.9554
@@ -4798,9 +4798,9 @@ screens:
     aliases:
     - duty free
     - airport duty free
-    - 免税店
+    - [CH]
     semantic_type: tab
-  - text: 到店立享
+  - text: [CH]
     center:
     - 0.1393
     - 0.4039
@@ -4809,9 +4809,9 @@ screens:
     aliases:
     - in-store offer
     - store discount
-    - 到店优惠
+    - [CH]
     semantic_type: button
-  - text: 药妆电器
+  - text: [CH]
     center:
     - 0.2189
     - 0.5034
@@ -4820,9 +4820,9 @@ screens:
     aliases:
     - cosmeceuticals
     - beauty electronics
-    - 美容电器
+    - [CH]
     semantic_type: tab
-  - text: 美妆
+  - text: [CH]
     center:
     - 0.1891
     - 0.6796
@@ -4831,7 +4831,7 @@ screens:
     aliases:
     - beauty
     - cosmetics
-    - 化妆品
+    - [CH]
     semantic_type: tab
   description: My coupons screen showing available coupons to claim, with categories
     like jewelry, health products, airport duty-free, in-store discounts, cosmetics,
@@ -4847,11 +4847,11 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 详情
+    - [CH]
     - details
     - info
     semantic_type: link
-  - text: 打车
+  - text: [CH]
     center:
     - 0.8209
     - 0.4233
@@ -4860,7 +4860,7 @@ screens:
     aliases:
     - ride-hailing
     - taxi
-    - 叫车
+    - [CH]
     - Dache
     semantic_type: button
   - text: Call
@@ -4870,12 +4870,12 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 打电话
+    - [CH]
     - phone
     - dial
-    - 呼叫
+    - [CH]
     semantic_type: button
-  - text: 查看
+  - text: View
     center:
     - 0.8781
     - 0.5469
@@ -4885,9 +4885,9 @@ screens:
     - view
     - look
     - see
-    - 浏览
+    - [CH]
     semantic_type: button
-  - text: 正文
+  - text: [CH]
     center:
     - 0.9129
     - 0.7677
@@ -4897,9 +4897,9 @@ screens:
     - main text
     - body
     - content
-    - 全文
+    - [CH]
     semantic_type: label
-  - text: 查看全部
+  - text: ViewAll
     center:
     - 0.0647
     - 0.0092
@@ -4909,7 +4909,7 @@ screens:
     - view all
     - see all
     - show all
-    - 全部查看
+    - AllView
     semantic_type: link
   - text: Claim
     center:
@@ -4918,12 +4918,12 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 认领
-    - 领取
+    - [CH]
+    - [CH]
     - redeem
     - claim business
     semantic_type: button
-  - text: 搜索周边
+  - text: Search[CH]
     center:
     - 0.0796
     - 0.0126
@@ -4931,11 +4931,11 @@ screens:
     fixed: false
     aliases:
     - search nearby
-    - 周边搜索
+    - [CH]Search
     - nearby search
     - explore around
     semantic_type: button
-  - text: 酒店
+  - text: [CH]
     center:
     - 0.0622
     - 0.0149
@@ -4944,10 +4944,10 @@ screens:
     aliases:
     - hotel
     - hotels
-    - 住宿
+    - [CH]
     - lodging
     semantic_type: tab
-  - text: 购物
+  - text: [CH]
     center:
     - 0.0622
     - 0.0149
@@ -4957,9 +4957,9 @@ screens:
     - shopping
     - shop
     - stores
-    - 商场
+    - [CH]
     semantic_type: tab
-  - text: 景点
+  - text: [CH]
     center:
     - 0.0622
     - 0.0149
@@ -4971,7 +4971,7 @@ screens:
     - scenic spots
     - tourist spots
     semantic_type: tab
-  - text: 美食
+  - text: [CH]
     center:
     - 0.0622
     - 0.0149
@@ -4983,7 +4983,7 @@ screens:
     - dining
     - cuisine
     semantic_type: tab
-  - text: 全部
+  - text: All
     center:
     - 0.0622
     - 0.0149
@@ -4993,7 +4993,7 @@ screens:
     - all
     - all categories
     - everything
-    - 全部类别
+    - All[CH]
     semantic_type: tab
   - text: See Translation
     center:
@@ -5002,10 +5002,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看翻译
+    - View[CH]
     - translate
     - show translation
-    - 翻译
+    - [CH]
     semantic_type: button
   description: Detail screen for a ride-hailing service with options to call, view
     full content, claim, search nearby, and browse categories like hotels, shopping,
@@ -5021,7 +5021,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 使用
+    - [CH]
     - apply
     - utilize
     semantic_type: button
@@ -5032,7 +5032,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 获取
+    - [CH]
     - receive
     - obtain
     semantic_type: button
@@ -5043,11 +5043,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提示
+    - Tip
     - hints
     - advice
     semantic_type: label
-  - text: 购物场所
+  - text: [CH]
     center:
     - 0.3333
     - 0.6682
@@ -5056,9 +5056,9 @@ screens:
     aliases:
     - shopping places
     - shopping venues
-    - 购物地点
+    - [CH]
     semantic_type: label
-  - text: 超市/便利店
+  - text: [CH]/[CH]
     center:
     - 0.3557
     - 0.976
@@ -5069,7 +5069,7 @@ screens:
     - convenience store
     - grocery
     semantic_type: menu_item
-  - text: 特产手信
+  - text: [CH]
     center:
     - 0.3333
     - 0.2037
@@ -5080,7 +5080,7 @@ screens:
     - souvenirs
     - gifts
     semantic_type: menu_item
-  - text: 综合商场
+  - text: [CH]
     center:
     - 0.3333
     - 0.3581
@@ -5098,7 +5098,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 调查
+    - [CH]
     - questionnaire
     - feedback
     semantic_type: button
@@ -5115,7 +5115,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 使用
+    - [CH]
     - utilize
     - apply
     semantic_type: tab
@@ -5126,7 +5126,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 获取
+    - [CH]
     - obtain
     - receive
     semantic_type: tab
@@ -5137,10 +5137,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提示
+    - Tip
     - advice
     - hints
-    - 小贴士
+    - [CH]
     semantic_type: tab
   - text: Survey
     center:
@@ -5149,9 +5149,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 调查
+    - [CH]
     - questionnaire
-    - 问卷
+    - [CH]
     - feedback
     semantic_type: tab
   description: A screen offering options to use, get tips, or take a survey, likely
@@ -5167,7 +5167,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 使用
+    - [CH]
     - utilize
     - apply
     semantic_type: button
@@ -5178,7 +5178,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 获取
+    - [CH]
     - obtain
     - receive
     semantic_type: button
@@ -5189,11 +5189,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提示
+    - Tip
     - advice
     - hints
     semantic_type: label
-  - text: 超市/便利店
+  - text: [CH]/[CH]
     center:
     - 0.3557
     - 0.2048
@@ -5204,7 +5204,7 @@ screens:
     - convenience store
     - grocery
     semantic_type: menu_item
-  - text: 特产手信
+  - text: [CH]
     center:
     - 0.3333
     - 0.3627
@@ -5215,7 +5215,7 @@ screens:
     - souvenirs
     - gifts
     semantic_type: menu_item
-  - text: 购物场所
+  - text: [CH]
     center:
     - 0.3333
     - 0.6716
@@ -5226,7 +5226,7 @@ screens:
     - retail locations
     - stores
     semantic_type: menu_item
-  - text: 综合商场
+  - text: [CH]
     center:
     - 0.3333
     - 0.8261
@@ -5244,11 +5244,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 调查
+    - [CH]
     - questionnaire
     - poll
     semantic_type: button
-  - text: 活动
+  - text: [CH]
     center:
     - 0.0597
     - 0.4645
@@ -5259,7 +5259,7 @@ screens:
     - activities
     - promotions
     semantic_type: menu_item
-  - text: 居家日用
+  - text: [CH]
     center:
     - 0.3333
     - 0.667
@@ -5276,45 +5276,45 @@ screens:
   scroll_direction: vertical
 - id: screen_46
   elements:
-  - text: 酒店民宿
+  - text: [CH]
     center:
     - 0.1816
     - 0.1476
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 酒店
-    - 民宿
+    - [CH]
+    - [CH]
     - hotel
     - B&B
-    - 住宿
+    - [CH]
     semantic_type: menu_item
-  - text: 机票火车票
+  - text: [CH]
     center:
     - 0.5199
     - 0.1476
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 机票
-    - 火车票
+    - [CH]
+    - [CH]
     - flights and trains
-    - 交通票务
+    - [CH]
     semantic_type: menu_item
-  - text: 旅游度假
+  - text: [CH]
     center:
     - 0.8607
     - 0.1476
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 旅游
-    - 度假
+    - [CH]
+    - [CH]
     - travel
     - vacation
     - holiday
     semantic_type: menu_item
-  - text: 机票
+  - text: [CH]
     center:
     - 0.2711
     - 0.2094
@@ -5322,10 +5322,10 @@ screens:
     fixed: true
     aliases:
     - flight ticket
-    - 飞机票
+    - [CH]
     - air ticket
     semantic_type: tab
-  - text: 火车票
+  - text: [CH]
     center:
     - 0.7289
     - 0.2094
@@ -5333,10 +5333,10 @@ screens:
     fixed: true
     aliases:
     - train ticket
-    - 列车票
+    - [CH]
     - rail ticket
     semantic_type: tab
-  - text: 单程
+  - text: [CH]
     center:
     - 0.3831
     - 0.2666
@@ -5344,10 +5344,10 @@ screens:
     fixed: true
     aliases:
     - one way
-    - 单程票
+    - [CH]
     - one-way
     semantic_type: toggle
-  - text: 往返
+  - text: [CH]
     center:
     - 0.6169
     - 0.2666
@@ -5356,9 +5356,9 @@ screens:
     aliases:
     - round trip
     - return
-    - 来回
+    - [CH]
     semantic_type: toggle
-  - text: 成人
+  - text: [CH]
     center:
     - 0.6418
     - 0.4371
@@ -5366,10 +5366,10 @@ screens:
     fixed: true
     aliases:
     - adult
-    - 大人
-    - 成年人
+    - [CH]
+    - [CH]
     semantic_type: label
-  - text: 儿童
+  - text: [CH]
     center:
     - 0.7587
     - 0.4371
@@ -5377,10 +5377,10 @@ screens:
     fixed: true
     aliases:
     - child
-    - 小孩
+    - [CH]
     - children
     semantic_type: label
-  - text: 婴儿
+  - text: [CH]
     center:
     - 0.8756
     - 0.4371
@@ -5388,7 +5388,7 @@ screens:
     fixed: true
     aliases:
     - infant
-    - 宝宝
+    - [CH]
     - baby
     semantic_type: label
   - text: 找 机 票
@@ -5399,8 +5399,8 @@ screens:
     fixed: true
     aliases:
     - search flights
-    - 搜索机票
-    - 查询机票
+    - Search[CH]
+    - [CH]
     semantic_type: button
   description: Flight and train ticket booking screen with options for hotels, flights,
     trains, and vacation packages, including trip type and passenger selection.
@@ -5408,69 +5408,69 @@ screens:
   scroll_direction: vertical
 - id: screen_47
   elements:
-  - text: 酒店民宿
+  - text: [CH]
     center:
     - 0.1816
     - 0.1476
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 酒店
-    - 民宿
+    - [CH]
+    - [CH]
     - hotel
     - B&B
-    - 住宿
+    - [CH]
     semantic_type: menu_item
-  - text: 机票火车票
+  - text: [CH]
     center:
     - 0.5199
     - 0.1476
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 机票
-    - 火车票
+    - [CH]
+    - [CH]
     - flights
     - trains
-    - 交通票务
+    - [CH]
     semantic_type: menu_item
-  - text: 旅游度假
+  - text: [CH]
     center:
     - 0.8607
     - 0.1476
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 旅游
-    - 度假
+    - [CH]
+    - [CH]
     - travel
     - vacation
     - holiday
     semantic_type: menu_item
-  - text: 找套餐
+  - text: 找Plan
     center:
     - 0.8557
     - 0.2037
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 套餐
+    - Plan
     - package deals
-    - 组合优惠
+    - [CH]
     semantic_type: button
-  - text: 跟团/小团游
+  - text: [CH]/[CH]
     center:
     - 0.1368
     - 0.3215
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 跟团游
-    - 小团游
+    - [CH]
+    - [CH]
     - group tour
     - small group
     semantic_type: tab
-  - text: 一日游
+  - text: [CH]
     center:
     - 0.3109
     - 0.3215
@@ -5478,57 +5478,57 @@ screens:
     fixed: false
     aliases:
     - day trip
-    - 当天游
-    - 一日行程
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 家庭出游
+  - text: [CH]
     center:
     - 0.4826
     - 0.3215
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 亲子游
-    - 家庭游
+    - [CH]
+    - [CH]
     - family trip
     - family outing
     semantic_type: tab
-  - text: 门票+住宿
+  - text: [CH]+[CH]
     center:
     - 0.6517
     - 0.3215
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 门票住宿
+    - [CH]
     - ticket+hotel
-    - 景点加酒店
+    - [CH]
     semantic_type: tab
-  - text: 主题乐园
+  - text: Theme[CH]
     center:
     - 0.8234
     - 0.3215
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 游乐园
+    - [CH]
     - theme park
-    - 乐园
+    - [CH]
     - amusement park
     semantic_type: tab
-  - text: 出境游
+  - text: [CH]
     center:
     - 0.995
     - 0.3215
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 出境旅游
+    - [CH]
     - overseas travel
-    - 国外游
+    - [CH]
     - international trip
     semantic_type: tab
-  - text: 更多
+  - text: [CH]
     center:
     - 0.8881
     - 0.3764
@@ -5536,10 +5536,10 @@ screens:
     fixed: false
     aliases:
     - more
-    - 查看更多
-    - 展开
+    - View[CH]
+    - [CH]
     semantic_type: button
-  - text: 全部品类
+  - text: All[CH]
     center:
     - 0.1244
     - 0.6327
@@ -5547,22 +5547,22 @@ screens:
     fixed: true
     aliases:
     - all categories
-    - 所有分类
-    - 全部分类
+    - 所Yes[CH]
+    - All[CH]
     semantic_type: button
-  - text: 游玩天数
+  - text: [CH]
     center:
     - 0.3731
     - 0.6327
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 天数
+    - [CH]
     - duration
-    - 行程天数
+    - [CH]
     - trip length
     semantic_type: menu_item
-  - text: 景点
+  - text: [CH]
     center:
     - 0.5846
     - 0.6327
@@ -5571,20 +5571,20 @@ screens:
     aliases:
     - attractions
     - sights
-    - 景区
-    - 旅游景点
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 排序方式
+  - text: [CH]
     center:
     - 0.7985
     - 0.6327
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - order
-    - 筛选排序
+    - [CH]
     semantic_type: menu_item
   description: Travel services category screen with options for hotels, flights, tours,
     packages, and filtering by duration, attractions, and sorting.
@@ -5592,7 +5592,7 @@ screens:
   scroll_direction: vertical
 - id: screen_48
   elements:
-  - text: 返回
+  - text: Back
     center:
     - 0.0896
     - 0.0892
@@ -5600,10 +5600,10 @@ screens:
     fixed: true
     aliases:
     - back
-    - 返回按钮
+    - Back[CH]
     - go back
     semantic_type: button
-  - text: 酒店民宿
+  - text: [CH]
     center:
     - 0.1816
     - 0.1476
@@ -5612,10 +5612,10 @@ screens:
     aliases:
     - hotel
     - homestay
-    - 住宿
-    - 酒店
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 机票火车票
+  - text: [CH]
     center:
     - 0.5199
     - 0.1476
@@ -5624,10 +5624,10 @@ screens:
     aliases:
     - flights
     - trains
-    - 交通票务
-    - 机票
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 旅游度假
+  - text: [CH]
     center:
     - 0.8607
     - 0.1476
@@ -5636,10 +5636,10 @@ screens:
     aliases:
     - travel
     - vacation
-    - 度假
-    - 旅游
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 国内
+  - text: [CH]
     center:
     - 0.1493
     - 0.2094
@@ -5647,10 +5647,10 @@ screens:
     fixed: true
     aliases:
     - domestic
-    - 国内旅游
+    - [CH]
     - china
     semantic_type: tab
-  - text: 民宿公寓
+  - text: [CH]
     center:
     - 0.3831
     - 0.2094
@@ -5658,10 +5658,10 @@ screens:
     fixed: true
     aliases:
     - homestay apartment
-    - 民宿
-    - 公寓
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 钟点房
+  - text: [CH]
     center:
     - 0.6318
     - 0.2094
@@ -5669,10 +5669,10 @@ screens:
     fixed: true
     aliases:
     - hourly room
-    - 钟点
-    - 短时住宿
+    - [CH]
+    - [CH]
     semantic_type: menu_item
-  - text: 海外
+  - text: [CH]
     center:
     - 0.8483
     - 0.2094
@@ -5681,7 +5681,7 @@ screens:
     aliases:
     - overseas
     - international
-    - 国外
+    - [CH]
     semantic_type: tab
   - text: '[Region]'
     center:
@@ -5692,7 +5692,7 @@ screens:
     aliases:
     - Hong Kong
     - HK
-    - 香港地区
+    - [CH]
     semantic_type: menu_item
   - text: 找 民 宿
     center:
@@ -5702,10 +5702,10 @@ screens:
     fixed: true
     aliases:
     - search homestay
-    - 搜索民宿
+    - Search[CH]
     - find
     semantic_type: input
-  - text: 推荐
+  - text: [CH]
     center:
     - 0.0746
     - 0.5297
@@ -5713,10 +5713,10 @@ screens:
     fixed: true
     aliases:
     - recommended
-    - 推荐列表
-    - 精选
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 近地铁
+  - text: [CH]
     center:
     - 0.097
     - 0.9062
@@ -5724,10 +5724,10 @@ screens:
     fixed: true
     aliases:
     - near metro
-    - 地铁附近
+    - [CH]
     - subway
     semantic_type: toggle
-  - text: 免费取消
+  - text: [CH]Cancel
     center:
     - 0.2214
     - 0.9062
@@ -5735,10 +5735,10 @@ screens:
     fixed: true
     aliases:
     - free cancellation
-    - 免费退订
-    - 取消免费
+    - [CH]
+    - Cancel[CH]
     semantic_type: toggle
-  - text: 智能门锁
+  - text: [CH]
     center:
     - 0.3582
     - 0.9062
@@ -5746,10 +5746,10 @@ screens:
     fixed: true
     aliases:
     - smart lock
-    - 智能锁
-    - 密码锁
+    - [CH]
+    - Password锁
     semantic_type: toggle
-  - text: 超赞房东
+  - text: [CH]
     center:
     - 0.1119
     - 0.9245
@@ -5757,10 +5757,10 @@ screens:
     fixed: true
     aliases:
     - superhost
-    - 优秀房东
-    - 超赞
+    - [CH]
+    - [CH]
     semantic_type: toggle
-  - text: 有电梯
+  - text: Yes[CH]
     center:
     - 0.2338
     - 0.9245
@@ -5768,10 +5768,10 @@ screens:
     fixed: true
     aliases:
     - elevator
-    - 电梯
+    - [CH]
     - lift
     semantic_type: toggle
-  - text: 电视
+  - text: TV
     center:
     - 0.3308
     - 0.9245
@@ -5779,10 +5779,10 @@ screens:
     fixed: true
     aliases:
     - TV
-    - 电视机
+    - TV机
     - television
     semantic_type: toggle
-  - text: 极速退款
+  - text: [CH]Refund
     center:
     - 0.709
     - 0.9245
@@ -5790,10 +5790,10 @@ screens:
     fixed: true
     aliases:
     - fast refund
-    - 快速退款
-    - 极速退
+    - [CH]Refund
+    - [CH]
     semantic_type: toggle
-  - text: 获取验证码
+  - text: [CH]Verify码
     center:
     - 0.8582
     - 0.143
@@ -5801,10 +5801,10 @@ screens:
     fixed: true
     aliases:
     - get code
-    - 发送验证码
-    - 获取短信
+    - [CH]Verify码
+    - [CH]
     semantic_type: button
-  - text: 验证
+  - text: Verify
     center:
     - 0.5
     - 0.27
@@ -5812,10 +5812,10 @@ screens:
     fixed: true
     aliases:
     - verify
-    - 验证码
-    - 确认
+    - Verify码
+    - Confirm
     semantic_type: button
-  - text: 身份核实
+  - text: [CH]
     center:
     - 0.5
     - 0.0904
@@ -5823,8 +5823,8 @@ screens:
     fixed: true
     aliases:
     - identity verification
-    - 实名认证
-    - 身份验证
+    - [CH]
+    - [CH]Verify
     semantic_type: label
   - text: '+86'
     center:
@@ -5834,7 +5834,7 @@ screens:
     fixed: true
     aliases:
     - China code
-    - 中国区号
+    - [CH]
     - country code
     semantic_type: menu_item
   description: Hotel and travel booking screen with tabs for hotels, flights, and
@@ -5843,7 +5843,7 @@ screens:
   scroll_direction: vertical
 - id: screen_49
   elements:
-  - text: 返回
+  - text: Back
     center:
     - 0.0896
     - 0.0892
@@ -5852,9 +5852,9 @@ screens:
     aliases:
     - back
     - go back
-    - 后退
+    - [CH]
     semantic_type: button
-  - text: 验证
+  - text: Verify
     center:
     - 0.5
     - 0.27
@@ -5862,10 +5862,10 @@ screens:
     fixed: true
     aliases:
     - verify
-    - 验证码
+    - Verify码
     - captcha
     semantic_type: button
-  - text: 酒店民宿
+  - text: [CH]
     center:
     - 0.1816
     - 0.1476
@@ -5873,10 +5873,10 @@ screens:
     fixed: true
     aliases:
     - hotels and B&Bs
-    - 住宿
+    - [CH]
     - accommodation
     semantic_type: tab
-  - text: 机票火车票
+  - text: [CH]
     center:
     - 0.5199
     - 0.1476
@@ -5884,10 +5884,10 @@ screens:
     fixed: true
     aliases:
     - flights and trains
-    - 交通票务
+    - [CH]
     - transport tickets
     semantic_type: tab
-  - text: 旅游度假
+  - text: [CH]
     center:
     - 0.8607
     - 0.1476
@@ -5895,10 +5895,10 @@ screens:
     fixed: true
     aliases:
     - travel and vacation
-    - 度假旅游
+    - [CH]
     - holiday packages
     semantic_type: tab
-  - text: 国内
+  - text: [CH]
     center:
     - 0.1493
     - 0.2094
@@ -5906,10 +5906,10 @@ screens:
     fixed: true
     aliases:
     - domestic
-    - 国内游
+    - [CH]
     - in China
     semantic_type: tab
-  - text: 民宿公寓
+  - text: [CH]
     center:
     - 0.3831
     - 0.2094
@@ -5917,10 +5917,10 @@ screens:
     fixed: true
     aliases:
     - B&B apartment
-    - 短租
+    - [CH]
     - homestay
     semantic_type: menu_item
-  - text: 钟点房
+  - text: [CH]
     center:
     - 0.6318
     - 0.2094
@@ -5928,10 +5928,10 @@ screens:
     fixed: true
     aliases:
     - hourly room
-    - 钟点
+    - [CH]
     - short stay
     semantic_type: menu_item
-  - text: 海外
+  - text: [CH]
     center:
     - 0.8483
     - 0.2094
@@ -5939,7 +5939,7 @@ screens:
     fixed: true
     aliases:
     - overseas
-    - 国际
+    - [CH]
     - abroad
     semantic_type: tab
   - text: 找 酒 店
@@ -5950,7 +5950,7 @@ screens:
     fixed: true
     aliases:
     - find hotels
-    - 搜索酒店
+    - Search[CH]
     - hotel search
     semantic_type: input
   description: Hotel and travel booking screen with categories for hotels, flights,

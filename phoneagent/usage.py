@@ -121,14 +121,14 @@ _PROVIDERS = (
     ("openrouter", "OpenRouter"),
     ("openai", "OpenAI"),
     ("deepseek", "DeepSeek"),
-    ("dashscope", "阿里云百炼"),
-    ("aliyuncs", "阿里云百炼"),
+    ("dashscope", "[CH]Cloud[CH]"),
+    ("aliyuncs", "[CH]Cloud[CH]"),
     ("moonshot", "Moonshot"),
     ("google", "Google"),
     ("anthropic", "Anthropic"),
     ("groq", "Groq"),
-    ("localhost", "本地"),
-    ("127.0.0.1", "本地"),
+    ("localhost", "Local"),
+    ("127.0.0.1", "Local"),
 )
 
 
@@ -198,7 +198,7 @@ def summary(path: str, days: int = 7, now: float = 0.0) -> dict:
             dict(day=day, **counts) for day, counts in sorted(by_day.items(), reverse=True)
         ],
         # Top few of each, newest-by-spend first: the app shows the rest behind
-        # 展开, and an unbounded list is what made the page grow forever.
+        # [CH], and an unbounded list is what made the page grow forever.
         "by_model": [
             dict(model=model, **counts)
             for model, counts in sorted(
@@ -223,28 +223,28 @@ def summary(path: str, days: int = 7, now: float = 0.0) -> dict:
 def format_report(data: dict) -> str:
     """A few lines a person can read in a dialog."""
     def line(label: str, counts: dict) -> str:
-        return (f"{label}：{counts['calls']} 次调用，"
-                f"输入 {counts['prompt']} / 输出 {counts['completion']}"
-                f"（合计 {counts['total']}）")
+        return (f"{label}：{counts['calls']} [CH]，"
+                f"Input {counts['prompt']} / Output {counts['completion']}"
+                f"（[CH] {counts['total']}）")
 
-    out = [line("今天", data.get("today") or _empty()),
+    out = [line("[CH]", data.get("today") or _empty()),
            line(f"近 {data.get('days', 7)} 天", data.get("total") or _empty())]
     models = data.get("by_model") or []
     if models:
         out.append("")
-        out.append("按模型：")
+        out.append("pressModel：")
         for item in models[:6]:
             out.append(f"  {item['model']}  {item['total']}（{item['calls']} 次）")
     providers = data.get("by_provider") or []
     if len(providers) > 1:
         out.append("")
-        out.append("按厂商：")
+        out.append("[CH]：")
         for item in providers[:6]:
             out.append(f"  {item['provider']}  {item['total']}（{item['calls']} 次）")
     days = data.get("by_day") or []
     if days:
         out.append("")
-        out.append("按天：")
+        out.append("[CH]：")
         for item in days[:7]:
             out.append(f"  {item['day']}  {item['total']}（{item['calls']} 次）")
     return "\n".join(out)

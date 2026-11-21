@@ -18,7 +18,7 @@ screens:
     - image
     - symbol
     - glyph
-    - 图标
+    - [CH]
     semantic_type: other
   - text: My Position
     center:
@@ -31,7 +31,7 @@ screens:
     - Current Location
     - Locate Me
     - GPS
-    - 我的位置
+    - My[CH]
     semantic_type: button
   scrollable: false
   scroll_direction: ''

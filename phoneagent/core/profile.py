@@ -5,9 +5,9 @@ to be on screen, so on a personal phone the map bakes in the account name, the
 Wi-Fi SSID and the device model:
 
     yangqin
-    yangqin的REDMI K90 Ultra
-    手机号：181****8488
-    1101,已连接,WLAN 信号强度为三格。
+    yangqinREDMI K90 Ultra
+    [CH]：181****8488
+    1101,已Connection,WLAN [CH]for[CH]。
 
 None of that is navigation -- it is one phone's data. A profile names it so the
 map stays device-independent:
@@ -158,7 +158,7 @@ def heuristic_profile(app: str, package: str, texts: Iterable[str]) -> Profile:
     )
     # keep the device-name-looking entries out as well
     for text in texts:
-        if re.search(r"(的)?(REDMI|Xiaomi|iPhone|Galaxy|Pixel)\b", text):
+        if re.search(r"()?(REDMI|Xiaomi|iPhone|Galaxy|Pixel)\b", text):
             profile.dynamic_patterns.append("^" + re.escape(text) + "$")
             profile.__post_init__()
     return profile

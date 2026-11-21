@@ -1,4 +1,4 @@
-English · [中文](product-app.zh.md)
+English · [Chinese](product-app.zh.md)
 
 # PhoneGo: a chat app that executes on a virtual display
 
@@ -107,9 +107,9 @@ the VLM exploring, and a trajectory that succeeds can be frozen into a macro.
 ### Result
 
 ```
-Python 已就绪：3.8.20 (default, Oct 12 2024, 20:34:19)
+Python [CH]：3.8.20 (default, Oct 12 2024, 20:34:19)
 phoneagent 0.1.0
-app_map 模块：已加载
+app_map [CH]：[CH]
 ```
 
 - APK 14 MB (arm64-v8a), containing `libpython3.8.so` and our package

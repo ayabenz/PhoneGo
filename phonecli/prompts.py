@@ -70,7 +70,7 @@ Spatial reference (approximate):
 7. launch(app_name: str)
    Open an app by name. Choose from the "Available Apps" list shown in the context.
    ✅ launch("Safari")
-   ✅ launch("备忘录")
+   ✅ launch("[CH]")
 
 8. wait(interval: int)
    Wait N seconds (1–10).
@@ -136,7 +136,7 @@ DYNAMIC|element text
 
 Example:
 STABLE|Following
-DYNAMIC|我在X上也是有1.1万人看过了
+DYNAMIC|[CH]X[CH]YesYes1.1[CH]
 STABLE|Home
 STABLE|Search
 
@@ -157,8 +157,8 @@ For each element below, output exactly one JSON object per line with:
 
 Rules:
 - aliases: common synonyms, alternate names, Chinese↔English equivalents, abbreviation expansions.
-  Examples: "Wi-Fi" → ["WiFi", "wireless", "无线", "wifi network"]
-           "Bluetooth" → ["BT", "蓝牙", "bluetooth settings"]
+  Examples: "Wi-Fi" → ["WiFi", "wireless", "None线", "wifi network"]
+           "Bluetooth" → ["BT", "Bluetooth", "bluetooth settings"]
 - semantic_type: what kind of UI element this is.
   - toggle: a switch/checkbox (tap changes state)
   - button: an action button
@@ -289,9 +289,9 @@ Python regex patterns matching elements that are clearly dynamic content. Use ^.
 - For UUID strings like "F27B271D-BBA6-4579-AE69-FD17E446C660": "^[0-9A-F]{{8}}-[0-9A-F]{{4}}-[0-9A-F]{{4}}-[0-9A-F]{{4}}-[0-9A-F]{{12}}$" (case-insensitive)
 - For like/comment counts like "1,159" "9,918": "^[\\d,]+$"
 - For image indicators like "1/2" "3/4": "^\\d+/\\d+$"
-- For distance like "1.8km": "^\\d+[.\\d]*\\s*(km|m|mi|公里|米)$"
-- For relative time like "3小时前": "^\\d+\\s*(分钟|小时|天)前$"
-- For stat labels like "8,648 赞": "^[\\d,]+\\s*(赞|评论|收藏|粉丝|看过)$"
+- For distance like "1.8km": "^\\d+[.\\d]*\\s*(km|m|mi|[CH]|米)$"
+- For relative time like "3[CH]": "^\\d+\\s*([CH]|[CH]|天)front$"
+- For stat labels like "8,648 赞": "^[\\d,]+\\s*(赞|[CH]|[CH]|[CH]|[CH])$"
 - For user handles like "@username": "^@\\w+$"
 - For hashtags like "#topic": "^#\\S+$"
 - For price like "¥199": "^[¥$]\\d+[.\\d]*$"
@@ -303,7 +303,7 @@ CRITICAL: Only output a pattern if the element list contains AT LEAST 3 instance
 
 ## preserve_navigation
 Elements that look like they might be dynamic (e.g. short text, could match some patterns) but are actually fixed navigation UI that must be kept. These elements will NEVER be filtered, even if they match a dynamic pattern. Typically includes:
-- Tab bar items (e.g. "Home", "Search", "Profile", "首页", "发现")
+- Tab bar items (e.g. "Home", "Search", "Profile", "Home", "[CH]")
 - Navigation menu items
 - Fixed category selectors
 
@@ -326,12 +326,12 @@ SANITIZE_CLASSIFY_PROMPT = """You are a privacy auditor reviewing a mobile app m
 Context for each item includes the screen description(s) where it appears — use this to distinguish personal data from system UI labels.
 
 ## Classifications
-- name:      A person's name (e.g. "蒋莉", "Yangqin")
+- name:      A person's name (e.g. "[CH]", "Yangqin")
 - email:     An email address
 - phone:     A phone number
 - device:    A specific device model or personal device name (e.g. "iPad (2)", "iPhone 17 Pro")
-- app:       A specific app name installed on the device (e.g. "WeChat", "小红书")
-- region:    A geographic region or carrier reflecting user settings (e.g. "香港", "中国电信")
+- app:       A specific app name installed on the device (e.g. "WeChat", "[CH]")
+- region:    A geographic region or carrier reflecting user settings (e.g. "[CH]", "[CH]")
 - account:   An account identifier or username
 - skip:      A system UI label, settings option, or fixed navigation — NOT personal data
 
@@ -368,8 +368,8 @@ TASK_DECOMPOSE_PROMPT = """You are a mobile task planner that decomposes complex
 Output a JSON array where each step targets ONE app:
 ```json
 [
-  {{"step": 1, "subtask": "search for bluetooth earbuds", "app": "小红书"}},
-  {{"step": 2, "subtask": "check price on JD", "app": "京东"}}
+  {{"step": 1, "subtask": "search for bluetooth earbuds", "app": "[CH]"}},
+  {{"step": 2, "subtask": "check price on JD", "app": "[CH]"}}
 ]
 ```
 

@@ -15,7 +15,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 闹钟
+    - [CH]
     - alarms
     - alarm tab
     semantic_type: tab
@@ -27,7 +27,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 更多选项
+    - [CH]
     - menu
     - options
     - ⋮
@@ -40,7 +40,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 展开闹钟
+    - [CH]
     - expand
     - show details
     semantic_type: button
@@ -52,7 +52,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 添加闹钟
+    - [CH]
     - new alarm
     - create alarm
     semantic_type: button
@@ -64,9 +64,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 时钟
+    - [CH]
     - clock tab
-    - 世界时钟
+    - [CH]
     semantic_type: tab
   - text: Timer
     center:
@@ -76,9 +76,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 计时器
+    - [CH]
     - timer tab
-    - 倒计时
+    - [CH]
     semantic_type: tab
   - text: Stopwatch
     center:
@@ -88,9 +88,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 秒表
+    - [CH]
     - stopwatch tab
-    - 计时
+    - [CH]
     semantic_type: tab
   - text: Bedtime
     center:
@@ -100,9 +100,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 就寝
+    - [CH]
     - bedtime tab
-    - 睡眠
+    - Sleep
     - sleep
     semantic_type: tab
   scrollable: true
@@ -118,7 +118,7 @@ screens:
     aliases:
     - screensaver
     - Daydream
-    - 屏保
+    - [CH]
     - dream
     semantic_type: menu_item
   - text: Settings
@@ -130,7 +130,7 @@ screens:
     leads_to: screen_8
     aliases:
     - Preferences
-    - 设置
+    - Settings
     - options
     - configuration
     semantic_type: menu_item
@@ -143,7 +143,7 @@ screens:
     leads_to: screen_9
     aliases:
     - Privacy
-    - 隐私政策
+    - Privacy Policy
     - privacy notice
     - data policy
     semantic_type: link
@@ -156,7 +156,7 @@ screens:
     leads_to: screen_10
     aliases:
     - Feedback
-    - 反馈
+    - Feedback
     - report a problem
     - contact us
     semantic_type: link
@@ -169,7 +169,7 @@ screens:
     leads_to: screen_11
     aliases:
     - Help & feedback
-    - 帮助
+    - Help
     - support
     - FAQ
     semantic_type: link
@@ -187,7 +187,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 闹钟
+    - [CH]
     - alarms
     - alarm tab
     semantic_type: tab
@@ -199,7 +199,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - three dots
     semantic_type: button
@@ -211,7 +211,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 添加标签
+    - [CH]Tab
     - label
     - add name
     semantic_type: button
@@ -223,7 +223,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 收起闹钟
+    - [CH]
     - collapse
     - hide details
     semantic_type: button
@@ -236,8 +236,8 @@ screens:
     leads_to: screen_7
     aliases:
     - Saturday
-    - 周六
-    - 星期六
+    - [CH]
+    - [CH]
     semantic_type: toggle
   - text: M
     center:
@@ -248,8 +248,8 @@ screens:
     leads_to: screen_7
     aliases:
     - Monday
-    - 周一
-    - 星期一
+    - [CH]
+    - [CH]
     semantic_type: toggle
   - text: T
     center:
@@ -260,8 +260,8 @@ screens:
     leads_to: screen_7
     aliases:
     - Tuesday
-    - 周二
-    - 星期二
+    - [CH]
+    - [CH]
     semantic_type: toggle
   - text: W
     center:
@@ -272,8 +272,8 @@ screens:
     leads_to: screen_7
     aliases:
     - Wednesday
-    - 周三
-    - 星期三
+    - [CH]
+    - [CH]
     semantic_type: toggle
   - text: F
     center:
@@ -284,8 +284,8 @@ screens:
     leads_to: screen_7
     aliases:
     - Friday
-    - 周五
-    - 星期五
+    - [CH]
+    - [CH]
     semantic_type: toggle
   - text: Pause alarm
     center:
@@ -295,9 +295,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 暂停闹钟
+    - Pause[CH]
     - snooze
-    - 稍后提醒
+    - [CH]Reminder
     semantic_type: button
   - text: Vibrate
     center:
@@ -307,8 +307,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 振动
-    - 震动
+    - [CH]
+    - [CH]
     - vibration
     semantic_type: toggle
   - text: Google Assistant Routine
@@ -319,7 +319,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - Google助理例行程序
+    - Google[CH]Program
     - assistant routine
     - routine
     semantic_type: setting
@@ -331,7 +331,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 删除
+    - Delete
     - remove
     - trash
     semantic_type: button
@@ -343,7 +343,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 展开闹钟
+    - [CH]
     - expand
     - show details
     semantic_type: button
@@ -355,7 +355,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 添加闹钟
+    - [CH]
     - new alarm
     - create alarm
     semantic_type: button
@@ -367,7 +367,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 时钟
+    - [CH]
     - clock tab
     - world clock
     semantic_type: tab
@@ -379,8 +379,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 计时器
-    - 倒计时
+    - [CH]
+    - [CH]
     - timer tab
     semantic_type: tab
   - text: Stopwatch
@@ -391,7 +391,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 秒表
+    - [CH]
     - stopwatch tab
     semantic_type: tab
   - text: Bedtime
@@ -402,8 +402,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 就寝
-    - 睡眠
+    - [CH]
+    - Sleep
     - bedtime tab
     - sleep
     semantic_type: tab
@@ -423,7 +423,7 @@ screens:
     aliases:
     - Choose time
     - Pick time
-    - 选择时间
+    - Select[CH]
     semantic_type: label
   - text: ':'
     center:
@@ -435,7 +435,7 @@ screens:
     aliases:
     - colon
     - time separator
-    - 冒号
+    - [CH]
     semantic_type: label
   - text: AM
     center:
@@ -447,7 +447,7 @@ screens:
     aliases:
     - Morning
     - Ante Meridiem
-    - 上午
+    - [CH]
     semantic_type: button
   - text: PM
     center:
@@ -459,7 +459,7 @@ screens:
     aliases:
     - Afternoon
     - Post Meridiem
-    - 下午
+    - [CH]
     semantic_type: button
   - text: '11'
     center:
@@ -470,7 +470,7 @@ screens:
     aliases:
     - eleven
     - 11 o'clock
-    - 十一
+    - [CH]
     semantic_type: button
   - text: '12'
     center:
@@ -481,7 +481,7 @@ screens:
     aliases:
     - twelve
     - 12 o'clock
-    - 十二
+    - [CH]
     semantic_type: button
   - text: '10'
     center:
@@ -603,7 +603,7 @@ screens:
     aliases:
     - Keyboard icon
     - Text input
-    - 切换到文本输入
+    - [CH]Input
     semantic_type: button
   - text: Cancel
     center:
@@ -615,7 +615,7 @@ screens:
     aliases:
     - Dismiss
     - Abort
-    - 取消
+    - Cancel
     semantic_type: button
   - text: OK
     center:
@@ -627,7 +627,7 @@ screens:
     aliases:
     - Confirm
     - Accept
-    - 确定
+    - OK
     semantic_type: button
   description: Time picker dialog with a circular clock face for selecting the hour,
     AM/PM toggles, and a text input mode switch.
@@ -643,8 +643,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 时钟
-    - 时间
+    - [CH]
+    - [CH]
     - Clock app
     semantic_type: label
   - text: More options
@@ -655,10 +655,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 更多选项
-    - 菜单
+    - [CH]
+    - Menu
     - overflow
-    - 更多
+    - [CH]
     semantic_type: button
   - text: Add city
     center:
@@ -668,9 +668,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 添加城市
-    - 新增城市
-    - 添加
+    - [CH]
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Alarm
     center:
@@ -680,9 +680,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 闹钟
+    - [CH]
     - alarms
-    - 闹钟页
+    - [CH]
     semantic_type: tab
   - text: Timer
     center:
@@ -692,9 +692,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 计时器
-    - 倒计时
-    - 计时
+    - [CH]
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Stopwatch
     center:
@@ -704,9 +704,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 秒表
+    - [CH]
     - stop watch
-    - 秒表页
+    - [CH]
     semantic_type: tab
   - text: Bedtime
     center:
@@ -716,10 +716,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 就寝
-    - 睡眠
+    - [CH]
+    - Sleep
     - sleep
-    - 就寝页
+    - [CH]
     semantic_type: tab
   description: Main Clock app screen showing the World Clock view with an add city
     option and a bottom navigation bar for Alarm, Timer, Stopwatch, and Bedtime.
@@ -735,7 +735,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 计时器
+    - [CH]
     - timer tab
     - countdown timer
     semantic_type: tab
@@ -747,7 +747,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 更多选项
+    - [CH]
     - menu
     - options
     - overflow menu
@@ -761,7 +761,7 @@ screens:
     aliases:
     - 一
     - number 1
-    - 数字1
+    - [CH]1
     semantic_type: button
   - text: '2'
     center:
@@ -772,7 +772,7 @@ screens:
     aliases:
     - 二
     - number 2
-    - 数字2
+    - [CH]2
     semantic_type: button
   - text: '3'
     center:
@@ -783,7 +783,7 @@ screens:
     aliases:
     - 三
     - number 3
-    - 数字3
+    - [CH]3
     semantic_type: button
   - text: '4'
     center:
@@ -794,7 +794,7 @@ screens:
     aliases:
     - 四
     - number 4
-    - 数字4
+    - [CH]4
     semantic_type: button
   - text: '5'
     center:
@@ -805,7 +805,7 @@ screens:
     aliases:
     - 五
     - number 5
-    - 数字5
+    - [CH]5
     semantic_type: button
   - text: '6'
     center:
@@ -816,7 +816,7 @@ screens:
     aliases:
     - 六
     - number 6
-    - 数字6
+    - [CH]6
     semantic_type: button
   - text: '7'
     center:
@@ -827,7 +827,7 @@ screens:
     aliases:
     - 七
     - number 7
-    - 数字7
+    - [CH]7
     semantic_type: button
   - text: '8'
     center:
@@ -838,7 +838,7 @@ screens:
     aliases:
     - 八
     - number 8
-    - 数字8
+    - [CH]8
     semantic_type: button
   - text: '9'
     center:
@@ -849,7 +849,7 @@ screens:
     aliases:
     - 九
     - number 9
-    - 数字9
+    - [CH]9
     semantic_type: button
   - text: '00'
     center:
@@ -858,9 +858,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 零零
+    - [CH]
     - number 00
-    - 数字00
+    - [CH]00
     semantic_type: button
   - text: '0'
     center:
@@ -871,7 +871,7 @@ screens:
     aliases:
     - 零
     - number 0
-    - 数字0
+    - [CH]0
     semantic_type: button
   - text: ⌫
     center:
@@ -881,10 +881,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 删除
+    - Delete
     - backspace
     - delete
-    - 退格
+    - [CH]
     semantic_type: button
   - text: Alarm
     center:
@@ -894,7 +894,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 闹钟
+    - [CH]
     - alarm tab
     - alarms
     semantic_type: tab
@@ -906,9 +906,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 时钟
+    - [CH]
     - clock tab
-    - 世界时钟
+    - [CH]
     semantic_type: tab
   - text: Stopwatch
     center:
@@ -918,9 +918,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 秒表
+    - [CH]
     - stopwatch tab
-    - 计时
+    - [CH]
     semantic_type: tab
   - text: Bedtime
     center:
@@ -930,9 +930,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 就寝
+    - [CH]
     - bedtime tab
-    - 睡眠
+    - Sleep
     - sleep
     semantic_type: tab
   - text: Try now
@@ -943,9 +943,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 立即尝试
+    - [CH]
     - try it now
-    - 试试看
+    - [CH]
     semantic_type: button
   description: Timer setup screen featuring a numeric keypad for entering the duration
     and a bottom navigation bar for accessing other Clock app sections.
@@ -961,9 +961,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 秒表
+    - [CH]
     - stop watch
-    - 秒表计时
+    - [CH]
     semantic_type: tab
   - text: More options
     center:
@@ -973,10 +973,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
-    - 三点菜单
-    - 更多
+    - [CH]Menu
+    - [CH]
     semantic_type: button
   - text: Start
     center:
@@ -986,8 +986,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 开始
-    - 启动
+    - Start
+    - Start
     - begin
     - start button
     semantic_type: button
@@ -999,9 +999,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 闹钟
+    - [CH]
     - alarms
-    - 闹铃
+    - [CH]
     - alarm clock
     semantic_type: tab
   - text: Clock
@@ -1012,10 +1012,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 时钟
-    - 世界时钟
+    - [CH]
+    - [CH]
     - world clock
-    - 时间
+    - [CH]
     semantic_type: tab
   - text: Timer
     center:
@@ -1025,8 +1025,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 计时器
-    - 倒计时
+    - [CH]
+    - [CH]
     - countdown
     - timer tab
     semantic_type: tab
@@ -1038,8 +1038,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 就寝
-    - 睡眠
+    - [CH]
+    - Sleep
     - sleep
     - bedtime mode
     semantic_type: tab
@@ -1059,8 +1059,8 @@ screens:
     aliases:
     - Sleep
     - Sleep schedule
-    - 就寝
-    - 睡眠
+    - [CH]
+    - Sleep
     semantic_type: tab
   - text: More options
     center:
@@ -1072,8 +1072,8 @@ screens:
     aliases:
     - Overflow menu
     - Menu
-    - 更多选项
-    - 菜单
+    - [CH]
+    - Menu
     semantic_type: button
   - text: Set a consistent bedtime for better sleep
     center:
@@ -1085,8 +1085,8 @@ screens:
     aliases:
     - Bedtime title
     - Sleep title
-    - 就寝标题
-    - 睡眠提示
+    - [CH]
+    - SleepTip
     semantic_type: label
   - text: Choose a regular bedtime, disconnect from your device, and listen to soothing
       sounds
@@ -1099,8 +1099,8 @@ screens:
     aliases:
     - Bedtime description
     - Sleep description
-    - 就寝说明
-    - 睡眠描述
+    - [CH]Instruction
+    - Sleep[CH]
     semantic_type: label
   - text: Get started
     center:
@@ -1112,8 +1112,8 @@ screens:
     aliases:
     - Start
     - Begin
-    - 开始
-    - 立即开始
+    - Start
+    - [CH]Start
     semantic_type: button
   - text: Alarm
     center:
@@ -1124,8 +1124,8 @@ screens:
     leads_to: screen_0
     aliases:
     - Alarms
-    - 闹钟
-    - 提醒
+    - [CH]
+    - Reminder
     semantic_type: tab
   - text: Clock
     center:
@@ -1136,8 +1136,8 @@ screens:
     leads_to: screen_4
     aliases:
     - World Clock
-    - 时钟
-    - 世界时钟
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Timer
     center:
@@ -1148,8 +1148,8 @@ screens:
     leads_to: screen_13
     aliases:
     - Countdown
-    - 计时器
-    - 倒计时
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Stopwatch
     center:
@@ -1160,8 +1160,8 @@ screens:
     leads_to: screen_13
     aliases:
     - Stop watch
-    - 秒表
-    - 计时
+    - [CH]
+    - [CH]
     semantic_type: tab
   description: Bedtime onboarding screen explaining sleep benefits with a 'Get started'
     button and the main bottom navigation bar.
@@ -1179,7 +1179,7 @@ screens:
     aliases:
     - Back
     - Go back
-    - 返回
+    - Back
     - Up button
     semantic_type: button
   - text: More options
@@ -1192,7 +1192,7 @@ screens:
     aliases:
     - Menu
     - Overflow menu
-    - 更多选项
+    - [CH]
     - ⋮
     semantic_type: button
   - text: Clock
@@ -1203,9 +1203,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 时钟
+    - [CH]
     - Clock tab
-    - 时钟标签
+    - [CH]Tab
     semantic_type: tab
   - text: Style
     center:
@@ -1215,7 +1215,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_17
     aliases:
-    - 样式
+    - [CH]
     - Clock style
     - Clock face style
     semantic_type: menu_item
@@ -1227,9 +1227,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_17
     aliases:
-    - 数字
+    - [CH]
     - Digital clock
-    - 数字时钟
+    - [CH]
     semantic_type: button
   - text: Display time with seconds
     center:
@@ -1240,7 +1240,7 @@ screens:
     leads_to: screen_8
     aliases:
     - Show seconds
-    - 显示秒数
+    - [CH]
     - Seconds display
     semantic_type: toggle
   - text: Automatic home clock
@@ -1252,7 +1252,7 @@ screens:
     leads_to: screen_8
     aliases:
     - Auto home clock
-    - 自动主时钟
+    - Auto[CH]
     - Home clock auto
     semantic_type: toggle
   - text: While traveling in an area where the time is different, add a clock for
@@ -1265,7 +1265,7 @@ screens:
     leads_to: screen_8
     aliases:
     - Travel home clock description
-    - 旅行时添加主时钟
+    - [CH]
     - Home clock while traveling
     semantic_type: label
   - text: Home time zone
@@ -1277,7 +1277,7 @@ screens:
     leads_to: screen_18
     aliases:
     - Home timezone
-    - 主时区
+    - [CH]
     - Home TZ
     semantic_type: menu_item
   - text: Change date &amp; time
@@ -1295,9 +1295,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 闹钟
+    - [CH]
     - Alarm tab
-    - 闹钟标签
+    - [CH]Tab
     semantic_type: tab
   - text: Silence after
     center:
@@ -1308,7 +1308,7 @@ screens:
     leads_to: screen_20
     aliases:
     - Auto silence
-    - 响铃后静音
+    - [CH]Mute
     - Silence timer
     semantic_type: menu_item
   - text: Snooze length
@@ -1320,7 +1320,7 @@ screens:
     leads_to: screen_21
     aliases:
     - Snooze duration
-    - 贪睡时长
+    - [CH]
     - Snooze time
     semantic_type: menu_item
   - text: Alarm volume
@@ -1331,7 +1331,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 闹钟音量
+    - [CH]Volume
     - Alarm sound volume
     - Ring volume
     semantic_type: menu_item
@@ -1350,7 +1350,7 @@ screens:
     leads_to: screen_22
     aliases:
     - WebView
-    - 网页视图
+    - [CH]
     - web content
     semantic_type: other
   - text: Home
@@ -1361,8 +1361,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_23
     aliases:
-    - 主页
-    - 首页
+    - Home
+    - Home
     - home screen
     semantic_type: tab
   - text: New tab
@@ -1373,8 +1373,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_24
     aliases:
-    - 新标签页
-    - 新建标签
+    - NewTab页
+    - [CH]Tab
     - add tab
     semantic_type: button
   - text: Switch or close tabs
@@ -1385,8 +1385,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_25
     aliases:
-    - 切换或关闭标签页
-    - 标签页管理器
+    - [CH]CloseTab页
+    - Tab页Manage器
     - tab switcher
     semantic_type: button
   - text: More options
@@ -1397,9 +1397,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_26
     aliases:
-    - 更多选项
-    - 更多
-    - 菜单
+    - [CH]
+    - [CH]
+    - Menu
     - overflow menu
     semantic_type: button
   - text: Chinese (Simplified)
@@ -1410,8 +1410,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_22
     aliases:
-    - 简体中文
-    - 中文
+    - [CH]Chinese
+    - Chinese
     - Simplified Chinese
     semantic_type: menu_item
   - text: English
@@ -1422,8 +1422,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_22
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - EN
     semantic_type: menu_item
   - text: Close
@@ -1434,7 +1434,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_22
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - close button
     semantic_type: button
@@ -1454,7 +1454,7 @@ screens:
     aliases:
     - Permission request
     - Log access prompt
-    - 设备日志访问权限
+    - Device[CH]AccessPermission
     semantic_type: label
   - text: Allow one-time access
     center:
@@ -1466,8 +1466,8 @@ screens:
     aliases:
     - Allow once
     - Grant one-time
-    - 允许一次
-    - 仅允许一次
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Don’t allow
     center:
@@ -1479,8 +1479,8 @@ screens:
     aliases:
     - Deny
     - Reject
-    - 拒绝
-    - 不允许
+    - [CH]
+    - [CH]
     semantic_type: button
   description: System permission dialog asking the user to grant Google Play services
     access to device logs with one-time or deny options.
@@ -1496,8 +1496,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Help
     center:
@@ -1507,9 +1507,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 帮助
+    - Help
     - Help & feedback
-    - 帮助与反馈
+    - HelpandFeedback
     semantic_type: menu_item
   - text: More options
     center:
@@ -1520,8 +1520,8 @@ screens:
     leads_to: screen_29
     aliases:
     - Overflow
-    - 更多选项
-    - 菜单
+    - [CH]
+    - Menu
     semantic_type: button
   - text: Popular help resources
     center:
@@ -1531,9 +1531,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 热门帮助资源
+    - [CH]Help[CH]
     - Help topics
-    - 帮助主题
+    - HelpTheme
     semantic_type: label
   - text: Search help
     center:
@@ -1543,9 +1543,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 搜索帮助
+    - SearchHelp
     - Search
-    - 搜索
+    - Search
     semantic_type: input
   - text: Send feedback
     center:
@@ -1555,9 +1555,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - Feedback
-    - 反馈
+    - Feedback
     semantic_type: menu_item
   description: Help screen for the Clock app displaying popular help resources, a
     search bar, and an option to send feedback.
@@ -1746,7 +1746,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 计时器
+    - [CH]
     - countdown timer
     - timer tab
     semantic_type: tab
@@ -1758,7 +1758,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 更多选项
+    - [CH]
     - menu
     - overflow menu
     - three dots
@@ -1894,7 +1894,7 @@ screens:
     aliases:
     - backspace
     - delete
-    - 删除
+    - Delete
     - remove
     semantic_type: button
   - text: Alarm
@@ -1905,7 +1905,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 闹钟
+    - [CH]
     - alarm tab
     - alarms
     semantic_type: tab
@@ -1917,7 +1917,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 时钟
+    - [CH]
     - clock tab
     - world clock
     semantic_type: tab
@@ -1929,7 +1929,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 秒表
+    - [CH]
     - stopwatch tab
     - timer
     semantic_type: tab
@@ -1941,7 +1941,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 就寝
+    - [CH]
     - sleep
     - bedtime tab
     - sleep schedule
@@ -1963,7 +1963,7 @@ screens:
     - Return
     - Go back
     - Navigate back
-    - 返回
+    - Back
     semantic_type: button
   - text: Search for a city
     center:
@@ -1976,7 +1976,7 @@ screens:
     - Search city
     - Find city
     - City search
-    - 搜索城市
+    - Search[CH]
     semantic_type: input
   description: World clock city search screen allowing users to find and add new cities,
     featuring a search bar and back button.
@@ -1992,7 +1992,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 闹钟
+    - [CH]
     - alarms
     - alarm tab
     semantic_type: tab
@@ -2004,7 +2004,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 更多选项
+    - [CH]
     - menu
     - overflow menu
     - three dots
@@ -2017,7 +2017,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 展开闹钟
+    - [CH]
     - expand
     - show details
     semantic_type: button
@@ -2029,7 +2029,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 添加闹钟
+    - [CH]
     - new alarm
     - create alarm
     semantic_type: button
@@ -2041,7 +2041,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 时钟
+    - [CH]
     - clock tab
     - time
     semantic_type: tab
@@ -2053,7 +2053,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 计时器
+    - [CH]
     - timer tab
     - countdown
     semantic_type: tab
@@ -2065,7 +2065,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 秒表
+    - [CH]
     - stopwatch tab
     semantic_type: tab
   - text: Bedtime
@@ -2076,10 +2076,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 就寝
+    - [CH]
     - sleep
     - bedtime tab
-    - 睡眠
+    - Sleep
     semantic_type: tab
   - text: Try now
     center:
@@ -2089,7 +2089,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 立即尝试
+    - [CH]
     - try it
     - try feature
     semantic_type: button
@@ -2108,7 +2108,7 @@ screens:
     aliases:
     - feedback
     - report issue
-    - 反馈
+    - Feedback
     - submit feedback
     semantic_type: menu_item
   - text: Help
@@ -2120,7 +2120,7 @@ screens:
     aliases:
     - help & feedback
     - support
-    - 帮助
+    - Help
     - help center
     semantic_type: menu_item
   description: Support menu with options to send feedback and access help.
@@ -2136,8 +2136,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - digital clock
-    - 数字时钟
-    - 数字表盘
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Analog
     center:
@@ -2147,8 +2147,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - analog clock
-    - 模拟时钟
-    - 指针表盘
+    - Simulator[CH]
+    - [CH]
     semantic_type: tab
   description: Clock display settings screen allowing users to choose between digital
     and analog styles.
@@ -2164,8 +2164,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - home timezone
-    - 本地时区
-    - 默认时区
+    - Local[CH]
+    - Default[CH]
     - home tz
     semantic_type: label
   - text: (GMT+8:00) Hong Kong
@@ -2176,7 +2176,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Hong Kong time
-    - 香港时间
+    - [CH]
     - HKT
     semantic_type: menu_item
   - text: (GMT+8:00) Irkutsk
@@ -2187,7 +2187,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Irkutsk time
-    - 伊尔库茨克时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+8:00) Kuala Lumpur
     center:
@@ -2197,7 +2197,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Kuala Lumpur time
-    - 吉隆坡时间
+    - [CH]
     - KL time
     semantic_type: menu_item
   - text: (GMT+8:00) Perth
@@ -2208,7 +2208,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Perth time
-    - 珀斯时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+8:00) Taipei
     center:
@@ -2218,7 +2218,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Taipei time
-    - 台北时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+9:00) Seoul
     center:
@@ -2228,7 +2228,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Seoul time
-    - 首尔时间
+    - [CH]
     - KST
     semantic_type: menu_item
   - text: (GMT+9:00) Tokyo, Osaka
@@ -2239,7 +2239,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Tokyo time
-    - 东京时间
+    - [CH]
     - JST
     - Osaka time
     semantic_type: menu_item
@@ -2251,7 +2251,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Yakutsk time
-    - 雅库茨克时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+9:30) Adelaide
     center:
@@ -2261,7 +2261,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Adelaide time
-    - 阿德莱德时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+9:30) Darwin
     center:
@@ -2271,7 +2271,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Darwin time
-    - 达尔文时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+10:00) Brisbane
     center:
@@ -2281,7 +2281,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Brisbane time
-    - 布里斯班时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+10:00) Hobart
     center:
@@ -2291,7 +2291,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Hobart time
-    - 霍巴特时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+10:00) Sydney, Canberra
     center:
@@ -2301,7 +2301,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sydney time
-    - 悉尼时间
+    - [CH]
     - AEST
     - Canberra time
     semantic_type: menu_item
@@ -2313,7 +2313,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Vladivostok time
-    - 海参崴时间
+    - [CH]
     semantic_type: menu_item
   - text: (GMT+10:00) Guam
     center:
@@ -2323,7 +2323,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Guam time
-    - 关岛时间
+    - [CH]
     semantic_type: menu_item
   - text: Cancel
     center:
@@ -2332,7 +2332,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - cancel button
     - dismiss
     semantic_type: button
@@ -2351,8 +2351,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Set time automatically
     center:
@@ -2363,8 +2363,8 @@ screens:
     aliases:
     - Auto time
     - Automatic time
-    - 自动设置时间
-    - 网络提供的时间
+    - AutoSettings[CH]
+    - Network[CH]
     semantic_type: toggle
   - text: Date
     center:
@@ -2375,8 +2375,8 @@ screens:
     aliases:
     - Current date
     - Set date
-    - 日期
-    - 设置日期
+    - [CH]
+    - Settings[CH]
     semantic_type: setting
   - text: Time
     center:
@@ -2387,8 +2387,8 @@ screens:
     aliases:
     - Current time
     - Set time
-    - 时间
-    - 设置时间
+    - [CH]
+    - Settings[CH]
     semantic_type: setting
   - text: Time zone
     center:
@@ -2399,8 +2399,8 @@ screens:
     aliases:
     - Timezone
     - Select timezone
-    - 时区
-    - 选择时区
+    - [CH]
+    - Select[CH]
     semantic_type: menu_item
   - text: Set time zone automatically
     center:
@@ -2411,8 +2411,8 @@ screens:
     aliases:
     - Auto timezone
     - Automatic timezone
-    - 自动设置时区
-    - 网络提供的时区
+    - AutoSettings[CH]
+    - Network[CH]
     semantic_type: toggle
   - text: Use location to set time zone
     center:
@@ -2423,8 +2423,8 @@ screens:
     aliases:
     - Location timezone
     - GPS time zone
-    - 使用位置信息确定时区
-    - 定位时区
+    - [CH]InfoOK[CH]
+    - Location[CH]
     semantic_type: toggle
   - text: Time format
     center:
@@ -2435,8 +2435,8 @@ screens:
     aliases:
     - Clock format
     - Time display
-    - 时间格式
-    - 时钟格式
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Use locale default
     center:
@@ -2447,8 +2447,8 @@ screens:
     aliases:
     - Default locale
     - System default
-    - 使用区域默认值
-    - 系统默认格式
+    - [CH]Default值
+    - [CH]Default[CH]
     semantic_type: toggle
   - text: Use 24-hour format
     center:
@@ -2459,8 +2459,8 @@ screens:
     aliases:
     - 24-hour clock
     - Military time
-    - 24小时制
-    - 使用24小时制
+    - 24[CH]
+    - [CH]24[CH]
     semantic_type: toggle
   description: Date and time settings screen with options to configure automatic time,
     time zone, and time format preferences.
@@ -2475,10 +2475,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 静音后
+    - Muteback
     - silence timer
     - auto silence
-    - 自动静音
+    - AutoMute
     semantic_type: label
   - text: 1 minute
     center:
@@ -2487,7 +2487,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 1分钟
+    - 1[CH]
     - one minute
     - 1 min
     semantic_type: menu_item
@@ -2498,7 +2498,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 5分钟
+    - 5[CH]
     - five minutes
     - 5 min
     semantic_type: menu_item
@@ -2509,7 +2509,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 10分钟
+    - 10[CH]
     - ten minutes
     - 10 min
     semantic_type: menu_item
@@ -2520,7 +2520,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 15分钟
+    - 15[CH]
     - fifteen minutes
     - 15 min
     semantic_type: menu_item
@@ -2531,7 +2531,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 20分钟
+    - 20[CH]
     - twenty minutes
     - 20 min
     semantic_type: menu_item
@@ -2542,7 +2542,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 25分钟
+    - 25[CH]
     - twenty-five minutes
     - 25 min
     semantic_type: menu_item
@@ -2553,9 +2553,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 从不
+    - [CH]
     - never silence
-    - 关闭
+    - Close
     semantic_type: menu_item
   - text: Cancel
     center:
@@ -2564,9 +2564,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - dismiss
-    - 关闭
+    - Close
     semantic_type: button
   description: Alarm settings dialog for selecting the 'Silence after' duration, featuring
     a list of time intervals and a cancel button.
@@ -2581,9 +2581,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 贪睡时长
+    - [CH]
     - Snooze duration
-    - 贪睡时间
+    - [CH]
     semantic_type: setting
   - text: 10 minutes
     center:
@@ -2592,7 +2592,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 10分钟
+    - 10[CH]
     - 10 mins
     - 10m
     semantic_type: menu_item
@@ -2603,7 +2603,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 11分钟
+    - 11[CH]
     - 11 mins
     - 11m
     semantic_type: menu_item
@@ -2614,7 +2614,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 12分钟
+    - 12[CH]
     - 12 mins
     - 12m
     semantic_type: menu_item
@@ -2625,7 +2625,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 13分钟
+    - 13[CH]
     - 13 mins
     - 13m
     semantic_type: menu_item
@@ -2636,7 +2636,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 14分钟
+    - 14[CH]
     - 14 mins
     - 14m
     semantic_type: menu_item
@@ -2647,7 +2647,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 15分钟
+    - 15[CH]
     - 15 mins
     - 15m
     semantic_type: menu_item
@@ -2658,7 +2658,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 16分钟
+    - 16[CH]
     - 16 mins
     - 16m
     semantic_type: menu_item
@@ -2669,7 +2669,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 17分钟
+    - 17[CH]
     - 17 mins
     - 17m
     semantic_type: menu_item
@@ -2680,7 +2680,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 18分钟
+    - 18[CH]
     - 18 mins
     - 18m
     semantic_type: menu_item
@@ -2691,7 +2691,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 19分钟
+    - 19[CH]
     - 19 mins
     - 19m
     semantic_type: menu_item
@@ -2702,7 +2702,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 20分钟
+    - 20[CH]
     - 20 mins
     - 20m
     semantic_type: menu_item
@@ -2713,7 +2713,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 21分钟
+    - 21[CH]
     - 21 mins
     - 21m
     semantic_type: menu_item
@@ -2724,7 +2724,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 22分钟
+    - 22[CH]
     - 22 mins
     - 22m
     semantic_type: menu_item
@@ -2735,7 +2735,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 23分钟
+    - 23[CH]
     - 23 mins
     - 23m
     semantic_type: menu_item
@@ -2746,7 +2746,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 24分钟
+    - 24[CH]
     - 24 mins
     - 24m
     semantic_type: menu_item
@@ -2757,7 +2757,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - Dismiss
     - Close
     semantic_type: button
@@ -2767,7 +2767,7 @@ screens:
   scroll_direction: vertical
 - id: screen_22
   elements:
-  - text: 跳至主要内容
+  - text: [CH]
     center:
     - 0.5003
     - 0.1476
@@ -2776,9 +2776,9 @@ screens:
     aliases:
     - Skip to main content
     - skip link
-    - 跳过导航
+    - Skip[CH]
     semantic_type: link
-  - text: 主菜单
+  - text: 主Menu
     center:
     - 0.0788
     - 0.1409
@@ -2787,10 +2787,10 @@ screens:
     aliases:
     - Main menu
     - menu
-    - 菜单
+    - Menu
     - hamburger menu
     semantic_type: button
-  - text: Google 应用
+  - text: Google App
     center:
     - 0.8128
     - 0.1409
@@ -2798,7 +2798,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google apps
-    - 谷歌应用
+    - [CH]App
     - app grid
     - waffle menu
     semantic_type: button
@@ -2809,8 +2809,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - home screen
     semantic_type: tab
   - text: Connection is secure
@@ -2821,7 +2821,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Secure connection
-    - 安全连接
+    - SecurityConnection
     - HTTPS
     semantic_type: label
   - text: New tab
@@ -2831,8 +2831,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 新建标签页
-    - 新标签
+    - [CH]Tab页
+    - NewTab
     - add tab
     semantic_type: button
   - text: Switch or close tabs
@@ -2843,7 +2843,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Tab switcher
-    - 切换或关闭标签页
+    - [CH]CloseTab页
     - manage tabs
     semantic_type: button
   - text: More options
@@ -2853,7 +2853,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - three dots
     semantic_type: button
@@ -2864,7 +2864,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 简体中文
+    - [CH]Chinese
     - Simplified Chinese
     - zh-CN
     semantic_type: menu_item
@@ -2875,8 +2875,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - en
     semantic_type: menu_item
   - text: Close
@@ -2886,7 +2886,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - exit
     semantic_type: button
@@ -2906,7 +2906,7 @@ screens:
     - search bar
     - address bar
     - URL bar
-    - 網址列
+    - [CH]
     semantic_type: input
   - text: Start voice search
     center:
@@ -2917,7 +2917,7 @@ screens:
     aliases:
     - voice search
     - microphone
-    - 語音搜尋
+    - [CH]
     semantic_type: button
   - text: Search with your camera using Google Lens
     center:
@@ -2928,7 +2928,7 @@ screens:
     aliases:
     - Google Lens
     - camera search
-    - 視覺搜尋
+    - [CH]
     semantic_type: button
   - text: 'Navigate: Yahoo: www.yahoo.com'
     center:
@@ -2959,7 +2959,7 @@ screens:
     aliases:
     - Facebook bookmark
     - Facebook shortcut
-    - Facebook捷徑
+    - Facebook[CH]
     semantic_type: link
   - text: Facebook
     center:
@@ -2969,7 +2969,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - FB
-    - 臉書
+    - [CH]
     semantic_type: label
   - text: 'Navigate: YouTube: m.youtube.com'
     center:
@@ -2980,7 +2980,7 @@ screens:
     aliases:
     - YouTube bookmark
     - YouTube shortcut
-    - YouTube捷徑
+    - YouTube[CH]
     semantic_type: link
   - text: YouTube
     center:
@@ -2990,7 +2990,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - YT
-    - 油管
+    - [CH]
     semantic_type: label
   - text: 'Navigate: Wikipedia: en.m.wikipedia.org'
     center:
@@ -3081,7 +3081,7 @@ screens:
     aliases:
     - Discover switch
     - Discover feed
-    - 探索開關
+    - [CH]
     semantic_type: toggle
   - text: Options for Discover
     center:
@@ -3092,7 +3092,7 @@ screens:
     aliases:
     - Discover settings
     - Discover menu
-    - 探索選項
+    - [CH]
     semantic_type: button
   - text: Home
     center:
@@ -3103,8 +3103,8 @@ screens:
     aliases:
     - Home button
     - Home screen
-    - 主畫面
-    - 首頁
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Manage account
     center:
@@ -3115,7 +3115,7 @@ screens:
     aliases:
     - Account settings
     - Manage accounts
-    - 管理帳戶
+    - Manage[CH]
     semantic_type: menu_item
   - text: Switch or close tabs
     center:
@@ -3126,7 +3126,7 @@ screens:
     aliases:
     - Tab switcher
     - Tabs
-    - 切換分頁
+    - [CH]
     semantic_type: button
   - text: More options
     center:
@@ -3137,8 +3137,8 @@ screens:
     aliases:
     - Menu
     - More
-    - 更多選項
-    - 選單
+    - [CH]
+    - [CH]
     semantic_type: button
   description: Mobile web browser homepage featuring a search bar, quick access shortcuts
     to popular websites, and navigation controls for tabs and settings.
@@ -3156,7 +3156,7 @@ screens:
     - search bar
     - address bar
     - URL bar
-    - 搜索或输入网址
+    - Search或Input[CH]
     semantic_type: input
   - text: Start voice search
     center:
@@ -3167,7 +3167,7 @@ screens:
     aliases:
     - voice search
     - microphone
-    - 语音搜索
+    - [CH]Search
     semantic_type: button
   - text: Search with your camera using Google Lens
     center:
@@ -3178,7 +3178,7 @@ screens:
     aliases:
     - Google Lens
     - camera search
-    - 镜头搜索
+    - [CH]Search
     - visual search
     semantic_type: button
   - text: Discover - off
@@ -3189,7 +3189,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Discover feed
-    - 发现
+    - [CH]
     - Discover toggle
     semantic_type: toggle
   - text: Options for Discover
@@ -3200,7 +3200,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Discover settings
-    - 发现选项
+    - [CH]
     - Discover menu
     semantic_type: menu_item
   - text: Home
@@ -3210,9 +3210,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主页
+    - Home
     - home tab
-    - 首页
+    - Home
     semantic_type: tab
   - text: Manage account
     center:
@@ -3222,7 +3222,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - account settings
-    - 管理账户
+    - ManageAccount
     - account management
     semantic_type: menu_item
   - text: Switch or close tabs
@@ -3233,7 +3233,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - tab switcher
-    - 切换或关闭标签页
+    - [CH]CloseTab页
     - tabs
     semantic_type: button
   - text: More options
@@ -3245,7 +3245,7 @@ screens:
     aliases:
     - menu
     - overflow menu
-    - 更多选项
+    - [CH]
     - three dots
     semantic_type: button
   description: Browser home screen featuring a web search bar, voice and camera search
@@ -3254,16 +3254,16 @@ screens:
   scroll_direction: vertical
 - id: screen_25
   elements:
-  - text: Close 隐私权政策 – 隐私权和条款 – Google tab
+  - text: Close Privacy[CH] – Privacy[CH] – Google tab
     center:
     - 0.4319
     - 0.1167
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭标签页
+    - CloseTab页
     - close tab
-    - 关闭
+    - Close
     semantic_type: button
   - text: New tab
     center:
@@ -3272,8 +3272,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 新标签页
-    - 新建标签
+    - NewTab页
+    - [CH]Tab
     - add tab
     semantic_type: button
   - text: Close New tab tab
@@ -3283,9 +3283,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭新标签页
+    - CloseNewTab页
     - close new tab
-    - 关闭
+    - Close
     semantic_type: button
   - text: More options
     center:
@@ -3294,9 +3294,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
-    - 菜单
+    - [CH]
+    - [CH]
+    - Menu
     - overflow menu
     semantic_type: button
   description: Web browser view displaying the Google Privacy Policy page with tab
@@ -3312,7 +3312,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 前进
+    - [CH]
     - go forward
     - navigate forward
     semantic_type: button
@@ -3323,9 +3323,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 书签
+    - [CH]
     - add bookmark
-    - 收藏
+    - [CH]
     semantic_type: button
   - text: Download
     center:
@@ -3334,7 +3334,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 下载
+    - Download
     - save
     - download file
     semantic_type: button
@@ -3345,7 +3345,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 页面信息
+    - PageInfo
     - page information
     - site info
     semantic_type: button
@@ -3356,7 +3356,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 停止刷新
+    - Stop[CH]
     - stop loading
     - stop
     semantic_type: button
@@ -3367,9 +3367,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 新标签页
+    - NewTab页
     - new page
-    - 新建标签
+    - [CH]Tab
     semantic_type: button
   - text: New Incognito tab
     center:
@@ -3378,9 +3378,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 新建无痕标签页
+    - [CH]None痕Tab页
     - new private tab
-    - 隐私标签页
+    - PrivacyTab页
     semantic_type: button
   - text: History
     center:
@@ -3389,9 +3389,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 历史记录
+    - [CH]
     - browsing history
-    - 浏览历史
+    - [CH]
     semantic_type: menu_item
   - text: Downloads
     center:
@@ -3400,9 +3400,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 下载内容
+    - Download[CH]
     - downloaded files
-    - 下载
+    - Download
     semantic_type: menu_item
   - text: Bookmarks
     center:
@@ -3411,9 +3411,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 书签
+    - [CH]
     - favorites
-    - 收藏
+    - [CH]
     semantic_type: menu_item
   - text: Recent tabs
     center:
@@ -3422,9 +3422,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最近标签页
+    - [CH]Tab页
     - recently closed
-    - 最近关闭的标签页
+    - [CH]CloseTab页
     semantic_type: menu_item
   - text: Share…
     center:
@@ -3433,9 +3433,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 分享
+    - Share
     - send
-    - 共享
+    - Share
     semantic_type: menu_item
   - text: Find in page
     center:
@@ -3444,9 +3444,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 在页面中查找
+    - atPage[CH]
     - find on page
-    - 页面内查找
+    - Page[CH]
     semantic_type: menu_item
   - text: Translate…
     center:
@@ -3455,9 +3455,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 翻译
+    - [CH]
     - translate page
-    - 页面翻译
+    - Page[CH]
     semantic_type: menu_item
   - text: Add to Home screen
     center:
@@ -3466,9 +3466,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加到主屏幕
+    - [CH]Screen
     - add to homescreen
-    - 添加到桌面
+    - [CH]
     semantic_type: menu_item
   - text: Desktop site
     center:
@@ -3477,9 +3477,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 桌面版网站
+    - [CH]
     - desktop version
-    - 请求桌面网站
+    - [CH]
     semantic_type: toggle
   - text: Settings
     center:
@@ -3488,9 +3488,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - preferences
-    - 选项
+    - [CH]
     semantic_type: menu_item
   - text: Help &amp; feedback
     center:
@@ -3513,7 +3513,7 @@ screens:
     aliases:
     - dismiss
     - exit
-    - 关闭
+    - Close
     - cancel
     semantic_type: button
   - text: Highlight your issue
@@ -3525,7 +3525,7 @@ screens:
     aliases:
     - mark issue
     - annotate
-    - 标注问题
+    - [CH]
     - highlight
     semantic_type: button
   - text: Hide sensitive info
@@ -3537,7 +3537,7 @@ screens:
     aliases:
     - blur
     - redact
-    - 隐藏敏感信息
+    - [CH]Info
     - hide info
     semantic_type: button
   - text: Undo
@@ -3548,7 +3548,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - revert
-    - 撤销
+    - Undo
     - undo action
     - back
     semantic_type: button
@@ -3561,7 +3561,7 @@ screens:
     aliases:
     - finish
     - complete
-    - 完成
+    - Done
     - confirm
     semantic_type: button
   - text: Highlight issues or hide sensitive information.
@@ -3573,8 +3573,8 @@ screens:
     aliases:
     - instructions
     - help text
-    - 提示
-    - 说明
+    - Tip
+    - Instruction
     semantic_type: label
   - text: GOT IT
     center:
@@ -3585,7 +3585,7 @@ screens:
     aliases:
     - OK
     - understood
-    - 知道了
+    - [CH]
     - acknowledge
     semantic_type: button
   description: Screenshot annotation toolbar allowing users to highlight issues, hide
@@ -3734,7 +3734,7 @@ screens:
     aliases:
     - Clear history
     - Delete history
-    - 清除帮助历史
+    - [CH]Help[CH]
     semantic_type: button
   - text: Version info
     center:
@@ -3745,7 +3745,7 @@ screens:
     aliases:
     - Version
     - App version
-    - 版本信息
+    - VersionInfo
     semantic_type: label
   - text: Open source licenses
     center:
@@ -3756,7 +3756,7 @@ screens:
     aliases:
     - Licenses
     - OSS licenses
-    - 开源许可
+    - [CH]
     semantic_type: menu_item
   description: About settings screen displaying app version information, Google Play
     Store link, help history options, and open source licenses.
@@ -3771,7 +3771,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - back button
     semantic_type: button
@@ -3782,7 +3782,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索帮助
+    - SearchHelp
     - search
     - find help
     semantic_type: input
@@ -3793,7 +3793,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 向上导航
+    - [CH]
     - go up
     - up button
     semantic_type: button
@@ -3804,7 +3804,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - help center
     - support
     semantic_type: menu_item
@@ -3815,10 +3815,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - menu
-    - 更多
+    - [CH]
     semantic_type: button
   - text: Popular help resources
     center:
@@ -3827,7 +3827,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 热门帮助资源
+    - [CH]Help[CH]
     - popular resources
     - help articles
     semantic_type: label
@@ -3838,7 +3838,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
     - submit feedback
     semantic_type: menu_item

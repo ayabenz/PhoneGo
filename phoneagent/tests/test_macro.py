@@ -328,20 +328,20 @@ class ClickDevice(MockDevice):
 
 def test_tap_step_uses_the_accessibility_action():
     dev = ClickDevice(accepts=True)
-    result = _executor(dev).run([{"action": "tap", "x": 282, "y": 1851, "text": "蓝牙"}])
+    result = _executor(dev).run([{"action": "tap", "x": 282, "y": 1851, "text": "Bluetooth"}])
 
     assert result.ok
-    assert dev.clicks == ["蓝牙"]
+    assert dev.clicks == ["Bluetooth"]
     # the coordinate path must not have run at all
     assert dev.called("tap") == []
 
 
 def test_tap_step_falls_back_to_coordinates_when_the_action_is_refused():
     dev = ClickDevice(accepts=False)
-    result = _executor(dev).run([{"action": "tap", "x": 282, "y": 1851, "text": "蓝牙"}])
+    result = _executor(dev).run([{"action": "tap", "x": 282, "y": 1851, "text": "Bluetooth"}])
 
     assert result.ok
-    assert dev.clicks == ["蓝牙"]          # tried first
+    assert dev.clicks == ["Bluetooth"]          # tried first
     assert dev.called("tap")[0][1] == (282, 1851)
 
 
@@ -377,8 +377,8 @@ def test_human_mode_taps_inside_the_element_and_varies_the_wait():
     device = Device()
     executor = MacroExecutor(device, sleep=lambda _s: None, human=True, resolve_text=False)
     executor._lookup = lambda _label: Node()
-    macro = [{"action": "tap", "text": "好", "x": 500, "y": 1000, "wait": 1.0},
-             {"action": "tap", "text": "好", "x": 500, "y": 1000, "wait": 1.0}]
+    macro = [{"action": "tap", "text": "good", "x": 500, "y": 1000, "wait": 1.0},
+             {"action": "tap", "text": "good", "x": 500, "y": 1000, "wait": 1.0}]
     executor.run(macro)
 
     assert len(device.points) == 2

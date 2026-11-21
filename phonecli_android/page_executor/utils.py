@@ -56,10 +56,10 @@ def call_dino(instruction, screenshot_path):
 
 
 def get_relative_bbox_center(page, instruction, screenshot):
-    # 获取相对 bbox
+    # [CH] bbox
     relative_bbox = call_dino(instruction, screenshot)
 
-    # 获取页面的视口大小
+    # [CH]Page[CH]
     viewport_size = page.viewport_size
     # print(viewport_size)
     viewport_width = viewport_size['width']
@@ -70,7 +70,7 @@ def get_relative_bbox_center(page, instruction, screenshot):
     width_x = (relative_bbox[2] - relative_bbox[0]) * viewport_width / 1000
     height_y = (relative_bbox[3] - relative_bbox[1]) * viewport_height / 1000
 
-    # 点击计算出的中心点坐标
+    # [CH]Center[CH]
     # print(center_x, center_y)
     plot_bbox([int(center_x - width_x / 2), int(center_y - height_y / 2), int(width_x), int(height_y)], screenshot)
 

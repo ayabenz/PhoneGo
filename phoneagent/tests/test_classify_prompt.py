@@ -17,17 +17,17 @@ def test_classification_uses_our_prompt_and_tags_instead_of_dropping(monkeypatch
     def fake_completion(system_prompt, user_prompt, **kwargs):
         seen["system"] = system_prompt
         seen["user"] = user_prompt
-        return "STABLE|Home\nDYNAMIC|某条笔记的标题"
+        return "STABLE|Home\nDYNAMIC|[CH]"
 
     monkeypatch.setattr(llm_client, "text_completion", fake_completion)
 
-    elements = [{"text": "Home"}, {"text": "某条笔记的标题"}]
-    tagged = crawler._tag_dynamic(None, elements, "小红书", "", "", "")
+    elements = [{"text": "Home"}, {"text": "[CH]"}]
+    tagged = crawler._tag_dynamic(None, elements, "[CH]", "", "", "")
 
     assert "will this exact text still be here next time" in seen["system"]
     assert [e["dynamic"] for e in tagged] == [False, True]
     # nothing is dropped: the feed still has something to tap
-    assert [e["text"] for e in tagged] == ["Home", "某条笔记的标题"]
+    assert [e["text"] for e in tagged] == ["Home", "[CH]"]
 
 
 def test_the_repo_prompt_is_not_modified():

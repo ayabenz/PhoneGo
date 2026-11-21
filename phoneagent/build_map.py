@@ -2,7 +2,7 @@
 
     python3 -m phoneagent.build_map \
         --serial e3fa9e60 \
-        --package com.android.settings --app 设置 \
+        --package com.android.settings --app Settings \
         --max-screens 50 --max-depth 3 \
         --output phoneagent/maps/k90_settings.yaml
 
@@ -222,7 +222,7 @@ def _nearest_label(xml: str, label: str, cx: float, cy: float):
     """The match for ``label`` closest to where it was, when the label repeats.
 
     ``find_label`` refuses ambiguous labels, and a tab bar makes almost every
-    tab ambiguous: 世界时钟 is the page title, the tab and the tab's caption.
+    tab ambiguous: [CH] is the page title, the tab and the tab's caption.
     The crawl then reported "not on screen" and skipped it -- which is why the
     clock map held one screen and its four tabs were never opened. Nearest to
     the recorded position picks the one the crawl meant, and a tappable node
@@ -506,7 +506,7 @@ def _has_text_field(xml: str) -> bool:
     """Does this screen carry an input field?
 
     A search page looks exactly like the feed it was opened from -- same top
-    bar, same bottom tabs, same category chips -- so containment merged 小红书's
+    bar, same bottom tabs, same category chips -- so containment merged [CH]'s
     search page into the feed and the crawl never recorded it. An editable node
     is the one thing a search page has and a feed does not.
     """
@@ -537,7 +537,7 @@ def _match_unified(screen_keys: dict, screen_texts: dict, elements, selected=Non
 
     # Loose merging is for content-heavy screens only. A feed's "same page with
     # different posts" is a duplicate worth folding; a settings sub-page that
-    # merely shares 返回 with its menu is not, and merging those turned nineteen
+    # merely shares Back with its menu is not, and merging those turned nineteen
     # settings pages into thirteen with a worse landing rate (6/6 -> 3/6).
     if not _content_heavy(elements):
         return None, 0.0
@@ -555,7 +555,7 @@ def _match_unified(screen_keys: dict, screen_texts: dict, elements, selected=Non
                 continue
             if screen_selected is not None and selected:
                 # A different highlighted tab means a different page even when
-                # every other label is shared: 闹钟 / 世界时钟 / 秒表 / 计时 are one
+                # every other label is shared: [CH] / [CH] / [CH] / [CH] are one
                 # screen by overlap and four by behaviour. Measured: the clock
                 # map held two screens against the original project's thirty-one.
                 known_tab = set(screen_selected.get(screen_id) or [])
@@ -565,7 +565,7 @@ def _match_unified(screen_keys: dict, screen_texts: dict, elements, selected=Non
             if not shared:
                 continue
             coverage = shared / len(known)
-            # Containment alone is not enough: a settings sub-page shares 返回
+            # Containment alone is not enough: a settings sub-page shares Back
             # and the app's tab names with the menu it came from, so 0.5 on that
             # measure merged nineteen pages into five. Demanding general
             # similarity as well keeps "the same page seen twice" apart from
@@ -713,7 +713,7 @@ def _record_edge(screens, parent_id: str, label: str, target_id: str) -> None:
 
     An edge back to the screen it started from is not navigation: either the tap
     missed, or the page had not changed yet when the dump was taken. Recording it
-    taught the map that "显示与亮度" leads to the settings menu (measured: five of
+    taught the map that "[CH]Brightness" leads to the settings menu (measured: five of
     the settings home screen's entries were like that), so it is dropped.
     """
     if target_id == parent_id:
@@ -888,16 +888,16 @@ MIN_SCREEN_ELEMENTS = 4
 #: creates, deletes, confirms, sends or buys is skipped; --allow-consequential
 #: turns the guard off for an app whose every screen is behind such a button.
 CONSEQUENTIAL = re.compile(
-    r"(新建|创建|添加|删除|移除|清除|清空|重置|格式化|卸载|恢复出厂"
-    r"|安装|更新全部|立即更新|升级"
-    r"|确定|保存|提交|发送|拨号|呼叫|支付|购买|下单|充值"
-    r"|拍照|录像|录音"
-    r"|开始|启动|关机|重启|注销|退出登录|解绑|取消配对"
+    r"([CH]|Create|[CH]|Delete|[CH]|[CH]|[CH]|Reset|[CH]|[CH]|Restore[CH]"
+    r"|Install|UpdateAll|[CH]Update|[CH]"
+    r"|OK|Save|[CH]|[CH]|[CH]|[CH]|Payment|Purchase|Order|[CH]"
+    r"|Camera|[CH]|[CH]"
+    r"|Start|Start|[CH]|Restart|[CH]|ExitLogin|[CH]|CancelPairing"
     # Social actions. A crawl tapping these edits the user's own account:
-    # 微博 was liking posts, 点评 was opening its "不喜欢" feedback menu, and
+    # [CH] was liking posts, [CH] was opening its "[CH]" feedback menu, and
     # neither shows up as a screen change, so nothing else would notice.
-    r"|^赞$|^点赞|^转发|^评论$|^关注$|^已关注$|^收藏$|^打赏|^投币|^三连"
-    r"|不喜欢|不感兴趣|屏蔽|举报|投诉|拉黑|减少推荐|踩)"
+    r"|^赞$|^[CH]|^[CH]|^[CH]$|^[CH]$|^[CH]$|^[CH]$|^[CH]|^[CH]|^[CH]"
+    r"|[CH]|[CH]|[CH]|[CH]|[CH]|[CH]|[CH]|踩)"
 )
 
 
@@ -942,14 +942,14 @@ def _crawl_verified(bm, controller, device, package, app_name, output_path,
         return output_path
     if classify:
         # Tagged, not filtered. Dropping the "dynamic" half of a feed left
-        # nothing to tap -- 小红书 produced one screen for exactly this reason
+        # nothing to tap -- [CH] produced one screen for exactly this reason
         # (18 of 26 elements discarded as content). They are still useful for
         # exploration; they are only unfit as anchors for matching.
         elements_0 = _tag_dynamic(bm, elements_0, app_name,
                                   llm_api_key, llm_api_base, llm_model)
     if not elements_0:
         # An empty first screen makes a one-screen map with nothing in it, and
-        # it would overwrite a good map of the same app. 微博's splash renders
+        # it would overwrite a good map of the same app. [CH]'s splash renders
         # nothing for a few seconds; that is a failed start, not a map.
         for attempt in range(2):
             print(f"[Verified] screen_0 came back empty; relaunching "
@@ -1139,7 +1139,7 @@ def _crawl_verified(bm, controller, device, package, app_name, output_path,
         device.tap(*point)
         stats["taps"] += 1
         time.sleep(1.5)
-        # A search page usually appears *after* the tap: on 小红书 the thing you
+        # A search page usually appears *after* the tap: on [CH] the thing you
         # tap is a magnifier icon, and the text field only exists on the page it
         # opens. So look again, and type into whatever field is there now.
         after = ""
@@ -1266,9 +1266,9 @@ def _crawl_verified(bm, controller, device, package, app_name, output_path,
             continue
 
         # A screen is recorded from one dump, and a dump catches whatever is
-        # passing through: a "刷新完成" toast, a spinner label. Those texts are
+        # passing through: a "[CH]Done" toast, a spinner label. Those texts are
         # gone a second later, so a map built from them can never match again
-        # (a file-manager map kept "刷新完成" and then identified nothing).
+        # (a file-manager map kept "[CH]Done" and then identified nothing).
         # Take a second dump and keep only what is on both.
         selected_new: list = []
         try:
@@ -1312,8 +1312,8 @@ def _crawl_verified(bm, controller, device, package, app_name, output_path,
             # A feed that reloads with different posts is the same screen, not a
             # new one. Positional fingerprints cannot see that -- every card
             # moved -- but the chrome did not, and the chrome is what a screen
-            # is identified by at replay time. Measured: 21 of 点评's 27 screens
-            # and 36 of 小红书's 45 were the same page with different content.
+            # is identified by at replay time. Measured: 21 of [CH]'s 27 screens
+            # and 36 of [CH]'s 45 were the same page with different content.
             mine = _stable_keys(new_elements)
             twin = _same_chrome(mine, screens)
             if twin is not None:
@@ -1453,7 +1453,7 @@ def _crawl_verified(bm, controller, device, package, app_name, output_path,
 
     # A cancelled or truncated run writes beside the real map instead of over
     # it: the file in use may be a better one, and losing it because someone
-    # pressed 取消 is not a trade anyone agreed to.
+    # pressed Cancel is not a trade anyone agreed to.
     target = output_path
     if cancelled:
         target = output_path + ".partial"
@@ -1531,11 +1531,11 @@ DIALOG_PACKAGES = frozenset({
 })
 
 #: Labels that dismiss such a dialog in favour of the app.
-GRANT_LABELS = ("始终允许", "本次允许", "使用时允许", "允许", "启动应用", "同意")
+GRANT_LABELS = ("[CH]", "[CH]", "[CH]", "[CH]", "StartApp", "[CH]")
 
 
 #: Labels that appear next to a grant button on a permission prompt.
-DENY_LABELS = ("拒绝", "取消", "不允许", "禁止", "退出", "以后再说")
+DENY_LABELS = ("[CH]", "Cancel", "[CH]", "[CH]", "Exit", "[CH]")
 
 
 def _looks_like_dialog(xml: str) -> bool:
@@ -1598,7 +1598,7 @@ def _ensure_home(device: PhoneDevice, package: str, launch_intent: str,
         except NeedsHandover as exc:
             # The app put itself on the user's display. That is not a reason to
             # throw the whole crawl away: pull it back and let the caller try
-            # the next branch. Measured on 小红书, which had reached seven
+            # the next branch. Measured on [CH], which had reached seven
             # screens when the first handover aborted a twelve-minute run.
             print(f"  cannot start {exc.package} here: {exc.reason}")
             print("  bringing it back to the agent's display and continuing")
@@ -1617,7 +1617,7 @@ def _ensure_home(device: PhoneDevice, package: str, launch_intent: str,
             print(f"  cannot start {exc.package} here: {exc.reason}")
             print("  this app's home activity is pinned to its own task; aborting")
             # Leave the phone as we found it: some launch attempts end with the
-            # app sitting on the user's own screen (短信 did), and the crawl
+            # app sitting on the user's own screen ([CH] did), and the crawl
             # should not hand back a phone with a stranger's app in front.
             try:
                 device.force_stop(exc.package)
@@ -1751,7 +1751,7 @@ def main(
     parser.add_argument("--no-disable-reasoning", action="store_true")
     parser.add_argument("--expect-home", default="", help="text that must be on the start screen")
     parser.add_argument("--allow-consequential", action="store_true",
-                        help="also tap labels like 添加/删除/确定 (the crawl will "
+                        help="also tap labels like [CH]/Delete/OK (the crawl will "
                              "then change the device, e.g. leave alarms behind)")
     parser.add_argument("--redact", dest="redact", action="store_true", default=True,
                         help="strip device-specific data from the map (default)")
@@ -1773,7 +1773,7 @@ def main(
     previous_awake = _keep_awake(device, args.keep_awake)
     # Always verify the start, not only when --expect-home is given: without a
     # check the crawl records whatever happens to be on screen, which is how a
-    # 时钟 crawl once recorded the calendar, and an earlier one recorded our own
+    # [CH] crawl once recorded the calendar, and an earlier one recorded our own
     # chat UI.
     check = args.expect_home or "the foreground app"
     ok = _ensure_home(device, args.package, args.launch_intent, args.expect_home)

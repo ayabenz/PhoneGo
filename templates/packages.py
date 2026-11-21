@@ -1,11 +1,11 @@
 apps_dict = {
-    "桌面": "com.google.android.apps.nexuslauncher",
+    "[CH]": "com.google.android.apps.nexuslauncher",
     "Spotify": "com.spotify.music",
     "Contacts": "com.google.android.contacts",
     "Settings": "com.android.settings",
     "Setting": "com.android.settings",
     "Android-System-Setting": "com.android.settings",
-    "设置": "com.android.settings",
+    "Settings": "com.android.settings",
     "Clock": "com.google.android.deskclock",
     "TikTok": "com.zhiliaoapp.musically",
     "Clash": "com.github.kr328.clash",
@@ -34,10 +34,10 @@ apps_dict = {
     "Chrome": "com.android.chrome",
     "Twitch": "tv.twitch.android.app",
     "Wechat": "com.tencent.mm",
-    "微信": "com.tencent.mm",
-    "高德地图": "com.autonavi.minimap",
-    "高德": "com.autonavi.minimap",
-    "美团": "com.sankuai.meituan",
+    "[CH]": "com.tencent.mm",
+    "[CH]": "com.autonavi.minimap",
+    "[CH]": "com.autonavi.minimap",
+    "[CH]": "com.sankuai.meituan",
     "meituan": "com.sankuai.meituan",
     "Calendar": "com.skuld.calendario",
     "weather": "org.breezyweather",
@@ -62,11 +62,11 @@ def find_closest(input_str, dict):
         return dict[input_str.replace(" ", "").lower()]
 
     input_str = input_str.replace(" ", "").lower()
-    # 初始化变量来追踪最小编辑距离及其对应的key
+    # [CH]Edit[CH]key
     min_distance = float('inf')
     closest_key = None
 
-    # 遍历字典中的所有key，找到与输入字符串编辑距离最小的key
+    # [CH]Yeskey，[CH]Input[CH]Edit[CH]key
     for key in dict:
         origin_key = key
         key = key.replace(" ", "").lower()
@@ -75,7 +75,7 @@ def find_closest(input_str, dict):
             min_distance = current_distance
             closest_key = origin_key
 
-    # 返回编辑距离最小的key的value
+    # BackEdit[CH]keyvalue
     return dict[closest_key]
 
 

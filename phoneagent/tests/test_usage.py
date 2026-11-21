@@ -73,7 +73,7 @@ def test_the_report_is_readable(tmp_path):
     now = time.time()
     record(path, "qwen3", "b", 100, 20, when=now)
     text = format_report(summary(path, days=7, now=now))
-    assert "今天" in text and "近 7 天" in text and "qwen3" in text
+    assert "[CH]" in text and "近 7 天" in text and "qwen3" in text
 
 
 def test_usage_is_grouped_by_provider_too(tmp_path):
@@ -110,7 +110,7 @@ def test_calls_are_attributed_to_the_task_that_caused_them(tmp_path):
     from phoneagent import usage
 
     path = tmp_path / "usage.jsonl"
-    usage.set_context("abc123", "打开蓝牙设置")
+    usage.set_context("abc123", "OpenBluetoothSettings")
     usage.record(str(path), "m", "https://x/v1", 100, 10)
     usage.record(str(path), "m", "https://x/v1", 50, 5)
     usage.clear_context()
@@ -120,5 +120,5 @@ def test_calls_are_attributed_to_the_task_that_caused_them(tmp_path):
     tasks = data["by_task"]
     assert len(tasks) == 1
     assert tasks[0]["task"] == "abc123"
-    assert tasks[0]["label"] == "打开蓝牙设置"
+    assert tasks[0]["label"] == "OpenBluetoothSettings"
     assert tasks[0]["total"] == 165

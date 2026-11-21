@@ -13,7 +13,7 @@ import android.view.accessibility.AccessibilityWindowInfo
  * The virtual display is created by the shell helper, so its windows belong to
  * other apps. Only an accessibility service may look inside them, and only it
  * can say what a coordinate means -- which is the difference between "tap
- * 640,1661" and "tap the row labelled 无线调试".
+ * 640,1661" and "tap the row labelled [CH]Debugging".
  *
  * Gestures are still dispatched through `input -d <id>`, because
  * [dispatchGesture] has no display argument and always targets the default
@@ -493,7 +493,7 @@ class PhoneAgentAccessibilityService : AccessibilityService() {
             if (node.isCheckable) out.append(" checkable=\"true\"")
             if (node.isChecked) out.append(" checked=\"true\"")
             // A tab's state lives in isSelected, not isChecked. Without it every
-            // tab of a feed looks identical to the crawler, which is why 小红书
+            // tab of a feed looks identical to the crawler, which is why [CH]
             // produced two screens for six tabs.
             if (node.isSelected) out.append(" selected=\"true\"")
             // Recorded for debugging and for "is the field ready to type into",

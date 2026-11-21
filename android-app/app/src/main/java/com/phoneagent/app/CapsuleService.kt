@@ -64,7 +64,7 @@ class CapsuleService : Service() {
         when (intent?.action) {
             ACTION_CANCEL -> {
                 Thread { cancelRunningTask() }.start()
-                toast(Tr.t("正在取消任务"))
+                toast(Tr.t("[CH]Cancel[CH]"))
             }
             ACTION_OPEN -> openApp()
         }
@@ -88,7 +88,7 @@ class CapsuleService : Service() {
         manager.createNotificationChannel(
             NotificationChannel("capsule", "Floating capsule", NotificationManager.IMPORTANCE_LOW)
         )
-        startForeground(NOTIFICATION_ID, buildNotification(Tr.t("悬浮窗显示中")))
+        startForeground(NOTIFICATION_ID, buildNotification(Tr.t("[CH]")))
     }
 
     /**
@@ -119,7 +119,7 @@ class CapsuleService : Service() {
             .setContentIntent(openPending)
             .setOngoing(true)
             .addAction(android.app.Notification.Action.Builder(
-                null, Tr.t("停止任务"), cancelPending
+                null, Tr.t("Stop[CH]"), cancelPending
             ).build())
             .build()
     }
@@ -146,7 +146,7 @@ class CapsuleService : Service() {
         if (manager.getNotificationChannel("capsule_open") == null) {
             manager.createNotificationChannel(
                 NotificationChannel(
-                    "capsule_open", Tr.t("打开 PhoneAgent"), NotificationManager.IMPORTANCE_HIGH
+                    "capsule_open", Tr.t("Open PhoneAgent"), NotificationManager.IMPORTANCE_HIGH
                 )
             )
         }
@@ -157,13 +157,13 @@ class CapsuleService : Service() {
             android.app.PendingIntent.FLAG_IMMUTABLE or android.app.PendingIntent.FLAG_UPDATE_CURRENT
         )
         manager.notify(4, android.app.Notification.Builder(this, "capsule_open")
-            .setContentTitle(Tr.t("点这里回到 PhoneAgent"))
-            .setContentText(Tr.t("系统不允许悬浮窗直接打开 App"))
+            .setContentTitle(Tr.t("[CH] PhoneAgent"))
+            .setContentText(Tr.t("[CH]Open App"))
             .setSmallIcon(android.R.drawable.ic_menu_view)
             .setContentIntent(pending)
             .setAutoCancel(true)
             .build())
-        toast(Tr.t("点通知栏回到 PhoneAgent"))
+        toast(Tr.t("clickNotification[CH] PhoneAgent"))
     }
 
     @SuppressLint("ClickableViewAccessibility")

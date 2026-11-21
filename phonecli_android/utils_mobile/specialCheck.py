@@ -106,25 +106,25 @@ class MiniMapSpecialCheck:
     def check_page(self):
         page_map = {
             "filter": [
-                (["距离优先", "推荐排序", "好评优先"], "推荐排序"),
-                (["距离", "km内"], "位置距离"),
-                (["烤肉", "烧烤", "螺蛳粉"], "全部分类"),
-                (["烤肉", "烧烤", "蛋糕店"], "全部分类"),
-                (["水产海鲜", "火锅", "熟食"], "全部分类"),
-                (["水产海鲜", "火锅", "早餐"], "全部分类"),
-                (["星级(可多选)", "价格"], "星级酒店"),
-                (["品牌", "宾客类型", "特色主题"], "更多筛选"),
-                (["92#", "95#", "98#", "0#"], "油类型"),
-                (["全部品牌", "中国石化", "中国石油", "壳牌"], "全部品牌")
+                (["[CH]", "[CH]", "[CH]"], "[CH]"),
+                (["[CH]", "km内"], "[CH]"),
+                (["[CH]", "[CH]", "[CH]"], "All[CH]"),
+                (["[CH]", "[CH]", "[CH]"], "All[CH]"),
+                (["[CH]", "[CH]", "[CH]"], "All[CH]"),
+                (["[CH]", "[CH]", "[CH]"], "All[CH]"),
+                (["[CH]([CH])", "Price"], "[CH]"),
+                (["[CH]", "[CH]", "[CH]Theme"], "[CH]"),
+                (["92#", "95#", "98#", "0#"], "[CH]"),
+                (["All[CH]", "[CH]", "[CH]", "[CH]"], "All[CH]")
             ],
             "route": [
-                (["驾车", "火车", "步行", "收起"], "出行方式"),
-                (["选择日期", "日", "一", "二", "三", "四", "五", "六"], "选择日期"),
-                (["选择出发时间弹窗", "现在出发"], "选择出发时间"),
-                (["选择出发时间", "确定"], "选择出发时间_taxi")
+                (["[CH]", "[CH]", "[CH]", "[CH]"], "[CH]"),
+                (["Select[CH]", "日", "一", "二", "三", "四", "五", "六"], "Select[CH]"),
+                (["Select[CH]Popup", "[CH]"], "Select[CH]"),
+                (["Select[CH]", "OK"], "Select[CH]_taxi")
             ],
             "search-result": [
-                (["周边", "收藏", "分享", "打车"], "周边收藏")
+                (["[CH]", "[CH]", "Share", "[CH]"], "[CH]")
             ]
         }
 
@@ -136,13 +136,13 @@ class MiniMapSpecialCheck:
 
     def get_filter_base_node(self, node, page_type):
         page_criteria = {
-            "推荐排序": [("距离优先", 14)],
-            "位置距离": [("km内", 8)],
-            "全部分类": [("烤肉", 14), ("火锅", 14)],
-            "星级酒店": [("星级(可多选)", 10)],
-            "更多筛选": [("品牌", 9)],
-            "全部品牌": [("全部品牌", 14)],
-            "油类型": [("95#", 14)]
+            "[CH]": [("[CH]", 14)],
+            "[CH]": [("km内", 8)],
+            "All[CH]": [("[CH]", 14), ("[CH]", 14)],
+            "[CH]": [("[CH]([CH])", 10)],
+            "[CH]": [("[CH]", 9)],
+            "All[CH]": [("All[CH]", 14)],
+            "[CH]": [("95#", 14)]
         }
 
         pattern_need_fuzzy = ["km内"]
@@ -198,10 +198,10 @@ class MiniMapSpecialCheck:
 
     def get_route_base_node(self, node, page_type):
         page_criteria = {
-            "出行方式": [("收起", 2)],
-            "选择日期": [("选择日期", 5)],
-            "选择出发时间": [("选择出发时间", 5)],
-            "选择出发时间_taxi": [("选择出发时间", 3)]
+            "[CH]": [("[CH]", 2)],
+            "Select[CH]": [("Select[CH]", 5)],
+            "Select[CH]": [("Select[CH]", 5)],
+            "Select[CH]_taxi": [("Select[CH]", 3)]
         }
 
         if 'content-desc' in node.attrib:
@@ -240,10 +240,10 @@ class MiniMapSpecialCheck:
 
     def get_search_result_base_node(self, node, page_type):
         page_criteria = {
-            "周边收藏": [("收藏按钮", 3)],
+            "[CH]": [("[CH]", 3)],
         }
 
-        pattern_need_fuzzy = ["收藏按钮"]
+        pattern_need_fuzzy = ["[CH]"]
 
         if 'content-desc' in node.attrib:
             for pattern, retrieve_times in page_criteria.get(page_type, []):
@@ -305,14 +305,14 @@ class WeiXinSpecialCheck:
     def check_page(self):
         page_map = {
             "search": [
-                (["排序", "类型", "时间", "范围"], "搜索-全部")
+                (["[CH]", "[CH]", "[CH]", "[CH]"], "Search-All")
             ],
             "moments": [
-                (["朋友圈", "拍照分享"], "朋友圈-全部"),
-                (["轻触更换封面", "拍照分享"], "朋友圈-全部")
+                (["[CH]", "CameraShare"], "[CH]-All"),
+                (["[CH]", "CameraShare"], "[CH]-All")
             ],
             "menu": [
-                (["微信", "通讯录", "发现", "我"], "首页"),
+                (["[CH]", "[CH]", "[CH]", "我"], "Home"),
             ]
         }
 
@@ -324,7 +324,7 @@ class WeiXinSpecialCheck:
 
     def check_moments_icons(self, page_type):
         page_criteria = {
-            "朋友圈-全部": {"ImageView": "选项：点赞/评论", "RelativeLayout": "选项：广告屏蔽"}
+            "[CH]-All": {"ImageView": "[CH]：[CH]/[CH]", "RelativeLayout": "[CH]：[CH]"}
         }
 
         nodes_with_attribute = self.root.xpath('//*[@NAF="true"]')
@@ -335,7 +335,7 @@ class WeiXinSpecialCheck:
 
     def get_search_base_node(self, node, page_type):
         page_criteria = {
-            "搜索-全部": [("清空", 1)]
+            "Search-All": [("[CH]", 1)]
         }
 
         pattern_need_fuzzy = []
@@ -377,7 +377,7 @@ class WeiXinSpecialCheck:
 
     def get_menu_base_node(self, node, page_type):
         page_criteria = {
-            "首页": ["微信", "通讯录", "发现", "我"]
+            "Home": ["[CH]", "[CH]", "[CH]", "我"]
         }
         retrieve_times = 1
 
@@ -505,15 +505,15 @@ class MeituanSpecialCheck:
     def check_page(self):
         page_map = {
             "home": [
-                (["我的", "消息", "购物车", "扫一扫"], "首页"),
+                (["My", "Message", "[CH]", "[CH]"], "Home"),
             ],
             "favourite": [
-                (["全部服务", "全部服务"], "全部服务"),
-                (["全部地区", "全部地区"], "全部地区"),
+                (["AllService", "AllService"], "AllService"),
+                (["All[CH]", "All[CH]"], "All[CH]"),
             ],
             "search": [
-                (["综合排序", "综合排序"], "综合排序"),
-                (["商家品质", "价格", "营业状态"], "筛选"),
+                (["[CH]", "[CH]"], "[CH]"),
+                (["[CH]", "Price", "[CH]"], "[CH]"),
             ],
         }
 
@@ -530,10 +530,10 @@ class MeituanSpecialCheck:
 
     def get_home_base_node(self, node, page_type):
         page_criteria = {
-            "首页": [("搜索框", 1)]
+            "Home": [("Search框", 1)]
         }
 
-        pattern_need_fuzzy = ["搜索框"]
+        pattern_need_fuzzy = ["Search框"]
 
         if 'content-desc' in node.attrib:
             for pattern, retrieve_times in page_criteria.get(page_type, []):
@@ -572,8 +572,8 @@ class MeituanSpecialCheck:
 
     def get_favourite_base_node(self, node, page_type):
         page_criteria = {
-            "全部服务": [("全部服务", 3)],
-            "全部地区": [("全部地区", 3)],
+            "AllService": [("AllService", 3)],
+            "All[CH]": [("All[CH]", 3)],
         }
 
         pattern_need_fuzzy = [""]
@@ -618,8 +618,8 @@ class MeituanSpecialCheck:
 
     def get_search_base_node(self, node, page_type):
         page_criteria = {
-            "综合排序": [("综合排序", 3)],
-            "筛选": [("综合排序", 3)],
+            "[CH]": [("[CH]", 3)],
+            "[CH]": [("[CH]", 3)],
         }
 
         pattern_need_fuzzy = [""]

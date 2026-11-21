@@ -4,9 +4,9 @@ The PhoneGo Android app, one section per release. Newest first. Each release is 
 `phonego-vX.Y.Z` tag with an APK on the [releases page](https://github.com/HKUDS/PhoneGo/releases);
 every build is signed with the same key, so a newer one installs over an older one.
 
-PhoneGo App 的版本变更记录，最新在前。每个版本对应 `phonego-vX.Y.Z` 标签与一个 APK
-（见 [releases 页面](https://github.com/HKUDS/PhoneGo/releases)）；所有版本同一把签名，
-新版本可直接覆盖安装。
+PhoneGo App VersionChanged[CH]，[CH]。[CH]Version[CH] `phonego-vX.Y.Z` Tab[CH] APK
+（See [releases Page](https://github.com/HKUDS/PhoneGo/releases)）；[CH]Version[CH]，
+NewVersion[CH]Install。
 
 The format follows [Keep a Changelog](https://keepachangelog.com/), and the
 versions are the app's own — the CLI in this repository has its own history.
@@ -21,8 +21,8 @@ versions are the app's own — the CLI in this repository has its own history.
 
 - **Changed**: a page that jumps to the phone's screen is pulled back to the
   virtual display, and only followed after two attempts. Measured on
-  小红书 → 携程: four pulls, one follow, task done in 3m31s.
-- **Fixed**: the chat could hang on 执行中 forever — a `finish`-only step batch
+  [CH] → [CH]: four pulls, one follow, task done in 3m31s.
+- **Fixed**: the chat could hang on [CH] forever — a `finish`-only step batch
   returned before the terminal-state handling ran.
 - **Fixed**: the transcript and session index are written atomically (temp file,
   fsync, rename, `.bak` fallback); a kill mid-write could leave an empty chat.
@@ -33,17 +33,17 @@ versions are the app's own — the CLI in this repository has its own history.
 - **Fixed**: `task_on` reads a task's own display from `am stack list` (a moved
   task used to appear under both displays and trigger pointless follows).
 
-**中文**
+**Chinese**
 
-- **变更**：跳到手机屏幕的页面会先被搬回虚拟屏，连续两次才改为跟随。小红书 → 携程实测：
-  4 次搬回、1 次跟随，3 分 31 秒完成。
-- **修复**：对话可能永远停在「执行中…」——只有 `finish` 步骤时提前返回，跳过了终态处理。
-- **修复**：会话文件与会话索引改为原子写入（临时文件 + fsync + 重命名，读取回退 `.bak`），
-  写一半被杀不会再出现空对话。
-- **修复**：与 adbd 的连接在 `ssl.SSLEOFError` 后会自己重建；读超时改为重试 5 次而不是结束观察。
-- **修复**：`returnToChat` 不再开第二个 MainActivity 实例；唤醒锁在任务期间持续续期。
-- **修复**：`task_on` 改用 `am stack list` 读取任务所在屏（迁移过的任务曾同时出现在两块屏下，
-  导致无谓的跟随）。
+- **Changed**：[CH]PhoneScreenPage[CH]VirtualScreen，[CH]。[CH] → [CH]：
+  4 [CH]、1 [CH]，3 minute 31 secondDone。
+- **Fix**：[CH]「[CH]…」——[CH] `finish` [CH]Back，Skip[CH]。
+- **Fix**：[CH]File[CH]（[CH]File + fsync + [CH]，[CH] `.bak`），
+  [CH]。
+- **Fix**：and adbd Connectionat `ssl.SSLEOFError` [CH]Rebuild；readTimeout[CH]Retry 5 [CH]。
+- **Fix**：`returnToChat` [CH] MainActivity [CH]；Wake[CH]。
+- **Fix**：`task_on` [CH] `am stack list` [CH]（[CH]，
+  [CH]）。
 
 ---
 
@@ -62,13 +62,13 @@ versions are the app's own — the CLI in this repository has its own history.
 - **Known gap**: if the agent hangs during a task, polling stops and the task is
   not resumed.
 
-**中文**
+**Chinese**
 
-- **修复**：0.4.2 之后仍可能看到 `Failed to connect to /127.0.0.1:8765`。重启条件挂在
-  `AgentService.isReady()` 上，而这个标志只置位、从不回退，服务假死时仍显示健康。现在提交循环
-  在连续 10 次拒绝后无条件重启，`restart()` 会先清掉该标志。
-- **变更**：失败提示会说明"已经尝试自动重启一次"。
-- **已知缺口**：任务执行中如果服务失联，轮询会停止，不会自动接回该任务。
+- **Fix**：0.4.2 [CH] `Failed to connect to /127.0.0.1:8765`。Restart[CH]
+  `AgentService.isReady()` above，[CH]、[CH]，Service[CH]。[CH]
+  [CH] 10 [CH]Restart，`restart()` [CH]。
+- **Changed**：FailedTipwillInstruction"[CH]AutoRestart[CH]"。
+- **Known[CH]**：[CH]Service[CH]，[CH]Stop，[CH]Auto[CH]。
 
 ---
 
@@ -88,23 +88,23 @@ versions are the app's own — the CLI in this repository has its own history.
   providers plus **Custom**; base URL, model, vision model and step budget hide
   under Advanced; a pasted `sk-or-v1-…` / `sk-ant-…` key picks its provider; saving
   runs the connection test.
-- **Changed**: 自主模式 is now 花钱时不再问我 / "Never ask me about money". It only
+- **Changed**: [CH]Mode is now [CH] / "Never ask me about money". It only
   ever skipped the confirmation before money steps and destructive shell commands.
   It asks once before switching on, defaults to off, and a stored old value is
   reset once.
 
-**中文**
+**Chinese**
 
-- **修复**：任务结束后聊天可能变成空的。收尾时 agent 会把对话拉到前台，而窗口没有设置
-  launchMode，于是又开了一个新窗口——新窗口在前一个还没落盘时读取记录，读到空文件。现在
-  窗口是 `singleTop`，任务结束立刻落盘。
-- **修复**：会话列表会丢掉排在当前会话之后的所有会话（文件还在磁盘上）。在旧会话里发消息就会
-  让更新的会话从列表里消失。
-- **变更**：模型设置改为「一行提供商」而不是五个字段。12 个提供商 + **自定义**；base URL、
-  模型、视觉模型、步数上限收进「高级设置」；粘贴 `sk-or-v1-…` / `sk-ant-…` 会自动选提供商；
-  保存时自动测试连接。
-- **变更**：「自主模式」改为「花钱时不再问我」。它本来就只跳过花钱步骤和危险 shell 命令的确认。
-  现在打开前会确认一次、默认关闭，旧的已存值会被重置一次。
+- **Fix**：[CH]。[CH] agent [CH]，而Window[CH]Settings
+  launchMode，[CH]Window——NewWindow[CH]，[CH]File。[CH]
+  Windowis `singleTop`，[CH]。
+- **Fix**：[CH]（File[CH]）。[CH]Message[CH]
+  让Update[CH]。
+- **Changed**：ModelSettings[CH]「[CH]」[CH]。12 [CH] + **Custom**；base URL、
+  Model、[CH]Model、[CH]「AdvancedSettings」；Paste `sk-or-v1-…` / `sk-ant-…` willAuto[CH]；
+  Save时AutoTestConnection。
+- **Changed**：「[CH]Mode」[CH]「[CH]」。[CH]Skip[CH] shell [CH]Confirm。
+  [CH]Open[CH]Confirm[CH]、DefaultClose，[CH]Reset[CH]。
 
 ---
 
@@ -126,14 +126,14 @@ versions are the app's own — the CLI in this repository has its own history.
 - **Added**: a `.sha256` file next to the APK. "There was a problem parsing the
   package" is almost always an incomplete download.
 
-**中文**
+**Chinese**
 
-- **修复**：卡住的 agent 会自己重启。心跳超过两分钟时，以前只会提示"从最近任务里划掉它"；
-  现在先停掉再启动一次，只有这次也失败才让你手动处理。`Failed to connect to
-  127.0.0.1:8765` 说明 App 自己的服务没起来，同样处理。
-- **修复**：首次发消息会重试 100 秒（原来 60），25 秒还没响应就中途重启一次 agent。
-- **修复**：「测试连接」不再直接打印 Java 异常，而是触发重启并提示十秒后再试。
-- **新增**：APK 旁边附带 `.sha256` 文件——「解析包时出现问题」几乎都是下载不完整。
+- **Fix**：Lag[CH] agent [CH]Restart。[CH]，[CH]Tip"[CH]"；
+  [CH]，[CH]Failed[CH]Manual[CH]。`Failed to connect to
+  127.0.0.1:8765` Instruction App [CH]Service[CH]，[CH]。
+- **Fix**：[CH]MessagewillRetry 100 second（[CH] 60），25 [CH]Restart[CH] agent。
+- **Fix**：「TestConnection」[CH]Print Java [CH]，[CH]Restart并Tip[CH]。
+- **Added**：APK [CH] `.sha256` File——「[CH]Issue」[CH]Download[CH]。
 
 ---
 
@@ -146,17 +146,17 @@ versions are the app's own — the CLI in this repository has its own history.
 - **Added**: an English interface. Every label goes through one translation table
   (300 literals in the chat screen alone); resource strings are translated by a
   pass over the view tree.
-- **Added**: Settings → Language — Follow system · 中文 · English. The app follows
+- **Added**: Settings → Language — Follow system · Chinese · English. The app follows
   the phone's language by default.
 - Notes: the agent's answers follow the language you type, and old chat history
   keeps the language it was written in.
 
-**中文**
+**Chinese**
 
-- **新增**：英文界面。所有文案走一张翻译表（仅聊天界面就有 300 处）；资源字符串通过遍历
-  视图树翻译。
-- **新增**：设置 → 语言——跟随系统 · 中文 · English，默认跟随手机语言。
-- 说明：agent 的回答语言取决于你输入的语言；历史消息保留写入时的语言。
+- **Added**：EnglishInterface。[CH]（[CH]Interface[CH] 300 处）；[CH]
+  [CH]。
+- **Added**：Settings → Language——[CH] · Chinese · English，Default[CH]PhoneLanguage。
+- Instruction：agent [CH]Language[CH]InputLanguage；[CH]Message[CH]Language。
 
 ---
 
@@ -169,7 +169,7 @@ versions are the app's own — the CLI in this repository has its own history.
 - **Added**: cross-app hand-over. What a subtask reads is carried into the next
   one; the search box prefers the name quoted in that report; each subtask opens
   its own app first; a step that must produce a name has to open an item and read
-  its body. Measured: 小红书 → note → 「合和酒店」 → 携程, 49 steps, 200 s.
+  its body. Measured: [CH] → note → 「[CH]」 → [CH], 49 steps, 200 s.
 - **Added**: the phone comes back at the end of a task — the app returns to its own
   screen, a full-screen viewer is closed, the chat comes forward with the answer
   and one question about moving that page over.
@@ -180,17 +180,17 @@ versions are the app's own — the CLI in this repository has its own history.
 - **Fixed**: crawl leaks and crashes — the replaced display is released, shell
   calls have timeouts, the partial save no longer crashes.
 
-**中文**
+**Chinese**
 
-- **新增**：跨 App 传递。子任务读到的内容会带进下一步；搜索框优先使用报告里引号中的名字；
-  每个子任务先打开自己的 App；要产出名字的步骤必须打开一条内容读正文。实测：小红书 → 笔记
-  →「合和酒店」→ 携程，49 步 / 200 秒。
-- **新增**：任务结束把手机还给你——目标 App 回到自己的屏、关掉全屏查看器、对话带着回答回到
-  前台，并问一句要不要把那个页面转过来。
-- **修复**：假失败。等待上限从 6 分钟提到 20 分钟，子任务失败原因进入步骤流，冷启动的 App
-  有 6 秒绘制时间。
-- **修复**：启动预热不再在虚拟屏上打开别的 App（演示里看起来像 agent 走错了）。
-- **修复**：爬取的泄漏与崩溃——被替换的虚拟屏会释放、shell 调用有超时、部分保存不再崩溃。
+- **Added**：跨 App [CH]。[CH]Next；Search[CH]；
+  [CH]Open[CH] App；[CH]Open[CH]。[CH]：[CH] → [CH]
+  →「[CH]」→ [CH]，49 步 / 200 second。
+- **Added**：[CH]Phone[CH]——[CH] App [CH]、[CH]View器、[CH]
+  [CH]，[CH]Page[CH]。
+- **Fix**：假Failed。Waiting[CH] 6 [CH] 20 [CH]，[CH]Failed[CH]，[CH] App
+  Yes 6 [CH]。
+- **Fix**：[CH]Virtual[CH]Open[CH] App（[CH] agent [CH]）。
+- **Fix**：[CH]——[CH]Virtual[CH]、shell [CH]Timeout、[CH]Save[CH]。
 
 ---
 
@@ -207,20 +207,20 @@ versions are the app's own — the CLI in this repository has its own history.
 - Added after the first upload: export/import a backup zip (pairing identity,
   maps, chats, model settings) so a reinstall does not start from zero.
 
-**中文**
+**Chinese**
 
-- 首个公开版本：agent 跑在**手机内部**，在一块虚拟屏上驱动目标 App，手机自己的屏幕照常可用。
-- 要求：Android 14+、arm64、无线调试、无障碍服务（用来读配对码），以及自己的模型 API Key。
-- 首次上传后补充：备份导出/导入（配对身份、地图、会话、模型设置），重装不用从零开始。
+- [CH]Version：agent [CH]**Phone[CH]**，[CH]Virtual[CH] App，Phone[CH]Screen[CH]。
+- [CH]：Android 14+、arm64、[CH]Debugging、[CH]Service（[CH]Pairing码），[CH]Model API Key。
+- [CH]Upload[CH]：BackupExport/Import（Pairing[CH]、[CH]、[CH]、ModelSettings），[CH]Start。
 
 ---
 
-## Where the details live / 细节在哪里
+## Where the details live / [CH]
 
 Each release's full notes are on its release page — install steps, signing, the
-measured numbers behind a change. 每个版本的完整说明在其 release 页面：安装步骤、签名、
-改动背后的实测数据。
+measured numbers behind a change. [CH]Version[CH]Instruction[CH] release Page：Install[CH]、[CH]、
+[CH]。
 
 - Releases: <https://github.com/HKUDS/PhoneGo/releases>
-- Manual for the current version: [docs/manual.md](docs/manual.md) · [中文](docs/manual.zh.md)
-- First-run walkthrough: [docs/getting-started.md](docs/getting-started.md) · [中文](docs/getting-started.zh.md)
+- Manual for the current version: [docs/manual.md](docs/manual.md) · [Chinese](docs/manual.zh.md)
+- First-run walkthrough: [docs/getting-started.md](docs/getting-started.md) · [Chinese](docs/getting-started.zh.md)

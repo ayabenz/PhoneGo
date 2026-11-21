@@ -11,7 +11,7 @@ from evaluation.tasks.llm_evaluator import LLMEvaluator
 class SingleTask_Contacts_1(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Contact" 和 "John"
+        # [CH] "Contact" 和 "John"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "Contact"):
             return False
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "John"):
@@ -26,17 +26,17 @@ class SingleTask_Contacts_1(SingleTask):
 
         outcome["judge_page"] = True
 
-        # 检查 "John"
+        # [CH] "John"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "John")
         if outs:
             outcome["1"] = True
 
-        # 检查 "1 (234) 567-8"
+        # [CH] "1 (234) 567-8"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "1 (234) 567-8")
         if outs:
             outcome["2"] = True
 
-        # 判断 complete
+        # [CH] complete
         if outcome["1"] and outcome["2"]:
             outcome["complete"] = True
 

@@ -23,7 +23,7 @@ def extract_alarms(data):
             return False
 
     def extract_text_from_key(key):
-        # 分割字符串，获取最后的实际文本内容
+        # [CH]，[CH]
         parts = key.split(';;')
         if len(parts) > 1:
             return parts[-1].strip()
@@ -39,7 +39,7 @@ def extract_alarms(data):
             if isinstance(element, str):
                 continue
                 
-            # 如果是CardView且包含闹钟信息，递归处理其子元素
+            # [CH]CardView[CH]Info，[CH]
             if "CardView" in key and "PM" in key or "AM" in key:
                 sub_alarm = process_elements(element)
                 if sub_alarm:
@@ -57,20 +57,20 @@ def extract_alarms(data):
                     alarm["status"] = "unchecked"
                 else:
                     alarm["status"] = "checked"
-                if alarm:  # 只有当alarm不为空时才添加
+                if alarm:  # [CH]alarm[CH]
                     alarms.append(alarm.copy())
                 alarm = {"days": []}
                 Collapse = False
                 
             if "AM" in text or "PM" in text:
-                # 提取时间，保留AM/PM信息
+                # [CH]，[CH]AM/PMInfo
                 words = text.split()
                 if len(words) >= 2:
                     time = words[0]
                     meridiem = "AM" if "AM" in text else "PM"
-                    alarm["time"] = f"{time}\u200a{meridiem}"  # 使用与原始格式相同的Unicode空格
+                    alarm["time"] = f"{time}\u200a{meridiem}"  # [CH]Unicode[CH]
                 else:
-                    alarm["time"] = text  # 如果格式不符合预期，保留原始文本
+                    alarm["time"] = text  # [CH]，[CH]
                 
             if "Label" in key:
                 label_text = extract_text_from_key(key)
@@ -92,13 +92,13 @@ def extract_alarms(data):
                 else:
                     alarm["vibrate"] = "checked"
         
-        # 如果最后一个alarm没有被添加（没有遇到结束标记），且包含有效信息，则添加它
+        # [CH]alarm[CH]（[CH]），[CH]Info，[CH]
         if alarm and ("time" in alarm or "label" in alarm):
             alarms.append(alarm)
             
         return alarms
 
-    # 获取根元素下的所有元素
+    # [CH]
     root_elements = list(data.values())[0]
     return process_elements(root_elements)
 
@@ -137,7 +137,7 @@ class SingleTask_Clock_1(SingleTask_Clock_General):
                     if '3:00\u200aPM' in alarm['time']:
                         outcome["1"] = True
                         try:
-                            # 直接比较label值，因为extract_alarms已经处理好了
+                            # [CH]label值，[CH]extract_alarms[CH]
                             if alarm['label'] == 'meeting':
                                 outcome["2"] = True
                         except KeyError:
@@ -161,7 +161,7 @@ class SingleTask_Clock_1(SingleTask_Clock_General):
 class SingleTask_Clock_2(SingleTask_Clock_General):
 
     def judge_page(self, xml_compressed_tree):
-        # 可以根据需要在这里实现特定的页面判断逻辑
+        # [CH]Page[CH]
         return True
 
     def judge(self, xml_compressed_tree, line):

@@ -143,21 +143,21 @@ def _device_with(bridge):
 def test_a_click_goes_through_the_async_bridge():
     bridge = _FakeBridge(async_api=True)
     device = _device_with(bridge)
-    assert device.click_text("蓝牙") is True
-    assert bridge.calls == [(3, "蓝牙")]
+    assert device.click_text("Bluetooth") is True
+    assert bridge.calls == [(3, "Bluetooth")]
 
 
 def test_an_older_bridge_falls_back_to_the_sync_call():
     bridge = _FakeBridge(async_api=False, result=True)
     device = _device_with(bridge)
-    assert device.click_text("蓝牙") is True
+    assert device.click_text("Bluetooth") is True
 
 
 def test_a_refused_async_click_is_false_not_none():
     bridge = _FakeBridge(async_api=True)
     bridge.pollAction = lambda _tag: 0
     device = _device_with(bridge)
-    assert device.click_text("蓝牙") is False
+    assert device.click_text("Bluetooth") is False
 
 
 # ---------------------------------------------------------------------------
@@ -247,7 +247,7 @@ def test_a_launch_is_refused_when_the_display_is_gone():
 
 
 def test_a_hands_off_device_drives_display_zero():
-    """京东-class apps only run on the user's screen; that is a supported mode."""
+    """[CH]-class apps only run on the user's screen; that is a supported mode."""
     from phoneagent.devices.virtual import VirtualDisplayDevice
 
     class Transport:

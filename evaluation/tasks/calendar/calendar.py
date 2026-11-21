@@ -12,7 +12,7 @@ import traceback
 class SingleTask_calendar_1(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "work"):
             return False
         return True
@@ -34,7 +34,7 @@ class SingleTask_calendar_1(SingleTask):
 class SingleTask_calendar_2(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "homework"):
             return False
         return True
@@ -56,7 +56,7 @@ class SingleTask_calendar_2(SingleTask):
 class SingleTask_calendar_3(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "meeting"):
             return False
         return True
@@ -78,7 +78,7 @@ class SingleTask_calendar_3(SingleTask):
 class SingleTask_calendar_4(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "new month"):
             return False
         return True
@@ -100,7 +100,7 @@ class SingleTask_calendar_4(SingleTask):
 class SingleTask_calendar_5(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "work"):
             return False
         return True
@@ -122,7 +122,7 @@ class SingleTask_calendar_5(SingleTask):
 class SingleTask_calendar_6(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "homework"):
             return False
         return True
@@ -154,7 +154,7 @@ class SingleTask_calendar_6(SingleTask):
 class SingleTask_calendar_7(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "meeting"):
             return False
         return True
@@ -186,7 +186,7 @@ class SingleTask_calendar_7(SingleTask):
 class SingleTask_calendar_8(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "work"):
             return False
         return True
@@ -218,7 +218,7 @@ class SingleTask_calendar_8(SingleTask):
 class SingleTask_calendar_9(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "work"):
             return False
         return True
@@ -253,7 +253,7 @@ class SingleTask_calendar_9(SingleTask):
 class SingleTask_calendar_10(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "this_day"):
             return False
         return True
@@ -267,7 +267,7 @@ class SingleTask_calendar_10(SingleTask):
 class SingleTask_calendar_11(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "this day"):
             return False
         return True
@@ -287,7 +287,7 @@ class SingleTask_calendar_11(SingleTask):
 class SingleTask_calendar_12(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "this day"):
             return False
         return True
@@ -311,7 +311,7 @@ class SingleTask_calendar_12(SingleTask):
 class SingleTask_calendar_13(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "exam"):
             return False
         return True
@@ -325,7 +325,7 @@ class SingleTask_calendar_13(SingleTask):
 class SingleTask_calendar_14(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Stanford"、"My location" 和 "Start"
+        # [CH] "Stanford"、"My location" 和 "Start"
         if not find_subtrees_of_parents_with_key(xml_compressed_tree, "exam"):
             return False
         return True

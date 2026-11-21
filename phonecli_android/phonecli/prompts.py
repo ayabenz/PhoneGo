@@ -83,7 +83,7 @@ DYNAMIC|element text
 
 Example:
 STABLE|Following
-DYNAMIC|我在X上也是有1.1万人看过了
+DYNAMIC|[CH]X[CH]YesYes1.1[CH]
 STABLE|Home
 STABLE|Search
 
@@ -104,8 +104,8 @@ For each element below, output exactly one JSON object per line with:
 
 Rules:
 - aliases: common synonyms, alternate names, Chinese↔English equivalents, abbreviation expansions.
-  Examples: "Wi-Fi" → ["WiFi", "wireless", "无线", "wifi network"]
-           "Bluetooth" → ["BT", "蓝牙", "bluetooth settings"]
+  Examples: "Wi-Fi" → ["WiFi", "wireless", "None线", "wifi network"]
+           "Bluetooth" → ["BT", "Bluetooth", "bluetooth settings"]
 - semantic_type: what kind of UI element this is.
   - toggle: a switch/checkbox (tap changes state)
   - button: an action button

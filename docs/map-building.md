@@ -1,4 +1,4 @@
-English · [中文](map-building.zh.md)
+English · [Chinese](map-building.zh.md)
 
 # Map Building: A Measured Pipeline
 
@@ -167,8 +167,8 @@ was wrong — **most of them were replays that were simply not inside the target
 The crawler can now run inside the app and drive a **virtual display**; the physical screen is unaffected.
 
 ```
-POST /crawl {"package":"com.android.settings","app":"设置","max_screens":6,"max_minutes":6}
-  -> {"id":"14fbb5d3","output":"/data/.../files/crawls/设置poc6.yaml"}
+POST /crawl {"package":"com.android.settings","app":"Settings","max_screens":6,"max_minutes":6}
+  -> {"id":"14fbb5d3","output":"/data/.../files/crawls/Settingspoc6.yaml"}
 GET  /crawl/<id>   -> {"state":"done","lines":[...]}
 ```
 
@@ -229,7 +229,7 @@ The cause: this time the model **formatted the object across multiple lines**
 
 ```
 {
-  "text": "返回",
+  "text": "Back",
   "aliases": [
     "back",
     "go back"
@@ -332,16 +332,16 @@ The UI gained a "Maps" button; it opens a table: pick an app (every launchable o
 ```
 Build map
 Start: Settings (com.android.settings), at most 2 screens / 20 minutes
-The map will be written to /data/user/0/com.phoneagent.app/files/crawls/设置.yaml
+The map will be written to /data/user/0/com.phoneagent.app/files/crawls/Settings.yaml
   radios : before {'wifi': '1', 'bluetooth': '1', 'airplane': '0'}
   llm    : qwen/qwen3.8-flash (reasoning off, max_tokens=4000)
-  [Verified] depth=1 tap '搜索系统设置项' (from screen_0)
-  [Verified] depth=1 tap '账号、云服务、会员权益等' (from screen_0)
+  [Verified] depth=1 tap 'Search[CH]Settings项' (from screen_0)
+  [Verified] depth=1 tap 'Account、CloudService、[CH]' (from screen_0)
   [Enrich] screen_0: 2943 chars -> 26 items
   [Enrich] screen_1: 1535 chars -> 15 items
 Build map
 Done.
-map    : /data/user/0/com.phoneagent.app/files/crawls/设置.yaml  (80.4s)
+map    : /data/user/0/com.phoneagent.app/files/crawls/Settings.yaml  (80.4s)
 ```
 
 Details:
@@ -517,10 +517,10 @@ Trying apps one by one is too expensive (one failure costs several minutes). Now
 
 ```
 GET /crawl/apps
-[{"package":"com.android.settings","label":"设置","launch_mode":0,
-  "state":"crawlable","reason":"标准启动模式，可以爬"},
- {"package":"com.android.browser","label":"浏览器","launch_mode":0,
-  "state":"refused","reason":"上次爬取确认起不来（首页最终落在默认屏）"}]
+[{"package":"com.android.settings","label":"Settings","launch_mode":0,
+  "state":"crawlable","reason":"[CH]StartMode，[CH]"},
+ {"package":"com.android.browser","label":"[CH]","launch_mode":0,
+  "state":"refused","reason":"[CH]Confirm[CH]（Home[CH]DefaultScreen）"}]
 ```
 
 In the UI each app carries a marker: **✅ crawlable / 📌 map already exists / ⛔ cannot go on a virtual display**;

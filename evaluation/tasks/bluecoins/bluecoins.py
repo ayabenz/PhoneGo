@@ -45,8 +45,8 @@ def extract_bills_NewEditBK(xml_compressed_tree) -> Dict:
         pass
 
     try:
-        cash_datas = find_subtrees_of_parents_with_key(xml_compressed_tree, "click ; ;;CNY")  # 若不存在则返回[]
-        cash_datas = list(cash_datas[0].values())[0]  # 此时出错，（抛出异常）
+        cash_datas = find_subtrees_of_parents_with_key(xml_compressed_tree, "click ; ;;CNY")  # [CH]Back[]
+        cash_datas = list(cash_datas[0].values())[0]  # [CH]，（[CH]）
         for key in cash_datas.keys():
             if "EditText" in key and "long-click" in key:
                 cash = key.split(";;")[-1].strip()

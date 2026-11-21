@@ -16,7 +16,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -26,7 +26,7 @@ screens:
     fixed: true
     leads_to: screen_2
     aliases:
-    - 播放
+    - [CH]
     - start
     - resume
     semantic_type: button
@@ -40,7 +40,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: Home
@@ -51,7 +51,7 @@ screens:
     fixed: true
     leads_to: screen_3
     aliases:
-    - 主页
+    - Home
     - main
     - dashboard
     semantic_type: tab
@@ -63,7 +63,7 @@ screens:
     fixed: true
     leads_to: screen_4
     aliases:
-    - 电台
+    - [CH]
     - broadcast
     - station
     semantic_type: menu_item
@@ -76,7 +76,7 @@ screens:
     leads_to: screen_3
     aliases:
     - home icon
-    - 主页图标
+    - Home[CH]
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -90,7 +90,7 @@ screens:
     - grid icon
     - browse
     - categories
-    - 网格
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -101,7 +101,7 @@ screens:
     leads_to: screen_6
     aliases:
     - radio icon
-    - 广播
+    - [CH]
     - tuner
     semantic_type: tab
   - text: '[App]'
@@ -114,7 +114,7 @@ screens:
     aliases:
     - library icon
     - songs
-    - 音乐库
+    - [CH]
     - playlist icon
     semantic_type: tab
   description: Music app home screen with a grid of 2x2 options including My Account,
@@ -135,7 +135,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -145,7 +145,7 @@ screens:
     fixed: true
     leads_to: screen_8
     aliases:
-    - 播放
+    - [CH]
     - start
     - resume
     semantic_type: button
@@ -159,7 +159,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: Close
@@ -172,7 +172,7 @@ screens:
     aliases:
     - dismiss
     - exit
-    - 关闭
+    - Close
     - x
     semantic_type: button
   - text: Home
@@ -183,7 +183,7 @@ screens:
     fixed: true
     leads_to: screen_10
     aliases:
-    - 主页
+    - Home
     - main
     - dashboard
     - home screen
@@ -197,7 +197,7 @@ screens:
     leads_to: screen_9
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - station
     - live radio
     semantic_type: menu_item
@@ -211,7 +211,7 @@ screens:
     aliases:
     - album art
     - cover
-    - 封面
+    - [CH]
     - artwork image
     semantic_type: other
   - text: home.fill
@@ -223,7 +223,7 @@ screens:
     leads_to: screen_12
     aliases:
     - home icon
-    - 主页图标
+    - Home[CH]
     - filled home
     semantic_type: tab
   - text: grid 2x2
@@ -237,7 +237,7 @@ screens:
     - grid icon
     - 2x2 grid
     - layout
-    - 网格
+    - [CH]
     semantic_type: button
   - text: radio
     center:
@@ -247,7 +247,7 @@ screens:
     fixed: true
     leads_to: screen_13
     aliases:
-    - 广播
+    - [CH]
     - radio tab
     - tuner
     semantic_type: tab
@@ -261,7 +261,7 @@ screens:
     aliases:
     - songs icon
     - library
-    - 音乐库
+    - [CH]
     - stacked squares
     semantic_type: tab
   description: Music app home screen with account access, playback controls, and navigation
@@ -280,7 +280,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     - user settings
     semantic_type: menu_item
   - text: Pause
@@ -291,7 +291,7 @@ screens:
     fixed: true
     leads_to: screen_7
     aliases:
-    - 暂停
+    - Pause
     - stop
     - hold
     semantic_type: button
@@ -304,7 +304,7 @@ screens:
     leads_to: screen_15
     aliases:
     - skip
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: Home
@@ -315,7 +315,7 @@ screens:
     fixed: true
     leads_to: screen_15
     aliases:
-    - 首页
+    - Home
     - main
     - start
     semantic_type: tab
@@ -327,7 +327,7 @@ screens:
     fixed: true
     leads_to: screen_16
     aliases:
-    - 广播电台
+    - [CH]
     - station
     - broadcast
     semantic_type: menu_item
@@ -339,7 +339,7 @@ screens:
     fixed: true
     aliases:
     - home icon
-    - 首页图标
+    - Home[CH]
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -351,7 +351,7 @@ screens:
     leads_to: screen_17
     aliases:
     - browse
-    - 网格
+    - [CH]
     - categories
     - library
     semantic_type: tab
@@ -363,7 +363,7 @@ screens:
     fixed: true
     leads_to: screen_17
     aliases:
-    - 广播
+    - [CH]
     - radio tab
     - tuner
     semantic_type: tab
@@ -377,7 +377,7 @@ screens:
     aliases:
     - songs
     - playlist
-    - 音乐库
+    - [CH]
     - library icon
     semantic_type: tab
   description: Now playing screen with playback controls and bottom navigation tabs
@@ -397,7 +397,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -409,7 +409,7 @@ screens:
     aliases:
     - play button
     - start
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -422,7 +422,7 @@ screens:
     - next
     - skip
     - forward
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Home
     center:
@@ -434,7 +434,7 @@ screens:
     aliases:
     - main
     - homepage
-    - 首页
+    - Home
     semantic_type: tab
   - text: New Release
     center:
@@ -446,7 +446,7 @@ screens:
     aliases:
     - latest
     - new music
-    - 新发行
+    - [CH]
     semantic_type: menu_item
   - text: Radio Station
     center:
@@ -458,7 +458,7 @@ screens:
     aliases:
     - radio
     - broadcast
-    - 电台
+    - [CH]
     semantic_type: menu_item
   - text: home.fill
     center:
@@ -523,7 +523,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -535,7 +535,7 @@ screens:
     aliases:
     - play button
     - start
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -548,7 +548,7 @@ screens:
     - skip
     - next
     - forward
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: More
     center:
@@ -561,7 +561,7 @@ screens:
     - ellipsis
     - options
     - overflow
-    - 更多
+    - [CH]
     semantic_type: button
   - text: Lyrics
     center:
@@ -573,7 +573,7 @@ screens:
     aliases:
     - words
     - text
-    - 歌词
+    - [CH]
     semantic_type: button
   - text: Home
     center:
@@ -584,7 +584,7 @@ screens:
     leads_to: screen_7
     aliases:
     - main
-    - 首页
+    - Home
     - home screen
     semantic_type: tab
   - text: Radio Station
@@ -597,7 +597,7 @@ screens:
     aliases:
     - station
     - broadcast
-    - 电台
+    - [CH]
     semantic_type: label
   - text: home.fill
     center:
@@ -609,7 +609,7 @@ screens:
     aliases:
     - home icon
     - home tab
-    - 首页图标
+    - Home[CH]
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -622,7 +622,7 @@ screens:
     - browse
     - categories
     - grid icon
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -633,7 +633,7 @@ screens:
     aliases:
     - radio tab
     - broadcast
-    - 电台
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -646,7 +646,7 @@ screens:
     - library icon
     - songs
     - library tab
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Music app home screen with navigation tabs for Home and Radio Station,
     and playback controls for the current track including play, next, more, and lyrics
@@ -665,7 +665,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     - user
     semantic_type: menu_item
   - text: Play
@@ -678,7 +678,7 @@ screens:
     aliases:
     - play button
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -690,7 +690,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: New
@@ -702,7 +702,7 @@ screens:
     aliases:
     - new playlist
     - create
-    - 新建
+    - [CH]
     - add
     semantic_type: button
   - text: More
@@ -715,7 +715,7 @@ screens:
     aliases:
     - options
     - ellipsis
-    - 更多
+    - [CH]
     - overflow
     semantic_type: button
   - text: home.fill
@@ -727,7 +727,7 @@ screens:
     leads_to: screen_0
     aliases:
     - home
-    - 主页
+    - Home
     - house
     - home tab
     semantic_type: tab
@@ -740,7 +740,7 @@ screens:
     aliases:
     - browse
     - library
-    - 浏览
+    - [CH]
     - categories
     - grid
     semantic_type: tab
@@ -753,7 +753,7 @@ screens:
     leads_to: screen_6
     aliases:
     - radio tab
-    - 广播
+    - [CH]
     - stations
     - live radio
     semantic_type: tab
@@ -767,7 +767,7 @@ screens:
     aliases:
     - songs
     - library
-    - 音乐库
+    - [CH]
     - my music
     - collection
     semantic_type: tab
@@ -788,7 +788,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -800,7 +800,7 @@ screens:
     aliases:
     - play button
     - start
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -812,7 +812,7 @@ screens:
     - next
     - skip
     - forward
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Radio
     center:
@@ -823,7 +823,7 @@ screens:
     aliases:
     - radio station
     - broadcast
-    - 电台
+    - [CH]
     semantic_type: menu_item
   - text: More
     center:
@@ -835,7 +835,7 @@ screens:
     aliases:
     - more options
     - additional
-    - 更多
+    - [CH]
     semantic_type: button
   - text: home.fill
     center:
@@ -847,7 +847,7 @@ screens:
     aliases:
     - home
     - house
-    - 主页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -860,7 +860,7 @@ screens:
     - grid
     - browse
     - categories
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -873,7 +873,7 @@ screens:
     - library
     - songs
     - playlist
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Music app home screen with playback controls and navigation options
     including My Account, Play, Next track, Radio, and More.
@@ -888,7 +888,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 更多
+    - [CH]
     - additional options
     - overflow menu
     semantic_type: tab
@@ -902,7 +902,7 @@ screens:
     aliases:
     - account settings
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -912,7 +912,7 @@ screens:
     fixed: true
     leads_to: screen_15
     aliases:
-    - 播放
+    - [CH]
     - start
     - resume
     semantic_type: button
@@ -924,7 +924,7 @@ screens:
     fixed: false
     aliases:
     - skip
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: Library
@@ -934,7 +934,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 音乐库
+    - [CH]
     - collection
     - my music
     semantic_type: tab
@@ -946,7 +946,7 @@ screens:
     fixed: false
     leads_to: screen_28
     aliases:
-    - 歌手
+    - [CH]
     - performers
     - bands
     semantic_type: menu_item
@@ -958,7 +958,7 @@ screens:
     fixed: false
     leads_to: screen_29
     aliases:
-    - 专辑
+    - [CH]
     - records
     - LPs
     semantic_type: menu_item
@@ -970,7 +970,7 @@ screens:
     fixed: false
     leads_to: screen_29
     aliases:
-    - 歌曲
+    - [CH]
     - tracks
     - music
     semantic_type: menu_item
@@ -982,7 +982,7 @@ screens:
     fixed: false
     leads_to: screen_30
     aliases:
-    - 流派
+    - [CH]
     - categories
     - styles
     semantic_type: menu_item
@@ -994,7 +994,7 @@ screens:
     fixed: false
     leads_to: screen_31
     aliases:
-    - 快进
+    - [CH]
     - seek
     - skip ahead
     semantic_type: button
@@ -1006,7 +1006,7 @@ screens:
     fixed: false
     leads_to: screen_28
     aliases:
-    - 歌手
+    - [CH]
     - performer
     - band
     semantic_type: label
@@ -1018,7 +1018,7 @@ screens:
     fixed: false
     leads_to: screen_29
     aliases:
-    - 歌曲
+    - [CH]
     - track
     - music
     semantic_type: label
@@ -1031,7 +1031,7 @@ screens:
     leads_to: screen_20
     aliases:
     - home
-    - 主页
+    - Home
     - house icon
     semantic_type: tab
   - text: grid 2x2
@@ -1044,7 +1044,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -1054,7 +1054,7 @@ screens:
     fixed: false
     leads_to: screen_6
     aliases:
-    - 广播
+    - [CH]
     - live
     - stations
     semantic_type: tab
@@ -1067,7 +1067,7 @@ screens:
     aliases:
     - songs
     - playlist
-    - 歌曲
+    - [CH]
     semantic_type: tab
   - text: Apple Music
     center:
@@ -1078,7 +1078,7 @@ screens:
     leads_to: screen_32
     aliases:
     - streaming
-    - 苹果音乐
+    - [CH]
     - subscription
     semantic_type: menu_item
   - text: music
@@ -1089,7 +1089,7 @@ screens:
     fixed: false
     leads_to: screen_33
     aliases:
-    - 音乐
+    - [CH]
     - audio
     - songs
     semantic_type: label
@@ -1108,7 +1108,7 @@ screens:
     leads_to: screen_9
     aliases:
     - family group
-    - 家庭
+    - [CH]
     - family plan
     semantic_type: menu_item
   - text: Adult
@@ -1121,7 +1121,7 @@ screens:
     aliases:
     - adult content
     - mature
-    - 成人
+    - [CH]
     semantic_type: menu_item
   - text: Enabled
     center:
@@ -1133,7 +1133,7 @@ screens:
     aliases:
     - 'on'
     - active
-    - 开启
+    - [CH]
     semantic_type: toggle
   - text: Forward
     center:
@@ -1145,7 +1145,7 @@ screens:
     aliases:
     - skip
     - next
-    - 快进
+    - [CH]
     semantic_type: button
   description: Family sharing settings screen with options to manage adult accounts
     and enable forwarding.
@@ -1162,7 +1162,7 @@ screens:
     aliases:
     - family group
     - family plan
-    - 家庭
+    - [CH]
     semantic_type: tab
   - text: Adult
     center:
@@ -1173,7 +1173,7 @@ screens:
     aliases:
     - adult content
     - mature
-    - 成人
+    - [CH]
     semantic_type: tab
   - text: Forward
     center:
@@ -1184,7 +1184,7 @@ screens:
     aliases:
     - skip
     - next
-    - 快进
+    - [CH]
     semantic_type: button
   description: Family sharing settings screen with options to add an adult and forward
     family-related information.
@@ -1201,7 +1201,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: menu_item
   - text: My Account
     center:
@@ -1213,7 +1213,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -1224,7 +1224,7 @@ screens:
     leads_to: screen_9
     aliases:
     - start
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -1236,7 +1236,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Close
     center:
@@ -1248,7 +1248,7 @@ screens:
     aliases:
     - dismiss
     - exit
-    - 关闭
+    - Close
     semantic_type: button
   - text: Library
     center:
@@ -1259,7 +1259,7 @@ screens:
     aliases:
     - collection
     - my music
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Artists
     center:
@@ -1269,7 +1269,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     semantic_type: menu_item
   - text: Albums
     center:
@@ -1280,7 +1280,7 @@ screens:
     leads_to: screen_35
     aliases:
     - records
-    - 专辑
+    - [CH]
     semantic_type: menu_item
   - text: Songs
     center:
@@ -1290,7 +1290,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     semantic_type: menu_item
   - text: Genres
     center:
@@ -1300,7 +1300,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     semantic_type: menu_item
   - text: Forward
     center:
@@ -1310,7 +1310,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     semantic_type: button
   - text: home.fill
     center:
@@ -1321,7 +1321,7 @@ screens:
     leads_to: screen_12
     aliases:
     - home
-    - 主页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -1333,7 +1333,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -1344,7 +1344,7 @@ screens:
     leads_to: screen_13
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -1356,7 +1356,7 @@ screens:
     aliases:
     - songs
     - library
-    - 歌曲库
+    - [CH]
     semantic_type: tab
   description: Music app library screen with navigation options to browse artists,
     albums, songs, and genres, plus playback controls.
@@ -1373,7 +1373,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: tab
   - text: My Account
     center:
@@ -1384,7 +1384,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -1394,7 +1394,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -1406,7 +1406,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Close
     center:
@@ -1418,7 +1418,7 @@ screens:
     aliases:
     - dismiss
     - exit
-    - 关闭
+    - Close
     semantic_type: button
   - text: Other
     center:
@@ -1429,7 +1429,7 @@ screens:
     leads_to: screen_36
     aliases:
     - misc
-    - 其他
+    - [CH]
     - more options
     semantic_type: menu_item
   - text: Library
@@ -1440,7 +1440,7 @@ screens:
     fixed: true
     aliases:
     - collection
-    - 音乐库
+    - [CH]
     - my music
     semantic_type: tab
   - text: Artists
@@ -1451,7 +1451,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - bands
     semantic_type: menu_item
   - text: Albums
@@ -1462,7 +1462,7 @@ screens:
     fixed: true
     aliases:
     - records
-    - 专辑
+    - [CH]
     - LPs
     semantic_type: menu_item
   - text: Songs
@@ -1473,7 +1473,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     - music
     semantic_type: menu_item
   - text: Genres
@@ -1484,7 +1484,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     - styles
     semantic_type: menu_item
   - text: Forward
@@ -1495,7 +1495,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: Artist
@@ -1506,7 +1506,7 @@ screens:
     fixed: true
     aliases:
     - performer
-    - 歌手
+    - [CH]
     - musician
     semantic_type: label
   - text: Song
@@ -1517,7 +1517,7 @@ screens:
     fixed: true
     aliases:
     - track
-    - 歌曲
+    - [CH]
     - music
     semantic_type: label
   - text: home.fill
@@ -1528,7 +1528,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -1540,7 +1540,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 网格
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -1550,7 +1550,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live
     semantic_type: tab
   - text: '[App]'
@@ -1561,7 +1561,7 @@ screens:
     fixed: true
     aliases:
     - library
-    - 音乐库
+    - [CH]
     - collection
     semantic_type: tab
   description: Music library screen with options to browse by Artists, Albums, Songs,
@@ -1579,7 +1579,7 @@ screens:
     leads_to: screen_37
     aliases:
     - applications
-    - 应用
+    - App
     - apps list
     semantic_type: menu_item
   - text: Music
@@ -1590,7 +1590,7 @@ screens:
     fixed: true
     aliases:
     - music player
-    - 音乐
+    - [CH]
     - audio
     semantic_type: tab
   - text: EQ
@@ -1602,7 +1602,7 @@ screens:
     leads_to: screen_13
     aliases:
     - equalizer
-    - 均衡器
+    - [CH]
     - sound settings
     semantic_type: setting
   - text: Lyrics
@@ -1613,7 +1613,7 @@ screens:
     fixed: false
     leads_to: screen_13
     aliases:
-    - 歌词
+    - [CH]
     - song text
     - words
     semantic_type: setting
@@ -1626,7 +1626,7 @@ screens:
     leads_to: screen_38
     aliases:
     - login
-    - 登录
+    - Login
     - account
     semantic_type: button
   - text: Privacy
@@ -1637,7 +1637,7 @@ screens:
     fixed: false
     leads_to: screen_39
     aliases:
-    - 隐私
+    - Privacy
     - data protection
     - security
     semantic_type: setting
@@ -1656,7 +1656,7 @@ screens:
     leads_to: screen_40
     aliases:
     - applications
-    - 应用
+    - App
     - apps list
     semantic_type: menu_item
   - text: Sign In
@@ -1668,7 +1668,7 @@ screens:
     leads_to: screen_12
     aliases:
     - login
-    - 登入
+    - [CH]
     - sign in button
     semantic_type: button
   - text: Music
@@ -1679,7 +1679,7 @@ screens:
     fixed: true
     aliases:
     - songs
-    - 音乐
+    - [CH]
     - audio
     semantic_type: tab
   - text: Lyrics
@@ -1691,7 +1691,7 @@ screens:
     leads_to: screen_41
     aliases:
     - words
-    - 歌词
+    - [CH]
     - song text
     semantic_type: setting
   - text: Privacy
@@ -1703,7 +1703,7 @@ screens:
     leads_to: screen_42
     aliases:
     - data protection
-    - 隐私
+    - Privacy
     - security
     semantic_type: setting
   description: Music app settings or info screen with options for Sign In, Music,
@@ -1721,7 +1721,7 @@ screens:
     leads_to: screen_43
     aliases:
     - more options
-    - 更多
+    - [CH]
     - additional
     semantic_type: button
   - text: My Account
@@ -1734,7 +1734,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     - user
     semantic_type: menu_item
   - text: Pause
@@ -1745,7 +1745,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 暂停
+    - Pause
     - stop
     - hold
     semantic_type: button
@@ -1759,7 +1759,7 @@ screens:
     aliases:
     - next
     - skip
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: Close
@@ -1770,7 +1770,7 @@ screens:
     fixed: true
     leads_to: screen_15
     aliases:
-    - 关闭
+    - Close
     - exit
     - dismiss
     - x
@@ -1782,7 +1782,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 音乐库
+    - [CH]
     - collection
     - my music
     semantic_type: tab
@@ -1793,7 +1793,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌手
+    - [CH]
     - performers
     - bands
     semantic_type: menu_item
@@ -1805,7 +1805,7 @@ screens:
     fixed: true
     leads_to: screen_44
     aliases:
-    - 专辑
+    - [CH]
     - records
     - LPs
     semantic_type: menu_item
@@ -1816,7 +1816,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌曲
+    - [CH]
     - tracks
     - music
     semantic_type: menu_item
@@ -1827,7 +1827,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 流派
+    - [CH]
     - categories
     - styles
     semantic_type: menu_item
@@ -1838,7 +1838,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 快进
+    - [CH]
     - seek
     - advance
     semantic_type: button
@@ -1851,7 +1851,7 @@ screens:
     leads_to: screen_12
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -1863,7 +1863,7 @@ screens:
     leads_to: screen_13
     aliases:
     - browse
-    - 浏览
+    - [CH]
     - categories
     - grid
     semantic_type: tab
@@ -1875,7 +1875,7 @@ screens:
     fixed: true
     leads_to: screen_13
     aliases:
-    - 广播
+    - [CH]
     - stations
     - live
     semantic_type: tab
@@ -1888,7 +1888,7 @@ screens:
     leads_to: screen_13
     aliases:
     - library
-    - 音乐库
+    - [CH]
     - songs tab
     semantic_type: tab
   description: Music app 'More' menu screen with playback controls and library browsing
@@ -1906,7 +1906,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: tab
   - text: My Account
     center:
@@ -1918,7 +1918,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Pause
     center:
@@ -1928,7 +1928,7 @@ screens:
     fixed: true
     leads_to: screen_7
     aliases:
-    - 暂停
+    - Pause
     - stop
     - hold
     semantic_type: button
@@ -1941,7 +1941,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Library
     center:
@@ -1951,7 +1951,7 @@ screens:
     fixed: false
     aliases:
     - collection
-    - 资料库
+    - [CH]
     - my music
     semantic_type: tab
   - text: Artists
@@ -1963,7 +1963,7 @@ screens:
     leads_to: screen_45
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - bands
     semantic_type: menu_item
   - text: Albums
@@ -1975,7 +1975,7 @@ screens:
     leads_to: screen_46
     aliases:
     - records
-    - 专辑
+    - [CH]
     - LPs
     semantic_type: menu_item
   - text: Songs
@@ -1986,7 +1986,7 @@ screens:
     fixed: false
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     - music
     semantic_type: menu_item
   - text: Genres
@@ -1998,7 +1998,7 @@ screens:
     leads_to: screen_47
     aliases:
     - categories
-    - 流派
+    - [CH]
     - styles
     semantic_type: menu_item
   - text: Forward
@@ -2010,7 +2010,7 @@ screens:
     leads_to: screen_48
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: home.fill
@@ -2022,7 +2022,7 @@ screens:
     leads_to: screen_49
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -2034,7 +2034,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -2044,7 +2044,7 @@ screens:
     fixed: false
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live
     semantic_type: tab
   - text: '[App]'
@@ -2056,7 +2056,7 @@ screens:
     aliases:
     - songs
     - playlist
-    - 歌曲
+    - [CH]
     semantic_type: tab
   - text: Apple Music
     center:
@@ -2066,7 +2066,7 @@ screens:
     fixed: false
     aliases:
     - streaming
-    - 苹果音乐
+    - [CH]
     - subscription
     semantic_type: menu_item
   - text: music
@@ -2112,7 +2112,7 @@ screens:
     aliases:
     - pause playback
     - stop temporarily
-    - 暂停
+    - Pause
     semantic_type: button
   - text: Next track
     center:
@@ -2123,7 +2123,7 @@ screens:
     aliases:
     - next song
     - skip forward
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Lyrics
     center:
@@ -2134,7 +2134,7 @@ screens:
     aliases:
     - song text
     - words
-    - 歌词
+    - [CH]
     semantic_type: button
   - text: Library
     center:
@@ -2145,7 +2145,7 @@ screens:
     aliases:
     - music library
     - collection
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Artists
     center:
@@ -2156,7 +2156,7 @@ screens:
     aliases:
     - performers
     - bands
-    - 歌手
+    - [CH]
     semantic_type: menu_item
   - text: Albums
     center:
@@ -2167,7 +2167,7 @@ screens:
     aliases:
     - records
     - CDs
-    - 专辑
+    - [CH]
     semantic_type: menu_item
   - text: Songs
     center:
@@ -2178,7 +2178,7 @@ screens:
     aliases:
     - tracks
     - music
-    - 歌曲
+    - [CH]
     semantic_type: menu_item
   - text: Genres
     center:
@@ -2189,7 +2189,7 @@ screens:
     aliases:
     - categories
     - styles
-    - 流派
+    - [CH]
     semantic_type: menu_item
   - text: Forward
     center:
@@ -2200,7 +2200,7 @@ screens:
     aliases:
     - fast forward
     - skip ahead
-    - 快进
+    - [CH]
     semantic_type: button
   - text: home.fill
     center:
@@ -2211,7 +2211,7 @@ screens:
     aliases:
     - home
     - house
-    - 主页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -2233,7 +2233,7 @@ screens:
     aliases:
     - broadcast
     - live radio
-    - 电台
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -2244,7 +2244,7 @@ screens:
     aliases:
     - songs list
     - playlist
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Music app 'More' menu screen with playback controls and library browsing
     options including Artists, Albums, Songs, and Genres.
@@ -2262,7 +2262,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Pause
     center:
@@ -2272,7 +2272,7 @@ screens:
     fixed: true
     aliases:
     - pause button
-    - 暂停
+    - Pause
     - stop
     semantic_type: button
   - text: Next track
@@ -2284,7 +2284,7 @@ screens:
     aliases:
     - next
     - skip
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: More
@@ -2295,7 +2295,7 @@ screens:
     fixed: true
     aliases:
     - more options
-    - 更多
+    - [CH]
     - ellipsis
     - overflow
     semantic_type: button
@@ -2307,7 +2307,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -2319,7 +2319,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     - grid
     semantic_type: tab
   - text: radio
@@ -2330,7 +2330,7 @@ screens:
     fixed: true
     aliases:
     - radio
-    - 广播
+    - [CH]
     - live radio
     semantic_type: tab
   - text: '[App]'
@@ -2342,7 +2342,7 @@ screens:
     aliases:
     - library
     - my music
-    - 音乐库
+    - [CH]
     - songs
     semantic_type: tab
   description: Now playing screen with playback controls and navigation options for
@@ -2475,7 +2475,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: menu_item
   - text: My Account
     center:
@@ -2486,7 +2486,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -2496,7 +2496,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -2507,7 +2507,7 @@ screens:
     fixed: true
     aliases:
     - skip
-    - 下一首
+    - [CH]
     - next song
     semantic_type: button
   - text: Lyrics
@@ -2518,7 +2518,7 @@ screens:
     fixed: true
     aliases:
     - words
-    - 歌词
+    - [CH]
     - song text
     semantic_type: button
   - text: Library
@@ -2529,7 +2529,7 @@ screens:
     fixed: true
     aliases:
     - collection
-    - 音乐库
+    - [CH]
     - my music
     semantic_type: tab
   - text: Artists
@@ -2540,7 +2540,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - bands
     semantic_type: menu_item
   - text: Albums
@@ -2551,7 +2551,7 @@ screens:
     fixed: true
     aliases:
     - records
-    - 专辑
+    - [CH]
     - CDs
     semantic_type: menu_item
   - text: Songs
@@ -2562,7 +2562,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     - music
     semantic_type: menu_item
   - text: Genres
@@ -2573,7 +2573,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     - styles
     semantic_type: menu_item
   - text: Forward
@@ -2584,7 +2584,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: home.fill
@@ -2595,7 +2595,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -2606,7 +2606,7 @@ screens:
     fixed: true
     aliases:
     - browse
-    - 浏览
+    - [CH]
     - categories
     - grid
     semantic_type: tab
@@ -2618,7 +2618,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live radio
     semantic_type: tab
   - text: '[App]'
@@ -2629,7 +2629,7 @@ screens:
     fixed: true
     aliases:
     - library
-    - 音乐库
+    - [CH]
     - songs list
     semantic_type: tab
   description: Music app settings and navigation menu with options for account, playback
@@ -2648,7 +2648,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -2658,7 +2658,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -2670,7 +2670,7 @@ screens:
     aliases:
     - skip
     - forward
-    - 下一首
+    - [CH]
     - next song
     semantic_type: button
   - text: Home
@@ -2681,7 +2681,7 @@ screens:
     fixed: true
     aliases:
     - main
-    - 首页
+    - Home
     - home screen
     semantic_type: tab
   - text: home.fill
@@ -2692,7 +2692,7 @@ screens:
     fixed: true
     aliases:
     - home icon
-    - 首页图标
+    - Home[CH]
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -2703,7 +2703,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 网格
+    - [CH]
     - library
     semantic_type: tab
   - text: radio
@@ -2714,7 +2714,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live radio
     semantic_type: tab
   - text: '[App]'
@@ -2726,7 +2726,7 @@ screens:
     aliases:
     - songs
     - playlist
-    - 音乐库
+    - [CH]
     - library icon
     semantic_type: tab
   description: Now playing screen with playback controls and navigation options for
@@ -2744,7 +2744,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: tab
   - text: My Account
     center:
@@ -2755,7 +2755,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -2765,7 +2765,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -2777,7 +2777,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Lyrics
     center:
@@ -2787,7 +2787,7 @@ screens:
     fixed: true
     aliases:
     - words
-    - 歌词
+    - [CH]
     - text
     semantic_type: button
   - text: Library
@@ -2798,7 +2798,7 @@ screens:
     fixed: true
     aliases:
     - collection
-    - 音乐库
+    - [CH]
     - saved
     semantic_type: tab
   - text: Artists
@@ -2809,7 +2809,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - bands
     semantic_type: menu_item
   - text: Albums
@@ -2820,7 +2820,7 @@ screens:
     fixed: true
     aliases:
     - records
-    - 专辑
+    - [CH]
     - LPs
     semantic_type: menu_item
   - text: Songs
@@ -2831,7 +2831,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     - music
     semantic_type: menu_item
   - text: Made for You
@@ -2842,7 +2842,7 @@ screens:
     fixed: true
     aliases:
     - personalized
-    - 为你推荐
+    - [CH]
     - recommendations
     semantic_type: menu_item
   - text: Genres
@@ -2853,7 +2853,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     - styles
     semantic_type: menu_item
   - text: Forward
@@ -2864,7 +2864,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: home.fill
@@ -2875,7 +2875,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -2887,7 +2887,7 @@ screens:
     aliases:
     - browse
     - grid
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -2897,7 +2897,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live
     semantic_type: tab
   - text: '[App]'
@@ -2909,7 +2909,7 @@ screens:
     aliases:
     - songs
     - playlist
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Music app settings and navigation menu with options for account, playback
     controls, library categories, and personalized content.
@@ -2926,7 +2926,7 @@ screens:
     aliases:
     - additional options
     - menu
-    - 更多
+    - [CH]
     semantic_type: menu_item
   - text: My Account
     center:
@@ -2937,7 +2937,7 @@ screens:
     aliases:
     - profile
     - account settings
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -2947,7 +2947,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -2958,7 +2958,7 @@ screens:
     aliases:
     - skip
     - forward
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Album Artwork
     center:
@@ -2968,7 +2968,7 @@ screens:
     fixed: true
     aliases:
     - cover art
-    - 专辑封面
+    - [CH]
     semantic_type: label
   - text: Lyrics
     center:
@@ -2978,7 +2978,7 @@ screens:
     fixed: true
     aliases:
     - words
-    - 歌词
+    - [CH]
     semantic_type: button
   - text: Library
     center:
@@ -2988,7 +2988,7 @@ screens:
     fixed: true
     aliases:
     - collection
-    - 音乐库
+    - [CH]
     semantic_type: tab
   - text: Artists
     center:
@@ -2998,7 +2998,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     semantic_type: menu_item
   - text: Albums
     center:
@@ -3008,7 +3008,7 @@ screens:
     fixed: true
     aliases:
     - records
-    - 专辑
+    - [CH]
     semantic_type: menu_item
   - text: Songs
     center:
@@ -3018,7 +3018,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     semantic_type: menu_item
   - text: Made for You
     center:
@@ -3029,7 +3029,7 @@ screens:
     aliases:
     - personalized
     - recommendations
-    - 为你推荐
+    - [CH]
     semantic_type: menu_item
   - text: Genres
     center:
@@ -3039,7 +3039,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     semantic_type: menu_item
   - text: Forward
     center:
@@ -3049,7 +3049,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     semantic_type: button
   - text: Artist
     center:
@@ -3059,7 +3059,7 @@ screens:
     fixed: true
     aliases:
     - performer
-    - 歌手
+    - [CH]
     semantic_type: label
   - text: Song
     center:
@@ -3069,7 +3069,7 @@ screens:
     fixed: true
     aliases:
     - track
-    - 歌曲
+    - [CH]
     semantic_type: label
   - text: home.fill
     center:
@@ -3079,7 +3079,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -3090,7 +3090,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -3100,7 +3100,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 广播
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -3110,7 +3110,7 @@ screens:
     fixed: true
     aliases:
     - library
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Music library screen with sections for Artists, Albums, Songs, Made
     for You, and Genres, plus playback controls and navigation options.
@@ -3127,7 +3127,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: tab
   - text: My Account
     center:
@@ -3138,7 +3138,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -3148,7 +3148,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -3160,7 +3160,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Library
     center:
@@ -3170,7 +3170,7 @@ screens:
     fixed: true
     aliases:
     - collection
-    - 音乐库
+    - [CH]
     - saved
     semantic_type: tab
   - text: Artists
@@ -3181,7 +3181,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - bands
     semantic_type: menu_item
   - text: Albums
@@ -3192,7 +3192,7 @@ screens:
     fixed: true
     aliases:
     - records
-    - 专辑
+    - [CH]
     - LPs
     semantic_type: menu_item
   - text: Songs
@@ -3203,7 +3203,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     - music
     semantic_type: menu_item
   - text: Made for You
@@ -3214,7 +3214,7 @@ screens:
     fixed: true
     aliases:
     - personalized
-    - 为你推荐
+    - [CH]
     - recommendations
     semantic_type: menu_item
   - text: Genres
@@ -3225,7 +3225,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     - styles
     semantic_type: menu_item
   - text: Forward
@@ -3236,7 +3236,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: home.fill
@@ -3247,7 +3247,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -3259,7 +3259,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -3269,7 +3269,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live
     semantic_type: tab
   - text: '[App]'
@@ -3281,7 +3281,7 @@ screens:
     aliases:
     - songs list
     - playlist
-    - 歌曲列表
+    - [CH]
     semantic_type: tab
   description: Library screen in the Music app showing categories like Artists, Albums,
     Songs, Made for You, and Genres for browsing music collections.
@@ -3309,7 +3309,7 @@ screens:
     aliases:
     - start
     - resume
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -3320,7 +3320,7 @@ screens:
     aliases:
     - skip
     - forward
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Close
     center:
@@ -3331,7 +3331,7 @@ screens:
     aliases:
     - dismiss
     - exit
-    - 关闭
+    - Close
     semantic_type: button
   - text: New
     center:
@@ -3342,7 +3342,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: '[App]'
     center:
@@ -3353,7 +3353,7 @@ screens:
     aliases:
     - album art
     - cover
-    - 封面
+    - [CH]
     semantic_type: other
   - text: More
     center:
@@ -3364,7 +3364,7 @@ screens:
     aliases:
     - options
     - additional
-    - 更多
+    - [CH]
     semantic_type: button
   - text: home.fill
     center:
@@ -3375,7 +3375,7 @@ screens:
     aliases:
     - home
     - house
-    - 主页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -3386,7 +3386,7 @@ screens:
     aliases:
     - grid
     - layout
-    - 网格
+    - [CH]
     semantic_type: button
   - text: radio
     center:
@@ -3397,7 +3397,7 @@ screens:
     aliases:
     - broadcast
     - station
-    - 广播
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -3408,7 +3408,7 @@ screens:
     aliases:
     - library
     - songs
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Now playing screen with album artwork, playback controls, and options
     to manage the queue or explore more music.
@@ -3426,7 +3426,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -3436,7 +3436,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -3448,7 +3448,7 @@ screens:
     aliases:
     - skip
     - forward
-    - 下一首
+    - [CH]
     - next song
     semantic_type: button
   - text: New
@@ -3459,7 +3459,7 @@ screens:
     fixed: false
     aliases:
     - create
-    - 新建
+    - [CH]
     - add new
     semantic_type: button
   - text: More
@@ -3471,7 +3471,7 @@ screens:
     aliases:
     - options
     - additional
-    - 更多
+    - [CH]
     - ellipsis
     semantic_type: button
   - text: home.fill
@@ -3482,7 +3482,7 @@ screens:
     fixed: false
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -3494,7 +3494,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 网格
+    - [CH]
     - library
     semantic_type: tab
   - text: radio
@@ -3505,7 +3505,7 @@ screens:
     fixed: false
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live radio
     semantic_type: tab
   - text: '[App]'
@@ -3517,7 +3517,7 @@ screens:
     aliases:
     - songs
     - playlist
-    - 音乐库
+    - [CH]
     - library
     semantic_type: tab
   - text: add
@@ -3528,7 +3528,7 @@ screens:
     fixed: false
     aliases:
     - plus
-    - 添加
+    - [CH]
     - create
     - new
     semantic_type: button
@@ -3540,7 +3540,7 @@ screens:
     fixed: false
     aliases:
     - send
-    - 分享
+    - Share
     - export
     semantic_type: button
   - text: info
@@ -3552,7 +3552,7 @@ screens:
     aliases:
     - details
     - information
-    - 信息
+    - Info
     - about
     semantic_type: button
   - text: dislike
@@ -3563,7 +3563,7 @@ screens:
     fixed: false
     aliases:
     - thumbs down
-    - 不喜欢
+    - [CH]
     - negative
     - downvote
     semantic_type: toggle
@@ -3583,7 +3583,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -3593,7 +3593,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -3605,7 +3605,7 @@ screens:
     aliases:
     - skip
     - forward
-    - 下一首
+    - [CH]
     - next song
     semantic_type: button
   - text: Close
@@ -3617,7 +3617,7 @@ screens:
     aliases:
     - dismiss
     - exit
-    - 关闭
+    - Close
     - x
     semantic_type: button
   - text: Radio
@@ -3628,7 +3628,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live radio
     - stations
     semantic_type: tab
@@ -3641,7 +3641,7 @@ screens:
     aliases:
     - options
     - additional
-    - 更多
+    - [CH]
     - ellipsis
     - menu
     semantic_type: button
@@ -3653,7 +3653,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     - main
     semantic_type: tab
@@ -3666,7 +3666,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     - genres
     - library
     semantic_type: tab
@@ -3680,7 +3680,7 @@ screens:
     - songs
     - playlist
     - library
-    - 音乐库
+    - [CH]
     - collection
     semantic_type: tab
   description: Now playing screen with playback controls and options to access account,
@@ -3699,7 +3699,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -3709,7 +3709,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -3721,7 +3721,7 @@ screens:
     aliases:
     - skip
     - forward
-    - 下一首
+    - [CH]
     - next song
     semantic_type: button
   - text: Radio
@@ -3732,7 +3732,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live radio
     semantic_type: tab
   - text: More
@@ -3744,7 +3744,7 @@ screens:
     aliases:
     - additional
     - options
-    - 更多
+    - [CH]
     - extra
     semantic_type: button
   - text: home.fill
@@ -3755,7 +3755,7 @@ screens:
     fixed: false
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -3767,7 +3767,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     - grid
     semantic_type: tab
   - text: '[App]'
@@ -3779,7 +3779,7 @@ screens:
     aliases:
     - library
     - songs
-    - 音乐库
+    - [CH]
     - collection
     semantic_type: tab
   - text: Share
@@ -3790,7 +3790,7 @@ screens:
     fixed: false
     aliases:
     - send
-    - 分享
+    - Share
     - recommend
     semantic_type: button
   description: Account screen with options to play next track, access radio, more
@@ -3809,7 +3809,7 @@ screens:
     - music library
     - songs
     - collection
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Filter
     center:
@@ -3819,7 +3819,7 @@ screens:
     fixed: true
     aliases:
     - sort
-    - 筛选
+    - [CH]
     - refine
     semantic_type: button
   - text: Play
@@ -3830,7 +3830,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -3842,7 +3842,7 @@ screens:
     aliases:
     - skip forward
     - next song
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Artists
     center:
@@ -3852,7 +3852,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - bands
     semantic_type: tab
   - text: Forward
@@ -3863,7 +3863,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip
     semantic_type: button
   - text: Artist
@@ -3874,7 +3874,7 @@ screens:
     fixed: true
     aliases:
     - performer
-    - 歌手
+    - [CH]
     - band
     semantic_type: label
   - text: home.fill
@@ -3885,7 +3885,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -3897,7 +3897,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     - genres
     semantic_type: tab
   - text: radio
@@ -3908,7 +3908,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live radio
     semantic_type: tab
   - text: '[App]'
@@ -3920,7 +3920,7 @@ screens:
     aliases:
     - songs
     - tracks
-    - 歌曲
+    - [CH]
     - playlist
     semantic_type: tab
   description: Library screen showing a grid of artists with playback controls and
@@ -3939,7 +3939,7 @@ screens:
     - music library
     - songs
     - collection
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Filter
     center:
@@ -3949,7 +3949,7 @@ screens:
     fixed: true
     aliases:
     - sort
-    - 筛选
+    - [CH]
     - refine
     semantic_type: button
   - text: More
@@ -3961,7 +3961,7 @@ screens:
     aliases:
     - options
     - menu
-    - 更多
+    - [CH]
     - ellipsis
     semantic_type: button
   - text: Play
@@ -3972,7 +3972,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Shuffle
@@ -3983,7 +3983,7 @@ screens:
     fixed: false
     aliases:
     - random
-    - 随机播放
+    - [CH]
     - mix
     semantic_type: toggle
   - text: Next track
@@ -3995,7 +3995,7 @@ screens:
     aliases:
     - skip
     - forward
-    - 下一首
+    - [CH]
     - next song
     semantic_type: button
   - text: home.fill
@@ -4006,7 +4006,7 @@ screens:
     fixed: false
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -4018,7 +4018,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 网格
+    - [CH]
     - genres
     semantic_type: tab
   - text: radio
@@ -4029,7 +4029,7 @@ screens:
     fixed: false
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live radio
     semantic_type: tab
   - text: '[App]'
@@ -4040,7 +4040,7 @@ screens:
     fixed: true
     aliases:
     - albums
-    - 专辑
+    - [CH]
     - discography
     semantic_type: tab
   description: Music library screen with filter, play, shuffle, and next track controls,
@@ -4069,7 +4069,7 @@ screens:
     aliases:
     - Mandarin pop
     - C-pop
-    - 华语流行
+    - [CH]
     semantic_type: menu_item
   - text: Other
     center:
@@ -4089,7 +4089,7 @@ screens:
     fixed: true
     aliases:
     - popular music
-    - 流行音乐
+    - [CH]
     semantic_type: menu_item
   - text: Rock
     center:
@@ -4099,7 +4099,7 @@ screens:
     fixed: true
     aliases:
     - rock music
-    - 摇滚
+    - [CH]
     semantic_type: menu_item
   - text: Play
     center:
@@ -4110,7 +4110,7 @@ screens:
     aliases:
     - start
     - resume
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -4121,7 +4121,7 @@ screens:
     aliases:
     - skip forward
     - next song
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Genres
     center:
@@ -4132,7 +4132,7 @@ screens:
     aliases:
     - categories
     - music genres
-    - 流派
+    - [CH]
     semantic_type: menu_item
   - text: Forward
     center:
@@ -4143,7 +4143,7 @@ screens:
     aliases:
     - fast forward
     - skip
-    - 快进
+    - [CH]
     semantic_type: button
   - text: home.fill
     center:
@@ -4154,7 +4154,7 @@ screens:
     aliases:
     - home
     - main screen
-    - 主页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -4176,7 +4176,7 @@ screens:
     aliases:
     - live radio
     - broadcast
-    - 广播
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -4204,7 +4204,7 @@ screens:
     aliases:
     - music library
     - collection
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Play
     center:
@@ -4215,7 +4215,7 @@ screens:
     aliases:
     - play button
     - start
-    - 播放
+    - [CH]
     semantic_type: button
   - text: Next track
     center:
@@ -4226,7 +4226,7 @@ screens:
     aliases:
     - next
     - skip
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Artists
     center:
@@ -4236,7 +4236,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - artist list
     semantic_type: menu_item
   - text: Albums
@@ -4247,7 +4247,7 @@ screens:
     fixed: true
     aliases:
     - records
-    - 专辑
+    - [CH]
     - album list
     semantic_type: menu_item
   - text: Songs
@@ -4258,7 +4258,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     - song list
     semantic_type: menu_item
   - text: Genres
@@ -4269,7 +4269,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     - music genres
     semantic_type: menu_item
   - text: Forward
@@ -4281,7 +4281,7 @@ screens:
     aliases:
     - fast forward
     - skip ahead
-    - 快进
+    - [CH]
     semantic_type: button
   - text: home.fill
     center:
@@ -4292,7 +4292,7 @@ screens:
     aliases:
     - home
     - main screen
-    - 首页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -4303,7 +4303,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 网格
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -4314,7 +4314,7 @@ screens:
     aliases:
     - radio tab
     - broadcast
-    - 广播
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -4325,7 +4325,7 @@ screens:
     aliases:
     - now playing
     - player
-    - 正在播放
+    - In progress[CH]
     semantic_type: tab
   description: Library screen showing music categories like Artists, Albums, Songs,
     and Genres with playback controls.
@@ -4388,7 +4388,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 播放
+    - [CH]
     - start
     - resume
     semantic_type: button
@@ -4399,7 +4399,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 流派
+    - [CH]
     - categories
     - music types
     semantic_type: menu_item
@@ -4410,7 +4410,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 快进
+    - [CH]
     - next track
     - skip
     semantic_type: button
@@ -4421,7 +4421,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 音乐
+    - [CH]
     - songs
     - audio
     semantic_type: label
@@ -4434,7 +4434,7 @@ screens:
     aliases:
     - songs icon
     - music library
-    - 音乐库图标
+    - [CH]
     semantic_type: tab
   description: Music player screen with playback controls and genre browsing options
   scrollable: false
@@ -4450,7 +4450,7 @@ screens:
     aliases:
     - families
     - family plan
-    - 家庭
+    - [CH]
     semantic_type: menu_item
   - text: Adult
     center:
@@ -4461,7 +4461,7 @@ screens:
     aliases:
     - grown-up
     - mature
-    - 成人
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -4472,7 +4472,7 @@ screens:
     aliases:
     - finish
     - complete
-    - 完成
+    - Done
     semantic_type: button
   - text: Forward
     center:
@@ -4483,7 +4483,7 @@ screens:
     aliases:
     - next
     - skip
-    - 快进
+    - [CH]
     semantic_type: button
   description: Family sharing settings screen to manage adult members with options
     to add and confirm selections.
@@ -4500,7 +4500,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: tab
   - text: My Account
     center:
@@ -4511,7 +4511,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -4521,7 +4521,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -4533,7 +4533,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Done
     center:
@@ -4544,7 +4544,7 @@ screens:
     aliases:
     - finish
     - complete
-    - 完成
+    - Done
     semantic_type: button
   - text: Library
     center:
@@ -4555,7 +4555,7 @@ screens:
     aliases:
     - collection
     - my music
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Artists
     center:
@@ -4565,7 +4565,7 @@ screens:
     fixed: true
     aliases:
     - performers
-    - 歌手
+    - [CH]
     - bands
     semantic_type: menu_item
   - text: Albums
@@ -4576,7 +4576,7 @@ screens:
     fixed: true
     aliases:
     - records
-    - 专辑
+    - [CH]
     - LPs
     semantic_type: menu_item
   - text: Songs
@@ -4587,7 +4587,7 @@ screens:
     fixed: true
     aliases:
     - tracks
-    - 歌曲
+    - [CH]
     - music
     semantic_type: menu_item
   - text: Genres
@@ -4598,7 +4598,7 @@ screens:
     fixed: true
     aliases:
     - categories
-    - 流派
+    - [CH]
     - styles
     semantic_type: menu_item
   - text: Apple Music
@@ -4610,7 +4610,7 @@ screens:
     aliases:
     - streaming
     - subscription
-    - 苹果音乐
+    - [CH]
     semantic_type: menu_item
   - text: Student
     center:
@@ -4620,7 +4620,7 @@ screens:
     fixed: true
     aliases:
     - student plan
-    - 学生
+    - [CH]
     - discount
     semantic_type: setting
   - text: Forward
@@ -4631,7 +4631,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: home.fill
@@ -4642,7 +4642,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -4654,7 +4654,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 网格
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -4664,7 +4664,7 @@ screens:
     fixed: true
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live
     semantic_type: tab
   - text: '[App]'
@@ -4676,7 +4676,7 @@ screens:
     aliases:
     - songs list
     - playlist
-    - 歌曲列表
+    - [CH]
     semantic_type: tab
   description: Music app settings and navigation menu with options for account, playback,
     library categories, and Apple Music subscription.
@@ -4693,7 +4693,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: menu_item
   - text: My Account
     center:
@@ -4704,7 +4704,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Play
     center:
@@ -4714,7 +4714,7 @@ screens:
     fixed: true
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Next track
@@ -4726,7 +4726,7 @@ screens:
     aliases:
     - skip
     - next song
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Close
     center:
@@ -4737,7 +4737,7 @@ screens:
     aliases:
     - dismiss
     - exit
-    - 关闭
+    - Close
     semantic_type: button
   - text: Next
     center:
@@ -4748,7 +4748,7 @@ screens:
     aliases:
     - forward
     - skip
-    - 下一个
+    - [CH]
     semantic_type: button
   - text: Library
     center:
@@ -4759,7 +4759,7 @@ screens:
     aliases:
     - collection
     - my music
-    - 音乐库
+    - [CH]
     semantic_type: tab
   - text: Artists
     center:
@@ -4770,7 +4770,7 @@ screens:
     aliases:
     - performers
     - bands
-    - 艺术家
+    - [CH]
     semantic_type: menu_item
   - text: Albums
     center:
@@ -4781,7 +4781,7 @@ screens:
     aliases:
     - records
     - LP
-    - 专辑
+    - [CH]
     semantic_type: menu_item
   - text: Songs
     center:
@@ -4792,7 +4792,7 @@ screens:
     aliases:
     - tracks
     - music
-    - 歌曲
+    - [CH]
     semantic_type: menu_item
   - text: Made for You
     center:
@@ -4803,7 +4803,7 @@ screens:
     aliases:
     - personalized
     - recommendations
-    - 为你推荐
+    - [CH]
     semantic_type: menu_item
   - text: Genres
     center:
@@ -4814,7 +4814,7 @@ screens:
     aliases:
     - categories
     - styles
-    - 流派
+    - [CH]
     semantic_type: menu_item
   - text: Forward
     center:
@@ -4825,7 +4825,7 @@ screens:
     aliases:
     - skip
     - next
-    - 快进
+    - [CH]
     semantic_type: button
   - text: home.fill
     center:
@@ -4836,7 +4836,7 @@ screens:
     aliases:
     - home
     - house
-    - 主页
+    - Home
     semantic_type: tab
   - text: grid 2x2
     center:
@@ -4847,7 +4847,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 网格
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -4858,7 +4858,7 @@ screens:
     aliases:
     - broadcast
     - stations
-    - 广播
+    - [CH]
     semantic_type: tab
   - text: '[App]'
     center:
@@ -4869,7 +4869,7 @@ screens:
     aliases:
     - library
     - songs
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Library screen with sections for Artists, Albums, Songs, Made for You,
     and Genres, and playback controls.
@@ -4897,7 +4897,7 @@ screens:
     fixed: true
     aliases:
     - applications
-    - 应用
+    - App
     - apps list
     semantic_type: menu_item
   - text: Sign In
@@ -4908,7 +4908,7 @@ screens:
     fixed: true
     aliases:
     - login
-    - 登录
+    - Login
     - sign in button
     semantic_type: button
   - text: shift
@@ -4922,7 +4922,7 @@ screens:
     - caps
     - uppercase
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -4931,9 +4931,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 继续
+  - text: Continue
     center:
     - 0.8706
     - 0.8913
@@ -4942,7 +4942,7 @@ screens:
     aliases:
     - continue
     - next
-    - 下一步
+    - Next
     semantic_type: button
   - text: Music
     center:
@@ -4952,7 +4952,7 @@ screens:
     fixed: true
     aliases:
     - music app
-    - 音乐
+    - [CH]
     - songs
     semantic_type: tab
   - text: Lyrics
@@ -4962,7 +4962,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌词
+    - [CH]
     - song text
     - words
     semantic_type: tab
@@ -4980,7 +4980,7 @@ screens:
     fixed: true
     aliases:
     - applications
-    - 应用
+    - App
     - apps list
     semantic_type: menu_item
   - text: Sign In
@@ -4991,7 +4991,7 @@ screens:
     fixed: true
     aliases:
     - login
-    - 登录
+    - Login
     - sign in button
     semantic_type: button
   - text: Music
@@ -5003,7 +5003,7 @@ screens:
     aliases:
     - music library
     - songs
-    - 音乐
+    - [CH]
     semantic_type: tab
   description: Music app sign-in screen prompting user to sign in to access their
     music library and features.
@@ -5019,7 +5019,7 @@ screens:
     fixed: true
     aliases:
     - applications
-    - 应用
+    - App
     - programs
     semantic_type: tab
   - text: '[App]'
@@ -5029,7 +5029,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 指南针
+    - Guide针
     - compass app
     semantic_type: menu_item
   - text: '[App]'
@@ -5050,7 +5050,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 飞书
+    - [CH]
     - Lark
     - collaboration
     semantic_type: menu_item
@@ -5061,7 +5061,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 文件
+    - File
     - file manager
     - documents
     semantic_type: menu_item
@@ -5072,7 +5072,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 查找
+    - [CH]
     - find my device
     - locator
     semantic_type: menu_item
@@ -5083,7 +5083,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 健身
+    - [CH]
     - fitness app
     - workout
     semantic_type: menu_item
@@ -5116,7 +5116,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 游戏
+    - Game
     - gaming
     - arcade
     semantic_type: tab
@@ -5139,7 +5139,7 @@ screens:
     fixed: false
     aliases:
     - Google Mail
-    - 邮箱
+    - Email
     - email
     semantic_type: menu_item
   - text: GoGoX
@@ -5150,7 +5150,7 @@ screens:
     fixed: false
     aliases:
     - GoGoVan
-    - 快狗打车
+    - [CH]
     - logistics
     semantic_type: menu_item
   - text: '[App]'
@@ -5162,7 +5162,7 @@ screens:
     aliases:
     - Personal Income Tax
     - tax app
-    - 个税
+    - [CH]
     semantic_type: menu_item
   - text: Health
     center:
@@ -5171,7 +5171,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 健康
+    - [CH]
     - health app
     - wellness
     semantic_type: menu_item
@@ -5182,7 +5182,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 香港电影
+    - [CH]
     - movie tickets
     - cinema
     semantic_type: menu_item
@@ -5193,7 +5193,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 香港的士
+    - [CH]
     - taxi app
     - cab
     semantic_type: menu_item
@@ -5204,7 +5204,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 香港大学
+    - [CH]
     - University of Hong Kong
     - HKU app
     semantic_type: menu_item
@@ -5215,7 +5215,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 凯悦
+    - [CH]
     - Hyatt Hotels
     - hospitality
     semantic_type: menu_item
@@ -5227,7 +5227,7 @@ screens:
     fixed: false
     aliases:
     - InterContinental Hotels
-    - 洲际酒店
+    - [CH]
     - hotels
     semantic_type: menu_item
   - text: iMovie
@@ -5239,7 +5239,7 @@ screens:
     aliases:
     - iMovie app
     - video editor
-    - 剪辑
+    - [CH]
     semantic_type: menu_item
   - text: JD
     center:
@@ -5248,7 +5248,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 京东
+    - [CH]
     - Jingdong
     - e-commerce
     semantic_type: menu_item
@@ -5259,7 +5259,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 日记
+    - [CH]
     - journal app
     - diary
     semantic_type: menu_item
@@ -5277,7 +5277,7 @@ screens:
     fixed: true
     aliases:
     - music
-    - 音乐
+    - [CH]
     - songs
     - audio
     semantic_type: tab
@@ -5294,7 +5294,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 应用
+    - App
     - applications
     - app list
     semantic_type: menu_item
@@ -5305,7 +5305,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 登录
+    - Login
     - signin
     - log in
     semantic_type: button
@@ -5316,11 +5316,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 切换
+    - [CH]
     - switch
     - change
     semantic_type: button
-  - text: 继续
+  - text: Continue
     center:
     - 0.8706
     - 0.8913
@@ -5329,7 +5329,7 @@ screens:
     aliases:
     - continue
     - next
-    - 下一步
+    - Next
     semantic_type: button
   - text: Music
     center:
@@ -5338,7 +5338,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 音乐
+    - [CH]
     - songs
     - audio
     semantic_type: tab
@@ -5349,7 +5349,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌词
+    - [CH]
     - words
     - text
     semantic_type: tab
@@ -5360,7 +5360,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 隐私
+    - Privacy
     - data protection
     - security
     semantic_type: setting
@@ -5377,7 +5377,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 更多
+    - [CH]
     - additional options
     - menu
     semantic_type: menu_item
@@ -5390,7 +5390,7 @@ screens:
     aliases:
     - account settings
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: setting
   - text: Album Artwork
     center:
@@ -5400,7 +5400,7 @@ screens:
     fixed: true
     aliases:
     - cover art
-    - 专辑封面
+    - [CH]
     - album cover
     semantic_type: label
   - text: Pause
@@ -5410,7 +5410,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 暂停
+    - Pause
     - stop temporarily
     - hold
     semantic_type: button
@@ -5422,7 +5422,7 @@ screens:
     fixed: true
     aliases:
     - skip
-    - 下一首
+    - [CH]
     - next song
     semantic_type: button
   - text: Close
@@ -5432,7 +5432,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - exit
     semantic_type: button
@@ -5443,7 +5443,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 音乐库
+    - [CH]
     - collection
     - my music
     semantic_type: tab
@@ -5454,7 +5454,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌手
+    - [CH]
     - performers
     - bands
     semantic_type: menu_item
@@ -5465,7 +5465,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 专辑
+    - [CH]
     - records
     - LP
     semantic_type: menu_item
@@ -5476,7 +5476,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌曲
+    - [CH]
     - tracks
     - music
     semantic_type: menu_item
@@ -5488,7 +5488,7 @@ screens:
     fixed: true
     aliases:
     - personalized
-    - 为你推荐
+    - [CH]
     - recommendations
     semantic_type: menu_item
   - text: Genres
@@ -5498,7 +5498,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 流派
+    - [CH]
     - categories
     - music styles
     semantic_type: menu_item
@@ -5520,7 +5520,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 快进
+    - [CH]
     - skip ahead
     - fast forward
     semantic_type: button
@@ -5531,7 +5531,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌手
+    - [CH]
     - performer
     - band
     semantic_type: label
@@ -5542,7 +5542,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌曲
+    - [CH]
     - track
     - music
     semantic_type: label
@@ -5553,7 +5553,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 自拍
+    - [CH]
     - photo
     - portrait
     semantic_type: other
@@ -5564,7 +5564,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 电视
+    - TV
     - television
     - video
     semantic_type: menu_item
@@ -5575,7 +5575,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 主页
+    - Home
     - home screen
     - main page
     semantic_type: tab
@@ -5587,7 +5587,7 @@ screens:
     fixed: true
     aliases:
     - browse
-    - 网格
+    - [CH]
     - categories grid
     semantic_type: tab
   - text: radio
@@ -5597,7 +5597,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 广播
+    - [CH]
     - live radio
     - stations
     semantic_type: tab
@@ -5609,7 +5609,7 @@ screens:
     fixed: true
     aliases:
     - library icon
-    - 音乐库图标
+    - [CH]
     - songs tab
     semantic_type: tab
   description: Now playing screen with album artwork, playback controls, and navigation
@@ -5627,7 +5627,7 @@ screens:
     aliases:
     - additional
     - extra
-    - 更多
+    - [CH]
     semantic_type: tab
   - text: My Account
     center:
@@ -5638,7 +5638,7 @@ screens:
     aliases:
     - account
     - profile
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Pause
     center:
@@ -5647,7 +5647,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 暂停
+    - Pause
     - stop
     - hold
     semantic_type: button
@@ -5660,7 +5660,7 @@ screens:
     aliases:
     - skip
     - next
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Done
     center:
@@ -5669,7 +5669,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 完成
+    - Done
     - finish
     - confirm
     semantic_type: button
@@ -5680,7 +5680,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 音乐库
+    - [CH]
     - collection
     - my music
     semantic_type: tab
@@ -5691,7 +5691,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌手
+    - [CH]
     - performers
     - bands
     semantic_type: menu_item
@@ -5702,7 +5702,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 专辑
+    - [CH]
     - records
     - CDs
     semantic_type: menu_item
@@ -5713,7 +5713,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌曲
+    - [CH]
     - tracks
     - music
     semantic_type: menu_item
@@ -5724,7 +5724,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 流派
+    - [CH]
     - categories
     - styles
     semantic_type: menu_item
@@ -5735,7 +5735,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 快进
+    - [CH]
     - seek
     - advance
     semantic_type: button
@@ -5747,7 +5747,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -5758,7 +5758,7 @@ screens:
     fixed: true
     aliases:
     - browse
-    - 网格
+    - [CH]
     - categories
     semantic_type: tab
   - text: radio
@@ -5768,7 +5768,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 广播
+    - [CH]
     - live
     - stations
     semantic_type: tab
@@ -5781,7 +5781,7 @@ screens:
     aliases:
     - songs
     - playlist
-    - 音乐库
+    - [CH]
     semantic_type: tab
   description: Music app settings and navigation menu with playback controls, library
     categories, and navigation options.
@@ -5799,7 +5799,7 @@ screens:
     - music library
     - songs
     - collection
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Filter
     center:
@@ -5809,7 +5809,7 @@ screens:
     fixed: true
     aliases:
     - sort
-    - 筛选
+    - [CH]
     - refine
     semantic_type: button
   - text: Pause
@@ -5819,7 +5819,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 暂停
+    - Pause
     - stop
     - hold
     semantic_type: button
@@ -5831,7 +5831,7 @@ screens:
     fixed: true
     aliases:
     - skip
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: Artists
@@ -5841,7 +5841,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌手
+    - [CH]
     - performers
     - bands
     semantic_type: tab
@@ -5853,7 +5853,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: Artist
@@ -5863,7 +5863,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌手
+    - [CH]
     - performer
     - band
     semantic_type: label
@@ -5875,7 +5875,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -5888,7 +5888,7 @@ screens:
     - grid
     - albums
     - browse
-    - 网格
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -5897,7 +5897,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 广播
+    - [CH]
     - stations
     - live
     semantic_type: tab
@@ -5911,7 +5911,7 @@ screens:
     - songs
     - tracks
     - playlist
-    - 音乐
+    - [CH]
     semantic_type: tab
   description: Library screen showing a grid of artists with playback controls and
     filter options.
@@ -5929,7 +5929,7 @@ screens:
     - music library
     - songs
     - collection
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Filter
     center:
@@ -5939,7 +5939,7 @@ screens:
     fixed: true
     aliases:
     - sort
-    - 筛选
+    - [CH]
     - refine
     semantic_type: button
   - text: More
@@ -5951,7 +5951,7 @@ screens:
     aliases:
     - options
     - menu
-    - 更多
+    - [CH]
     - overflow
     semantic_type: button
   - text: Play
@@ -5962,7 +5962,7 @@ screens:
     fixed: false
     aliases:
     - start
-    - 播放
+    - [CH]
     - resume
     semantic_type: button
   - text: Shuffle
@@ -5973,7 +5973,7 @@ screens:
     fixed: false
     aliases:
     - random
-    - 随机播放
+    - [CH]
     - mix
     semantic_type: toggle
   - text: Pause
@@ -5984,7 +5984,7 @@ screens:
     fixed: true
     aliases:
     - stop
-    - 暂停
+    - Pause
     - hold
     semantic_type: button
   - text: Next track
@@ -5995,7 +5995,7 @@ screens:
     fixed: false
     aliases:
     - skip
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: home.fill
@@ -6006,7 +6006,7 @@ screens:
     fixed: false
     aliases:
     - home
-    - 主页
+    - Home
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -6018,7 +6018,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     - genres
     semantic_type: tab
   - text: radio
@@ -6029,7 +6029,7 @@ screens:
     fixed: false
     aliases:
     - broadcast
-    - 电台
+    - [CH]
     - live
     semantic_type: tab
   - text: '[App]'
@@ -6041,7 +6041,7 @@ screens:
     aliases:
     - songs
     - tracks
-    - 歌曲
+    - [CH]
     - playlist
     semantic_type: tab
   description: Music library screen with playback controls and options to filter,
@@ -6070,7 +6070,7 @@ screens:
     fixed: true
     aliases:
     - mandarin pop
-    - 华语流行
+    - [CH]
     - c-pop
     semantic_type: menu_item
   - text: Other
@@ -6092,7 +6092,7 @@ screens:
     fixed: true
     aliases:
     - popular
-    - 流行音乐
+    - [CH]
     semantic_type: menu_item
   - text: Rock
     center:
@@ -6102,7 +6102,7 @@ screens:
     fixed: true
     aliases:
     - rock music
-    - 摇滚
+    - [CH]
     semantic_type: menu_item
   - text: Pause
     center:
@@ -6111,7 +6111,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 暂停
+    - Pause
     - stop playback
     - hold
     semantic_type: button
@@ -6124,7 +6124,7 @@ screens:
     aliases:
     - skip
     - next song
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Genres
     center:
@@ -6135,7 +6135,7 @@ screens:
     aliases:
     - categories
     - music types
-    - 流派
+    - [CH]
     semantic_type: menu_item
   - text: Forward
     center:
@@ -6145,7 +6145,7 @@ screens:
     fixed: true
     aliases:
     - fast forward
-    - 快进
+    - [CH]
     - skip ahead
     semantic_type: button
   - text: home.fill
@@ -6156,7 +6156,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - main screen
     semantic_type: tab
   - text: grid 2x2
@@ -6177,7 +6177,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 广播
+    - [CH]
     - live radio
     - stations
     semantic_type: tab
@@ -6207,7 +6207,7 @@ screens:
     aliases:
     - music library
     - collection
-    - 资料库
+    - [CH]
     semantic_type: tab
   - text: Pause
     center:
@@ -6216,7 +6216,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 暂停
+    - Pause
     - pause playback
     - hold
     semantic_type: button
@@ -6229,7 +6229,7 @@ screens:
     aliases:
     - skip
     - next song
-    - 下一首
+    - [CH]
     semantic_type: button
   - text: Artists
     center:
@@ -6238,7 +6238,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌手
+    - [CH]
     - performers
     - artist list
     semantic_type: menu_item
@@ -6249,7 +6249,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 专辑
+    - [CH]
     - records
     - album list
     semantic_type: menu_item
@@ -6260,7 +6260,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 歌曲
+    - [CH]
     - tracks
     - song list
     semantic_type: menu_item
@@ -6271,7 +6271,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 流派
+    - [CH]
     - categories
     - music genres
     semantic_type: menu_item
@@ -6282,7 +6282,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 快进
+    - [CH]
     - seek forward
     - skip ahead
     semantic_type: button
@@ -6294,7 +6294,7 @@ screens:
     fixed: true
     aliases:
     - home
-    - 主页
+    - Home
     - home tab
     semantic_type: tab
   - text: grid 2x2
@@ -6306,7 +6306,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: radio
     center:
@@ -6315,7 +6315,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 广播
+    - [CH]
     - live radio
     - stations
     semantic_type: tab
@@ -6327,7 +6327,7 @@ screens:
     fixed: true
     aliases:
     - now playing
-    - 正在播放
+    - In progress[CH]
     - player
     semantic_type: tab
   description: Music library screen with playback controls and browsing options for
@@ -6346,7 +6346,7 @@ screens:
     - account
     - profile
     - user
-    - 我的账户
+    - MyAccount
     semantic_type: menu_item
   - text: Pause
     center:
@@ -6355,7 +6355,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 暂停
+    - Pause
     - stop
     - hold
     semantic_type: button
@@ -6368,7 +6368,7 @@ screens:
     aliases:
     - next
     - skip
-    - 下一首
+    - [CH]
     - forward
     semantic_type: button
   - text: Home
@@ -6378,9 +6378,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 主页
+    - Home
     - main
-    - 首页
+    - Home
     semantic_type: tab
   - text: Apple Music
     center:
@@ -6390,7 +6390,7 @@ screens:
     fixed: true
     aliases:
     - music service
-    - 苹果音乐
+    - [CH]
     - streaming
     semantic_type: menu_item
   - text: Made for You
@@ -6401,7 +6401,7 @@ screens:
     fixed: true
     aliases:
     - personalized
-    - 为你推荐
+    - [CH]
     - recommendations
     - curated
     semantic_type: menu_item
@@ -6413,7 +6413,7 @@ screens:
     fixed: true
     aliases:
     - home icon
-    - 主页图标
+    - Home[CH]
     - house
     semantic_type: tab
   - text: grid 2x2
@@ -6425,7 +6425,7 @@ screens:
     aliases:
     - browse
     - categories
-    - 浏览
+    - [CH]
     - grid icon
     semantic_type: tab
   - text: radio
@@ -6435,7 +6435,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 广播
+    - [CH]
     - live radio
     - stations
     semantic_type: tab
@@ -6447,7 +6447,7 @@ screens:
     fixed: true
     aliases:
     - library icon
-    - 资料库图标
+    - [CH]
     - songs icon
     semantic_type: tab
   description: Music app home screen with playback controls and navigation to account,

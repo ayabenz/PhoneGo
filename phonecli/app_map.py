@@ -21,7 +21,7 @@ class ScreenElement:
     leads_to: Optional[str] = None
     found_at_scroll: int = 0
     fixed: bool = False
-    aliases: list[str] = field(default_factory=list)  # e.g. ["WiFi", "wireless", "无线"]
+    aliases: list[str] = field(default_factory=list)  # e.g. ["WiFi", "wireless", "None线"]
     semantic_type: str = ""  # "toggle", "button", "network", "input", "tab", "label", "link"
 
 
@@ -248,7 +248,7 @@ class AppMap:
     def format_ops_catalog(self, ops: dict[str, Operation]) -> str:
         """Format operations catalog for LLM consumption.
 
-        Includes aliases so the LLM can match "打开无线" → op_wifi_on
+        Includes aliases so the LLM can match "OpenNone线" → op_wifi_on
         even when the op_id doesn't contain the exact term.
         """
         lines = []

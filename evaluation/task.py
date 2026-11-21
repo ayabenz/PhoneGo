@@ -90,7 +90,7 @@ class Evaluation_Task(Generic[T_INPUT, T_OUTPUT, T_TARGET]):
                 self.length_gt = json.load(f)
 
     def evaluate(self, max_workers: int = 4) -> Dict[str, Any]:
-        # 使用 ThreadPoolExecutor 来控制并发任务数
+        # [CH] ThreadPoolExecutor [CH]
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             future_to_task = {
                 executor.submit(self._evaluate_single_task, task): task for task in self.task_list
@@ -99,7 +99,7 @@ class Evaluation_Task(Generic[T_INPUT, T_OUTPUT, T_TARGET]):
             for future in as_completed(future_to_task):
                 task = future_to_task[future]
                 try:
-                    future.result()  # 获取每个并发任务的结果，如果有异常会在此处抛出
+                    future.result()  # [CH]，[CH]Yes[CH]
                 except Exception as e:
                     print(f"Error evaluating task {task.get('task_id')}: {e}")
 

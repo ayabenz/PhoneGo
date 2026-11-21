@@ -8,7 +8,7 @@ from phoneagent.apps import catalog, mapped_packages, verdict
 def test_a_standard_launcher_activity_can_be_crawled():
     entry = verdict("com.android.settings", 0)
     assert entry["state"] == "crawlable"
-    assert "可以爬" in entry["reason"]
+    assert "[CH]" in entry["reason"]
 
 
 def test_single_top_can_be_crawled():
@@ -32,7 +32,7 @@ def test_an_app_that_already_has_a_map_says_so():
 
 def test_mapped_packages_reads_the_maps_on_disk(tmp_path):
     (tmp_path / "settings.yaml").write_text(
-        "app: 设置\npackage: com.android.settings\nscreens: []\n", encoding="utf-8")
+        "app: Settings\npackage: com.android.settings\nscreens: []\n", encoding="utf-8")
     (tmp_path / "notes.yaml").write_text("package: 'com.miui.notes'\n", encoding="utf-8")
     assert mapped_packages(str(tmp_path)) == {"com.android.settings", "com.miui.notes"}
 
@@ -75,8 +75,8 @@ def test_the_catalog_marks_a_remembered_refusal(tmp_path, monkeypatch):
     path = str(tmp_path / "refused-apps.txt")
     apps.record_refusal(path, "com.android.browser")
     monkeypatch.setattr(apps, "installed_apps", lambda: [
-        {"package": "com.android.browser", "label": "浏览器", "launch_mode": 0},
-        {"package": "com.android.settings", "label": "设置", "launch_mode": 0},
+        {"package": "com.android.browser", "label": "[CH]", "launch_mode": 0},
+        {"package": "com.android.settings", "label": "Settings", "launch_mode": 0},
     ])
     catalog = apps.catalog(str(tmp_path), path)
     states = {entry["package"]: entry["state"] for entry in catalog}
@@ -88,14 +88,14 @@ def test_known_apps_maps_a_name_to_its_package(monkeypatch):
     import phoneagent.apps as apps
 
     monkeypatch.setattr(apps, "installed_apps", lambda: [
-        {"package": "com.android.calendar", "label": "日历"},
-        {"package": "com.android.settings", "label": "设置"},
-        {"package": "com.miui.notes", "label": "笔记"},
+        {"package": "com.android.calendar", "label": "[CH]"},
+        {"package": "com.android.settings", "label": "Settings"},
+        {"package": "com.miui.notes", "label": "[CH]"},
     ])
     assert apps.known_apps() == {
-        "日历": "com.android.calendar",
-        "设置": "com.android.settings",
-        "笔记": "com.miui.notes",
+        "[CH]": "com.android.calendar",
+        "Settings": "com.android.settings",
+        "[CH]": "com.miui.notes",
     }
 
 
@@ -105,18 +105,18 @@ def test_known_apps_falls_back_to_every_installed_app(monkeypatch):
 
     monkeypatch.setattr(apps, "installed_apps", lambda: [])
     monkeypatch.setattr(apps, "all_app_labels",
-                        lambda: {"日历": "com.android.calendar"})
-    assert apps.known_apps() == {"日历": "com.android.calendar"}
+                        lambda: {"[CH]": "com.android.calendar"})
+    assert apps.known_apps() == {"[CH]": "com.android.calendar"}
 
 
 def test_known_apps_prefers_the_launcher_label(monkeypatch):
     import phoneagent.apps as apps
 
     monkeypatch.setattr(apps, "installed_apps",
-                        lambda: [{"package": "com.android.calendar", "label": "日历"}])
+                        lambda: [{"package": "com.android.calendar", "label": "[CH]"}])
     monkeypatch.setattr(apps, "all_app_labels",
-                        lambda: {"日历": "com.xiaomi.calendar.other"})
-    assert apps.known_apps()["日历"] == "com.android.calendar"
+                        lambda: {"[CH]": "com.xiaomi.calendar.other"})
+    assert apps.known_apps()["[CH]"] == "com.android.calendar"
 
 
 def test_known_apps_skips_entries_without_a_label(monkeypatch):
@@ -124,9 +124,9 @@ def test_known_apps_skips_entries_without_a_label(monkeypatch):
 
     monkeypatch.setattr(apps, "installed_apps", lambda: [
         {"package": "com.example.nameless", "label": ""},
-        {"package": "com.android.settings", "label": "设置"},
+        {"package": "com.android.settings", "label": "Settings"},
     ])
-    assert apps.known_apps() == {"设置": "com.android.settings"}
+    assert apps.known_apps() == {"Settings": "com.android.settings"}
 
 
 def test_a_successful_crawl_forgives_an_earlier_refusal(tmp_path):
@@ -154,10 +154,10 @@ def test_a_crawled_map_makes_an_app_look_mapped(tmp_path):
 
     crawls = tmp_path / "crawls"
     crawls.mkdir()
-    (crawls / "淘宝.yaml").write_text(
-        "app_name: 淘宝\npackage: com.taobao.taobao\nscreens: []\n", encoding="utf-8"
+    (crawls / "[CH].yaml").write_text(
+        "app_name: [CH]\npackage: com.taobao.taobao\nscreens: []\n", encoding="utf-8"
     )
-    (crawls / "淘宝.public.yaml").write_text("package: com.example.share\n", encoding="utf-8")
+    (crawls / "[CH].public.yaml").write_text("package: com.example.share\n", encoding="utf-8")
 
     assert mapped_packages(str(crawls)) == {"com.taobao.taobao"}
     # the parent directory has nothing in it, which is what used to be passed

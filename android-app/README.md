@@ -1,4 +1,4 @@
-English · [中文](README.zh.md)
+English · [Chinese](README.zh.md)
 
 # android-app
 
@@ -58,21 +58,21 @@ and no Gradle at all. It cannot package Chaquopy, so it only suits the UI shell.
   accessibility service has to be enabled first), and talks to its own adbd over
   loopback — no computer involved.
 - **Accessibility service** for PhoneGo, enabled in system settings.
-- **A model API key** typed into 设置; it is encrypted with a key in the Android
+- **A model API key** typed into Settings; it is encrypted with a key in the Android
   Keystore and never leaves the device.
 
 ## Settings worth knowing
 
 | Item | Effect |
 |---|---|
-| 自动 / 看图 | With maps: route → replay. Without: every step decided from a screenshot |
-| 设置 → 导出备份 | Writes pairing identity, maps, sessions and model settings to `Download/PhoneGo-backup-*.zip` (the key is in the clear there; it cannot be moved any other way) |
-| 设置 → 导入备份 | Restores that zip and restarts the agent |
-| 长按「设置」 | System pages: accessibility, battery exemption, the two backup entries |
+| Auto / [CH] | With maps: route → replay. Without: every step decided from a screenshot |
+| Settings → ExportBackup | Writes pairing identity, maps, sessions and model settings to `Download/PhoneGo-backup-*.zip` (the key is in the clear there; it cannot be moved any other way) |
+| Settings → ImportBackup | Restores that zip and restarts the agent |
+| [CH]「Settings」 | System pages: accessibility, battery exemption, the two backup entries |
 
 ## Installing on HyperOS / MIUI
 
 Developer options → **Install via USB** has to be on, otherwise the install fails
 with `INSTALL_FAILED_USER_RESTRICTED`. Even then the phone shows a
 `com.miui.securitycenter` dialog asking to continue; installing only completes
-after「继续安装」is tapped, and the dialog cancels itself after a few seconds.
+after「ContinueInstall」is tapped, and the dialog cancels itself after a few seconds.

@@ -9,7 +9,7 @@ could not be shared or committed.
     python3 -m phoneagent.redact --map m.yaml --term yangqin --term "REDMI K90"
 
 Redaction is conservative: only the matched substring is replaced, so
-"手机号：181****8488" becomes "手机号：<phone>" and the row still reads like a
+"Phone号：181****8488" becomes "Phone号：<phone>" and the row still reads like a
 row. Because the label no longer matches what the device shows, the element
 is flagged ``redacted: true`` and the replay layer stops using it as a text
 anchor (it falls back to the recorded coordinates).
@@ -38,7 +38,7 @@ def auto_terms(device=None) -> list[str]:
     """Device-derived strings that are almost always personal.
 
     ``settings get global device_name`` on HyperOS returns something like
-    "alice的REDMI K90 Ultra"; the part before 的 is the account name, which
+    "aliceREDMI K90 Ultra"; the part before  is the account name, which
     also shows up on its own as a settings row.
     """
     terms: list[str] = []
@@ -48,8 +48,8 @@ def auto_terms(device=None) -> list[str]:
         name = device.shell("settings get global device_name").strip()
         if name and name != "null":
             terms.append(name)
-            if "的" in name:
-                prefix = name.split("的", 1)[0].strip()
+            if "" in name:
+                prefix = name.split("", 1)[0].strip()
                 if len(prefix) >= 3:
                     terms.append(prefix)
     except Exception:
@@ -64,13 +64,13 @@ def auto_terms(device=None) -> list[str]:
 
 
 def name_candidates(texts: Iterable[str], terms: Iterable[str]) -> list[str]:
-    """Extract "<name>的<device>" prefixes, which are usually account names."""
+    """Extract "<name><device>" prefixes, which are usually account names."""
     terms = [t for t in terms if t]
     found: list[str] = []
     for text in texts:
-        if "的" not in text:
+        if "" not in text:
             continue
-        head, tail = text.split("的", 1)
+        head, tail = text.split("", 1)
         head = head.strip()
         if 2 <= len(head) <= 20 and any(term in tail for term in terms):
             if head not in found:
@@ -80,7 +80,7 @@ def name_candidates(texts: Iterable[str], terms: Iterable[str]) -> list[str]:
 
 def _redact_text(text: str, terms: Iterable[str]) -> tuple[str, bool]:
     original = text
-    # A label that mentions the device name at all ("alice的REDMI K90 Ultra") is
+    # A label that mentions the device name at all ("aliceREDMI K90 Ultra") is
     # personal in its entirety: replacing only the model would leave the name.
     if any(term and term in text for term in terms):
         return PERSONAL_TOKEN, True

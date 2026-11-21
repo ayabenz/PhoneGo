@@ -28,7 +28,7 @@
       <a href="../../Communication.md"><img src="https://img.shields.io/badge/💬Feishu-Group-07c160?style=for-the-badge&logoColor=white&labelColor=1a1a2e"></a>
       <a href="../../Communication.md"><img src="https://img.shields.io/badge/WeChat-Group-07c160?style=for-the-badge&logo=wechat&logoColor=white&labelColor=1a1a2e"></a>
       <a href=""><img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-d3d3d3?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a2e"/></a>
-      <a href="README-phonecli-zh.md"><img src="https://img.shields.io/badge/📖中文文档-e74c3c?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1a1a2e"/></a>
+      <a href="README-phonecli-zh.md"><img src="https://img.shields.io/badge/📖ChineseDocumentation-e74c3c?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1a1a2e"/></a>
       <a href='https://arxiv.org/abs/2609.35671'><img src='https://img.shields.io/badge/📄arXiv-PhoneCLI_2609.35671-ff6b6b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a2e' alt='PhoneCLI paper - arXiv:2609.35671'></a>
       <a href='https://arxiv.org/abs/2510.22009'><img src='https://img.shields.io/badge/📄arXiv-OpenPhone_2510.22009-8b5cf6?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a2e' alt='OpenPhone paper - arXiv:2510.22009 (ACL 2026 Findings)'></a>
     </p>
@@ -201,8 +201,8 @@ python phonecli/run.py --task "Turn on airplane mode"
 python phonecli/run.py --interactive
 ```
 
-The package ships with **pre-built maps for 8 apps** (微博, foodpanda,
-Calendar, 京东, Dianping, 小红书, Music, Settings). Each covers up to 50 screens
+The package ships with **pre-built maps for 8 apps** ([CH], foodpanda,
+Calendar, [CH], Dianping, [CH], Music, Settings). Each covers up to 50 screens
 — 50 is the crawler's default cap — with 400–1,300 elements per app:
 **400 screens and 6,366 elements** in total.
 

@@ -17,7 +17,7 @@ screens:
     aliases:
     - search
     - find contacts
-    - 搜索联系人
+    - SearchContact人
     semantic_type: input
   - text: Open navigation drawer
     center:
@@ -29,7 +29,7 @@ screens:
     aliases:
     - menu
     - hamburger menu
-    - 导航菜单
+    - [CH]Menu
     semantic_type: button
   - text: More options
     center:
@@ -41,7 +41,7 @@ screens:
     aliases:
     - options
     - menu
-    - 更多选项
+    - [CH]
     semantic_type: button
   - text: Signed in as Device&#10;Account and settings.
     center:
@@ -53,7 +53,7 @@ screens:
     aliases:
     - account
     - signed in
-    - 账户设置
+    - AccountSettings
     semantic_type: label
   - text: Phone contacts
     center:
@@ -65,7 +65,7 @@ screens:
     aliases:
     - phone
     - device contacts
-    - 手机联系人
+    - PhoneContact人
     semantic_type: menu_item
   - text: Email contacts
     center:
@@ -77,7 +77,7 @@ screens:
     aliases:
     - email
     - gmail contacts
-    - 邮箱联系人
+    - EmailContact人
     semantic_type: menu_item
   - text: Company
     center:
@@ -88,8 +88,8 @@ screens:
     leads_to: screen_7
     aliases:
     - organization
-    - 公司
-    - 企业
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: A
     center:
@@ -123,7 +123,7 @@ screens:
     aliases:
     - add contact
     - new contact
-    - 新建联系人
+    - [CH]Contact人
     semantic_type: button
   - text: Contacts
     center:
@@ -134,7 +134,7 @@ screens:
     leads_to: screen_0
     aliases:
     - contacts tab
-    - 联系人
+    - Contact人
     semantic_type: tab
   - text: Highlights
     center:
@@ -145,7 +145,7 @@ screens:
     leads_to: screen_11
     aliases:
     - highlights tab
-    - 精选
+    - [CH]
     semantic_type: tab
   - text: Fix &amp; manage
     center:
@@ -157,7 +157,7 @@ screens:
     aliases:
     - manage
     - fix and manage
-    - 整理和管理
+    - [CH]Manage
     semantic_type: tab
   scrollable: true
   scroll_direction: vertical
@@ -171,7 +171,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 返回
+    - Back
     - go back
     - back button
     semantic_type: button
@@ -183,7 +183,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 搜索联系人
+    - SearchContact人
     - find contacts
     - search bar
     semantic_type: input
@@ -195,7 +195,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 语音搜索
+    - [CH]Search
     - voice input
     - microphone
     semantic_type: button
@@ -207,10 +207,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 打开导航抽屉
+    - Open[CH]
     - menu
     - hamburger menu
-    - 侧边栏
+    - [CH]
     semantic_type: button
   - text: More options
     center:
@@ -220,10 +220,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - three dots
-    - 更多
+    - [CH]
     semantic_type: button
   - text: Signed in as Device&#10;Account and settings.
     center:
@@ -233,9 +233,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 登录身份
+    - Login[CH]
     - account info
-    - 账户设置
+    - AccountSettings
     semantic_type: menu_item
   - text: Phone contacts
     center:
@@ -245,7 +245,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 手机联系人
+    - PhoneContact人
     - device contacts
     - local contacts
     semantic_type: menu_item
@@ -257,9 +257,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 电子邮件联系人
+    - [CH]Contact人
     - gmail contacts
-    - 邮箱联系人
+    - EmailContact人
     semantic_type: menu_item
   - text: Company
     center:
@@ -269,9 +269,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 公司
+    - [CH]
     - organization
-    - 企业
+    - [CH]
     semantic_type: label
   - text: A
     center:
@@ -281,7 +281,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 字母A
+    - [CH]A
     - index A
     - A section
     semantic_type: label
@@ -293,7 +293,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 字母L
+    - [CH]L
     - index L
     - L section
     semantic_type: label
@@ -311,7 +311,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 搜索联系人
+    - SearchContact人
     - search
     - find contacts
     - search bar
@@ -326,8 +326,8 @@ screens:
     aliases:
     - menu
     - hamburger menu
-    - 导航菜单
-    - 侧边栏
+    - [CH]Menu
+    - [CH]
     semantic_type: button
   - text: More options
     center:
@@ -337,7 +337,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - three dots
     - menu
@@ -350,7 +350,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 账户信息
+    - AccountInfo
     - account info
     - signed in
     - account settings
@@ -363,7 +363,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 手机联系人
+    - PhoneContact人
     - phone
     - device contacts
     semantic_type: menu_item
@@ -375,7 +375,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 电子邮件联系人
+    - [CH]Contact人
     - email
     - gmail contacts
     semantic_type: menu_item
@@ -387,7 +387,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 公司
+    - [CH]
     - organization
     - employer
     semantic_type: label
@@ -401,7 +401,7 @@ screens:
     aliases:
     - letter A
     - A section
-    - 字母A
+    - [CH]A
     semantic_type: label
   - text: L
     center:
@@ -413,7 +413,7 @@ screens:
     aliases:
     - letter L
     - L section
-    - 字母L
+    - [CH]L
     semantic_type: label
   - text: Create contact
     center:
@@ -423,7 +423,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 新建联系人
+    - [CH]Contact人
     - add contact
     - new contact
     semantic_type: button
@@ -435,7 +435,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 联系人
+    - Contact人
     - contacts tab
     semantic_type: tab
   - text: Highlights
@@ -446,7 +446,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 精选
+    - [CH]
     - highlights tab
     - featured
     semantic_type: tab
@@ -458,7 +458,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 整理和管理
+    - [CH]Manage
     - fix and manage
     - manage
     semantic_type: tab
@@ -470,7 +470,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 所有账户
+    - 所YesAccount
     - all accounts
     - accounts
     semantic_type: menu_item
@@ -482,7 +482,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 标签
+    - Tab
     - labels
     - categories
     semantic_type: menu_item
@@ -494,7 +494,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 创建标签
+    - CreateTab
     - new label
     - add label
     semantic_type: button
@@ -514,7 +514,7 @@ screens:
     aliases:
     - Choose
     - Pick
-    - 选择
+    - Select
     semantic_type: button
   - text: Select all
     center:
@@ -524,7 +524,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_17
     aliases:
-    - 全选
+    - [CH]
     - Choose all
     - Select All Contacts
     semantic_type: button
@@ -542,7 +542,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - cancel
     - X
@@ -555,8 +555,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 设备
-    - 本地
+    - Device
+    - Local
     - phone
     - local
     semantic_type: menu_item
@@ -568,8 +568,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_18
     aliases:
-    - 添加其他帐号
-    - 添加帐号
+    - [CH]
+    - [CH]
     - add account
     semantic_type: menu_item
   - text: Manage accounts on this device
@@ -580,8 +580,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 管理此设备上的帐号
-    - 管理帐号
+    - Manage此Device[CH]
+    - Manage[CH]
     - account settings
     semantic_type: menu_item
   - text: Contacts app settings
@@ -592,8 +592,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 通讯录应用设置
-    - 应用设置
+    - [CH]AppSettings
+    - AppSettings
     - contacts settings
     semantic_type: setting
   - text: Help &amp; feedback
@@ -604,9 +604,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 帮助与反馈
-    - 帮助
-    - 反馈
+    - HelpandFeedback
+    - Help
+    - Feedback
     - help
     semantic_type: menu_item
   - text: Privacy Policy
@@ -617,8 +617,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 隐私权政策
-    - 隐私政策
+    - Privacy[CH]
+    - Privacy Policy
     - privacy
     semantic_type: link
   - text: Terms of Service
@@ -629,8 +629,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 服务条款
-    - 用户协议
+    - Service[CH]
+    - User Agreement
     - terms
     semantic_type: link
   description: Contacts app settings screen with options to manage accounts, access
@@ -649,7 +649,7 @@ screens:
     aliases:
     - search
     - find contacts
-    - 搜索联系人
+    - SearchContact人
     - search bar
     semantic_type: input
   - text: Open navigation drawer
@@ -662,7 +662,7 @@ screens:
     aliases:
     - menu
     - hamburger menu
-    - 导航菜单
+    - [CH]Menu
     - navigation menu
     semantic_type: button
   - text: More options
@@ -674,7 +674,7 @@ screens:
     leads_to: screen_22
     aliases:
     - options
-    - 更多选项
+    - [CH]
     - more
     - overflow menu
     semantic_type: button
@@ -688,7 +688,7 @@ screens:
     aliases:
     - account info
     - signed in
-    - 已登录
+    - 已Login
     - account settings
     semantic_type: label
   - text: Phone contacts
@@ -700,7 +700,7 @@ screens:
     leads_to: screen_13
     aliases:
     - phone
-    - 手机联系人
+    - PhoneContact人
     - device contacts
     semantic_type: menu_item
   - text: Email contacts
@@ -712,7 +712,7 @@ screens:
     leads_to: screen_23
     aliases:
     - email
-    - 邮箱联系人
+    - EmailContact人
     - gmail contacts
     semantic_type: menu_item
   - text: Company
@@ -724,7 +724,7 @@ screens:
     leads_to: screen_24
     aliases:
     - organization
-    - 公司
+    - [CH]
     - employer
     - workplace
     semantic_type: label
@@ -738,7 +738,7 @@ screens:
     aliases:
     - letter A
     - section A
-    - 字母A
+    - [CH]A
     semantic_type: label
   - text: ABC
     center:
@@ -749,7 +749,7 @@ screens:
     leads_to: screen_25
     aliases:
     - alphabet
-    - 字母表
+    - [CH]
     - quick scroll
     semantic_type: label
   - text: Create contact
@@ -762,8 +762,8 @@ screens:
     aliases:
     - add contact
     - new contact
-    - 创建联系人
-    - 新建联系人
+    - CreateContact人
+    - [CH]Contact人
     semantic_type: button
   - text: Contacts
     center:
@@ -773,7 +773,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_26
     aliases:
-    - 联系人
+    - Contact人
     - contacts list
     - address book
     semantic_type: tab
@@ -785,7 +785,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 精选
+    - [CH]
     - featured
     - suggestions
     semantic_type: tab
@@ -798,7 +798,7 @@ screens:
     leads_to: screen_12
     aliases:
     - manage
-    - 修复和管理
+    - [CH]Manage
     - fix and manage
     semantic_type: tab
   description: Main contacts screen displaying an alphabetical list of contacts, account
@@ -818,8 +818,8 @@ screens:
     aliases:
     - Search
     - Find
-    - 搜索
-    - 查找联系人
+    - Search
+    - [CH]Contact人
     semantic_type: input
   - text: Open navigation drawer
     center:
@@ -831,8 +831,8 @@ screens:
     aliases:
     - Menu
     - Hamburger
-    - 导航菜单
-    - 打开菜单
+    - [CH]Menu
+    - OpenMenu
     semantic_type: button
   - text: More options
     center:
@@ -844,8 +844,8 @@ screens:
     aliases:
     - More
     - Options
-    - 更多
-    - 菜单
+    - [CH]
+    - Menu
     semantic_type: button
   - text: Signed in as Device&#10;Account and settings.
     center:
@@ -857,8 +857,8 @@ screens:
     aliases:
     - Account
     - Settings
-    - 账号
-    - 设置
+    - Account
+    - Settings
     semantic_type: menu_item
   - text: Phone contacts
     center:
@@ -870,8 +870,8 @@ screens:
     aliases:
     - Device contacts
     - Local contacts
-    - 手机联系人
-    - 本地联系人
+    - PhoneContact人
+    - LocalContact人
     semantic_type: menu_item
   - text: Email contacts
     center:
@@ -883,8 +883,8 @@ screens:
     aliases:
     - Google contacts
     - Gmail contacts
-    - 邮箱联系人
-    - 云端联系人
+    - EmailContact人
+    - Cloud端Contact人
     semantic_type: menu_item
   - text: Company
     center:
@@ -896,8 +896,8 @@ screens:
     aliases:
     - Organization
     - Work
-    - 公司
-    - 单位
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Create contact
     center:
@@ -909,8 +909,8 @@ screens:
     aliases:
     - Add contact
     - New contact
-    - 新建联系人
-    - 添加联系人
+    - [CH]Contact人
+    - [CH]Contact人
     semantic_type: button
   - text: Contacts
     center:
@@ -922,8 +922,8 @@ screens:
     aliases:
     - Address book
     - People
-    - 联系人
-    - 通讯录
+    - Contact人
+    - [CH]
     semantic_type: tab
   - text: Highlights
     center:
@@ -935,8 +935,8 @@ screens:
     aliases:
     - Favorites
     - Starred
-    - 收藏
-    - 常用联系人
+    - [CH]
+    - [CH]Contact人
     semantic_type: tab
   - text: Fix &amp; manage
     center:
@@ -948,8 +948,8 @@ screens:
     aliases:
     - Manage
     - Tools
-    - 管理
-    - 修复和管理
+    - Manage
+    - [CH]Manage
     semantic_type: tab
   description: Main contacts screen displaying a searchable list of contacts with
     filtering options, a create contact button, and a bottom navigation bar for Contacts,
@@ -969,8 +969,8 @@ screens:
     - Organization
     - Employer
     - Corp
-    - 公司
-    - 企业
+    - [CH]
+    - [CH]
     semantic_type: label
   description: Screen displaying a list of companies or organizations associated with
     contacts in the address book.
@@ -987,7 +987,7 @@ screens:
     leads_to: screen_12
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     - Go back
     semantic_type: button
@@ -1000,8 +1000,8 @@ screens:
     leads_to: screen_12
     aliases:
     - Edit
-    - 编辑
-    - 修改联系人
+    - Edit
+    - [CH]Contact人
     - Modify
     semantic_type: button
   - text: Add to favorites
@@ -1013,8 +1013,8 @@ screens:
     leads_to: screen_12
     aliases:
     - Favorite
-    - 收藏
-    - 星标
+    - [CH]
+    - [CH]
     - Star
     semantic_type: button
   - text: More options
@@ -1026,7 +1026,7 @@ screens:
     leads_to: screen_4
     aliases:
     - More
-    - 更多
+    - [CH]
     - Menu
     - Overflow
     semantic_type: button
@@ -1039,8 +1039,8 @@ screens:
     leads_to: screen_27
     aliases:
     - Phone
-    - 拨打
-    - 呼叫
+    - [CH]
+    - [CH]
     - Dial
     semantic_type: button
   - text: Text
@@ -1052,8 +1052,8 @@ screens:
     leads_to: screen_27
     aliases:
     - Message
-    - 短信
-    - 发送信息
+    - [CH]
+    - [CH]Info
     - SMS
     semantic_type: button
   - text: Video
@@ -1065,8 +1065,8 @@ screens:
     leads_to: screen_27
     aliases:
     - Video call
-    - 视频
-    - 视频通话
+    - [CH]
+    - [CH]
     - Video chat
     semantic_type: button
   - text: Contact info
@@ -1078,7 +1078,7 @@ screens:
     leads_to: screen_27
     aliases:
     - Info
-    - 联系人信息
+    - Contact人Info
     - Details
     - Information
     semantic_type: label
@@ -1091,8 +1091,8 @@ screens:
     leads_to: screen_27
     aliases:
     - Add number
-    - 添加电话
-    - 新增号码
+    - [CH]
+    - [CH]
     - Add phone
     semantic_type: button
   - text: Add email
@@ -1104,8 +1104,8 @@ screens:
     leads_to: screen_27
     aliases:
     - Add email address
-    - 添加邮箱
-    - 新增邮件
+    - [CH]Email
+    - [CH]
     - Add mail
     semantic_type: button
   description: Contact details screen showing communication actions like call, text,
@@ -1236,7 +1236,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 取消
+    - Cancel
     - dismiss
     - abort
     semantic_type: button
@@ -1248,10 +1248,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 新建联系人
+    - [CH]Contact人
     - add contact
     - new contact
-    - 添加联系人
+    - [CH]Contact人
     semantic_type: button
   - text: Save
     center:
@@ -1261,7 +1261,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 保存
+    - Save
     - confirm
     - done
     semantic_type: button
@@ -1273,10 +1273,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - three dots
-    - 更多
+    - [CH]
     semantic_type: button
   - text: Save to Device
     center:
@@ -1286,9 +1286,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 保存到设备
+    - SavetoDevice
     - save locally
-    - 本地存储
+    - Local[CH]
     semantic_type: menu_item
   - text: Save to
     center:
@@ -1298,9 +1298,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 保存到
+    - Saveto
     - account
-    - 存储位置
+    - [CH]
     semantic_type: label
   - text: Device
     center:
@@ -1310,8 +1310,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 设备
-    - 本地
+    - Device
+    - Local
     - phone
     - local storage
     semantic_type: menu_item
@@ -1323,10 +1323,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 切换账户
+    - [CH]Account
     - change account
     - switch account
-    - 切换账号
+    - [CH]Account
     semantic_type: menu_item
   - text: Add contact photo
     center:
@@ -1336,10 +1336,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 添加联系人照片
+    - [CH]Contact[CH]
     - add avatar
     - set picture
-    - 添加头像
+    - [CH]Avatar
     semantic_type: button
   - text: Add picture
     center:
@@ -1349,10 +1349,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 添加图片
+    - [CH]
     - add photo
     - choose image
-    - 添加照片
+    - [CH]
     semantic_type: button
   - text: First name
     center:
@@ -1364,7 +1364,7 @@ screens:
     aliases:
     - 名
     - given name
-    - 名字
+    - [CH]
     - first_name
     semantic_type: input
   - text: Last name
@@ -1378,7 +1378,7 @@ screens:
     - 姓
     - surname
     - family name
-    - 姓氏
+    - [CH]
     semantic_type: input
   - text: Show more name fields
     center:
@@ -1388,10 +1388,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 显示更多名称字段
+    - [CH]
     - more name fields
-    - 展开更多
-    - 更多姓名
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Company
     center:
@@ -1401,10 +1401,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 公司
+    - [CH]
     - organization
     - employer
-    - 单位
+    - [CH]
     semantic_type: input
   - text: Phone
     center:
@@ -1414,10 +1414,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 电话
+    - [CH]
     - phone number
-    - 号码
-    - 联系方式
+    - [CH]
+    - Contact[CH]
     semantic_type: input
   - text: Mobile
     center:
@@ -1427,10 +1427,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 手机
+    - Phone
     - cell
     - mobile phone
-    - 手机号
+    - Phone号
     semantic_type: label
   - text: Show dropdown menu
     center:
@@ -1440,10 +1440,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 显示下拉菜单
+    - [CH]Menu
     - dropdown
     - expand
-    - 展开菜单
+    - [CH]Menu
     semantic_type: button
   - text: Email
     center:
@@ -1453,10 +1453,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 电子邮件
+    - [CH]
     - email address
-    - 邮箱
-    - 邮件
+    - Email
+    - [CH]
     semantic_type: input
   - text: Home
     center:
@@ -1466,9 +1466,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 家庭
+    - [CH]
     - home phone
-    - 住宅
+    - [CH]
     - 家
     semantic_type: label
   description: Screen for creating a new contact, allowing users to input personal
@@ -1485,10 +1485,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 搜索联系人
+    - SearchContact人
     - search
     - find contacts
-    - 查找
+    - [CH]
     semantic_type: input
   - text: Search
     center:
@@ -1498,9 +1498,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 搜索
+    - Search
     - find
-    - 查找
+    - [CH]
     - search contacts
     semantic_type: input
   - text: Signed in as Device&#10;Account and settings.
@@ -1511,8 +1511,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 登录为
-    - 账户和设置
+    - Loginfor
+    - Account和Settings
     - account settings
     - signed in
     semantic_type: menu_item
@@ -1524,8 +1524,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 收藏
-    - 星标联系人
+    - [CH]
+    - [CH]Contact人
     - starred
     - favorite contacts
     semantic_type: tab
@@ -1537,8 +1537,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 添加
-    - 新建
+    - [CH]
+    - [CH]
     - create
     - new contact
     semantic_type: button
@@ -1550,7 +1550,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 快速访问收藏的联系人
+    - [CH]Access[CH]Contact人
     - favorite people
     - quick access
     semantic_type: label
@@ -1562,7 +1562,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 添加联系人到收藏
+    - [CH]Contact[CH]
     - empty state message
     - add to favorites prompt
     semantic_type: label
@@ -1574,7 +1574,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 添加收藏
+    - [CH]
     - add to favorites
     - star contacts
     semantic_type: button
@@ -1586,8 +1586,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 最近
-    - 最近通话
+    - [CH]
+    - [CH]
     - recent calls
     - history
     semantic_type: tab
@@ -1598,10 +1598,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - menu
-    - 更多
+    - [CH]
     semantic_type: button
   - text: Viewed recently
     center:
@@ -1611,7 +1611,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 最近查看
+    - [CH]View
     - recently viewed
     - recent contacts
     semantic_type: label
@@ -1623,7 +1623,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 最近添加
+    - [CH]
     - recently added
     - new contacts
     semantic_type: label
@@ -1635,8 +1635,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 联系人
-    - 通讯录
+    - Contact人
+    - [CH]
     - all contacts
     - contact list
     semantic_type: tab
@@ -1648,8 +1648,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 精彩时刻
-    - 亮点
+    - [CH]
+    - [CH]
     - updates
     - contact updates
     semantic_type: label
@@ -1661,7 +1661,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 整理与修复
+    - [CH]
     - manage contacts
     - fix contacts
     - merge and clean
@@ -1759,7 +1759,7 @@ screens:
     - search
     - find contacts
     - search bar
-    - 搜索联系人
+    - SearchContact人
     semantic_type: input
   - text: Open navigation drawer
     center:
@@ -1772,7 +1772,7 @@ screens:
     - menu
     - hamburger menu
     - navigation menu
-    - 打开导航菜单
+    - Open[CH]Menu
     semantic_type: button
   - text: More options
     center:
@@ -1785,7 +1785,7 @@ screens:
     - more
     - options
     - three dots
-    - 更多选项
+    - [CH]
     semantic_type: button
   - text: Signed in as Device&#10;Account and settings.
     center:
@@ -1804,8 +1804,8 @@ screens:
     aliases:
     - phone
     - device contacts
-    - 手机联系人
-    - 本地联系人
+    - PhoneContact人
+    - LocalContact人
     semantic_type: menu_item
   - text: Email contacts
     center:
@@ -1817,8 +1817,8 @@ screens:
     aliases:
     - email
     - gmail contacts
-    - 电子邮件联系人
-    - 邮箱联系人
+    - [CH]Contact人
+    - EmailContact人
     semantic_type: menu_item
   - text: Company
     center:
@@ -1830,8 +1830,8 @@ screens:
     aliases:
     - organization
     - workplace
-    - 公司
-    - 单位
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: A
     center:
@@ -1843,7 +1843,7 @@ screens:
     aliases:
     - letter A
     - section A
-    - 字母A
+    - [CH]A
     semantic_type: label
   - text: L
     center:
@@ -1855,7 +1855,7 @@ screens:
     aliases:
     - letter L
     - section L
-    - 字母L
+    - [CH]L
     semantic_type: label
   - text: Create contact
     center:
@@ -1867,8 +1867,8 @@ screens:
     aliases:
     - add contact
     - new contact
-    - 创建联系人
-    - 新建联系人
+    - CreateContact人
+    - [CH]Contact人
     semantic_type: button
   - text: Contacts
     center:
@@ -1879,8 +1879,8 @@ screens:
     leads_to: screen_13
     aliases:
     - contacts tab
-    - 联系人
-    - 通讯录
+    - Contact人
+    - [CH]
     semantic_type: tab
   - text: Highlights
     center:
@@ -1891,8 +1891,8 @@ screens:
     leads_to: screen_11
     aliases:
     - highlights tab
-    - 精选
-    - 亮点
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Fix &amp; manage
     center:
@@ -1917,7 +1917,7 @@ screens:
     aliases:
     - Search
     - Find contacts
-    - 搜索联系人
+    - SearchContact人
     - Search bar
     semantic_type: input
   - text: Open navigation drawer
@@ -1930,7 +1930,7 @@ screens:
     aliases:
     - Menu
     - Hamburger menu
-    - 打开导航抽屉
+    - Open[CH]
     - Menu button
     semantic_type: button
   - text: More options
@@ -1943,7 +1943,7 @@ screens:
     aliases:
     - More
     - Overflow menu
-    - 更多选项
+    - [CH]
     - Three dots
     semantic_type: button
   - text: Signed in as Device&#10;Account and settings.
@@ -1962,7 +1962,7 @@ screens:
     leads_to: screen_19
     aliases:
     - Device contacts
-    - 本地联系人
+    - LocalContact人
     - SIM contacts
     - Phone
     semantic_type: menu_item
@@ -1975,7 +1975,7 @@ screens:
     leads_to: screen_32
     aliases:
     - Google contacts
-    - 邮箱联系人
+    - EmailContact人
     - Cloud contacts
     semantic_type: menu_item
   - text: Company
@@ -1987,7 +1987,7 @@ screens:
     leads_to: screen_32
     aliases:
     - Organization
-    - 公司
+    - [CH]
     - Employer
     - Work
     semantic_type: label
@@ -2001,7 +2001,7 @@ screens:
     aliases:
     - Letter A
     - A section
-    - 字母A
+    - [CH]A
     - Index A
     semantic_type: label
   - text: L
@@ -2014,7 +2014,7 @@ screens:
     aliases:
     - Letter L
     - L section
-    - 字母L
+    - [CH]L
     - Index L
     semantic_type: label
   - text: Create contact
@@ -2026,7 +2026,7 @@ screens:
     leads_to: screen_32
     aliases:
     - Add contact
-    - 新建联系人
+    - [CH]Contact人
     - New contact
     - Add
     semantic_type: button
@@ -2039,7 +2039,7 @@ screens:
     leads_to: screen_32
     aliases:
     - Address book
-    - 联系人
+    - Contact人
     - People
     - Directory
     semantic_type: tab
@@ -2053,7 +2053,7 @@ screens:
     aliases:
     - Recent
     - Updates
-    - 亮点
+    - [CH]
     - Recent updates
     semantic_type: tab
   - text: Fix &amp; manage
@@ -2072,7 +2072,7 @@ screens:
     leads_to: screen_32
     aliases:
     - All contacts
-    - 所有帐户
+    - 所Yes[CH]
     - All
     - All accounts filter
     semantic_type: menu_item
@@ -2085,7 +2085,7 @@ screens:
     leads_to: screen_32
     aliases:
     - Phone
-    - 设备
+    - Device
     - Local
     - Device account
     semantic_type: menu_item
@@ -2098,7 +2098,7 @@ screens:
     leads_to: screen_32
     aliases:
     - Groups
-    - 标签
+    - Tab
     - Categories
     - Tags
     semantic_type: menu_item
@@ -2112,7 +2112,7 @@ screens:
     aliases:
     - New label
     - Create group
-    - 创建标签
+    - CreateTab
     - Add label
     semantic_type: button
   description: Main contacts list screen with search, filter tabs, alphabetical contact
@@ -2131,8 +2131,8 @@ screens:
     aliases:
     - New label
     - Add label
-    - 新建标签
-    - 创建标签
+    - [CH]Tab
+    - CreateTab
     semantic_type: button
   - text: Label name
     center:
@@ -2143,8 +2143,8 @@ screens:
     leads_to: screen_32
     aliases:
     - Name
-    - 标签名称
-    - 标签名
+    - Tab[CH]
+    - Tab名
     - Enter label name
     semantic_type: input
   - text: Cancel
@@ -2155,7 +2155,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 取消
+    - Cancel
     - Dismiss
     - Abort
     semantic_type: button
@@ -2167,8 +2167,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 确定
-    - 确认
+    - OK
+    - Confirm
     - Done
     - Accept
     semantic_type: button
@@ -2186,7 +2186,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - cancel
     - X
@@ -2199,7 +2199,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 选择联系人
+    - SelectContact人
     - choose contacts
     - pick contacts
     semantic_type: button
@@ -2211,7 +2211,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_33
     aliases:
-    - 更多选项
+    - [CH]
     - more
     - overflow menu
     semantic_type: button
@@ -2223,7 +2223,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 手机联系人
+    - PhoneContact人
     - device contacts
     - local contacts
     semantic_type: menu_item
@@ -2235,7 +2235,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 邮箱联系人
+    - EmailContact人
     - email address book
     semantic_type: menu_item
   - text: Company
@@ -2246,7 +2246,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 公司
+    - [CH]
     - organization
     - employer
     semantic_type: label
@@ -2267,7 +2267,7 @@ screens:
     - dismiss
     - cancel
     - X
-    - 关闭
+    - Close
     semantic_type: button
   - text: Share
     center:
@@ -2277,7 +2277,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 分享
+    - Share
     - send
     - forward
     semantic_type: button
@@ -2289,7 +2289,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_33
     aliases:
-    - 删除
+    - Delete
     - remove
     - trash
     semantic_type: button
@@ -2301,7 +2301,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 本地联系人
+    - LocalContact人
     - device contacts
     - local contacts
     semantic_type: menu_item
@@ -2313,7 +2313,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 邮件联系人
+    - [CH]Contact人
     - email list
     semantic_type: menu_item
   - text: Company
@@ -2324,10 +2324,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 公司
+    - [CH]
     - organization
     - employer
-    - 工作单位
+    - [CH]
     semantic_type: label
   - text: A
     center:
@@ -2339,7 +2339,7 @@ screens:
     aliases:
     - letter A
     - A index
-    - 字母A
+    - [CH]A
     semantic_type: button
   - text: L
     center:
@@ -2351,7 +2351,7 @@ screens:
     aliases:
     - letter L
     - L index
-    - 字母L
+    - [CH]L
     semantic_type: button
   description: Contact list screen featuring filter options for phone, email, and
     company contacts, alphabetical list sections, and share or delete actions.
@@ -2367,8 +2367,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google login
-    - 登录 Google 账号
-    - Google 账户
+    - Login Google Account
+    - Google Account
     semantic_type: label
   - text: Sign in
     center:
@@ -2379,7 +2379,7 @@ screens:
     leads_to: screen_18
     aliases:
     - Login
-    - 登录
+    - Login
     - Log in
     semantic_type: button
   - text: Learn more about using your account
@@ -2391,7 +2391,7 @@ screens:
     leads_to: screen_18
     aliases:
     - Learn more
-    - 了解更多
+    - [CH]
     - Account help
     semantic_type: link
   - text: Forgot email?
@@ -2403,7 +2403,7 @@ screens:
     leads_to: screen_18
     aliases:
     - Forgot username
-    - 忘记邮箱
+    - [CH]Email
     - Recover email
     semantic_type: link
   - text: Next
@@ -2415,7 +2415,7 @@ screens:
     leads_to: screen_18
     aliases:
     - Continue
-    - 下一步
+    - Next
     - Proceed
     semantic_type: button
   - text: Create account
@@ -2427,7 +2427,7 @@ screens:
     leads_to: screen_18
     aliases:
     - Sign up
-    - 注册
+    - Register
     - Create new account
     semantic_type: button
   description: Google sign-in screen for adding an account, featuring options to log
@@ -2446,7 +2446,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     semantic_type: button
   - text: Passwords
     center:
@@ -2456,7 +2456,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 密码
+    - Password
     - Saved passwords
     - Password manager
     semantic_type: menu_item
@@ -2468,7 +2468,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_34
     aliases:
-    - 谷歌
+    - [CH]
     - Google account
     semantic_type: menu_item
   - text: Autofill service
@@ -2479,9 +2479,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 自动填充服务
+    - Auto[CH]Service
     - Autofill
-    - 自动填充
+    - Auto[CH]
     semantic_type: setting
   - text: Settings
     center:
@@ -2491,7 +2491,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_35
     aliases:
-    - 设置
+    - Settings
     - Preferences
     - Options
     semantic_type: menu_item
@@ -2503,9 +2503,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 机主账号
+    - [CH]Account
     - Accounts
-    - 账号
+    - Account
     semantic_type: setting
   - text: Reddit for Android
     center:
@@ -2516,7 +2516,7 @@ screens:
     leads_to: screen_36
     aliases:
     - Reddit
-    - 红迪
+    - [CH]
     semantic_type: menu_item
   - text: Reddit
     center:
@@ -2527,7 +2527,7 @@ screens:
     leads_to: screen_36
     aliases:
     - Reddit for Android
-    - 红迪
+    - [CH]
     semantic_type: menu_item
   - text: Uptodown App Store
     center:
@@ -2538,7 +2538,7 @@ screens:
     leads_to: screen_37
     aliases:
     - Uptodown
-    - 应用商店
+    - App[CH]
     semantic_type: menu_item
   - text: Add account
     center:
@@ -2548,9 +2548,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 添加账号
+    - [CH]Account
     - Add new account
-    - 新增账户
+    - [CH]Account
     semantic_type: button
   - text: Automatically sync app data
     center:
@@ -2560,9 +2560,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_39
     aliases:
-    - 自动同步应用数据
+    - AutoSyncApp[CH]
     - Auto-sync
-    - 自动同步
+    - AutoSync
     semantic_type: toggle
   - text: Let apps refresh data automatically
     center:
@@ -2572,9 +2572,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 允许应用自动刷新数据
+    - [CH]AppAuto[CH]
     - Auto-refresh
-    - 自动刷新
+    - Auto[CH]
     semantic_type: label
   description: Settings screen for managing device accounts and sync preferences,
     allowing users to view linked apps, add new accounts, and toggle automatic data
@@ -2593,8 +2593,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Settings
     center:
@@ -2604,7 +2604,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 设置
+    - Settings
     - Preferences
     - Options
     - Gear
@@ -2618,7 +2618,7 @@ screens:
     leads_to: screen_40
     aliases:
     - Sync settings
-    - 同步设置
+    - SyncSettings
     - Google sync
     - Account sync
     semantic_type: menu_item
@@ -2631,7 +2631,7 @@ screens:
     leads_to: screen_40
     aliases:
     - Backup and sync
-    - 备份与同步
+    - BackupandSync
     - Sync control
     - Manage sync
     semantic_type: label
@@ -2644,7 +2644,7 @@ screens:
     leads_to: screen_40
     aliases:
     - My info
-    - 个人信息
+    - PersonalInfo
     - My profile
     - Profile
     semantic_type: menu_item
@@ -2656,10 +2656,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_40
     aliases:
-    - 账户
+    - Account
     - Account settings
     - Manage accounts
-    - 用户和账户
+    - [CH]Account
     semantic_type: menu_item
   - text: Display
     center:
@@ -2669,10 +2669,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_41
     aliases:
-    - 显示
+    - [CH]
     - View
     - Display settings
-    - 视图
+    - [CH]
     semantic_type: menu_item
   - text: Sort by
     center:
@@ -2682,9 +2682,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 排序方式
+    - [CH]
     - Sort order
-    - 排序
+    - [CH]
     - Order by
     semantic_type: menu_item
   - text: First name
@@ -2697,7 +2697,7 @@ screens:
     aliases:
     - 名
     - Given name
-    - 名字
+    - [CH]
     - First
     semantic_type: menu_item
   - text: Name format
@@ -2708,9 +2708,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 名称格式
+    - [CH]
     - Name order
-    - 姓名格式
+    - [CH]
     - Display name format
     semantic_type: menu_item
   - text: First name first
@@ -2721,9 +2721,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 名在前
+    - [CH]
     - Given name first
-    - 名字优先
+    - [CH]
     - First name
     semantic_type: menu_item
   - text: Theme
@@ -2734,9 +2734,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 主题
+    - Theme
     - Appearance
-    - 外观
+    - [CH]
     - Dark mode
     semantic_type: menu_item
   - text: System default
@@ -2747,9 +2747,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 系统默认
+    - [CH]Default
     - Default
-    - 跟随系统
+    - [CH]
     - Auto
     semantic_type: menu_item
   - text: Edit contacts
@@ -2760,9 +2760,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 编辑联系人
+    - EditContact人
     - Manage contacts
-    - 修改联系人
+    - [CH]Contact人
     - Edit
     semantic_type: menu_item
   - text: Default account for new contacts
@@ -2773,9 +2773,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 新联系人默认账户
+    - NewContact人DefaultAccount
     - Default account
-    - 默认保存位置
+    - DefaultSave[CH]
     - Default save location
     semantic_type: menu_item
   - text: No default set
@@ -2786,9 +2786,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 未设置默认值
+    - 未SettingsDefault值
     - None
-    - 无默认
+    - NoneDefault
     - Not set
     semantic_type: label
   - text: Phonetic name
@@ -2799,9 +2799,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 拼音姓名
+    - [CH]
     - Phonetic
-    - 注音
+    - [CH]
     - Phonetic field
     semantic_type: menu_item
   - text: Hide if empty
@@ -2812,9 +2812,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 为空时隐藏
+    - [CH]
     - Hide when empty
-    - 隐藏空字段
+    - [CH]
     - Auto hide
     semantic_type: menu_item
   - text: Undo changes
@@ -2825,9 +2825,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 撤销更改
+    - Undo[CH]
     - Undo
-    - 恢复
+    - Restore
     - Revert changes
     semantic_type: menu_item
   description: Contacts app settings page with options to manage sync, display preferences,
@@ -2845,8 +2845,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Back
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Help
     center:
@@ -2856,9 +2856,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 帮助
+    - Help
     - Help & feedback
-    - 帮助与反馈
+    - HelpandFeedback
     semantic_type: menu_item
   - text: More options
     center:
@@ -2869,8 +2869,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Menu
-    - 更多选项
-    - 三点菜单
+    - [CH]
+    - [CH]Menu
     - overflow
     semantic_type: button
   - text: Popular help resources
@@ -2881,9 +2881,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 热门帮助资源
+    - [CH]Help[CH]
     - Help topics
-    - 帮助主题
+    - HelpTheme
     semantic_type: label
   - text: Edit or delete contacts
     center:
@@ -2893,9 +2893,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 编辑或删除联系人
+    - Edit或DeleteContact人
     - Manage contacts
-    - 管理联系人
+    - ManageContact人
     semantic_type: link
   - text: Export, back up, or restore contacts
     center:
@@ -2905,9 +2905,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 导出、备份或恢复联系人
+    - Export、Backup或RestoreContact人
     - Backup contacts
-    - 备份联系人
+    - BackupContact人
     semantic_type: link
   - text: Sync Google Contacts with your mobile device or computer
     center:
@@ -2917,9 +2917,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 同步 Google 通讯录
+    - Sync Google [CH]
     - Sync contacts
-    - 同步联系人
+    - SyncContact人
     semantic_type: link
   - text: Add or move contacts
     center:
@@ -2929,9 +2929,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 添加或移动联系人
+    - [CH]Contact人
     - Add contacts
-    - 添加联系人
+    - [CH]Contact人
     semantic_type: link
   - text: Import your contacts into Google Contacts
     center:
@@ -2941,9 +2941,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 将联系人导入 Google 通讯录
+    - 将Contact人Import Google [CH]
     - Import contacts
-    - 导入联系人
+    - ImportContact人
     semantic_type: link
   - text: Search help
     center:
@@ -2953,9 +2953,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 搜索帮助
+    - SearchHelp
     - Search
-    - 搜索框
+    - Search框
     semantic_type: input
   - text: Send feedback
     center:
@@ -2965,9 +2965,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_41
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - Feedback
-    - 反馈
+    - Feedback
     semantic_type: menu_item
   description: Help and feedback page listing popular help resources, contact management
     topics, and options to search or send feedback
@@ -2985,7 +2985,7 @@ screens:
     aliases:
     - Choose
     - Pick
-    - 选择
+    - Select
     semantic_type: button
   - text: Select all
     center:
@@ -2995,7 +2995,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_43
     aliases:
-    - 全选
+    - [CH]
     - Choose all contacts
     - Select everything
     semantic_type: button
@@ -3009,8 +3009,8 @@ screens:
     aliases:
     - View settings
     - Display options
-    - 自定义视图
-    - 视图设置
+    - Custom[CH]
+    - [CH]Settings
     semantic_type: menu_item
   description: Contact selection menu offering options to select all contacts and
     customize the list view.
@@ -3028,7 +3028,7 @@ screens:
     aliases:
     - Search
     - Find contacts
-    - 搜索联系人
+    - SearchContact人
     - Search bar
     semantic_type: input
   - text: Open navigation drawer
@@ -3041,7 +3041,7 @@ screens:
     aliases:
     - Menu
     - Hamburger menu
-    - 打开导航抽屉
+    - Open[CH]
     - Menu button
     semantic_type: button
   - text: More options
@@ -3054,7 +3054,7 @@ screens:
     aliases:
     - More
     - Overflow menu
-    - 更多选项
+    - [CH]
     - Three dots
     semantic_type: button
   - text: Phone contacts
@@ -3067,7 +3067,7 @@ screens:
     aliases:
     - Phone
     - Device contacts
-    - 手机联系人
+    - PhoneContact人
     - Local contacts
     semantic_type: menu_item
   - text: Email contacts
@@ -3080,7 +3080,7 @@ screens:
     aliases:
     - Email
     - Gmail contacts
-    - 电子邮件联系人
+    - [CH]Contact人
     - Cloud contacts
     semantic_type: menu_item
   - text: Company
@@ -3093,7 +3093,7 @@ screens:
     aliases:
     - Organization
     - Employer
-    - 公司
+    - [CH]
     - Work
     semantic_type: label
   - text: Create contact
@@ -3106,7 +3106,7 @@ screens:
     aliases:
     - Add contact
     - New contact
-    - 创建联系人
+    - CreateContact人
     - Add
     semantic_type: button
   - text: Contacts
@@ -3119,7 +3119,7 @@ screens:
     aliases:
     - Address book
     - People
-    - 联系人
+    - Contact人
     - Directory
     semantic_type: tab
   - text: Highlights
@@ -3132,7 +3132,7 @@ screens:
     aliases:
     - Recent
     - Updates
-    - 亮点
+    - [CH]
     - Recent updates
     semantic_type: tab
   - text: Fix &amp; manage
@@ -3145,7 +3145,7 @@ screens:
     aliases:
     - Fix and manage
     - Manage
-    - 修复和管理
+    - [CH]Manage
     - Settings
     semantic_type: tab
   description: Main contacts list screen featuring a search bar, filter options for
@@ -3162,7 +3162,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_43
     aliases:
-    - 公司
+    - [CH]
     - Organization
     - Employer
     - Corp
@@ -3182,7 +3182,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up arrow
     semantic_type: button
   - text: Edit contact
@@ -3194,8 +3194,8 @@ screens:
     leads_to: screen_46
     aliases:
     - edit
-    - 修改联系人
-    - 编辑
+    - [CH]Contact人
+    - Edit
     - modify contact
     semantic_type: button
   - text: Add to favorites
@@ -3207,9 +3207,9 @@ screens:
     leads_to: screen_41
     aliases:
     - favorite
-    - 收藏
+    - [CH]
     - add favorite
-    - 星标
+    - [CH]
     semantic_type: button
   - text: More options
     center:
@@ -3221,7 +3221,7 @@ screens:
     aliases:
     - more
     - menu
-    - 更多选项
+    - [CH]
     - overflow menu
     semantic_type: button
   - text: Call
@@ -3234,8 +3234,8 @@ screens:
     aliases:
     - phone
     - dial
-    - 拨打电话
-    - 呼叫
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Text
     center:
@@ -3247,8 +3247,8 @@ screens:
     aliases:
     - message
     - SMS
-    - 发短信
-    - 短信
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Set up
     center:
@@ -3260,8 +3260,8 @@ screens:
     aliases:
     - setup
     - configure
-    - 设置
-    - 初始化
+    - Settings
+    - [CH]
     semantic_type: button
   - text: Contact info
     center:
@@ -3272,7 +3272,7 @@ screens:
     leads_to: screen_42
     aliases:
     - contact details
-    - 联系人信息
+    - Contact人Info
     - details
     - info
     semantic_type: label
@@ -3285,7 +3285,7 @@ screens:
     leads_to: screen_42
     aliases:
     - cell
-    - 手机
+    - Phone
     - mobile phone
     - cellular
     semantic_type: label
@@ -3298,7 +3298,7 @@ screens:
     leads_to: screen_42
     aliases:
     - birth date
-    - 生日
+    - [CH]
     - DOB
     - date of birth
     semantic_type: label
@@ -3318,7 +3318,7 @@ screens:
     aliases:
     - search
     - find contacts
-    - 搜索联系人
+    - SearchContact人
     - search bar
     semantic_type: input
   - text: Open navigation drawer
@@ -3331,7 +3331,7 @@ screens:
     aliases:
     - menu
     - hamburger menu
-    - 导航菜单
+    - [CH]Menu
     - navigation menu
     semantic_type: button
   - text: More options
@@ -3343,7 +3343,7 @@ screens:
     leads_to: screen_42
     aliases:
     - options
-    - 更多选项
+    - [CH]
     - more
     - overflow menu
     semantic_type: button
@@ -3357,7 +3357,7 @@ screens:
     aliases:
     - account info
     - signed in
-    - 已登录
+    - 已Login
     - account settings
     semantic_type: label
   - text: Phone contacts
@@ -3369,7 +3369,7 @@ screens:
     leads_to: screen_42
     aliases:
     - phone
-    - 手机联系人
+    - PhoneContact人
     - device contacts
     semantic_type: menu_item
   - text: Email contacts
@@ -3381,7 +3381,7 @@ screens:
     leads_to: screen_42
     aliases:
     - email
-    - 电子邮件联系人
+    - [CH]Contact人
     - gmail contacts
     semantic_type: menu_item
   - text: Company
@@ -3393,7 +3393,7 @@ screens:
     leads_to: screen_42
     aliases:
     - organization
-    - 公司
+    - [CH]
     - employer
     - workplace
     semantic_type: label
@@ -3406,7 +3406,7 @@ screens:
     leads_to: screen_42
     aliases:
     - letter A
-    - 字母A
+    - [CH]A
     - section A
     semantic_type: label
   - text: ABC
@@ -3418,7 +3418,7 @@ screens:
     leads_to: screen_42
     aliases:
     - alphabet
-    - 字母表
+    - [CH]
     - quick scroll
     semantic_type: label
   - text: Create contact
@@ -3431,7 +3431,7 @@ screens:
     aliases:
     - add contact
     - new contact
-    - 创建联系人
+    - CreateContact人
     - add new
     semantic_type: button
   - text: Contacts
@@ -3442,7 +3442,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 联系人
+    - Contact人
     - contacts list
     - address book
     semantic_type: tab
@@ -3454,7 +3454,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 精选
+    - [CH]
     - featured
     - suggestions
     semantic_type: tab
@@ -3467,7 +3467,7 @@ screens:
     leads_to: screen_42
     aliases:
     - manage
-    - 修复和管理
+    - [CH]Manage
     - tools
     - settings
     semantic_type: tab
@@ -3487,8 +3487,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Blocked numbers
     center:
@@ -3499,8 +3499,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Block list
-    - 黑名单
-    - 拦截记录
+    - [CH]
+    - [CH]
     - blocked contacts
     semantic_type: menu_item
   - text: Unknown
@@ -3512,8 +3512,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Unknown callers
-    - 未知
-    - 未知号码
+    - [CH]
+    - [CH]
     - unidentified
     semantic_type: label
   - text: Block calls from unidentified callers
@@ -3525,8 +3525,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Block unknown callers
-    - 拦截陌生来电
-    - 屏蔽未知号码
+    - [CH]
+    - [CH]
     - block unidentified
     semantic_type: toggle
   - text: You won't receive calls or texts from blocked numbers.
@@ -3537,8 +3537,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 说明
-    - 提示
+    - Instruction
+    - Tip
     - blocked numbers info
     - description
     semantic_type: label
@@ -3551,8 +3551,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Add number
-    - 添加号码
-    - 手动添加
+    - [CH]
+    - Manual[CH]
     - add to block list
     semantic_type: button
   description: Blocked numbers settings page allowing users to block unidentified
@@ -3571,7 +3571,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Select contacts
@@ -3584,7 +3584,7 @@ screens:
     aliases:
     - Choose contacts
     - Pick contacts
-    - 选择联系人
+    - SelectContact人
     - Select
     semantic_type: button
   - text: Search contacts
@@ -3597,7 +3597,7 @@ screens:
     aliases:
     - Search
     - Find contacts
-    - 搜索联系人
+    - SearchContact人
     - Search box
     semantic_type: input
   - text: A
@@ -3611,7 +3611,7 @@ screens:
     - Letter A
     - A section
     - A index
-    - 字母A
+    - [CH]A
     semantic_type: label
   - text: Star contact
     center:
@@ -3623,7 +3623,7 @@ screens:
     aliases:
     - Favorite
     - Add to favorites
-    - 收藏联系人
+    - [CH]Contact人
     - Star
     semantic_type: button
   - text: L
@@ -3637,7 +3637,7 @@ screens:
     - Letter L
     - L section
     - L index
-    - 字母L
+    - [CH]L
     semantic_type: label
   description: Contacts list screen with search and selection options, displaying
     an alphabetically indexed list of contacts with favorite indicators.
@@ -3654,7 +3654,7 @@ screens:
     leads_to: screen_42
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     semantic_type: button
   - text: Select contacts
@@ -3666,7 +3666,7 @@ screens:
     leads_to: screen_42
     aliases:
     - Choose contacts
-    - 选择联系人
+    - SelectContact人
     - Pick contacts
     semantic_type: button
   - text: Save to Device
@@ -3678,8 +3678,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Save locally
-    - 保存到设备
-    - 本地存储
+    - SavetoDevice
+    - Local[CH]
     semantic_type: menu_item
   - text: Save to
     center:
@@ -3690,8 +3690,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Destination
-    - 保存至
-    - 存储位置
+    - Save至
+    - [CH]
     semantic_type: label
   - text: Device
     center:
@@ -3702,8 +3702,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Phone
-    - 设备
-    - 本机
+    - Device
+    - [CH]
     - Local
     semantic_type: menu_item
   - text: Switch to another account
@@ -3715,8 +3715,8 @@ screens:
     leads_to: screen_42
     aliases:
     - Change account
-    - 切换账号
-    - 更换账户
+    - [CH]Account
+    - [CH]Account
     semantic_type: menu_item
   - text: No contacts on your SIM card
     center:
@@ -3727,7 +3727,7 @@ screens:
     leads_to: screen_42
     aliases:
     - SIM empty
-    - SIM卡无联系人
+    - SIMLagNoneContact人
     - No SIM contacts
     semantic_type: label
   description: Contact import screen displaying SIM card status and options to select
@@ -3746,8 +3746,8 @@ screens:
     aliases:
     - Save contacts to
     - Import destination
-    - 保存导入的联系人到
-    - 存储位置
+    - SaveImportContact[CH]
+    - [CH]
     semantic_type: label
   - text: Device
     center:
@@ -3759,8 +3759,8 @@ screens:
     aliases:
     - Phone
     - Local storage
-    - 本机
-    - 设备
+    - [CH]
+    - Device
     semantic_type: menu_item
   - text: Cancel
     center:
@@ -3772,7 +3772,7 @@ screens:
     aliases:
     - Abort
     - Dismiss
-    - 取消
+    - Cancel
     semantic_type: button
   description: Dialog prompting the user to select a storage destination for imported
     contacts, with options to save to the device or cancel.
@@ -3788,9 +3788,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 下载
+    - Download
     - Download folder
-    - 下载目录
+    - DownloadDirectory
     semantic_type: label
   - text: Files in Downloads
     center:
@@ -3800,9 +3800,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 下载文件
+    - DownloadFile
     - Files
-    - 下载中的文件
+    - Download[CH]File
     semantic_type: label
   - text: List view
     center:
@@ -3812,8 +3812,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 列表视图
-    - 列表模式
+    - [CH]
+    - [CH]Mode
     - List mode
     semantic_type: button
   - text: Show roots
@@ -3824,8 +3824,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 显示根目录
-    - 显示根
+    - [CH]Directory
+    - [CH]
     - Show root directories
     semantic_type: menu_item
   - text: New folder
@@ -3836,8 +3836,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 新建文件夹
-    - 创建文件夹
+    - [CH]File夹
+    - CreateFile夹
     - Create folder
     semantic_type: menu_item
   - text: More options
@@ -3848,8 +3848,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - Overflow menu
     semantic_type: button
   - text: SAVE
@@ -3860,9 +3860,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 保存
+    - Save
     - Save file
-    - 确认保存
+    - ConfirmSave
     semantic_type: button
   description: File picker screen for the Downloads directory with options to toggle
     list view, show roots, create a new folder, and save a file.
@@ -3877,7 +3877,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     semantic_type: button
@@ -3888,7 +3888,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索联系人
+    - SearchContact人
     - find contacts
     - search bar
     semantic_type: input
@@ -3899,7 +3899,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 语音搜索
+    - [CH]Search
     - voice input
     - microphone
     semantic_type: button
@@ -3910,7 +3910,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - query
     semantic_type: button
@@ -3921,7 +3921,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 登录为设备
+    - LoginforDevice
     - account info
     - signed in
     semantic_type: label
@@ -3932,7 +3932,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收藏
+    - [CH]
     - starred
     - favorite contacts
     semantic_type: tab
@@ -3943,7 +3943,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加
+    - [CH]
     - create
     - new contact
     semantic_type: button
@@ -3954,7 +3954,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 快速访问收藏联系人
+    - [CH]Access[CH]Contact人
     - favorite people access
     semantic_type: label
   - text: Add people to Favorites so you can more easily find and contact them
@@ -3964,7 +3964,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加联系人到收藏
+    - [CH]Contact[CH]
     - favorites description
     semantic_type: label
   - text: Add favorites
@@ -3974,7 +3974,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加收藏
+    - [CH]
     - add to favorites
     semantic_type: button
   - text: Recents
@@ -3984,7 +3984,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最近
+    - [CH]
     - call history
     - recent calls
     semantic_type: tab
@@ -3995,7 +3995,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
+    - [CH]
     - menu
     - overflow
     semantic_type: button
@@ -4006,7 +4006,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最近查看
+    - [CH]View
     - recently viewed
     semantic_type: label
   - text: Added recently
@@ -4016,7 +4016,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最近添加
+    - [CH]
     - recently added
     semantic_type: label
   - text: ABC
@@ -4026,7 +4026,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 字母索引
+    - [CH]
     - alphabetical index
     - scroll index
     semantic_type: button
@@ -4070,7 +4070,7 @@ screens:
     - Back
     - Up arrow
     - Go back
-    - 返回
+    - Back
     semantic_type: button
   - text: Password Manager
     center:
@@ -4081,7 +4081,7 @@ screens:
     aliases:
     - Passwords
     - Google Passwords
-    - 密码管理器
+    - PasswordManage器
     semantic_type: menu_item
   - text: Settings
     center:
@@ -4092,7 +4092,7 @@ screens:
     aliases:
     - Preferences
     - Options
-    - 设置
+    - Settings
     semantic_type: menu_item
   - text: Start saving passwords
     center:
@@ -4103,7 +4103,7 @@ screens:
     aliases:
     - Save passwords
     - Enable saving
-    - 开始保存密码
+    - StartSavePassword
     semantic_type: button
   - text: When you save a password to Google Password Manager, you’ll find it here
     center:
@@ -4114,7 +4114,7 @@ screens:
     aliases:
     - Description
     - Info text
-    - 说明文本
+    - Instruction[CH]
     semantic_type: label
   description: Google Password Manager empty state screen featuring a settings menu
     and a prompt to start saving passwords.
@@ -4131,7 +4131,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Use Autofill with Google
@@ -4143,7 +4143,7 @@ screens:
     aliases:
     - Autofill
     - Google Autofill
-    - 自动填充
+    - Auto[CH]
     - Auto-fill
     semantic_type: setting
   - text: Google Account
@@ -4155,7 +4155,7 @@ screens:
     aliases:
     - Google
     - Account
-    - 谷歌账号
+    - [CH]Account
     - Gmail account
     semantic_type: menu_item
   - text: Choose an account
@@ -4167,7 +4167,7 @@ screens:
     aliases:
     - Select account
     - Pick account
-    - 选择账号
+    - SelectAccount
     - Select an account
     semantic_type: label
   description: Account selection screen prompting the user to choose a Google Account
@@ -4185,7 +4185,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up button
     semantic_type: button
   - text: Reddit for Android
@@ -4206,7 +4206,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - sync
-    - 同步
+    - Sync
     - account synchronization
     - sync settings
     semantic_type: setting
@@ -4218,7 +4218,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - delete account
-    - 删除账户
+    - DeleteAccount
     - remove
     - delete
     semantic_type: menu_item
@@ -4238,7 +4238,7 @@ screens:
     - Back
     - Up
     - Return
-    - 返回
+    - Back
     semantic_type: button
   - text: Account sync
     center:
@@ -4249,7 +4249,7 @@ screens:
     aliases:
     - Sync account
     - Account synchronization
-    - 同步账户
+    - SyncAccount
     semantic_type: setting
   - text: Sync off for all items
     center:
@@ -4260,7 +4260,7 @@ screens:
     aliases:
     - Sync disabled
     - All sync off
-    - 同步已关闭
+    - Sync已Close
     semantic_type: label
   - text: Remove account
     center:
@@ -4271,7 +4271,7 @@ screens:
     aliases:
     - Delete account
     - Remove
-    - 删除账户
+    - DeleteAccount
     semantic_type: button
   description: Account settings screen allowing users to manage sync preferences and
     remove the account.
@@ -4288,7 +4288,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Exchange
@@ -4300,7 +4300,7 @@ screens:
     aliases:
     - Microsoft Exchange
     - Exchange account
-    - Exchange邮箱
+    - ExchangeEmail
     semantic_type: menu_item
   - text: Google
     center:
@@ -4311,7 +4311,7 @@ screens:
     aliases:
     - Google account
     - Gmail
-    - 谷歌账号
+    - [CH]Account
     semantic_type: menu_item
   - text: Personal (IMAP)
     center:
@@ -4322,7 +4322,7 @@ screens:
     aliases:
     - IMAP
     - IMAP account
-    - 个人IMAP
+    - PersonalIMAP
     semantic_type: menu_item
   - text: Personal (POP3)
     center:
@@ -4333,7 +4333,7 @@ screens:
     aliases:
     - POP3
     - POP3 account
-    - 个人POP3
+    - PersonalPOP3
     semantic_type: menu_item
   - text: Reddit
     center:
@@ -4343,7 +4343,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Reddit account
-    - Reddit应用
+    - RedditApp
     semantic_type: menu_item
   - text: TikTok
     center:
@@ -4353,8 +4353,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - TikTok account
-    - 抖音
-    - TikTok应用
+    - [CH]
+    - TikTokApp
     semantic_type: menu_item
   - text: Uptodown App Store
     center:
@@ -4364,7 +4364,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Uptodown
-    - Uptodown商店
+    - Uptodown[CH]
     semantic_type: menu_item
   - text: Zoom
     center:
@@ -4374,8 +4374,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Zoom account
-    - Zoom应用
-    - Zoom会议
+    - ZoomApp
+    - Zoom[CH]
     semantic_type: menu_item
   description: Account selection screen listing available account types and services
     such as Google, Exchange, and third-party apps.
@@ -4391,7 +4391,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Enable auto-sync?
-    - 开启自动同步数据？
+    - [CH]AutoSync[CH]？
     - Auto-sync confirmation
     - Sync data prompt
     semantic_type: label
@@ -4402,7 +4402,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - Dismiss
     - Abort
     semantic_type: button
@@ -4413,7 +4413,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 确定
+    - OK
     - Confirm
     - Accept
     semantic_type: button
@@ -4433,8 +4433,8 @@ screens:
     - back
     - up
     - go back
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Help &amp; feedback
     center:
@@ -4445,7 +4445,7 @@ screens:
     aliases:
     - Help & feedback
     - support
-    - 帮助与反馈
+    - HelpandFeedback
     - feedback
     semantic_type: menu_item
   - text: Keep your contacts synced with Google Contacts (contacts.google.com) so
@@ -4458,7 +4458,7 @@ screens:
     aliases:
     - sync info
     - google contacts sync
-    - 同步提示
+    - SyncTip
     - contacts sync description
     semantic_type: label
   - text: Status
@@ -4470,7 +4470,7 @@ screens:
     aliases:
     - sync status
     - account status
-    - 状态
+    - [CH]
     - sync state
     semantic_type: menu_item
   - text: Also sync device contacts
@@ -4482,7 +4482,7 @@ screens:
     aliases:
     - sync device contacts
     - sync local contacts
-    - 同步设备联系人
+    - SyncDeviceContact人
     - device contact sync
     semantic_type: toggle
   description: Contacts account sync settings page allowing users to manage Google
@@ -4500,7 +4500,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up button
     semantic_type: button
   - text: Help &amp; feedback
@@ -4517,7 +4517,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - auto sync contacts
-    - 自动同步Google联系人
+    - AutoSyncGoogleContact人
     - sync Google contacts
     semantic_type: label
   - text: Start sync
@@ -4528,7 +4528,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - sync now
-    - 开始同步
+    - StartSync
     - sync
     - begin sync
     semantic_type: button
@@ -4540,7 +4540,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - auto sync
-    - 自动同步
+    - AutoSync
     - sync automatically
     semantic_type: toggle
   - text: Notifications
@@ -4550,7 +4550,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 通知
+    - Notification
     - notification settings
     - alerts
     semantic_type: setting
@@ -4574,7 +4574,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Dismiss
-    - 取消
+    - Cancel
     - Close
     semantic_type: button
   - text: Turn on
@@ -4585,7 +4585,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Enable
-    - 开启
+    - [CH]
     - Activate
     semantic_type: button
   description: Dialog box prompting the user to enable auto-sync for account and app
@@ -4603,7 +4603,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Help
@@ -4613,7 +4613,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - Support
     - Help & feedback
     semantic_type: menu_item
@@ -4626,8 +4626,8 @@ screens:
     aliases:
     - Overflow
     - Menu
-    - 更多
-    - 三点菜单
+    - [CH]
+    - [CH]Menu
     semantic_type: button
   - text: Popular help resources
     center:
@@ -4636,7 +4636,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 热门帮助资源
+    - [CH]Help[CH]
     - Common topics
     - FAQ
     semantic_type: label
@@ -4647,7 +4647,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索帮助
+    - SearchHelp
     - Search
     - Find help
     semantic_type: input
@@ -4658,7 +4658,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - Feedback
     - Report issue
     semantic_type: menu_item
@@ -4677,7 +4677,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Help
@@ -4687,7 +4687,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - Support
     - Assistance
     semantic_type: button
@@ -4699,7 +4699,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back to Play services
-    - 返回Google Play服务
+    - BackGoogle PlayService
     - Go back to Play services
     semantic_type: button
   - text: More options
@@ -4709,10 +4709,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
+    - [CH]
     - Menu
     - Overflow menu
-    - 三点菜单
+    - [CH]Menu
     semantic_type: button
   - text: How to recover your Google Account or Gmail
     center:
@@ -4722,7 +4722,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Account recovery help
-    - 如何恢复Google帐号或Gmail
+    - [CH]RestoreGoogle[CH]Gmail
     - Recover account
     semantic_type: link
   - text: 'Tips:'
@@ -4732,7 +4732,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 提示：
+    - Tip：
     - 'Hints:'
     - 'Suggestions:'
     semantic_type: label
@@ -4743,7 +4743,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 管理员
+    - Manage员
     - admin
     - IT admin
     semantic_type: label
@@ -4754,9 +4754,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 寻求帮助。
+    - [CH]Help。
     - get help.
-    - 联系帮助。
+    - ContactHelp。
     semantic_type: label
   - text: or the applicable age in your country
     center:
@@ -4765,7 +4765,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 或您所在国家/地区的适用年龄
+    - [CH]/[CH]
     - or legal age
     semantic_type: label
   - text: ) you can
@@ -4775,8 +4775,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - ）您可以
-    - ) 您可以
+    - ）[CH]
+    - ) [CH]
     semantic_type: label
   - text: reset your child's password
     center:
@@ -4785,7 +4785,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 重置您孩子的密码
+    - Reset[CH]Password
     - change child password
     - reset child password
     semantic_type: link
@@ -4796,7 +4796,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 忘记密码
+    - [CH]Password
     - Forgot password
     - Reset password
     semantic_type: link
@@ -4807,7 +4807,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按照以下步骤
+    - [CH]
     - Follow steps to
     semantic_type: label
   - text: recover your Google Account or GmailOpens in new window
@@ -4817,9 +4817,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 恢复您的Google帐号或Gmail
+    - Restore[CH]Google[CH]Gmail
     - recover account
-    - 在新窗口中打开
+    - [CH]WindowmiddleOpen
     semantic_type: link
   - text: recover your Google Account or Gmail
     center:
@@ -4828,7 +4828,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 恢复您的Google帐号或Gmail
+    - Restore[CH]Google[CH]Gmail
     - recover account
     - account recovery
     semantic_type: link
@@ -4839,9 +4839,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 在新窗口中打开
+    - [CH]WindowmiddleOpen
     - external link
-    - 新窗口打开
+    - NewWindowOpen
     semantic_type: label
   - text: If you have trouble, try the
     center:
@@ -4850,7 +4850,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 如果您遇到问题，请尝试
+    - [CH]，[CH]
     - If you have issues, try the
     semantic_type: label
   - text: tips to complete account recovery steps
@@ -4860,7 +4860,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 完成帐号恢复步骤的提示
+    - Done[CH]Restore[CH]Tip
     - account recovery tips
     - recovery tips
     semantic_type: link
@@ -4871,7 +4871,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 了解如何创建强密码
+    - [CH]Create强Password
     - create strong password
     - password tips
     semantic_type: link
@@ -4890,7 +4890,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Help
@@ -4901,7 +4901,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Help & feedback
-    - 帮助
+    - Help
     - Support
     - Assistance
     semantic_type: menu_item
@@ -4913,7 +4913,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back to Play services
-    - 返回Google Play服务
+    - BackGoogle PlayService
     - Go back
     semantic_type: button
   - text: More options
@@ -4925,7 +4925,7 @@ screens:
     aliases:
     - Overflow menu
     - Menu
-    - 更多选项
+    - [CH]
     - ⋮
     semantic_type: button
   - text: Close user survey dialog
@@ -4937,7 +4937,7 @@ screens:
     aliases:
     - Close
     - Dismiss
-    - 关闭
+    - Close
     - X
     semantic_type: button
   description: Dialog overlay displaying a user survey or help prompt regarding Google
@@ -4954,8 +4954,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     - back arrow
     semantic_type: button
   - text: Help
@@ -4965,10 +4965,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - Support
     - FAQ
-    - 帮助与支持
+    - Help[CH]
     semantic_type: menu_item
   - text: Return to Google Play services
     center:
@@ -4977,9 +4977,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回Google Play服务
+    - BackGoogle PlayService
     - Back to Play services
-    - 返回
+    - Back
     semantic_type: button
   - text: More options
     center:
@@ -4989,9 +4989,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - Overflow menu
-    - 更多选项
-    - 菜单
-    - 三点菜单
+    - [CH]
+    - Menu
+    - [CH]Menu
     semantic_type: button
   description: Top app bar for a Google Play services settings or help screen featuring
     back navigation, help, and more options.
@@ -5009,7 +5009,7 @@ screens:
     - Dismiss
     - Cancel
     - X
-    - 关闭
+    - Close
     semantic_type: button
   - text: Add another account
     center:
@@ -5019,8 +5019,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Add account
-    - 添加其他帐户
-    - 添加账户
+    - [CH]
+    - [CH]Account
     semantic_type: button
   - text: Manage accounts on this device
     center:
@@ -5031,8 +5031,8 @@ screens:
     aliases:
     - Manage accounts
     - Account settings
-    - 管理此设备上的帐户
-    - 账户管理
+    - Manage此Device[CH]
+    - AccountManage
     semantic_type: menu_item
   - text: Privacy Policy  •  Terms of Service
     center:
@@ -5043,8 +5043,8 @@ screens:
     aliases:
     - Legal
     - Terms
-    - 隐私政策 • 服务条款
-    - 隐私权政策
+    - Privacy Policy • Service[CH]
+    - Privacy[CH]
     semantic_type: link
   description: Account settings screen with options to add or manage device accounts
     and links to privacy and terms.

@@ -21,7 +21,7 @@ import yaml
 # PII patterns (same as build_map.py)
 _EMAIL_RE = re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')
 _PHONE_RE = re.compile(r'\+?\d[\d\s\xa0\-]{7,}')
-_PAYMENT_KEYS = ('支付宝', 'alipay', 'paypal', '微信支付', 'apple pay', 'unionpay', '云闪付')
+_PAYMENT_KEYS = ('Payment宝', 'alipay', 'paypal', '[CH]Payment', 'apple pay', 'unionpay', 'Cloud[CH]')
 
 # Dynamic-content patterns (same as build_map.py _DYNAMIC_PATTERNS)
 _DYNAMIC_PATTERNS = [
@@ -42,9 +42,9 @@ _DYNAMIC_PATTERNS = [
     (re.compile(r'^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$'), "UUID"),
     (re.compile(r'^[\d,]+$'), "count"),
     (re.compile(r'^\d+\s*/\s*\d+$'), "fraction"),
-    (re.compile(r'^\d+[\.\d]*\s*(km|m|mi|mile|公里|米)$', re.I), "distance"),
-    (re.compile(r'^\d+\s*(分钟|小时|天|周|月|年)前$'), "relative time"),
-    (re.compile(r'^\d+\s*(赞|评论|收藏|转发|粉丝|看过|浏览)$'), "stat"),
+    (re.compile(r'^\d+[\.\d]*\s*(km|m|mi|mile|[CH]|米)$', re.I), "distance"),
+    (re.compile(r'^\d+\s*([CH]|[CH]|天|周|月|年)front$'), "relative time"),
+    (re.compile(r'^\d+\s*(赞|[CH]|[CH]|[CH]|[CH]|[CH]|[CH])$'), "stat"),
 ]
 
 
@@ -200,23 +200,23 @@ def _check_pii_leak(screens: list) -> list:
                                  "message": f"'{t}' in {s['id']} contains payment info"})
             elif 2 <= len(t) <= 5 and all('一' <= c <= '鿿' for c in t):
                 # Chinese name candidate
-                skip = ("设置", "显示", "通知", "通用", "邮件", "相机", "日历",
-                        "照片", "时钟", "天气", "地图", "音乐", "钱包", "健康",
-                        "文件", "备忘", "通讯", "信息", "电话", "隐私", "安全",
-                        "密码", "蓝牙", "无线", "蜂窝", "隔空", "隔空投送",
-                        "家人", "家人共享", "屏幕", "控制", "个人", "专注",
-                        "声音", "触感", "亮度", "亮度与", "主屏幕",
-                        "搜索", "待机", "墙纸", "面容", "面容ID", "紧急",
-                        "软件", "关于", "键盘", "字体", "词典", "自动",
-                        "日期", "时间", "语言", "地区", "还原", "传输",
-                        "苹果", "苹果智能", "隔空投", "家人共",
+                skip = ("Settings", "[CH]", "Notification", "General", "[CH]", "Camera", "[CH]",
+                        "[CH]", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]",
+                        "File", "[CH]", "[CH]", "Info", "[CH]", "Privacy", "Security",
+                        "Password", "Bluetooth", "None线", "Cellular", "[CH]", "[CH]",
+                        "[CH]", "[CH]Share", "Screen", "[CH]", "Personal", "[CH]",
+                        "[CH]", "[CH]", "Brightness", "Brightnessand", "主Screen",
+                        "Search", "Standby", "[CH]", "[CH]", "[CH]ID", "Urgent",
+                        "Software", "About", "[CH]", "[CH]", "[CH]", "Auto",
+                        "[CH]", "[CH]", "Language", "[CH]", "[CH]", "Transfer",
+                        "[CH]", "[CH]", "[CH]", "[CH]",
                         # Common Chinese UI terms (filters, tabs, actions)
-                        "全城", "推荐", "美食", "购物", "热点", "话题",
-                        "查看详情", "表情符号", "地点", "地图探索", "切换城市",
-                        "位置距离", "周末出行", "热门打卡地", "酒吧派对",
-                        "展览演出", "购物市集", "我的订单", "我的收藏",
-                        "浏览记录", "搜索历史", "全部", "附近", "最新",
-                        "最热", "排行", "分类", "筛选")
+                        "[CH]", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]",
+                        "View[CH]", "[CH]", "[CH]", "[CH]", "[CH]",
+                        "[CH]", "[CH]", "[CH]Lag地", "[CH]",
+                        "[CH]", "[CH]", "MyOrder", "My[CH]",
+                        "[CH]", "Search[CH]", "All", "[CH]", "[CH]",
+                        "[CH]", "[CH]", "[CH]", "[CH]")
                 if t not in skip:
                     warnings.append({"code": "pii_name",
                                      "message": f"'{t}' in {s['id']} looks like a Chinese name"})

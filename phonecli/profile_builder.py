@@ -6,14 +6,14 @@ Three-stage pipeline:
   3. build: full crawl uses profile to filter out dynamic content
 
 Profile YAML format:
-  app: 小红书
+  app: [CH]
   bundle_id: com.xingin.discover
   dynamic_patterns:
     - '^[0-9A-F]{8}-...{12}$'     # UUIDs
     - '^[\d,]+$'                    # counts
   preserve_navigation:
-    - "关注"  # tab, not dynamic
-    - "发现"  # tab
+    - "[CH]"  # tab, not dynamic
+    - "[CH]"  # tab
 """
 
 import json

@@ -1,4 +1,4 @@
-app: 小红书
+app: [CH]
 bundle_id: com.xingin.discover
 dynamic_patterns:
 - ^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$

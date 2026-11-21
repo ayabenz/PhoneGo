@@ -229,12 +229,12 @@ def test_identification_can_be_scoped_to_the_foreground_package(tmp_path):
         "screen_h": 2000,
         "screens": [
             {"id": "screen_0", "elements": [
-                {"text": "应用设置", "center": [0.5, 0.5]},
-                {"text": "应用双开", "center": [0.5, 0.6]},
+                {"text": "AppSettings", "center": [0.5, 0.5]},
+                {"text": "App[CH]", "center": [0.5, 0.6]},
             ]},
             {"id": "screen_1", "package": "com.miui.securitycenter", "elements": [
-                {"text": "应用设置", "center": [0.5, 0.5]},
-                {"text": "存储占用", "center": [0.5, 0.7]},
+                {"text": "AppSettings", "center": [0.5, 0.5]},
+                {"text": "[CH]", "center": [0.5, 0.7]},
             ]},
         ],
         "screen_macros": {"screen_0": [], "screen_1": []},
@@ -242,8 +242,8 @@ def test_identification_can_be_scoped_to_the_foreground_package(tmp_path):
     path = tmp_path / "m.yaml"
     path.write_text(_yaml.safe_dump(data, allow_unicode=True), encoding="utf-8")
     m = AppMap(path)
-    dump = ('<hierarchy><node text="应用设置" bounds="[0,0][10,10]" />'
-            '<node text="存储占用" bounds="[0,0][10,10]" /></hierarchy>')
+    dump = ('<hierarchy><node text="AppSettings" bounds="[0,0][10,10]" />'
+            '<node text="[CH]" bounds="[0,0][10,10]" /></hierarchy>')
 
     sid, _ = m.identify_current_screen(dump)
     assert sid == "screen_1"
@@ -262,8 +262,8 @@ def test_rarity_breaks_ties_between_near_identical_screens(tmp_path):
     """
     import yaml as _yaml
 
-    shared = [{"text": "闹钟", "center": [0.2, 0.95]},
-              {"text": "计时", "center": [0.6, 0.95]}]
+    shared = [{"text": "[CH]", "center": [0.2, 0.95]},
+              {"text": "[CH]", "center": [0.6, 0.95]}]
     data = {
         "app": "Clock", "package": "com.android.deskclock",
         "screen_w": 1000, "screen_h": 2000,
@@ -271,7 +271,7 @@ def test_rarity_breaks_ties_between_near_identical_screens(tmp_path):
             {"id": "screen_0", "elements": shared + [
                 {"text": "06:00", "center": [0.5, 0.2]}]},
             {"id": "screen_1", "elements": shared + [
-                {"text": "添加闹钟", "center": [0.8, 0.9]}]},
+                {"text": "[CH]", "center": [0.8, 0.9]}]},
         ],
         "screen_macros": {"screen_0": [], "screen_1": []},
     }
@@ -280,9 +280,9 @@ def test_rarity_breaks_ties_between_near_identical_screens(tmp_path):
     app = AppMap(path)
 
     dump = ('<hierarchy>'
-            '<node text="闹钟" bounds="[0,0][10,10]"/>'
-            '<node text="计时" bounds="[0,0][10,10]"/>'
-            '<node text="添加闹钟" bounds="[0,0][10,10]"/>'
+            '<node text="[CH]" bounds="[0,0][10,10]"/>'
+            '<node text="[CH]" bounds="[0,0][10,10]"/>'
+            '<node text="[CH]" bounds="[0,0][10,10]"/>'
             '</hierarchy>')
 
     first = app.identify_current_screen(dump)[0]
@@ -296,20 +296,20 @@ def test_a_selected_tab_decides_which_tab_screen_is_current(tmp_path):
 
     def screen(sid, tab, extra):
         elements = [
-            {"text": "闹钟", "center": [0.5, 0.1], "fixed": True},
-            {"text": "世界时钟", "center": [0.5, 0.2], "fixed": True},
-            {"text": "秒表", "center": [0.5, 0.3], "fixed": True},
-            {"text": "计时", "center": [0.5, 0.4], "fixed": True},
+            {"text": "[CH]", "center": [0.5, 0.1], "fixed": True},
+            {"text": "[CH]", "center": [0.5, 0.2], "fixed": True},
+            {"text": "[CH]", "center": [0.5, 0.3], "fixed": True},
+            {"text": "[CH]", "center": [0.5, 0.4], "fixed": True},
         ] + [{"text": t, "center": [0.5, 0.5 + i / 20], "fixed": True}
              for i, t in enumerate(extra)]
         return {"id": sid, "description": f"{tab} page", "selected": [tab],
                 "elements": elements}
 
     data = {
-        "app": "时钟", "package": "com.android.deskclock",
+        "app": "[CH]", "package": "com.android.deskclock",
         "screens": [
-            screen("screen_0", "闹钟", []),
-            screen("screen_1", "世界时钟", []),
+            screen("screen_0", "[CH]", []),
+            screen("screen_1", "[CH]", []),
         ],
         "screen_macros": {},
     }
@@ -321,16 +321,16 @@ def test_a_selected_tab_decides_which_tab_screen_is_current(tmp_path):
         return (
             '<hierarchy>'
             f'<node text="{tab}" selected="true" bounds="[0,2600][200,2740]" />'
-            '<node text="闹钟" bounds="[0,200][200,300]" />'
-            '<node text="世界时钟" bounds="[0,300][200,400]" />'
-            '<node text="秒表" bounds="[0,400][200,500]" />'
-            '<node text="计时" bounds="[0,500][200,600]" />'
+            '<node text="[CH]" bounds="[0,200][200,300]" />'
+            '<node text="[CH]" bounds="[0,300][200,400]" />'
+            '<node text="[CH]" bounds="[0,400][200,500]" />'
+            '<node text="[CH]" bounds="[0,500][200,600]" />'
             '</hierarchy>'
         )
 
     app_map = AppMap(str(path))
-    assert app_map.identify_current_screen(dump("世界时钟"))[0] == "screen_1"
-    assert app_map.identify_current_screen(dump("闹钟"))[0] == "screen_0"
+    assert app_map.identify_current_screen(dump("[CH]"))[0] == "screen_1"
+    assert app_map.identify_current_screen(dump("[CH]"))[0] == "screen_0"
 
 
 def test_a_one_character_chinese_tab_becomes_an_operation(tmp_path):
@@ -339,14 +339,14 @@ def test_a_one_character_chinese_tab_becomes_an_operation(tmp_path):
     from phoneagent.core.app_map import AppMap
 
     data = {
-        "app": "小红书", "package": "com.xingin.xhs", "screen_w": 1280, "screen_h": 2772,
+        "app": "[CH]", "package": "com.xingin.xhs", "screen_w": 1280, "screen_h": 2772,
         "screens": [
-            {"id": "screen_0", "selected": ["首页"], "elements": [
+            {"id": "screen_0", "selected": ["Home"], "elements": [
                 {"text": "我", "center": [0.9, 0.95], "fixed": True, "leads_to": "screen_1"},
                 {"text": "x", "center": [0.1, 0.1], "fixed": True},
             ]},
             {"id": "screen_1", "selected": ["我"], "elements": [
-                {"text": "粉丝", "center": [0.9, 0.1], "fixed": True}]},
+                {"text": "[CH]", "center": [0.9, 0.1], "fixed": True}]},
         ],
         "screen_macros": {},
     }

@@ -30,7 +30,7 @@ class GLM4Agent(OpenAIAgent):
     )
     def act(self, messages: List[Dict[str, Any]]) -> str:
         response = self.client.chat.completions.create(
-            model=self.model_name,  # 填写需要调用的模型名称
+            model=self.model_name,  # [CH]Model[CH]
             messages=messages,
         )
         return response.choices[0].message.content

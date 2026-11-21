@@ -52,7 +52,7 @@ PROCEDURES_HEADER = (
 
 #: Anything that would be a credential if it leaked.
 _SECRET_WORDS = (
-    "支付密码", "密码", "口令", "验证码", "校验码", "动态码", "安全码", "安全问题",
+    "PaymentPassword", "Password", "[CH]", "Verify码", "[CH]", "[CH]", "Security码", "Security[CH]",
     "password", "passcode", "passwd", "cvv", "cvc", "verification code",
     "security code", "security question", "one-time code",
 )
@@ -61,7 +61,7 @@ _SECRET_WORDS = (
 _DIGIT_WORDS = ("pin", "otp")
 
 #: Explicitly allowed: these are facts a phone assistant needs, not credentials.
-_ALLOWED_FACTS = ("手机号", "电话", "地址", "生日", "家人", "称呼", "收货")
+_ALLOWED_FACTS = ("Phone号", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]")
 
 
 def is_sensitive(text: str) -> bool:
@@ -74,7 +74,7 @@ def is_sensitive(text: str) -> bool:
             return True
     for word in _DIGIT_WORDS:
         if re.search(rf"(?<![a-z]){word}(?![a-z])", lowered) and re.search(
-            rf"(?<![a-z]){word}(?![a-z])\s*[:：=是为]?\s*\d", lowered
+            rf"(?<![a-z]){word}(?![a-z])\s*[:：=Yesfor]?\s*\d", lowered
         ):
             return True
     return False
@@ -118,7 +118,7 @@ def _keywords(text: str) -> list[str]:
     """ASCII words plus CJK bigrams.
 
     Chinese has no spaces, so treating a run of characters as one token makes
-    every overlap zero -- "打开蓝牙" and an item tagged 蓝牙 would never match.
+    every overlap zero -- "OpenBluetooth" and an item tagged Bluetooth would never match.
     Sliding two-character windows give overlap something to count.
     """
     words = [word.lower() for word in re.findall(r"[A-Za-z]{2,}", text or "")]

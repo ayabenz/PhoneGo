@@ -15,8 +15,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 主页
-    - 首页
+    - Home
+    - Home
     - home screen
     semantic_type: tab
   - text: Recently read
@@ -27,8 +27,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 最近阅读
-    - 阅读历史
+    - [CH]
+    - [CH]
     - recent
     - history
     semantic_type: tab
@@ -40,8 +40,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 我的书
-    - 我的书架
+    - My书
+    - My[CH]
     - library
     - my library
     semantic_type: tab
@@ -53,8 +53,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 目录
-    - 书库
+    - Directory
+    - [CH]
     - catalog
     - store
     semantic_type: tab
@@ -66,8 +66,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 设置
-    - 系统设置
+    - Settings
+    - [CH]Settings
     - preferences
     - options
     semantic_type: tab
@@ -84,8 +84,8 @@ screens:
     leads_to: screen_1
     aliases:
     - Recent
-    - 最近阅读
-    - 阅读历史
+    - [CH]
+    - [CH]
     - History
     semantic_type: menu_item
   description: A home or library screen displaying a list of the user's recently read
@@ -102,8 +102,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 图书
-    - 书籍
+    - [CH]
+    - [CH]
     - ebooks
     - book list
     semantic_type: tab
@@ -115,7 +115,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 作者
+    - [CH]
     - writers
     - author list
     semantic_type: tab
@@ -127,8 +127,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 分类
-    - 类别
+    - [CH]
+    - [CH]
     - genres
     - topics
     semantic_type: tab
@@ -140,8 +140,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 合集
-    - 丛书
+    - [CH]
+    - [CH]
     - bookshelves
     - shelves
     semantic_type: tab
@@ -153,8 +153,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 我的图书
-    - 我的书籍
+    - My[CH]
+    - My[CH]
     - my library
     - library
     semantic_type: tab
@@ -166,8 +166,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - home screen
     - main
     semantic_type: tab
@@ -179,8 +179,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 目录
-    - 书目
+    - Directory
+    - [CH]
     - catalog list
     semantic_type: tab
   - text: Settings
@@ -191,7 +191,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 设置
+    - Settings
     - preferences
     - options
     - config
@@ -210,7 +210,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 目录
+    - Directory
     - Catalogue
     - Book catalogs
     semantic_type: tab
@@ -222,9 +222,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 免费图书
+    - [CH]
     - Free ebooks
-    - 免费电子书
+    - [CH]
     semantic_type: menu_item
   - text: Download thousands of free ebooks in English, French, Spanish, Italian and
       German.
@@ -235,9 +235,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 下载免费电子书
+    - Download[CH]
     - Free ebooks description
-    - 多语言电子书下载
+    - 多Language[CH]Download
     semantic_type: label
   - text: Browse
     center:
@@ -247,7 +247,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 浏览
+    - [CH]
     - Explore
     - Discover
     semantic_type: tab
@@ -259,9 +259,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 个人资料
+    - Personal[CH]
     - Account
-    - 我的
+    - My
     semantic_type: tab
   - text: Add
     center:
@@ -271,8 +271,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 添加
-    - 新增
+    - [CH]
+    - [CH]
     - Add book
     semantic_type: button
   - text: Home
@@ -283,8 +283,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - Main
     semantic_type: tab
   - text: My books
@@ -295,9 +295,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 我的图书
+    - My[CH]
     - My library
-    - 我的书架
+    - My[CH]
     semantic_type: tab
   - text: Settings
     center:
@@ -307,9 +307,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 设置
+    - Settings
     - Preferences
-    - 配置
+    - Configure
     semantic_type: setting
   description: Free books catalog page offering downloadable ebooks in multiple languages
     with a browse button and standard app navigation.
@@ -327,8 +327,8 @@ screens:
     aliases:
     - Settings
     - Options
-    - 设置
-    - 偏好设置
+    - Settings
+    - PreferencesSettings
     semantic_type: setting
   - text: Import files
     center:
@@ -339,8 +339,8 @@ screens:
     leads_to: screen_12
     aliases:
     - Add files
-    - 导入文件
-    - 添加文件
+    - ImportFile
+    - [CH]File
     semantic_type: button
   - text: Import folder
     center:
@@ -351,8 +351,8 @@ screens:
     leads_to: screen_12
     aliases:
     - Add folder
-    - 导入文件夹
-    - 添加文件夹
+    - ImportFile夹
+    - [CH]File夹
     semantic_type: button
   - text: Manage accounts
     center:
@@ -364,8 +364,8 @@ screens:
     aliases:
     - Accounts
     - Account settings
-    - 管理账户
-    - 账号管理
+    - ManageAccount
+    - AccountManage
     semantic_type: menu_item
   - text: Help
     center:
@@ -376,8 +376,8 @@ screens:
     leads_to: screen_13
     aliases:
     - Support
-    - 帮助
-    - 支持
+    - Help
+    - [CH]
     semantic_type: menu_item
   - text: Terms of use
     center:
@@ -389,8 +389,8 @@ screens:
     aliases:
     - Terms
     - Terms and conditions
-    - 使用条款
-    - 用户协议
+    - Usage Terms
+    - User Agreement
     semantic_type: link
   - text: Privacy policy
     center:
@@ -401,8 +401,8 @@ screens:
     leads_to: screen_13
     aliases:
     - Privacy
-    - 隐私政策
-    - 隐私权政策
+    - Privacy Policy
+    - Privacy[CH]
     semantic_type: link
   description: Settings screen with options to manage preferences, import files or
     folders, manage accounts, and access help and legal policies.
@@ -418,8 +418,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 图书
-    - 书籍
+    - [CH]
+    - [CH]
     - ebooks
     - book list
     semantic_type: tab
@@ -431,7 +431,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 作者
+    - [CH]
     - writers
     - author list
     semantic_type: tab
@@ -443,8 +443,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 分类
-    - 类别
+    - [CH]
+    - [CH]
     - genres
     - topics
     semantic_type: tab
@@ -456,8 +456,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 合集
-    - 丛书
+    - [CH]
+    - [CH]
     - bookshelves
     - shelves
     semantic_type: tab
@@ -469,8 +469,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 我的图书
-    - 我的书籍
+    - My[CH]
+    - My[CH]
     - my library
     - library
     semantic_type: tab
@@ -482,8 +482,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - home screen
     - main
     semantic_type: tab
@@ -495,8 +495,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 目录
-    - 书目
+    - Directory
+    - [CH]
     - catalog list
     semantic_type: tab
   - text: Settings
@@ -507,7 +507,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 设置
+    - Settings
     - preferences
     - options
     - config
@@ -526,8 +526,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 图书
-    - 书籍
+    - [CH]
+    - [CH]
     - book
     - ebooks
     semantic_type: tab
@@ -539,8 +539,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 作者
-    - 作家
+    - [CH]
+    - [CH]
     - author
     - writers
     semantic_type: tab
@@ -552,8 +552,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 分类
-    - 类别
+    - [CH]
+    - [CH]
     - category
     - genres
     semantic_type: tab
@@ -565,8 +565,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 合集
-    - 丛书
+    - [CH]
+    - [CH]
     - collection
     - series
     semantic_type: tab
@@ -578,9 +578,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 悲剧
+    - [CH]
     - tragedy
-    - 悲剧类
+    - [CH]
     semantic_type: menu_item
   - text: My books
     center:
@@ -590,8 +590,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 我的图书
-    - 我的书架
+    - My[CH]
+    - My[CH]
     - my library
     - my ebooks
     semantic_type: tab
@@ -603,8 +603,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - home screen
     - main
     semantic_type: tab
@@ -616,8 +616,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 目录
-    - 书目
+    - Directory
+    - [CH]
     - catalog
     - catalogue
     semantic_type: tab
@@ -629,8 +629,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 设置
-    - 配置
+    - Settings
+    - Configure
     - preferences
     - settings menu
     semantic_type: tab
@@ -648,8 +648,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 图书
-    - 电子书
+    - [CH]
+    - [CH]
     - ebooks
     - reading material
     semantic_type: tab
@@ -661,8 +661,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 作者
-    - 作家
+    - [CH]
+    - [CH]
     - writers
     - creators
     semantic_type: tab
@@ -674,8 +674,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 分类
-    - 类别
+    - [CH]
+    - [CH]
     - genres
     - topics
     semantic_type: tab
@@ -687,8 +687,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 集合
-    - 书单
+    - [CH]
+    - [CH]
     - shelves
     - bookshelves
     semantic_type: tab
@@ -700,8 +700,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 我的图书
-    - 我的书架
+    - My[CH]
+    - My[CH]
     - my library
     - my shelf
     semantic_type: tab
@@ -713,8 +713,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - main
     - dashboard
     semantic_type: tab
@@ -726,8 +726,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 目录
-    - 书目
+    - Directory
+    - [CH]
     - catalogues
     - index
     semantic_type: tab
@@ -739,8 +739,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 设置
-    - 选项
+    - Settings
+    - [CH]
     - preferences
     - config
     semantic_type: menu_item
@@ -759,7 +759,7 @@ screens:
     leads_to: screen_17
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     - Go back
     semantic_type: button
@@ -771,7 +771,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_18
     aliases:
-    - 详情
+    - [CH]
     - View details
     - More info
     - Information
@@ -792,8 +792,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上
+    - Back
+    - [CH]
     - Go back
     semantic_type: button
   description: Screen header featuring a back navigation button to return to the previous
@@ -810,7 +810,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 目录
+    - Directory
     - catalogue
     - book catalogs
     semantic_type: menu_item
@@ -822,8 +822,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 免费图书
-    - 免费书籍
+    - [CH]
+    - [CH]
     - free ebooks
     semantic_type: menu_item
   - text: Browse
@@ -834,7 +834,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 浏览
+    - [CH]
     - explore
     - discover
     semantic_type: tab
@@ -846,8 +846,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 个人资料
-    - 我的
+    - Personal[CH]
+    - My
     - account
     semantic_type: tab
   - text: Add a URL
@@ -858,8 +858,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 添加网址
-    - 添加链接
+    - [CH]
+    - [CH]
     - add link
     semantic_type: button
   - text: Libraries
@@ -870,7 +870,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_22
     aliases:
-    - 图书馆
+    - [CH]
     - library
     - digital libraries
     semantic_type: menu_item
@@ -882,8 +882,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - main
     semantic_type: tab
   - text: My books
@@ -894,8 +894,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 我的图书
-    - 我的书架
+    - My[CH]
+    - My[CH]
     - bookshelf
     semantic_type: tab
   - text: Settings
@@ -906,7 +906,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 设置
+    - Settings
     - preferences
     - options
     semantic_type: setting
@@ -924,10 +924,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_23
     aliases:
-    - 语言
+    - Language
     - App Language
     - Language Settings
-    - 语种
+    - [CH]
     semantic_type: setting
   - text: System preferences
     center:
@@ -937,9 +937,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_24
     aliases:
-    - 系统偏好设置
+    - [CH]PreferencesSettings
     - System Settings
-    - 系统设置
+    - [CH]Settings
     - Preferences
     semantic_type: setting
   - text: Theme
@@ -950,9 +950,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_24
     aliases:
-    - 主题
+    - Theme
     - Appearance
-    - 外观
+    - [CH]
     - Theme Settings
     semantic_type: setting
   - text: Default
@@ -963,9 +963,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_25
     aliases:
-    - 默认
+    - Default
     - Default Value
-    - 默认设置
+    - DefaultSettings
     - Standard
     semantic_type: label
   - text: Color selector
@@ -976,9 +976,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_25
     aliases:
-    - 颜色选择器
+    - ColorSelect器
     - Color Picker
-    - 选色器
+    - [CH]
     - Choose Color
     semantic_type: button
   - text: Notifications
@@ -989,9 +989,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_26
     aliases:
-    - 通知
+    - Notification
     - Notification Settings
-    - 消息通知
+    - MessageNotification
     - Alerts
     semantic_type: setting
   - text: Preferences
@@ -1002,9 +1002,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 偏好设置
+    - PreferencesSettings
     - Settings
-    - 设置
+    - Settings
     - Options
     semantic_type: setting
   description: Settings screen where users can configure app language, theme, color
@@ -1021,7 +1021,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 下载
+    - Download
     - download files
     - save
     semantic_type: button
@@ -1033,8 +1033,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 图片
-    - 照片
+    - [CH]
+    - [CH]
     - photos
     - pictures
     semantic_type: tab
@@ -1046,8 +1046,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 音频
-    - 音乐
+    - [CH]
+    - [CH]
     - music
     - sounds
     semantic_type: tab
@@ -1059,8 +1059,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 视频
-    - 影片
+    - [CH]
+    - [CH]
     - movies
     - clips
     semantic_type: tab
@@ -1072,8 +1072,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 文档
-    - 文件
+    - Documentation
+    - File
     - docs
     - files
     semantic_type: tab
@@ -1085,8 +1085,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 列表视图
-    - 列表模式
+    - [CH]
+    - [CH]Mode
     - list mode
     semantic_type: toggle
   - text: Show roots
@@ -1097,9 +1097,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 显示根目录
+    - [CH]Directory
     - show root directories
-    - 根目录
+    - 根Directory
     semantic_type: toggle
   - text: Search
     center:
@@ -1109,8 +1109,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 搜索
-    - 查找
+    - Search
+    - [CH]
     - find
     - search files
     semantic_type: button
@@ -1122,8 +1122,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - more
     - menu
     semantic_type: button
@@ -1135,8 +1135,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 电子书
-    - 电子书籍
+    - [CH]
+    - [CH]
     - e-books
     - books
     semantic_type: tab
@@ -1154,7 +1154,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 打开方式
+    - Open[CH]
     - open using
     - open with app
     semantic_type: label
@@ -1166,8 +1166,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - Pi播放器
-    - Pi音乐播放器
+    - Pi[CH]
+    - Pi[CH]
     - Pi Player
     semantic_type: menu_item
   - text: Floating Pi Music Player
@@ -1178,9 +1178,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 悬浮Pi音乐播放器
+    - [CH]Pi[CH]
     - Floating Pi Player
-    - Pi悬浮播放器
+    - Pi[CH]
     semantic_type: menu_item
   - text: YouTube Music
     center:
@@ -1191,8 +1191,8 @@ screens:
     leads_to: screen_30
     aliases:
     - YT Music
-    - 油管音乐
-    - YouTube音乐
+    - [CH]
+    - YouTube[CH]
     semantic_type: menu_item
   - text: Just once
     center:
@@ -1202,9 +1202,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 仅此一次
+    - [CH]
     - just this once
-    - 一次
+    - [CH]
     semantic_type: button
   - text: Always
     center:
@@ -1214,8 +1214,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 始终
-    - 总是
+    - [CH]
+    - 总Yes
     - always use
     semantic_type: button
   description: Android system 'Open with' dialog allowing the user to select an app
@@ -1234,7 +1234,7 @@ screens:
     aliases:
     - WebView
     - browser view
-    - 网页视图
+    - [CH]
     - web content
     semantic_type: other
   - text: Home
@@ -1244,8 +1244,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主页
-    - 首页
+    - Home
+    - Home
     - home screen
     - home tab
     semantic_type: tab
@@ -1256,8 +1256,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 安全连接
-    - 连接安全
+    - SecurityConnection
+    - ConnectionSecurity
     - secure connection
     - https
     semantic_type: label
@@ -1268,8 +1268,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 新标签页
-    - 新建标签
+    - NewTab页
+    - [CH]Tab
     - new page
     - add tab
     semantic_type: button
@@ -1280,8 +1280,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 切换或关闭标签页
-    - 管理标签页
+    - [CH]CloseTab页
+    - ManageTab页
     - tab switcher
     - tabs overview
     semantic_type: button
@@ -1292,11 +1292,11 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - menu
     - overflow menu
-    - 三点菜单
+    - [CH]Menu
     semantic_type: button
   - text: Chinese (Simplified)
     center:
@@ -1305,8 +1305,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 简体中文
-    - 中文
+    - [CH]Chinese
+    - Chinese
     - Simplified Chinese
     - zh-CN
     semantic_type: menu_item
@@ -1317,8 +1317,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - en
     - English language
     semantic_type: menu_item
@@ -1329,7 +1329,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - close button
     - dismiss
     - exit
@@ -1340,7 +1340,7 @@ screens:
   scroll_direction: vertical
 - id: screen_15
   elements:
-  - text: Google Play 徽标
+  - text: Google Play [CH]
     center:
     - 0.2431
     - 0.1409
@@ -1349,9 +1349,9 @@ screens:
     aliases:
     - Google Play logo
     - Play Store icon
-    - Google Play 图标
+    - Google Play [CH]
     semantic_type: label
-  - text: 搜索
+  - text: Search
     center:
     - 0.6854
     - 0.1409
@@ -1360,10 +1360,10 @@ screens:
     aliases:
     - Search
     - Search bar
-    - 搜索框
-    - 查找
+    - Search框
+    - [CH]
     semantic_type: input
-  - text: 帮助中心
+  - text: HelpCenter
     center:
     - 0.8031
     - 0.1409
@@ -1372,10 +1372,10 @@ screens:
     aliases:
     - Help center
     - Help
-    - 帮助
+    - Help
     - Support
     semantic_type: link
-  - text: 游戏
+  - text: Game
     center:
     - 0.1264
     - 0.1992
@@ -1384,9 +1384,9 @@ screens:
     aliases:
     - Games
     - Play Games
-    - 游戏分类
+    - Game[CH]
     semantic_type: tab
-  - text: 应用
+  - text: App
     center:
     - 0.3753
     - 0.1992
@@ -1395,9 +1395,9 @@ screens:
     aliases:
     - Apps
     - Applications
-    - 应用程序
+    - AppProgram
     semantic_type: tab
-  - text: 图书
+  - text: [CH]
     center:
     - 0.6271
     - 0.1992
@@ -1406,10 +1406,10 @@ screens:
     aliases:
     - Books
     - Ebooks
-    - 电子书
-    - 图书分类
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 儿童
+  - text: [CH]
     center:
     - 0.8743
     - 0.1992
@@ -1418,10 +1418,10 @@ screens:
     aliases:
     - Kids
     - Children
-    - 儿童分类
-    - 家庭
+    - [CH]
+    - [CH]
     semantic_type: tab
-  - text: 信息徽章
+  - text: Info[CH]
     center:
     - 0.5
     - 0.4242
@@ -1430,10 +1430,10 @@ screens:
     aliases:
     - Info badge
     - Information badge
-    - 信息图标
-    - 徽章
+    - Info[CH]
+    - [CH]
     semantic_type: label
-  - text: 详细了解此内容分级
+  - text: Detailed[CH]
     center:
     - 0.2174
     - 0.4375
@@ -1442,10 +1442,10 @@ screens:
     aliases:
     - Learn more about this content rating
     - Content rating info
-    - 了解内容分级
-    - 分级详情
+    - [CH]
+    - [CH]
     semantic_type: link
-  - text: 安装
+  - text: Install
     center:
     - 0.5017
     - 0.5117
@@ -1454,10 +1454,10 @@ screens:
     aliases:
     - Install
     - Download
-    - 下载
-    - 获取
+    - Download
+    - [CH]
     semantic_type: button
-  - text: 在 Play 商店应用中查看
+  - text: at Play [CH]AppmiddleView
     center:
     - 0.5003
     - 0.5655
@@ -1466,9 +1466,9 @@ screens:
     aliases:
     - View in Play Store app
     - Open in Play Store
-    - 在Play商店中查看
+    - atPlay[CH]View
     semantic_type: link
-  - text: 分享
+  - text: Share
     center:
     - 0.3292
     - 0.6216
@@ -1477,10 +1477,10 @@ screens:
     aliases:
     - Share
     - Send
-    - 共享
-    - 转发
+    - Share
+    - [CH]
     semantic_type: button
-  - text: 添加到心愿单
+  - text: [CH]
     center:
     - 0.6024
     - 0.6216
@@ -1489,10 +1489,10 @@ screens:
     aliases:
     - Add to wishlist
     - Wishlist
-    - 加入心愿单
-    - 收藏
+    - [CH]
+    - [CH]
     semantic_type: button
-  - text: 滚动到下一组
+  - text: [CH]
     center:
     - 0.9375
     - 0.897
@@ -1501,10 +1501,10 @@ screens:
     aliases:
     - Scroll to next group
     - Next group
-    - 下一组
-    - 向右滚动
+    - [CH]
+    - [CH]
     semantic_type: button
-  - text: 关于此应用
+  - text: About此App
     center:
     - 0.0
     - 0.0
@@ -1513,8 +1513,8 @@ screens:
     aliases:
     - About this app
     - App info
-    - 应用信息
-    - 关于
+    - AppInfo
+    - About
     semantic_type: label
   - text: Home
     center:
@@ -1523,8 +1523,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主页
-    - 首页
+    - Home
+    - Home
     - Home tab
     semantic_type: tab
   - text: Connection is secure
@@ -1536,8 +1536,8 @@ screens:
     aliases:
     - Secure connection
     - HTTPS
-    - 连接安全
-    - 安全连接
+    - ConnectionSecurity
+    - SecurityConnection
     semantic_type: label
   - text: New tab
     center:
@@ -1547,8 +1547,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Add tab
-    - 新建标签页
-    - 新标签
+    - [CH]Tab页
+    - NewTab
     semantic_type: button
   - text: Switch or close tabs
     center:
@@ -1559,8 +1559,8 @@ screens:
     aliases:
     - Tab switcher
     - Manage tabs
-    - 切换或关闭标签页
-    - 标签页管理器
+    - [CH]CloseTab页
+    - Tab页Manage器
     semantic_type: button
   - text: More options
     center:
@@ -1571,8 +1571,8 @@ screens:
     aliases:
     - Menu
     - Overflow menu
-    - 更多选项
-    - 菜单
+    - [CH]
+    - Menu
     semantic_type: button
   - text: Chinese (Simplified)
     center:
@@ -1581,8 +1581,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 简体中文
-    - 中文
+    - [CH]Chinese
+    - Chinese
     - Simplified Chinese
     - zh-CN
     semantic_type: menu_item
@@ -1593,8 +1593,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - en
     - English language
     semantic_type: menu_item
@@ -1607,8 +1607,8 @@ screens:
     aliases:
     - Exit
     - Dismiss
-    - 关闭
-    - 取消
+    - Close
+    - Cancel
     semantic_type: button
   description: Web browser view of a Google Play Store app listing page featuring
     install, share, and wishlist options, content rating details, and an 'About this
@@ -1617,7 +1617,7 @@ screens:
   scroll_direction: vertical
 - id: screen_16
   elements:
-  - text: Google Play 徽标
+  - text: Google Play [CH]
     center:
     - 0.2431
     - 0.1409
@@ -1626,9 +1626,9 @@ screens:
     aliases:
     - Google Play logo
     - Google Play badge
-    - Google Play 标志
+    - Google Play [CH]
     semantic_type: label
-  - text: 搜索
+  - text: Search
     center:
     - 0.6854
     - 0.1409
@@ -1636,10 +1636,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Search
-    - 搜索按钮
+    - Search[CH]
     - search bar
     semantic_type: button
-  - text: 帮助中心
+  - text: HelpCenter
     center:
     - 0.8031
     - 0.1409
@@ -1647,10 +1647,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Help Center
-    - 帮助
+    - Help
     - help
     semantic_type: link
-  - text: 游戏
+  - text: Game
     center:
     - 0.1264
     - 0.1992
@@ -1658,10 +1658,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Games
-    - 游戏标签
+    - GameTab
     - games tab
     semantic_type: tab
-  - text: 应用
+  - text: App
     center:
     - 0.3753
     - 0.1992
@@ -1669,10 +1669,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Apps
-    - 应用标签
+    - AppTab
     - apps tab
     semantic_type: tab
-  - text: 图书
+  - text: [CH]
     center:
     - 0.6271
     - 0.1992
@@ -1680,10 +1680,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Books
-    - 图书标签
+    - [CH]Tab
     - books tab
     semantic_type: tab
-  - text: 儿童
+  - text: [CH]
     center:
     - 0.8743
     - 0.1992
@@ -1692,9 +1692,9 @@ screens:
     aliases:
     - Kids
     - Children
-    - 儿童标签
+    - [CH]Tab
     semantic_type: tab
-  - text: 信息徽章
+  - text: Info[CH]
     center:
     - 0.5
     - 0.4242
@@ -1702,10 +1702,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Info badge
-    - 信息标志
+    - Info[CH]
     - information badge
     semantic_type: label
-  - text: 详细了解此内容分级
+  - text: Detailed[CH]
     center:
     - 0.2174
     - 0.4375
@@ -1713,10 +1713,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Learn more about content rating
-    - 内容分级详情
+    - [CH]
     - learn more
     semantic_type: link
-  - text: 安装
+  - text: Install
     center:
     - 0.5017
     - 0.5117
@@ -1724,10 +1724,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Install
-    - 安装按钮
+    - Install[CH]
     - install app
     semantic_type: button
-  - text: 在 Play 商店应用中查看
+  - text: at Play [CH]AppmiddleView
     center:
     - 0.5003
     - 0.5655
@@ -1735,10 +1735,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - View in Play Store app
-    - 在Play商店查看
+    - atPlay[CH]View
     - open in Play Store
     semantic_type: link
-  - text: 分享
+  - text: Share
     center:
     - 0.3292
     - 0.6216
@@ -1746,10 +1746,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Share
-    - 分享按钮
+    - Share[CH]
     - share app
     semantic_type: button
-  - text: 添加到心愿单
+  - text: [CH]
     center:
     - 0.6024
     - 0.6216
@@ -1757,10 +1757,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Add to wishlist
-    - 加入心愿单
+    - [CH]
     - add to wishlist
     semantic_type: button
-  - text: 屏幕截图图片
+  - text: Screen[CH]
     center:
     - 0.1858
     - 0.8769
@@ -1768,10 +1768,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Screenshot image
-    - 截图
+    - [CH]
     - screenshot
     semantic_type: label
-  - text: 滚动到下一组
+  - text: [CH]
     center:
     - 0.9375
     - 0.897
@@ -1779,10 +1779,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Scroll to next group
-    - 下一组
+    - [CH]
     - scroll next
     semantic_type: button
-  - text: 关于此应用
+  - text: About此App
     center:
     - 0.0
     - 0.0
@@ -1790,7 +1790,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - About this app
-    - 应用信息
+    - AppInfo
     - about app
     semantic_type: link
   - text: Home
@@ -1800,8 +1800,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - home tab
     semantic_type: tab
   - text: Connection is secure
@@ -1811,8 +1811,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 连接安全
-    - 安全连接
+    - ConnectionSecurity
+    - SecurityConnection
     - secure connection
     semantic_type: label
   - text: New tab
@@ -1822,8 +1822,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 新标签页
-    - 新建标签
+    - NewTab页
+    - [CH]Tab
     - new tab button
     semantic_type: button
   - text: Switch or close tabs
@@ -1833,8 +1833,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 切换或关闭标签页
-    - 标签管理
+    - [CH]CloseTab页
+    - TabManage
     - tab switcher
     semantic_type: button
   - text: More options
@@ -1844,8 +1844,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - more menu
     - overflow menu
     semantic_type: button
@@ -1866,7 +1866,7 @@ screens:
     - omnibox
     - search bar
     - URL bar
-    - 搜索或输入网址
+    - Search或Input[CH]
     semantic_type: input
   - text: Start voice search
     center:
@@ -1878,7 +1878,7 @@ screens:
     - voice search
     - microphone
     - speak
-    - 语音搜索
+    - [CH]Search
     semantic_type: button
   - text: Search with your camera using Google Lens
     center:
@@ -1890,7 +1890,7 @@ screens:
     - Google Lens
     - camera search
     - visual search
-    - 镜头搜索
+    - [CH]Search
     semantic_type: button
   - text: Discover - off
     center:
@@ -1901,8 +1901,8 @@ screens:
     aliases:
     - Discover feed
     - news feed
-    - 发现
-    - 资讯
+    - [CH]
+    - [CH]
     semantic_type: toggle
   - text: Options for Discover
     center:
@@ -1913,7 +1913,7 @@ screens:
     aliases:
     - Discover settings
     - feed options
-    - 发现选项
+    - [CH]
     semantic_type: button
   - text: Home
     center:
@@ -1924,8 +1924,8 @@ screens:
     aliases:
     - home page
     - home button
-    - 主页
-    - 首页
+    - Home
+    - Home
     semantic_type: button
   - text: Manage account
     center:
@@ -1936,8 +1936,8 @@ screens:
     aliases:
     - account settings
     - manage your Google account
-    - 管理账号
-    - 账户管理
+    - ManageAccount
+    - AccountManage
     semantic_type: menu_item
   - text: Switch or close tabs
     center:
@@ -1949,7 +1949,7 @@ screens:
     - tab switcher
     - tabs
     - switch tabs
-    - 切换标签页
+    - [CH]Tab页
     semantic_type: button
   - text: More options
     center:
@@ -1961,7 +1961,7 @@ screens:
     - menu
     - three dots
     - more
-    - 更多选项
+    - [CH]
     semantic_type: button
   description: Web browser homepage featuring a search bar with voice and camera options,
     alongside navigation controls for tabs, account management, and settings.
@@ -1976,8 +1976,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 详情
-    - 详细信息
+    - [CH]
+    - DetailedInfo
     - More Info
     - Info
     semantic_type: button
@@ -1988,8 +1988,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 分享
-    - 转发
+    - Share
+    - [CH]
     - Send
     - Share content
     semantic_type: button
@@ -2000,7 +2000,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - Dismiss
     - Cancel
     - X
@@ -2020,8 +2020,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: More options
     center:
@@ -2032,8 +2032,8 @@ screens:
     aliases:
     - Overflow menu
     - Menu
-    - 更多选项
-    - 菜单
+    - [CH]
+    - Menu
     semantic_type: button
   description: Top app bar featuring a navigate up button and a more options menu.
   scrollable: false
@@ -2049,7 +2049,7 @@ screens:
     aliases:
     - Catalogue
     - Library catalog
-    - 目录
+    - Directory
     semantic_type: tab
   - text: Free books
     center:
@@ -2059,7 +2059,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Free ebooks
-    - 免费书籍
+    - [CH]
     semantic_type: menu_item
   - text: Download thousands of free ebooks in English, French, Spanish, Italian and
       German.
@@ -2070,7 +2070,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Free ebooks description
-    - 下载免费电子书说明
+    - Download[CH]Instruction
     semantic_type: label
   - text: Browse
     center:
@@ -2081,7 +2081,7 @@ screens:
     aliases:
     - Explore
     - Discover
-    - 浏览
+    - [CH]
     semantic_type: tab
   - text: Instituto Cervantes
     center:
@@ -2091,7 +2091,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Cervantes Institute
-    - 塞万提斯学院
+    - [CH]
     semantic_type: menu_item
   - text: Add
     center:
@@ -2101,7 +2101,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Add catalog
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Home
     center:
@@ -2111,7 +2111,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Main
-    - 首页
+    - Home
     semantic_type: tab
   - text: My books
     center:
@@ -2122,7 +2122,7 @@ screens:
     aliases:
     - My library
     - Bookshelf
-    - 我的图书
+    - My[CH]
     semantic_type: tab
   - text: Settings
     center:
@@ -2133,7 +2133,7 @@ screens:
     aliases:
     - Preferences
     - Options
-    - 设置
+    - Settings
     semantic_type: tab
   description: Catalogs management screen displaying available ebook sources like
     Free books and Instituto Cervantes with options to browse or add new catalogs,
@@ -2149,7 +2149,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 标题
+    - [CH]
     - book title
     - name
     - title text
@@ -2161,8 +2161,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 网址
-    - 链接
+    - [CH]
+    - [CH]
     - web address
     - link address
     semantic_type: label
@@ -2173,7 +2173,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - cancel button
     - dismiss
     semantic_type: button
@@ -2184,8 +2184,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 确定
-    - 确认
+    - OK
+    - Confirm
     - confirm
     - accept
     semantic_type: button
@@ -2204,7 +2204,7 @@ screens:
     aliases:
     - back
     - up arrow
-    - 返回
+    - Back
     semantic_type: button
   - text: Libraries by country
     center:
@@ -2214,7 +2214,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - country libraries
-    - 按国家划分的图书馆
+    - [CH]
     - regional libraries
     semantic_type: label
   - text: International
@@ -2225,7 +2225,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - global
-    - 国际
+    - [CH]
     - worldwide
     semantic_type: menu_item
   - text: Argentina
@@ -2236,7 +2236,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - AR
-    - 阿根廷
+    - [CH]
     - Argentine
     semantic_type: menu_item
   - text: Belgique
@@ -2248,7 +2248,7 @@ screens:
     aliases:
     - Belgium
     - BE
-    - 比利时
+    - [CH]
     semantic_type: menu_item
   - text: Canada
     center:
@@ -2258,7 +2258,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - CA
-    - 加拿大
+    - [CH]
     - Canadian
     semantic_type: menu_item
   - text: France
@@ -2269,7 +2269,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - FR
-    - 法国
+    - [CH]
     - French
     semantic_type: menu_item
   - text: Italia
@@ -2281,7 +2281,7 @@ screens:
     aliases:
     - Italy
     - IT
-    - 意大利
+    - [CH]
     semantic_type: menu_item
   - text: Suisse
     center:
@@ -2292,7 +2292,7 @@ screens:
     aliases:
     - Switzerland
     - CH
-    - 瑞士
+    - [CH]
     semantic_type: menu_item
   description: Library selection page with a list of countries to choose a regional
     library.
@@ -2309,8 +2309,8 @@ screens:
     aliases:
     - System language
     - Default language
-    - 系统偏好设置
-    - 系统语言
+    - [CH]PreferencesSettings
+    - [CH]Language
     semantic_type: menu_item
   - text: Basque
     center:
@@ -2320,7 +2320,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Euskara
-    - 巴斯克语
+    - [CH]
     - Basque language
     semantic_type: menu_item
   - text: Catalan
@@ -2331,7 +2331,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Català
-    - 加泰罗尼亚语
+    - [CH]
     - Catalan language
     semantic_type: menu_item
   - text: Croatian
@@ -2342,7 +2342,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Hrvatski
-    - 克罗地亚语
+    - [CH]
     - Croatian language
     semantic_type: menu_item
   - text: English
@@ -2352,7 +2352,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英语
+    - [CH]
     - English language
     - EN
     semantic_type: menu_item
@@ -2364,7 +2364,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Français
-    - 法语
+    - [CH]
     - French language
     - FR
     semantic_type: menu_item
@@ -2376,7 +2376,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Galego
-    - 加利西亚语
+    - [CH]
     - Galician language
     semantic_type: menu_item
   - text: German
@@ -2387,7 +2387,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Deutsch
-    - 德语
+    - [CH]
     - German language
     - DE
     semantic_type: menu_item
@@ -2399,7 +2399,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Italiano
-    - 意大利语
+    - [CH]
     - Italian language
     - IT
     semantic_type: menu_item
@@ -2410,8 +2410,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日本語
-    - 日语
+    - [CH]
+    - [CH]
     - Japanese language
     - JA
     semantic_type: menu_item
@@ -2423,7 +2423,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Español
-    - 西班牙语
+    - [CH]
     - Spanish language
     - ES
     semantic_type: menu_item
@@ -2440,8 +2440,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 系统偏好设置
-    - 系统设置
+    - [CH]PreferencesSettings
+    - [CH]Settings
     - system settings
     - preferences
     semantic_type: setting
@@ -2452,8 +2452,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 浅色
-    - 亮色
+    - Light
+    - [CH]
     - light mode
     - light theme
     semantic_type: menu_item
@@ -2464,8 +2464,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 深色
-    - 暗色
+    - Dark
+    - [CH]
     - dark mode
     - dark theme
     semantic_type: menu_item
@@ -2482,10 +2482,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 默认
+    - Default
     - default theme
     - standard
-    - 默认主题
+    - DefaultTheme
     semantic_type: menu_item
   - text: Blue
     center:
@@ -2494,10 +2494,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 蓝色
+    - [CH]
     - blue theme
     - blu
-    - 海蓝色
+    - [CH]
     semantic_type: menu_item
   - text: Green
     center:
@@ -2506,10 +2506,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 绿色
+    - [CH]
     - green theme
-    - 护眼绿
-    - 豆沙绿
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Orange
     center:
@@ -2518,10 +2518,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 橙色
+    - [CH]
     - orange theme
-    - 橘色
-    - 暖橙色
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Red
     center:
@@ -2530,10 +2530,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 红色
+    - [CH]
     - red theme
-    - 赤色
-    - 暗红色
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Yellow
     center:
@@ -2542,10 +2542,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 黄色
+    - [CH]
     - yellow theme
-    - 暖黄
-    - 羊皮纸
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   description: Color selection screen allowing users to choose from default, blue,
     green, orange, red, and yellow options.
@@ -2563,7 +2563,7 @@ screens:
     - Back
     - Up
     - Go back
-    - 返回
+    - Back
     semantic_type: button
   - text: Cantook
     center:
@@ -2575,7 +2575,7 @@ screens:
     - App name
     - Title
     - Cantook app
-    - 应用名称
+    - App[CH]
     semantic_type: label
   - text: All Cantook notifications
     center:
@@ -2586,7 +2586,7 @@ screens:
     aliases:
     - Notifications
     - App notifications
-    - 通知
+    - Notification
     - All notifications
     semantic_type: menu_item
   - text: You haven't allowed notifications from this app
@@ -2598,7 +2598,7 @@ screens:
     aliases:
     - Notifications disabled
     - Permission denied
-    - 未允许通知
+    - [CH]Notification
     - Notification status
     semantic_type: label
   description: Notifications list screen showing an empty state message indicating
@@ -2785,7 +2785,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     semantic_type: button
   - text: Cantook
     center:
@@ -2806,7 +2806,7 @@ screens:
     aliases:
     - Notifications
     - Enable notifications
-    - 通知
+    - Notification
     semantic_type: toggle
   description: Top app bar featuring a back navigation button, the app title, and
     a notifications icon.
@@ -2823,7 +2823,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up button
     semantic_type: button
   - text: Check new loan notifications
@@ -2835,7 +2835,7 @@ screens:
     aliases:
     - check notifications
     - new loan alerts
-    - 查看新借阅通知
+    - View[CH]Notification
     semantic_type: button
   - text: Cantook
     center:
@@ -2846,7 +2846,7 @@ screens:
     aliases:
     - Cantook app
     - Cantook reader
-    - Cantook阅读器
+    - Cantook[CH]
     semantic_type: label
   - text: Show notifications
     center:
@@ -2856,7 +2856,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - enable notifications
-    - 通知显示
+    - Notification[CH]
     - notification settings
     semantic_type: toggle
   - text: Default
@@ -2867,7 +2867,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - default setting
-    - 默认
+    - Default
     - default option
     semantic_type: label
   - text: Silent
@@ -2878,7 +2878,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - silent mode
-    - 静音
+    - Mute
     - no sound
     semantic_type: label
   - text: No sound or vibration
@@ -2889,7 +2889,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - silent
-    - 无声音无振动
+    - None[CH]None[CH]
     - mute
     semantic_type: label
   - text: Minimize
@@ -2900,7 +2900,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - collapse
-    - 最小化
+    - Minimize
     - minimize notifications
     semantic_type: button
   - text: In the pull-down shade, collapse notifications to one line
@@ -2911,7 +2911,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - collapse notifications
-    - 下拉通知栏折叠通知
+    - [CH]Notification[CH]Notification
     - notification collapse
     semantic_type: label
   - text: Show notification dot
@@ -2922,7 +2922,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - notification badge
-    - 显示通知圆点
+    - [CH]Notification[CH]
     - notification indicator
     semantic_type: toggle
   - text: Override Do Not Disturb
@@ -2933,7 +2933,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - bypass DND
-    - 覆盖勿扰模式
+    - [CH]Mode
     - override DND
     semantic_type: toggle
   description: Notification settings screen allowing users to configure alert behaviors,

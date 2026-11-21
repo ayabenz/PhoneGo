@@ -22,7 +22,7 @@ KEY_FILE = "pair-key.pem"
 _device = None
 _client = None
 #: A device that drives the phone's own screen, for apps that cannot run on a
-#: virtual display (京东, 淘宝, 备忘录…). Only used when a task asks for it.
+#: virtual display ([CH], [CH], [CH]…). Only used when a task asks for it.
 _hands_off_device = None
 
 
@@ -158,8 +158,8 @@ def start_display(
 def _hands_off():
     """The phone's own screen as a device, created once and reused.
 
-    Apps whose launcher hands over to a singleTask activity (京东's
-    MainFrameActivity, 淘宝's SearchDoorActivity) can never be placed on a
+    Apps whose launcher hands over to a singleTask activity ([CH]'s
+    MainFrameActivity, [CH]'s SearchDoorActivity) can never be placed on a
     virtual display: the system puts that activity on display 0 no matter what
     we ask for. The only way to drive them is to ask the user for the phone and
     work where they can see it.
@@ -351,15 +351,15 @@ TOKEN_FILE = "agent-token"
 
 #: Apps that must be driven on the phone's own display.
 #:
-#: 小红书 used to be here: its search page is a NEW_TASK activity, so the
+#: [CH] used to be here: its search page is a NEW_TASK activity, so the
 #: system hosts it on the default display even when the app runs on a virtual
-#: one (measured: tapping 搜索 at (1192,224) on display 644 moved the whole
-#: 小红书 task to display 0). What changed is that the task can be moved back:
+#: one (measured: tapping Search at (1192,224) on display 644 moved the whole
+#: [CH] task to display 0). What changed is that the task can be moved back:
 #: `am display move-stack <task> <display>` returns it, and the search page
 #: then reads and types on the virtual display (its EditText,
 #: id=mSearchToolBarEt, is a real accessibility node there -- the earlier
 #: "no editable node" reading was taken from a page that had already moved).
-#: Driving 小红书 on the phone's screen hides PhoneGo behind it, which is
+#: Driving [CH] on the phone's screen hides PhoneGo behind it, which is
 #: exactly what the app is for, so the list is empty and the agent pulls an
 #: escaped task back instead (VirtualDisplayDevice.pull_back).
 USER_DISPLAY_PACKAGES = ()
@@ -754,11 +754,11 @@ def recover() -> Recovery:
     # say what actually does.
     if not _wireless_debugging_on():
         return Recovery(False,
-                        "adbd 没有监听端口：无线调试已经关闭。"
-                        "\n请到「设置 → 开发者选项 → 无线调试」打开开关，再回到这里。")
+                        "adbd 没Yes[CH]：None线Debugging[CH]Close。"
+                        "\n[CH]「Settings → [CH] → None线Debugging」Open[CH]，[CH]。")
     return Recovery(False,
-                    "adbd 端口变了，但没发现新端口。"
-                    "\n请到「设置 → 开发者选项 → 无线调试」看一眼端口，然后回到这里。")
+                    "adbd [CH]，[CH]。"
+                    "\n[CH]「Settings → [CH] → None线Debugging」[CH]，[CH]。")
 
 
 def _restart_server() -> str:

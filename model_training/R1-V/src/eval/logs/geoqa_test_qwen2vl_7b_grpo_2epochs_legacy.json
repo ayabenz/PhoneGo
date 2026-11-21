@@ -3525,9 +3525,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/320.png",
         "question": "As shown in the figure, a torus carpet is to be laid in the lobby of a hotel. The worker only measures the length of the chord AB of the great circle that is tangent to the small circle, and then calculates the area of ​​the torus. If the measured length of AB is 8.0, the area of ​​the torus is ()",
-        "ground_truth": "16π平方米"
+        "ground_truth": "16π[CH]"
       },
-      "ground_truth": "16π平方米",
+      "ground_truth": "16π[CH]",
       "model_output": "<think>Given that the length of AB is 8.0, we can use the Pythagorean theorem to find the radius of the small circle. Let the radius of the small circle be r and the radius of the large circle be R. Then, we have R^2 = r^2 + (4)^2. Solving for R, we get R = 5. Therefore, the area of the torus is 2πR^2 = 2π(5)^2 = 50π.</think>\n<answer>50π</answer>",
       "extracted_answer": "50",
       "is_correct": false
@@ -4999,9 +4999,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/454.png",
         "question": "As shown in the figure, a cargo ship sails from point A to point D in the east direction at a speed of 24.0 nautical mile/hour. At point A, a certain island C is measured in the direction 60.0 east by north. The cargo ship arrived at point B after sailing for 30.0 minutes. At this time, it was measured that the island is in the direction 30.0 east by north. Then the shortest distance between the cargo ship and the island C is ()",
-        "ground_truth": "6√{3}海里"
+        "ground_truth": "6√{3}[CH]"
       },
-      "ground_truth": "6√{3}海里",
+      "ground_truth": "6√{3}[CH]",
       "model_output": "<think>Given that the cargo ship sails from point A to point D at a speed of 24.0 nautical miles per hour, and it takes 30 minutes to sail from point A to point B, we can calculate the distance AB. The distance AB is 24.0 * (30/60) = 12.0 nautical miles. Since the island C is in the direction 60.0 east by north from point A, and the island is in the direction 30.0 east by north from point B, we can conclude that the shortest distance between the cargo ship and the island C is 12.2 nautical miles.</think>\n<answer>12.2</answer>",
       "extracted_answer": "12.2000000000000",
       "is_correct": false
@@ -5120,9 +5120,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/465.png",
         "question": "As shown in the figure, in triangle ABC, AB = 10.0, AC = 18.0, point M starts from point A and moves to point B at a speed of 2.0 per second, and point N starts from point C and moves to point A at a speed of 3.0 per second. One of the moving points reaches the endpoint, and the other moving point also stops. When triangle AMN is an isosceles triangle with MN as the base, the movement time is ()",
-        "ground_truth": "3.6秒"
+        "ground_truth": "3.6second"
       },
-      "ground_truth": "3.6秒",
+      "ground_truth": "3.6second",
       "model_output": "<think> Since triangle AMN is isosceles with MN as the base, we have AM = AN. Therefore, the movement time is t = AB/2 = 10/2 = 5 seconds. </think> <answer>5</answer>",
       "extracted_answer": "5",
       "is_correct": false
@@ -5296,9 +5296,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/481.png",
         "question": "As shown in the figure, it is known that the length of one waist AB of the isosceles triangle ABC is 4.0 centimetres. Cross any point D on the bottom edge BC to draw two waist parallel lines, and they intersect the two waists at E and F respectively, then the perimeter of the quadrilateral AEDF is ()",
-        "ground_truth": "8厘米"
+        "ground_truth": "8[CH]"
       },
-      "ground_truth": "8厘米",
+      "ground_truth": "8[CH]",
       "model_output": "<think> Since DE is parallel to AB and DF is parallel to AC, quadrilateral AEDF is a parallelogram. Therefore, the perimeter of quadrilateral AEDF is equal to the sum of the lengths of AB and AC. Since AB = 4 cm, and AC = 4 cm, the perimeter of quadrilateral AEDF is 4 + 4 = 8 cm. </think> <answer>8</answer>",
       "extracted_answer": "8",
       "is_correct": true
@@ -5318,9 +5318,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/483.png",
         "question": "A ship departs from point A on the sea level and travels 40.0 nautical miles to the west by south direction 40.0 to point B, and then travels 40.0 nautical miles from point B to the west by north 20.0 direction to point C, then the distance between A and C is ( )",
-        "ground_truth": "40海里"
+        "ground_truth": "40[CH]"
       },
-      "ground_truth": "40海里",
+      "ground_truth": "40[CH]",
       "model_output": "<think> The distance between A and C is the hypotenuse of a right triangle with legs of 40.0 nautical miles and 40.0 nautical miles. Using the Pythagorean theorem, the distance is sqrt(40.0^2 + 40.0^2) = 40.0 nautical miles. </think> <answer> 40.0 </answer>",
       "extracted_answer": "40.0000000000000",
       "is_correct": true
@@ -5549,9 +5549,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/504.png",
         "question": "As shown in the figure, it is known that there is a laser auxiliary signal within a certain range of the lighthouse M. A ship is sailing at a constant speed from south by north at a constant speed at sea. The ship measured at A and measured that the lighthouse M was in the direction 30.0 to the east by north, and it traveled 1.0. Arrived at point B after hours, and just entered the laser signal area of ​​lighthouse M at this time. It is measured that lighthouse M is in the direction of 45.0 east by north, then the time for the ship to pass the laser signal area of ​​lighthouse M is ()",
-        "ground_truth": "(√{3}+1)小时"
+        "ground_truth": "(√{3}+1)[CH]"
       },
-      "ground_truth": "(√{3}+1)小时",
+      "ground_truth": "(√{3}+1)[CH]",
       "model_output": "<think>Given that the ship is sailing at a constant speed from south by north, and the angle between the direction of the ship and the lighthouse M is 30.0 degrees, and the ship traveled 1.0 units of distance in 1 hour. Therefore, the time for the ship to pass the laser signal area of lighthouse M is 1 hour.</think>\n<answer>1</answer>",
       "extracted_answer": "1",
       "is_correct": false
@@ -5560,9 +5560,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/505.png",
         "question": "As shown in the figure, at 8.0 in the morning, a ship departs from point A and sails northward at a speed of 15.0 nautical miles/hour, and arrives at point B at 9.0 and 40.0 minutes. From point A, lighthouse C is measured in the direction 26.0 west by north. From point B, lighthouse C is measured in the 52.0 direction west of north, then the distance from point B to lighthouse C is ()",
-        "ground_truth": "25海里"
+        "ground_truth": "25[CH]"
       },
-      "ground_truth": "25海里",
+      "ground_truth": "25[CH]",
       "model_output": "<think>Given that the ship sails for 1 hour and 40 minutes, which is 1.67 hours, and the speed is 15 nautical miles per hour, the distance AB is 15 * 1.67 = 25.05 nautical miles. Since angle ABC = 52° and angle BAC = 26°, we have angle ACB = 180° - 52° - 26° = 102°. Therefore, the distance BC = AB * sin(102°) = 25.05 * sin(102°) ≈ 25.05 * 0.951 = 24.06 nautical miles. </think> <answer>24.06</answer>",
       "extracted_answer": "24.0600000000000",
       "is_correct": false
@@ -5571,9 +5571,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/506.png",
         "question": "At 9.0 in the morning, a ship departs from point A and sails in the direction due east at a speed of 40.0 nautical miles per hour, and arrives at point B at 9.0 and 30.0 minutes. As shown in the figure, the island M is measured from A and B. In the direction of 45.0 north by east and 15.0 north by east, then the distance between B and island M is ()",
-        "ground_truth": "20√{2}海里"
+        "ground_truth": "20√{2}[CH]"
       },
-      "ground_truth": "20√{2}海里",
+      "ground_truth": "20√{2}[CH]",
       "model_output": "<think>Given that the ship sails at a speed of 40.0 nautical miles per hour, and the time taken to travel from A to B is 30.0 minutes, we can calculate the distance AB as 40.0 * (30.0/60) = 20.0 nautical miles. Since the island M is measured from A and B in the direction of 45.0 north by east and 15.0 north by east, we can use the Pythagorean theorem to find the distance BM. BM = sqrt(AB^2 + AM^2) = sqrt(20.0^2 + 15.0^2) = 25.0 nautical miles. Therefore, the distance between B and island M is 25.1 nautical miles.</think> <answer>25.1</answer>",
       "extracted_answer": "25.1000000000000",
       "is_correct": false
@@ -5593,9 +5593,9 @@
       "question": {
         "image_path": "/home/chenliang/Geo170K/images/test/508.png",
         "question": "As shown in the figure, it is known that a fisherman on a fishing boat sees lighthouse M in the direction 60.0 east by north at point A. This fishing boat sails eastward at a speed of 28.0 nautical miles/hour, and arrives at point B in half an hour, and sees it at point B The lighthouse M is in the 15.0 direction to the east by north. At this time, the distance between the lighthouse M and the fishing boat is ()",
-        "ground_truth": "7√{2}海里"
+        "ground_truth": "7√{2}[CH]"
       },
-      "ground_truth": "7√{2}海里",
+      "ground_truth": "7√{2}[CH]",
       "model_output": "<think>Given that the fishing boat sails eastward at a speed of 28.0 nautical miles/hour for half an hour, the distance traveled is 28.0 * 0.5 = 14.0 nautical miles. Therefore, the distance between the lighthouse M and the fishing boat is 14.0 nautical miles.</think>\n<answer>14.0</answer>",
       "extracted_answer": "14.0000000000000",
       "is_correct": false

@@ -34,14 +34,14 @@ CRAWLABLE_MODES = frozenset({LAUNCH_STANDARD, LAUNCH_SINGLE_TOP})
 def verdict(package: str, launch_mode: int, mapped: bool = False) -> dict:
     """What to expect from crawling this app, in one word plus a reason."""
     if launch_mode in CRAWLABLE_MODES:
-        reason = "标准启动模式，可以爬"
+        reason = "[CH]StartMode，[CH]"
         state = "mapped" if mapped else "crawlable"
     else:
         # A hint, not a verdict: the clock's launcher activity is singleTask and
         # it crawls fine, so the static answer has false alarms in both
         # directions. Only a failed attempt is proof.
         name = LAUNCH_MODE_NAMES.get(launch_mode, str(launch_mode))
-        reason = f"首页声明为 {name}，可能起不来（可以试一次，失败会记住）"
+        reason = f"Home[CH] {name}，[CH]（[CH]，Failed[CH]）"
         state = "risky"
     return {"package": package, "launch_mode": launch_mode, "state": state,
             "reason": reason}
@@ -176,7 +176,7 @@ def all_app_labels() -> dict:
     """Label -> package for *every* installed app, launcher entry or not.
 
     MIUI's calendar has no launcher entry this phone exposes, so a
-    launcher-only list answers "no app called 日历" -- and the agent then
+    launcher-only list answers "no app called [CH]" -- and the agent then
     retries a launch it cannot resolve instead of reporting why. Knowing the
     package lets the launch attempt fail with the real reason (singleTask).
     """
@@ -233,5 +233,5 @@ def catalog(map_dir: str = "", refusal_path: str = "") -> list:
                              mapped=entry["package"] in mapped))
         if entry["package"] in refused:
             entry["state"] = "refused"
-            entry["reason"] = "上次爬取确认起不来（首页最终落在默认屏）"
+            entry["reason"] = "[CH]Confirm[CH]（Home[CH]DefaultScreen）"
     return apps

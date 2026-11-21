@@ -56,7 +56,7 @@ def test_a_dead_device_is_rebuilt_before_the_task_runs(monkeypatch):
     AUTONOMOUS[tid] = False
     TASKS[tid] = {"state": "queued", "steps": [], "answer": "", "frame": ""}
 
-    _run(tid, "打开设置", config)
+    _run(tid, "OpenSettings", config)
 
     assert state["recovered"] == 1
     assert TASKS[tid]["state"] in ("done", "failed")
@@ -72,14 +72,14 @@ def test_the_map_list_skips_redacted_copies_and_keeps_the_newest(tmp_path):
     (first / "clock.yaml").write_text("app_name: clock\n")
     (first / "clock.public.yaml").write_text("app_name: clock\n")   # share copy
     (second / "clock.yaml").write_text("app_name: clock - newer\n")
-    (second / "淘宝.yaml").write_text("app_name: taobao\n")
+    (second / "[CH].yaml").write_text("app_name: taobao\n")
 
     config = ServerConfig(device_factory=lambda: None, llm_factory=lambda: None,
                           map_dirs=[str(first), str(second)])
     paths = _scan_maps(config)
 
     names = sorted(os.path.basename(p) for p in paths)
-    assert names == ["clock.yaml", "淘宝.yaml"]
+    assert names == ["clock.yaml", "[CH].yaml"]
     kept = next(p for p in paths if p.endswith("clock.yaml"))
     assert str(second) in kept        # the later directory wins
 

@@ -31,8 +31,8 @@ def test_a_failed_eval_reports_nothing():
 
 
 def test_click_prefers_a_control_over_a_link():
-    """The search button says 百度一下; so does a hot-search link."""
-    js = WebPage._CLICK_JS % {"want": '"百度一下"'}
+    """The search button says [CH]; so does a hot-search link."""
+    js = WebPage._CLICK_JS % {"want": '"[CH]"'}
     # submit inputs first, then other controls, then links
     assert js.index("input[type=submit]") < js.index("button,input[type=button]")
     assert js.index("button,input[type=button]") < js.index("querySelectorAll('a')")
@@ -95,13 +95,13 @@ class _PageBridge:
 
 
 def test_a_captcha_page_is_recognised():
-    page = WebPage(bridge=_PageBridge('{"title":"安全验证","text":"请拖动滑块完成验证"}'))
+    page = WebPage(bridge=_PageBridge('{"title":"SecurityVerify","text":"[CH]DoneVerify"}'))
     assert page.blocked()
 
 
 def test_a_normal_search_for_captcha_words_is_not_a_wall():
-    # searching for 验证码 gives a page whose title contains the word
-    page = WebPage(bridge=_PageBridge('{"title":"验证码_百度搜索","text":"为您找到相关结果"}'))
+    # searching for Verify码 gives a page whose title contains the word
+    page = WebPage(bridge=_PageBridge('{"title":"Verify码_[CH]Search","text":"[CH]"}'))
     assert page.blocked() == ""
 
 

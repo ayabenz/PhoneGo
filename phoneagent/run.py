@@ -2,7 +2,7 @@
 
     python3 -m phoneagent.run --serial e3fa9e60 \
         --map phoneagent/maps/k90_settings_v2.yaml \
-        --task "打开蓝牙" \
+        --task "OpenBluetooth" \
         --api-key sk-or-... --model qwen/qwen3.8-flash
 
 Unlike ``demo.py`` (offline, scripted), this drives a real phone: here the

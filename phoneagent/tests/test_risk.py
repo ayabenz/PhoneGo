@@ -14,7 +14,7 @@ def test_record_and_avoid(tmp_path):
     entry = risk.record(path, "com.example.app")
     assert entry["count"] == 1
     assert risk.avoid(path, "com.example.app") is True
-    assert "安全验证" in risk.describe(path, "com.example.app")
+    assert "SecurityVerify" in risk.describe(path, "com.example.app")
 
 
 def test_the_record_ages_out(tmp_path):
@@ -36,4 +36,4 @@ def test_a_hand_mark_does_not_expire(tmp_path):
     risk.mark(path, "com.taobao.taobao", note="commercial anti-bot")
     very_old = time.time() + 400 * 86400
     assert risk.avoid(path, "com.taobao.taobao", now=very_old) is True
-    assert "风控" in risk.describe(path, "com.taobao.taobao")
+    assert "[CH]" in risk.describe(path, "com.taobao.taobao")

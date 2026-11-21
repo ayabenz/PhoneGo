@@ -897,8 +897,8 @@ def vlm_verify(task, screenshot, api_key, api_base, model):
         if complete_match.start() < incomplete_match.start():
             msg = complete_match.group(1).strip()
             # Reject COMPLETE that describes an incomplete state
-            negations = ["尚未", "还没", "没有完成", "not yet", "still need",
-                         "未完成", "需要", "incomplete", "未找到", "找不到"]
+            negations = ["[CH]", "[CH]", "没YesDone", "not yet", "still need",
+                         "未Done", "[CH]", "incomplete", "[CH]", "[CH]"]
             if any(n in msg for n in negations):
                 _output(_ok(result="incomplete", reason=msg))
             else:
@@ -908,8 +908,8 @@ def vlm_verify(task, screenshot, api_key, api_base, model):
                         reason=incomplete_match.group(1).strip()))
     elif complete_match:
         msg = complete_match.group(1).strip()
-        negations = ["尚未", "还没", "没有完成", "not yet", "still need",
-                     "未完成", "需要", "incomplete", "未找到", "找不到"]
+        negations = ["[CH]", "[CH]", "没YesDone", "not yet", "still need",
+                     "未Done", "[CH]", "incomplete", "[CH]", "[CH]"]
         if any(n in msg for n in negations):
             _output(_ok(result="incomplete", reason=msg))
         else:

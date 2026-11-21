@@ -4,8 +4,8 @@ dynamic_patterns:
 - ^\d+$
 - ^\d{1,3}$
 - ^.{8,}$
-- ^[\d,]+\s*(赞|评论|收藏|粉丝|看过)$
-- ^已领[\d.]+万\+$
+- ^[\d,]+\s*(赞|[CH]|[CH]|[CH]|[CH])$
+- ^[CH][\d.]+万\+$
 preserve_navigation:
 - Home
 - Map
@@ -25,13 +25,13 @@ preserve_navigation:
 - Bars
 - Taxi
 - Duty-Free
-- 美食订座
+- [CH]
 - Menu Translate
 - Exchange Rate Calculation
 - Photo Search
 - Best for you
 - Store Deals
-- 上榜餐厅
+- [CH]
 - Japanese Cuisine
 - Hong Kong
-- 创建视频
+- Create[CH]

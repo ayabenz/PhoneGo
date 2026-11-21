@@ -15,10 +15,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 头像
+    - Avatar
     - account picture
     - Google account
-    - 用户头像
+    - [CH]Avatar
     semantic_type: button
   - text: Settings
     center:
@@ -28,10 +28,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
-    - 配置
+    - Configure
     semantic_type: label
   - text: Search settings
     center:
@@ -41,10 +41,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 搜索设置
+    - SearchSettings
     - search bar
     - find settings
-    - 搜索
+    - Search
     semantic_type: input
   - text: Network &amp; internet
     center:
@@ -61,10 +61,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 移动网络、WLAN 和热点
+    - [CH]Network、WLAN [CH]
     - mobile network
     - wifi
-    - 热点
+    - [CH]
     semantic_type: label
   - text: Connected devices
     center:
@@ -74,10 +74,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 已连接的设备
+    - 已ConnectionDevice
     - devices
     - connections
-    - 连接的设备
+    - ConnectionDevice
     semantic_type: setting
   - text: Bluetooth, pairing
     center:
@@ -87,10 +87,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 蓝牙、配对
+    - Bluetooth、Pairing
     - bluetooth
     - pairing
-    - 蓝牙连接
+    - BluetoothConnection
     semantic_type: label
   - text: Apps
     center:
@@ -100,10 +100,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 应用
+    - App
     - applications
     - app management
-    - 应用程序
+    - AppProgram
     semantic_type: setting
   - text: Assistant, recent apps, default apps
     center:
@@ -113,10 +113,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 助理、近期应用、默认应用
+    - [CH]、[CH]App、DefaultApp
     - assistant
     - default apps
-    - 应用管理
+    - AppManage
     semantic_type: label
   - text: Notifications
     center:
@@ -126,9 +126,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 通知
+    - Notification
     - alerts
-    - 消息通知
+    - MessageNotification
     - notices
     semantic_type: setting
   - text: Notification history, conversations
@@ -139,10 +139,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 通知历史记录、对话
+    - Notification[CH]、[CH]
     - notification history
     - conversations
-    - 通知管理
+    - NotificationManage
     semantic_type: label
   - text: Battery
     center:
@@ -152,9 +152,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 电池
+    - Battery
     - power
-    - 电量
+    - Battery Level
     - battery usage
     semantic_type: setting
   - text: Storage
@@ -165,9 +165,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 存储空间
+    - [CH]
     - memory
-    - 存储
+    - [CH]
     - disk space
     semantic_type: setting
   - text: Sound &amp; vibration
@@ -185,7 +185,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 音量、触觉反馈、勿扰模式
+    - Volume、[CH]Feedback、[CH]Mode
     - volume
     - haptics
     - DND
@@ -198,9 +198,9 @@ screens:
     found_at_scroll: 1
     leads_to: screen_7
     aliases:
-    - 显示
+    - [CH]
     - screen
-    - 屏幕
+    - Screen
     - display settings
     semantic_type: setting
   - text: Dark theme, font size, brightness
@@ -211,7 +211,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_7
     aliases:
-    - 深色主题、字体大小、亮度
+    - DarkTheme、[CH]、Brightness
     - dark mode
     - font size
     - brightness
@@ -231,7 +231,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_8
     aliases:
-    - 颜色、主题图标、应用网格
+    - Color、Theme[CH]、App[CH]
     - colors
     - themed icons
     - app grid
@@ -244,9 +244,9 @@ screens:
     found_at_scroll: 1
     leads_to: screen_9
     aliases:
-    - 无障碍
+    - None[CH]
     - accessibility features
-    - 辅助功能
+    - [CH]Feature
     - a11y
     semantic_type: setting
   - text: Display, interaction, audio
@@ -257,7 +257,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_9
     aliases:
-    - 显示、交互、音频
+    - [CH]、[CH]、[CH]
     - display
     - interaction
     - audio
@@ -270,9 +270,9 @@ screens:
     found_at_scroll: 1
     leads_to: screen_10
     aliases:
-    - 安全
+    - Security
     - security settings
-    - 安全与隐私
+    - SecurityandPrivacy
     - security & privacy
     semantic_type: setting
   - text: Screen lock, Find My Device, app security
@@ -283,7 +283,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 屏幕锁定、查找我的设备、应用安全
+    - Screen[CH]、[CH]MyDevice、AppSecurity
     - screen lock
     - Find My Device
     - app security
@@ -296,9 +296,9 @@ screens:
     found_at_scroll: 2
     leads_to: screen_9
     aliases:
-    - 隐私
+    - Privacy
     - privacy settings
-    - 隐私权
+    - Privacy权
     - data privacy
     semantic_type: setting
   - text: Permissions, account activity, personal data
@@ -309,7 +309,7 @@ screens:
     found_at_scroll: 2
     leads_to: screen_12
     aliases:
-    - 权限、账号活动、个人数据
+    - Permission、Account[CH]、Personal[CH]
     - permissions
     - account activity
     - personal data
@@ -322,10 +322,10 @@ screens:
     found_at_scroll: 2
     leads_to: screen_10
     aliases:
-    - 位置信息
+    - [CH]Info
     - location services
     - GPS
-    - 定位
+    - Location
     semantic_type: setting
   - text: Safety &amp; emergency
     center:
@@ -342,7 +342,7 @@ screens:
     found_at_scroll: 3
     leads_to: screen_7
     aliases:
-    - 紧急求救、医疗信息、警报
+    - Urgent[CH]、[CH]Info、[CH]
     - Emergency SOS
     - medical info
     - alerts
@@ -362,7 +362,7 @@ screens:
     found_at_scroll: 3
     leads_to: screen_8
     aliases:
-    - 已保存的密码、自动填充、同步的账号
+    - 已SavePassword、Auto[CH]、SyncAccount
     - saved passwords
     - autofill
     - synced accounts
@@ -382,7 +382,7 @@ screens:
     found_at_scroll: 3
     leads_to: screen_9
     aliases:
-    - 屏幕使用时间、应用定时器、就寝时间表
+    - Screen[CH]、App[CH]、[CH]
     - screen time
     - app timers
     - bedtime
@@ -395,10 +395,10 @@ screens:
     found_at_scroll: 3
     leads_to: screen_10
     aliases:
-    - 谷歌
+    - [CH]
     - Google settings
     - Google services
-    - 谷歌服务
+    - [CH]Service
     semantic_type: setting
   - text: Services &amp; preferences
     center:
@@ -421,7 +421,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Manage your Google Account
@@ -433,7 +433,7 @@ screens:
     leads_to: screen_13
     aliases:
     - Account settings
-    - 管理您的 Google 帐号
+    - Manage[CH] Google [CH]
     - Google Account
     semantic_type: link
   - text: Device
@@ -444,7 +444,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Device settings
-    - 设备
+    - Device
     - About device
     semantic_type: menu_item
   - text: Emergency info
@@ -456,7 +456,7 @@ screens:
     leads_to: screen_14
     aliases:
     - Emergency information
-    - 紧急信息
+    - UrgentInfo
     - Emergency
     semantic_type: menu_item
   - text: Medical info, emergency contacts
@@ -468,7 +468,7 @@ screens:
     leads_to: screen_14
     aliases:
     - Medical information
-    - 医疗信息和紧急联系人
+    - [CH]Info和UrgentContact人
     - Emergency contacts
     semantic_type: label
   - text: Payments
@@ -480,7 +480,7 @@ screens:
     leads_to: screen_15
     aliases:
     - Payment settings
-    - 付款
+    - Payment
     - Payment methods
     semantic_type: menu_item
   - text: Manage Google Pay
@@ -492,7 +492,7 @@ screens:
     leads_to: screen_15
     aliases:
     - Google Pay settings
-    - 管理 Google Pay
+    - Manage Google Pay
     - Wallet
     semantic_type: link
   - text: Google Account
@@ -504,7 +504,7 @@ screens:
     leads_to: screen_13
     aliases:
     - Account
-    - Google 帐号
+    - Google [CH]
     - Accounts
     semantic_type: menu_item
   - text: Info, security &amp; personalization
@@ -516,7 +516,7 @@ screens:
     leads_to: screen_13
     aliases:
     - Account info
-    - 信息、安全和个性化
+    - Info、Security[CH]
     - Security
     semantic_type: label
   description: Google settings page with options to manage device preferences, emergency
@@ -533,10 +533,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 头像
+    - Avatar
     - account picture
     - Google account
-    - 用户头像
+    - [CH]Avatar
     semantic_type: button
   - text: Settings
     center:
@@ -546,10 +546,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
-    - 配置
+    - Configure
     semantic_type: label
   - text: Search settings
     center:
@@ -559,10 +559,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 搜索设置
+    - SearchSettings
     - search bar
     - find settings
-    - 搜索
+    - Search
     semantic_type: input
   - text: Network &amp; internet
     center:
@@ -572,10 +572,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 网络和互联网
+    - Network[CH]
     - network
     - internet
-    - 网络设置
+    - NetworkSettings
     semantic_type: setting
   - text: Mobile, Wi‑Fi, hotspot
     center:
@@ -585,10 +585,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 移动网络、WLAN 和热点
+    - [CH]Network、WLAN [CH]
     - cellular
     - data
-    - 移动数据
+    - [CH]
     semantic_type: label
   - text: Connected devices
     center:
@@ -598,10 +598,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 已连接的设备
+    - 已ConnectionDevice
     - connections
     - paired devices
-    - 连接设备
+    - ConnectionDevice
     semantic_type: setting
   - text: Bluetooth, pairing
     center:
@@ -611,9 +611,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 蓝牙、配对
+    - Bluetooth、Pairing
     - BT
-    - 蓝牙连接
+    - BluetoothConnection
     - pairing
     semantic_type: label
   - text: Apps
@@ -624,10 +624,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 应用
+    - App
     - applications
     - app management
-    - 应用程序
+    - AppProgram
     semantic_type: setting
   - text: Assistant, recent apps, default apps
     center:
@@ -637,10 +637,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 助理、近期应用和默认应用
+    - [CH]、[CH]App和DefaultApp
     - Google Assistant
-    - 应用设置
-    - 默认应用
+    - AppSettings
+    - DefaultApp
     semantic_type: label
   - text: Notifications
     center:
@@ -650,9 +650,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 通知
+    - Notification
     - alerts
-    - 消息通知
+    - MessageNotification
     - notif
     semantic_type: setting
   - text: Notification history, conversations
@@ -663,10 +663,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 通知历史记录、对话
+    - Notification[CH]、[CH]
     - notification log
-    - 历史通知
-    - 对话
+    - [CH]Notification
+    - [CH]
     semantic_type: label
   - text: Battery
     center:
@@ -676,9 +676,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 电池
+    - Battery
     - power
-    - 电量
+    - Battery Level
     - battery usage
     semantic_type: setting
   - text: Storage
@@ -689,10 +689,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 存储空间
+    - [CH]
     - memory
-    - 磁盘
-    - 内部存储
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Sound &amp; vibration
     center:
@@ -702,10 +702,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 声音和振动
+    - [CH]
     - audio
     - ringer
-    - 声音
+    - [CH]
     semantic_type: setting
   - text: Volume, haptics, Do Not Disturb
     center:
@@ -715,9 +715,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 音量、振动和勿扰模式
+    - Volume、[CH]Mode
     - sound volume
-    - 震动
+    - [CH]
     - DND
     semantic_type: label
   description: Main Settings page with user profile, search bar, and a list of system
@@ -736,7 +736,7 @@ screens:
     aliases:
     - Return
     - Go back
-    - 返回
+    - Back
     - Navigate back
     semantic_type: button
   - text: Search settings
@@ -749,7 +749,7 @@ screens:
     aliases:
     - Search
     - Find
-    - 搜索设置
+    - SearchSettings
     - Search bar
     semantic_type: input
   description: Settings search interface with a back button and a search bar to find
@@ -767,7 +767,7 @@ screens:
     leads_to: screen_2
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     - Go back
     semantic_type: button
@@ -780,7 +780,7 @@ screens:
     leads_to: screen_17
     aliases:
     - Network & internet
-    - 网络
+    - Network
     - Network settings
     - Connections
     semantic_type: setting
@@ -793,7 +793,7 @@ screens:
     leads_to: screen_18
     aliases:
     - Phone & messaging
-    - 通话与短信
+    - [CH]
     - Calls and SMS
     - SIM & calls
     semantic_type: setting
@@ -806,7 +806,7 @@ screens:
     leads_to: screen_19
     aliases:
     - SIM cards
-    - SIM管理
+    - SIMManage
     - SIM card settings
     - Dual SIM
     semantic_type: setting
@@ -819,7 +819,7 @@ screens:
     leads_to: screen_4
     aliases:
     - Flight mode
-    - 飞行模式
+    - [CH]Mode
     - Airplane
     - Offline mode
     semantic_type: toggle
@@ -832,7 +832,7 @@ screens:
     leads_to: screen_20
     aliases:
     - Personal hotspot
-    - 热点与网络共享
+    - [CH]NetworkShare
     - Tethering
     - Portable hotspot
     semantic_type: setting
@@ -845,7 +845,7 @@ screens:
     leads_to: screen_21
     aliases:
     - Data saver
-    - 流量节省程序
+    - Data[CH]Program
     - Low data mode
     - Data usage saver
     semantic_type: setting
@@ -858,7 +858,7 @@ screens:
     leads_to: screen_22
     aliases:
     - Virtual Private Network
-    - 虚拟专用网络
+    - Virtual[CH]Network
     - VPN settings
     semantic_type: setting
   - text: Mobile plan
@@ -870,7 +870,7 @@ screens:
     leads_to: screen_23
     aliases:
     - Cellular plan
-    - 移动网络套餐
+    - [CH]NetworkPlan
     - Mobile network
     - Carrier plan
     semantic_type: setting
@@ -883,7 +883,7 @@ screens:
     leads_to: screen_24
     aliases:
     - DNS over TLS
-    - 私人DNS
+    - [CH]DNS
     - Secure DNS
     - DNS settings
     semantic_type: setting
@@ -902,9 +902,9 @@ screens:
     leads_to: screen_2
     aliases:
     - back
-    - 返回
+    - Back
     - go back
-    - 返回上级
+    - Back[CH]
     semantic_type: button
   - text: Pair new device
     center:
@@ -915,8 +915,8 @@ screens:
     leads_to: screen_25
     aliases:
     - add device
-    - 配对新设备
-    - 添加设备
+    - PairingNewDevice
+    - [CH]Device
     - connect device
     semantic_type: button
   - text: Saved devices
@@ -928,8 +928,8 @@ screens:
     leads_to: screen_5
     aliases:
     - paired devices
-    - 已保存的设备
-    - 已配对设备
+    - 已SaveDevice
+    - 已PairingDevice
     - previously paired
     semantic_type: menu_item
   - text: See all
@@ -941,8 +941,8 @@ screens:
     leads_to: screen_26
     aliases:
     - view all
-    - 查看全部
-    - 更多
+    - ViewAll
+    - [CH]
     - show all
     semantic_type: link
   - text: Connection preferences
@@ -953,9 +953,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 连接偏好设置
+    - ConnectionPreferencesSettings
     - connections
-    - 连接设置
+    - ConnectionSettings
     - connection settings
     semantic_type: setting
   - text: Bluetooth, Android Auto
@@ -966,9 +966,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 蓝牙, Android Auto
+    - Bluetooth, Android Auto
     - Bluetooth and Android Auto
-    - 蓝牙与Android Auto
+    - BluetoothandAndroid Auto
     semantic_type: menu_item
   description: Connected devices settings page where users can pair new devices, view
     saved devices, and manage connection preferences such as Bluetooth and Android
@@ -986,7 +986,7 @@ screens:
     leads_to: screen_2
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     - Go back
     semantic_type: button
@@ -998,8 +998,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 所有应用
-    - 全部应用
+    - 所YesApp
+    - AllApp
     - App list
     semantic_type: menu_item
   - text: Default apps
@@ -1010,8 +1010,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 默认应用
-    - 默认程序
+    - DefaultApp
+    - DefaultProgram
     - Default applications
     semantic_type: menu_item
   - text: Screen time
@@ -1022,7 +1022,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 屏幕时间
+    - Screen[CH]
     - Screen usage
     - Digital wellbeing
     semantic_type: menu_item
@@ -1034,8 +1034,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_31
     aliases:
-    - 未使用的应用
-    - 闲置应用
+    - [CH]App
+    - [CH]App
     - Unused applications
     semantic_type: menu_item
   - text: App battery usage
@@ -1046,7 +1046,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 应用耗电量
+    - App耗Battery Level
     - Battery usage by app
     - App power usage
     semantic_type: menu_item
@@ -1058,7 +1058,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_33
     aliases:
-    - 设置应用耗电量
+    - SettingsApp耗Battery Level
     - Configure app battery
     - Battery optimization
     semantic_type: menu_item
@@ -1070,7 +1070,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_34
     aliases:
-    - 特殊应用权限
+    - [CH]AppPermission
     - Special access
     - Advanced app permissions
     semantic_type: menu_item
@@ -1089,7 +1089,7 @@ screens:
     leads_to: screen_2
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     - Go back
     semantic_type: button
@@ -1101,7 +1101,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 管理
+    - Manage
     - Manage notifications
     - Settings
     semantic_type: button
@@ -1113,7 +1113,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_35
     aliases:
-    - 应用设置
+    - AppSettings
     - Application settings
     - App config
     semantic_type: menu_item
@@ -1125,7 +1125,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_36
     aliases:
-    - 控制各应用的通知
+    - [CH]AppNotification
     - App notification settings
     - Manage app notifications
     semantic_type: label
@@ -1137,9 +1137,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_37
     aliases:
-    - 通知历史记录
+    - Notification[CH]
     - History
-    - 通知历史
+    - Notification[CH]
     semantic_type: menu_item
   - text: Show recent and snoozed notifications
     center:
@@ -1149,7 +1149,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_37
     aliases:
-    - 显示最近和已暂停的通知
+    - [CH]PauseNotification
     - View recent notifications
     - Notification log
     semantic_type: label
@@ -1161,7 +1161,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 对话
+    - [CH]
     - Conversations
     - Messaging
     semantic_type: setting
@@ -1173,9 +1173,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 对话
+    - [CH]
     - Messages
-    - 聊天
+    - [CH]
     semantic_type: setting
   - text: No priority conversations
     center:
@@ -1185,7 +1185,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 无优先对话
+    - None[CH]
     - No priority
     - Empty state
     semantic_type: label
@@ -1197,7 +1197,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_39
     aliases:
-    - 气泡
+    - [CH]
     - Bubble notifications
     - Floating icons
     semantic_type: menu_item
@@ -1209,7 +1209,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_39
     aliases:
-    - 开启/对话可以显示为浮动图标
+    - [CH]/[CH]
     - Bubbles on
     - Enabled
     semantic_type: label
@@ -1221,7 +1221,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_40
     aliases:
-    - 隐私
+    - Privacy
     - Privacy settings
     - Security & privacy
     semantic_type: menu_item
@@ -1233,7 +1233,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_41
     aliases:
-    - 设备和应用通知
+    - Device和AppNotification
     - Notification access
     - Device notifications
     semantic_type: menu_item
@@ -1245,7 +1245,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_41
     aliases:
-    - 控制哪些应用和设备可以读取通知
+    - [CH]App和Device[CH]Notification
     - Notification access summary
     - Manage access
     semantic_type: label
@@ -1257,7 +1257,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 锁屏通知
+    - [CH]Notification
     - Lock screen notifications
     - Lockscreen
     semantic_type: menu_item
@@ -1269,7 +1269,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 隐藏无声对话和通知
+    - [CH]None[CH]Notification
     - Hide silent
     - Lock screen behavior
     semantic_type: label
@@ -1281,9 +1281,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_40
     aliases:
-    - 常规
+    - General
     - General settings
-    - 通用
+    - General
     semantic_type: setting
   description: Notifications settings page with options to manage app notifications,
     notification history, conversations, bubbles, and privacy settings.
@@ -1301,7 +1301,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up arrow
     semantic_type: button
   - text: Battery usage
@@ -1313,7 +1313,7 @@ screens:
     leads_to: screen_26
     aliases:
     - battery
-    - 电池用量
+    - Battery[CH]
     - battery stats
     - power usage
     semantic_type: menu_item
@@ -1326,7 +1326,7 @@ screens:
     leads_to: screen_43
     aliases:
     - usage since last charge
-    - 查看自上次充满电以来的用量
+    - View[CH]
     - battery history
     semantic_type: label
   - text: Battery Saver
@@ -1338,7 +1338,7 @@ screens:
     leads_to: screen_44
     aliases:
     - battery saver mode
-    - 省电模式
+    - [CH]Mode
     - low power mode
     - power saving
     semantic_type: toggle
@@ -1351,7 +1351,7 @@ screens:
     leads_to: screen_45
     aliases:
     - adaptive battery
-    - 自适应偏好设置
+    - [CH]PreferencesSettings
     - adaptive settings
     semantic_type: setting
   - text: Battery percentage
@@ -1363,7 +1363,7 @@ screens:
     leads_to: screen_8
     aliases:
     - battery percent
-    - 电池百分比
+    - Battery[CH]
     - show battery %
     semantic_type: setting
   - text: Show battery percentage in status bar
@@ -1375,7 +1375,7 @@ screens:
     leads_to: screen_8
     aliases:
     - show battery %
-    - 在状态栏显示电池百分比
+    - atStatus Bar[CH]Battery[CH]
     - display battery percentage
     semantic_type: toggle
   - text: Battery usage data is approximate and can change based on usage.
@@ -1387,7 +1387,7 @@ screens:
     leads_to: screen_8
     aliases:
     - approximate data
-    - 电池用量数据为近似值
+    - Battery[CH]
     - usage disclaimer
     semantic_type: label
   description: Battery settings page showing usage details, battery saver, adaptive
@@ -1406,7 +1406,7 @@ screens:
     aliases:
     - Back
     - Return
-    - 返回
+    - Back
     - Up
     semantic_type: button
   - text: Free up space
@@ -1419,8 +1419,8 @@ screens:
     aliases:
     - Clean up
     - Clear storage
-    - 释放空间
-    - 清理
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Go to Files app to manage and free up space
     center:
@@ -1432,8 +1432,8 @@ screens:
     aliases:
     - Manage files
     - Files app
-    - 管理文件
-    - 前往文件
+    - ManageFile
+    - [CH]File
     semantic_type: label
   - text: System
     center:
@@ -1444,8 +1444,8 @@ screens:
     leads_to: screen_47
     aliases:
     - System data
-    - 系统
-    - 系统数据
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Apps
     center:
@@ -1456,8 +1456,8 @@ screens:
     leads_to: screen_30
     aliases:
     - Applications
-    - 应用
-    - 应用程序
+    - App
+    - AppProgram
     semantic_type: setting
   - text: Audio
     center:
@@ -1468,8 +1468,8 @@ screens:
     leads_to: screen_48
     aliases:
     - Music
-    - 音频
-    - 音乐
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Images
     center:
@@ -1480,8 +1480,8 @@ screens:
     leads_to: screen_49
     aliases:
     - Photos
-    - 图片
-    - 照片
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Documents &amp; other
     center:
@@ -1491,8 +1491,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Docs & other
-    - 文档和其他
-    - 文件
+    - Documentation[CH]
+    - File
     semantic_type: setting
   - text: Trash
     center:
@@ -1502,8 +1502,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Recycle bin
-    - 废纸篓
-    - 回收站
+    - [CH]
+    - [CH]
     semantic_type: setting
   description: Storage settings page displaying a breakdown of space used by system,
     apps, media, and trash, with an option to open the Files app to free up space.
@@ -1521,7 +1521,7 @@ screens:
     - Back
     - Go back
     - Return
-    - 向上导航
+    - [CH]
     semantic_type: button
   - text: Media volume
     center:
@@ -1532,7 +1532,7 @@ screens:
     aliases:
     - Music volume
     - Audio volume
-    - 媒体音量
+    - [CH]Volume
     semantic_type: setting
   - text: Call volume
     center:
@@ -1543,7 +1543,7 @@ screens:
     aliases:
     - Phone volume
     - Voice volume
-    - 通话音量
+    - [CH]Volume
     semantic_type: setting
   - text: Ring &amp; notification volume
     center:
@@ -1554,7 +1554,7 @@ screens:
     aliases:
     - Ringer volume
     - Notification volume
-    - 铃声和通知音量
+    - Ring Tone和NotificationVolume
     semantic_type: setting
   - text: Alarm volume
     center:
@@ -1564,7 +1564,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Alarm sound
-    - 闹钟音量
+    - [CH]Volume
     semantic_type: setting
   - text: Do Not Disturb
     center:
@@ -1575,7 +1575,7 @@ screens:
     aliases:
     - DND
     - Silent mode
-    - 勿扰模式
+    - [CH]Mode
     semantic_type: menu_item
   - text: Phone ringtone
     center:
@@ -1586,7 +1586,7 @@ screens:
     aliases:
     - Ringtone
     - Default ringtone
-    - 手机铃声
+    - PhoneRing Tone
     semantic_type: menu_item
   - text: Live Caption
     center:
@@ -1596,7 +1596,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Auto caption
-    - 实时字幕
+    - Real-time[CH]
     semantic_type: menu_item
   - text: Automatically caption speech
     center:
@@ -1606,7 +1606,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Auto caption speech
-    - 自动为语音添加字幕
+    - Auto[CH]
     semantic_type: toggle
   - text: Now Playing
     center:
@@ -1616,7 +1616,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Song identification
-    - 正在播放
+    - In progress[CH]
     semantic_type: menu_item
   - text: Identify songs playing nearby
     center:
@@ -1626,7 +1626,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Auto identify songs
-    - 识别附近播放的歌曲
+    - [CH]
     semantic_type: toggle
   description: Sound settings page allowing users to adjust volume levels, choose
     ringtones, and manage audio features like Do Not Disturb and Live Caption.
@@ -1656,7 +1656,7 @@ screens:
     - media
     - volume
     - media sound
-    - 媒体音量
+    - [CH]Volume
     semantic_type: setting
   - text: Call volume
     center:
@@ -1668,7 +1668,7 @@ screens:
     - call
     - phone volume
     - call sound
-    - 通话音量
+    - [CH]Volume
     semantic_type: setting
   - text: Ring &amp; notification volume
     center:
@@ -1685,7 +1685,7 @@ screens:
     aliases:
     - alarm
     - alarm sound
-    - 闹钟音量
+    - [CH]Volume
     semantic_type: setting
   - text: Do Not Disturb
     center:
@@ -1696,7 +1696,7 @@ screens:
     aliases:
     - DND
     - do not disturb mode
-    - 勿扰模式
+    - [CH]Mode
     semantic_type: setting
   - text: 'Off'
     center:
@@ -1707,7 +1707,7 @@ screens:
     aliases:
     - disabled
     - turned off
-    - 关闭
+    - Close
     semantic_type: label
   - text: Phone ringtone
     center:
@@ -1718,7 +1718,7 @@ screens:
     aliases:
     - ringtone
     - phone ringtone
-    - 电话铃声
+    - [CH]Ring Tone
     semantic_type: setting
   - text: Flutey Phone
     center:
@@ -1739,7 +1739,7 @@ screens:
     aliases:
     - live captions
     - auto caption
-    - 实时字幕
+    - Real-time[CH]
     semantic_type: setting
   - text: Automatically caption speech
     center:
@@ -1750,7 +1750,7 @@ screens:
     aliases:
     - auto caption
     - caption speech
-    - 自动字幕
+    - Auto[CH]
     semantic_type: label
   - text: Now Playing
     center:
@@ -1761,7 +1761,7 @@ screens:
     aliases:
     - now playing
     - song identification
-    - 正在播放
+    - In progress[CH]
     semantic_type: setting
   - text: Identify songs playing nearby
     center:
@@ -1772,7 +1772,7 @@ screens:
     aliases:
     - identify songs
     - song ID
-    - 识别歌曲
+    - [CH]
     semantic_type: label
   description: Sound settings page with volume controls, ringtone selection, and audio
     feature toggles like Do Not Disturb and Live Caption.
@@ -1788,7 +1788,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     - Go back
     semantic_type: button
@@ -1801,7 +1801,7 @@ screens:
     aliases:
     - Total storage
     - 16GB
-    - 总容量
+    - [CH]
     - Storage capacity
     semantic_type: label
   - text: Free up space
@@ -1812,7 +1812,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Clear space
-    - 清理空间
+    - [CH]
     - Manage storage
     - Free space
     semantic_type: button
@@ -1824,7 +1824,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Files app
-    - 打开文件
+    - OpenFile
     - Manage files
     - Go to Files
     semantic_type: link
@@ -1836,7 +1836,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - System settings
-    - 系统
+    - [CH]
     - OS
     - Device
     semantic_type: setting
@@ -1848,7 +1848,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Applications
-    - 应用
+    - App
     - App management
     - Programs
     semantic_type: setting
@@ -1860,7 +1860,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Audio files
-    - 音频
+    - [CH]
     - Music
     - Sounds
     semantic_type: menu_item
@@ -1872,7 +1872,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Photos
-    - 图片
+    - [CH]
     - Pictures
     - Gallery
     semantic_type: menu_item
@@ -1884,7 +1884,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Docs & other
-    - 文档和其他
+    - Documentation[CH]
     - Documents
     - Files
     semantic_type: menu_item
@@ -1896,7 +1896,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Bin
-    - 回收站
+    - [CH]
     - Deleted files
     - Recycle bin
     semantic_type: menu_item
@@ -1914,8 +1914,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 完成
-    - 确认
+    - Done
+    - Confirm
     - finish
     - confirm
     semantic_type: button
@@ -1926,8 +1926,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 账户
-    - 账号
+    - Account
+    - Account
     - account settings
     - my account
     semantic_type: menu_item
@@ -1938,9 +1938,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - help & feedback
-    - 帮助与反馈
+    - HelpandFeedback
     - support
     semantic_type: menu_item
   - text: Search
@@ -1950,9 +1950,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - search settings
-    - 查找
+    - [CH]
     - search bar
     semantic_type: input
   - text: Home
@@ -1962,9 +1962,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主页
+    - Home
     - home settings
-    - 首页
+    - Home
     - home address
     semantic_type: menu_item
   - text: Personal info
@@ -1974,9 +1974,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 个人信息
+    - PersonalInfo
     - personal information
-    - 个人资料
+    - Personal[CH]
     semantic_type: menu_item
   - text: Data &amp; privacy
     center:
@@ -1991,9 +1991,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 安全
+    - Security
     - security settings
-    - 安全设置
+    - SecuritySettings
     semantic_type: menu_item
   - text: Dismiss
     center:
@@ -2002,8 +2002,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
-    - 取消
+    - Close
+    - Cancel
     - close
     - cancel
     semantic_type: button
@@ -2014,9 +2014,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置家庭地址
+    - Settings[CH]
     - set home
-    - 家庭地址
+    - [CH]
     - home address
     semantic_type: menu_item
   - text: Privacy &amp; personalization
@@ -2045,7 +2045,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     semantic_type: button
   - text: Emergency information
@@ -2056,7 +2056,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Emergency info
-    - 紧急信息
+    - UrgentInfo
     semantic_type: menu_item
   - text: More options
     center:
@@ -2066,7 +2066,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - More
-    - 更多
+    - [CH]
     - Overflow menu
     semantic_type: button
   - text: Medical information
@@ -2077,7 +2077,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Medical info
-    - 医疗信息
+    - [CH]Info
     semantic_type: menu_item
   - text: Name
     center:
@@ -2086,7 +2086,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 姓名
+    - [CH]
     - Full name
     semantic_type: input
   - text: Owner
@@ -2096,7 +2096,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 所有者
+    - 所Yes者
     - Device owner
     semantic_type: input
   - text: Add information
@@ -2106,7 +2106,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加信息
+    - [CH]Info
     - Add info
     semantic_type: button
   - text: Emergency contacts
@@ -2116,7 +2116,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 紧急联系人
+    - UrgentContact人
     - ICE contacts
     semantic_type: menu_item
   - text: Add contact
@@ -2126,7 +2126,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加联系人
+    - [CH]Contact人
     - Add new contact
     semantic_type: button
   description: Emergency information settings screen where users can add or edit their
@@ -2143,8 +2143,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - WebView
-    - 网页视图
-    - 系统网页视图
+    - [CH]
+    - [CH]
     - Android System WebView
     semantic_type: other
   - text: Close tab
@@ -2154,8 +2154,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭标签页
-    - 关闭选项卡
+    - CloseTab页
+    - Close[CH]Lag
     - Close
     - X
     semantic_type: button
@@ -2166,9 +2166,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 分享
-    - 共享
-    - 发送
+    - Share
+    - Share
+    - [CH]
     - Share with
     semantic_type: button
   - text: More options
@@ -2178,9 +2178,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
-    - 菜单
+    - [CH]
+    - [CH]
+    - Menu
     - Overflow menu
     semantic_type: button
   description: In-app web view displaying a webpage with controls to close the tab,
@@ -2198,7 +2198,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up arrow
     semantic_type: button
   - text: Recently opened apps
@@ -2209,7 +2209,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - recent apps
-    - 最近使用的应用
+    - [CH]App
     - recently used apps
     semantic_type: menu_item
   - text: General
@@ -2220,8 +2220,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - general settings
-    - 常规
-    - 通用
+    - General
+    - General
     semantic_type: setting
   - text: Default apps
     center:
@@ -2231,7 +2231,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - default applications
-    - 默认应用
+    - DefaultApp
     - default app settings
     semantic_type: setting
   - text: Screen time
@@ -2242,7 +2242,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - screen time settings
-    - 屏幕时间
+    - Screen[CH]
     - screen usage
     semantic_type: setting
   - text: Unused apps
@@ -2253,7 +2253,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - unused app settings
-    - 未使用的应用
+    - [CH]App
     - unused applications
     semantic_type: setting
   - text: App battery usage
@@ -2264,7 +2264,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - battery usage by app
-    - 应用电池用量
+    - AppBattery[CH]
     - app battery
     semantic_type: setting
   - text: Set battery usage for apps
@@ -2275,7 +2275,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - configure app battery
-    - 设置应用电池用量
+    - SettingsAppBattery[CH]
     - app battery settings
     semantic_type: setting
   - text: Special app access
@@ -2286,7 +2286,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - special access
-    - 特殊应用权限
+    - [CH]AppPermission
     - special permissions
     semantic_type: setting
   description: App management settings page with options for default apps, screen
@@ -2303,7 +2303,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     semantic_type: button
   - text: Settings
@@ -2313,7 +2313,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - Preferences
     - System settings
     semantic_type: label
@@ -2326,8 +2326,8 @@ screens:
     aliases:
     - WiFi
     - WLAN
-    - 无线网络
-    - 无线网
+    - None线Network
+    - None[CH]
     semantic_type: setting
   - text: Add network
     center:
@@ -2336,7 +2336,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加网络
+    - [CH]Network
     - Add Wi-Fi
     - Add WLAN
     semantic_type: menu_item
@@ -2347,7 +2347,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 扫描二维码
+    - Scan[CH]
     - Scan QR
     - QR scanner
     semantic_type: menu_item
@@ -2358,7 +2358,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 网络偏好设置
+    - NetworkPreferencesSettings
     - Network settings
     - Advanced settings
     semantic_type: menu_item
@@ -2369,7 +2369,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Wi-Fi自动开启
+    - Wi-FiAuto[CH]
     - Auto-turn on Wi-Fi
     - Turn on Wi-Fi automatically
     semantic_type: toggle
@@ -2380,7 +2380,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 已保存的网络
+    - 已SaveNetwork
     - Saved Wi-Fi
     - Saved WLAN
     semantic_type: menu_item
@@ -2391,7 +2391,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 非运营商数据使用量
+    - [CH]Data Usage量
     - Data usage
     - Mobile data usage
     semantic_type: menu_item
@@ -2440,7 +2440,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up arrow
     semantic_type: button
   - text: SIM name &amp; color
@@ -2458,7 +2458,7 @@ screens:
     aliases:
     - SIM usage
     - use this SIM
-    - 使用SIM卡
+    - [CH]SIMLag
     - SIM settings
     semantic_type: menu_item
   - text: Calls preference
@@ -2470,7 +2470,7 @@ screens:
     aliases:
     - call settings
     - calling preference
-    - 通话偏好
+    - [CH]Preferences
     - default calling SIM
     semantic_type: menu_item
   - text: SMS preference
@@ -2482,7 +2482,7 @@ screens:
     aliases:
     - message settings
     - SMS settings
-    - 短信偏好
+    - [CH]Preferences
     - default SMS app
     semantic_type: menu_item
   - text: Mobile data
@@ -2493,7 +2493,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - cellular data
-    - 移动数据
+    - [CH]
     - data connection
     - cellular
     semantic_type: toggle
@@ -2506,7 +2506,7 @@ screens:
     aliases:
     - use mobile data
     - data access
-    - 使用移动网络访问数据
+    - [CH]NetworkAccess[CH]
     - mobile network data
     semantic_type: label
   - text: Roaming
@@ -2517,7 +2517,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - data roaming
-    - 漫游
+    - [CH]
     - roaming data
     - cellular roaming
     semantic_type: toggle
@@ -2530,7 +2530,7 @@ screens:
     aliases:
     - roaming data access
     - data while roaming
-    - 漫游时连接数据服务
+    - [CH]Connection[CH]Service
     - roaming description
     semantic_type: label
   - text: App data usage
@@ -2542,7 +2542,7 @@ screens:
     aliases:
     - data usage
     - app data
-    - 应用数据使用量
+    - AppData Usage量
     - data consumption
     semantic_type: menu_item
   description: SIM card settings page where users can configure call, SMS, mobile
@@ -2560,7 +2560,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up arrow
     semantic_type: button
   - text: Wi‑Fi hotspot
@@ -2572,8 +2572,8 @@ screens:
     aliases:
     - hotspot
     - WiFi hotspot
-    - 无线热点
-    - 移动热点
+    - None[CH]
+    - [CH]
     - personal hotspot
     semantic_type: setting
   - text: Not sharing internet or content with other devices
@@ -2585,7 +2585,7 @@ screens:
     aliases:
     - not sharing
     - no sharing
-    - 未共享
+    - 未Share
     - inactive
     semantic_type: label
   - text: USB tethering
@@ -2596,8 +2596,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - USB
-    - USB共享
-    - USB网络共享
+    - USBShare
+    - USBNetworkShare
     - tethering via USB
     semantic_type: setting
   - text: Share phone’s internet connection via USB
@@ -2609,8 +2609,8 @@ screens:
     aliases:
     - USB sharing
     - USB internet
-    - 通过USB共享网络
-    - USB连接共享
+    - [CH]USBShareNetwork
+    - USBConnectionShare
     semantic_type: label
   - text: Bluetooth tethering
     center:
@@ -2620,8 +2620,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - BT tethering
-    - 蓝牙共享
-    - 蓝牙网络共享
+    - BluetoothShare
+    - BluetoothNetworkShare
     - Bluetooth PAN
     semantic_type: setting
   - text: Share phone’s internet connection via Bluetooth
@@ -2633,7 +2633,7 @@ screens:
     aliases:
     - Bluetooth sharing
     - BT sharing
-    - 通过蓝牙共享网络
+    - [CH]BluetoothShareNetwork
     - Bluetooth internet sharing
     semantic_type: label
   description: Hotspot and tethering settings page allowing users to share their internet
@@ -2652,7 +2652,7 @@ screens:
     - Back
     - Return
     - Up
-    - 返回
+    - Back
     semantic_type: button
   - text: Use Data Saver
     center:
@@ -2663,7 +2663,7 @@ screens:
     aliases:
     - Data Saver
     - Enable Data Saver
-    - 数据节省程序
+    - [CH]Program
     - Turn on Data Saver
     semantic_type: toggle
   - text: Unrestricted data
@@ -2675,7 +2675,7 @@ screens:
     aliases:
     - Unrestricted Data Access
     - Allow unrestricted data
-    - 不受限的数据
+    - [CH]
     - Unrestricted
     semantic_type: menu_item
   - text: 1 app allowed to use unrestricted data when Data Saver is on
@@ -2687,7 +2687,7 @@ screens:
     aliases:
     - 1 app allowed
     - Apps allowed
-    - 允许不受限数据的应用
+    - [CH]App
     - 1 app
     semantic_type: label
   description: Data Saver settings page where users can toggle Data Saver on or off
@@ -2704,7 +2704,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     - Back button
     semantic_type: button
@@ -2716,7 +2716,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Add VPN
-    - 添加VPN
+    - [CH]VPN
     - Create VPN
     - New VPN
     semantic_type: button
@@ -2728,7 +2728,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - No VPNs
-    - 没有添加VPN
+    - 没Yes[CH]VPN
     - Empty
     - No profiles
     semantic_type: label
@@ -2746,9 +2746,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - No internet
-    - 请连接网络
+    - 请ConnectionNetwork
     - Connect to network
-    - 网络连接提示
+    - NetworkConnectionTip
     semantic_type: label
   - text: OK
     center:
@@ -2757,10 +2757,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 确定
-    - 确认
+    - OK
+    - Confirm
     - Got it
-    - 好
+    - good
     semantic_type: button
   description: An error prompt asking the user to connect to the internet, featuring
     an OK button to acknowledge.
@@ -2777,7 +2777,7 @@ screens:
     aliases:
     - Private DNS Mode
     - DNS Mode
-    - 选择私人DNS模式
+    - Select[CH]DNSMode
     semantic_type: label
   - text: 'Off'
     center:
@@ -2787,7 +2787,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Disabled
-    - 关闭
+    - Close
     - Turn off
     semantic_type: toggle
   - text: Automatic
@@ -2798,7 +2798,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Auto
-    - 自动
+    - Auto
     - Automatic DNS
     semantic_type: toggle
   - text: Private DNS provider hostname
@@ -2810,7 +2810,7 @@ screens:
     aliases:
     - DNS Hostname
     - Provider Hostname
-    - 私人DNS提供商主机名
+    - [CH]DNS[CH]
     semantic_type: label
   - text: Enter hostname of DNS provider
     center:
@@ -2821,7 +2821,7 @@ screens:
     aliases:
     - Hostname input
     - DNS provider input
-    - 输入DNS提供商主机名
+    - InputDNS[CH]
     semantic_type: input
   - text: Learn more about Private DNS features
     center:
@@ -2832,7 +2832,7 @@ screens:
     aliases:
     - Learn more
     - Help
-    - 了解更多
+    - [CH]
     semantic_type: link
   - text: Cancel
     center:
@@ -2841,7 +2841,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - Discard
     - Abort
     semantic_type: button
@@ -2852,7 +2852,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 保存
+    - Save
     - Apply
     - Confirm
     semantic_type: button
@@ -2870,7 +2870,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     - Go back
     semantic_type: button
@@ -2881,7 +2881,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设备名称
+    - Device[CH]
     - Phone name
     - Device ID
     - Name
@@ -2893,7 +2893,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 可用设备
+    - [CH]Device
     - Other devices
     - Nearby devices
     - Discovered devices
@@ -2914,8 +2914,8 @@ screens:
     - Back
     - Up
     - Go back
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   description: Top app bar with a navigate up button to return to the previous settings
     menu.
@@ -2931,7 +2931,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     - Go back
     semantic_type: button
@@ -2943,7 +2943,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - BT
-    - 蓝牙
+    - Bluetooth
     - bluetooth settings
     semantic_type: setting
   - text: Cast
@@ -2953,7 +2953,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 投屏
+    - [CH]
     - Screen cast
     - Chromecast
     semantic_type: setting
@@ -2964,7 +2964,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 打印
+    - Print
     - Print settings
     - Printer
     semantic_type: setting
@@ -2985,7 +2985,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 附近分享
+    - [CH]Share
     - Quick Share
     - Nearby
     semantic_type: setting
@@ -2996,7 +2996,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 附近设备共享文件
+    - [CH]DeviceShareFile
     - Nearby device sharing
     - Share with nearby
     semantic_type: label
@@ -3014,8 +3014,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Bluetooth
     center:
@@ -3025,7 +3025,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - BT
-    - 蓝牙
+    - Bluetooth
     - bluetooth settings
     semantic_type: setting
   - text: Cast
@@ -3035,7 +3035,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 投屏
+    - [CH]
     - Screen cast
     - Chromecast
     semantic_type: setting
@@ -3047,7 +3047,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Print
-    - 打印
+    - Print
     - print settings
     semantic_type: setting
   - text: Chromebook
@@ -3068,7 +3068,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Quick Share
-    - 附近分享
+    - [CH]Share
     - nearby sharing
     semantic_type: setting
   - text: Share files with nearby devices
@@ -3078,7 +3078,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 共享文件
+    - ShareFile
     - share with nearby
     - Nearby Share summary
     semantic_type: label
@@ -3089,7 +3089,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 车载
+    - [CH]
     - android auto settings
     semantic_type: setting
   - text: Use apps on your car screen
@@ -3099,7 +3099,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 在车载屏幕上使用应用
+    - [CH]Screen[CH]App
     - Android Auto summary
     semantic_type: label
   description: Connected devices settings page listing options for Bluetooth, Cast,
@@ -3117,7 +3117,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up button
     semantic_type: button
   - text: More options
@@ -3129,7 +3129,7 @@ screens:
     aliases:
     - menu
     - options
-    - 更多选项
+    - [CH]
     - three dots
     semantic_type: button
   - text: Chrome
@@ -3140,7 +3140,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google Chrome
-    - 浏览器
+    - [CH]
     - chrome browser
     semantic_type: label
   - text: Open
@@ -3150,7 +3150,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 打开
+    - Open
     - launch
     - open app
     semantic_type: button
@@ -3161,7 +3161,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 禁用
+    - Disable
     - turn off
     - deactivate
     semantic_type: button
@@ -3172,7 +3172,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 强制停止
+    - [CH]Stop
     - kill app
     - stop app
     semantic_type: button
@@ -3183,7 +3183,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 通知
+    - Notification
     - app notifications
     - notification settings
     semantic_type: menu_item
@@ -3194,7 +3194,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 权限
+    - Permission
     - app permissions
     - permission settings
     semantic_type: menu_item
@@ -3205,7 +3205,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 位置
+    - [CH]
     - location access
     - location permission
     semantic_type: menu_item
@@ -3228,7 +3228,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 屏幕时间
+    - Screen[CH]
     - screen time usage
     - app usage time
     semantic_type: menu_item
@@ -3239,7 +3239,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 应用电池用量
+    - AppBattery[CH]
     - battery usage
     - app battery
     semantic_type: menu_item
@@ -3258,8 +3258,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -3269,8 +3269,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Find
-    - 搜索
-    - 查找
+    - Search
+    - [CH]
     - magnifying glass
     semantic_type: button
   - text: More options
@@ -3282,8 +3282,8 @@ screens:
     aliases:
     - Menu
     - Overflow
-    - 更多选项
-    - 三点菜单
+    - [CH]
+    - [CH]Menu
     semantic_type: button
   description: Top app bar of a settings sub-page allowing users to navigate back,
     search, and access more options.
@@ -3301,7 +3301,7 @@ screens:
     - Back
     - Up arrow
     - Go back
-    - 返回
+    - Back
     semantic_type: button
   - text: Browser app
     center:
@@ -3312,7 +3312,7 @@ screens:
     aliases:
     - Default browser
     - Web browser
-    - 默认浏览器
+    - Default[CH]
     semantic_type: setting
   - text: Chrome
     center:
@@ -3323,7 +3323,7 @@ screens:
     aliases:
     - Google Chrome
     - Chrome browser
-    - 谷歌浏览器
+    - [CH]
     semantic_type: menu_item
   - text: Caller ID &amp; spam app
     center:
@@ -3338,9 +3338,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 无
+    - None
     - Not set
-    - 无应用
+    - NoneApp
     semantic_type: menu_item
   - text: Digital assistant app
     center:
@@ -3351,7 +3351,7 @@ screens:
     aliases:
     - Assistant app
     - Voice assistant
-    - 数字助理应用
+    - [CH]App
     semantic_type: setting
   - text: Google
     center:
@@ -3361,7 +3361,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google app
-    - 谷歌
+    - [CH]
     semantic_type: menu_item
   - text: Home app
     center:
@@ -3372,7 +3372,7 @@ screens:
     aliases:
     - Default home
     - Home screen
-    - 主屏幕应用
+    - 主ScreenApp
     semantic_type: setting
   - text: Pixel Launcher
     center:
@@ -3383,7 +3383,7 @@ screens:
     aliases:
     - Pixel home
     - Launcher
-    - Pixel启动器
+    - PixelStart器
     semantic_type: menu_item
   - text: Settings
     center:
@@ -3393,7 +3393,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - System settings
-    - 设置
+    - Settings
     semantic_type: menu_item
   - text: Phone app
     center:
@@ -3404,7 +3404,7 @@ screens:
     aliases:
     - Default phone
     - Dialer
-    - 电话应用
+    - [CH]App
     semantic_type: setting
   - text: Phone
     center:
@@ -3414,7 +3414,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Dialer
-    - 电话
+    - [CH]
     semantic_type: menu_item
   - text: SMS app
     center:
@@ -3425,7 +3425,7 @@ screens:
     aliases:
     - Default SMS
     - Text messaging
-    - 短信应用
+    - [CH]App
     semantic_type: setting
   - text: Messages
     center:
@@ -3436,7 +3436,7 @@ screens:
     aliases:
     - Google Messages
     - SMS
-    - 信息
+    - Info
     semantic_type: menu_item
   - text: Opening links
     center:
@@ -3447,7 +3447,7 @@ screens:
     aliases:
     - Default links
     - Link handling
-    - 打开链接
+    - Open[CH]
     semantic_type: setting
   description: Default apps settings screen where users can configure default applications
     for browser, caller ID, digital assistant, home, phone, SMS, and opening links.
@@ -3463,7 +3463,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     semantic_type: button
   - text: More options
@@ -3474,7 +3474,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Menu
-    - 更多
+    - [CH]
     - Overflow menu
     semantic_type: button
   - text: Screen time
@@ -3484,7 +3484,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 屏幕使用时间
+    - Screen[CH]
     - Screen Time
     - Digital wellbeing
     semantic_type: setting
@@ -3495,7 +3495,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 今天
+    - [CH]
     - Daily
     - Current day
     semantic_type: tab
@@ -3507,7 +3507,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Previous day
-    - 前一天
+    - [CH]
     - Left arrow
     semantic_type: button
   - text: Set timers for your apps
@@ -3518,7 +3518,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - App limits
-    - 应用限额
+    - App[CH]
     - App timers
     semantic_type: menu_item
   - text: Dismiss card
@@ -3529,7 +3529,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Close
-    - 关闭
+    - Close
     - Hide
     semantic_type: button
   - text: Settings
@@ -3539,7 +3539,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - Preferences
     - Config
     semantic_type: setting
@@ -3551,7 +3551,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Error
-    - 无法设置计时器
+    - None法Settings[CH]
     - Timer failed
     semantic_type: label
   description: Screen time settings page displaying daily usage, date navigation,
@@ -3568,7 +3568,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     semantic_type: button
   - text: More options
@@ -3579,7 +3579,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Menu
-    - 更多
+    - [CH]
     - Overflow menu
     semantic_type: button
   - text: Screen time
@@ -3589,9 +3589,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 屏幕使用时间
+    - Screen[CH]
     - Screen Time
-    - 数字健康
+    - [CH]
     semantic_type: setting
   - text: Today
     center:
@@ -3600,8 +3600,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 今天
-    - 今日
+    - [CH]
+    - [CH]
     - Current day
     semantic_type: tab
   - text: Go to the previous day
@@ -3612,8 +3612,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Previous day
-    - 前一天
-    - 上一天
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Set timers for your apps
     center:
@@ -3623,7 +3623,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - App Limits
-    - 应用限额
+    - App[CH]
     - App timers
     semantic_type: menu_item
   - text: Dismiss card
@@ -3634,7 +3634,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Close
-    - 关闭
+    - Close
     - Remove card
     semantic_type: button
   - text: Settings
@@ -3644,7 +3644,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - Preferences
     - System settings
     semantic_type: setting
@@ -3661,7 +3661,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - Go back
     - Return
     semantic_type: button
@@ -3679,7 +3679,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     - Go back
     semantic_type: button
@@ -3691,7 +3691,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Find
-    - 搜索
+    - Search
     - Search settings
     - Magnifying glass
     semantic_type: button
@@ -3703,7 +3703,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Menu
-    - 更多
+    - [CH]
     - Overflow
     - Three dots
     semantic_type: button
@@ -3715,7 +3715,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Recent
-    - 最近
+    - [CH]
     - Recently used
     - Sort by recent
     semantic_type: label
@@ -3726,7 +3726,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 谷歌
+    - [CH]
     - Google account
     - Google settings
     - Google services
@@ -3745,7 +3745,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - back
-    - 返回
+    - Back
     - go back
     - up arrow
     semantic_type: button
@@ -3756,7 +3756,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search settings
     - magnifying glass
@@ -3768,7 +3768,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
+    - [CH]
     - overflow menu
     - three dots
     - menu
@@ -3780,10 +3780,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最近
+    - [CH]
     - latest
     - recent
-    - 最近使用
+    - [CH]
     semantic_type: tab
   description: Settings sub-screen displaying a list of most recent items or activities,
     featuring search and more options in the top app bar.
@@ -3799,7 +3799,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up arrow
     - Go back
     semantic_type: button
@@ -3811,7 +3811,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Notification history
-    - 通知历史
+    - Notification[CH]
     - Enable history
     semantic_type: toggle
   - text: Notification history turned off
@@ -3822,7 +3822,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - History disabled
-    - 通知历史已关闭
+    - Notification[CH]Close
     - 'Off'
     semantic_type: label
   - text: Turn on notification history to see recent notifications and snoozed notifications
@@ -3833,7 +3833,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Enable notification history
-    - 开启通知历史
+    - [CH]Notification[CH]
     - Description text
     semantic_type: label
   description: Notification history settings page with an option to enable the feature
@@ -3851,7 +3851,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Priority and modified conversations will appear here
@@ -3862,7 +3862,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Empty state text
-    - 优先和修改的对话将显示在此处
+    - [CH]
     - No priority conversations
     semantic_type: label
   description: Empty state screen for priority conversations displaying a navigate
@@ -3881,8 +3881,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     - back button
     semantic_type: button
   - text: Some conversations will appear as floating icons on top of other apps
@@ -3893,9 +3893,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - Bubbles description
-    - 气泡说明
+    - [CH]Instruction
     - Floating conversations
-    - 气泡提示
+    - [CH]Tip
     semantic_type: label
   - text: Allow apps to show bubbles
     center:
@@ -3905,9 +3905,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - Bubbles
-    - 气泡
+    - [CH]
     - Show bubbles
-    - 允许应用显示气泡
+    - [CH]App[CH]
     - Bubble settings
     semantic_type: setting
   description: Bubbles settings page with an option to allow apps to show floating
@@ -4102,7 +4102,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Allowed
@@ -4113,7 +4113,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Permitted
-    - 允许
+    - [CH]
     - Granted
     semantic_type: label
   - text: Android System Intelligence
@@ -4124,7 +4124,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - ASI
-    - 安卓系统智能
+    - [CH]
     - System Intelligence
     semantic_type: menu_item
   - text: Pixel Launcher
@@ -4135,7 +4135,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Launcher
-    - Pixel启动器
+    - PixelStart器
     - Home app
     semantic_type: menu_item
   - text: Not allowed
@@ -4146,7 +4146,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Denied
-    - 不允许
+    - [CH]
     - Blocked
     semantic_type: label
   - text: Android Auto
@@ -4157,7 +4157,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Auto
-    - 安卓汽车
+    - [CH]
     - Car system
     semantic_type: menu_item
   - text: Bluecoins
@@ -4168,7 +4168,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Bluecoins Finance
-    - 记账
+    - [CH]
     - Budget app
     semantic_type: menu_item
   - text: Google Play services
@@ -4179,7 +4179,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - GMS
-    - Google Play 服务
+    - Google Play Service
     - Play services
     semantic_type: menu_item
   - text: Google
@@ -4190,7 +4190,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google app
-    - 谷歌
+    - [CH]
     - Google settings
     semantic_type: menu_item
   description: Permission settings page displaying a list of apps categorized under
@@ -4207,7 +4207,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Lock screen notifications
-    - 锁屏通知
+    - [CH]Notification
     - Lockscreen alerts
     semantic_type: setting
   - text: Show conversations, default, and silent
@@ -4218,7 +4218,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Show all notifications
-    - 显示所有
+    - [CH]Yes
     - Show all
     semantic_type: menu_item
   - text: Hide silent conversations and notifications
@@ -4229,7 +4229,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Hide silent
-    - 仅显示提醒
+    - [CH]Reminder
     - Show alerts only
     semantic_type: menu_item
   - text: Don’t show any notifications
@@ -4240,7 +4240,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Don't show
-    - 不显示通知
+    - [CH]Notification
     - Hide all
     semantic_type: menu_item
   description: Lock screen notification settings page with options to show, hide,
@@ -4258,7 +4258,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     - Back button
     semantic_type: button
@@ -4271,7 +4271,7 @@ screens:
     aliases:
     - Battery graph
     - Battery usage graph
-    - 电池用量图表
+    - Battery[CH]
     - Hourly usage
     semantic_type: other
   description: Battery usage details screen displaying an hourly battery consumption
@@ -4288,7 +4288,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Go back
     - Up arrow
     semantic_type: button
@@ -4300,7 +4300,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Battery Saver
-    - 省电模式
+    - [CH]Mode
     - Low power mode
     - Enable Battery Saver
     semantic_type: toggle
@@ -4312,7 +4312,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Schedule
-    - 定时
+    - [CH]
     - Set schedule
     - Battery saver schedule
     semantic_type: menu_item
@@ -4324,7 +4324,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - None
-    - 无
+    - None
     - No schedule set
     - Not scheduled
     semantic_type: label
@@ -4336,7 +4336,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Auto turn off
-    - 充满电时关闭
+    - [CH]Close
     - Turn off on charge
     - Disable when charged
     semantic_type: toggle
@@ -4349,7 +4349,7 @@ screens:
     aliases:
     - Auto off at 90%
     - 90% charge limit
-    - 省电模式在电量超过90%时关闭
+    - [CH]ModeatBattery Level[CH]90%时Close
     - Auto disable
     semantic_type: label
   - text: Learn more about Battery saver
@@ -4360,7 +4360,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Learn more
-    - 了解更多
+    - [CH]
     - Help
     - Battery saver help
     semantic_type: link
@@ -4379,7 +4379,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up button
     semantic_type: button
   - text: Adaptive Battery
@@ -4389,7 +4389,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自适应电池
+    - [CH]Battery
     - adaptive battery settings
     - battery optimization
     semantic_type: setting
@@ -4400,7 +4400,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 延长电池续航时间
+    - [CH]Battery[CH]
     - battery life extension
     - battery usage description
     semantic_type: label
@@ -4455,7 +4455,7 @@ screens:
     aliases:
     - System storage description
     - Android system files
-    - 系统文件说明
+    - [CH]FileInstruction
     semantic_type: label
   - text: OK
     center:
@@ -4464,8 +4464,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 确定
-    - 确认
+    - OK
+    - Confirm
     - Got it
     semantic_type: button
   description: Dialog box displaying system information for Android version 13 with
@@ -4529,7 +4529,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图片
+    - [CH]
     - Photos
     - Pictures
     semantic_type: menu_item
@@ -4540,7 +4540,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 大文件
+    - 大File
     - Big files
     semantic_type: menu_item
   - text: This week
@@ -4550,7 +4550,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 本周
+    - [CH]
     - Past 7 days
     semantic_type: menu_item
   - text: List view
@@ -4560,8 +4560,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 列表视图
-    - 列表模式
+    - [CH]
+    - [CH]Mode
     - List mode
     semantic_type: button
   - text: Show roots
@@ -4571,7 +4571,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 显示根目录
+    - [CH]Directory
     - Show root directories
     semantic_type: menu_item
   - text: Search
@@ -4581,9 +4581,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - Find
-    - 查找
+    - [CH]
     semantic_type: input
   - text: More options
     center:
@@ -4592,8 +4592,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - More
     semantic_type: button
   - text: Unknown
@@ -4603,9 +4603,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 未知
+    - [CH]
     - Unknown files
-    - 其他
+    - [CH]
     semantic_type: menu_item
   description: File management or storage screen displaying categories like Images
     and Large files, with toolbar options for search, list view, and showing roots.

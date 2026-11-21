@@ -39,7 +39,7 @@ screens:
     - new event
     - create
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -51,7 +51,7 @@ screens:
     aliases:
     - current day
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -63,7 +63,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日程
+    - [CH]
     semantic_type: menu_item
   - text: inbox
     center:
@@ -75,7 +75,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: July
     center:
@@ -85,7 +85,7 @@ screens:
     fixed: true
     aliases:
     - seventh month
-    - 七月
+    - [CH]
     semantic_type: label
   - text: all-day
     center:
@@ -96,7 +96,7 @@ screens:
     leads_to: screen_7
     aliases:
     - all day event
-    - 全天
+    - [CH]
     semantic_type: label
   - text: favorite
     center:
@@ -108,7 +108,7 @@ screens:
     aliases:
     - starred
     - bookmarked
-    - 收藏
+    - [CH]
     semantic_type: toggle
   description: Monthly calendar view for July 2026 with options to add events, view
     today, and access calendars and inbox.
@@ -127,8 +127,8 @@ screens:
     - New
     - Create
     - Plus
-    - 新增
-    - 添加
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -140,7 +140,7 @@ screens:
     aliases:
     - Now
     - Current date
-    - 今天
+    - [CH]
     - Go to today
     semantic_type: button
   - text: Calendars
@@ -152,8 +152,8 @@ screens:
     leads_to: screen_10
     aliases:
     - Calendar list
-    - 日程
-    - 日历
+    - [CH]
+    - [CH]
     - Manage calendars
     semantic_type: menu_item
   - text: Inbox
@@ -166,8 +166,8 @@ screens:
     aliases:
     - Notifications
     - Invitations
-    - 收件箱
-    - 通知
+    - [CH]
+    - Notification
     semantic_type: menu_item
   description: Main calendar navigation screen with options to add events, view today's
     schedule, manage calendars, and access inbox.
@@ -268,7 +268,7 @@ screens:
     aliases:
     - all day event
     - full day
-    - 全天
+    - [CH]
     semantic_type: label
   - text: favorite
     center:
@@ -280,7 +280,7 @@ screens:
     aliases:
     - starred
     - bookmarked
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: event.compact.split.4x1
     center:
@@ -367,7 +367,7 @@ screens:
     leads_to: screen_17
     aliases:
     - list view
-    - 列表
+    - [CH]
     semantic_type: tab
   - text: Add
     center:
@@ -379,7 +379,7 @@ screens:
     aliases:
     - create
     - new event
-    - 添加
+    - [CH]
     - plus
     semantic_type: button
   - text: Today
@@ -391,7 +391,7 @@ screens:
     leads_to: screen_18
     aliases:
     - current date
-    - 今天
+    - [CH]
     - go to today
     semantic_type: button
   - text: Calendars
@@ -403,7 +403,7 @@ screens:
     leads_to: screen_18
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - manage calendars
     semantic_type: menu_item
   - text: inbox
@@ -415,7 +415,7 @@ screens:
     leads_to: screen_18
     aliases:
     - notifications
-    - 收件箱
+    - [CH]
     - invitations
     semantic_type: menu_item
   - text: Done
@@ -427,7 +427,7 @@ screens:
     leads_to: screen_18
     aliases:
     - finish
-    - 完成
+    - Done
     - save
     semantic_type: button
   - text: Event
@@ -439,7 +439,7 @@ screens:
     leads_to: screen_18
     aliases:
     - appointment
-    - 事件
+    - [CH]
     - meeting
     semantic_type: tab
   - text: Reminder
@@ -451,7 +451,7 @@ screens:
     leads_to: screen_19
     aliases:
     - task
-    - 提醒
+    - Reminder
     - to-do
     semantic_type: tab
   - text: More suggestions
@@ -463,7 +463,7 @@ screens:
     leads_to: screen_18
     aliases:
     - additional suggestions
-    - 更多建议
+    - [CH]
     semantic_type: button
   - text: shift
     center:
@@ -474,9 +474,9 @@ screens:
     leads_to: screen_18
     aliases:
     - shift key
-    - 大写
+    - [CH]
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -486,9 +486,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 换行
+  - text: [CH]
     center:
     - 0.8706
     - 0.8913
@@ -499,7 +499,7 @@ screens:
     - return
     - enter
     - new line
-    - 回车
+    - [CH]
     semantic_type: button
   - text: title-field
     center:
@@ -511,7 +511,7 @@ screens:
     aliases:
     - title
     - event name
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -522,7 +522,7 @@ screens:
     leads_to: screen_23
     aliases:
     - all day event
-    - 全天
+    - [CH]
     - 24 hours
     semantic_type: toggle
   - text: New
@@ -534,7 +534,7 @@ screens:
     leads_to: screen_18
     aliases:
     - create new
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -545,9 +545,9 @@ screens:
     leads_to: screen_18
     aliases:
     - place
-    - 地址
+    - [CH]
     - video link
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -558,7 +558,7 @@ screens:
     leads_to: screen_24
     aliases:
     - start time
-    - 开始
+    - Start
     - from
     semantic_type: label
   - text: Ends
@@ -570,7 +570,7 @@ screens:
     leads_to: screen_24
     aliases:
     - end time
-    - 结束
+    - End
     - to
     semantic_type: label
   - text: Travel Time
@@ -582,7 +582,7 @@ screens:
     leads_to: screen_25
     aliases:
     - transit time
-    - 路程时间
+    - [CH]
     - commute
     semantic_type: setting
   - text: None
@@ -594,7 +594,7 @@ screens:
     leads_to: screen_25
     aliases:
     - zero
-    - 无
+    - None
     - empty
     semantic_type: label
   - text: Repeat
@@ -606,7 +606,7 @@ screens:
     leads_to: screen_26
     aliases:
     - recurrence
-    - 重复
+    - [CH]
     - frequency
     semantic_type: setting
   - text: Never
@@ -618,8 +618,8 @@ screens:
     leads_to: screen_27
     aliases:
     - no repeat
-    - 从不
-    - 不重复
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -630,10 +630,10 @@ screens:
     leads_to: screen_27
     aliases:
     - calendar selection
-    - 日历
+    - [CH]
     - category
     semantic_type: setting
-  - text: 个人
+  - text: Personal
     center:
     - 0.8358
     - 0.7849
@@ -643,7 +643,7 @@ screens:
     aliases:
     - personal
     - private
-    - 我的日历
+    - My[CH]
     semantic_type: label
   - text: Invitees
     center:
@@ -655,7 +655,7 @@ screens:
     aliases:
     - guests
     - participants
-    - 邀请人
+    - [CH]
     - attendees
     semantic_type: setting
   - text: Alert
@@ -666,10 +666,10 @@ screens:
     fixed: true
     aliases:
     - notification
-    - 提醒
+    - Reminder
     - alarm
     semantic_type: setting
-  - text: 这个
+  - text: [CH]
     center:
     - 0.6866
     - 0.6453
@@ -690,7 +690,7 @@ screens:
     leads_to: screen_24
     aliases:
     - starred
-    - 收藏
+    - [CH]
     - bookmark
     semantic_type: toggle
   description: New event creation screen with fields for title, date, time, location,
@@ -707,7 +707,7 @@ screens:
     fixed: true
     leads_to: screen_9
     aliases:
-    - 七月
+    - [CH]
     - Jul
     - month
     semantic_type: label
@@ -719,7 +719,7 @@ screens:
     fixed: true
     leads_to: screen_28
     aliases:
-    - 单日
+    - [CH]
     - 1 day
     - day view
     semantic_type: tab
@@ -731,7 +731,7 @@ screens:
     fixed: true
     leads_to: screen_29
     aliases:
-    - 添加
+    - [CH]
     - new event
     - plus
     - create
@@ -743,7 +743,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 今天
+    - [CH]
     - current date
     - now
     semantic_type: button
@@ -755,7 +755,7 @@ screens:
     fixed: true
     leads_to: screen_30
     aliases:
-    - 日历列表
+    - [CH]
     - calendar list
     - accounts
     semantic_type: menu_item
@@ -767,7 +767,7 @@ screens:
     fixed: true
     leads_to: screen_31
     aliases:
-    - 收件箱
+    - [CH]
     - notifications
     - invites
     semantic_type: menu_item
@@ -778,7 +778,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全天
+    - [CH]
     - all day event
     - 24 hours
     semantic_type: toggle
@@ -1148,7 +1148,7 @@ screens:
     leads_to: screen_9
     aliases:
     - Jul
-    - 七月
+    - [CH]
     - month
     semantic_type: label
   - text: All-day
@@ -1159,7 +1159,7 @@ screens:
     fixed: true
     leads_to: screen_36
     aliases:
-    - 全天
+    - [CH]
     - all day event
     - 24 hours
     semantic_type: toggle
@@ -1171,8 +1171,8 @@ screens:
     fixed: true
     leads_to: screen_36
     aliases:
-    - 日历
-    - 日程
+    - [CH]
+    - [CH]
     - schedule
     semantic_type: tab
   description: Month view of July calendar with all-day events section and navigation
@@ -1189,8 +1189,8 @@ screens:
     fixed: true
     leads_to: screen_37
     aliases:
-    - 添加
-    - 新增
+    - [CH]
+    - [CH]
     - create
     - plus
     semantic_type: button
@@ -1202,7 +1202,7 @@ screens:
     fixed: true
     leads_to: screen_38
     aliases:
-    - 今天
+    - [CH]
     - current date
     - go to today
     semantic_type: button
@@ -1214,7 +1214,7 @@ screens:
     fixed: true
     leads_to: screen_39
     aliases:
-    - 日历列表
+    - [CH]
     - calendar list
     - manage calendars
     semantic_type: menu_item
@@ -1226,7 +1226,7 @@ screens:
     fixed: true
     leads_to: screen_38
     aliases:
-    - 收件箱
+    - [CH]
     - notifications
     - invites
     semantic_type: menu_item
@@ -1238,7 +1238,7 @@ screens:
     fixed: true
     leads_to: screen_39
     aliases:
-    - 完成
+    - Done
     - confirm
     - save
     semantic_type: button
@@ -1250,9 +1250,9 @@ screens:
     fixed: true
     leads_to: screen_39
     aliases:
-    - 事件
+    - [CH]
     - appointment
-    - 日程
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -1262,9 +1262,9 @@ screens:
     fixed: true
     leads_to: screen_40
     aliases:
-    - 提醒
+    - Reminder
     - task
-    - 待办
+    - [CH]
     semantic_type: tab
   - text: More suggestions
     center:
@@ -1274,7 +1274,7 @@ screens:
     fixed: true
     leads_to: screen_39
     aliases:
-    - 更多建议
+    - [CH]
     - additional suggestions
     - see more
     semantic_type: button
@@ -1286,11 +1286,11 @@ screens:
     fixed: true
     leads_to: screen_41
     aliases:
-    - 切换大小写
+    - [CH]
     - uppercase
     - caps
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -1300,9 +1300,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 换行
+  - text: [CH]
     center:
     - 0.8706
     - 0.8913
@@ -1322,7 +1322,7 @@ screens:
     fixed: true
     leads_to: screen_44
     aliases:
-    - 标题
+    - [CH]
     - title
     - event name
     semantic_type: input
@@ -1334,9 +1334,9 @@ screens:
     fixed: true
     leads_to: screen_45
     aliases:
-    - 全天
+    - [CH]
     - all day event
-    - 24小时
+    - 24[CH]
     semantic_type: toggle
   - text: New
     center:
@@ -1346,7 +1346,7 @@ screens:
     fixed: true
     leads_to: screen_38
     aliases:
-    - 新建
+    - [CH]
     - create new
     - add new
     semantic_type: button
@@ -1358,10 +1358,10 @@ screens:
     fixed: true
     leads_to: screen_46
     aliases:
-    - 地点
+    - [CH]
     - location
     - video call link
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -1371,9 +1371,9 @@ screens:
     fixed: true
     leads_to: screen_47
     aliases:
-    - 开始
+    - Start
     - start time
-    - 开始时间
+    - Start[CH]
     semantic_type: button
   - text: Ends
     center:
@@ -1383,9 +1383,9 @@ screens:
     fixed: true
     leads_to: screen_48
     aliases:
-    - 结束
+    - End
     - end time
-    - 结束时间
+    - End[CH]
     semantic_type: button
   - text: Travel Time
     center:
@@ -1395,9 +1395,9 @@ screens:
     fixed: true
     leads_to: screen_49
     aliases:
-    - 行程时间
+    - [CH]
     - travel duration
-    - 通勤时间
+    - [CH]
     semantic_type: setting
   - text: None
     center:
@@ -1406,7 +1406,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 无
+    - None
     - no travel time
     - empty
     semantic_type: label
@@ -1417,7 +1417,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 重复
+    - [CH]
     - recurrence
     - repeat event
     semantic_type: setting
@@ -1428,9 +1428,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 从不
+    - [CH]
     - no repeat
-    - 不重复
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -1439,7 +1439,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - calendar selection
     - choose calendar
     semantic_type: setting
@@ -1450,10 +1450,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 邀请对象
+    - [CH]
     - attendees
     - participants
-    - 参与者
+    - [CH]
     semantic_type: setting
   - text: Alert
     center:
@@ -1462,7 +1462,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提醒
+    - Reminder
     - notification
     - alarm
     semantic_type: setting
@@ -1473,10 +1473,10 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 静音模式
+    - MuteMode
     - silent
     - mute
-    - 静音
+    - Mute
     semantic_type: toggle
   description: New event creation screen with fields for title, date/time, location,
     repeat, alerts, and invitees
@@ -1559,7 +1559,7 @@ screens:
     aliases:
     - all day event
     - full day
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: favorite
     center:
@@ -1570,7 +1570,7 @@ screens:
     aliases:
     - starred
     - bookmarked
-    - 收藏
+    - [CH]
     semantic_type: toggle
   description: Main calendar view for 2026 showing a list of events and navigation
     options to add events, view today, manage calendars, and access inbox.
@@ -1861,7 +1861,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日程
+    - [CH]
     semantic_type: menu_item
   - text: Inbox
     center:
@@ -1872,7 +1872,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: June
     center:
@@ -1882,7 +1882,7 @@ screens:
     fixed: false
     aliases:
     - Jun
-    - 六月
+    - [CH]
     semantic_type: label
   - text: Jul
     center:
@@ -1892,7 +1892,7 @@ screens:
     fixed: false
     aliases:
     - July
-    - 七月
+    - [CH]
     semantic_type: label
   - text: Aug
     center:
@@ -1902,7 +1902,7 @@ screens:
     fixed: false
     aliases:
     - August
-    - 八月
+    - [CH]
     semantic_type: label
   - text: August
     center:
@@ -1912,7 +1912,7 @@ screens:
     fixed: false
     aliases:
     - Aug
-    - 八月
+    - [CH]
     semantic_type: label
   - text: September
     center:
@@ -1922,7 +1922,7 @@ screens:
     fixed: false
     aliases:
     - Sep
-    - 九月
+    - [CH]
     semantic_type: label
   - text: November
     center:
@@ -1932,7 +1932,7 @@ screens:
     fixed: false
     aliases:
     - Nov
-    - 十一月
+    - [CH]
     semantic_type: label
   description: Monthly calendar view for August 2026 with navigation to add events,
     view inbox, and switch between months.
@@ -2095,7 +2095,7 @@ screens:
     aliases:
     - event details
     - info
-    - 详情
+    - [CH]
     semantic_type: button
   - text: Add
     center:
@@ -2106,7 +2106,7 @@ screens:
     aliases:
     - new event
     - create
-    - 添加
+    - [CH]
     - plus
     semantic_type: button
   - text: Today
@@ -2118,7 +2118,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -2129,7 +2129,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日历
+    - [CH]
     semantic_type: menu_item
   - text: Inbox
     center:
@@ -2140,7 +2140,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   description: Main calendar view for 2026 with options to view details, add events,
     go to today, manage calendars, and access inbox.
@@ -2179,7 +2179,7 @@ screens:
     - new event
     - create
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -2190,7 +2190,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -2201,7 +2201,7 @@ screens:
     aliases:
     - calendar list
     - accounts
-    - 日程
+    - [CH]
     semantic_type: menu_item
   - text: inbox
     center:
@@ -2212,7 +2212,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: favorite
     center:
@@ -2223,7 +2223,7 @@ screens:
     aliases:
     - starred
     - bookmarked
-    - 收藏
+    - [CH]
     semantic_type: menu_item
   description: Main calendar view for 2026 with options to add events, view today,
     access calendars, inbox, and favorites.
@@ -2251,7 +2251,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -2262,7 +2262,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -2272,7 +2272,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - calendar settings
     semantic_type: menu_item
   - text: inbox
@@ -2283,7 +2283,7 @@ screens:
     fixed: true
     aliases:
     - notifications
-    - 收件箱
+    - [CH]
     - invitations
     semantic_type: menu_item
   - text: Done
@@ -2295,7 +2295,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -2306,7 +2306,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -2317,7 +2317,7 @@ screens:
     aliases:
     - alert
     - task
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: More suggestions
     center:
@@ -2328,7 +2328,7 @@ screens:
     aliases:
     - additional
     - recommendations
-    - 更多建议
+    - [CH]
     semantic_type: button
   - text: shift
     center:
@@ -2339,9 +2339,9 @@ screens:
     aliases:
     - caps
     - uppercase
-    - 切换
+    - [CH]
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -2350,9 +2350,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 换行
+  - text: [CH]
     center:
     - 0.8706
     - 0.8913
@@ -2372,7 +2372,7 @@ screens:
     aliases:
     - title
     - event name
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -2382,7 +2382,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day event
     semantic_type: toggle
   - text: New
@@ -2394,7 +2394,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -2405,7 +2405,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置
+    - [CH]
     - video link
     semantic_type: input
   - text: Starts
@@ -2417,7 +2417,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -2428,7 +2428,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: label
   - text: Travel Time
     center:
@@ -2439,7 +2439,7 @@ screens:
     aliases:
     - commute
     - transit
-    - 路程时间
+    - [CH]
     semantic_type: setting
   - text: None
     center:
@@ -2450,7 +2450,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -2461,7 +2461,7 @@ screens:
     aliases:
     - recurring
     - frequency
-    - 重复
+    - [CH]
     semantic_type: setting
   - text: Never
     center:
@@ -2472,7 +2472,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 从不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -2482,7 +2482,7 @@ screens:
     fixed: true
     aliases:
     - calendar selection
-    - 日程类型
+    - [CH]
     - calendar category
     semantic_type: setting
   - text: Invitees
@@ -2494,7 +2494,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 参与者
+    - [CH]
     semantic_type: setting
   - text: Alert
     center:
@@ -2505,7 +2505,7 @@ screens:
     aliases:
     - notification
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: setting
   - text: favorite
     center:
@@ -2516,7 +2516,7 @@ screens:
     aliases:
     - starred
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: button
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees
@@ -2555,7 +2555,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -2566,7 +2566,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -2577,7 +2577,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日程
+    - [CH]
     semantic_type: menu_item
   - text: inbox
     center:
@@ -2588,7 +2588,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -2599,7 +2599,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -2610,7 +2610,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -2621,7 +2621,7 @@ screens:
     aliases:
     - task
     - to-do
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: shift
     center:
@@ -2642,7 +2642,7 @@ screens:
     aliases:
     - icon
     - smiley
-    - 表情
+    - [CH]
     semantic_type: button
   - text: return
     center:
@@ -2653,7 +2653,7 @@ screens:
     aliases:
     - enter
     - submit
-    - 返回
+    - Back
     semantic_type: button
   - text: title-field
     center:
@@ -2664,7 +2664,7 @@ screens:
     aliases:
     - event name
     - subject
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -2675,7 +2675,7 @@ screens:
     aliases:
     - full day
     - 24 hours
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: July
     center:
@@ -2685,7 +2685,7 @@ screens:
     fixed: true
     aliases:
     - month
-    - 七月
+    - [CH]
     semantic_type: label
   - text: New
     center:
@@ -2696,7 +2696,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -2707,7 +2707,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -2718,7 +2718,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: input
   - text: Ends
     center:
@@ -2729,7 +2729,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: input
   - text: Travel Time
     center:
@@ -2740,7 +2740,7 @@ screens:
     aliases:
     - commute
     - transit
-    - 路程时间
+    - [CH]
     semantic_type: menu_item
   - text: None
     center:
@@ -2751,7 +2751,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -2762,7 +2762,7 @@ screens:
     aliases:
     - recurrence
     - cycle
-    - 重复
+    - [CH]
     semantic_type: menu_item
   - text: Never
     center:
@@ -2773,7 +2773,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 从不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -2784,9 +2784,9 @@ screens:
     aliases:
     - category
     - schedule type
-    - 日历
+    - [CH]
     semantic_type: menu_item
-  - text: 个人
+  - text: Personal
     center:
     - 0.8358
     - 0.7849
@@ -2806,7 +2806,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 参与者
+    - [CH]
     semantic_type: menu_item
   - text: Alert
     center:
@@ -2817,7 +2817,7 @@ screens:
     aliases:
     - notification
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: menu_item
   - text: favorite
     center:
@@ -2828,7 +2828,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: Clear text
     center:
@@ -2839,7 +2839,7 @@ screens:
     aliases:
     - erase
     - delete text
-    - 清除文本
+    - [CH]
     semantic_type: button
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees.
@@ -2867,7 +2867,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -2878,7 +2878,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -2888,7 +2888,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - accounts
     semantic_type: menu_item
   - text: inbox
@@ -2900,7 +2900,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -2911,7 +2911,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -2922,7 +2922,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -2933,7 +2933,7 @@ screens:
     aliases:
     - task
     - alert
-    - 提醒事项
+    - Reminder[CH]
     semantic_type: tab
   - text: date and time
     center:
@@ -2944,7 +2944,7 @@ screens:
     aliases:
     - schedule
     - when
-    - 日期时间
+    - [CH]
     semantic_type: label
   - text: location services
     center:
@@ -2954,7 +2954,7 @@ screens:
     fixed: true
     aliases:
     - GPS
-    - 定位服务
+    - LocationService
     - location permissions
     semantic_type: setting
   - text: number
@@ -2966,7 +2966,7 @@ screens:
     aliases:
     - numeric
     - digit
-    - 数字
+    - [CH]
     semantic_type: input
   - text: flag
     center:
@@ -2977,7 +2977,7 @@ screens:
     aliases:
     - mark
     - priority
-    - 旗帜
+    - [CH]
     semantic_type: button
   - text: camera
     center:
@@ -2988,7 +2988,7 @@ screens:
     aliases:
     - photo
     - scan
-    - 相机
+    - Camera
     semantic_type: button
   - text: shift
     center:
@@ -2999,7 +2999,7 @@ screens:
     aliases:
     - caps
     - uppercase
-    - 切换
+    - [CH]
     semantic_type: button
   - text: Emoji
     center:
@@ -3010,7 +3010,7 @@ screens:
     aliases:
     - smiley
     - icon
-    - 表情符号
+    - [CH]
     semantic_type: button
   - text: return
     center:
@@ -3021,7 +3021,7 @@ screens:
     aliases:
     - enter
     - newline
-    - 回车
+    - [CH]
     semantic_type: button
   - text: URL
     center:
@@ -3032,7 +3032,7 @@ screens:
     aliases:
     - link
     - website
-    - 网址
+    - [CH]
     semantic_type: input
   - text: Time
     center:
@@ -3043,7 +3043,7 @@ screens:
     aliases:
     - hour
     - minute
-    - 时间
+    - [CH]
     semantic_type: label
   - text: Urgent
     center:
@@ -3054,7 +3054,7 @@ screens:
     aliases:
     - high priority
     - important
-    - 紧急
+    - Urgent
     semantic_type: label
   - text: all-day
     center:
@@ -3064,7 +3064,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - 24 hours
     semantic_type: toggle
   - text: New
@@ -3076,7 +3076,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Date
     center:
@@ -3087,7 +3087,7 @@ screens:
     aliases:
     - day
     - calendar day
-    - 日期
+    - [CH]
     semantic_type: label
   - text: Never
     center:
@@ -3098,7 +3098,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 永不
+    - [CH]
     semantic_type: menu_item
   - text: Repeat
     center:
@@ -3109,9 +3109,9 @@ screens:
     aliases:
     - recurring
     - cycle
-    - 重复
+    - [CH]
     semantic_type: menu_item
-  - text: 提醒
+  - text: Reminder
     center:
     - 0.8308
     - 0.8936
@@ -3131,7 +3131,7 @@ screens:
     aliases:
     - info
     - description
-    - 详情
+    - [CH]
     semantic_type: menu_item
   - text: favorite
     center:
@@ -3142,7 +3142,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: calendar
     center:
@@ -3153,7 +3153,7 @@ screens:
     aliases:
     - schedule
     - planner
-    - 日历
+    - [CH]
     semantic_type: label
   - text: clock
     center:
@@ -3164,7 +3164,7 @@ screens:
     aliases:
     - time
     - watch
-    - 时钟
+    - [CH]
     semantic_type: label
   - text: alarm
     center:
@@ -3175,7 +3175,7 @@ screens:
     aliases:
     - alert
     - notification
-    - 闹钟
+    - [CH]
     semantic_type: label
   - text: ListBadgeDefault
     center:
@@ -3212,7 +3212,7 @@ screens:
     fixed: true
     aliases:
     - list view
-    - 列表
+    - [CH]
     semantic_type: tab
   - text: Add
     center:
@@ -3223,7 +3223,7 @@ screens:
     aliases:
     - create
     - new
-    - 添加
+    - [CH]
     - plus
     semantic_type: button
   - text: Today
@@ -3234,7 +3234,7 @@ screens:
     fixed: true
     aliases:
     - current date
-    - 今天
+    - [CH]
     - go to today
     semantic_type: button
   - text: Calendars
@@ -3245,7 +3245,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - manage calendars
     semantic_type: menu_item
   - text: inbox
@@ -3256,7 +3256,7 @@ screens:
     fixed: true
     aliases:
     - notifications
-    - 收件箱
+    - [CH]
     - invitations
     semantic_type: menu_item
   - text: Done
@@ -3267,7 +3267,7 @@ screens:
     fixed: true
     aliases:
     - finish
-    - 完成
+    - Done
     - save
     semantic_type: button
   - text: Event
@@ -3278,7 +3278,7 @@ screens:
     fixed: true
     aliases:
     - appointment
-    - 事件
+    - [CH]
     - meeting
     semantic_type: tab
   - text: Reminder
@@ -3289,7 +3289,7 @@ screens:
     fixed: true
     aliases:
     - task
-    - 提醒
+    - Reminder
     - to-do
     semantic_type: tab
   - text: Next keyboard
@@ -3300,7 +3300,7 @@ screens:
     fixed: true
     aliases:
     - switch keyboard
-    - 下一个键盘
+    - [CH]
     - input method
     semantic_type: button
   - text: title-field
@@ -3311,7 +3311,7 @@ screens:
     fixed: true
     aliases:
     - event name
-    - 标题
+    - [CH]
     - subject
     semantic_type: input
   - text: All-day
@@ -3322,7 +3322,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day toggle
     semantic_type: toggle
   - text: New
@@ -3333,7 +3333,7 @@ screens:
     fixed: true
     aliases:
     - create
-    - 新建
+    - [CH]
     - add
     semantic_type: button
   - text: Location or Video Call
@@ -3344,7 +3344,7 @@ screens:
     fixed: true
     aliases:
     - place
-    - 位置
+    - [CH]
     - video link
     - meeting link
     semantic_type: input
@@ -3356,7 +3356,7 @@ screens:
     fixed: true
     aliases:
     - begin
-    - 开始
+    - Start
     - start time
     semantic_type: label
   - text: Ends
@@ -3367,7 +3367,7 @@ screens:
     fixed: true
     aliases:
     - finish
-    - 结束
+    - End
     - end time
     semantic_type: label
   - text: Travel Time
@@ -3378,7 +3378,7 @@ screens:
     fixed: true
     aliases:
     - transit
-    - 路程时间
+    - [CH]
     - commute
     semantic_type: setting
   - text: None
@@ -3389,7 +3389,7 @@ screens:
     fixed: true
     aliases:
     - zero
-    - 无
+    - None
     - no travel time
     semantic_type: label
   - text: Repeat
@@ -3400,7 +3400,7 @@ screens:
     fixed: true
     aliases:
     - recurrence
-    - 重复
+    - [CH]
     - recurring
     semantic_type: setting
   - text: Never
@@ -3411,7 +3411,7 @@ screens:
     fixed: true
     aliases:
     - no repeat
-    - 从不
+    - [CH]
     - once
     semantic_type: label
   - text: Calendar
@@ -3422,7 +3422,7 @@ screens:
     fixed: true
     aliases:
     - calendar selection
-    - 日历
+    - [CH]
     - category
     semantic_type: setting
   - text: Invitees
@@ -3433,7 +3433,7 @@ screens:
     fixed: true
     aliases:
     - attendees
-    - 参与者
+    - [CH]
     - guests
     - people
     semantic_type: setting
@@ -3445,7 +3445,7 @@ screens:
     fixed: true
     aliases:
     - notification
-    - 提醒
+    - Reminder
     - alarm
     semantic_type: setting
   - text: favorite
@@ -3456,7 +3456,7 @@ screens:
     fixed: true
     aliases:
     - starred
-    - 收藏
+    - [CH]
     - bookmark
     semantic_type: toggle
   description: New event creation screen with fields for title, date, time, location,
@@ -3765,7 +3765,7 @@ screens:
     - create
     - new event
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -3776,7 +3776,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -3787,7 +3787,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日历
+    - [CH]
     semantic_type: menu_item
   - text: inbox
     center:
@@ -3798,7 +3798,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -3810,7 +3810,7 @@ screens:
     - complete
     - finish
     - save
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -3821,7 +3821,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: label
   - text: Reminder
     center:
@@ -3832,7 +3832,7 @@ screens:
     aliases:
     - task
     - alert
-    - 提醒
+    - Reminder
     semantic_type: label
   - text: Forward
     center:
@@ -3843,7 +3843,7 @@ screens:
     aliases:
     - next
     - advance
-    - 前进
+    - [CH]
     semantic_type: button
   - text: shift
     center:
@@ -3865,7 +3865,7 @@ screens:
     aliases:
     - emoji keyboard
     - smiley
-    - 表情
+    - [CH]
     semantic_type: button
   - text: return
     center:
@@ -3876,7 +3876,7 @@ screens:
     aliases:
     - enter
     - newline
-    - 回车
+    - [CH]
     semantic_type: button
   - text: title-field
     center:
@@ -3887,7 +3887,7 @@ screens:
     aliases:
     - title
     - event name
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -3898,7 +3898,7 @@ screens:
     aliases:
     - all day
     - full day
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: July
     center:
@@ -3908,7 +3908,7 @@ screens:
     fixed: true
     aliases:
     - month
-    - 七月
+    - [CH]
     semantic_type: label
   - text: New
     center:
@@ -3919,7 +3919,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -3931,7 +3931,7 @@ screens:
     - location
     - video call
     - place
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -3942,7 +3942,7 @@ screens:
     aliases:
     - start time
     - begin
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -3953,7 +3953,7 @@ screens:
     aliases:
     - end time
     - finish
-    - 结束
+    - End
     semantic_type: label
   - text: Travel Time
     center:
@@ -3964,7 +3964,7 @@ screens:
     aliases:
     - transit time
     - commute
-    - 路程时间
+    - [CH]
     semantic_type: setting
   - text: None
     center:
@@ -3975,7 +3975,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -3986,7 +3986,7 @@ screens:
     aliases:
     - recurrence
     - repeat event
-    - 重复
+    - [CH]
     semantic_type: setting
   - text: Never
     center:
@@ -3997,7 +3997,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 从不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -4008,9 +4008,9 @@ screens:
     aliases:
     - calendar selection
     - choose calendar
-    - 日历
+    - [CH]
     semantic_type: setting
-  - text: 个人
+  - text: Personal
     center:
     - 0.8358
     - 0.7849
@@ -4031,7 +4031,7 @@ screens:
     - guests
     - attendees
     - participants
-    - 参与者
+    - [CH]
     semantic_type: setting
   - text: Alert
     center:
@@ -4042,7 +4042,7 @@ screens:
     aliases:
     - notification
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: setting
   - text: Paste
     center:
@@ -4053,7 +4053,7 @@ screens:
     aliases:
     - insert
     - paste text
-    - 粘贴
+    - Paste
     semantic_type: button
   - text: AutoFill
     center:
@@ -4064,7 +4064,7 @@ screens:
     aliases:
     - autocomplete
     - suggest
-    - 自动填充
+    - Auto[CH]
     semantic_type: button
   - text: favorite
     center:
@@ -4075,7 +4075,7 @@ screens:
     aliases:
     - bookmark
     - star
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: Clear text
     center:
@@ -4086,7 +4086,7 @@ screens:
     aliases:
     - delete text
     - erase
-    - 清除文本
+    - [CH]
     semantic_type: button
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees.
@@ -4115,7 +4115,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -4126,7 +4126,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -4136,7 +4136,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - calendar settings
     semantic_type: menu_item
   - text: inbox
@@ -4148,7 +4148,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -4159,7 +4159,7 @@ screens:
     aliases:
     - finish
     - complete
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -4170,7 +4170,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -4181,7 +4181,7 @@ screens:
     aliases:
     - task
     - alert
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Date Picker
     center:
@@ -4192,7 +4192,7 @@ screens:
     aliases:
     - calendar picker
     - date selector
-    - 日期选择器
+    - [CH]Select器
     semantic_type: input
   - text: title-field
     center:
@@ -4203,7 +4203,7 @@ screens:
     aliases:
     - event name
     - subject
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -4213,7 +4213,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day toggle
     semantic_type: toggle
   - text: New
@@ -4225,7 +4225,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -4236,7 +4236,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置或视频通话
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -4247,7 +4247,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -4258,7 +4258,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: label
   - text: Repeat
     center:
@@ -4269,7 +4269,7 @@ screens:
     aliases:
     - recurrence
     - recurring
-    - 重复
+    - [CH]
     semantic_type: menu_item
   - text: Never
     center:
@@ -4279,7 +4279,7 @@ screens:
     fixed: true
     aliases:
     - no repeat
-    - 不重复
+    - [CH]
     - none
     semantic_type: label
   - text: Calendar
@@ -4290,7 +4290,7 @@ screens:
     fixed: true
     aliases:
     - calendar selection
-    - 日程类型
+    - [CH]
     - category
     semantic_type: menu_item
   - text: Invitees
@@ -4302,7 +4302,7 @@ screens:
     aliases:
     - attendees
     - participants
-    - 受邀人
+    - [CH]
     semantic_type: menu_item
   - text: None
     center:
@@ -4313,7 +4313,7 @@ screens:
     aliases:
     - empty
     - no invitees
-    - 无
+    - None
     semantic_type: label
   - text: Alert
     center:
@@ -4324,7 +4324,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: menu_item
   - text: Add attachment…
     center:
@@ -4335,7 +4335,7 @@ screens:
     aliases:
     - attach file
     - include file
-    - 添加附件
+    - [CH]
     semantic_type: button
   - text: favorite
     center:
@@ -4346,7 +4346,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   description: New event creation screen with fields for title, date, time, location,
     repeat, calendar, invitees, alert, and attachment.
@@ -4374,7 +4374,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -4385,7 +4385,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -4395,7 +4395,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - calendar settings
     semantic_type: menu_item
   - text: inbox
@@ -4407,7 +4407,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -4418,7 +4418,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -4429,7 +4429,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -4440,7 +4440,7 @@ screens:
     aliases:
     - task
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Previous Month
     center:
@@ -4451,7 +4451,7 @@ screens:
     aliases:
     - last month
     - back
-    - 上个月
+    - [CH]
     semantic_type: button
   - text: Next Month
     center:
@@ -4462,7 +4462,7 @@ screens:
     aliases:
     - forward
     - next
-    - 下个月
+    - [CH]
     semantic_type: button
   - text: title-field
     center:
@@ -4473,7 +4473,7 @@ screens:
     aliases:
     - event name
     - subject
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -4483,7 +4483,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day toggle
     semantic_type: toggle
   - text: New
@@ -4495,7 +4495,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -4506,7 +4506,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -4517,7 +4517,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -4528,7 +4528,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: label
   - text: Calendar
     center:
@@ -4538,7 +4538,7 @@ screens:
     fixed: true
     aliases:
     - calendar selection
-    - 日程类型
+    - [CH]
     - choose calendar
     semantic_type: menu_item
   - text: Invitees
@@ -4550,7 +4550,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 参与者
+    - [CH]
     semantic_type: menu_item
   - text: Alert
     center:
@@ -4561,7 +4561,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: menu_item
   - text: Add attachment…
     center:
@@ -4572,7 +4572,7 @@ screens:
     aliases:
     - attach file
     - include
-    - 添加附件
+    - [CH]
     semantic_type: button
   - text: favorite
     center:
@@ -4583,7 +4583,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: Travel Time
     center:
@@ -4594,7 +4594,7 @@ screens:
     aliases:
     - transit
     - commute
-    - 行程时间
+    - [CH]
     semantic_type: setting
   - text: Repeat
     center:
@@ -4605,7 +4605,7 @@ screens:
     aliases:
     - recurring
     - cycle
-    - 重复
+    - [CH]
     semantic_type: menu_item
   description: Event creation screen with fields for title, date, time, location,
     alerts, and other details to add a new calendar event or reminder.
@@ -4632,7 +4632,7 @@ screens:
     aliases:
     - list view
     - schedule
-    - 日程
+    - [CH]
     semantic_type: tab
   - text: Add
     center:
@@ -4644,7 +4644,7 @@ screens:
     - create
     - new event
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -4655,7 +4655,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -4666,7 +4666,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日历
+    - [CH]
     semantic_type: menu_item
   - text: inbox
     center:
@@ -4677,7 +4677,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -4688,7 +4688,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -4699,7 +4699,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -4710,7 +4710,7 @@ screens:
     aliases:
     - task
     - to-do
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: 5 minutes
     center:
@@ -4751,7 +4751,7 @@ screens:
     aliases:
     - shift key
     - caps
-    - 切换
+    - [CH]
     semantic_type: button
   - text: Emoji
     center:
@@ -4762,7 +4762,7 @@ screens:
     aliases:
     - emoji keyboard
     - smiley
-    - 表情
+    - [CH]
     semantic_type: button
   - text: return
     center:
@@ -4773,7 +4773,7 @@ screens:
     aliases:
     - enter
     - done
-    - 换行
+    - [CH]
     semantic_type: button
   - text: title-field
     center:
@@ -4784,7 +4784,7 @@ screens:
     aliases:
     - title
     - event name
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -4794,7 +4794,7 @@ screens:
     fixed: true
     aliases:
     - all day
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: July
     center:
@@ -4804,7 +4804,7 @@ screens:
     fixed: true
     aliases:
     - month
-    - 七月
+    - [CH]
     semantic_type: label
   - text: New
     center:
@@ -4815,7 +4815,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -4826,7 +4826,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -4837,7 +4837,7 @@ screens:
     aliases:
     - start time
     - begin
-    - 开始
+    - Start
     semantic_type: menu_item
   - text: Ends
     center:
@@ -4848,7 +4848,7 @@ screens:
     aliases:
     - end time
     - finish
-    - 结束
+    - End
     semantic_type: menu_item
   - text: Travel Time
     center:
@@ -4859,7 +4859,7 @@ screens:
     aliases:
     - transit
     - commute
-    - 路程时间
+    - [CH]
     semantic_type: menu_item
   - text: None
     center:
@@ -4870,7 +4870,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -4881,7 +4881,7 @@ screens:
     aliases:
     - recurrence
     - repeat event
-    - 重复
+    - [CH]
     semantic_type: menu_item
   - text: Never
     center:
@@ -4891,7 +4891,7 @@ screens:
     fixed: true
     aliases:
     - no repeat
-    - 从不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -4902,9 +4902,9 @@ screens:
     aliases:
     - calendar selection
     - choose calendar
-    - 日历
+    - [CH]
     semantic_type: menu_item
-  - text: 个人
+  - text: Personal
     center:
     - 0.8358
     - 0.7849
@@ -4924,7 +4924,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 参与者
+    - [CH]
     semantic_type: menu_item
   - text: Alert
     center:
@@ -4935,7 +4935,7 @@ screens:
     aliases:
     - notification
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: menu_item
   - text: favorite
     center:
@@ -4946,7 +4946,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: selected
     center:
@@ -4957,7 +4957,7 @@ screens:
     aliases:
     - chosen
     - picked
-    - 已选
+    - [CH]
     semantic_type: label
   - text: Clear text
     center:
@@ -4968,7 +4968,7 @@ screens:
     aliases:
     - delete text
     - erase
-    - 清除文本
+    - [CH]
     semantic_type: button
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees.
@@ -4996,7 +4996,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -5007,7 +5007,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -5017,7 +5017,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - calendar settings
     semantic_type: menu_item
   - text: inbox
@@ -5028,7 +5028,7 @@ screens:
     fixed: true
     aliases:
     - notifications
-    - 收件箱
+    - [CH]
     - invitations
     semantic_type: menu_item
   - text: Done
@@ -5040,7 +5040,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -5051,7 +5051,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -5062,7 +5062,7 @@ screens:
     aliases:
     - task
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Clear text
     center:
@@ -5073,7 +5073,7 @@ screens:
     aliases:
     - delete text
     - erase
-    - 清除文本
+    - [CH]
     semantic_type: button
   - text: shift
     center:
@@ -5084,7 +5084,7 @@ screens:
     aliases:
     - caps
     - uppercase
-    - 切换
+    - [CH]
     semantic_type: button
   - text: Emoji
     center:
@@ -5094,7 +5094,7 @@ screens:
     fixed: true
     aliases:
     - emoji keyboard
-    - 表情
+    - [CH]
     - smiley
     semantic_type: button
   - text: return
@@ -5106,7 +5106,7 @@ screens:
     aliases:
     - enter
     - newline
-    - 回车
+    - [CH]
     semantic_type: button
   - text: All-day
     center:
@@ -5116,7 +5116,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day event
     semantic_type: toggle
   - text: New
@@ -5128,7 +5128,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -5139,7 +5139,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置或视频通话
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -5150,7 +5150,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: input
   - text: Ends
     center:
@@ -5161,7 +5161,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: input
   - text: Travel Time
     center:
@@ -5172,7 +5172,7 @@ screens:
     aliases:
     - transit time
     - commute
-    - 行程时间
+    - [CH]
     semantic_type: setting
   - text: Repeat
     center:
@@ -5183,7 +5183,7 @@ screens:
     aliases:
     - recurring
     - cycle
-    - 重复
+    - [CH]
     semantic_type: setting
   - text: Calendar
     center:
@@ -5193,7 +5193,7 @@ screens:
     fixed: true
     aliases:
     - calendar selection
-    - 日程类别
+    - [CH]
     - calendar type
     semantic_type: setting
   - text: Alert
@@ -5205,7 +5205,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: setting
   - text: Add attachment…
     center:
@@ -5216,7 +5216,7 @@ screens:
     aliases:
     - attach file
     - include
-    - 添加附件
+    - [CH]
     semantic_type: button
   - text: favorite
     center:
@@ -5227,7 +5227,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: Invitees
     center:
@@ -5238,7 +5238,7 @@ screens:
     aliases:
     - guests
     - participants
-    - 受邀人
+    - [CH]
     semantic_type: input
   description: New event creation screen with fields for title, date, time, location,
     repeat, calendar, alert, attachments, and invitees.
@@ -5521,7 +5521,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 七月
+    - [CH]
     - month
     - July 2024
     semantic_type: label
@@ -5589,7 +5589,7 @@ screens:
     fixed: true
     aliases:
     - all day event
-    - 全天
+    - [CH]
     - full day
     semantic_type: label
   - text: _contentView
@@ -5660,7 +5660,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 七月
+    - [CH]
     - month
     - July 2024
     semantic_type: label
@@ -5673,7 +5673,7 @@ screens:
     aliases:
     - one day
     - day view
-    - 单日
+    - [CH]
     semantic_type: tab
   - text: Add
     center:
@@ -5684,7 +5684,7 @@ screens:
     aliases:
     - create
     - plus
-    - 添加
+    - [CH]
     - new event
     semantic_type: button
   - text: Today
@@ -5696,7 +5696,7 @@ screens:
     aliases:
     - now
     - current date
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -5706,7 +5706,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - calendar settings
     semantic_type: menu_item
   - text: Inbox
@@ -5717,7 +5717,7 @@ screens:
     fixed: true
     aliases:
     - notifications
-    - 收件箱
+    - [CH]
     - invitations
     semantic_type: menu_item
   - text: Done
@@ -5729,7 +5729,7 @@ screens:
     aliases:
     - finish
     - complete
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -5740,7 +5740,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -5751,7 +5751,7 @@ screens:
     aliases:
     - task
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: More suggestions
     center:
@@ -5762,7 +5762,7 @@ screens:
     aliases:
     - additional
     - recommendations
-    - 更多建议
+    - [CH]
     semantic_type: button
   - text: shift
     center:
@@ -5773,9 +5773,9 @@ screens:
     aliases:
     - caps
     - uppercase
-    - 切换
+    - [CH]
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -5784,9 +5784,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 换行
+  - text: [CH]
     center:
     - 0.8706
     - 0.8913
@@ -5806,7 +5806,7 @@ screens:
     aliases:
     - title
     - event name
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -5816,7 +5816,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day event
     semantic_type: toggle
   - text: New
@@ -5828,7 +5828,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -5839,7 +5839,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置
+    - [CH]
     - video link
     semantic_type: input
   - text: Starts
@@ -5851,7 +5851,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -5862,7 +5862,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: label
   - text: Travel Time
     center:
@@ -5873,7 +5873,7 @@ screens:
     aliases:
     - transit
     - commute
-    - 路程时间
+    - [CH]
     semantic_type: setting
   - text: None
     center:
@@ -5884,7 +5884,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -5895,7 +5895,7 @@ screens:
     aliases:
     - recurring
     - frequency
-    - 重复
+    - [CH]
     semantic_type: setting
   - text: Never
     center:
@@ -5906,7 +5906,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 从不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -5916,7 +5916,7 @@ screens:
     fixed: true
     aliases:
     - schedule
-    - 日程
+    - [CH]
     - calendar selection
     semantic_type: setting
   - text: Invitees
@@ -5928,7 +5928,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 参与者
+    - [CH]
     semantic_type: setting
   - text: Alert
     center:
@@ -5939,7 +5939,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: setting
   - text: _contentView
     center:
@@ -5950,7 +5950,7 @@ screens:
     aliases:
     - content area
     - main view
-    - 内容视图
+    - [CH]
     semantic_type: other
   description: Event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees
@@ -5965,7 +5965,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 七月
+    - [CH]
     - Jul
     - month
     semantic_type: label
@@ -5976,7 +5976,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 单日
+    - [CH]
     - day view
     - 1 day
     semantic_type: tab
@@ -5987,7 +5987,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 添加
+    - [CH]
     - new
     - create
     - plus
@@ -5999,7 +5999,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 今天
+    - [CH]
     - now
     - current date
     semantic_type: button
@@ -6010,7 +6010,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - calendar list
     - manage calendars
     semantic_type: menu_item
@@ -6021,7 +6021,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收件箱
+    - [CH]
     - invitations
     - notifications
     semantic_type: menu_item
@@ -6032,7 +6032,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - x
     semantic_type: button
@@ -6043,7 +6043,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 显示已拒绝事件
+    - [CH]
     - declined events toggle
     semantic_type: toggle
   - text: show-completed-reminders-switch
@@ -6053,7 +6053,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 显示已完成提醒
+    - [CH]DoneReminder
     - completed reminders toggle
     semantic_type: toggle
   - text: all-day
@@ -6063,7 +6063,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全天
+    - [CH]
     - all day event
     - 24 hours
     semantic_type: toggle
@@ -6074,7 +6074,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud日历
+    - iCloud[CH]
     - Apple calendar
     - cloud
     semantic_type: setting
@@ -6085,7 +6085,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 其他
+    - [CH]
     - misc
     - other calendars
     semantic_type: setting
@@ -6096,7 +6096,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 订阅
+    - [CH]
     - subscription calendars
     - external
     semantic_type: setting
@@ -6107,7 +6107,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 计划提醒
+    - [CH]Reminder
     - reminders list
     - tasks
     semantic_type: setting
@@ -6118,7 +6118,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 生日
+    - [CH]
     - birthday calendar
     - birthdays list
     semantic_type: setting
@@ -6129,7 +6129,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - Siri建议
+    - Siri[CH]
     - siri found in apps
     - suggestions
     semantic_type: setting
@@ -6140,7 +6140,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 显示已拒绝事件
+    - [CH]
     - declined events
     - show declined
     semantic_type: toggle
@@ -6151,7 +6151,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 显示已完成提醒
+    - [CH]DoneReminder
     - completed reminders
     - show completed
     semantic_type: toggle
@@ -6162,7 +6162,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 内容视图
+    - [CH]
     - content area
     - main view
     semantic_type: other
@@ -6173,7 +6173,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 转发
+    - [CH]
     - send
     - share
     semantic_type: button
@@ -6184,7 +6184,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 已选
+    - [CH]
     - chosen
     - highlighted
     semantic_type: label
@@ -6195,7 +6195,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 信息
+    - Info
     - details
     - about
     semantic_type: button
@@ -6206,7 +6206,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 添加日历
+    - [CH]
     - new calendar
     - create calendar
     semantic_type: button
@@ -6223,7 +6223,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 七月
+    - [CH]
     - Jul
     - month
     semantic_type: label
@@ -6235,7 +6235,7 @@ screens:
     fixed: true
     aliases:
     - day view
-    - 单日
+    - [CH]
     - 1 day
     semantic_type: tab
   - text: Add
@@ -6246,7 +6246,7 @@ screens:
     fixed: true
     aliases:
     - new event
-    - 添加
+    - [CH]
     - plus
     - create
     semantic_type: button
@@ -6257,7 +6257,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 今天
+    - [CH]
     - now
     - current date
     semantic_type: button
@@ -6268,7 +6268,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历列表
+    - [CH]
     - calendar list
     - accounts
     semantic_type: menu_item
@@ -6279,7 +6279,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收件箱
+    - [CH]
     - notifications
     - invitations
     semantic_type: menu_item
@@ -6290,7 +6290,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - x
     - dismiss
     semantic_type: button
@@ -6301,7 +6301,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 新建
+    - [CH]
     - create
     - add
     semantic_type: label
@@ -6312,7 +6312,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全天
+    - [CH]
     - 24 hours
     - full day
     semantic_type: toggle
@@ -6325,7 +6325,7 @@ screens:
     aliases:
     - content area
     - main view
-    - 内容视图
+    - [CH]
     semantic_type: other
   description: Calendar day view for July showing a single day's schedule with options
     to add events, view inbox, and manage calendars.
@@ -6333,7 +6333,7 @@ screens:
   scroll_direction: vertical
 - id: screen_32
   elements:
-  - text: 建党节
+  - text: [CH]
     center:
     - 0.1567
     - 0.159
@@ -6351,11 +6351,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
-    - 日程
+    - [CH]
+    - [CH]
     - Scheduler
     semantic_type: tab
-  - text: 中国大陆节假日
+  - text: [CH]
     center:
     - 0.7488
     - 0.3089
@@ -6624,7 +6624,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -6635,7 +6635,7 @@ screens:
     aliases:
     - now
     - current date
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -6645,7 +6645,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - calendar overview
     semantic_type: tab
   - text: inbox
@@ -6656,7 +6656,7 @@ screens:
     fixed: true
     aliases:
     - notifications
-    - 收件箱
+    - [CH]
     - invitations
     semantic_type: menu_item
   - text: close
@@ -6668,7 +6668,7 @@ screens:
     aliases:
     - dismiss
     - x
-    - 关闭
+    - Close
     semantic_type: button
   - text: Done
     center:
@@ -6679,7 +6679,7 @@ screens:
     aliases:
     - save
     - confirm
-    - 完成
+    - Done
     semantic_type: button
   - text: calendar-title-field
     center:
@@ -6717,7 +6717,7 @@ screens:
     fixed: true
     aliases:
     - event notifications
-    - 活动提醒
+    - [CH]Reminder
     semantic_type: setting
   - text: all-day
     center:
@@ -6727,7 +6727,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: iCloud
     center:
@@ -6747,7 +6747,7 @@ screens:
     fixed: true
     aliases:
     - miscellaneous
-    - 其他
+    - [CH]
     semantic_type: label
   - text: Subscribed
     center:
@@ -6757,7 +6757,7 @@ screens:
     fixed: true
     aliases:
     - subscription calendars
-    - 已订阅
+    - [CH]
     semantic_type: label
   - text: Scheduled Reminders
     center:
@@ -6767,7 +6767,7 @@ screens:
     fixed: true
     aliases:
     - planned reminders
-    - 计划提醒
+    - [CH]Reminder
     semantic_type: setting
   - text: Birthdays
     center:
@@ -6777,7 +6777,7 @@ screens:
     fixed: true
     aliases:
     - birthday calendar
-    - 生日
+    - [CH]
     semantic_type: setting
   - text: Siri Suggestions
     center:
@@ -6787,7 +6787,7 @@ screens:
     fixed: true
     aliases:
     - siri found
-    - siri 建议
+    - siri [CH]
     semantic_type: setting
   - text: Show Declined Events
     center:
@@ -6797,7 +6797,7 @@ screens:
     fixed: true
     aliases:
     - display declined
-    - 显示已拒绝事件
+    - [CH]
     semantic_type: toggle
   - text: Show Completed Reminders
     center:
@@ -6807,7 +6807,7 @@ screens:
     fixed: true
     aliases:
     - display completed
-    - 显示已完成提醒
+    - [CH]DoneReminder
     semantic_type: toggle
   - text: Add Calendar
     center:
@@ -6817,7 +6817,7 @@ screens:
     fixed: true
     aliases:
     - create calendar
-    - 添加日历
+    - [CH]
     semantic_type: button
   - text: Edit Calendar
     center:
@@ -6827,7 +6827,7 @@ screens:
     fixed: true
     aliases:
     - modify calendar
-    - 编辑日历
+    - Edit[CH]
     semantic_type: button
   - text: Shared With
     center:
@@ -6837,7 +6837,7 @@ screens:
     fixed: true
     aliases:
     - collaborators
-    - 共享者
+    - Share者
     semantic_type: label
   - text: Add Person
     center:
@@ -6847,7 +6847,7 @@ screens:
     fixed: true
     aliases:
     - invite
-    - 添加人员
+    - [CH]
     semantic_type: button
   - text: Color
     center:
@@ -6857,7 +6857,7 @@ screens:
     fixed: true
     aliases:
     - calendar color
-    - 颜色
+    - Color
     semantic_type: setting
   - text: Custom
     center:
@@ -6867,7 +6867,7 @@ screens:
     fixed: true
     aliases:
     - custom color
-    - 自定义
+    - Custom
     semantic_type: button
   - text: Notifications
     center:
@@ -6877,7 +6877,7 @@ screens:
     fixed: true
     aliases:
     - alerts
-    - 通知
+    - Notification
     semantic_type: setting
   - text: Allow events on this calendar to display alerts.
     center:
@@ -6905,7 +6905,7 @@ screens:
     fixed: true
     aliases:
     - remove calendar
-    - 删除日历
+    - Delete[CH]
     semantic_type: button
   - text: favorite
     center:
@@ -6916,7 +6916,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: Forward
     center:
@@ -6926,7 +6926,7 @@ screens:
     fixed: true
     aliases:
     - share
-    - 转发
+    - [CH]
     semantic_type: button
   - text: selected
     center:
@@ -6937,7 +6937,7 @@ screens:
     aliases:
     - chosen
     - checked
-    - 已选
+    - [CH]
     semantic_type: label
   - text: info
     center:
@@ -6948,7 +6948,7 @@ screens:
     aliases:
     - details
     - information
-    - 信息
+    - Info
     semantic_type: button
   - text: person
     center:
@@ -6959,7 +6959,7 @@ screens:
     aliases:
     - contact
     - user
-    - 人员
+    - [CH]
     semantic_type: label
   description: Calendar settings and details screen for editing a calendar's name,
     color, sharing, alerts, and subscription options.
@@ -6987,7 +6987,7 @@ screens:
     - create
     - new
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -6998,7 +6998,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -7008,8 +7008,8 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
-    - 日历
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: inbox
     center:
@@ -7020,7 +7020,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: close
     center:
@@ -7031,7 +7031,7 @@ screens:
     aliases:
     - dismiss
     - x
-    - 关闭
+    - Close
     semantic_type: button
   - text: show-declined-events-switch
     center:
@@ -7059,7 +7059,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: Other
     center:
@@ -7069,7 +7069,7 @@ screens:
     fixed: true
     aliases:
     - miscellaneous
-    - 其他
+    - [CH]
     semantic_type: menu_item
   - text: Subscribed
     center:
@@ -7079,7 +7079,7 @@ screens:
     fixed: true
     aliases:
     - subscriptions
-    - 订阅
+    - [CH]
     semantic_type: menu_item
   - text: Show Declined Events
     center:
@@ -7089,7 +7089,7 @@ screens:
     fixed: true
     aliases:
     - display declined
-    - 显示已拒绝事件
+    - [CH]
     semantic_type: setting
   - text: Show Completed Reminders
     center:
@@ -7099,7 +7099,7 @@ screens:
     fixed: true
     aliases:
     - display completed
-    - 显示已完成提醒
+    - [CH]DoneReminder
     semantic_type: setting
   - text: Add Calendar
     center:
@@ -7110,7 +7110,7 @@ screens:
     aliases:
     - create calendar
     - new calendar
-    - 添加日历
+    - [CH]
     semantic_type: button
   - text: favorite
     center:
@@ -7121,7 +7121,7 @@ screens:
     aliases:
     - star
     - bookmark
-    - 收藏
+    - [CH]
     semantic_type: toggle
   - text: Forward
     center:
@@ -7132,7 +7132,7 @@ screens:
     aliases:
     - share
     - send
-    - 转发
+    - [CH]
     semantic_type: button
   - text: selected
     center:
@@ -7143,7 +7143,7 @@ screens:
     aliases:
     - checked
     - chosen
-    - 已选
+    - [CH]
     semantic_type: label
   - text: info
     center:
@@ -7154,7 +7154,7 @@ screens:
     aliases:
     - details
     - information
-    - 信息
+    - Info
     semantic_type: button
   - text: add to calendar
     center:
@@ -7165,7 +7165,7 @@ screens:
     aliases:
     - import
     - subscribe
-    - 添加到日历
+    - [CH]
     semantic_type: button
   - text: '[App]'
     center:
@@ -7191,7 +7191,7 @@ screens:
     fixed: true
     aliases:
     - Jul
-    - 七月
+    - [CH]
     - month
     semantic_type: label
   - text: All-day
@@ -7201,7 +7201,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全天
+    - [CH]
     - all day event
     - 24 hours
     semantic_type: toggle
@@ -7212,7 +7212,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 每年重复
+    - [CH]
     - annual
     - yearly repeat
     semantic_type: menu_item
@@ -7223,7 +7223,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - schedule
     - planner
     semantic_type: tab
@@ -7240,7 +7240,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 今天
+    - [CH]
     - current day
     - now
     semantic_type: button
@@ -7251,7 +7251,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历列表
+    - [CH]
     - calendar list
     - manage calendars
     semantic_type: button
@@ -7262,7 +7262,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收件箱
+    - [CH]
     - notifications
     - invites
     semantic_type: button
@@ -7273,7 +7273,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 完成
+    - Done
     - finish
     - confirm
     semantic_type: button
@@ -7284,7 +7284,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 事件
+    - [CH]
     - appointment
     - meeting
     semantic_type: tab
@@ -7295,7 +7295,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提醒
+    - Reminder
     - task
     - alarm
     semantic_type: tab
@@ -7306,7 +7306,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 更多建议
+    - [CH]
     - additional suggestions
     - see more
     semantic_type: button
@@ -7321,7 +7321,7 @@ screens:
     - caps
     - uppercase
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -7330,9 +7330,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 换行
+  - text: [CH]
     center:
     - 0.8706
     - 0.8913
@@ -7350,7 +7350,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 标题
+    - [CH]
     - title input
     - event name
     semantic_type: input
@@ -7361,7 +7361,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全天
+    - [CH]
     - all day event
     - 24 hours
     semantic_type: toggle
@@ -7372,7 +7372,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 新建
+    - [CH]
     - create
     - add
     semantic_type: button
@@ -7383,7 +7383,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地点
+    - [CH]
     - location
     - video call link
     semantic_type: input
@@ -7394,7 +7394,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 开始
+    - Start
     - start time
     - from
     semantic_type: button
@@ -7405,7 +7405,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 结束
+    - End
     - end time
     - to
     semantic_type: button
@@ -7416,7 +7416,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 行程时间
+    - [CH]
     - transit time
     - commute
     semantic_type: setting
@@ -7427,7 +7427,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 无
+    - None
     - zero
     - no travel time
     semantic_type: label
@@ -7438,7 +7438,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 重复
+    - [CH]
     - recurrence
     - repeat event
     semantic_type: setting
@@ -7449,7 +7449,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 从不
+    - [CH]
     - no repeat
     - once
     semantic_type: label
@@ -7460,11 +7460,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - calendar selection
     - choose calendar
     semantic_type: setting
-  - text: 个人
+  - text: Personal
     center:
     - 0.8358
     - 0.7849
@@ -7473,7 +7473,7 @@ screens:
     aliases:
     - Personal
     - private
-    - 我的日历
+    - My[CH]
     semantic_type: label
   - text: Invitees
     center:
@@ -7482,7 +7482,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 邀请对象
+    - [CH]
     - attendees
     - participants
     semantic_type: setting
@@ -7493,7 +7493,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提醒
+    - Reminder
     - notification
     - alarm
     semantic_type: setting
@@ -7513,7 +7513,7 @@ screens:
     - create
     - new event
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -7524,7 +7524,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -7535,7 +7535,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日历
+    - [CH]
     semantic_type: menu_item
   - text: Inbox
     center:
@@ -7546,7 +7546,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -7557,7 +7557,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -7568,7 +7568,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -7579,7 +7579,7 @@ screens:
     aliases:
     - task
     - alert
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Emoji
     center:
@@ -7590,7 +7590,7 @@ screens:
     aliases:
     - icon
     - smiley
-    - 表情符号
+    - [CH]
     semantic_type: button
   - text: return
     center:
@@ -7601,7 +7601,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     semantic_type: button
   - text: title-field
     center:
@@ -7612,7 +7612,7 @@ screens:
     aliases:
     - event name
     - subject
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -7623,7 +7623,7 @@ screens:
     aliases:
     - full day
     - 24 hours
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: New
     center:
@@ -7634,7 +7634,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -7645,7 +7645,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置或视频通话
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -7656,7 +7656,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -7667,7 +7667,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: label
   - text: Travel Time
     center:
@@ -7678,7 +7678,7 @@ screens:
     aliases:
     - commute
     - transit time
-    - 行程时间
+    - [CH]
     semantic_type: setting
   - text: None
     center:
@@ -7689,7 +7689,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -7700,7 +7700,7 @@ screens:
     aliases:
     - recurring
     - frequency
-    - 重复
+    - [CH]
     semantic_type: setting
   - text: Never
     center:
@@ -7711,7 +7711,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 从不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -7722,7 +7722,7 @@ screens:
     aliases:
     - calendar selection
     - choose calendar
-    - 日历
+    - [CH]
     semantic_type: setting
   - text: Invitees
     center:
@@ -7733,7 +7733,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 受邀人
+    - [CH]
     semantic_type: setting
   - text: Alert
     center:
@@ -7744,7 +7744,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: setting
   - text: Clear text
     center:
@@ -7755,7 +7755,7 @@ screens:
     aliases:
     - delete
     - erase
-    - 清除文本
+    - [CH]
     semantic_type: button
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees
@@ -7773,7 +7773,7 @@ screens:
     - create
     - new event
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -7784,7 +7784,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -7795,7 +7795,7 @@ screens:
     aliases:
     - calendar list
     - manage calendars
-    - 日历
+    - [CH]
     semantic_type: menu_item
   - text: Inbox
     center:
@@ -7806,7 +7806,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -7817,7 +7817,7 @@ screens:
     aliases:
     - finish
     - complete
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -7828,7 +7828,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -7839,7 +7839,7 @@ screens:
     aliases:
     - task
     - alert
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: shift
     center:
@@ -7861,7 +7861,7 @@ screens:
     aliases:
     - emoji keyboard
     - smiley
-    - 表情
+    - [CH]
     semantic_type: button
   - text: return
     center:
@@ -7872,7 +7872,7 @@ screens:
     aliases:
     - enter
     - newline
-    - 换行
+    - [CH]
     semantic_type: button
   - text: title-field
     center:
@@ -7883,7 +7883,7 @@ screens:
     aliases:
     - event title
     - name
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -7894,7 +7894,7 @@ screens:
     aliases:
     - all day event
     - full day
-    - 全天
+    - [CH]
     semantic_type: toggle
   - text: New
     center:
@@ -7905,7 +7905,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -7916,7 +7916,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -7927,7 +7927,7 @@ screens:
     aliases:
     - start time
     - begin
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -7938,7 +7938,7 @@ screens:
     aliases:
     - end time
     - finish
-    - 结束
+    - End
     semantic_type: label
   - text: Travel Time
     center:
@@ -7949,7 +7949,7 @@ screens:
     aliases:
     - transit time
     - commute
-    - 路程时间
+    - [CH]
     semantic_type: setting
   - text: None
     center:
@@ -7960,7 +7960,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -7971,7 +7971,7 @@ screens:
     aliases:
     - recurrence
     - repeat event
-    - 重复
+    - [CH]
     semantic_type: setting
   - text: Never
     center:
@@ -7982,7 +7982,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 永不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -7993,7 +7993,7 @@ screens:
     aliases:
     - calendar selection
     - choose calendar
-    - 日历
+    - [CH]
     semantic_type: setting
   - text: Invitees
     center:
@@ -8004,7 +8004,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 参与者
+    - [CH]
     semantic_type: setting
   - text: Alert
     center:
@@ -8015,7 +8015,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: setting
   - text: Clear text
     center:
@@ -8026,7 +8026,7 @@ screens:
     aliases:
     - delete text
     - erase
-    - 清除文本
+    - [CH]
     semantic_type: button
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees.
@@ -8041,7 +8041,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - schedules
     - calendar list
     semantic_type: menu_item
@@ -8052,7 +8052,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收件箱
+    - [CH]
     - notifications
     - incoming
     semantic_type: tab
@@ -8063,7 +8063,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 完成
+    - Done
     - finished
     - complete
     semantic_type: button
@@ -8074,7 +8074,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 事件
+    - [CH]
     - appointment
     - meeting
     semantic_type: tab
@@ -8085,7 +8085,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提醒
+    - Reminder
     - task
     - alert
     semantic_type: tab
@@ -8096,7 +8096,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日期和时间
+    - [CH]
     - schedule
     - when
     semantic_type: label
@@ -8107,7 +8107,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 定位服务
+    - LocationService
     - GPS
     - location settings
     semantic_type: setting
@@ -8118,7 +8118,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 数字
+    - [CH]
     - numeric
     - digit
     semantic_type: input
@@ -8129,7 +8129,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 旗标
+    - [CH]
     - mark
     - indicator
     semantic_type: button
@@ -8140,7 +8140,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 相机
+    - Camera
     - photo
     - take picture
     semantic_type: button
@@ -8151,7 +8151,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 切换
+    - [CH]
     - change
     - switch
     semantic_type: button
@@ -8162,7 +8162,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 表情符号
+    - [CH]
     - smiley
     - icon
     semantic_type: button
@@ -8173,7 +8173,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 返回
+    - Back
     - enter
     - go back
     semantic_type: button
@@ -8184,7 +8184,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 网址
+    - [CH]
     - link
     - web address
     semantic_type: input
@@ -8195,7 +8195,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 时间
+    - [CH]
     - hour
     - clock
     semantic_type: label
@@ -8206,7 +8206,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 紧急
+    - Urgent
     - priority
     - important
     semantic_type: toggle
@@ -8217,7 +8217,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 新建
+    - [CH]
     - create
     - add
     semantic_type: button
@@ -8228,7 +8228,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日期
+    - [CH]
     - day
     - calendar
     semantic_type: label
@@ -8239,7 +8239,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 标记为紧急以设置闹钟
+    - [CH]Urgent以Settings[CH]
     - urgent alarm info
     - priority alert description
     semantic_type: label
@@ -8250,7 +8250,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 从不
+    - [CH]
     - no repeat
     - once
     semantic_type: menu_item
@@ -8261,7 +8261,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 重复
+    - [CH]
     - recurring
     - loop
     semantic_type: setting
@@ -8272,7 +8272,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 列表
+    - [CH]
     - view
     - overview
     semantic_type: tab
@@ -8283,7 +8283,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 详情
+    - [CH]
     - information
     - info
     semantic_type: label
@@ -8294,7 +8294,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - schedule
     - date picker
     semantic_type: button
@@ -8305,7 +8305,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 时钟
+    - [CH]
     - time picker
     - watch
     semantic_type: button
@@ -8316,7 +8316,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 闹钟
+    - [CH]
     - alert
     - notification
     semantic_type: setting
@@ -8327,7 +8327,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 列表徽章
+    - [CH]
     - badge
     - indicator
     semantic_type: other
@@ -8498,7 +8498,7 @@ screens:
     - create
     - new event
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -8509,7 +8509,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -8519,7 +8519,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程
+    - [CH]
     - manage calendars
     semantic_type: menu_item
   - text: Inbox
@@ -8531,7 +8531,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -8542,7 +8542,7 @@ screens:
     aliases:
     - complete
     - finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -8553,7 +8553,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -8564,7 +8564,7 @@ screens:
     aliases:
     - task
     - alert
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Next keyboard
     center:
@@ -8575,7 +8575,7 @@ screens:
     aliases:
     - switch keyboard
     - language
-    - 下一个键盘
+    - [CH]
     semantic_type: button
   - text: title-field
     center:
@@ -8586,7 +8586,7 @@ screens:
     aliases:
     - event name
     - subject
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -8596,7 +8596,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day toggle
     semantic_type: toggle
   - text: New
@@ -8608,7 +8608,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -8619,7 +8619,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置
+    - [CH]
     - video link
     semantic_type: input
   - text: Starts
@@ -8631,7 +8631,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -8642,7 +8642,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: label
   - text: Travel Time
     center:
@@ -8653,7 +8653,7 @@ screens:
     aliases:
     - transit
     - commute
-    - 行程时间
+    - [CH]
     semantic_type: setting
   - text: None
     center:
@@ -8664,7 +8664,7 @@ screens:
     aliases:
     - zero
     - empty
-    - 无
+    - None
     semantic_type: label
   - text: Repeat
     center:
@@ -8675,7 +8675,7 @@ screens:
     aliases:
     - recurrence
     - cycle
-    - 重复
+    - [CH]
     semantic_type: setting
   - text: Never
     center:
@@ -8686,7 +8686,7 @@ screens:
     aliases:
     - no repeat
     - once
-    - 从不
+    - [CH]
     semantic_type: label
   - text: Calendar
     center:
@@ -8696,7 +8696,7 @@ screens:
     fixed: true
     aliases:
     - category
-    - 日程类型
+    - [CH]
     - calendar selection
     semantic_type: setting
   - text: Invitees
@@ -8708,7 +8708,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 参与者
+    - [CH]
     semantic_type: setting
   - text: Alert
     center:
@@ -8719,7 +8719,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: setting
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and invitees.
@@ -8866,7 +8866,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 今天
+    - [CH]
     - current day
     - now
     semantic_type: button
@@ -8877,7 +8877,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - calendar list
     - manage calendars
     semantic_type: menu_item
@@ -8888,7 +8888,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 收件箱
+    - [CH]
     - notifications
     - invitations
     semantic_type: menu_item
@@ -8899,7 +8899,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 完成
+    - Done
     - finish
     - confirm
     semantic_type: button
@@ -8910,7 +8910,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 事件
+    - [CH]
     - appointment
     - meeting
     semantic_type: tab
@@ -8921,7 +8921,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提醒
+    - Reminder
     - task
     - to-do
     semantic_type: tab
@@ -8932,7 +8932,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 转发
+    - [CH]
     - next
     - advance
     semantic_type: button
@@ -8944,7 +8944,7 @@ screens:
     fixed: true
     aliases:
     - shift key
-    - 大写
+    - [CH]
     - caps
     semantic_type: button
   - text: Emoji
@@ -8954,7 +8954,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 表情
+    - [CH]
     - emoji keyboard
     - smiley
     semantic_type: button
@@ -8965,7 +8965,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 回车
+    - [CH]
     - enter
     - newline
     semantic_type: button
@@ -8976,7 +8976,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 标题
+    - [CH]
     - event name
     - subject
     semantic_type: input
@@ -8987,7 +8987,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全天
+    - [CH]
     - all day event
     - 24 hours
     semantic_type: toggle
@@ -8998,7 +8998,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 新建
+    - [CH]
     - create
     - add
     semantic_type: button
@@ -9009,7 +9009,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 地点
+    - [CH]
     - address
     - video link
     semantic_type: input
@@ -9020,7 +9020,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 开始
+    - Start
     - start time
     - from
     semantic_type: label
@@ -9031,7 +9031,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 结束
+    - End
     - end time
     - to
     semantic_type: label
@@ -9042,7 +9042,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 路程时间
+    - [CH]
     - transit time
     - commute
     semantic_type: setting
@@ -9053,7 +9053,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 无
+    - None
     - zero
     - no travel time
     semantic_type: label
@@ -9064,7 +9064,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 重复
+    - [CH]
     - recurrence
     - repeat event
     semantic_type: setting
@@ -9075,7 +9075,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 从不
+    - [CH]
     - no repeat
     - once
     semantic_type: label
@@ -9086,7 +9086,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 日历
+    - [CH]
     - calendar selection
     - which calendar
     semantic_type: setting
@@ -9097,7 +9097,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 邀请对象
+    - [CH]
     - attendees
     - people
     semantic_type: setting
@@ -9108,7 +9108,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 提醒
+    - Reminder
     - notification
     - alarm
     semantic_type: setting
@@ -9119,7 +9119,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 粘贴
+    - Paste
     - insert
     - paste text
     semantic_type: button
@@ -9130,7 +9130,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 自动填充
+    - Auto[CH]
     - autocomplete
     - suggest
     semantic_type: button
@@ -9141,7 +9141,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 清除文本
+    - [CH]
     - delete text
     - erase
     semantic_type: button
@@ -9161,7 +9161,7 @@ screens:
     - create
     - new event
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -9172,7 +9172,7 @@ screens:
     aliases:
     - current date
     - now
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -9182,7 +9182,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程表
+    - [CH]
     - calendar settings
     semantic_type: menu_item
   - text: Inbox
@@ -9194,7 +9194,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -9205,7 +9205,7 @@ screens:
     aliases:
     - save
     - confirm
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -9216,7 +9216,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -9227,7 +9227,7 @@ screens:
     aliases:
     - task
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Date Picker
     center:
@@ -9238,7 +9238,7 @@ screens:
     aliases:
     - calendar view
     - date selector
-    - 日期选择器
+    - [CH]Select器
     semantic_type: input
   - text: title-field
     center:
@@ -9249,7 +9249,7 @@ screens:
     aliases:
     - event name
     - subject
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -9259,7 +9259,7 @@ screens:
     fixed: true
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day toggle
     semantic_type: toggle
   - text: New
@@ -9271,7 +9271,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -9282,7 +9282,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置或视频通话
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -9293,7 +9293,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -9304,7 +9304,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: label
   - text: Repeat
     center:
@@ -9315,7 +9315,7 @@ screens:
     aliases:
     - recurrence
     - repeat rule
-    - 重复
+    - [CH]
     semantic_type: menu_item
   - text: Never
     center:
@@ -9325,7 +9325,7 @@ screens:
     fixed: true
     aliases:
     - no repeat
-    - 不重复
+    - [CH]
     - none
     semantic_type: label
   - text: Calendar
@@ -9336,7 +9336,7 @@ screens:
     fixed: true
     aliases:
     - calendar selection
-    - 日程
+    - [CH]
     - choose calendar
     semantic_type: menu_item
   - text: Invitees
@@ -9348,7 +9348,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 邀请对象
+    - [CH]
     semantic_type: menu_item
   - text: None
     center:
@@ -9359,7 +9359,7 @@ screens:
     aliases:
     - empty
     - no invitees
-    - 无
+    - None
     semantic_type: label
   - text: Alert
     center:
@@ -9370,7 +9370,7 @@ screens:
     aliases:
     - notification
     - reminder alert
-    - 提醒
+    - Reminder
     semantic_type: menu_item
   - text: Add attachment…
     center:
@@ -9381,7 +9381,7 @@ screens:
     aliases:
     - attach file
     - include file
-    - 添加附件
+    - [CH]
     semantic_type: button
   description: New event creation screen with fields for title, date, time, location,
     repeat, alerts, and attachments
@@ -9399,7 +9399,7 @@ screens:
     - New
     - Create
     - Plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: January 2026
     center:
@@ -9409,7 +9409,7 @@ screens:
     fixed: true
     aliases:
     - Jan 2026
-    - 一月 2026
+    - [CH] 2026
     semantic_type: label
   - text: February 2026
     center:
@@ -9419,7 +9419,7 @@ screens:
     fixed: true
     aliases:
     - Feb 2026
-    - 二月 2026
+    - [CH] 2026
     semantic_type: label
   - text: March 2026
     center:
@@ -9429,7 +9429,7 @@ screens:
     fixed: true
     aliases:
     - Mar 2026
-    - 三月 2026
+    - [CH] 2026
     semantic_type: label
   - text: April 2026
     center:
@@ -9439,7 +9439,7 @@ screens:
     fixed: true
     aliases:
     - Apr 2026
-    - 四月 2026
+    - [CH] 2026
     semantic_type: label
   - text: May 2026
     center:
@@ -9448,7 +9448,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 五月 2026
+    - [CH] 2026
     semantic_type: label
   - text: June 2026
     center:
@@ -9458,7 +9458,7 @@ screens:
     fixed: true
     aliases:
     - Jun 2026
-    - 六月 2026
+    - [CH] 2026
     semantic_type: label
   - text: August 2026
     center:
@@ -9468,7 +9468,7 @@ screens:
     fixed: true
     aliases:
     - Aug 2026
-    - 八月 2026
+    - [CH] 2026
     semantic_type: label
   - text: September 2026
     center:
@@ -9478,7 +9478,7 @@ screens:
     fixed: true
     aliases:
     - Sep 2026
-    - 九月 2026
+    - [CH] 2026
     semantic_type: label
   - text: October 2026
     center:
@@ -9488,7 +9488,7 @@ screens:
     fixed: true
     aliases:
     - Oct 2026
-    - 十月 2026
+    - [CH] 2026
     semantic_type: label
   - text: November 2026
     center:
@@ -9498,7 +9498,7 @@ screens:
     fixed: true
     aliases:
     - Nov 2026
-    - 十一月 2026
+    - [CH] 2026
     semantic_type: label
   - text: December 2026
     center:
@@ -9508,7 +9508,7 @@ screens:
     fixed: true
     aliases:
     - Dec 2026
-    - 十二月 2026
+    - [CH] 2026
     semantic_type: label
   - text: Today
     center:
@@ -9518,7 +9518,7 @@ screens:
     fixed: true
     aliases:
     - Now
-    - 今天
+    - [CH]
     - Current date
     semantic_type: button
   - text: Calendars
@@ -9529,7 +9529,7 @@ screens:
     fixed: true
     aliases:
     - Calendar list
-    - 日历
+    - [CH]
     - Accounts
     semantic_type: button
   - text: Inbox
@@ -9540,7 +9540,7 @@ screens:
     fixed: true
     aliases:
     - Notifications
-    - 收件箱
+    - [CH]
     - Invites
     semantic_type: button
   - text: Done
@@ -9551,7 +9551,7 @@ screens:
     fixed: true
     aliases:
     - Finish
-    - 完成
+    - Done
     - Save
     semantic_type: button
   - text: Event
@@ -9562,8 +9562,8 @@ screens:
     fixed: true
     aliases:
     - Appointment
-    - 事件
-    - 日程
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -9573,7 +9573,7 @@ screens:
     fixed: true
     aliases:
     - Task
-    - 提醒
+    - Reminder
     - To-do
     semantic_type: tab
   - text: title-field
@@ -9585,7 +9585,7 @@ screens:
     aliases:
     - Title
     - Event name
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -9595,7 +9595,7 @@ screens:
     fixed: true
     aliases:
     - Full day
-    - 全天
+    - [CH]
     - All day event
     semantic_type: toggle
   - text: New
@@ -9606,7 +9606,7 @@ screens:
     fixed: true
     aliases:
     - Create
-    - 新建
+    - [CH]
     - Add
     semantic_type: button
   - text: Location or Video Call
@@ -9617,7 +9617,7 @@ screens:
     fixed: true
     aliases:
     - Place
-    - 地址
+    - [CH]
     - Meeting link
     - Venue
     semantic_type: input
@@ -9629,7 +9629,7 @@ screens:
     fixed: true
     aliases:
     - Start time
-    - 开始
+    - Start
     - From
     semantic_type: button
   - text: Ends
@@ -9640,7 +9640,7 @@ screens:
     fixed: true
     aliases:
     - End time
-    - 结束
+    - End
     - To
     semantic_type: button
   - text: Travel Time
@@ -9651,7 +9651,7 @@ screens:
     fixed: true
     aliases:
     - Transit time
-    - 路程时间
+    - [CH]
     - Commute
     semantic_type: setting
   - text: None
@@ -9662,7 +9662,7 @@ screens:
     fixed: true
     aliases:
     - 0 min
-    - 无
+    - None
     - No travel time
     semantic_type: label
   - text: Repeat
@@ -9673,7 +9673,7 @@ screens:
     fixed: true
     aliases:
     - Recurrence
-    - 重复
+    - [CH]
     - Frequency
     semantic_type: setting
   - text: Never
@@ -9684,7 +9684,7 @@ screens:
     fixed: true
     aliases:
     - No repeat
-    - 从不
+    - [CH]
     - Once
     semantic_type: label
   - text: Calendar
@@ -9695,7 +9695,7 @@ screens:
     fixed: true
     aliases:
     - Category
-    - 日历分类
+    - [CH]
     - Account
     semantic_type: setting
   - text: Invitees
@@ -9706,7 +9706,7 @@ screens:
     fixed: true
     aliases:
     - Guests
-    - 参与者
+    - [CH]
     - People
     - Attendees
     semantic_type: setting
@@ -9718,7 +9718,7 @@ screens:
     fixed: true
     aliases:
     - Notification
-    - 提醒
+    - Reminder
     - Alarm
     semantic_type: setting
   - text: Add attachment…
@@ -9729,7 +9729,7 @@ screens:
     fixed: true
     aliases:
     - Attach file
-    - 添加附件
+    - [CH]
     - Insert file
     semantic_type: button
   - text: Location
@@ -9740,7 +9740,7 @@ screens:
     fixed: true
     aliases:
     - Place
-    - 位置
+    - [CH]
     - Venue
     semantic_type: label
   - text: Current Location
@@ -9751,7 +9751,7 @@ screens:
     fixed: true
     aliases:
     - GPS
-    - 当前位置
+    - [CH]
     - My location
     semantic_type: button
   - text: Video Call
@@ -9762,7 +9762,7 @@ screens:
     fixed: false
     aliases:
     - Meeting
-    - 视频通话
+    - [CH]
     - Conference
     semantic_type: button
   - text: FaceTime
@@ -9785,7 +9785,7 @@ screens:
     aliases:
     - Rotate
     - Compass
-    - 指向手机方向
+    - [CH]Phone[CH]
     semantic_type: button
   - text: Clear text
     center:
@@ -9795,7 +9795,7 @@ screens:
     fixed: true
     aliases:
     - Delete
-    - 清除文本
+    - [CH]
     - Erase
     semantic_type: button
   - text: Map Locations
@@ -9806,7 +9806,7 @@ screens:
     fixed: true
     aliases:
     - Places
-    - 地图位置
+    - [CH]
     - Venues
     semantic_type: label
   description: New event creation screen with fields for title, date, time, location,
@@ -9825,7 +9825,7 @@ screens:
     - create
     - new event
     - plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -9835,7 +9835,7 @@ screens:
     fixed: true
     aliases:
     - calendar list
-    - 日程表
+    - [CH]
     - manage calendars
     semantic_type: menu_item
   - text: Inbox
@@ -9847,7 +9847,7 @@ screens:
     aliases:
     - notifications
     - invitations
-    - 收件箱
+    - [CH]
     semantic_type: tab
   - text: Done
     center:
@@ -9858,7 +9858,7 @@ screens:
     aliases:
     - save
     - confirm
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -9869,7 +9869,7 @@ screens:
     aliases:
     - appointment
     - meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -9880,7 +9880,7 @@ screens:
     aliases:
     - task
     - alarm
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Previous Month
     center:
@@ -9891,7 +9891,7 @@ screens:
     aliases:
     - back
     - last month
-    - 上个月
+    - [CH]
     semantic_type: button
   - text: Next Month
     center:
@@ -9902,7 +9902,7 @@ screens:
     aliases:
     - forward
     - next
-    - 下个月
+    - [CH]
     semantic_type: button
   - text: title-field
     center:
@@ -9913,7 +9913,7 @@ screens:
     aliases:
     - event name
     - subject
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -9923,7 +9923,7 @@ screens:
     fixed: false
     aliases:
     - full day
-    - 全天
+    - [CH]
     - all day toggle
     semantic_type: toggle
   - text: New
@@ -9935,7 +9935,7 @@ screens:
     aliases:
     - create
     - add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -9946,7 +9946,7 @@ screens:
     aliases:
     - place
     - address
-    - 位置或视频通话
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -9957,7 +9957,7 @@ screens:
     aliases:
     - begin
     - start time
-    - 开始
+    - Start
     semantic_type: input
   - text: Ends
     center:
@@ -9968,7 +9968,7 @@ screens:
     aliases:
     - finish
     - end time
-    - 结束
+    - End
     semantic_type: input
   - text: Calendar
     center:
@@ -9979,7 +9979,7 @@ screens:
     aliases:
     - calendar selection
     - choose calendar
-    - 日历
+    - [CH]
     semantic_type: menu_item
   - text: Invitees
     center:
@@ -9990,7 +9990,7 @@ screens:
     aliases:
     - guests
     - attendees
-    - 邀请对象
+    - [CH]
     semantic_type: menu_item
   - text: Alert
     center:
@@ -10001,7 +10001,7 @@ screens:
     aliases:
     - notification
     - reminder
-    - 提醒
+    - Reminder
     semantic_type: menu_item
   - text: Add attachment…
     center:
@@ -10012,7 +10012,7 @@ screens:
     aliases:
     - attach file
     - include
-    - 添加附件
+    - [CH]
     semantic_type: button
   - text: Travel Time
     center:
@@ -10023,7 +10023,7 @@ screens:
     aliases:
     - transit
     - commute
-    - 路程时间
+    - [CH]
     semantic_type: menu_item
   - text: Repeat
     center:
@@ -10034,7 +10034,7 @@ screens:
     aliases:
     - recurrence
     - cycle
-    - 重复
+    - [CH]
     semantic_type: menu_item
   description: New event creation screen with fields for title, date, time, location,
     invitees, alerts, and other event details.
@@ -10052,7 +10052,7 @@ screens:
     - New
     - Create
     - Plus
-    - 添加
+    - [CH]
     semantic_type: button
   - text: Today
     center:
@@ -10063,7 +10063,7 @@ screens:
     aliases:
     - Now
     - Current date
-    - 今天
+    - [CH]
     semantic_type: button
   - text: Calendars
     center:
@@ -10073,7 +10073,7 @@ screens:
     fixed: true
     aliases:
     - Calendar list
-    - 日程表
+    - [CH]
     - Manage calendars
     semantic_type: menu_item
   - text: Inbox
@@ -10085,7 +10085,7 @@ screens:
     aliases:
     - Notifications
     - Invitations
-    - 收件箱
+    - [CH]
     semantic_type: menu_item
   - text: Done
     center:
@@ -10096,7 +10096,7 @@ screens:
     aliases:
     - Complete
     - Finish
-    - 完成
+    - Done
     semantic_type: button
   - text: Event
     center:
@@ -10107,7 +10107,7 @@ screens:
     aliases:
     - Appointment
     - Meeting
-    - 事件
+    - [CH]
     semantic_type: tab
   - text: Reminder
     center:
@@ -10118,7 +10118,7 @@ screens:
     aliases:
     - Task
     - Alert
-    - 提醒
+    - Reminder
     semantic_type: tab
   - text: Previous Month
     center:
@@ -10129,7 +10129,7 @@ screens:
     aliases:
     - Last month
     - Back
-    - 上个月
+    - [CH]
     semantic_type: button
   - text: Next Month
     center:
@@ -10139,7 +10139,7 @@ screens:
     fixed: false
     aliases:
     - Forward
-    - 下个月
+    - [CH]
     - Next
     semantic_type: button
   - text: title-field
@@ -10151,7 +10151,7 @@ screens:
     aliases:
     - Event name
     - Title
-    - 标题
+    - [CH]
     semantic_type: input
   - text: All-day
     center:
@@ -10161,7 +10161,7 @@ screens:
     fixed: false
     aliases:
     - Full day
-    - 全天
+    - [CH]
     - All day event
     semantic_type: toggle
   - text: New
@@ -10173,7 +10173,7 @@ screens:
     aliases:
     - Create
     - Add
-    - 新建
+    - [CH]
     semantic_type: button
   - text: Location or Video Call
     center:
@@ -10184,7 +10184,7 @@ screens:
     aliases:
     - Place
     - Address
-    - 位置
+    - [CH]
     semantic_type: input
   - text: Starts
     center:
@@ -10195,7 +10195,7 @@ screens:
     aliases:
     - Start time
     - Begins
-    - 开始
+    - Start
     semantic_type: label
   - text: Ends
     center:
@@ -10206,7 +10206,7 @@ screens:
     aliases:
     - End time
     - Finishes
-    - 结束
+    - End
     semantic_type: label
   - text: Calendar
     center:
@@ -10216,7 +10216,7 @@ screens:
     fixed: true
     aliases:
     - Category
-    - 日程分类
+    - [CH]
     - Select calendar
     semantic_type: menu_item
   - text: Invitees
@@ -10228,7 +10228,7 @@ screens:
     aliases:
     - Guests
     - Participants
-    - 受邀人
+    - [CH]
     semantic_type: menu_item
   - text: None
     center:
@@ -10239,7 +10239,7 @@ screens:
     aliases:
     - Empty
     - Zero
-    - 无
+    - None
     semantic_type: label
   - text: Alert
     center:
@@ -10250,7 +10250,7 @@ screens:
     aliases:
     - Notification
     - Reminder
-    - 提醒
+    - Reminder
     semantic_type: menu_item
   - text: Add attachment…
     center:
@@ -10261,7 +10261,7 @@ screens:
     aliases:
     - Attach file
     - Include
-    - 添加附件
+    - [CH]
     semantic_type: button
   - text: Travel Time
     center:
@@ -10272,7 +10272,7 @@ screens:
     aliases:
     - Transit
     - Commute
-    - 路程时间
+    - [CH]
     semantic_type: menu_item
   - text: Repeat
     center:
@@ -10283,7 +10283,7 @@ screens:
     aliases:
     - Recurrence
     - Loop
-    - 重复
+    - [CH]
     semantic_type: menu_item
   - text: Never
     center:
@@ -10294,7 +10294,7 @@ screens:
     aliases:
     - No repeat
     - Once
-    - 永不
+    - [CH]
     semantic_type: label
   description: New event creation screen with fields for title, date, time, location,
     alerts, and other event details.
@@ -10310,7 +10310,7 @@ screens:
     fixed: true
     aliases:
     - today
-    - 今天
+    - [CH]
     - current day
     semantic_type: tab
   - text: Calendars
@@ -10321,7 +10321,7 @@ screens:
     fixed: true
     aliases:
     - calendars
-    - 日历列表
+    - [CH]
     - calendar list
     semantic_type: menu_item
   - text: Inbox
@@ -10332,7 +10332,7 @@ screens:
     fixed: true
     aliases:
     - inbox
-    - 收件箱
+    - [CH]
     - notifications
     semantic_type: menu_item
   - text: Done
@@ -10343,7 +10343,7 @@ screens:
     fixed: true
     aliases:
     - done
-    - 完成
+    - Done
     - finish
     - confirm
     semantic_type: button
@@ -10355,7 +10355,7 @@ screens:
     fixed: true
     aliases:
     - event
-    - 事件
+    - [CH]
     - appointment
     semantic_type: tab
   - text: Reminder
@@ -10366,7 +10366,7 @@ screens:
     fixed: true
     aliases:
     - reminder
-    - 提醒
+    - Reminder
     - task
     semantic_type: tab
   - text: 5 minutes
@@ -10377,7 +10377,7 @@ screens:
     fixed: true
     aliases:
     - 5 min
-    - 5分钟
+    - 5[CH]
     - five minutes
     semantic_type: menu_item
   - text: 15 minutes
@@ -10388,7 +10388,7 @@ screens:
     fixed: true
     aliases:
     - 15 min
-    - 15分钟
+    - 15[CH]
     - quarter hour
     semantic_type: menu_item
   - text: 30 minutes
@@ -10399,7 +10399,7 @@ screens:
     fixed: true
     aliases:
     - 30 min
-    - 30分钟
+    - 30[CH]
     - half hour
     semantic_type: menu_item
   - text: Emoji
@@ -10410,7 +10410,7 @@ screens:
     fixed: true
     aliases:
     - emoji
-    - 表情
+    - [CH]
     - icon
     - smiley
     semantic_type: button
@@ -10422,7 +10422,7 @@ screens:
     fixed: true
     aliases:
     - return
-    - 返回
+    - Back
     - back
     semantic_type: button
   - text: title-field
@@ -10433,7 +10433,7 @@ screens:
     fixed: false
     aliases:
     - title
-    - 标题
+    - [CH]
     - event name
     - subject
     semantic_type: input
@@ -10445,7 +10445,7 @@ screens:
     fixed: true
     aliases:
     - all day
-    - 全天
+    - [CH]
     - full day
     semantic_type: toggle
   - text: New
@@ -10456,7 +10456,7 @@ screens:
     fixed: true
     aliases:
     - new
-    - 新建
+    - [CH]
     - create
     - add
     semantic_type: button
@@ -10468,9 +10468,9 @@ screens:
     fixed: true
     aliases:
     - location
-    - 地点
+    - [CH]
     - video call
-    - 地址
+    - [CH]
     - meeting link
     semantic_type: input
   - text: Starts
@@ -10481,7 +10481,7 @@ screens:
     fixed: true
     aliases:
     - starts
-    - 开始
+    - Start
     - start time
     - from
     semantic_type: label
@@ -10493,7 +10493,7 @@ screens:
     fixed: true
     aliases:
     - ends
-    - 结束
+    - End
     - end time
     - to
     semantic_type: label
@@ -10505,7 +10505,7 @@ screens:
     fixed: true
     aliases:
     - travel time
-    - 行程时间
+    - [CH]
     - transit
     - commute
     semantic_type: setting
@@ -10517,7 +10517,7 @@ screens:
     fixed: true
     aliases:
     - none
-    - 无
+    - None
     - zero
     - no travel time
     semantic_type: menu_item
@@ -10529,7 +10529,7 @@ screens:
     fixed: true
     aliases:
     - repeat
-    - 重复
+    - [CH]
     - recurrence
     - recurring
     semantic_type: setting
@@ -10541,8 +10541,8 @@ screens:
     fixed: true
     aliases:
     - never
-    - 从不
-    - 不重复
+    - [CH]
+    - [CH]
     - no repeat
     semantic_type: menu_item
   - text: Calendar
@@ -10553,7 +10553,7 @@ screens:
     fixed: true
     aliases:
     - calendar
-    - 日历
+    - [CH]
     - calendar selection
     - choose calendar
     semantic_type: setting
@@ -10565,7 +10565,7 @@ screens:
     fixed: true
     aliases:
     - invitees
-    - 参与者
+    - [CH]
     - attendees
     - people
     - guests
@@ -10578,7 +10578,7 @@ screens:
     fixed: true
     aliases:
     - alert
-    - 提醒
+    - Reminder
     - notification
     - alarm
     semantic_type: setting
@@ -10590,7 +10590,7 @@ screens:
     fixed: true
     aliases:
     - selected
-    - 已选
+    - [CH]
     - chosen
     - active
     semantic_type: label
@@ -10602,7 +10602,7 @@ screens:
     fixed: true
     aliases:
     - clear text
-    - 清除文本
+    - [CH]
     - delete text
     - erase
     semantic_type: button

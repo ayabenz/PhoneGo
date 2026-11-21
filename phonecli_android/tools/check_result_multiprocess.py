@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw
 from tqdm import tqdm
 
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来设置字体样式以正常显示中文标签
-plt.rcParams['axes.unicode_minus'] = False  # 默认是使用Unicode负号，设置正常显示字符，如正常显示负号
+plt.rcParams['font.sans-serif'] = ['SimHei']  # [CH]Settings[CH]ChineseTab
+plt.rcParams['axes.unicode_minus'] = False  # DefaultYes[CH]Unicode[CH]，Settings[CH]，[CH]
 
 
 def draw_cross_on_image(img, coordinates):
@@ -38,29 +38,29 @@ def draw_arrow_on_image(img, start, end):
 
 
 def create_text_image(text, base_image, font_size=24, font_name='Songti SC', log_path=None):
-    # 确保提供了用于保存文本图像的路径
+    # [CH]Save[CH]Path
     if log_path is None:
-        log_path = '..'  # 默认当前目录
+        log_path = '..'  # Default[CH]Directory
     text_image_path = os.path.join(log_path, 'text_image.png')
 
-    # 加载基础图像以获取其尺寸
+    # Load[CH]
     # base_image = Image.open(base_image_path)
     base_width, base_height = base_image.size
 
-    # 设置matplotlib字体和其他属性
+    # Settingsmatplotlib[CH]
     plt.rcParams['font.sans-serif'] = [font_name]
     plt.rcParams['font.size'] = font_size
     plt.rcParams['savefig.transparent'] = True
 
-    # 计算新的文本图像尺寸
-    width = base_width / 100  # 将宽度转换为英寸（假设DPI=100）
-    height = (base_height / 10) / 100  # 高度为基础图像高度的1/10，转换为英寸
+    # [CH]
+    width = base_width / 100  # [CH]（[CH]DPI=100）
+    height = (base_height / 10) / 100  # [CH]1/10，[CH]
     dpi = 100
     fig, ax = plt.subplots(figsize=(width, height), dpi=dpi)
     ax.text(0.5, 0.5, text, ha='center', va='center', transform=ax.transAxes, color='red')
     ax.axis('off')
 
-    # 保存到一个透明背景的PNG文件中
+    # Save[CH]BackgroundPNGFilemiddle
     fig.savefig(text_image_path, format='png', transparent=True)
     plt.close(fig)
 
@@ -68,7 +68,7 @@ def create_text_image(text, base_image, font_size=24, font_name='Songti SC', log
 
 
 def merge_text(img, text_image, position=(0, 0)):
-    # 打开基础图像和文本图像
+    # Open[CH]
     base_image = img
     text_image = Image.open(text_image).convert("RGBA")
     base_width, base_height = base_image.size
@@ -82,53 +82,53 @@ def merge_text(img, text_image, position=(0, 0)):
 
 
 def merge_text_up(img, text_image, position=(0, 0)):
-    # 打开基础图像和文本图像
+    # Open[CH]
     base_image = img
     text_image = Image.open(text_image).convert("RGBA")
     base_width, base_height = base_image.size
 
-    # 计算文本图像的新高度
+    # [CH]
     new_text_height = base_height // 10
     text_image_resized = text_image.resize((base_width, new_text_height))
 
-    # 创建一个新的图像，其高度是原图像高度加上文本图像的高度
+    # Create[CH]，[CH]Yes[CH]
     new_image_height = base_height + new_text_height
     new_image = Image.new("RGBA", (base_width, new_image_height))
 
-    # 首先将文本图像粘贴到新图像的顶部
+    # [CH]Paste[CH]
     new_image.paste(text_image_resized, position)
 
-    # 然后将原图像粘贴到文本图像下方的正确位置
-    base_image_position = (0, new_text_height)  # 原图像的顶部应该与文本图像的底部对齐
+    # [CH]Paste[CH]
+    base_image_position = (0, new_text_height)  # [CH]
     new_image.paste(base_image, base_image_position)
 
     return new_image
 
 
 def merge_images(images):
-    # 计算总面积和找出最大的宽度和高度
+    # [CH]
     total_area = sum(im.size[0] * im.size[1] for im in images)
     max_width = max(im.size[0] for im in images)
     max_height = max(im.size[1] for im in images)
 
-    # 估算正方形边长
+    # [CH]
     side_length = int((total_area) ** 0.5)
 
-    # 确保正方形的高度大于等于宽度
+    # [CH]
     cols = max(max_height, side_length) // min(max_height, max_width)
     rows = len(images) // cols + (1 if len(images) % cols > 0 else 0)
 
-    # 计算新图像的总宽度和总高度
+    # [CH]
     total_width = max_width * cols
     total_height = max_height * rows
 
-    # 创建新图像
+    # Create[CH]
     new_im = Image.new('RGBA', (total_width, total_height))
 
     x_offset = 0
     y_offset = 0
     for i, im in enumerate(images):
-        # 如果当前行已满，移动到下一行
+        # [CH]，[CH]
         if x_offset + im.size[0] > total_width:
             x_offset = 0
             y_offset += max_height
@@ -136,7 +136,7 @@ def merge_images(images):
         new_im.paste(im, (x_offset, y_offset))
         x_offset += im.size[0]
 
-        # 在列的最后一个图像后添加换行
+        # [CH]
         if (i + 1) % cols == 0:
             x_offset = 0
             y_offset += max_height

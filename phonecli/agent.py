@@ -605,10 +605,10 @@ class PhoneAgent:
 
         # Auto-upgrade to MACRO_VLM when task requires content interaction
         # and LLM returned a terminal OP instead of MACRO_VLM.
-        # Example: "搜索蓝牙耳机" matched "首页→搜索→销量" but the macro
+        # Example: "SearchBluetooth[CH]" matched "Home→Search→[CH]" but the macro
         # only navigates — VLM must type the query and read results.
-        _INPUT_HINTS = ["搜索", "查找", "输入", "search", "find", "type",
-                        "写", "记录", "记", "录入", "填写"]
+        _INPUT_HINTS = ["Search", "[CH]", "Input", "search", "find", "type",
+                        "write", "[CH]", "记", "[CH]", "[CH]"]
         _task_needs_input = any(kw in task.lower() for kw in _INPUT_HINTS)
         if op_info and _task_needs_input and op_info[1] not in ("NAV",) and not op_info[2]:
             print(f"[Agent] Task needs content input — upgrading OP to MACRO_VLM")
@@ -804,7 +804,7 @@ class PhoneAgent:
                 if cur_bundle == "com.apple.mobilesafari":
                     cur_app_name = "Safari"
                 elif cur_bundle == "com.apple.mobilenotes":
-                    cur_app_name = "备忘录"
+                    cur_app_name = "[CH]"
                 if cur_bundle != self.state.bundle_id:
                     self.state.bundle_id = cur_bundle
                     self.state.app_name = cur_app_name

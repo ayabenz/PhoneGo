@@ -15,7 +15,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 图标
+    - [CH]
     - logo
     - app icon
     semantic_type: other
@@ -27,7 +27,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 我的位置
+    - My[CH]
     - location
     - current location
     semantic_type: label
@@ -39,7 +39,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_3
     aliases:
-    - 设置
+    - Settings
     - preferences
     - options
     semantic_type: setting
@@ -51,7 +51,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_1
     aliases:
-    - 欢迎
+    - [CH]
     - welcome screen
     - greeting
     semantic_type: label
@@ -63,7 +63,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_1
     aliases:
-    - 开始使用您的账户
+    - Start[CH]Account
     - get started
     - account setup
     semantic_type: label
@@ -75,7 +75,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 加入会议
+    - [CH]
     - join
     - enter meeting
     semantic_type: button
@@ -87,7 +87,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_4
     aliases:
-    - 注册
+    - Register
     - register
     - create account
     semantic_type: button
@@ -99,7 +99,7 @@ screens:
     found_at_scroll: 1
     leads_to: screen_5
     aliases:
-    - 登录
+    - Login
     - log in
     - login
     semantic_type: button
@@ -163,7 +163,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     semantic_type: button
@@ -175,7 +175,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 加入
+    - [CH]
     - join meeting
     - enter meeting
     semantic_type: button
@@ -187,7 +187,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 会议
+    - [CH]
     - meetings
     - meeting tab
     semantic_type: tab
@@ -199,10 +199,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 事件
+    - [CH]
     - events
     - event tab
-    - 日程
+    - [CH]
     semantic_type: tab
   - text: Meeting ID
     center:
@@ -212,9 +212,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 会议ID
+    - [CH]ID
     - meeting number
-    - 会议号
+    - [CH]
     semantic_type: input
   - text: Join with a personal link name
     center:
@@ -224,7 +224,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 使用个人链接名加入
+    - [CH]Personal[CH]
     - join with personal link
     semantic_type: label
   - text: If you received an invitation link, tap on the link to join the meeting
@@ -235,7 +235,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 收到邀请链接请点击加入
+    - [CH]
     - invitation link instruction
     semantic_type: label
   - text: Join options
@@ -246,7 +246,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 加入选项
+    - [CH]
     - join settings
     - meeting options
     semantic_type: button
@@ -258,7 +258,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 不连接音频
+    - 不Connection[CH]
     - do not connect audio
     - no audio
     semantic_type: toggle
@@ -270,7 +270,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 关闭
+    - Close
     - 'off'
     - switch off
     semantic_type: toggle
@@ -282,7 +282,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 关闭我的视频
+    - CloseMy[CH]
     - disable video
     - video off
     semantic_type: toggle
@@ -300,7 +300,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     semantic_type: button
@@ -312,7 +312,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 设置
+    - Settings
     - preferences
     - app settings
     semantic_type: tab
@@ -324,7 +324,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 会议
+    - [CH]
     - meetings list
     - scheduled meetings
     semantic_type: tab
@@ -336,7 +336,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 音频
+    - [CH]
     - audio settings
     - sound settings
     semantic_type: setting
@@ -348,7 +348,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 常规
+    - General
     - general settings
     - basic settings
     semantic_type: setting
@@ -367,7 +367,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 辅助功能
+    - [CH]Feature
     - accessibility settings
     - a11y
     semantic_type: setting
@@ -379,7 +379,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 激活码登录
+    - [CH]Login
     - sign in with activation code
     - activation code
     semantic_type: link
@@ -391,7 +391,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 版本
+    - Version
     - app version
     - version info
     semantic_type: label
@@ -403,7 +403,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 版本号
+    - Version号
     - build number
     - app version number
     semantic_type: label
@@ -415,7 +415,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 分享给他人
+    - Share[CH]
     - share Zoom
     - tell friends about Zoom
     semantic_type: link
@@ -427,7 +427,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 网络测试
+    - NetworkTest
     - test network
     - network diagnostics
     semantic_type: link
@@ -439,7 +439,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_17
     aliases:
-    - 隐私政策
+    - Privacy Policy
     - privacy
     - privacy statement
     semantic_type: link
@@ -451,7 +451,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_18
     aliases:
-    - 服务条款
+    - Service[CH]
     - terms
     - terms and conditions
     semantic_type: link
@@ -463,7 +463,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 社区标准
+    - [CH]
     - community guidelines
     - community rules
     semantic_type: link
@@ -475,7 +475,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 开源软件
+    - [CH]Software
     - open source licenses
     - OSS
     semantic_type: link
@@ -487,7 +487,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 版权信息
+    - CopyrightInfo
     - copyright notice
     - all rights reserved
     semantic_type: label
@@ -505,7 +505,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 返回
+    - Back
     - Go back
     - Return
     semantic_type: button
@@ -517,7 +517,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 注册
+    - Register
     - Register
     - Create account
     semantic_type: button
@@ -529,7 +529,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 年龄验证
+    - [CH]Verify
     - Age verification
     - Confirm age
     semantic_type: label
@@ -541,7 +541,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 出生年份
+    - [CH]
     - Year of birth
     - DOB
     semantic_type: label
@@ -553,7 +553,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 确认出生年份
+    - Confirm[CH]
     - Age confirmation
     - Privacy notice
     semantic_type: label
@@ -565,7 +565,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 继续
+    - Continue
     - Next
     - Proceed
     semantic_type: button
@@ -583,7 +583,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 返回
+    - Back
     - Go back
     - Previous
     semantic_type: button
@@ -595,7 +595,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 登录
+    - Login
     - Login
     - Log in
     semantic_type: button
@@ -607,7 +607,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - Zoom域名菜单
+    - Zoom[CH]Menu
     - Domains
     - Domain selector
     semantic_type: menu_item
@@ -619,7 +619,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 输入您的帐户
+    - Input[CH]
     - Enter account
     - Account entry
     semantic_type: label
@@ -631,7 +631,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 电子邮件或电话号码
+    - [CH]
     - Email
     - Phone
     - Username
@@ -644,7 +644,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 下一步
+    - Next
     - Continue
     - Proceed
     semantic_type: button
@@ -656,7 +656,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 其他登录方式
+    - [CH]Login[CH]
     - More sign in options
     - Alternative login
     semantic_type: label
@@ -668,7 +668,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_22
     aliases:
-    - 使用 Google 继续
+    - [CH] Google Continue
     - Google login
     - Sign in with Google
     semantic_type: button
@@ -680,7 +680,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_23
     aliases:
-    - 使用 Google 继续
+    - [CH] Google Continue
     - Google login
     - Sign in with Google
     semantic_type: button
@@ -692,7 +692,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_24
     aliases:
-    - 使用 Apple 继续
+    - [CH] Apple Continue
     - Apple login
     - Sign in with Apple
     semantic_type: button
@@ -704,7 +704,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_24
     aliases:
-    - 使用 Apple 继续
+    - [CH] Apple Continue
     - Apple login
     - Sign in with Apple
     semantic_type: button
@@ -716,7 +716,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_24
     aliases:
-    - 使用 Facebook 继续
+    - [CH] Facebook Continue
     - Facebook login
     - Sign in with Facebook
     semantic_type: button
@@ -728,7 +728,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_24
     aliases:
-    - 使用 Facebook 继续
+    - [CH] Facebook Continue
     - Facebook login
     - Sign in with Facebook
     semantic_type: button
@@ -740,7 +740,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_25
     aliases:
-    - 使用 Microsoft 继续
+    - [CH] Microsoft Continue
     - Microsoft login
     - Sign in with Microsoft
     semantic_type: button
@@ -752,7 +752,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_26
     aliases:
-    - 使用 Microsoft 继续
+    - [CH] Microsoft Continue
     - Microsoft login
     - Sign in with Microsoft
     semantic_type: button
@@ -764,7 +764,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_26
     aliases:
-    - 使用 SSO 继续
+    - [CH] SSO Continue
     - Single Sign-On
     - SSO login
     semantic_type: button
@@ -776,7 +776,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_26
     aliases:
-    - 使用 SSO 继续
+    - [CH] SSO Continue
     - Single Sign-On
     - SSO login
     semantic_type: button
@@ -795,7 +795,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -808,10 +808,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 加入
+    - [CH]
     - join meeting
     - enter meeting
-    - 加入会议
+    - [CH]
     semantic_type: button
   - text: Meeting
     center:
@@ -821,9 +821,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 会议
+    - [CH]
     - meetings
-    - 会议列表
+    - [CH]
     - meeting tab
     semantic_type: tab
   - text: Event
@@ -834,10 +834,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 活动
+    - [CH]
     - events
     - event tab
-    - 活动列表
+    - [CH]
     semantic_type: tab
   description: Navigation screen with a back button and tabs for Join, Meeting, and
     Event sections.
@@ -853,7 +853,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 返回
+    - Back
     - go back
     - previous
     semantic_type: button
@@ -865,7 +865,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 加入
+    - [CH]
     - join meeting
     - enter
     semantic_type: button
@@ -877,7 +877,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 会议
+    - [CH]
     - meetings
     - meeting tab
     semantic_type: tab
@@ -889,7 +889,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 事件
+    - [CH]
     - events
     - event tab
     semantic_type: tab
@@ -901,7 +901,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 使用会议 ID 加入
+    - [CH] ID [CH]
     - meeting ID input
     - enter meeting ID
     semantic_type: input
@@ -913,7 +913,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 邀请链接提示
+    - [CH]Tip
     - invitation link instruction
     - tap link to join
     semantic_type: label
@@ -925,7 +925,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 加入选项
+    - [CH]
     - join settings
     - meeting options
     semantic_type: button
@@ -937,7 +937,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 不连接音频
+    - 不Connection[CH]
     - do not connect audio
     - skip audio
     semantic_type: toggle
@@ -955,7 +955,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 返回
+    - Back
     - go back
     - previous
     semantic_type: button
@@ -967,7 +967,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 会议
+    - [CH]
     - meetings tab
     - my meetings
     semantic_type: tab
@@ -979,7 +979,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 加入会议时
+    - [CH]
     - joining settings
     - join options
     semantic_type: label
@@ -991,7 +991,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 关闭我的视频
+    - CloseMy[CH]
     - disable video
     - video off
     semantic_type: setting
@@ -1003,7 +1003,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 关闭
+    - Close
     - toggle off
     - switch off
     semantic_type: toggle
@@ -1015,7 +1015,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 静音我的麦克风
+    - MuteMyMicrophone
     - mute mic
     - microphone muted
     semantic_type: setting
@@ -1027,7 +1027,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 自动连接音频
+    - AutoConnection[CH]
     - auto connect audio
     - connect audio automatically
     semantic_type: setting
@@ -1039,7 +1039,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - WiFi或蜂窝数据
+    - WiFi或Cellular[CH]
     - wifi or mobile data
     - internet connection
     semantic_type: setting
@@ -1051,7 +1051,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 按钮
+    - [CH]
     - btn
     - action button
     semantic_type: button
@@ -1063,7 +1063,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 显示视频预览
+    - [CH]
     - video preview
     - preview video
     semantic_type: setting
@@ -1075,7 +1075,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 开启
+    - [CH]
     - toggle on
     - switch on
     semantic_type: toggle
@@ -1087,7 +1087,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 静音和取消静音
+    - Mute和CancelMute
     - mute/unmute
     - toggle sound
     semantic_type: setting
@@ -1099,7 +1099,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 仅您能听到
+    - [CH]
     - only you can hear
     - private audio cue
     semantic_type: label
@@ -1111,7 +1111,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 会议中体验
+    - [CH]
     - in-meeting settings
     - meeting experience
     semantic_type: label
@@ -1123,7 +1123,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 显示我的连接时间
+    - [CH]MyConnection[CH]
     - display connected time
     - show time
     semantic_type: setting
@@ -1135,7 +1135,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 参与者加入时显示姓名
+    - [CH]
     - show join name
     - display participant name
     semantic_type: setting
@@ -1147,7 +1147,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 显示无视频参与者
+    - [CH]None[CH]
     - show participants without video
     - non-video attendees
     semantic_type: setting
@@ -1159,7 +1159,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 会议中控制
+    - [CH]
     - meeting controls
     - in-meeting controls
     semantic_type: label
@@ -1171,7 +1171,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 始终显示会议控制
+    - [CH]
     - show controls always
     - keep controls visible
     semantic_type: setting
@@ -1183,7 +1183,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 始终显示隐藏式字幕
+    - [CH]
     - show captions always
     - auto show captions
     semantic_type: setting
@@ -1195,7 +1195,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 启用安全驾驶模式
+    - EnableSecurity[CH]Mode
     - safe driving
     - driving mode
     semantic_type: setting
@@ -1215,7 +1215,7 @@ screens:
     aliases:
     - Return
     - Go back
-    - 返回
+    - Back
     semantic_type: button
   - text: Audio
     center:
@@ -1227,7 +1227,7 @@ screens:
     aliases:
     - Sound
     - Audio settings
-    - 音频
+    - [CH]
     semantic_type: setting
   - text: MICROPHONE MODES
     center:
@@ -1239,7 +1239,7 @@ screens:
     aliases:
     - Mic modes
     - Microphone settings
-    - 麦克风模式
+    - MicrophoneMode
     semantic_type: label
   - text: Noise removal (default)
     center:
@@ -1250,7 +1250,7 @@ screens:
     leads_to: screen_9
     aliases:
     - Noise suppression
-    - 降噪
+    - [CH]
     - Auto noise cancellation
     semantic_type: menu_item
   - text: Recommended for most users. This setting will automatically adjust noise
@@ -1263,7 +1263,7 @@ screens:
     leads_to: screen_9
     aliases:
     - Noise removal description
-    - 降噪说明
+    - [CH]Instruction
     semantic_type: label
   - text: Selected
     center:
@@ -1275,7 +1275,7 @@ screens:
     aliases:
     - Checked
     - Active
-    - 已选择
+    - 已Select
     semantic_type: label
   - text: Original sound for musicians
     center:
@@ -1287,7 +1287,7 @@ screens:
     aliases:
     - Original sound
     - Raw audio
-    - 原声
+    - [CH]
     semantic_type: menu_item
   description: Audio settings page with options to select microphone modes such as
     noise removal or original sound for musicians.
@@ -1303,7 +1303,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 返回
+    - Back
     - Return
     - Go back
     semantic_type: button
@@ -1315,8 +1315,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 常规
-    - 通用
+    - General
+    - General
     - General settings
     semantic_type: setting
   - text: DATA
@@ -1327,7 +1327,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 数据
+    - [CH]
     - Data usage
     - Data settings
     semantic_type: setting
@@ -1339,7 +1339,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 管理存储空间
+    - Manage[CH]
     - Storage management
     - Manage space
     semantic_type: menu_item
@@ -1351,7 +1351,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 按钮
+    - [CH]
     - Action button
     - Click
     semantic_type: button
@@ -1363,9 +1363,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 高级
+    - Advanced
     - Advanced settings
-    - 高级设置
+    - AdvancedSettings
     semantic_type: setting
   - text: Diagnostic data viewer
     center:
@@ -1375,7 +1375,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 诊断数据查看器
+    - [CH]View器
     - View diagnostic data
     - Diagnostic viewer
     semantic_type: menu_item
@@ -1387,7 +1387,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 关闭，开关
+    - Close，[CH]
     - Toggle off
     - Switch off
     semantic_type: toggle
@@ -1399,7 +1399,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 启用此功能最多使用 20 MB 存储空间
+    - Enable此Feature[CH] 20 MB [CH]
     - Storage warning
     - Data usage info
     semantic_type: label
@@ -1417,7 +1417,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     semantic_type: button
@@ -1429,7 +1429,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 视频与效果
+    - [CH]
     - video settings
     - camera effects
     semantic_type: setting
@@ -1441,7 +1441,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 视频
+    - [CH]
     - camera
     - video settings
     semantic_type: label
@@ -1453,8 +1453,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 宽高比
-    - 画面比例
+    - [CH]
+    - [CH]
     - screen ratio
     semantic_type: setting
   - text: Original ratio
@@ -1465,9 +1465,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 原始比例
+    - [CH]
     - original aspect ratio
-    - 默认比例
+    - Default[CH]
     semantic_type: menu_item
   - text: Button
     center:
@@ -1477,9 +1477,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 按钮
+    - [CH]
     - action button
-    - 控件
+    - [CH]
     semantic_type: button
   - text: Mirror my video
     center:
@@ -1489,9 +1489,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_31
     aliases:
-    - 镜像我的视频
+    - [CH]My[CH]
     - mirror video
-    - 视频镜像
+    - [CH]
     semantic_type: setting
   - text: On, switch
     center:
@@ -1501,10 +1501,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 开启
+    - [CH]
     - switch
     - toggle
-    - 开关
+    - [CH]
     semantic_type: toggle
   - text: Advanced
     center:
@@ -1514,9 +1514,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_32
     aliases:
-    - 高级
+    - Advanced
     - advanced settings
-    - 高级设置
+    - AdvancedSettings
     semantic_type: menu_item
   description: Video settings screen where users can adjust aspect ratio, toggle video
     mirroring, and access advanced video options.
@@ -1532,7 +1532,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -1545,9 +1545,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 辅助功能
+    - [CH]Feature
     - accessibility settings
-    - 无障碍
+    - None[CH]
     semantic_type: setting
   - text: SCREEN
     center:
@@ -1557,9 +1557,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 屏幕
+    - Screen
     - screen settings
-    - 屏幕设置
+    - ScreenSettings
     semantic_type: label
   - text: Dim screen share video
     center:
@@ -1569,9 +1569,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_33
     aliases:
-    - 调暗屏幕共享视频
+    - [CH]ScreenShare[CH]
     - dim shared video
-    - 降低屏幕共享亮度
+    - [CH]ScreenShareBrightness
     semantic_type: setting
   - text: Off, switch
     center:
@@ -1581,9 +1581,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 关闭
+    - Close
     - switch
-    - 开关
+    - [CH]
     - toggle
     semantic_type: toggle
   - text: Automatically dim video when flashing images or visual patterns (such as
@@ -1595,9 +1595,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 自动调暗视频
+    - Auto[CH]
     - automatically dim video
-    - 自动降低视频亮度
+    - Auto[CH]Brightness
     semantic_type: label
   description: Accessibility settings page where users can toggle the 'Dim screen
     share video' option to automatically dim flashing images during screen shares.
@@ -1613,7 +1613,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -1626,7 +1626,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 更多
+    - [CH]
     - more options
     - additional
     - more menu
@@ -1639,10 +1639,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 选择激活方式
+    - Select[CH]
     - activation method
     - choose activation
-    - 选择激活方法
+    - Select[CH]
     semantic_type: label
   - text: Enter code
     center:
@@ -1652,9 +1652,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_34
     aliases:
-    - 输入代码
+    - Input[CH]
     - enter activation code
-    - 输入激活码
+    - Input[CH]
     - type code
     semantic_type: button
   - text: Scan QR code
@@ -1665,9 +1665,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_35
     aliases:
-    - 扫描二维码
+    - Scan[CH]
     - scan barcode
-    - 扫码
+    - [CH]
     - scan QR
     semantic_type: button
   description: Device activation screen allowing users to choose between entering
@@ -1686,8 +1686,8 @@ screens:
     aliases:
     - update ready
     - new update
-    - 有更新
-    - 版本更新
+    - YesUpdate
+    - VersionUpdate
     semantic_type: label
   - text: A new version of Zoom Workplace is available! See what's new in this version.
     center:
@@ -1699,8 +1699,8 @@ screens:
     aliases:
     - new version available
     - Zoom Workplace update
-    - Zoom新版本
-    - 查看更新内容
+    - ZoomNewVersion
+    - ViewUpdate[CH]
     semantic_type: label
   - text: Current version
     center:
@@ -1711,8 +1711,8 @@ screens:
     leads_to: screen_14
     aliases:
     - version
-    - 当前版本
-    - 版本号
+    - [CH]Version
+    - Version号
     - current ver
     semantic_type: label
   - text: Now available
@@ -1724,8 +1724,8 @@ screens:
     leads_to: screen_14
     aliases:
     - available now
-    - 现已可用
-    - 已发布
+    - [CH]
+    - [CH]
     - ready
     semantic_type: label
   - text: Cancel
@@ -1736,10 +1736,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 取消
+    - Cancel
     - dismiss
     - abort
-    - 取消操作
+    - Cancel[CH]
     semantic_type: button
   - text: Continue
     center:
@@ -1749,11 +1749,11 @@ screens:
     found_at_scroll: 0
     leads_to: screen_37
     aliases:
-    - 继续
+    - Continue
     - proceed
     - next
-    - 下一步
-    - 确认
+    - Next
+    - Confirm
     semantic_type: button
   description: Update dialog prompting the user to install a new version of Zoom Workplace,
     showing current and available versions with cancel and continue options.
@@ -1769,7 +1769,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 复制
+    - Copy
     - Copy link
     - Copy text
     semantic_type: button
@@ -1781,7 +1781,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 附近
+    - [CH]
     - Nearby devices
     - Nearby meetings
     semantic_type: menu_item
@@ -1793,7 +1793,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_39
     aliases:
-    - 收藏
+    - [CH]
     - Saved
     - Favorites
     semantic_type: menu_item
@@ -1804,7 +1804,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 云盘
+    - Cloud盘
     - Zoom Drive
     - Cloud storage
     semantic_type: tab
@@ -1816,9 +1816,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_40
     aliases:
-    - 消息
+    - Message
     - Chat
-    - 聊天
+    - [CH]
     semantic_type: tab
   - text: Bluetooth
     center:
@@ -1828,7 +1828,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_41
     aliases:
-    - 蓝牙
+    - Bluetooth
     - BT
     - Bluetooth settings
     semantic_type: setting
@@ -1840,7 +1840,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 应用列表
+    - App[CH]
     - Apps
     - Applications
     semantic_type: menu_item
@@ -1861,7 +1861,7 @@ screens:
     - search
     - search mail
     - search emails
-    - 搜索邮件
+    - Search[CH]
     semantic_type: input
   - text: Open navigation drawer
     center:
@@ -1874,7 +1874,7 @@ screens:
     - menu
     - hamburger menu
     - navigation menu
-    - 打开导航菜单
+    - Open[CH]Menu
     semantic_type: button
   - text: Signed in as user@example.com&#10;Account and settings.
     center:
@@ -1893,8 +1893,8 @@ screens:
     aliases:
     - primary tab
     - primary inbox
-    - 主要
-    - 主收件箱
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Compose
     center:
@@ -1907,8 +1907,8 @@ screens:
     - new mail
     - write email
     - new message
-    - 写邮件
-    - 撰写
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Mail
     center:
@@ -1920,8 +1920,8 @@ screens:
     aliases:
     - email
     - inbox
-    - 邮件
-    - 邮箱
+    - [CH]
+    - Email
     semantic_type: tab
   - text: Meet
     center:
@@ -1933,8 +1933,8 @@ screens:
     aliases:
     - meetings
     - video meeting
-    - 会议
-    - 视频会议
+    - [CH]
+    - [CH]
     semantic_type: tab
   description: Main email inbox screen featuring a search bar, user profile, primary
     inbox tab, compose button, and bottom navigation for Mail and Meet.
@@ -1952,7 +1952,7 @@ screens:
     aliases:
     - Return
     - Go back
-    - 返回
+    - Back
     semantic_type: button
   - text: Privacy Policy
     center:
@@ -1963,7 +1963,7 @@ screens:
     leads_to: screen_17
     aliases:
     - Privacy
-    - 隐私政策
+    - Privacy Policy
     - Privacy statement
     semantic_type: link
   description: Privacy Policy page displaying the legal terms and conditions with
@@ -1980,7 +1980,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - previous
@@ -1993,11 +1993,11 @@ screens:
     found_at_scroll: 0
     leads_to: screen_18
     aliases:
-    - 服务条款
+    - Service[CH]
     - ToS
     - terms
     - user agreement
-    - 使用条款
+    - Usage Terms
     semantic_type: link
   description: Terms of Service page displaying the legal agreement for the app, with
     a back button to return to the previous screen.
@@ -2015,7 +2015,7 @@ screens:
     aliases:
     - Return
     - Previous
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Community standards
@@ -2027,8 +2027,8 @@ screens:
     leads_to: screen_19
     aliases:
     - Community Guidelines
-    - 社区准则
-    - 社区标准
+    - [CH]
+    - [CH]
     - Guidelines
     semantic_type: link
   description: Community standards page displaying the guidelines and rules for user
@@ -2045,7 +2045,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 返回
+    - Back
     - go back
     - back button
     - navigate back
@@ -2058,7 +2058,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 开源软件
+    - [CH]Software
     - open source licenses
     - OSS
     semantic_type: link
@@ -2070,7 +2070,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 请稍等
+    - [CH]
     - please wait
     - loading
     semantic_type: label
@@ -2082,7 +2082,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - Zoom官网
+    - Zoom[CH]
     - Zoom URL
     - zoom.com
     semantic_type: label
@@ -2094,7 +2094,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 安全验证中
+    - SecurityVerifymiddle
     - security check
     - verifying security
     semantic_type: label
@@ -2106,7 +2106,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 检查浏览器中
+    - Check[CH]
     - browser check
     - verifying browser
     semantic_type: label
@@ -2118,7 +2118,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 验证您是人类
+    - Verify您Yes[CH]
     - I am human
     - captcha
     - human verification
@@ -2131,7 +2131,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - Cloudflare安全
+    - CloudflareSecurity
     - CF
     - cloudflare protection
     semantic_type: label
@@ -2143,7 +2143,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 隐私
+    - Privacy
     - privacy policy
     - data privacy
     semantic_type: link
@@ -2155,7 +2155,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 帮助
+    - Help
     - support
     - help center
     semantic_type: link
@@ -2167,7 +2167,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_44
     aliases:
-    - 性能与安全由...提供
+    - [CH]Security由...[CH]
     - powered by
     - secured by
     semantic_type: label
@@ -2187,7 +2187,7 @@ screens:
     aliases:
     - Zoom domain settings
     - Zoom server domain
-    - Zoom域名
+    - Zoom[CH]
     semantic_type: setting
   - text: .zoom.us
     center:
@@ -2209,7 +2209,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 默认
+    - Default
     - default setting
     - default option
     semantic_type: label
@@ -2233,7 +2233,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 政府用户
+    - [CH]
     - government
     - gov users
     semantic_type: label
@@ -2257,7 +2257,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 国防用户
+    - [CH]
     - defense
     - military users
     semantic_type: label
@@ -2269,7 +2269,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - cancel
     semantic_type: button
@@ -2287,7 +2287,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_45
     aliases:
-    - 网页视图
+    - [CH]
     - WebView
     - web content
     semantic_type: label
@@ -2299,8 +2299,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_46
     aliases:
-    - 关闭标签页
-    - 关闭选项卡
+    - CloseTab页
+    - Close[CH]Lag
     - close tab
     semantic_type: button
   - text: Connection is secure
@@ -2311,8 +2311,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_47
     aliases:
-    - 连接安全
-    - 安全连接
+    - ConnectionSecurity
+    - SecurityConnection
     - secure connection
     semantic_type: label
   - text: Share
@@ -2323,8 +2323,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_48
     aliases:
-    - 分享
-    - 共享
+    - Share
+    - Share
     - share content
     semantic_type: button
   - text: More options
@@ -2335,8 +2335,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_49
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - more
     semantic_type: button
   - text: Chinese (Simplified)
@@ -2346,8 +2346,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 简体中文
-    - 中文
+    - [CH]Chinese
+    - Chinese
     - Simplified Chinese
     semantic_type: menu_item
   - text: English
@@ -2357,8 +2357,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - ENG
     semantic_type: menu_item
   - text: Close
@@ -2368,7 +2368,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - close
     - dismiss
     semantic_type: button
@@ -2378,7 +2378,7 @@ screens:
   scroll_direction: vertical
 - id: screen_23
   elements:
-  - text: 登录 - Google 账号
+  - text: Login - Google Account
     center:
     - 0.5
     - 0.5415
@@ -2386,10 +2386,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in - Google Account
-    - Google账号登录
-    - 登录Google
+    - GoogleAccountLogin
+    - LoginGoogle
     semantic_type: label
-  - text: 使用 Google 账号登录
+  - text: [CH] Google AccountLogin
     center:
     - 0.2868
     - 0.1397
@@ -2397,10 +2397,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in with Google
-    - Google登录
-    - 用Google账号登录
+    - GoogleLogin
+    - 用GoogleAccountLogin
     semantic_type: button
-  - text: 选择账号
+  - text: SelectAccount
     center:
     - 0.5017
     - 0.2934
@@ -2408,10 +2408,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Choose account
-    - 选择账户
+    - SelectAccount
     - Select account
     semantic_type: button
-  - text: 继续前往
+  - text: Continue[CH]
     center:
     - 0.1372
     - 0.3473
@@ -2419,7 +2419,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Continue to
-    - 继续
+    - Continue
     - Proceed
     semantic_type: button
   - text: Zoom
@@ -2430,10 +2430,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Zoom app
-    - Zoom应用
-    - Zoom会议
+    - ZoomApp
+    - Zoom[CH]
     semantic_type: label
-  - text: 使用其他账号
+  - text: [CH]Account
     center:
     - 0.5017
     - 0.5027
@@ -2441,16 +2441,16 @@ screens:
     found_at_scroll: 0
     aliases:
     - Use another account
-    - 使用其他账户
+    - [CH]Account
     - Use different account
     semantic_type: link
-  - text: 建议您在使用“Zoom”之前，先阅读此应用的
+  - text: [CH]“Zoom”[CH]，[CH]App
     center:
     - 0.3913
     - 0.5902
     fixed: false
     found_at_scroll: 0
-  - text: 《隐私权政策》
+  - text: 《Privacy[CH]》
     center:
     - 0.4774
     - 0.6014
@@ -2458,7 +2458,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy Policy
-    - 隐私政策
+    - Privacy Policy
     - Privacy
     semantic_type: link
   - text: 和
@@ -2469,9 +2469,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - and
-    - 与
+    - and
     semantic_type: label
-  - text: 《服务条款》
+  - text: 《Service[CH]》
     center:
     - 0.2649
     - 0.6127
@@ -2479,7 +2479,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Terms of Service
-    - 服务条款
+    - Service[CH]
     - Terms
     semantic_type: link
   - text: 。
@@ -2491,7 +2491,7 @@ screens:
     aliases:
     - .
     semantic_type: label
-  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+  - text: Open Google AccountHelpCenter（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.6111
     - 0.9739
@@ -2499,10 +2499,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Open Google Account Help Center
-    - Google帮助中心
+    - GoogleHelpCenter
     - Help Center
     semantic_type: link
-  - text: 帮助
+  - text: Help
     center:
     - 0.6111
     - 0.9829
@@ -2510,10 +2510,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Help
-    - 帮助中心
+    - HelpCenter
     - Support
     semantic_type: link
-  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+  - text: 《Privacy[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.7628
     - 0.9739
@@ -2521,10 +2521,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy Policy (external link)
-    - 隐私权政策
+    - Privacy[CH]
     - Privacy Policy
     semantic_type: link
-  - text: 隐私权
+  - text: Privacy权
     center:
     - 0.7618
     - 0.9829
@@ -2532,10 +2532,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy
-    - 隐私
+    - Privacy
     - Privacy rights
     semantic_type: label
-  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+  - text: 《Google Service[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.9135
     - 0.9739
@@ -2543,10 +2543,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google Terms of Service (external link)
-    - Google服务条款
+    - GoogleService[CH]
     - Google Terms
     semantic_type: link
-  - text: 条款
+  - text: [CH]
     center:
     - 0.9135
     - 0.9829
@@ -2554,7 +2554,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Terms
-    - 条款与条件
+    - [CH]
     - Terms and Conditions
     semantic_type: label
   - text: Close tab
@@ -2564,9 +2564,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭标签页
-    - 关闭选项卡
-    - 关闭标签
+    - CloseTab页
+    - Close[CH]Lag
+    - CloseTab
     semantic_type: button
   - text: Connection is secure
     center:
@@ -2575,8 +2575,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 连接是安全的
-    - 安全连接
+    - ConnectionYesSecurity
+    - SecurityConnection
     - Secure connection
     semantic_type: label
   - text: Share
@@ -2586,8 +2586,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 分享
-    - 共享
+    - Share
+    - Share
     - Share content
     semantic_type: button
   - text: More options
@@ -2597,8 +2597,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - More
     semantic_type: button
   - text: Chinese (Simplified)
@@ -2608,8 +2608,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 简体中文
-    - 中文
+    - [CH]Chinese
+    - Chinese
     - Simplified Chinese
     semantic_type: menu_item
   - text: English
@@ -2619,8 +2619,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - EN
     semantic_type: menu_item
   - text: Close
@@ -2630,7 +2630,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - Close button
     - X
     semantic_type: button
@@ -2641,7 +2641,7 @@ screens:
   scroll_direction: vertical
 - id: screen_24
   elements:
-  - text: 登录 - Google 账号
+  - text: Login - Google Account
     center:
     - 0.5
     - 0.5415
@@ -2649,10 +2649,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in - Google Account
-    - Google登录
-    - Google账号登录
+    - GoogleLogin
+    - GoogleAccountLogin
     semantic_type: label
-  - text: 使用 Google 账号登录
+  - text: [CH] Google AccountLogin
     center:
     - 0.2868
     - 0.1397
@@ -2660,10 +2660,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in with Google
-    - Google登录
+    - GoogleLogin
     - Google sign in
     semantic_type: button
-  - text: 登录Zoom
+  - text: LoginZoom
     center:
     - 0.5017
     - 0.2934
@@ -2671,10 +2671,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in to Zoom
-    - Zoom登录
+    - ZoomLogin
     - Sign in Zoom
     semantic_type: label
-  - text: Google 将允许Zoom访问这类与您有关的信息
+  - text: Google [CH]ZoomAccess[CH]Yes[CH]Info
     center:
     - 0.5017
     - 0.4321
@@ -2682,10 +2682,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google will allow Zoom to access this info
-    - Google信息授权
+    - GoogleInfoAuthorize
     - Google data access
     semantic_type: label
-  - text: 名称和个人资料照片
+  - text: [CH]Personal[CH]
     center:
     - 0.5503
     - 0.5178
@@ -2693,10 +2693,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Name and profile photo
-    - 姓名和头像
+    - [CH]Avatar
     - Name and photo
     semantic_type: label
-  - text: 邮箱
+  - text: Email
     center:
     - 0.5503
     - 0.5869
@@ -2704,7 +2704,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Email
-    - 电子邮件
+    - [CH]
     - Email address
     semantic_type: label
   - text: 和
@@ -2715,9 +2715,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - and
-    - 与
+    - and
     semantic_type: label
-  - text: 您可随时前往您的
+  - text: [CH]
     center:
     - 0.1993
     - 0.7051
@@ -2725,9 +2725,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - You can go to your
-    - 您可以随时访问
+    - [CH]Access
     semantic_type: label
-  - text: Google 账号设置（外部链接，在新窗口中打开）
+  - text: Google AccountSettings（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.4385
     - 0.7051
@@ -2735,10 +2735,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google Account settings
-    - Google账号设置
+    - GoogleAccountSettings
     - Google account
     semantic_type: link
-  - text: 进行更改。
+  - text: [CH]。
     center:
     - 0.6233
     - 0.7051
@@ -2746,9 +2746,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - to make changes
-    - 修改设置
+    - [CH]Settings
     semantic_type: label
-  - text: 详细了解
+  - text: Detailed[CH]
     center:
     - 0.1264
     - 0.741
@@ -2756,7 +2756,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Learn more
-    - 了解更多
+    - [CH]
     - Learn More
     semantic_type: link
   - text: 。
@@ -2768,7 +2768,7 @@ screens:
     aliases:
     - period
     semantic_type: label
-  - text: 取消
+  - text: Cancel
     center:
     - 0.2733
     - 0.8353
@@ -2776,10 +2776,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Cancel
-    - 取消登录
+    - CancelLogin
     - Cancel sign in
     semantic_type: button
-  - text: 继续
+  - text: Continue
     center:
     - 0.7302
     - 0.8353
@@ -2787,10 +2787,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Continue
-    - 下一步
+    - Next
     - Proceed
     semantic_type: button
-  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+  - text: Open Google AccountHelpCenter（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.6111
     - 0.9739
@@ -2798,10 +2798,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Open Google Account Help Center
-    - Google帮助中心
+    - GoogleHelpCenter
     - Google Help
     semantic_type: link
-  - text: 帮助
+  - text: Help
     center:
     - 0.6111
     - 0.9829
@@ -2809,10 +2809,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Help
-    - 帮助中心
+    - HelpCenter
     - Support
     semantic_type: link
-  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+  - text: 《Privacy[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.7628
     - 0.9739
@@ -2820,10 +2820,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy Policy
-    - 隐私政策
+    - Privacy Policy
     - Privacy
     semantic_type: link
-  - text: 隐私权
+  - text: Privacy权
     center:
     - 0.7618
     - 0.9829
@@ -2831,10 +2831,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy
-    - 隐私
+    - Privacy
     - Privacy Policy
     semantic_type: label
-  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+  - text: 《Google Service[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.9135
     - 0.9739
@@ -2842,10 +2842,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google Terms of Service
-    - Google服务条款
+    - GoogleService[CH]
     - Terms
     semantic_type: link
-  - text: 条款
+  - text: [CH]
     center:
     - 0.9135
     - 0.9829
@@ -2853,7 +2853,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Terms
-    - 服务条款
+    - Service[CH]
     - Terms of Service
     semantic_type: label
   - text: Close tab
@@ -2863,8 +2863,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭标签页
-    - 关闭选项卡
+    - CloseTab页
+    - Close[CH]Lag
     - Close
     semantic_type: button
   - text: Connection is secure
@@ -2874,8 +2874,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 连接安全
-    - 安全连接
+    - ConnectionSecurity
+    - SecurityConnection
     - Secure connection
     semantic_type: label
   - text: accounts.google.com
@@ -2885,7 +2885,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Google账号
+    - GoogleAccount
     - Google account URL
     semantic_type: label
   - text: Share
@@ -2895,8 +2895,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 分享
-    - 共享
+    - Share
+    - Share
     semantic_type: button
   - text: More options
     center:
@@ -2905,8 +2905,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - More
     semantic_type: button
   - text: Chinese (Simplified)
@@ -2916,8 +2916,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 中文（简体）
-    - 简体中文
+    - Chinese（[CH]）
+    - [CH]Chinese
     - Chinese
     semantic_type: menu_item
   - text: English
@@ -2927,8 +2927,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - English language
     semantic_type: menu_item
   - text: Close
@@ -2938,9 +2938,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - Close button
-    - 关闭页面
+    - ClosePage
     semantic_type: button
   description: WebView displaying the Google OAuth consent screen for Zoom login,
     showing requested account information and options to cancel or continue.
@@ -2948,7 +2948,7 @@ screens:
   scroll_direction: vertical
 - id: screen_25
   elements:
-  - text: 登录 - Google 账号
+  - text: Login - Google Account
     center:
     - 0.5
     - 0.5415
@@ -2956,10 +2956,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in - Google Account
-    - Google登录
-    - 登录Google账号
+    - GoogleLogin
+    - LoginGoogleAccount
     semantic_type: label
-  - text: 使用 Google 账号登录
+  - text: [CH] Google AccountLogin
     center:
     - 0.2868
     - 0.1397
@@ -2967,10 +2967,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in with Google
-    - Google账号登录
-    - 使用Google登录
+    - GoogleAccountLogin
+    - [CH]GoogleLogin
     semantic_type: button
-  - text: 登录Zoom
+  - text: LoginZoom
     center:
     - 0.5017
     - 0.2934
@@ -2978,10 +2978,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sign in to Zoom
-    - Zoom登录
-    - 登录
+    - ZoomLogin
+    - Login
     semantic_type: label
-  - text: Google 将允许Zoom访问这类与您有关的信息
+  - text: Google [CH]ZoomAccess[CH]Yes[CH]Info
     center:
     - 0.5017
     - 0.4321
@@ -2989,10 +2989,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google will allow Zoom to access this info about you
-    - Google授权信息
-    - 信息访问说明
+    - GoogleAuthorizeInfo
+    - InfoAccessInstruction
     semantic_type: label
-  - text: 名称和个人资料照片
+  - text: [CH]Personal[CH]
     center:
     - 0.5503
     - 0.5178
@@ -3000,10 +3000,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Name and profile photo
-    - 姓名和头像
-    - 基本信息
+    - [CH]Avatar
+    - BasicInfo
     semantic_type: label
-  - text: 邮箱
+  - text: Email
     center:
     - 0.5503
     - 0.5869
@@ -3011,7 +3011,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Email
-    - 电子邮件
+    - [CH]
     - Email address
     semantic_type: label
   - text: 和
@@ -3022,9 +3022,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - and
-    - 与
+    - and
     semantic_type: label
-  - text: 您可随时前往您的
+  - text: [CH]
     center:
     - 0.1993
     - 0.7051
@@ -3032,9 +3032,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - You can go to your
-    - 您可以随时访问您的
+    - [CH]Access[CH]
     semantic_type: label
-  - text: Google 账号设置（外部链接，在新窗口中打开）
+  - text: Google AccountSettings（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.4385
     - 0.7051
@@ -3042,10 +3042,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google Account settings
-    - Google账号设置
-    - 账号设置
+    - GoogleAccountSettings
+    - AccountSettings
     semantic_type: link
-  - text: 进行更改。
+  - text: [CH]。
     center:
     - 0.6233
     - 0.7051
@@ -3053,9 +3053,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - to make changes.
-    - 更改设置
+    - [CH]Settings
     semantic_type: label
-  - text: 详细了解
+  - text: Detailed[CH]
     center:
     - 0.1264
     - 0.741
@@ -3063,8 +3063,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Learn more
-    - 了解更多
-    - 详情
+    - [CH]
+    - [CH]
     semantic_type: link
   - text: 。
     center:
@@ -3074,9 +3074,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - .
-    - 句号
+    - [CH]
     semantic_type: label
-  - text: 取消
+  - text: Cancel
     center:
     - 0.2733
     - 0.8353
@@ -3084,10 +3084,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Cancel
-    - 放弃
-    - 退出
+    - [CH]
+    - Exit
     semantic_type: button
-  - text: 继续
+  - text: Continue
     center:
     - 0.7302
     - 0.8353
@@ -3095,10 +3095,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Continue
-    - 下一步
-    - 确认
+    - Next
+    - Confirm
     semantic_type: button
-  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+  - text: Open Google AccountHelpCenter（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.6111
     - 0.9739
@@ -3106,10 +3106,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Open Google Account Help Center
-    - Google帮助中心
-    - 打开帮助中心
+    - GoogleHelpCenter
+    - OpenHelpCenter
     semantic_type: link
-  - text: 帮助
+  - text: Help
     center:
     - 0.6111
     - 0.9829
@@ -3117,10 +3117,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Help
-    - 协助
-    - 帮助菜单
+    - [CH]
+    - HelpMenu
     semantic_type: button
-  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+  - text: 《Privacy[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.7628
     - 0.9739
@@ -3128,10 +3128,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy Policy
-    - 隐私政策
-    - 隐私权政策
+    - Privacy Policy
+    - Privacy[CH]
     semantic_type: link
-  - text: 隐私权
+  - text: Privacy权
     center:
     - 0.7618
     - 0.9829
@@ -3139,9 +3139,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy
-    - 隐私
+    - Privacy
     semantic_type: label
-  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+  - text: 《Google Service[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.9135
     - 0.9739
@@ -3149,10 +3149,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Terms of Service
-    - 服务条款
-    - Google服务条款
+    - Service[CH]
+    - GoogleService[CH]
     semantic_type: link
-  - text: 条款
+  - text: [CH]
     center:
     - 0.9135
     - 0.9829
@@ -3160,7 +3160,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Terms
-    - 条款与条件
+    - [CH]
     semantic_type: label
   - text: Close tab
     center:
@@ -3169,8 +3169,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭标签页
-    - 关闭
+    - CloseTab页
+    - Close
     - Close
     semantic_type: button
   - text: Connection is secure
@@ -3180,8 +3180,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 连接是安全的
-    - 安全连接
+    - ConnectionYesSecurity
+    - SecurityConnection
     - Secure connection
     semantic_type: label
   - text: accounts.google.com
@@ -3191,9 +3191,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Google账号网址
+    - GoogleAccount[CH]
     - URL
-    - 网址
+    - [CH]
     semantic_type: label
   - text: Share
     center:
@@ -3202,8 +3202,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 分享
-    - 共享
+    - Share
+    - Share
     - Share page
     semantic_type: button
   - text: More options
@@ -3213,8 +3213,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - More
     semantic_type: button
   description: Google OAuth consent screen embedded in a WebView asking the user to
@@ -3224,7 +3224,7 @@ screens:
   scroll_direction: ''
 - id: screen_26
   elements:
-  - text: 登录 - Google 账号
+  - text: Login - Google Account
     center:
     - 0.5
     - 0.5415
@@ -3233,9 +3233,9 @@ screens:
     aliases:
     - Sign in - Google Account
     - Google login
-    - Google 登录
+    - Google Login
     semantic_type: label
-  - text: 使用 Google 账号登录
+  - text: [CH] Google AccountLogin
     center:
     - 0.2868
     - 0.1397
@@ -3244,9 +3244,9 @@ screens:
     aliases:
     - Sign in with Google
     - Google Sign-In
-    - Google 登录
+    - Google Login
     semantic_type: button
-  - text: 登录Zoom
+  - text: LoginZoom
     center:
     - 0.5017
     - 0.2934
@@ -3255,9 +3255,9 @@ screens:
     aliases:
     - Sign in to Zoom
     - Zoom login
-    - Zoom 登录
+    - Zoom Login
     semantic_type: button
-  - text: Google 将允许Zoom访问这类与您有关的信息
+  - text: Google [CH]ZoomAccess[CH]Yes[CH]Info
     center:
     - 0.5017
     - 0.4321
@@ -3265,10 +3265,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google will allow Zoom to access this info
-    - Google 授权信息
-    - 权限说明
+    - Google AuthorizeInfo
+    - PermissionInstruction
     semantic_type: label
-  - text: 名称和个人资料照片
+  - text: [CH]Personal[CH]
     center:
     - 0.5503
     - 0.5178
@@ -3276,10 +3276,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Name and profile photo
-    - 姓名和头像
-    - 基本信息
+    - [CH]Avatar
+    - BasicInfo
     semantic_type: label
-  - text: 邮箱
+  - text: Email
     center:
     - 0.5503
     - 0.5869
@@ -3287,7 +3287,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Email
-    - 电子邮件
+    - [CH]
     - Email address
     semantic_type: label
   - text: 和
@@ -3298,9 +3298,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - and
-    - 与
+    - and
     semantic_type: label
-  - text: 您可随时前往您的
+  - text: [CH]
     center:
     - 0.1993
     - 0.7051
@@ -3308,9 +3308,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - You can go to your
-    - 您可以随时访问
+    - [CH]Access
     semantic_type: label
-  - text: Google 账号设置（外部链接，在新窗口中打开）
+  - text: Google AccountSettings（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.4385
     - 0.7051
@@ -3318,10 +3318,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google Account settings
-    - Google 账号设置
-    - 账号设置
+    - Google AccountSettings
+    - AccountSettings
     semantic_type: link
-  - text: 进行更改。
+  - text: [CH]。
     center:
     - 0.6233
     - 0.7051
@@ -3329,9 +3329,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - to make changes.
-    - 进行修改
+    - [CH]
     semantic_type: label
-  - text: 详细了解
+  - text: Detailed[CH]
     center:
     - 0.1264
     - 0.741
@@ -3339,8 +3339,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Learn more
-    - 了解更多
-    - 详情
+    - [CH]
+    - [CH]
     semantic_type: link
   - text: 。
     center:
@@ -3350,9 +3350,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - .
-    - 句号
+    - [CH]
     semantic_type: label
-  - text: 取消
+  - text: Cancel
     center:
     - 0.2733
     - 0.8353
@@ -3360,10 +3360,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Cancel
-    - 放弃
-    - 返回
+    - [CH]
+    - Back
     semantic_type: button
-  - text: 继续
+  - text: Continue
     center:
     - 0.7302
     - 0.8353
@@ -3371,10 +3371,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Continue
-    - 下一步
-    - 确认
+    - Next
+    - Confirm
     semantic_type: button
-  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+  - text: Open Google AccountHelpCenter（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.6111
     - 0.9739
@@ -3382,10 +3382,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Open Google Account Help Center
-    - Google 帮助中心
-    - 帮助
+    - Google HelpCenter
+    - Help
     semantic_type: link
-  - text: 帮助
+  - text: Help
     center:
     - 0.6111
     - 0.9829
@@ -3393,10 +3393,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Help
-    - 协助
-    - 支持
+    - [CH]
+    - [CH]
     semantic_type: link
-  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+  - text: 《Privacy[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.7628
     - 0.9739
@@ -3404,10 +3404,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy Policy
-    - 隐私政策
-    - 隐私权政策
+    - Privacy Policy
+    - Privacy[CH]
     semantic_type: link
-  - text: 隐私权
+  - text: Privacy权
     center:
     - 0.7618
     - 0.9829
@@ -3415,10 +3415,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy
-    - 隐私
+    - Privacy
     - Privacy Policy
     semantic_type: label
-  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+  - text: 《Google Service[CH]》（[CH]，[CH]WindowmiddleOpen）
     center:
     - 0.9135
     - 0.9739
@@ -3426,10 +3426,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Terms of Service
-    - 服务条款
-    - Google 服务条款
+    - Service[CH]
+    - Google Service[CH]
     semantic_type: link
-  - text: 条款
+  - text: [CH]
     center:
     - 0.9135
     - 0.9829
@@ -3437,10 +3437,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Terms
-    - 条款与条件
+    - [CH]
     - Terms of Service
     semantic_type: label
-  - text: 全部
+  - text: All
     center:
     - 0.074
     - 0.0832
@@ -3448,10 +3448,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - All
-    - 全部结果
+    - All[CH]
     - All results
     semantic_type: tab
-  - text: 图片
+  - text: [CH]
     center:
     - 0.2003
     - 0.0832
@@ -3459,10 +3459,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Images
-    - 图像
-    - 图片搜索
+    - [CH]
+    - [CH]Search
     semantic_type: tab
-  - text: 视频
+  - text: [CH]
     center:
     - 0.3267
     - 0.0832
@@ -3470,10 +3470,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Videos
-    - 影片
-    - 视频搜索
+    - [CH]
+    - [CH]Search
     semantic_type: tab
-  - text: 购物
+  - text: [CH]
     center:
     - 0.4531
     - 0.0832
@@ -3481,10 +3481,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Shopping
-    - 商城
-    - 购物搜索
+    - [CH]
+    - [CH]Search
     semantic_type: tab
-  - text: 短视频
+  - text: [CH]
     center:
     - 0.5965
     - 0.0832
@@ -3493,9 +3493,9 @@ screens:
     aliases:
     - Short videos
     - Shorts
-    - 短视频搜索
+    - [CH]Search
     semantic_type: tab
-  - text: 新闻
+  - text: [CH]
     center:
     - 0.7399
     - 0.0832
@@ -3503,10 +3503,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - News
-    - 资讯
-    - 新闻搜索
+    - [CH]
+    - [CH]Search
     semantic_type: tab
-  - text: 网页
+  - text: [CH]
     center:
     - 0.8663
     - 0.0832
@@ -3514,10 +3514,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Web
-    - 网页搜索
+    - [CH]Search
     - Web search
     semantic_type: tab
-  - text: 图书
+  - text: [CH]
     center:
     - 0.9642
     - 0.0832
@@ -3525,10 +3525,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Books
-    - 书籍
-    - 图书搜索
+    - [CH]
+    - [CH]Search
     semantic_type: tab
-  - text: 地图
+  - text: [CH]
     center:
     - 0.0
     - 0.0
@@ -3536,10 +3536,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Maps
-    - 地图搜索
+    - [CH]Search
     - Map
     semantic_type: tab
-  - text: 搜索结果
+  - text: Search[CH]
     center:
     - 0.0024
     - 0.1213
@@ -3547,10 +3547,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Search results
-    - 查询结果
+    - [CH]
     - Search
     semantic_type: label
-  - text: 了解详情
+  - text: [CH]
     center:
     - 0.1469
     - 0.3237
@@ -3558,10 +3558,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Learn more
-    - 了解更多
-    - 详情
+    - [CH]
+    - [CH]
     semantic_type: link
-  - text: 知道了
+  - text: [CH]
     center:
     - 0.3802
     - 0.3237
@@ -3570,9 +3570,9 @@ screens:
     aliases:
     - Got it
     - OK
-    - 了解
+    - [CH]
     semantic_type: button
-  - text: 网页搜索结果
+  - text: [CH]Search[CH]
     center:
     - 0.0024
     - 0.3982
@@ -3580,10 +3580,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - Web search results
-    - 网页查询结果
+    - [CH]
     - Web results
     semantic_type: label
-  - text: 关于这条结果的详细信息
+  - text: About[CH]DetailedInfo
     center:
     - 0.9399
     - 0.4112
@@ -3591,10 +3591,10 @@ screens:
     found_at_scroll: 0
     aliases:
     - About this result
-    - 关于此结果
-    - 结果详情
+    - About[CH]
+    - [CH]
     semantic_type: link
-  - text: 用户还搜索了
+  - text: [CH]Search
     center:
     - 0.4872
     - 0.5862
@@ -3602,7 +3602,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - People also search for
-    - 相关搜索
+    - [CH]Search
     - Related searches
     semantic_type: label
   description: Google account authorization page for Zoom login, displaying shared
@@ -3618,7 +3618,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -3630,7 +3630,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自动连接音频
+    - AutoConnection[CH]
     - auto connect audio
     - automatically connect audio
     semantic_type: toggle
@@ -3641,7 +3641,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - disabled
     - turned off
     semantic_type: label
@@ -3652,7 +3652,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - WiFi或蜂窝数据
+    - WiFi或Cellular[CH]
     - wifi or mobile data
     - wireless or cellular
     semantic_type: label
@@ -3663,7 +3663,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 已选择
+    - 已Select
     - chosen
     - picked
     semantic_type: label
@@ -3675,7 +3675,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自动连接音频说明
+    - AutoConnection[CH]Instruction
     - auto connect audio description
     - audio auto-connect help text
     semantic_type: label
@@ -3692,7 +3692,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -3704,7 +3704,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 管理存储
+    - Manage[CH]
     - storage management
     - manage storage settings
     semantic_type: menu_item
@@ -3715,7 +3715,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 缓存
+    - [CH]
     - cached data
     - cache data
     semantic_type: label
@@ -3726,10 +3726,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 清除
+    - [CH]
     - clear cache
     - clear data
-    - 清空
+    - [CH]
     semantic_type: button
   - text: Chat files
     center:
@@ -3738,7 +3738,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 聊天文件
+    - [CH]File
     - chat attachments
     - chat documents
     semantic_type: menu_item
@@ -3749,7 +3749,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 聊天中共享的图片、视频和文件
+    - [CH]Share[CH]、[CH]File
     - images videos and files in chat
     - shared chat media
     semantic_type: label
@@ -3766,7 +3766,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -3778,8 +3778,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 常规
-    - 通用
+    - General
+    - General
     - general settings
     semantic_type: setting
   - text: DATA
@@ -3789,7 +3789,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 数据
+    - [CH]
     - data settings
     - data usage
     semantic_type: setting
@@ -3800,7 +3800,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 管理存储
+    - Manage[CH]
     - storage management
     - manage cache
     semantic_type: menu_item
@@ -3811,7 +3811,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按钮
+    - [CH]
     - action button
     - btn
     semantic_type: button
@@ -3822,9 +3822,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 高级
+    - Advanced
     - advanced settings
-    - 高级设置
+    - AdvancedSettings
     semantic_type: setting
   - text: Diagnostic data viewer
     center:
@@ -3833,7 +3833,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 诊断数据查看器
+    - [CH]View器
     - diagnostic viewer
     - view diagnostic data
     semantic_type: menu_item
@@ -3844,7 +3844,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 开启，开关
+    - [CH]，[CH]
     - toggle on
     - switch on
     - enabled
@@ -3856,7 +3856,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 打开诊断数据查看器
+    - Open[CH]View器
     - view diagnostics
     - open diagnostics
     semantic_type: button
@@ -3867,7 +3867,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 启用此功能最多使用 20 MB 存储空间
+    - Enable此Feature[CH] 20 MB [CH]
     - storage warning
     - data usage warning
     semantic_type: label
@@ -3884,7 +3884,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -3896,8 +3896,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 宽高比
-    - 画面比例
+    - [CH]
+    - [CH]
     - video ratio
     - aspect ratio setting
     semantic_type: label
@@ -3908,8 +3908,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 缩放以适配
-    - 适应屏幕
+    - [CH]
+    - [CH]Screen
     - fit to screen
     - scale to fill
     semantic_type: menu_item
@@ -3920,8 +3920,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 原始比例
-    - 原始宽高比
+    - [CH]
+    - [CH]
     - original aspect ratio
     - native ratio
     semantic_type: menu_item
@@ -3932,8 +3932,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 已选择
-    - 已选中
+    - 已Select
+    - [CH]
     - chosen
     - active
     semantic_type: label
@@ -3950,7 +3950,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     semantic_type: button
@@ -3961,7 +3961,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频
+    - [CH]
     - video tab
     - camera
     semantic_type: tab
@@ -3972,7 +3972,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 画面比例
+    - [CH]
     - video ratio
     - aspect ratio setting
     semantic_type: setting
@@ -3983,7 +3983,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 原始比例
+    - [CH]
     - original aspect ratio
     - default ratio
     semantic_type: setting
@@ -3994,7 +3994,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按钮
+    - [CH]
     - action button
     - btn
     semantic_type: button
@@ -4005,10 +4005,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 镜像视频
+    - [CH]
     - mirror video
     - flip video
-    - 视频镜像
+    - [CH]
     semantic_type: toggle
   - text: Off, switch
     center:
@@ -4017,7 +4017,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
+    - Close
     - switch off
     - toggle off
     semantic_type: toggle
@@ -4028,7 +4028,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 高级
+    - Advanced
     - advanced settings
     - more options
     semantic_type: menu_item
@@ -4045,7 +4045,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - Return
     - Go back
     semantic_type: button
@@ -4056,9 +4056,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 高级
+    - Advanced
     - Advanced settings
-    - 高级设置
+    - AdvancedSettings
     semantic_type: setting
   - text: Use hardware acceleration for receiving video
     center:
@@ -4067,9 +4067,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 使用硬件加速接收视频
+    - [CH]
     - Hardware acceleration
-    - 硬件加速
+    - [CH]
     semantic_type: setting
   - text: On, switch
     center:
@@ -4078,7 +4078,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 开启，开关
+    - [CH]，[CH]
     - Toggle
     - Switch
     - 'On'
@@ -4091,7 +4091,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 使用显卡的硬件视频解码器以节省接收视频的CPU使用率
+    - [CH]Lag[CH]CPU[CH]
     - Hardware video decoder
     - GPU decoder
     semantic_type: label
@@ -4108,7 +4108,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - Go back
     - Return
     - Navigate back
@@ -4120,8 +4120,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 辅助功能
-    - 无障碍
+    - [CH]Feature
+    - None[CH]
     - Accessibility settings
     semantic_type: setting
   - text: SCREEN
@@ -4131,7 +4131,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 屏幕
+    - Screen
     - Display
     - Screen settings
     semantic_type: setting
@@ -4142,9 +4142,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 调暗屏幕共享视频
+    - [CH]ScreenShare[CH]
     - Dim shared video
-    - 降低共享亮度
+    - [CH]ShareBrightness
     semantic_type: setting
   - text: On, switch
     center:
@@ -4153,10 +4153,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 开启
-    - 开关
+    - [CH]
+    - [CH]
     - Toggle on
-    - 启用
+    - Enable
     semantic_type: toggle
   - text: Automatically dim video when flashing images or visual patterns (such as
       stripes) are detected.
@@ -4166,9 +4166,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自动调暗视频
+    - Auto[CH]
     - Auto dim video
-    - 检测到闪烁图像时自动调暗
+    - [CH]Auto[CH]
     semantic_type: label
   description: Accessibility settings page with a toggle to automatically dim screen
     share video when flashing images or visual patterns are detected.
@@ -4209,7 +4209,7 @@ screens:
     aliases:
     - Camera permission prompt
     - Camera access request
-    - 允许Zoom拍照和录制视频
+    - [CH]ZoomCamera[CH]
     semantic_type: label
   - text: While using the app
     center:
@@ -4220,8 +4220,8 @@ screens:
     aliases:
     - While using
     - Foreground only
-    - 使用时允许
-    - 使用应用时
+    - [CH]
+    - [CH]App时
     semantic_type: button
   - text: Only this time
     center:
@@ -4232,8 +4232,8 @@ screens:
     aliases:
     - One time only
     - Just this once
-    - 仅这一次
-    - 仅此一次
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Don’t allow
     center:
@@ -4256,7 +4256,7 @@ screens:
     aliases:
     - Star
     - Favorite
-    - 标星
+    - [CH]
     semantic_type: button
   - text: to me
     center:
@@ -4267,7 +4267,7 @@ screens:
     aliases:
     - To
     - Recipient
-    - 收件人
+    - [CH]
     semantic_type: label
   - text: Reply
     center:
@@ -4277,7 +4277,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Respond
-    - 回复
+    - [CH]
     semantic_type: button
   - text: More options
     center:
@@ -4288,7 +4288,7 @@ screens:
     aliases:
     - More
     - Options
-    - 更多
+    - [CH]
     semantic_type: button
   - text: Reply all
     center:
@@ -4298,7 +4298,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Reply to all
-    - 回复全部
+    - [CH]All
     semantic_type: button
   - text: Forward
     center:
@@ -4308,7 +4308,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Fwd
-    - 转发
+    - [CH]
     semantic_type: button
   - text: Navigate up
     center:
@@ -4319,7 +4319,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     semantic_type: button
   - text: Archive
     center:
@@ -4329,7 +4329,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Archive message
-    - 归档
+    - [CH]
     semantic_type: button
   - text: Delete
     center:
@@ -4340,7 +4340,7 @@ screens:
     aliases:
     - Remove
     - Trash
-    - 删除
+    - Delete
     semantic_type: button
   - text: Mark unread
     center:
@@ -4350,7 +4350,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Mark as unread
-    - 标为未读
+    - [CH]
     semantic_type: button
   - text: Mail
     center:
@@ -4361,7 +4361,7 @@ screens:
     aliases:
     - Email
     - Inbox
-    - 邮件
+    - [CH]
     semantic_type: tab
   - text: Meet
     center:
@@ -4372,7 +4372,7 @@ screens:
     aliases:
     - Meetings
     - Meeting
-    - 会议
+    - [CH]
     semantic_type: tab
   description: Email viewing screen displaying a message with a toolbar to reply,
     forward, archive, delete, and mark as unread.
@@ -4389,7 +4389,7 @@ screens:
     aliases:
     - Download Center
     - Zoom Downloads
-    - 下载中心
+    - DownloadCenter
     semantic_type: label
   - text: Skip to main content
     center:
@@ -4399,7 +4399,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Skip to content
-    - 跳过主要内容
+    - Skip[CH]
     - Skip navigation
     semantic_type: link
   - text: Skip to Main Content
@@ -4410,7 +4410,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Skip to content
-    - 跳过主要内容
+    - Skip[CH]
     - Skip navigation
     semantic_type: link
   - text: Accessibility Overview
@@ -4421,7 +4421,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Accessibility
-    - 无障碍概述
+    - None[CH]Overview
     - Accessibility settings
     semantic_type: link
   - text: Toggle navigation
@@ -4433,7 +4433,7 @@ screens:
     aliases:
     - Menu
     - Hamburger menu
-    - 切换导航
+    - [CH]
     - Open menu
     semantic_type: button
   - text: Join
@@ -4444,7 +4444,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Join Meeting
-    - 加入
+    - [CH]
     - Join a meeting
     semantic_type: button
   - text: Host
@@ -4455,7 +4455,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Host Meeting
-    - 主持
+    - [CH]
     - Start meeting
     semantic_type: button
   - text: Zoom Home Page
@@ -4466,7 +4466,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Home
-    - Zoom主页
+    - ZoomHome
     - Homepage
     semantic_type: link
   - text: Zoom Client for Meetings
@@ -4477,7 +4477,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Zoom Client
-    - Zoom会议客户端
+    - Zoom[CH]
     - Zoom app
     semantic_type: link
   - text: Download from Google Play
@@ -4488,7 +4488,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Google Play download
-    - 从Google Play下载
+    - fromGoogle PlayDownload
     - Get it on Google Play
     semantic_type: button
   - text: Download from Zoom
@@ -4499,7 +4499,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Direct download
-    - 从Zoom下载
+    - fromZoomDownload
     - Download APK
     semantic_type: button
   - text: Controller for Zoom Rooms
@@ -4510,7 +4510,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Zoom Rooms Controller
-    - Zoom Rooms控制器
+    - Zoom Rooms[CH]
     - Room controller
     semantic_type: link
   - text: About
@@ -4521,7 +4521,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - About Zoom
-    - 关于
+    - About
     - About us
     semantic_type: link
   - text: Zoom Blog
@@ -4532,7 +4532,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Blog
-    - Zoom博客
+    - Zoom[CH]
     - News
     semantic_type: link
   - text: Customers
@@ -4543,7 +4543,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Customer stories
-    - 客户
+    - [CH]
     - Case studies
     semantic_type: link
   - text: Our Team
@@ -4554,7 +4554,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Team
-    - 我们的团队
+    - [CH]
     - Leadership
     semantic_type: link
   - text: Careers
@@ -4565,7 +4565,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Jobs
-    - 招聘
+    - [CH]
     - Join our team
     semantic_type: link
   - text: Integrations
@@ -4576,7 +4576,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - App marketplace
-    - 集成
+    - [CH]
     - Apps
     semantic_type: link
   - text: Partners
@@ -4587,7 +4587,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Partner program
-    - 合作伙伴
+    - [CH]
     - Alliances
     semantic_type: link
   - text: Investors
@@ -4598,7 +4598,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Investor relations
-    - 投资者
+    - [CH]
     - Financials
     semantic_type: link
   - text: Press
@@ -4609,7 +4609,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Press room
-    - 新闻
+    - [CH]
     - Media
     semantic_type: link
   - text: Sustainability &amp; ESG
@@ -4626,7 +4626,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Zoom Cares program
-    - Zoom关怀
+    - Zoom[CH]
     - Social impact
     semantic_type: link
   - text: Media Kit
@@ -4637,7 +4637,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Press kit
-    - 媒体资料包
+    - [CH]
     - Brand assets
     semantic_type: link
   - text: How to Videos
@@ -4648,7 +4648,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Tutorials
-    - 教程视频
+    - Tutorial[CH]
     - Help videos
     semantic_type: link
   - text: Developer Platform
@@ -4659,7 +4659,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Developers
-    - 开发者平台
+    - [CH]
     - API
     semantic_type: link
   - text: Zoom Ventures
@@ -4670,7 +4670,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Ventures
-    - Zoom风投
+    - Zoom[CH]
     - Investment fund
     semantic_type: link
   - text: Zoom Merchandise Store
@@ -4681,7 +4681,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Merch store
-    - Zoom周边商店
+    - Zoom[CH]
     - Swag
     semantic_type: link
   - text: Download
@@ -4692,7 +4692,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Downloads
-    - 下载
+    - Download
     - Get Zoom
     semantic_type: button
   - text: Open chat dialog
@@ -4703,7 +4703,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Chat
-    - 打开聊天
+    - Open[CH]
     - Support chat
     semantic_type: button
   - text: Privacy
@@ -4714,7 +4714,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy policy
-    - 隐私
+    - Privacy
     - Privacy center
     semantic_type: link
   - text: Privacy Statement
@@ -4725,7 +4725,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Privacy policy
-    - 隐私声明
+    - Privacy[CH]
     - Data privacy
     semantic_type: link
   - text: ACCEPT COOKIES
@@ -4736,7 +4736,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Accept
-    - 接受Cookie
+    - [CH]Cookie
     - Allow cookies
     semantic_type: button
   - text: Cookies Settings
@@ -4747,7 +4747,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Cookie preferences
-    - Cookie设置
+    - CookieSettings
     - Manage cookies
     semantic_type: button
   - text: Close
@@ -4758,7 +4758,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Dismiss
-    - 关闭
+    - Close
     - X
     semantic_type: button
   - text: Home
@@ -4769,8 +4769,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Homepage
-    - 主页
-    - 首页
+    - Home
+    - Home
     semantic_type: tab
   - text: Connection is secure
     center:
@@ -4780,7 +4780,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Secure connection
-    - 连接安全
+    - ConnectionSecurity
     - HTTPS
     semantic_type: label
   - text: zoom.us/support/download?os=android
@@ -4791,7 +4791,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Android download link
-    - 安卓下载链接
+    - [CH]Download[CH]
     - URL
     semantic_type: link
   - text: New tab
@@ -4802,7 +4802,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Add tab
-    - 新标签页
+    - NewTab页
     - Open new tab
     semantic_type: button
   - text: Switch or close tabs
@@ -4813,7 +4813,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Tab switcher
-    - 切换或关闭标签页
+    - [CH]CloseTab页
     - Manage tabs
     semantic_type: button
   - text: Update available. More options
@@ -4824,7 +4824,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Update
-    - 有可用更新
+    - Yes[CH]Update
     - More options
     semantic_type: button
   description: Zoom Download Center page featuring navigation links to join or host
@@ -4868,7 +4868,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up arrow
     semantic_type: button
   - text: Compose
@@ -4880,8 +4880,8 @@ screens:
     aliases:
     - new message
     - write
-    - 新建消息
-    - 撰写
+    - [CH]Message
+    - [CH]
     semantic_type: button
   - text: Attach file
     center:
@@ -4892,8 +4892,8 @@ screens:
     aliases:
     - attachment
     - file
-    - 附件
-    - 添加文件
+    - [CH]
+    - [CH]File
     semantic_type: button
   - text: Send
     center:
@@ -4903,7 +4903,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - submit
-    - 发送
+    - [CH]
     - send message
     semantic_type: button
   - text: More options
@@ -4915,8 +4915,8 @@ screens:
     aliases:
     - options
     - menu
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: From
     center:
@@ -4926,7 +4926,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - sender
-    - 发件人
+    - [CH]
     - from field
     semantic_type: label
   - text: To
@@ -4937,7 +4937,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - recipient
-    - 收件人
+    - [CH]
     - to field
     semantic_type: label
   - text: Add Cc/Bcc
@@ -4950,8 +4950,8 @@ screens:
     - cc
     - bcc
     - carbon copy
-    - 添加抄送
-    - 抄送密送
+    - [CH]
+    - [CH]
     semantic_type: link
   - text: Subject
     center:
@@ -4961,7 +4961,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - title
-    - 主题
+    - Theme
     - subject line
     semantic_type: label
   description: Email composition screen for drafting and sending messages, featuring
@@ -4978,7 +4978,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Save to cloud
-    - 保存到云端
+    - SavetoCloud端
     - Save file to drive
     semantic_type: button
   - text: Show dropdown menu
@@ -4989,7 +4989,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Dropdown
-    - 下拉菜单
+    - [CH]Menu
     - Open menu
     - More options
     semantic_type: button
@@ -5000,7 +5000,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的云盘
+    - MyCloud盘
     - Personal Drive
     - My Files
     semantic_type: menu_item
@@ -5011,7 +5011,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - Dismiss
     - Abort
     semantic_type: button
@@ -5022,7 +5022,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 保存
+    - Save
     - Confirm
     - Save file
     semantic_type: button
@@ -5040,8 +5040,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Choose chat
-    - 选择会话
-    - 选择对话
+    - Select[CH]
+    - Select[CH]
     semantic_type: button
   - text: Once you start a new conversation, you’ll see it listed here
     center:
@@ -5051,8 +5051,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Empty state text
-    - 暂无会话
-    - 空状态提示
+    - 暂None[CH]
+    - [CH]Tip
     semantic_type: label
   - text: Cancel
     center:
@@ -5061,7 +5061,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - Dismiss
     - Abort
     semantic_type: button
@@ -5073,7 +5073,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Compose
-    - 新建消息
+    - [CH]Message
     - Start chat
     semantic_type: button
   description: Empty state of the Chat screen displaying a message that no conversations
@@ -5089,7 +5089,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 复制
+    - Copy
     - copy text
     - duplicate
     semantic_type: button
@@ -5100,7 +5100,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 附近
+    - [CH]
     - nearby devices
     - nearby share
     semantic_type: tab
@@ -5111,7 +5111,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 消息
+    - Message
     - chat
     - messaging
     semantic_type: tab
@@ -5122,7 +5122,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 云盘
+    - Cloud盘
     - cloud storage
     - zoom drive
     semantic_type: tab
@@ -5133,8 +5133,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收藏
-    - 集合
+    - [CH]
+    - [CH]
     - bookmarks
     semantic_type: tab
   - text: Gmail
@@ -5144,7 +5144,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 谷歌邮箱
+    - [CH]Email
     - google mail
     - email
     semantic_type: link
@@ -5155,7 +5155,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 应用列表
+    - App[CH]
     - app directory
     - applications
     semantic_type: menu_item
@@ -5174,7 +5174,7 @@ screens:
     aliases:
     - Return
     - Go back
-    - 返回
+    - Back
     - Back button
     semantic_type: button
   - text: Network test
@@ -5186,7 +5186,7 @@ screens:
     aliases:
     - Test network
     - Check network
-    - 网络测试
+    - NetworkTest
     - Connection test
     semantic_type: button
   description: Network test screen with a back button and an option to check internet
@@ -5202,7 +5202,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 返回
+    - Back
     - go back
     - navigate back
     - back button
@@ -5214,7 +5214,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 开源软件
+    - [CH]Software
     - open source licenses
     - OSS
     - open source notices
@@ -5233,7 +5233,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Go back
     - Up button
     semantic_type: button
@@ -5251,7 +5251,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Logged in as
-    - 已登录
+    - 已Login
     - Account status
     - Signed in
     semantic_type: label
@@ -5263,7 +5263,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Manage account
-    - 管理账号
+    - ManageAccount
     - Account settings
     - Google account
     semantic_type: link
@@ -5275,7 +5275,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Add account
-    - 添加账号
+    - [CH]Account
     - Sign in
     - Add user
     semantic_type: menu_item
@@ -5287,7 +5287,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Log out
-    - 退出登录
+    - ExitLogin
     - Logout
     - Sign off
     semantic_type: menu_item
@@ -5304,7 +5304,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Google登录
+    - GoogleLogin
     - Sign in to Google
     - Google Accounts Sign in
     semantic_type: label
@@ -5315,8 +5315,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Google登录
-    - 使用Google账号登录
+    - GoogleLogin
+    - [CH]GoogleAccountLogin
     - Sign in
     semantic_type: button
   - text: Sign in
@@ -5326,7 +5326,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 登录
+    - Login
     - Log in
     - Sign In
     semantic_type: button
@@ -5337,7 +5337,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 继续前往
+    - Continue[CH]
     - Continue to
     semantic_type: label
   - text: Zoom
@@ -5347,7 +5347,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Zoom应用
+    - ZoomApp
     - Zoom Meetings
     semantic_type: label
   - text: Forgot email?
@@ -5357,8 +5357,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 忘记邮箱
-    - 找回邮箱
+    - [CH]Email
+    - [CH]Email
     - Forgot email
     semantic_type: link
   - text: Before using this app, you can review Zoom’s
@@ -5368,7 +5368,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 使用此应用前，您可以查看Zoom的
+    - [CH]Appfront，[CH]ViewZoom
     - Review Zoom's policies
     semantic_type: label
   - text: Privacy Policy
@@ -5378,8 +5378,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 隐私政策
-    - 隐私权政策
+    - Privacy Policy
+    - Privacy[CH]
     - Privacy
     semantic_type: link
   - text: and
@@ -5390,7 +5390,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - 和
-    - 与
+    - and
     semantic_type: label
   - text: Terms of Service
     center:
@@ -5399,8 +5399,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 服务条款
-    - 使用条款
+    - Service[CH]
+    - Usage Terms
     - Terms
     semantic_type: link
   - text: Next
@@ -5410,8 +5410,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 下一步
-    - 继续
+    - Next
+    - Continue
     - Continue
     semantic_type: button
   - text: Create account
@@ -5421,8 +5421,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 创建账号
-    - 注册
+    - CreateAccount
+    - Register
     - Create new account
     semantic_type: button
   - text: Open Google Account Help Center (external, opens in a new window)
@@ -5432,8 +5432,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 打开Google帐户帮助中心
-    - 帮助中心
+    - OpenGoogle[CH]HelpCenter
+    - HelpCenter
     - Help Center
     semantic_type: link
   - text: Help
@@ -5443,8 +5443,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
-    - 支持
+    - Help
+    - [CH]
     - Support
     semantic_type: link
   - text: Privacy Policy (external, opens in a new window)
@@ -5454,8 +5454,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 隐私政策
-    - 隐私权政策
+    - Privacy Policy
+    - Privacy[CH]
     - Privacy
     semantic_type: link
   - text: Privacy
@@ -5465,8 +5465,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 隐私
-    - 隐私政策
+    - Privacy
+    - Privacy Policy
     - Privacy Policy
     semantic_type: link
   - text: Google Terms of Service (external, opens in a new window)
@@ -5476,8 +5476,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Google服务条款
-    - 服务条款
+    - GoogleService[CH]
+    - Service[CH]
     - Terms
     semantic_type: link
   - text: Terms
@@ -5487,8 +5487,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 条款
-    - 服务条款
+    - [CH]
+    - Service[CH]
     - Terms of Service
     semantic_type: link
   - text: Close tab
@@ -5498,8 +5498,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭标签页
-    - 关闭
+    - CloseTab页
+    - Close
     - Close
     semantic_type: button
   - text: Connection is secure
@@ -5509,8 +5509,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 连接是安全的
-    - 安全连接
+    - ConnectionYesSecurity
+    - SecurityConnection
     - Secure connection
     semantic_type: label
   - text: accounts.google.com
@@ -5520,8 +5520,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Google账号
-    - 谷歌账号
+    - GoogleAccount
+    - [CH]Account
     - Google Accounts
     semantic_type: label
   - text: Share
@@ -5531,8 +5531,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 分享
-    - 共享
+    - Share
+    - Share
     - Share page
     semantic_type: button
   - text: More options
@@ -5542,8 +5542,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 更多选项
-    - 更多
+    - [CH]
+    - [CH]
     - More
     semantic_type: button
   - text: Chinese (Simplified)
@@ -5553,8 +5553,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 中文(简体)
-    - 简体中文
+    - Chinese([CH])
+    - [CH]Chinese
     - Chinese
     semantic_type: label
   - text: English
@@ -5564,8 +5564,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 英文
-    - 英语
+    - English
+    - [CH]
     - English language
     semantic_type: label
   - text: Close
@@ -5575,8 +5575,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关闭
-    - 退出
+    - Close
+    - Exit
     - Exit
     semantic_type: button
   description: Google Sign-In web page for authenticating with Zoom, featuring email
@@ -5592,8 +5592,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 安全连接
-    - 连接安全
+    - SecurityConnection
+    - ConnectionSecurity
     - secure connection
     - SSL secure
     semantic_type: label
@@ -5604,10 +5604,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Cookie和网站数据
-    - cookie数据
+    - Cookie[CH]
+    - cookie[CH]
     - cookies & site data
-    - 网站数据
+    - [CH]
     semantic_type: menu_item
   description: Site security and privacy settings page showing connection status and
     cookie data options.
@@ -5622,7 +5622,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 复制
+    - Copy
     - copy text
     - duplicate
     semantic_type: button
@@ -5633,7 +5633,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 附近
+    - [CH]
     - nearby devices
     - nearby share
     semantic_type: tab
@@ -5644,7 +5644,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 消息
+    - Message
     - chat
     - messaging
     semantic_type: tab
@@ -5655,7 +5655,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 云盘
+    - Cloud盘
     - cloud storage
     - zoom drive
     semantic_type: tab
@@ -5666,8 +5666,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收藏
-    - 集合
+    - [CH]
+    - [CH]
     - bookmarks
     semantic_type: tab
   - text: Gmail
@@ -5677,7 +5677,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 谷歌邮箱
+    - [CH]Email
     - google mail
     - email
     semantic_type: link
@@ -5688,7 +5688,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 应用列表
+    - App[CH]
     - app directory
     - applications
     semantic_type: menu_item
@@ -5707,7 +5707,7 @@ screens:
     aliases:
     - Forward
     - Navigate forward
-    - 前进
+    - [CH]
     - Next page
     semantic_type: button
   - text: Bookmark
@@ -5719,8 +5719,8 @@ screens:
     aliases:
     - Add bookmark
     - Save bookmark
-    - 收藏
-    - 书签
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Download page
     center:
@@ -5731,8 +5731,8 @@ screens:
     aliases:
     - Save page
     - Download
-    - 下载页面
-    - 保存网页
+    - DownloadPage
+    - Save[CH]
     semantic_type: button
   - text: View site information
     center:
@@ -5744,7 +5744,7 @@ screens:
     - Site info
     - Page info
     - Security
-    - 查看网站信息
+    - View[CH]Info
     semantic_type: button
   - text: Refresh
     center:
@@ -5755,8 +5755,8 @@ screens:
     aliases:
     - Reload
     - Reload page
-    - 刷新
-    - 重新加载
+    - [CH]
+    - [CH]Load
     semantic_type: button
   - text: Find in page
     center:
@@ -5767,8 +5767,8 @@ screens:
     aliases:
     - Search in page
     - Find
-    - 在网页中查找
-    - 页面内查找
+    - [CH]
+    - Page[CH]
     semantic_type: button
   - text: Add to Home screen
     center:
@@ -5779,8 +5779,8 @@ screens:
     aliases:
     - Add to home
     - Create shortcut
-    - 添加到主屏幕
-    - 添加至桌面
+    - [CH]Screen
+    - [CH]
     semantic_type: button
   - text: Desktop site
     center:
@@ -5791,8 +5791,8 @@ screens:
     aliases:
     - Desktop version
     - Request desktop site
-    - 桌面版网站
-    - 电脑版网页
+    - [CH]
+    - Computer[CH]
     semantic_type: toggle
   - text: Translate…
     center:
@@ -5803,8 +5803,8 @@ screens:
     aliases:
     - Translate page
     - Translation
-    - 翻译
-    - 网页翻译
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Open in Chrome
     center:
@@ -5814,8 +5814,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Open in browser
-    - 在Chrome中打开
-    - 用Chrome打开
+    - atChromemiddleOpen
+    - 用ChromeOpen
     semantic_type: button
   - text: Running in Chrome
     center:
@@ -5826,8 +5826,8 @@ screens:
     aliases:
     - Runs in Chrome
     - Custom Tab
-    - 在Chrome中运行
-    - Chrome自定义标签页
+    - atChrome[CH]
+    - ChromeCustomTab页
     semantic_type: label
   description: Web browser overflow menu displaying page actions such as bookmarking,
     refreshing, translating, and opening in Chrome.

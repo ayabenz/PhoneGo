@@ -68,7 +68,7 @@ def test_act_operation_replays_and_finishes():
     op = _first_op(app, "ACT")
     device = MockDevice()
     llm = MockLLM(text_responses=[f"OP: {op.id}"],
-                  vision_responses=["finish(完成：页面已经打开)"])
+                  vision_responses=["finish(Done：Page[CH]Open)"])
     result = _agent(device, llm, verify_with_vlm=False).run("do the thing")
 
     assert result.ok
@@ -76,7 +76,7 @@ def test_act_operation_replays_and_finishes():
     ignored = {"dump_ui", "current_app"}  # preflight dump + landing check
     actions = [n for n in device.method_names() if n not in ignored]
     assert actions[: len(op.macro)] == [step["action"] for step in op.macro]
-    assert "完成" in result.answer
+    assert "Done" in result.answer
     # routing + the closing sentence
     assert len(llm.calls) >= 2
 
@@ -281,15 +281,15 @@ from phoneagent.core.agent import _parse_plan  # noqa: E402
 
 PLAN_JSON = """```json
 [
-  {"step": 1, "subtask": "打开 WLAN", "app": "设置"},
-  {"step": 2, "subtask": "查看蓝牙设备", "app": "设置"}
+  {"step": 1, "subtask": "Open WLAN", "app": "Settings"},
+  {"step": 2, "subtask": "ViewBluetoothDevice", "app": "Settings"}
 ]
 ```"""
 
 
 def test_parse_plan_handles_code_fences_and_junk():
     steps = _parse_plan(PLAN_JSON)
-    assert len(steps) == 2 and steps[0]["app"] == "设置"
+    assert len(steps) == 2 and steps[0]["app"] == "Settings"
     assert _parse_plan("no json here") == []
     assert _parse_plan('[{"subtask": "x"}]') == [{"subtask": "x"}]
 
@@ -308,7 +308,7 @@ def test_multi_app_task_is_decomposed_and_run_per_subtask():
         vision_responses=['Action: finish("first done")', 'Action: finish("second done")'],
     )
     agent = PhoneAgent(device, maps, llm, config=AgentConfig(max_rounds=3), sleep=lambda _s: None)
-    result = agent.run("先打开 WLAN 再看蓝牙")
+    result = agent.run("先Open WLAN [CH]Bluetooth")
 
     assert result.ok
     assert result.reason == "planner"
@@ -336,14 +336,14 @@ def test_an_unlaunchable_app_fails_with_a_reason_not_a_retry_loop():
     from phoneagent.devices.base import LaunchRefused
 
     device = MockDevice()
-    llm = MockLLM(["launch(日历)", "launch(日历)", "launch(日历)"])
+    llm = MockLLM(["launch([CH])", "launch([CH])", "launch([CH])"])
     agent = _agent(device, llm)
 
     def refuse(_task):
         raise LaunchRefused("com.android.calendar", "singleTask")
 
     agent._run_layers = refuse            # pretend every layer tried to launch
-    result = agent.run("明天早上七点叫我")
+    result = agent.run("[CH]")
 
     assert not result.ok
     assert result.reason == "unlaunchable"
@@ -378,11 +378,11 @@ def test_refusing_to_look_gets_one_nudge():
     """The display has no status bar, so "I cannot see the time" is not an answer."""
     from phoneagent.core.agent import PhoneAgent
 
-    assert PhoneAgent._asked_question("现在几点了？")
-    assert PhoneAgent._asked_question("手机还剩多少电量")
-    assert not PhoneAgent._asked_question("打开蓝牙设置")
-    assert PhoneAgent._refuses("无法通过设置应用获取当前时间")
-    assert not PhoneAgent._refuses("已打开蓝牙设置页面")
+    assert PhoneAgent._asked_question("[CH]？")
+    assert PhoneAgent._asked_question("Phone[CH]Battery Level")
+    assert not PhoneAgent._asked_question("OpenBluetoothSettings")
+    assert PhoneAgent._refuses("[CH]SettingsApp[CH]")
+    assert not PhoneAgent._refuses("已OpenBluetoothSettingsPage")
 
 
 def test_the_nudge_is_sent_once_then_the_answer_is_accepted():
@@ -392,16 +392,16 @@ def test_the_nudge_is_sent_once_then_the_answer_is_accepted():
     # refuse, then refuse again: the second one is accepted so a model that
     # really cannot see it is not trapped in a loop
     llm = MockLLM(vision_responses=[
-        "finish(无法通过当前屏幕获取时间)",
-        "finish(仍然无法获取)",
+        "finish([CH]Screen[CH])",
+        "finish([CH])",
     ])
     agent = _agent(device, llm, macro_enabled=False, planner_enabled=False)
-    result = agent.run("现在几点了？")
+    result = agent.run("[CH]？")
 
     kinds = [step.kind for step in agent.steps]
     assert "verify" in kinds            # the refusal was recorded
     assert result.ok
-    assert "无法" in result.answer
+    assert "[CH]" in result.answer
 
 
 def test_a_refusal_is_nudged_even_when_the_task_is_an_instruction():
@@ -409,9 +409,9 @@ def test_a_refusal_is_nudged_even_when_the_task_is_an_instruction():
     from phoneagent.core.llm import MockLLM
 
     device = MockDevice()
-    llm = MockLLM(vision_responses=["finish(无法打开)"] * 3)
+    llm = MockLLM(vision_responses=["finish([CH]Open)"] * 3)
     agent = _agent(device, llm, macro_enabled=False, planner_enabled=False)
-    agent.run("打开蓝牙设置")
+    agent.run("OpenBluetoothSettings")
     assert agent._refusal_nudged
     assert [s.kind for s in agent.steps].count("verify") == 1
 
@@ -422,14 +422,14 @@ def test_a_router_that_cannot_see_hands_over_instead_of_answering():
 
     device = MockDevice()
     llm = MockLLM(
-        text_responses=["FINISH: 无法通过设置应用直接获取当前时间"],
-        vision_responses=["finish(现在是19点53分)"],
+        text_responses=["FINISH: [CH]SettingsApp[CH]"],
+        vision_responses=["finish([CH]19click53minute)"],
     )
     agent = _agent(device, llm)
-    result = agent.run("现在几点了？")
+    result = agent.run("[CH]？")
 
     assert result.ok
-    assert "19点53分" in result.answer
+    assert "19click53minute" in result.answer
     assert any(step.kind == "vlm" or step.kind == "finish" for step in agent.steps)
 
 
@@ -437,13 +437,13 @@ def test_a_loop_reports_what_repeated():
     from phoneagent.core.llm import MockLLM
 
     device = MockDevice()
-    llm = MockLLM(vision_responses=["launch(时钟)"] * 6)
+    llm = MockLLM(vision_responses=["launch([CH])"] * 6)
     agent = _agent(device, llm, macro_enabled=False, planner_enabled=False)
-    result = agent.run("现在几点了？")
+    result = agent.run("[CH]？")
 
     assert not result.ok
     assert result.reason == "loop"
-    assert "同一个动作" in result.answer
+    assert "[CH]" in result.answer
     assert "launch" in result.answer
 
 
@@ -473,8 +473,8 @@ class _SpendDevice(MockDevice):
 
 
 _ORDER_SCREEN = (
-    '<?xml version="1.0"?><hierarchy><node text="提交订单" bounds="[40,2400][600,2500]" '
-    'package="com.example.shop" /><node text="合计 ¥ 299.00" bounds="[40,2200][600,2300]" '
+    '<?xml version="1.0"?><hierarchy><node text="[CH]Order" bounds="[40,2400][600,2500]" '
+    'package="com.example.shop" /><node text="[CH] ¥ 299.00" bounds="[40,2200][600,2300]" '
     'package="com.example.shop" /></hierarchy>'
 )
 
@@ -484,46 +484,46 @@ def test_a_label_tap_that_spends_money_asks_first():
 
     def ask(question):
         asked.append(question)
-        return "取消"
+        return "Cancel"
 
     device = _SpendDevice(_ORDER_SCREEN)
     agent = _agent(device, MockLLM([]), ask=ask,
                    macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("tap_text", ["提交订单"]) is False
+    assert agent._execute_action("tap_text", ["[CH]Order"]) is False
     assert device.tapped == []                    # nothing was pressed
     assert asked and "¥" in asked[0]              # the amount is in the question
 
 
 def test_approving_the_question_lets_the_tap_happen():
     device = _SpendDevice(_ORDER_SCREEN)
-    agent = _agent(device, MockLLM([]), ask=lambda _q: "继续",
+    agent = _agent(device, MockLLM([]), ask=lambda _q: "Continue",
                    macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("tap_text", ["提交订单"]) is True
-    assert device.tapped == ["提交订单"]
+    assert agent._execute_action("tap_text", ["[CH]Order"]) is True
+    assert device.tapped == ["[CH]Order"]
 
 
 def test_autonomous_mode_does_not_ask():
     asked = []
     device = _SpendDevice(_ORDER_SCREEN)
-    agent = _agent(device, MockLLM([]), ask=lambda q: asked.append(q) or "取消",
+    agent = _agent(device, MockLLM([]), ask=lambda q: asked.append(q) or "Cancel",
                    macro_enabled=False, planner_enabled=False, autonomous=True)
-    assert agent._execute_action("tap_text", ["提交订单"]) is True
+    assert agent._execute_action("tap_text", ["[CH]Order"]) is True
     assert asked == []
 
 
 def test_an_ordinary_tap_never_asks():
     asked = []
     device = _SpendDevice(_ORDER_SCREEN)
-    agent = _agent(device, MockLLM([]), ask=lambda q: asked.append(q) or "取消",
+    agent = _agent(device, MockLLM([]), ask=lambda q: asked.append(q) or "Cancel",
                    macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("tap_text", ["返回"]) is True
+    assert agent._execute_action("tap_text", ["Back"]) is True
     assert asked == []
 
 
 def test_nobody_to_ask_means_no():
     device = _SpendDevice(_ORDER_SCREEN)
     agent = _agent(device, MockLLM([]), macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("tap_text", ["立即购买"]) is False
+    assert agent._execute_action("tap_text", ["[CH]Purchase"]) is False
     assert device.tapped == []
 
 
@@ -556,43 +556,43 @@ def test_hand_over_moves_the_app_asks_and_brings_it_back():
 
     def ask(question):
         asked.append(question)
-        return "好了"
+        return "[CH]"
 
     agent = _agent(device, MockLLM([]), ask=ask,
                    macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("hand_over", ["输入支付密码"]) is True
+    assert agent._execute_action("hand_over", ["InputPaymentPassword"]) is True
     assert device.handed == ["com.example.bank"]      # put on the user's screen
     assert device.launched == ["com.example.bank"]    # and taken back
-    assert "输入支付密码" in asked[0]
+    assert "InputPaymentPassword" in asked[0]
 
 
 def test_hand_over_that_the_user_cancels_reports_failure():
     device = _HandoverDevice()
-    agent = _agent(device, MockLLM([]), ask=lambda _q: "取消",
+    agent = _agent(device, MockLLM([]), ask=lambda _q: "Cancel",
                    macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("hand_over", ["登录"]) is False
+    assert agent._execute_action("hand_over", ["Login"]) is False
     assert device.launched == ["com.example.bank"]     # still taken back
 
 
 def test_hand_over_without_a_user_is_refused():
     device = _HandoverDevice()
     agent = _agent(device, MockLLM([]), macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("hand_over", ["登录"]) is False
+    assert agent._execute_action("hand_over", ["Login"]) is False
     assert device.handed == []
 
 
 def test_a_task_about_an_unmapped_app_skips_macro_routing():
-    """The router will happily map "登录淘宝" onto the WLAN operation."""
+    """The router will happily map "Login[CH]" onto the WLAN operation."""
     from phoneagent.core.agent import AgentConfig, PhoneAgent
 
     device = MockDevice()
     # one text reply would have been the router; there must be none
-    llm = MockLLM(text_responses=["OP: wlan"], vision_responses=["finish(打不开淘宝)"])
+    llm = MockLLM(text_responses=["OP: wlan"], vision_responses=["finish([CH])"])
     agent = PhoneAgent(device, [AppMap(MAP)], llm,
                        config=AgentConfig(max_rounds=3, planner_enabled=False),
                        sleep=lambda _s: None,
-                       known_apps={"淘宝": "com.taobao.taobao"})
-    result = agent.run("登录淘宝账号")
+                       known_apps={"[CH]": "com.taobao.taobao"})
+    result = agent.run("Login[CH]Account")
 
     kinds = [step.kind for step in agent.steps]
     assert "route" not in kinds and "macro" not in kinds
@@ -630,19 +630,19 @@ def test_an_app_on_the_user_display_becomes_a_hand_over():
 
     def ask(question):
         asked.append(question)
-        return "好了"
+        return "[CH]"
 
     agent = PhoneAgent(device, [AppMap(MAP)],
-                       MockLLM(vision_responses=["launch(淘宝)"] * 3),
+                       MockLLM(vision_responses=["launch([CH])"] * 3),
                        config=AgentConfig(max_rounds=4, macro_enabled=False,
                                           planner_enabled=False),
                        sleep=lambda _s: None, ask=ask,
-                       known_apps={"淘宝": "com.taobao.taobao"})
-    result = agent.run("登录淘宝账号")
+                       known_apps={"[CH]": "com.taobao.taobao"})
+    result = agent.run("Login[CH]Account")
 
-    assert asked and "淘宝" in asked[0]        # the user was asked
+    assert asked and "[CH]" in asked[0]        # the user was asked
     assert not result.ok
-    assert "只能在你自己的屏幕上" in result.answer   # and told why it stops
+    assert "[CH]Screenabove" in result.answer   # and told why it stops
 
 
 def test_hand_over_then_continue_when_the_app_comes_back():
@@ -651,26 +651,26 @@ def test_hand_over_then_continue_when_the_app_comes_back():
 
     device = _UserDisplayDevice(comes_back=True)
     agent = PhoneAgent(device, [AppMap(MAP)],
-                       MockLLM(vision_responses=["launch(淘宝)", "finish(已登录)"]),
+                       MockLLM(vision_responses=["launch([CH])", "finish(已Login)"]),
                        config=AgentConfig(max_rounds=4, macro_enabled=False,
                                           planner_enabled=False),
-                       sleep=lambda _s: None, ask=lambda _q: "好了",
-                       known_apps={"淘宝": "com.taobao.taobao"})
-    result = agent.run("登录淘宝账号")
+                       sleep=lambda _s: None, ask=lambda _q: "[CH]",
+                       known_apps={"[CH]": "com.taobao.taobao"})
+    result = agent.run("Login[CH]Account")
 
-    assert result.ok and "已登录" in result.answer
+    assert result.ok and "已Login" in result.answer
     assert any(step.kind == "handover" for step in agent.steps)
 
 
 def test_an_unknown_macro_target_is_reported_to_the_model():
     device = MockDevice()
     agent = _agent(device, MockLLM([]), macro_enabled=False, planner_enabled=False)
-    assert agent._execute_action("macro", ["登录"]) is False
+    assert agent._execute_action("macro", ["Login"]) is False
     assert any("no target" in line for line in agent.history)
 
 
 def test_a_single_task_app_is_not_handed_over_it_is_explained():
-    """天气 is singleTask: the app always opens on the user's display."""
+    """[CH] is singleTask: the app always opens on the user's display."""
     from phoneagent.core.agent import AgentConfig, PhoneAgent
     from phoneagent.core.llm import MockLLM
     from phoneagent.devices.base import NeedsHandover
@@ -681,20 +681,20 @@ def test_a_single_task_app_is_not_handed_over_it_is_explained():
 
     asked = []
     agent = PhoneAgent(Device(), [AppMap(MAP)],
-                       MockLLM(vision_responses=["launch(天气)"]),
+                       MockLLM(vision_responses=["launch([CH])"]),
                        config=AgentConfig(max_rounds=3, macro_enabled=False,
                                           planner_enabled=False),
                        sleep=lambda _s: None,
-                       ask=lambda q: asked.append(q) or "好了",
-                       known_apps={"天气": "com.miui.weather2"})
+                       ask=lambda q: asked.append(q) or "[CH]",
+                       known_apps={"[CH]": "com.miui.weather2"})
     agent._launch_modes = {"com.miui.weather2": 2}      # singleTask
 
-    result = agent.run("打开天气")
+    result = agent.run("Open[CH]")
 
     assert asked == []                                  # no pointless question
     assert not result.ok
     assert "singleTask" in result.answer
-    assert "浏览器" in result.answer                     # and a way forward
+    assert "[CH]" in result.answer                     # and a way forward
 
 
 # ---------------------------------------------------------------------------
@@ -740,7 +740,7 @@ def test_a_hybrid_task_runs_a_command_and_reports_it():
 def test_a_destructive_command_needs_a_yes():
     device = _ShellDevice()
     asked = []
-    agent = _agent(device, MockLLM([]), ask=lambda q: asked.append(q) or "取消",
+    agent = _agent(device, MockLLM([]), ask=lambda q: asked.append(q) or "Cancel",
                    macro_enabled=False, planner_enabled=False, shell_enabled=True)
     assert agent._execute_action("shell", ["pm uninstall com.example"]) is False
     assert device.commands == []
@@ -853,7 +853,7 @@ def test_an_app_that_keeps_escaping_is_reported_not_looped():
     with pytest.raises(_Stranded) as caught:
         agent._check_escape(2)
     assert device.launches == 1
-    assert "托管" in caught.value.answer
+    assert "[CH]" in caught.value.answer
 
 
 def test_tee_steps_forward_as_they_are_added():
@@ -874,12 +874,12 @@ def test_a_subtask_run_feeds_the_parent_list():
 
     parent = []
     sub = PhoneAgent(MockDevice(), [AppMap(MAP)],
-                     MockLLM(vision_responses=["tap(0.5, 0.5)", "finish(好了)"]),
+                     MockLLM(vision_responses=["tap(0.5, 0.5)", "finish([CH])"]),
                      config=AgentConfig(max_rounds=4, macro_enabled=False,
                                         planner_enabled=False),
                      sleep=lambda _s: None)
     sub.steps = _TeeSteps(parent)          # what _execute_plan wires up
-    sub.run("打开蓝牙设置")
+    sub.run("OpenBluetoothSettings")
 
     kinds = [step.kind for step in parent]
     assert "vlm" in kinds and "finish" in kinds
@@ -901,14 +901,14 @@ def test_a_pinned_app_is_never_launched_at_all():
 
     device = Device()
     agent = PhoneAgent(device, [AppMap(MAP)],
-                       MockLLM(vision_responses=["launch(京东)"]),
+                       MockLLM(vision_responses=["launch([CH])"]),
                        config=AgentConfig(max_rounds=3, macro_enabled=False,
                                           planner_enabled=False),
                        sleep=lambda _s: None,
-                       known_apps={"京东": "com.jingdong.app.mall"})
+                       known_apps={"[CH]": "com.jingdong.app.mall"})
     agent._launch_modes = {"com.jingdong.app.mall": 2}
 
-    result = agent.run("打开京东")
+    result = agent.run("Open[CH]")
 
     assert device.launches == []                  # never even tried
     assert not result.ok
@@ -931,14 +931,14 @@ def test_a_standard_app_is_not_refused_as_pinned():
 
     device = Device()
     agent = PhoneAgent(device, [AppMap(MAP)],
-                       MockLLM(vision_responses=["launch(设置)", "finish(好了)"]),
+                       MockLLM(vision_responses=["launch(Settings)", "finish([CH])"]),
                        config=AgentConfig(max_rounds=3, macro_enabled=False,
                                           planner_enabled=False),
                        sleep=lambda _s: None,
-                       known_apps={"设置": "com.android.settings"})
+                       known_apps={"Settings": "com.android.settings"})
     agent._launch_modes = {"com.android.settings": 0}          # standard
 
-    result = agent.run("打开设置")
+    result = agent.run("OpenSettings")
 
     assert device.launches == ["com.android.settings"], "standard apps must launch"
     assert "singleTask" not in (result.answer or "")
@@ -973,8 +973,8 @@ def test_a_captcha_stops_the_task_and_parks_the_app():
 
         def dump_ui(self):
             return ('<hierarchy>'
-                    '<node class="TextView" text="安全验证" bounds="[0,0][200,80]"/>'
-                    '<node class="TextView" text="请完成验证" bounds="[0,90][200,170]"/>'
+                    '<node class="TextView" text="SecurityVerify" bounds="[0,0][200,80]"/>'
+                    '<node class="TextView" text="请DoneVerify" bounds="[0,90][200,170]"/>'
                     '</hierarchy>')
 
         def hand_over(self, package):
@@ -989,10 +989,10 @@ def test_a_captcha_stops_the_task_and_parks_the_app():
                        sleep=lambda _s: None)
     agent._driving_package = "com.example.app"
 
-    result = agent.run("打开某页面")
+    result = agent.run("Open某Page")
 
     assert not result.ok
-    assert "安全验证" in (result.answer or "")
+    assert "SecurityVerify" in (result.answer or "")
     assert device.moved == ["com.example.app"]
     assert agent._challenge_until["com.example.app"] > 0
 
@@ -1008,7 +1008,7 @@ def test_an_app_that_asked_for_a_captcha_is_driven_by_screen(tmp_path):
     risk.record(path, app.package or "")
 
     device = MockDevice()
-    llm = MockLLM(text_responses=["OP: never"], vision_responses=["finish(用屏幕做的)"])
+    llm = MockLLM(text_responses=["OP: never"], vision_responses=["finish(用Screen[CH])"])
     agent = PhoneAgent(device, [app], llm,
                        config=AgentConfig(max_rounds=3, risk_path=path,
                                           macro_enabled=True, planner_enabled=False),
@@ -1027,11 +1027,11 @@ def test_tappable_targets_are_numbered_for_the_screenshot():
 
     xml = (
         '<hierarchy>'
-        '<node class="Button" clickable="true" text="蓝牙" '
+        '<node class="Button" clickable="true" text="Bluetooth" '
         'bounds="[100,200][300,320]" package="com.android.settings" />'
-        '<node class="TextView" text="说明" bounds="[100,400][300,460]" '
+        '<node class="TextView" text="Instruction" bounds="[100,400][300,460]" '
         'package="com.android.settings" />'
-        '<node class="ImageButton" clickable="true" content-desc="更多" '
+        '<node class="ImageButton" clickable="true" content-desc="[CH]" '
         'bounds="[900,1200][1000,1290]" package="com.android.settings" />'
         '</hierarchy>'
     )
@@ -1040,10 +1040,10 @@ def test_tappable_targets_are_numbered_for_the_screenshot():
     marks = PhoneAgent._marks(agent, xml)
 
     assert [m["i"] for m in marks] == [1, 2]
-    assert marks[0]["label"] == "蓝牙"
-    assert marks[1]["label"] == "更多"
+    assert marks[0]["label"] == "Bluetooth"
+    assert marks[1]["label"] == "[CH]"
     # a plain label is not a target: numbering it would offer an unusable index
-    assert all(m["label"] != "说明" for m in marks)
+    assert all(m["label"] != "Instruction" for m in marks)
 
 
 def test_three_different_taps_are_not_a_loop():
@@ -1064,15 +1064,15 @@ def test_the_notification_shade_is_recognised():
     from phoneagent.core.agent import PhoneAgent
 
     # Measured: when the shade is open the app's window is not in the tree at
-    # all, so "nothing but chrome" is the test. The 通知： labels are on the
+    # all, so "nothing but chrome" is the test. The Notification： labels are on the
     # status bar and appear with the shade closed too, so they cannot be used.
     shade = (
-        '<hierarchy><node package="com.android.systemui" text="拼多多"/>'
-        '<node package="com.android.systemui" text="小米商城通知："/>'
+        '<hierarchy><node package="com.android.systemui" text="[CH]"/>'
+        '<node package="com.android.systemui" text="[CH]Notification："/>'
         '</hierarchy>'
     )
     assert PhoneAgent._shade_is_open(shade) is True
-    assert PhoneAgent._shade_is_open('<node package="com.xingin.xhs" text="发现"/>') is False
+    assert PhoneAgent._shade_is_open('<node package="com.xingin.xhs" text="[CH]"/>') is False
 
 
 def test_the_shade_is_detected_from_a_real_dump():
@@ -1080,13 +1080,13 @@ def test_the_shade_is_detected_from_a_real_dump():
     from phoneagent.core.agent import PhoneAgent
 
     shade = (
-        '<hierarchy><node package="com.android.systemui" text="拼多多"/>'
-        '<node package="com.android.systemui" text="只要1分钱！试试你就知道了"/>'
+        '<hierarchy><node package="com.android.systemui" text="[CH]"/>'
+        '<node package="com.android.systemui" text="[CH]1[CH]！[CH]"/>'
         '</hierarchy>'
     )
     assert PhoneAgent._shade_is_open(shade) is True
     assert PhoneAgent._shade_is_open(
-        '<node package="com.xingin.xhs" text="发现"/>'
+        '<node package="com.xingin.xhs" text="[CH]"/>'
         '<node package="com.android.systemui" text="17:49"/>'
     ) is False
 
@@ -1098,32 +1098,32 @@ def test_history_carries_the_outcome_and_the_ledger():
 
     agent = PhoneAgent(MockDevice(), [], MockLLM([]),
                        config=AgentConfig(max_rounds=6), sleep=lambda _s: None)
-    agent._remember_step("launch(小红书)", True, "launch", ["小红书"])
-    agent._remember_step("type(香港)", False, "type", ["香港"])
+    agent._remember_step("launch([CH])", True, "launch", ["[CH]"])
+    agent._remember_step("type([CH])", False, "type", ["[CH]"])
 
     block = agent._ledger_block(3)
-    assert "第 3/6 步" in block and "还剩 3 步" in block
-    assert "已完成：launch(小红书)" in block
-    assert "已失败：type(香港)" in block
+    assert "第 3/6 步" in block and "[CH] 3 步" in block
+    assert "已Done：launch([CH])" in block
+    assert "已Failed：type([CH])" in block
 
 
 def test_a_run_that_achieved_something_is_partial_not_failed():
-    """Opened the page but never typed: 部分完成, not 失败."""
+    """Opened the page but never typed: [CH]Done, not Failed."""
     from phoneagent.core.agent import AgentConfig, PhoneAgent, Step
     from phoneagent.core.llm import MockLLM
 
     agent = PhoneAgent(MockDevice(), [], MockLLM([]),
                        config=AgentConfig(max_rounds=6), sleep=lambda _s: None)
     agent.steps = [
-        Step(1, "macro", "搜索", "macro ok (3/3 steps)"),
+        Step(1, "macro", "Search", "macro ok (3/3 steps)"),
         Step(2, "vlm", "launch", "ok"),
         Step(3, "vlm", "type", "ok"),
     ]
 
-    assert agent._achieved() == ["打开了目标页面", "启动过 App", "输入过文字"]
-    answer = agent._partial_answer("还没搜出结果。")
-    assert answer.startswith("做到了一半：")
-    assert "打开了目标页面" in answer and answer.endswith("还没搜出结果。")
+    assert agent._achieved() == ["Open[CH]Page", "[CH] App", "Input[CH]"]
+    answer = agent._partial_answer("[CH]。")
+    assert answer.startswith("[CH]：")
+    assert "Open[CH]Page" in answer and answer.endswith("[CH]。")
 
 
 def test_nothing_achieved_stays_a_plain_failure():
@@ -1133,7 +1133,7 @@ def test_nothing_achieved_stays_a_plain_failure():
     agent = PhoneAgent(MockDevice(), [], MockLLM([]),
                        config=AgentConfig(max_rounds=6), sleep=lambda _s: None)
     assert agent._achieved() == []
-    assert agent._partial_answer("没动。") == "没动。"
+    assert agent._partial_answer("[CH]。") == "[CH]。"
 
 
 def test_running_out_of_steps_after_doing_something_is_partial():
@@ -1144,18 +1144,18 @@ def test_running_out_of_steps_after_doing_something_is_partial():
     device = MockDevice()
     # typing succeeds on the mock device; the taps after it do not matter
     llm = MockLLM(text_responses=["keep going"],
-                  vision_responses=['Action: type("香港")'] +
+                  vision_responses=['Action: type("[CH]")'] +
                                    ['Action: tap(0.5, 0.5)'] * 12)
     agent = PhoneAgent(device, [], llm,
                        config=AgentConfig(max_rounds=3, macro_enabled=False,
                                           planner_enabled=False),
                        sleep=lambda _s: None)
-    result = agent.run("随便点几下")
+    result = agent.run("[CH]")
 
     assert result.ok is False
     assert result.reason == "partial"
-    assert result.answer.startswith("做到了一半：")
-    assert "输入过文字" in result.answer
+    assert result.answer.startswith("[CH]：")
+    assert "Input[CH]" in result.answer
 
 
 def test_a_finished_subtask_counts_as_an_achievement():
@@ -1165,8 +1165,8 @@ def test_a_finished_subtask_counts_as_an_achievement():
 
     agent = PhoneAgent(MockDevice(), [], MockLLM([]),
                        config=AgentConfig(max_rounds=6), sleep=lambda _s: None)
-    agent.steps = [Step(1, "subtask", "小红书", "ok: 搜索香港旅游攻略")]
-    assert agent._achieved() == ["完成了 1 个子任务"]
+    agent.steps = [Step(1, "subtask", "[CH]", "ok: Search[CH]")]
+    assert agent._achieved() == ["Done 1 [CH]"]
 
 
 def test_a_subtask_spends_from_the_parent_budget():
@@ -1222,8 +1222,8 @@ def test_a_single_app_task_is_not_split_into_subtasks():
     from phoneagent.core.agent import PhoneAgent
 
     agent = PhoneAgent.__new__(PhoneAgent)
-    agent.maps = [type("M", (), {"app_name": "小红书", "package": "com.xingin.xhs"})(),
-                  type("M", (), {"app_name": "微博", "package": "com.sina.weibo"})()]
+    agent.maps = [type("M", (), {"app_name": "[CH]", "package": "com.xingin.xhs"})(),
+                  type("M", (), {"app_name": "[CH]", "package": "com.sina.weibo"})()]
     agent._depth = 0
     agent.config = type("C", (), {"planner_enabled": True})()
 
@@ -1231,9 +1231,9 @@ def test_a_single_app_task_is_not_split_into_subtasks():
         lower = task.lower()
         return [m for m in agent.maps if m.app_name.lower() in lower]
 
-    assert len(named("看小红书我的页面有几个粉丝")) == 1        # single app
-    assert len(named("先看小红书，再去微博")) == 2               # spans apps
-    assert len(named("帮我看看今天的新闻")) == 0                 # names no app
+    assert len(named("[CH]MyPage[CH]")) == 1        # single app
+    assert len(named("[CH]，[CH]")) == 2               # spans apps
+    assert len(named("[CH]")) == 0                 # names no app
 
 
 def _map_for_routing(tmp_path):
@@ -1242,15 +1242,15 @@ def _map_for_routing(tmp_path):
 
     elements = lambda *texts: [{"text": t, "center": [0.5, 0.5], "fixed": True} for t in texts]
     data = {
-        "app": "小红书", "package": "com.xingin.xhs", "screen_w": 1280, "screen_h": 2772,
+        "app": "[CH]", "package": "com.xingin.xhs", "screen_w": 1280, "screen_h": 2772,
         "screens": [
-            {"id": "screen_0", "selected": ["首页"], "elements": [
+            {"id": "screen_0", "selected": ["Home"], "elements": [
                 {"text": "我", "center": [0.9, 0.95], "fixed": True, "leads_to": "screen_1"},
-                {"text": "搜索", "center": [0.5, 0.03], "fixed": True, "leads_to": "screen_2"},
-                {"text": "笔记标题一", "center": [0.5, 0.3], "fixed": True},
-            ] + elements(*[f"卡片{i}" for i in range(40)])},
-            {"id": "screen_1", "selected": ["我"], "elements": elements("粉丝", "关注")},
-            {"id": "screen_2", "selected": ["搜索"], "elements": elements("搜索框")},
+                {"text": "Search", "center": [0.5, 0.03], "fixed": True, "leads_to": "screen_2"},
+                {"text": "[CH]", "center": [0.5, 0.3], "fixed": True},
+            ] + elements(*[f"Lag片{i}" for i in range(40)])},
+            {"id": "screen_1", "selected": ["我"], "elements": elements("[CH]", "[CH]")},
+            {"id": "screen_2", "selected": ["Search"], "elements": elements("Search框")},
         ],
         "screen_macros": {},
     }
@@ -1271,9 +1271,9 @@ def test_the_router_is_shown_a_shortlist_not_the_whole_map(tmp_path):
     agent.log = lambda *a, **k: None
     app_map = _map_for_routing(tmp_path)
 
-    catalog = agent._route_catalog("看小红书我页面有几个粉丝", app_map)
+    catalog = agent._route_catalog("[CH]Page[CH]", app_map)
     assert "我" in catalog
-    assert "卡片39" not in catalog, "content the task never mentions stays out"
+    assert "Lag片39" not in catalog, "content the task never mentions stays out"
 
 
 def test_the_shortlist_falls_back_to_everything(tmp_path):
@@ -1289,19 +1289,19 @@ def test_the_shortlist_falls_back_to_everything(tmp_path):
     agent.log = lambda *a, **k: None
     app_map = _map_for_routing(tmp_path)
 
-    catalog = agent._route_catalog("完全无关的一句话", app_map)
-    assert "卡片39" in catalog, "no shortlist means the full catalogue, not an empty one"
+    catalog = agent._route_catalog("[CH]", app_map)
+    assert "Lag片39" in catalog, "no shortlist means the full catalogue, not an empty one"
 
 
 def test_the_search_term_is_taken_from_the_task():
     from phoneagent.core.agent import PhoneAgent
 
     cases = {
-        "在小红书搜索『深圳火锅』，告诉我最上面那条笔记的标题": "深圳火锅",
-        "去小红书搜一下 附近的火锅 然后告诉我": "附近的火锅",
-        "搜索「港大 游览」": "港大 游览",
-        "看看设置里的电池容量": "",
-        "在小红书搜": "",
+        "[CH]Search『[CH]』，[CH]": "[CH]",
+        "[CH] [CH] [CH]": "[CH]",
+        "Search「[CH] [CH]」": "[CH] [CH]",
+        "[CH]Settings[CH]Battery[CH]": "",
+        "[CH]": "",
     }
     for task, expected in cases.items():
         assert PhoneAgent._explicit_query(task) == expected, task
@@ -1310,18 +1310,18 @@ def test_the_search_term_is_taken_from_the_task():
 def test_a_carried_name_is_used_instead_of_a_generic_word():
     """Cross-app hand-off: the next subtask must use what the last one found.
 
-    Measured on 小红书 → 携程: the second subtask read "用记下的酒店名称搜索酒店"
-    and typed 酒店 into Ctrip, because the value only existed in the previous
+    Measured on [CH] → [CH]: the second subtask read "[CH]Search[CH]"
+    and typed [CH] into Ctrip, because the value only existed in the previous
     subtask's answer.
     """
     from phoneagent.core.agent import PhoneAgent
 
-    carry = ("已打开第一篇笔记《香港避雷攻略》。文中提到的第一家住宿是「重庆大厦」，"
-             "距离尖沙咀站步行 3 分钟。")
-    assert PhoneAgent._carried_entity(carry) == "重庆大厦"
-    assert PhoneAgent._explicit_query("用记下来的酒店名称搜索酒店", carry) == "重庆大厦"
+    carry = ("已Open[CH]《[CH]》。[CH]「[CH]」，"
+             "[CH] 3 [CH]。")
+    assert PhoneAgent._carried_entity(carry) == "[CH]"
+    assert PhoneAgent._explicit_query("[CH]Search[CH]", carry) == "[CH]"
     # without a carried value nothing changes
-    assert PhoneAgent._explicit_query("在小红书里搜索「香港大学附近酒店推荐」") == "香港大学附近酒店推荐"
+    assert PhoneAgent._explicit_query("[CH]Search「[CH]」") == "[CH]"
 
 
 def test_the_watchdog_flags_a_run_that_stops_making_progress():

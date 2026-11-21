@@ -78,11 +78,11 @@ def test_unknown_edge_target(tmp_path):
 
 def test_personal_data_is_an_error_but_hotlines_are_not(tmp_path):
     data = yaml.safe_load(yaml.safe_dump(GOOD))
-    data["screens"][0]["elements"][1]["text"] = "手机号 13800001111"
+    data["screens"][0]["elements"][1]["text"] = "Phone号 13800001111"
     errors, _ = validate_map(_write(tmp_path, data))
     assert any(e["code"] == "E_PII" for e in errors)
 
-    data["screens"][0]["elements"][1]["text"] = "客服 400-100-3399"
+    data["screens"][0]["elements"][1]["text"] = "Customer Service 400-100-3399"
     errors, _ = validate_map(_write(tmp_path, data))
     assert not any(e["code"] == "E_PII" for e in errors)
 

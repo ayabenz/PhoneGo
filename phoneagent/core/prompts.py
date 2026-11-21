@@ -93,7 +93,7 @@ Spatial reference (approximate):
 7. launch(app_name: str)
    Open an app by name. Choose from the "Available Apps" list shown in the context.
    ✅ launch("Safari")
-   ✅ launch("备忘录")
+   ✅ launch("[CH]")
 
 8. wait(interval: int)
    Wait N seconds (1–10).
@@ -116,9 +116,9 @@ Spatial reference (approximate):
 - If stuck, try a different approach.
 - If the task asks for something the current screen does not show (the time,
   the battery level, a setting's value), open the screen that shows it first
-  (the clock app, Settings → 电池, the settings page) and answer from there.
+  (the clock app, Settings → Battery, the settings page) and answer from there.
   This display has no status bar, so "check the status bar" is never an answer.
-  Never answer 无法获取/看不到 without having opened a page that would show it.
+  Never answer None[CH]/[CH] without having opened a page that would show it.
 - The user message starts with today's date and time. Any answer that mentions
   a date -- "tomorrow", "next Monday", "in three days" -- must be computed from
   that line, not from what you remember or from a date printed on the page.
@@ -128,7 +128,7 @@ Spatial reference (approximate):
   screen. Never run a command that changes the phone in a way the user did not
   ask for -- that includes uninstalling, clearing data and changing settings.
 - Stay in the app you are already in when it holds what the user asked about.
-  A request that names an app ("在小红书搜索…") is about that app's content, and
+  A request that names an app ("[CH]Search…") is about that app's content, and
   its own search results are the answer -- do not jump to the browser to look
   up the same thing, and do not leave the app mid-task. The browser is for
   information that is only on the web (weather, opening hours, a company page)
@@ -165,7 +165,7 @@ in the other app -- the two halves of the task never touched.
 finish() always takes a sentence, and that sentence is what the user reads in
 the chat -- there is nothing else. It must answer their words: say what you
 did, what you saw, and where things now stand, in one or two short sentences.
-"完成" alone is not an answer. Answer in the language the user wrote the task
+"Done" alone is not an answer. Answer in the language the user wrote the task
 in: an English instruction gets an English answer, even when the app on screen is
 Chinese and everything you read from it is Chinese. If the task was to open
 something, say the
@@ -223,7 +223,7 @@ DYNAMIC|element text
 
 Example:
 STABLE|Following
-DYNAMIC|我在X上也是有1.1万人看过了
+DYNAMIC|[CH]X[CH]YesYes1.1[CH]
 STABLE|Home
 STABLE|Search
 
@@ -244,8 +244,8 @@ For each element below, output exactly one JSON object per line with:
 
 Rules:
 - aliases: common synonyms, alternate names, Chinese↔English equivalents, abbreviation expansions.
-  Examples: "Wi-Fi" → ["WiFi", "wireless", "无线", "wifi network"]
-           "Bluetooth" → ["BT", "蓝牙", "bluetooth settings"]
+  Examples: "Wi-Fi" → ["WiFi", "wireless", "None线", "wifi network"]
+           "Bluetooth" → ["BT", "Bluetooth", "bluetooth settings"]
 - semantic_type: what kind of UI element this is.
   - toggle: a switch/checkbox (tap changes state)
   - button: an action button
@@ -380,9 +380,9 @@ Python regex patterns matching elements that are clearly dynamic content. Use ^.
 - For UUID strings like "F27B271D-BBA6-4579-AE69-FD17E446C660": "^[0-9A-F]{{8}}-[0-9A-F]{{4}}-[0-9A-F]{{4}}-[0-9A-F]{{4}}-[0-9A-F]{{12}}$" (case-insensitive)
 - For like/comment counts like "1,159" "9,918": "^[\\d,]+$"
 - For image indicators like "1/2" "3/4": "^\\d+/\\d+$"
-- For distance like "1.8km": "^\\d+[.\\d]*\\s*(km|m|mi|公里|米)$"
-- For relative time like "3小时前": "^\\d+\\s*(分钟|小时|天)前$"
-- For stat labels like "8,648 赞": "^[\\d,]+\\s*(赞|评论|收藏|粉丝|看过)$"
+- For distance like "1.8km": "^\\d+[.\\d]*\\s*(km|m|mi|[CH]|米)$"
+- For relative time like "3[CH]": "^\\d+\\s*([CH]|[CH]|天)front$"
+- For stat labels like "8,648 赞": "^[\\d,]+\\s*(赞|[CH]|[CH]|[CH]|[CH])$"
 - For user handles like "@username": "^@\\w+$"
 - For hashtags like "#topic": "^#\\S+$"
 - For price like "¥199": "^[¥$]\\d+[.\\d]*$"
@@ -394,7 +394,7 @@ CRITICAL: Only output a pattern if the element list contains AT LEAST 3 instance
 
 ## preserve_navigation
 Elements that look like they might be dynamic (e.g. short text, could match some patterns) but are actually fixed navigation UI that must be kept. These elements will NEVER be filtered, even if they match a dynamic pattern. Typically includes:
-- Tab bar items (e.g. "Home", "Search", "Profile", "首页", "发现")
+- Tab bar items (e.g. "Home", "Search", "Profile", "Home", "[CH]")
 - Navigation menu items
 - Fixed category selectors
 
@@ -417,12 +417,12 @@ SANITIZE_CLASSIFY_PROMPT = """You are a privacy auditor reviewing a mobile app m
 Context for each item includes the screen description(s) where it appears — use this to distinguish personal data from system UI labels.
 
 ## Classifications
-- name:      A person's name (e.g. "蒋莉", "Yangqin")
+- name:      A person's name (e.g. "[CH]", "Yangqin")
 - email:     An email address
 - phone:     A phone number
 - device:    A specific device model or personal device name (e.g. "iPad (2)", "iPhone 17 Pro")
-- app:       A specific app name installed on the device (e.g. "WeChat", "小红书")
-- region:    A geographic region or carrier reflecting user settings (e.g. "香港", "中国电信")
+- app:       A specific app name installed on the device (e.g. "WeChat", "[CH]")
+- region:    A geographic region or carrier reflecting user settings (e.g. "[CH]", "[CH]")
 - account:   An account identifier or username
 - skip:      A system UI label, settings option, or fixed navigation — NOT personal data
 
@@ -459,8 +459,8 @@ TASK_DECOMPOSE_PROMPT = """You are a mobile task planner that decomposes complex
 Output a JSON array where each step targets ONE app:
 ```json
 [
-  {{"step": 1, "subtask": "search for bluetooth earbuds", "app": "小红书"}},
-  {{"step": 2, "subtask": "check price on JD", "app": "京东"}}
+  {{"step": 1, "subtask": "search for bluetooth earbuds", "app": "[CH]"}},
+  {{"step": 2, "subtask": "check price on JD", "app": "[CH]"}}
 ]
 ```
 
@@ -473,7 +473,7 @@ Output a JSON array where each step targets ONE app:
   you found: never plan a step that opens a notes app or writes a file
 - When a later step needs a value that an earlier step found, say so in that
   step's subtask and quote the value once it is known (e.g. "search
-  「重庆大厦」 in 携程"); never leave it as "the name you found"
+  「[CH]」 in [CH]"); never leave it as "the name you found"
 - Output ONLY the JSON array, no other text"""
 
 
@@ -492,7 +492,7 @@ COORDINATE_VLM_PROMPT_TOOLS = (
     COORDINATE_VLM_PROMPT.split("## Output Format")[0].rstrip() + "\n\n" + _TOOL_OUTPUT_FORMAT
 )
 
-#: Appended in 自动 mode, where a crawled map is available. The macro tool is
+#: Appended in Auto mode, where a crawled map is available. The macro tool is
 #: only offered when maps exist, so this section is only shown then.
 MAPS_SECTION = """## Known paths (use them first)
 {catalog}
@@ -503,7 +503,7 @@ on that list, call macro(name).
 A macro replays taps recorded on one particular screen. If the screen has moved
 on, the macro fails -- that is a signal to look again, not to retry it."""
 
-#: Appended in 看图 mode: no map, no macros, so the only strategy is the screen.
+#: Appended in [CH] mode: no map, no macros, so the only strategy is the screen.
 VISION_SECTION = """## No map here
 You are driving this app by sight alone -- there is no map and no macro for it.
 That is fine, but it changes the plan:
@@ -550,7 +550,7 @@ really there, or say plainly that it did not work. Do not repeat the claim."""
 
 #: Sent after a page was moved back from the user's screen. Left alone, the
 #: model reads the move as "the app is gone" and launches it again, which on
-#: 小红书 re-opens the search page on the phone's screen and starts the cycle
+#: [CH] re-opens the search page on the phone's screen and starts the cycle
 #: over (measured: three launches, four pull-backs, then the launch cap).
 PULL_NOTICE = """## Notice
 That page had opened on the user's own screen; it is back on your display now,
@@ -571,9 +571,9 @@ the numbered targets in the screenshot and pick a different one."""
 #: display it works on has no status bar, so the fix is to open the page that
 #: shows the answer -- not to look harder at the current one.
 SEE_IT_FIRST_NOTICE = (
-    "你先回答了『看不到』。这块屏上没有状态栏，只有你打开的那个 App。\n"
-    "打开能看到答案的页面再去回答：时间 → 时钟 App，电量 → 设置 → 电池，"
-    "其他设置值 → 对应的设置页。然后再次调用 finish() 给出答案。"
+    "[CH]『[CH]』。[CH]YesStatus Bar，只Yes你Open[CH] App。\n"
+    "Open[CH]Page[CH]：[CH] → [CH] App，Battery Level → Settings → Battery，"
+    "[CH]Settings值 → [CH]Settings页。[CH] finish() [CH]。"
 )
 
 #: Nothing readable on the display, so no claim can be checked.

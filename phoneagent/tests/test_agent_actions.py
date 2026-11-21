@@ -43,8 +43,8 @@ def test_tap_text_uses_the_accessibility_action():
     device = ActionDevice(accepts=True)
     agent = _agent(device)
 
-    assert agent._execute_action("tap_text", ["蓝牙"])
-    assert device.actions == [("tap_text", "蓝牙")]
+    assert agent._execute_action("tap_text", ["Bluetooth"])
+    assert device.actions == [("tap_text", "Bluetooth")]
     # the coordinate path must not have run
     assert device.called("tap") == []
 
@@ -53,13 +53,13 @@ def test_tap_text_falls_back_to_coordinates_when_the_action_is_refused():
     device = ActionDevice(accepts=False)
     device.dump_ui = lambda: (
         '<hierarchy rotation="0">'
-        '<node text="蓝牙" bounds="[10,10][110,60]" clickable="true"/>'
+        '<node text="Bluetooth" bounds="[10,10][110,60]" clickable="true"/>'
         "</hierarchy>"
     )
     agent = _agent(device)
 
-    assert agent._execute_action("tap_text", ["蓝牙"])
-    assert device.actions == [("tap_text", "蓝牙")]  # tried first
+    assert agent._execute_action("tap_text", ["Bluetooth"])
+    assert device.actions == [("tap_text", "Bluetooth")]  # tried first
     assert device.called("tap") == [("tap", (60, 35), {})]
 
 
@@ -83,8 +83,8 @@ def test_named_arguments_keep_the_value_not_the_key():
     """Models write finish(message="done"); the answer is "done"."""
     from phoneagent.core.agent import parse_action
 
-    action = parse_action('Action: finish(message="已打开蓝牙设置页面")')
-    assert action == {"name": "finish", "args": ["已打开蓝牙设置页面"]}
+    action = parse_action('Action: finish(message="已OpenBluetoothSettingsPage")')
+    assert action == {"name": "finish", "args": ["已OpenBluetoothSettingsPage"]}
 
     # an equals sign inside a quoted argument must survive
     assert parse_action('Action: type("a=b")') == {"name": "type", "args": ["a=b"]}
@@ -111,7 +111,7 @@ def test_cancel_is_honoured_between_rounds():
 
     state = {"stop": False}
     device = ActionDevice()
-    device.dump_ui = lambda: '<hierarchy><node text="设置" bounds="[0,0][200,120]"/></hierarchy>'
+    device.dump_ui = lambda: '<hierarchy><node text="Settings" bounds="[0,0][200,120]"/></hierarchy>'
 
     def vision(system, user, image_png, temperature=0.0):
         state["stop"] = True  # the user hit cancel during this round
@@ -155,7 +155,7 @@ def test_a_screen_change_is_recorded_as_a_warning():
     from phoneagent.devices.mock import MockDevice
 
     device = MockDevice()
-    macro = [{"action": "tap", "x": 10, "y": 20, "text": "添加闹钟",
+    macro = [{"action": "tap", "x": 10, "y": 20, "text": "[CH]",
               "wait": 0, "screen": "screen_1"}]
 
     ok = MacroExecutor(device, sleep=lambda _s: None,

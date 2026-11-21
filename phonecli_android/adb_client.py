@@ -32,7 +32,7 @@ app = Flask(__name__)
 
 
 class Config:
-    avd_log_dir = "/logs"  # 请根据实际路径进行修改
+    avd_log_dir = "/logs"  # [CH]Path[CH]
 
 
 class EmulatorController:

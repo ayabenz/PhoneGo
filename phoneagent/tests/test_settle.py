@@ -48,7 +48,7 @@ class SettleDevice(MockDevice):
         self.settles = 0
 
     def dump_ui(self):
-        return '<hierarchy><node text="设置" bounds="[0,0][200,120]"/></hierarchy>'
+        return '<hierarchy><node text="Settings" bounds="[0,0][200,120]"/></hierarchy>'
 
     def settle(self, timeout: float = 2.5, interval: float = 0.2, stable_reads: int = 1):
         self.settles += 1
@@ -60,7 +60,7 @@ class OneActionLLM:
 
     def __init__(self, action="tap", arguments=None):
         self._queue = [(action, arguments or {"rx": 0.5, "ry": 0.5}),
-                       ("finish", {"message": "已打开蓝牙设置"})]
+                       ("finish", {"message": "已OpenBluetoothSettings"})]
 
     def choose(self, system, user, image_png=None, tools=None, temperature=0.0):
         name, arguments = self._queue.pop(0)
@@ -74,17 +74,17 @@ def _agent(device, llm, **config):
 
 def test_a_tap_is_followed_by_a_settle():
     device = SettleDevice()
-    _agent(device, OneActionLLM("tap")).run("打开蓝牙设置")
+    _agent(device, OneActionLLM("tap")).run("OpenBluetoothSettings")
     assert device.settles == 1
 
 
 def test_wait_does_not_settle():
     device = SettleDevice()
-    _agent(device, OneActionLLM("wait", {"interval": 1})).run("等一会")
+    _agent(device, OneActionLLM("wait", {"interval": 1})).run("[CH]")
     assert device.settles == 0
 
 
 def test_settle_can_be_turned_off():
     device = SettleDevice()
-    _agent(device, OneActionLLM("tap"), settle_timeout=0).run("打开蓝牙设置")
+    _agent(device, OneActionLLM("tap"), settle_timeout=0).run("OpenBluetoothSettings")
     assert device.settles == 0

@@ -42,9 +42,9 @@ def main(avd_dir, sdk_dir, device_name):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Update AVD configuration files.")
-    parser.add_argument('--avd_dir', type=str, help='AVD文件存储的目录')
-    parser.add_argument('--sdk_dir', type=str, help='Android SDK目录')
-    parser.add_argument('--device_name', type=str, help='要修改的AVD文件名')
+    parser.add_argument('--avd_dir', type=str, help='AVDFile[CH]Directory')
+    parser.add_argument('--sdk_dir', type=str, help='Android SDKDirectory')
+    parser.add_argument('--device_name', type=str, help='[CH]AVDFile名')
 
     args = parser.parse_args()
 

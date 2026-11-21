@@ -1,6 +1,6 @@
 # phonecli
 
-**English** · [中文文档](./README_CN.md)
+**English** · [ChineseDocumentation](./README_CN.md)
 
 Coordinate-based iOS phone agent toolkit. Uses WebDriverAgent (WDA) for device
 control, LLM/VLM for understanding and classification, and app maps for
@@ -224,10 +224,10 @@ Stage 5: sanitize — LLM batch-detects and replaces personal data
 | Settings | `com.apple.Preferences` |
 | Calendar | `com.apple.mobilecal` |
 | Safari | `com.apple.mobilesafari` |
-| 小红书 | `com.xingin.discover` |
-| 微博 | `com.sina.weibo` |
-| 京东 | `com.jingdong.app.mall` |
-| 大众点评 | `com.dianping.dpscope` |
+| [CH] | `com.xingin.discover` |
+| [CH] | `com.sina.weibo` |
+| [CH] | `com.jingdong.app.mall` |
+| [CH] | `com.dianping.dpscope` |
 | foodpanda | `com.foodpanda.ios` |
 | Music | `com.apple.Music` |
 
@@ -255,11 +255,11 @@ ideviceinstaller -l   # list installed apps
 
 ```bash
 # Initial run with checkpoint
-python phonecli/cli.py macro auto-build -b com.sina.weibo -a 微博 \
+python phonecli/cli.py macro auto-build -b com.sina.weibo -a [CH] \
     -c .checkpoints/weibo_checkpoint.json
 
 # If interrupted (WDA timeout, network, etc.), resume:
-python phonecli/cli.py macro auto-build -b com.sina.weibo -a 微博 \
+python phonecli/cli.py macro auto-build -b com.sina.weibo -a [CH] \
     -c .checkpoints/weibo_checkpoint.json \
     -r .checkpoints/weibo_checkpoint.json
 ```
@@ -300,7 +300,7 @@ screens:
         center: [0.1667, 0.9405]
         fixed: true
         leads_to: screen_4
-        aliases: [current day, now, 今天]
+        aliases: [current day, now, [CH]]
         semantic_type: button
 screen_macros:
   screen_0: [force_stop, launch]
@@ -313,12 +313,12 @@ The package ships with pre-built maps for 8 apps:
 
 | App | Screens | Elements | Edges |
 |-----|---------|----------|-------|
-| 微博 | 50 | 975 | 77 |
+| [CH] | 50 | 975 | 77 |
 | foodpanda | 50 | 957 | 95 |
 | Calendar | 50 | 948 | 88 |
-| 京东 | 50 | ~700 | ~100 |
+| [CH] | 50 | ~700 | ~100 |
 | Dianping | 50 | 501 | 70 |
-| 小红书 | 50 | 405 | 142 |
+| [CH] | 50 | 405 | 142 |
 | Music | 50 | ~500 | ~80 |
 | Settings | 20 | ~200 | ~40 |
 
@@ -374,7 +374,7 @@ The agent automatically decomposes complex multi-app tasks via the Planner
 (`llm plan` CLI command). No manual intervention needed:
 
 ```bash
-python phonecli/run.py --task "先小红书搜索，再京东比价，最后备忘录记录" --max-rounds 30
+python phonecli/run.py --task "[CH]Search，[CH]，[CH]" --max-rounds 30
 ```
 
 The Planner breaks the task into single-app subtasks, executes them sequentially,
@@ -454,7 +454,7 @@ python phonecli/cli.py llm map-task -m phonecli/app_maps/settings_map.yaml -t "T
 # Verify task completion from XML accessibility tree
 python phonecli/cli.py llm xml-verify -t "Check wifi" --xml-file /tmp/dump.xml
 # Decompose a multi-app task into subtasks
-python phonecli/cli.py llm plan -t "先小红书搜索，再京东比价" \
+python phonecli/cli.py llm plan -t "[CH]Search，[CH]" \
     -m phonecli/app_maps/xiaohongshu_map.yaml \
     -m phonecli/app_maps/jd_map.yaml
 ```

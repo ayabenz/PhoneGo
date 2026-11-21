@@ -18,7 +18,7 @@ screens:
     - hamburger menu
     - menu icon
     - nav drawer
-    - 侧边栏
+    - [CH]
     semantic_type: button
   - text: My Music
     center:
@@ -30,7 +30,7 @@ screens:
     aliases:
     - library
     - local music
-    - 我的音乐
+    - My[CH]
     - music library
     semantic_type: menu_item
   - text: Upgrade to PRO
@@ -43,7 +43,7 @@ screens:
     - buy premium
     - remove ads
     - get pro
-    - 升级专业版
+    - [CH]
     semantic_type: button
   - text: Sort
     center:
@@ -56,7 +56,7 @@ screens:
     - sort by
     - order
     - arrange
-    - 排序
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -69,7 +69,7 @@ screens:
     - find
     - search icon
     - magnifier
-    - 搜索
+    - Search
     semantic_type: button
   - text: TRACKS
     center:
@@ -81,7 +81,7 @@ screens:
     aliases:
     - songs
     - audio files
-    - 歌曲
+    - [CH]
     - music tracks
     semantic_type: tab
   - text: PLAYLISTS
@@ -94,7 +94,7 @@ screens:
     aliases:
     - lists
     - queues
-    - 播放列表
+    - [CH]
     - play lists
     semantic_type: tab
   - text: FOLDERS
@@ -107,7 +107,7 @@ screens:
     aliases:
     - directories
     - files
-    - 文件夹
+    - File夹
     - folder view
     semantic_type: tab
   - text: ALBUMS
@@ -120,7 +120,7 @@ screens:
     aliases:
     - records
     - music albums
-    - 专辑
+    - [CH]
     - album view
     semantic_type: tab
   - text: ARTISTS
@@ -133,7 +133,7 @@ screens:
     aliases:
     - singers
     - bands
-    - 艺术家
+    - [CH]
     - artist view
     semantic_type: tab
   scrollable: true
@@ -150,8 +150,8 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
-    - 返回
+    - Close[CH]
+    - Back
     semantic_type: button
   - text: My Music
     center:
@@ -161,9 +161,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 我的音乐
+    - My[CH]
     - music library
-    - 本地音乐
+    - Local[CH]
     semantic_type: tab
   - text: Upgrade to PRO
     center:
@@ -173,9 +173,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 升级专业版
+    - [CH]
     - buy pro
-    - 解锁高级版
+    - [CH]Advanced版
     - purchase premium
     semantic_type: button
   - text: Sort
@@ -186,9 +186,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 排序
+    - [CH]
     - sort by
-    - 分类
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -198,9 +198,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 搜索
+    - Search
     - find
-    - 查找
+    - [CH]
     - search music
     semantic_type: input
   - text: TRACKS
@@ -211,9 +211,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 歌曲
+    - [CH]
     - tracks list
-    - 音频
+    - [CH]
     semantic_type: tab
   - text: PLAYLISTS
     center:
@@ -223,9 +223,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 播放列表
+    - [CH]
     - playlists tab
-    - 歌单
+    - [CH]
     semantic_type: tab
   - text: FOLDERS
     center:
@@ -235,9 +235,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 文件夹
+    - File夹
     - folders tab
-    - 目录
+    - Directory
     semantic_type: tab
   - text: ALBUMS
     center:
@@ -247,9 +247,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 专辑
+    - [CH]
     - albums tab
-    - 唱片
+    - [CH]
     semantic_type: tab
   - text: ARTISTS
     center:
@@ -259,10 +259,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 艺术家
+    - [CH]
     - artists tab
-    - 歌手
-    - 艺人
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Pi Music Player
     center:
@@ -272,7 +272,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     - Pi Music
     semantic_type: label
@@ -284,9 +284,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 视频播放器
+    - [CH]
     - video
-    - 视频播放
+    - [CH]
     semantic_type: menu_item
   - text: Customizations
     center:
@@ -296,9 +296,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 自定义
+    - Custom
     - customization
-    - 个性化
+    - [CH]
     semantic_type: setting
   - text: Themes
     center:
@@ -308,9 +308,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 主题
+    - Theme
     - theme settings
-    - 皮肤
+    - [CH]
     semantic_type: setting
   - text: Settings
     center:
@@ -320,9 +320,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 设置
+    - Settings
     - settings menu
-    - 系统设置
+    - [CH]Settings
     semantic_type: menu_item
   - text: Store
     center:
@@ -332,9 +332,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 商店
+    - [CH]
     - app store
-    - 应用商店
+    - App[CH]
     semantic_type: menu_item
   - text: Features
     center:
@@ -344,9 +344,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 功能
+    - Feature
     - features list
-    - 特色功能
+    - [CH]Feature
     semantic_type: menu_item
   - text: Equalizer
     center:
@@ -356,9 +356,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 均衡器
+    - [CH]
     - eq
-    - 音效
+    - [CH]
     semantic_type: menu_item
   - text: Ringtone Cutter
     center:
@@ -368,9 +368,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 铃声剪辑
+    - Ring Tone[CH]
     - ringtone maker
-    - 铃声制作
+    - Ring Tone[CH]
     semantic_type: menu_item
   - text: Smart Playlists
     center:
@@ -380,9 +380,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 智能播放列表
+    - [CH]
     - smart lists
-    - 智能歌单
+    - [CH]
     semantic_type: menu_item
   - text: AudioBook and Podcast
     center:
@@ -392,10 +392,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 有声书和播客
+    - Yes[CH]
     - audiobooks
     - podcasts
-    - 有声读物
+    - Yes[CH]
     semantic_type: menu_item
   - text: Sleep Timer
     center:
@@ -405,9 +405,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_17
     aliases:
-    - 睡眠定时器
+    - Sleep[CH]
     - sleep timer settings
-    - 定时关闭
+    - [CH]Close
     semantic_type: menu_item
   - text: Pi Power Share
     center:
@@ -417,9 +417,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_18
     aliases:
-    - Pi能量共享
+    - Pi[CH]Share
     - power share
-    - Pi分享
+    - PiShare
     semantic_type: menu_item
   - text: Help
     center:
@@ -429,9 +429,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 帮助
+    - Help
     - help center
-    - 帮助中心
+    - HelpCenter
     semantic_type: menu_item
   - text: Send Feedback
     center:
@@ -441,9 +441,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
-    - 意见反馈
+    - [CH]Feedback
     semantic_type: menu_item
   description: Navigation drawer providing access to music library categories, media
     tools, customization options, and app settings.
@@ -462,7 +462,7 @@ screens:
     - hamburger menu
     - menu icon
     - nav drawer
-    - 侧边栏
+    - [CH]
     semantic_type: button
   - text: My Music
     center:
@@ -474,7 +474,7 @@ screens:
     aliases:
     - library
     - local music
-    - 我的音乐
+    - My[CH]
     - music library
     semantic_type: menu_item
   - text: Upgrade to PRO
@@ -487,7 +487,7 @@ screens:
     - buy premium
     - remove ads
     - get pro
-    - 升级专业版
+    - [CH]
     semantic_type: button
   - text: Sort
     center:
@@ -500,7 +500,7 @@ screens:
     - sort by
     - order
     - arrange
-    - 排序
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -513,7 +513,7 @@ screens:
     - find
     - search icon
     - magnifier
-    - 搜索
+    - Search
     semantic_type: button
   - text: TRACKS
     center:
@@ -525,7 +525,7 @@ screens:
     aliases:
     - songs
     - audio files
-    - 歌曲
+    - [CH]
     - music tracks
     semantic_type: tab
   - text: PLAYLISTS
@@ -538,7 +538,7 @@ screens:
     aliases:
     - lists
     - queues
-    - 播放列表
+    - [CH]
     - play lists
     semantic_type: tab
   - text: FOLDERS
@@ -551,7 +551,7 @@ screens:
     aliases:
     - directories
     - files
-    - 文件夹
+    - File夹
     - folder view
     semantic_type: tab
   - text: ALBUMS
@@ -564,7 +564,7 @@ screens:
     aliases:
     - records
     - music albums
-    - 专辑
+    - [CH]
     - album view
     semantic_type: tab
   - text: ARTISTS
@@ -577,7 +577,7 @@ screens:
     aliases:
     - singers
     - bands
-    - 艺术家
+    - [CH]
     - artist view
     semantic_type: tab
   description: Main music library screen where users can browse their collection by
@@ -595,8 +595,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 排序
-    - 排序方式
+    - [CH]
+    - [CH]
     - Sort
     - Order by
     semantic_type: button
@@ -608,8 +608,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 标题
-    - 歌曲名
+    - [CH]
+    - [CH]
     - Name
     - Track
     semantic_type: menu_item
@@ -621,8 +621,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_20
     aliases:
-    - 专辑
-    - 唱片
+    - [CH]
+    - [CH]
     - Albums
     semantic_type: menu_item
   - text: Artist
@@ -633,9 +633,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 艺术家
-    - 歌手
-    - 演唱者
+    - [CH]
+    - [CH]
+    - [CH]
     - Artists
     semantic_type: menu_item
   - text: Duration
@@ -646,9 +646,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_22
     aliases:
-    - 时长
-    - 时间
-    - 长度
+    - [CH]
+    - [CH]
+    - [CH]
     - Time
     semantic_type: menu_item
   - text: Ascending
@@ -659,8 +659,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 升序
-    - 从小到大
+    - [CH]
+    - [CH]
     - A-Z
     - Ascending order
     semantic_type: menu_item
@@ -734,8 +734,8 @@ screens:
     aliases:
     - hamburger menu
     - menu
-    - 侧边栏
-    - 导航
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: My Music
     center:
@@ -745,8 +745,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 我的音乐
-    - 本地音乐
+    - My[CH]
+    - Local[CH]
     - music library
     semantic_type: tab
   - text: Upgrade to PRO
@@ -756,8 +756,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
-    - 购买Pro
+    - [CH]
+    - PurchasePro
     - go pro
     semantic_type: button
   - text: Sort
@@ -768,7 +768,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_25
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - order
     semantic_type: button
@@ -780,7 +780,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     semantic_type: button
@@ -792,8 +792,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_26
     aliases:
-    - 歌曲
-    - 音乐
+    - [CH]
+    - [CH]
     - songs
     semantic_type: tab
   - text: PLAYLISTS
@@ -804,8 +804,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 播放列表
-    - 歌单
+    - [CH]
+    - [CH]
     - lists
     semantic_type: tab
   - text: FOLDERS
@@ -816,8 +816,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 文件夹
-    - 目录
+    - File夹
+    - Directory
     - directories
     semantic_type: tab
   - text: ALBUMS
@@ -828,8 +828,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_7
     aliases:
-    - 专辑
-    - 唱片
+    - [CH]
+    - [CH]
     - records
     semantic_type: tab
   - text: ARTISTS
@@ -840,8 +840,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_8
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - singers
     semantic_type: tab
   - text: GENRES
@@ -852,8 +852,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_27
     aliases:
-    - 流派
-    - 类型
+    - [CH]
+    - [CH]
     - categories
     semantic_type: tab
   - text: Recently Added
@@ -864,8 +864,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 最近添加
-    - 新增
+    - [CH]
+    - [CH]
     - newly added
     semantic_type: menu_item
   - text: Most Played
@@ -876,8 +876,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 最多播放
-    - 播放最多
+    - [CH]
+    - [CH]
     - top played
     semantic_type: menu_item
   - text: Recently Played
@@ -888,8 +888,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 最近播放
-    - 播放历史
+    - [CH]
+    - [CH]
     - history
     semantic_type: menu_item
   - text: Pi Favourites
@@ -900,8 +900,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - Pi收藏
-    - 我的收藏
+    - Pi[CH]
+    - My[CH]
     - favorites
     semantic_type: menu_item
   - text: Favorite
@@ -912,8 +912,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_30
     aliases:
-    - 收藏
-    - 喜欢
+    - [CH]
+    - [CH]
     - like
     - heart
     semantic_type: toggle
@@ -1270,8 +1270,8 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
-    - 返回
+    - Close[CH]
+    - Back
     semantic_type: button
   - text: My Music
     center:
@@ -1281,8 +1281,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 我的音乐
-    - 本地音乐
+    - My[CH]
+    - Local[CH]
     - music library
     semantic_type: menu_item
   - text: Upgrade to PRO
@@ -1293,8 +1293,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 升级专业版
-    - 购买Pro
+    - [CH]
+    - PurchasePro
     - remove ads
     - go pro
     semantic_type: menu_item
@@ -1306,7 +1306,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - order
     semantic_type: button
@@ -1318,7 +1318,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     semantic_type: button
@@ -1330,8 +1330,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 歌曲
-    - 音乐
+    - [CH]
+    - [CH]
     - songs
     - audio files
     semantic_type: tab
@@ -1343,8 +1343,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 播放列表
-    - 歌单
+    - [CH]
+    - [CH]
     - lists
     semantic_type: tab
   - text: FOLDERS
@@ -1355,8 +1355,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 文件夹
-    - 目录
+    - File夹
+    - Directory
     - directories
     semantic_type: tab
   - text: ALBUMS
@@ -1367,8 +1367,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 专辑
-    - 唱片
+    - [CH]
+    - [CH]
     - albums list
     semantic_type: tab
   - text: ARTISTS
@@ -1379,8 +1379,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_21
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - singers
     semantic_type: tab
   - text: Pi Music Player
@@ -1391,7 +1391,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     - app name
     semantic_type: label
@@ -1403,8 +1403,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 视频播放器
-    - 视频
+    - [CH]
+    - [CH]
     - video
     semantic_type: menu_item
   - text: Customizations
@@ -1415,8 +1415,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_39
     aliases:
-    - 自定义
-    - 个性化
+    - Custom
+    - [CH]
     - themes
     semantic_type: menu_item
   - text: Features
@@ -1427,8 +1427,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_40
     aliases:
-    - 功能
-    - 特性
+    - Feature
+    - [CH]
     - functions
     semantic_type: menu_item
   - text: Equalizer
@@ -1439,9 +1439,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 均衡器
+    - [CH]
     - EQ
-    - 音效
+    - [CH]
     semantic_type: menu_item
   - text: Ringtone Cutter
     center:
@@ -1451,8 +1451,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 铃声剪辑
-    - 铃声制作
+    - Ring Tone[CH]
+    - Ring Tone[CH]
     - ringtone maker
     semantic_type: menu_item
   - text: Smart Playlists
@@ -1463,8 +1463,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 智能播放列表
-    - 自动歌单
+    - [CH]
+    - Auto[CH]
     - smart lists
     semantic_type: menu_item
   - text: AudioBook and Podcast
@@ -1475,8 +1475,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_16
     aliases:
-    - 有声书和播客
-    - 有声读物
+    - Yes[CH]
+    - Yes[CH]
     - audiobooks
     semantic_type: menu_item
   - text: Sleep Timer
@@ -1487,8 +1487,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_17
     aliases:
-    - 睡眠定时器
-    - 定时关闭
+    - Sleep[CH]
+    - [CH]Close
     - sleep timer
     semantic_type: menu_item
   - text: Pi Power Share
@@ -1499,8 +1499,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_18
     aliases:
-    - Pi能量共享
-    - 分享赚钱
+    - Pi[CH]Share
+    - Share[CH]
     - power share
     semantic_type: menu_item
   - text: Help
@@ -1511,8 +1511,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 帮助
-    - 支持
+    - Help
+    - [CH]
     - support
     semantic_type: menu_item
   - text: Send Feedback
@@ -1523,8 +1523,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_19
     aliases:
-    - 发送反馈
-    - 意见反馈
+    - [CH]Feedback
+    - [CH]Feedback
     - feedback
     semantic_type: menu_item
   - text: User Guide
@@ -1535,8 +1535,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_41
     aliases:
-    - 用户指南
-    - 使用手册
+    - [CH]Guide
+    - [CH]Manual
     - guide
     semantic_type: menu_item
   - text: About
@@ -1547,8 +1547,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 关于
-    - 关于应用
+    - About
+    - AboutApp
     - about app
     semantic_type: menu_item
   - text: Invite Friends
@@ -1559,8 +1559,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_42
     aliases:
-    - 邀请好友
-    - 分享应用
+    - [CH]
+    - ShareApp
     - invite
     semantic_type: menu_item
   description: Navigation drawer providing access to music library categories, app
@@ -1592,7 +1592,7 @@ screens:
     - Switch theme
     - Theme settings
     - Select theme
-    - 修改主题
+    - [CH]Theme
     semantic_type: menu_item
   description: Theme customization screen where users can select a background for
     the Gloss Theme and change the overall app theme.
@@ -1610,8 +1610,8 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
-    - 向上导航
+    - Back
+    - [CH]
     semantic_type: button
   - text: Settings
     center:
@@ -1623,8 +1623,8 @@ screens:
     aliases:
     - Preferences
     - Options
-    - 设置
-    - 系统设置
+    - Settings
+    - [CH]Settings
     semantic_type: menu_item
   - text: GENERAL
     center:
@@ -1635,8 +1635,8 @@ screens:
     leads_to: screen_11
     aliases:
     - General Settings
-    - 常规
-    - 通用设置
+    - General
+    - GeneralSettings
     semantic_type: setting
   - text: Gloss Theme
     center:
@@ -1647,8 +1647,8 @@ screens:
     leads_to: screen_43
     aliases:
     - Glossy Theme
-    - 光泽主题
-    - 主题选择
+    - [CH]Theme
+    - ThemeSelect
     semantic_type: menu_item
   - text: Choose Background for Gloss Theme
     center:
@@ -1659,8 +1659,8 @@ screens:
     leads_to: screen_44
     aliases:
     - Gloss Background
-    - 选择背景
-    - 光泽主题背景
+    - SelectBackground
+    - [CH]ThemeBackground
     semantic_type: menu_item
   - text: Album view type - LIST VIEW
     center:
@@ -1671,8 +1671,8 @@ screens:
     leads_to: screen_45
     aliases:
     - List View
-    - 专辑列表
-    - 列表视图
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Customize Main Screen Sections
     center:
@@ -1683,8 +1683,8 @@ screens:
     leads_to: screen_46
     aliases:
     - Edit Home Screen
-    - 自定义主页
-    - 主屏幕设置
+    - CustomHome
+    - 主ScreenSettings
     semantic_type: menu_item
   - text: Hidden Folders
     center:
@@ -1695,8 +1695,8 @@ screens:
     leads_to: screen_47
     aliases:
     - Hide Folders
-    - 隐藏文件夹
-    - 忽略文件夹
+    - [CH]File夹
+    - [CH]File夹
     semantic_type: menu_item
   - text: Rescan Music Library
     center:
@@ -1708,8 +1708,8 @@ screens:
     aliases:
     - Scan Music
     - Refresh Library
-    - 重新扫描
-    - 刷新音乐库
+    - [CH]Scan
+    - [CH]
     semantic_type: button
   - text: Help us in translating Pi Music Player!
     center:
@@ -1721,8 +1721,8 @@ screens:
     aliases:
     - Translate
     - Contribute
-    - 帮助翻译
-    - 翻译应用
+    - Help[CH]
+    - [CH]App
     semantic_type: link
   - text: NOTIFICATIONS
     center:
@@ -1732,8 +1732,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Notification Settings
-    - 通知
-    - 通知设置
+    - Notification
+    - NotificationSettings
     semantic_type: setting
   - text: New Music Added Notifications
     center:
@@ -1743,8 +1743,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - New Music Alert
-    - 新音乐通知
-    - 新歌提醒
+    - [CH]Notification
+    - [CH]Reminder
     semantic_type: toggle
   - text: Push Notifications
     center:
@@ -1754,8 +1754,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Push Alerts
-    - 推送通知
-    - 消息推送
+    - [CH]Notification
+    - Message[CH]
     semantic_type: toggle
   - text: Android Media Style Notification
     center:
@@ -1765,8 +1765,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Media Style
-    - 媒体样式通知
-    - 安卓媒体通知
+    - [CH]Notification
+    - [CH]Notification
     semantic_type: toggle
   description: Settings page allowing users to customize general app preferences like
     themes, views, and folders, and manage notification settings.
@@ -1794,7 +1794,7 @@ screens:
     aliases:
     - Shop
     - Market
-    - 商店
+    - [CH]
     semantic_type: tab
   - text: More options
     center:
@@ -1816,7 +1816,7 @@ screens:
     aliases:
     - Premium
     - Pro version
-    - 高级版
+    - Advanced版
     semantic_type: menu_item
   - text: BACKGROUND PACKS FOR GLOSS THEME
     center:
@@ -1826,7 +1826,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Gloss Theme Backgrounds
-    - Gloss主题背景
+    - GlossThemeBackground
     semantic_type: label
   - text: Amazing Amalgams Background Pack
     center:
@@ -1867,7 +1867,7 @@ screens:
     aliases:
     - Buy all
     - Purchase all
-    - 获取全部背景包
+    - [CH]AllBackground包
     semantic_type: button
   - text: REMOVE ADS
     center:
@@ -1878,7 +1878,7 @@ screens:
     aliases:
     - Remove advertisements
     - No ads
-    - 去广告
+    - [CH]
     semantic_type: button
   description: In-app store page where users can purchase background theme packs and
     remove ads.
@@ -1894,7 +1894,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Close menu
-    - 关闭菜单
+    - CloseMenu
     - Close drawer
     semantic_type: button
   - text: My Music
@@ -1904,9 +1904,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - Local Music
-    - 本地音乐
+    - Local[CH]
     semantic_type: menu_item
   - text: Upgrade to PRO
     center:
@@ -1915,7 +1915,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
+    - [CH]
     - Upgrade
     - Get PRO
     semantic_type: button
@@ -1926,9 +1926,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - Sort by
-    - 分类
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -1937,9 +1937,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - Find
-    - 查找
+    - [CH]
     semantic_type: input
   - text: TRACKS
     center:
@@ -1948,9 +1948,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 歌曲
+    - [CH]
     - Tracks
-    - 音频
+    - [CH]
     semantic_type: tab
   - text: PLAYLISTS
     center:
@@ -1959,9 +1959,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - Playlists
-    - 歌单
+    - [CH]
     semantic_type: tab
   - text: FOLDERS
     center:
@@ -1970,9 +1970,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
+    - File夹
     - Folders
-    - 目录
+    - Directory
     semantic_type: tab
   - text: ALBUMS
     center:
@@ -1981,7 +1981,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - Albums
     semantic_type: tab
   - text: ARTISTS
@@ -1991,9 +1991,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
+    - [CH]
     - Artists
-    - 歌手
+    - [CH]
     semantic_type: tab
   - text: Pi Music Player
     center:
@@ -2002,7 +2002,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     semantic_type: label
   - text: Video Player
@@ -2012,9 +2012,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
+    - [CH]
     - Video
-    - 视频
+    - [CH]
     semantic_type: menu_item
   - text: Customizations
     center:
@@ -2023,9 +2023,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
+    - Custom
     - Customization
-    - 个性化
+    - [CH]
     semantic_type: setting
   - text: Themes
     center:
@@ -2034,9 +2034,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主题
     - Theme
-    - 皮肤
+    - Theme
+    - [CH]
     semantic_type: setting
   - text: Settings
     center:
@@ -2045,9 +2045,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - Preferences
-    - 选项
+    - [CH]
     semantic_type: setting
   - text: Store
     center:
@@ -2056,9 +2056,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 商店
-    - 应用商店
-    - 商城
+    - [CH]
+    - App[CH]
+    - [CH]
     semantic_type: link
   - text: Features
     center:
@@ -2067,9 +2067,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
+    - Feature
     - Features
-    - 特性
+    - [CH]
     semantic_type: link
   - text: Help
     center:
@@ -2078,9 +2078,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - Help center
-    - 帮助中心
+    - HelpCenter
     semantic_type: link
   - text: Send Feedback
     center:
@@ -2089,9 +2089,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - Feedback
-    - 意见反馈
+    - [CH]Feedback
     semantic_type: link
   - text: User Guide
     center:
@@ -2100,9 +2100,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 用户指南
+    - [CH]Guide
     - Guide
-    - 使用手册
+    - [CH]Manual
     semantic_type: link
   - text: About
     center:
@@ -2111,9 +2111,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关于
+    - About
     - About us
-    - 关于我们
+    - About[CH]
     semantic_type: link
   - text: Invite Friends
     center:
@@ -2122,9 +2122,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 邀请好友
+    - [CH]
     - Invite
-    - 分享邀请
+    - Share[CH]
     semantic_type: link
   - text: Follow Us
     center:
@@ -2133,9 +2133,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关注我们
+    - [CH]
     - Follow
-    - 关注
+    - [CH]
     semantic_type: link
   - text: Info
     center:
@@ -2144,9 +2144,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 信息
+    - Info
     - Information
-    - 详情
+    - [CH]
     semantic_type: label
   - text: Rate this App
     center:
@@ -2155,9 +2155,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 给应用评分
+    - 给App[CH]
     - Rate
-    - 评价
+    - [CH]
     semantic_type: link
   description: Side navigation drawer providing access to music library categories,
     app settings, tools, and support options.
@@ -2175,7 +2175,7 @@ screens:
     - Back
     - Up
     - Go back
-    - 返回
+    - Back
     semantic_type: button
   - text: Equalizer
     center:
@@ -2186,7 +2186,7 @@ screens:
     aliases:
     - EQ
     - Audio Equalizer
-    - 均衡器
+    - [CH]
     semantic_type: setting
   - text: Bass Boost
     center:
@@ -2196,7 +2196,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Bass
-    - 低音增强
+    - [CH]
     - Bass enhancement
     semantic_type: setting
   - text: Virtualizer
@@ -2207,7 +2207,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Virtual Surround
-    - 虚拟环绕
+    - Virtual[CH]
     - Surround sound
     semantic_type: setting
   - text: 3D Reverb Effects
@@ -2219,8 +2219,8 @@ screens:
     aliases:
     - 3D Reverb
     - Reverb
-    - 3D混响
-    - 混响效果
+    - 3D[CH]
+    - [CH]
     semantic_type: setting
   - text: (Recommended with Headset)
     center:
@@ -2230,7 +2230,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Headset recommended
-    - 推荐耳机使用
+    - [CH]
     - Use with headphones
     semantic_type: label
   - text: None
@@ -2241,9 +2241,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - 'Off'
-    - 无
+    - None
     - Disabled
-    - 关闭
+    - Close
     semantic_type: menu_item
   - text: Presets
     center:
@@ -2253,7 +2253,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - EQ Presets
-    - 预设
+    - [CH]
     - Audio presets
     semantic_type: menu_item
   - text: Normal
@@ -2264,7 +2264,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Default
-    - 标准
+    - [CH]
     - Normal preset
     semantic_type: menu_item
   - text: 30Hz-120Hz
@@ -2275,7 +2275,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sub Bass
-    - 超低音
+    - [CH]
     - 30 to 120 Hertz
     semantic_type: label
   - text: 120Hz-460Hz
@@ -2286,7 +2286,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Bass
-    - 低音
+    - [CH]
     - 120 to 460 Hertz
     semantic_type: label
   - text: 460Hz-1kHz
@@ -2297,7 +2297,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Low Midrange
-    - 中低音
+    - [CH]
     - 460 to 1000 Hertz
     semantic_type: label
   - text: 1kHz-7kHz
@@ -2308,7 +2308,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Midrange
-    - 中音
+    - [CH]
     - 1000 to 7000 Hertz
     semantic_type: label
   - text: 7kHz-20kHz
@@ -2319,7 +2319,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Treble
-    - 高音
+    - [CH]
     - 7000 to 20000 Hertz
     semantic_type: label
   - text: FLAT
@@ -2330,7 +2330,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Flat EQ
-    - 平直
+    - [CH]
     - Flat preset
     semantic_type: menu_item
   description: Audio effects and equalizer settings page where users can adjust bass
@@ -2348,7 +2348,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Please select a track...
@@ -2360,8 +2360,8 @@ screens:
     aliases:
     - Select track
     - Choose song
-    - 请选择曲目
-    - 选择歌曲
+    - 请Select[CH]
+    - Select[CH]
     semantic_type: label
   - text: Search
     center:
@@ -2372,8 +2372,8 @@ screens:
     aliases:
     - Find
     - Search music
-    - 搜索
-    - 查找
+    - Search
+    - [CH]
     semantic_type: button
   - text: Always
     center:
@@ -2384,8 +2384,8 @@ screens:
     aliases:
     - Always on
     - Always allow
-    - 始终
-    - 总是
+    - [CH]
+    - 总Yes
     semantic_type: menu_item
   description: Track selection screen displaying an empty state prompt to choose a
     song, along with search and navigation controls.
@@ -2402,7 +2402,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Search
@@ -2413,7 +2413,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Find
-    - 搜索
+    - Search
     - Search music
     - Query
     semantic_type: button
@@ -2425,7 +2425,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sort by
-    - 排序
+    - [CH]
     - Order
     - Filter
     semantic_type: button
@@ -2437,7 +2437,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Audio books
-    - 有声书
+    - Yes[CH]
     - Audiobook
     semantic_type: tab
   - text: Podcasts
@@ -2447,7 +2447,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播客
+    - [CH]
     - Podcast
     - Audio podcasts
     semantic_type: tab
@@ -2459,7 +2459,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Podcasts
-    - 播客
+    - [CH]
     - Podcast
     semantic_type: label
   description: Podcasts and audiobooks browsing screen with search, sort options,
@@ -2478,7 +2478,7 @@ screens:
     - Sleep timer
     - Timer
     - Auto off
-    - 睡眠定时
+    - Sleep[CH]
     semantic_type: setting
   - text: Hours
     center:
@@ -2489,7 +2489,7 @@ screens:
     aliases:
     - Hour
     - Hrs
-    - 小时
+    - [CH]
     semantic_type: label
   - text: ':'
     center:
@@ -2500,7 +2500,7 @@ screens:
     aliases:
     - colon
     - separator
-    - 分隔符
+    - [CH]
     semantic_type: label
   - text: Minutes
     center:
@@ -2511,7 +2511,7 @@ screens:
     aliases:
     - Minute
     - Min
-    - 分钟
+    - [CH]
     semantic_type: label
   - text: Seconds
     center:
@@ -2522,7 +2522,7 @@ screens:
     aliases:
     - Second
     - Sec
-    - 秒
+    - second
     semantic_type: label
   - text: RESET
     center:
@@ -2533,7 +2533,7 @@ screens:
     aliases:
     - Reset
     - Clear
-    - 重置
+    - Reset
     semantic_type: button
   - text: START
     center:
@@ -2544,7 +2544,7 @@ screens:
     aliases:
     - Start
     - Begin
-    - 开始
+    - Start
     semantic_type: button
   description: Sleep timer configuration screen allowing users to set a duration in
     hours, minutes, and seconds, with options to start or reset the timer.
@@ -2561,7 +2561,7 @@ screens:
     aliases:
     - back
     - go back
-    - 返回
+    - Back
     - up button
     semantic_type: button
   - text: Pi Power Share
@@ -2572,7 +2572,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - power share
-    - Pi分享
+    - PiShare
     - share music
     semantic_type: menu_item
   - text: WHAT IS PI POWER SHARE?
@@ -2583,8 +2583,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - about Pi Power Share
-    - 什么是Pi Power Share
-    - Pi Power Share介绍
+    - [CH]YesPi Power Share
+    - Pi Power Share[CH]
     semantic_type: label
   - text: SEND
     center:
@@ -2593,7 +2593,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送
+    - [CH]
     - send tracks
     - send music
     semantic_type: button
@@ -2604,7 +2604,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 选择要发送的曲目
+    - Select[CH]
     - choose tracks
     - select songs
     semantic_type: label
@@ -2615,7 +2615,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 接收
+    - [CH]
     - receive tracks
     - receive music
     semantic_type: button
@@ -2626,7 +2626,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 输入密钥
+    - InputAPI Key
     - key input
     - enter code
     semantic_type: input
@@ -2637,7 +2637,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 了解更多
+    - [CH]
     - learn more
     - how it works
     semantic_type: link
@@ -2649,7 +2649,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - powered by
-    - 技术支持
+    - [CH]
     semantic_type: label
   description: Pi Power Share feature screen allowing users to send selected tracks
     or receive tracks via an access key, along with informational links about the
@@ -2740,7 +2740,7 @@ screens:
     - hamburger menu
     - menu icon
     - nav drawer
-    - 侧边栏
+    - [CH]
     semantic_type: button
   - text: My Music
     center:
@@ -2751,7 +2751,7 @@ screens:
     aliases:
     - library
     - local music
-    - 我的音乐
+    - My[CH]
     - music library
     semantic_type: menu_item
   - text: Upgrade to PRO
@@ -2764,7 +2764,7 @@ screens:
     - buy premium
     - remove ads
     - get pro
-    - 升级专业版
+    - [CH]
     semantic_type: button
   - text: Sort
     center:
@@ -2776,7 +2776,7 @@ screens:
     - sort by
     - order
     - arrange
-    - 排序
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -2788,7 +2788,7 @@ screens:
     - find
     - search icon
     - magnifier
-    - 搜索
+    - Search
     semantic_type: button
   - text: TRACKS
     center:
@@ -2799,7 +2799,7 @@ screens:
     aliases:
     - songs
     - audio files
-    - 歌曲
+    - [CH]
     - music tracks
     semantic_type: tab
   - text: PLAYLISTS
@@ -2811,7 +2811,7 @@ screens:
     aliases:
     - lists
     - queues
-    - 播放列表
+    - [CH]
     - play lists
     semantic_type: tab
   - text: FOLDERS
@@ -2823,7 +2823,7 @@ screens:
     aliases:
     - directories
     - files
-    - 文件夹
+    - File夹
     - folder view
     semantic_type: tab
   - text: ALBUMS
@@ -2835,7 +2835,7 @@ screens:
     aliases:
     - records
     - music albums
-    - 专辑
+    - [CH]
     - album view
     semantic_type: tab
   - text: ARTISTS
@@ -2847,7 +2847,7 @@ screens:
     aliases:
     - singers
     - bands
-    - 艺术家
+    - [CH]
     - artist view
     semantic_type: tab
   description: Main music library screen displaying categories for tracks, playlists,
@@ -2866,7 +2866,7 @@ screens:
     - hamburger menu
     - menu icon
     - nav drawer
-    - 侧边栏
+    - [CH]
     semantic_type: button
   - text: My Music
     center:
@@ -2877,7 +2877,7 @@ screens:
     aliases:
     - library
     - local music
-    - 我的音乐
+    - My[CH]
     - music library
     semantic_type: menu_item
   - text: Upgrade to PRO
@@ -2890,7 +2890,7 @@ screens:
     - buy premium
     - remove ads
     - get pro
-    - 升级专业版
+    - [CH]
     semantic_type: button
   - text: Sort
     center:
@@ -2902,7 +2902,7 @@ screens:
     - sort by
     - order
     - arrange
-    - 排序
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -2914,7 +2914,7 @@ screens:
     - find
     - search icon
     - magnifier
-    - 搜索
+    - Search
     semantic_type: button
   - text: TRACKS
     center:
@@ -2925,7 +2925,7 @@ screens:
     aliases:
     - songs
     - audio files
-    - 歌曲
+    - [CH]
     - music tracks
     semantic_type: tab
   - text: PLAYLISTS
@@ -2937,7 +2937,7 @@ screens:
     aliases:
     - lists
     - queues
-    - 播放列表
+    - [CH]
     - play lists
     semantic_type: tab
   - text: FOLDERS
@@ -2949,7 +2949,7 @@ screens:
     aliases:
     - directories
     - files
-    - 文件夹
+    - File夹
     - folder view
     semantic_type: tab
   - text: ALBUMS
@@ -2961,7 +2961,7 @@ screens:
     aliases:
     - records
     - music albums
-    - 专辑
+    - [CH]
     - album view
     semantic_type: tab
   - text: ARTISTS
@@ -2973,7 +2973,7 @@ screens:
     aliases:
     - singers
     - bands
-    - 艺术家
+    - [CH]
     - artist view
     semantic_type: tab
   description: Main music library screen with search, sort, and PRO upgrade options,
@@ -2992,7 +2992,7 @@ screens:
     - hamburger menu
     - menu icon
     - nav drawer
-    - 侧边栏
+    - [CH]
     semantic_type: button
   - text: My Music
     center:
@@ -3003,7 +3003,7 @@ screens:
     aliases:
     - library
     - local music
-    - 我的音乐
+    - My[CH]
     - music library
     semantic_type: menu_item
   - text: Upgrade to PRO
@@ -3016,7 +3016,7 @@ screens:
     - buy premium
     - remove ads
     - get pro
-    - 升级专业版
+    - [CH]
     semantic_type: button
   - text: Sort
     center:
@@ -3028,7 +3028,7 @@ screens:
     - sort by
     - order
     - arrange
-    - 排序
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -3040,7 +3040,7 @@ screens:
     - find
     - search icon
     - magnifier
-    - 搜索
+    - Search
     semantic_type: button
   - text: TRACKS
     center:
@@ -3051,7 +3051,7 @@ screens:
     aliases:
     - songs
     - audio files
-    - 歌曲
+    - [CH]
     - music tracks
     semantic_type: tab
   - text: PLAYLISTS
@@ -3063,7 +3063,7 @@ screens:
     aliases:
     - lists
     - queues
-    - 播放列表
+    - [CH]
     - play lists
     semantic_type: tab
   - text: FOLDERS
@@ -3075,7 +3075,7 @@ screens:
     aliases:
     - directories
     - files
-    - 文件夹
+    - File夹
     - folder view
     semantic_type: tab
   - text: ALBUMS
@@ -3087,7 +3087,7 @@ screens:
     aliases:
     - records
     - music albums
-    - 专辑
+    - [CH]
     - album view
     semantic_type: tab
   - text: ARTISTS
@@ -3099,7 +3099,7 @@ screens:
     aliases:
     - singers
     - bands
-    - 艺术家
+    - [CH]
     - artist view
     semantic_type: tab
   description: Main music library screen featuring search and sort options, a PRO
@@ -3117,7 +3117,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     - Go back
     semantic_type: button
   - text: Search
@@ -3128,8 +3128,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Find
-    - 搜索
-    - 查找
+    - Search
+    - [CH]
     - Query
     semantic_type: input
   description: Search screen header with a back button and search input field.
@@ -3146,7 +3146,7 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
+    - Close[CH]
     semantic_type: button
   - text: My Music
     center:
@@ -3155,7 +3155,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - music library
     - local music
     semantic_type: tab
@@ -3166,7 +3166,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
+    - [CH]
     - go pro
     - premium upgrade
     semantic_type: button
@@ -3177,7 +3177,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - order
     semantic_type: button
@@ -3188,7 +3188,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     semantic_type: input
@@ -3199,7 +3199,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 歌曲
+    - [CH]
     - songs
     - tracks tab
     semantic_type: tab
@@ -3210,7 +3210,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - playlists tab
     semantic_type: tab
   - text: FOLDERS
@@ -3220,7 +3220,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
+    - File夹
     - folders tab
     - directory
     semantic_type: tab
@@ -3231,7 +3231,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - albums tab
     semantic_type: tab
   - text: ARTISTS
@@ -3241,7 +3241,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
+    - [CH]
     - artists tab
     - singers
     semantic_type: tab
@@ -3252,7 +3252,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 流派
+    - [CH]
     - genres tab
     - categories
     semantic_type: tab
@@ -3263,7 +3263,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最近添加
+    - [CH]
     - recently added tab
     - new songs
     semantic_type: menu_item
@@ -3274,7 +3274,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最多播放
+    - [CH]
     - most played tab
     - top played
     semantic_type: menu_item
@@ -3285,7 +3285,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 最近播放
+    - [CH]
     - recently played tab
     - history
     semantic_type: menu_item
@@ -3296,7 +3296,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi 收藏
+    - Pi [CH]
     - favorites
     - liked songs
     semantic_type: menu_item
@@ -3307,7 +3307,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收藏
+    - [CH]
     - like
     - add to favorites
     - fav
@@ -3319,7 +3319,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi 音乐播放器
+    - Pi [CH]
     - PiMusic
     - app name
     semantic_type: label
@@ -3330,7 +3330,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
+    - [CH]
     - video
     - player
     semantic_type: menu_item
@@ -3341,7 +3341,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
+    - Custom
     - customization
     - personalize
     semantic_type: setting
@@ -3352,7 +3352,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主题
+    - Theme
     - theme settings
     - skins
     semantic_type: setting
@@ -3363,7 +3363,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - options
     semantic_type: setting
@@ -3374,7 +3374,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 商店
+    - [CH]
     - app store
     - shop
     semantic_type: link
@@ -3385,7 +3385,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
+    - Feature
     - features list
     - capabilities
     semantic_type: menu_item
@@ -3396,7 +3396,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 均衡器
+    - [CH]
     - eq
     - audio eq
     semantic_type: setting
@@ -3407,7 +3407,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 铃声剪辑
+    - Ring Tone[CH]
     - ringtone maker
     - audio cutter
     semantic_type: menu_item
@@ -3418,7 +3418,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 智能播放列表
+    - [CH]
     - auto playlists
     - smart lists
     semantic_type: menu_item
@@ -3429,7 +3429,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 有声书和播客
+    - Yes[CH]
     - audiobooks
     - podcasts
     semantic_type: menu_item
@@ -3440,7 +3440,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 睡眠定时器
+    - Sleep[CH]
     - sleep timer
     - auto sleep
     semantic_type: setting
@@ -3451,7 +3451,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi 能量分享
+    - Pi [CH]Share
     - power share
     - share app
     semantic_type: link
@@ -3462,7 +3462,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - help center
     - support
     semantic_type: link
@@ -3473,7 +3473,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
     - contact us
     semantic_type: button
@@ -3490,10 +3490,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
-    - 排序方式
+    - [CH]
+    - [CH]
     - Sort order
-    - 排序依据
+    - [CH]
     semantic_type: button
   - text: Playlist Name
     center:
@@ -3502,10 +3502,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表名称
-    - 歌单名
+    - [CH]
+    - [CH]
     - Playlist title
-    - 列表名
+    - [CH]
     semantic_type: input
   - text: Date Added
     center:
@@ -3514,10 +3514,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 添加日期
-    - 添加时间
+    - [CH]
+    - [CH]
     - Date created
-    - 创建日期
+    - Create[CH]
     semantic_type: menu_item
   - text: Date Modified
     center:
@@ -3526,10 +3526,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 修改日期
-    - 修改时间
+    - [CH]
+    - [CH]
     - Last modified
-    - 更新日期
+    - Update[CH]
     semantic_type: menu_item
   - text: Ascending
     center:
@@ -3538,9 +3538,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升序
-    - 升序排列
-    - 从小到大
+    - [CH]
+    - [CH]
+    - [CH]
     - A-Z
     semantic_type: menu_item
   description: Sorting options menu allowing users to sort items by playlist name,
@@ -3559,8 +3559,8 @@ screens:
     - menu
     - hamburger
     - drawer
-    - 侧边栏
-    - 导航菜单
+    - [CH]
+    - [CH]Menu
     semantic_type: button
   - text: My Music
     center:
@@ -3569,8 +3569,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 本地音乐
-    - 音乐库
+    - Local[CH]
+    - [CH]
     - Music Library
     - Local Music
     semantic_type: menu_item
@@ -3581,10 +3581,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
-    - 购买Pro
+    - [CH]
+    - PurchasePro
     - Remove Ads
-    - 解锁高级功能
+    - [CH]AdvancedFeature
     semantic_type: button
   - text: Sort
     center:
@@ -3593,10 +3593,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - Sort by
-    - 排列
-    - 筛选
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -3605,9 +3605,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - Find
-    - 查找
+    - [CH]
     - Search music
     semantic_type: button
   - text: TRACKS
@@ -3617,10 +3617,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 歌曲
-    - 音频
+    - [CH]
+    - [CH]
     - Songs
-    - 音乐
+    - [CH]
     semantic_type: tab
   - text: PLAYLISTS
     center:
@@ -3629,8 +3629,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
-    - 歌单
+    - [CH]
+    - [CH]
     - Lists
     semantic_type: tab
   - text: FOLDERS
@@ -3640,8 +3640,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
-    - 目录
+    - File夹
+    - Directory
     - Directories
     - Files
     semantic_type: tab
@@ -3652,8 +3652,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
-    - 唱片
+    - [CH]
+    - [CH]
     - Records
     semantic_type: tab
   - text: ARTISTS
@@ -3663,8 +3663,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - Singers
     - Creators
     semantic_type: tab
@@ -3675,8 +3675,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收藏
-    - 喜欢
+    - [CH]
+    - [CH]
     - Favorites
     - Liked
     semantic_type: toggle
@@ -3696,7 +3696,7 @@ screens:
     - hamburger icon
     - menu
     - side menu
-    - 导航菜单
+    - [CH]Menu
     semantic_type: button
   - text: My Music
     center:
@@ -3707,8 +3707,8 @@ screens:
     aliases:
     - Local Music
     - Music Library
-    - 我的音乐
-    - 本地音乐
+    - My[CH]
+    - Local[CH]
     semantic_type: menu_item
   - text: Upgrade to PRO
     center:
@@ -3719,8 +3719,8 @@ screens:
     aliases:
     - Go Premium
     - Remove Ads
-    - 升级专业版
-    - 购买Pro
+    - [CH]
+    - PurchasePro
     semantic_type: button
   - text: Sort
     center:
@@ -3731,8 +3731,8 @@ screens:
     aliases:
     - Sort by
     - Order
-    - 排序方式
-    - 排序
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -3743,8 +3743,8 @@ screens:
     aliases:
     - Find
     - Search music
-    - 搜索
-    - 查找
+    - Search
+    - [CH]
     semantic_type: input
   - text: PLAYLISTS
     center:
@@ -3755,7 +3755,7 @@ screens:
     aliases:
     - Playlists
     - Lists
-    - 播放列表
+    - [CH]
     semantic_type: tab
   - text: FOLDERS
     center:
@@ -3766,8 +3766,8 @@ screens:
     aliases:
     - Directories
     - Files
-    - 文件夹
-    - 目录
+    - File夹
+    - Directory
     semantic_type: tab
   - text: ALBUMS
     center:
@@ -3777,8 +3777,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Album
-    - 专辑
-    - 唱片
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: ARTISTS
     center:
@@ -3789,8 +3789,8 @@ screens:
     aliases:
     - Singers
     - Bands
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: GENRES
     center:
@@ -3801,8 +3801,8 @@ screens:
     aliases:
     - Categories
     - Styles
-    - 流派
-    - 音乐类型
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: No Local Music Found!
     center:
@@ -3813,8 +3813,8 @@ screens:
     aliases:
     - No music found
     - Empty library
-    - 未找到本地音乐
-    - 没有本地音乐
+    - [CH]Local[CH]
+    - 没YesLocal[CH]
     semantic_type: label
   description: Main music library screen displaying categories like playlists, albums,
     and artists, along with search and sort options, currently showing an empty state
@@ -3833,7 +3833,7 @@ screens:
     - Back
     - Up
     - Return
-    - 返回
+    - Back
     semantic_type: button
   - text: Search
     center:
@@ -3844,7 +3844,7 @@ screens:
     aliases:
     - Find
     - Query
-    - 搜索
+    - Search
     - Search music
     semantic_type: button
   description: Search screen featuring a navigate up button and a search field to
@@ -3863,7 +3863,7 @@ screens:
     - Back
     - Up
     - Return
-    - 返回
+    - Back
     semantic_type: button
   - text: Search
     center:
@@ -3874,8 +3874,8 @@ screens:
     aliases:
     - Find
     - Search music
-    - 搜索
-    - 查找
+    - Search
+    - [CH]
     semantic_type: button
   - text: Sorry..No songs to show!
     center:
@@ -3886,8 +3886,8 @@ screens:
     aliases:
     - No songs found
     - Empty library
-    - 暂无歌曲
-    - 没有歌曲
+    - 暂None[CH]
+    - 没Yes[CH]
     semantic_type: label
   description: Search results screen displaying an empty state message indicating
     no songs were found.
@@ -3954,7 +3954,7 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
+    - Close[CH]
     - hide menu
     semantic_type: button
   - text: My Music
@@ -3964,10 +3964,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - local music
     - music library
-    - 本地音乐
+    - Local[CH]
     semantic_type: menu_item
   - text: Upgrade to PRO
     center:
@@ -3976,10 +3976,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
+    - [CH]
     - buy pro
     - premium upgrade
-    - 解锁专业版
+    - [CH]
     semantic_type: menu_item
   - text: Search
     center:
@@ -3988,10 +3988,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
-    - 查找
+    - [CH]
     semantic_type: button
   - text: PLAYLISTS
     center:
@@ -4000,9 +4000,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - play lists
-    - 歌单
+    - [CH]
     - my playlists
     semantic_type: tab
   - text: FOLDERS
@@ -4012,10 +4012,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
+    - File夹
     - directory
     - folders view
-    - 文件
+    - File
     semantic_type: tab
   - text: ALBUMS
     center:
@@ -4024,10 +4024,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - albums list
-    - 唱片
-    - 音乐专辑
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: ARTISTS
     center:
@@ -4036,10 +4036,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - artists list
-    - 音乐人
+    - [CH]
     semantic_type: tab
   - text: GENRES
     center:
@@ -4048,10 +4048,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 流派
-    - 类型
+    - [CH]
+    - [CH]
     - genres list
-    - 音乐类型
+    - [CH]
     semantic_type: tab
   - text: storage
     center:
@@ -4060,10 +4060,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 存储
+    - [CH]
     - storage space
-    - 内存
-    - 存储空间
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Pi Music Player
     center:
@@ -4072,10 +4072,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     - Pi Music
-    - Pi播放器
+    - Pi[CH]
     semantic_type: label
   - text: Video Player
     center:
@@ -4084,9 +4084,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
+    - [CH]
     - video
-    - 视频
+    - [CH]
     - Pi Video Player
     semantic_type: menu_item
   - text: Customizations
@@ -4096,10 +4096,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
+    - Custom
     - customization
-    - 个性化
-    - 外观
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Themes
     center:
@@ -4108,10 +4108,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主题
+    - Theme
     - theme
-    - 皮肤
-    - 外观主题
+    - [CH]
+    - [CH]Theme
     semantic_type: setting
   - text: Settings
     center:
@@ -4120,10 +4120,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - preferences
-    - 选项
-    - 系统设置
+    - [CH]
+    - [CH]Settings
     semantic_type: setting
   - text: Store
     center:
@@ -4132,9 +4132,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 商店
+    - [CH]
     - app store
-    - 应用商店
+    - App[CH]
     - Pi Store
     semantic_type: menu_item
   - text: Features
@@ -4144,10 +4144,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
+    - Feature
     - feature list
-    - 特性
-    - 应用功能
+    - [CH]
+    - AppFeature
     semantic_type: menu_item
   - text: Equalizer
     center:
@@ -4156,10 +4156,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 均衡器
+    - [CH]
     - EQ
-    - 音效
-    - 音频均衡器
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Ringtone Cutter
     center:
@@ -4168,10 +4168,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 铃声剪辑
+    - Ring Tone[CH]
     - ringtone maker
-    - 铃声制作
-    - 裁剪铃声
+    - Ring Tone[CH]
+    - [CH]Ring Tone
     semantic_type: menu_item
   - text: Smart Playlists
     center:
@@ -4180,10 +4180,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 智能播放列表
+    - [CH]
     - smart list
-    - 智能歌单
-    - 自动播放列表
+    - [CH]
+    - Auto[CH]
     semantic_type: menu_item
   - text: AudioBook and Podcast
     center:
@@ -4192,10 +4192,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 有声书和播客
+    - Yes[CH]
     - audiobook
     - podcast
-    - 有声读物
+    - Yes[CH]
     semantic_type: menu_item
   - text: Sleep Timer
     center:
@@ -4204,10 +4204,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 睡眠定时器
-    - 定时关闭
+    - Sleep[CH]
+    - [CH]Close
     - sleep timer
-    - 定时停止播放
+    - [CH]Stop[CH]
     semantic_type: menu_item
   - text: Pi Power Share
     center:
@@ -4216,10 +4216,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi能量共享
+    - Pi[CH]Share
     - power share
-    - 分享
-    - Pi分享
+    - Share
+    - PiShare
     semantic_type: menu_item
   - text: Help
     center:
@@ -4228,10 +4228,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - help center
-    - 帮助中心
-    - 支持
+    - HelpCenter
+    - [CH]
     semantic_type: menu_item
   - text: Send Feedback
     center:
@@ -4240,10 +4240,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
-    - 意见反馈
-    - 提交反馈
+    - [CH]Feedback
+    - [CH]Feedback
     semantic_type: menu_item
   description: Side navigation drawer containing music library categories, app tools,
     settings, and an option to upgrade to PRO.
@@ -4369,7 +4369,7 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
+    - Close[CH]
     - close side menu
     semantic_type: button
   - text: My Music
@@ -4379,7 +4379,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - music library
     - local music
     - audio files
@@ -4391,7 +4391,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
+    - [CH]
     - go pro
     - premium upgrade
     - buy pro
@@ -4403,7 +4403,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - order by
     - arrange
@@ -4415,7 +4415,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     - query
@@ -4427,7 +4427,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - play lists
     - my playlists
     semantic_type: tab
@@ -4438,7 +4438,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
+    - File夹
     - directory
     - folders view
     semantic_type: tab
@@ -4449,7 +4449,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - albums list
     - music albums
     semantic_type: tab
@@ -4460,8 +4460,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - artists list
     - musicians
     semantic_type: tab
@@ -4472,8 +4472,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 流派
-    - 类型
+    - [CH]
+    - [CH]
     - genres list
     - music genres
     semantic_type: tab
@@ -4484,7 +4484,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 下载
+    - Download
     - download music
     - save offline
     semantic_type: button
@@ -4495,7 +4495,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     - PiMusic
     semantic_type: label
@@ -4506,7 +4506,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
+    - [CH]
     - video
     - play video
     semantic_type: menu_item
@@ -4517,7 +4517,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
+    - Custom
     - personalization
     - customize
     - appearance
@@ -4529,7 +4529,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主题
+    - Theme
     - theme settings
     - skins
     - color themes
@@ -4541,7 +4541,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - options
     - app settings
@@ -4553,7 +4553,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 商店
+    - [CH]
     - app store
     - play store
     - market
@@ -4565,7 +4565,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
+    - Feature
     - app features
     - what's new
     - highlights
@@ -4577,7 +4577,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 均衡器
+    - [CH]
     - EQ
     - audio equalizer
     - sound settings
@@ -4589,7 +4589,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 铃声剪辑
+    - Ring Tone[CH]
     - ringtone maker
     - audio trimmer
     - cut ringtone
@@ -4601,7 +4601,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 智能播放列表
+    - [CH]
     - auto playlists
     - dynamic playlists
     semantic_type: menu_item
@@ -4612,7 +4612,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 有声书和播客
+    - Yes[CH]
     - audiobooks
     - podcasts
     - spoken word
@@ -4624,7 +4624,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 睡眠定时器
+    - Sleep[CH]
     - sleep timer
     - auto sleep
     - timer
@@ -4636,7 +4636,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi能量共享
+    - Pi[CH]Share
     - share app
     - recommend to friends
     semantic_type: link
@@ -4647,7 +4647,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - support
     - faq
     - help center
@@ -4659,7 +4659,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
     - contact us
     - report issue
@@ -4677,8 +4677,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
-    - 排序方式
+    - [CH]
+    - [CH]
     - Sort order
     semantic_type: button
   - text: Album
@@ -4688,7 +4688,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - Albums
     semantic_type: menu_item
   - text: No. of Tracks
@@ -4698,8 +4698,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 曲目数
-    - 歌曲数量
+    - [CH]
+    - [CH]
     - Track count
     semantic_type: menu_item
   - text: Ascending
@@ -4709,7 +4709,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升序
+    - [CH]
     - Ascending order
     semantic_type: menu_item
   description: Sorting options menu allowing users to sort their music by album or
@@ -4728,7 +4728,7 @@ screens:
     - Back
     - Up
     - Return
-    - 返回
+    - Back
     semantic_type: button
   - text: Sort
     center:
@@ -4740,7 +4740,7 @@ screens:
     - Sort by
     - Order
     - Arrange
-    - 排序
+    - [CH]
     semantic_type: button
   - text: Search
     center:
@@ -4752,7 +4752,7 @@ screens:
     - Find
     - Query
     - Search music
-    - 搜索
+    - Search
     semantic_type: button
   description: Top app bar for a music list screen with options to navigate back,
     sort items, and search.
@@ -4769,7 +4769,7 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
+    - Close[CH]
     - close sidebar
     semantic_type: button
   - text: My Music
@@ -4779,7 +4779,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - music library
     - local music
     semantic_type: tab
@@ -4790,10 +4790,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
+    - [CH]
     - go pro
     - premium upgrade
-    - 购买专业版
+    - Purchase[CH]
     semantic_type: button
   - text: Sort
     center:
@@ -4802,7 +4802,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - sort order
     semantic_type: button
@@ -4813,7 +4813,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     - search bar
@@ -4825,7 +4825,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - play lists
     - my playlists
     semantic_type: tab
@@ -4836,7 +4836,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
+    - File夹
     - directory
     - folders view
     semantic_type: tab
@@ -4847,7 +4847,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - albums list
     - music albums
     semantic_type: tab
@@ -4858,8 +4858,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - artists list
     semantic_type: tab
   - text: GENRES
@@ -4869,8 +4869,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 流派
-    - 类型
+    - [CH]
+    - [CH]
     - genres list
     semantic_type: tab
   - text: Pi Music Player
@@ -4880,7 +4880,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     - PiMusic
     semantic_type: label
@@ -4891,7 +4891,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
+    - [CH]
     - video
     - play video
     semantic_type: menu_item
@@ -4902,10 +4902,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
+    - Custom
     - customization
     - personalization
-    - 个性化
+    - [CH]
     semantic_type: setting
   - text: Themes
     center:
@@ -4914,7 +4914,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主题
+    - Theme
     - theme settings
     - app themes
     semantic_type: setting
@@ -4925,10 +4925,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - options
-    - 系统设置
+    - [CH]Settings
     semantic_type: setting
   - text: Store
     center:
@@ -4937,10 +4937,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 商店
+    - [CH]
     - app store
     - premium store
-    - 应用商店
+    - App[CH]
     semantic_type: link
   - text: Features
     center:
@@ -4949,9 +4949,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
+    - Feature
     - app features
-    - 功能介绍
+    - Feature[CH]
     semantic_type: menu_item
   - text: Equalizer
     center:
@@ -4960,10 +4960,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 均衡器
+    - [CH]
     - EQ
     - audio equalizer
-    - 音效
+    - [CH]
     semantic_type: setting
   - text: Ringtone Cutter
     center:
@@ -4972,10 +4972,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 铃声剪辑
+    - Ring Tone[CH]
     - ringtone maker
     - cut ringtone
-    - 铃声制作
+    - Ring Tone[CH]
     semantic_type: menu_item
   - text: Smart Playlists
     center:
@@ -4984,7 +4984,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 智能播放列表
+    - [CH]
     - smart lists
     - auto playlists
     semantic_type: menu_item
@@ -4995,10 +4995,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 有声书和播客
+    - Yes[CH]
     - audiobooks
     - podcasts
-    - 有声读物
+    - Yes[CH]
     semantic_type: menu_item
   - text: Sleep Timer
     center:
@@ -5007,10 +5007,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 睡眠定时器
-    - 定时关闭
+    - Sleep[CH]
+    - [CH]Close
     - sleep timer settings
-    - 定时停止
+    - [CH]Stop
     semantic_type: setting
   - text: Pi Power Share
     center:
@@ -5019,7 +5019,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi能量共享
+    - Pi[CH]Share
     - power share
     - share pi
     semantic_type: menu_item
@@ -5030,10 +5030,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - help center
     - support
-    - 帮助中心
+    - HelpCenter
     semantic_type: link
   - text: Send Feedback
     center:
@@ -5042,10 +5042,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
     - report issue
-    - 意见反馈
+    - [CH]Feedback
     semantic_type: button
   description: Navigation drawer containing links to music library views, audio tools,
     and application settings
@@ -5061,7 +5061,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Sort
-    - 排序
+    - [CH]
     - Sort options
     semantic_type: button
   - text: Artist
@@ -5072,7 +5072,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Artists
-    - 歌手
+    - [CH]
     - Singer
     semantic_type: menu_item
   - text: No. of Albums
@@ -5083,7 +5083,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Album count
-    - 专辑数量
+    - [CH]
     - Number of Albums
     semantic_type: menu_item
   - text: No. of Tracks
@@ -5094,7 +5094,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Track count
-    - 歌曲数量
+    - [CH]
     - Number of Tracks
     semantic_type: menu_item
   - text: Ascending
@@ -5104,7 +5104,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升序
+    - [CH]
     - Ascending order
     - A-Z
     semantic_type: menu_item
@@ -5123,8 +5123,8 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
-    - 返回
+    - Close[CH]
+    - Back
     semantic_type: button
   - text: My Music
     center:
@@ -5133,8 +5133,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
-    - 本地音乐
+    - My[CH]
+    - Local[CH]
     - music library
     semantic_type: menu_item
   - text: Upgrade to PRO
@@ -5144,8 +5144,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
-    - 购买Pro
+    - [CH]
+    - PurchasePro
     - remove ads
     - go pro
     semantic_type: menu_item
@@ -5156,7 +5156,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - order
     semantic_type: button
@@ -5167,7 +5167,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     semantic_type: button
@@ -5178,8 +5178,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 歌曲
-    - 音乐
+    - [CH]
+    - [CH]
     - songs
     - audio files
     semantic_type: tab
@@ -5190,8 +5190,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
-    - 歌单
+    - [CH]
+    - [CH]
     - lists
     semantic_type: tab
   - text: FOLDERS
@@ -5201,8 +5201,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
-    - 目录
+    - File夹
+    - Directory
     - directories
     semantic_type: tab
   - text: ALBUMS
@@ -5212,8 +5212,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
-    - 唱片
+    - [CH]
+    - [CH]
     - albums list
     semantic_type: tab
   - text: ARTISTS
@@ -5223,8 +5223,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - singers
     semantic_type: tab
   - text: Pi Music Player
@@ -5234,7 +5234,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     - app name
     semantic_type: label
@@ -5245,8 +5245,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
-    - 视频
+    - [CH]
+    - [CH]
     - video
     semantic_type: menu_item
   - text: Customizations
@@ -5256,8 +5256,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
-    - 个性化
+    - Custom
+    - [CH]
     - themes
     semantic_type: menu_item
   - text: Features
@@ -5267,8 +5267,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
-    - 特性
+    - Feature
+    - [CH]
     - functions
     semantic_type: menu_item
   - text: Equalizer
@@ -5278,9 +5278,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 均衡器
+    - [CH]
     - EQ
-    - 音效
+    - [CH]
     semantic_type: menu_item
   - text: Ringtone Cutter
     center:
@@ -5289,8 +5289,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 铃声剪辑
-    - 铃声制作
+    - Ring Tone[CH]
+    - Ring Tone[CH]
     - ringtone maker
     semantic_type: menu_item
   - text: Smart Playlists
@@ -5300,8 +5300,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 智能播放列表
-    - 自动歌单
+    - [CH]
+    - Auto[CH]
     - smart lists
     semantic_type: menu_item
   - text: AudioBook and Podcast
@@ -5311,8 +5311,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 有声书和播客
-    - 有声读物
+    - Yes[CH]
+    - Yes[CH]
     - audiobooks
     semantic_type: menu_item
   - text: Sleep Timer
@@ -5322,8 +5322,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 睡眠定时器
-    - 定时关闭
+    - Sleep[CH]
+    - [CH]Close
     - sleep timer
     semantic_type: menu_item
   - text: Pi Power Share
@@ -5333,8 +5333,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi能量共享
-    - 分享赚钱
+    - Pi[CH]Share
+    - Share[CH]
     - power share
     semantic_type: menu_item
   - text: Help
@@ -5344,8 +5344,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
-    - 支持
+    - Help
+    - [CH]
     - support
     semantic_type: menu_item
   - text: Send Feedback
@@ -5355,8 +5355,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
-    - 意见反馈
+    - [CH]Feedback
+    - [CH]Feedback
     - feedback
     semantic_type: menu_item
   - text: User Guide
@@ -5366,8 +5366,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 用户指南
-    - 使用手册
+    - [CH]Guide
+    - [CH]Manual
     - guide
     semantic_type: menu_item
   - text: About
@@ -5377,8 +5377,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关于
-    - 关于应用
+    - About
+    - AboutApp
     - about app
     semantic_type: menu_item
   - text: Invite Friends
@@ -5388,8 +5388,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 邀请好友
-    - 分享应用
+    - [CH]
+    - ShareApp
     - invite
     semantic_type: menu_item
   description: Navigation drawer providing access to music library categories, audio
@@ -5407,7 +5407,7 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
+    - Close[CH]
     - close sidebar
     semantic_type: button
   - text: My Music
@@ -5417,7 +5417,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - music library
     - local music
     semantic_type: tab
@@ -5428,10 +5428,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
+    - [CH]
     - go pro
     - premium upgrade
-    - 购买专业版
+    - Purchase[CH]
     semantic_type: button
   - text: Sort
     center:
@@ -5440,7 +5440,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - sort order
     semantic_type: button
@@ -5451,7 +5451,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     - search bar
@@ -5463,10 +5463,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 歌曲
+    - [CH]
     - tracks list
     - songs
-    - 音频
+    - [CH]
     semantic_type: tab
   - text: PLAYLISTS
     center:
@@ -5475,9 +5475,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - playlists tab
-    - 歌单
+    - [CH]
     semantic_type: tab
   - text: FOLDERS
     center:
@@ -5486,9 +5486,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
+    - File夹
     - folders tab
-    - 目录
+    - Directory
     semantic_type: tab
   - text: ALBUMS
     center:
@@ -5497,9 +5497,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - albums tab
-    - 唱片
+    - [CH]
     semantic_type: tab
   - text: ARTISTS
     center:
@@ -5508,9 +5508,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
+    - [CH]
     - artists tab
-    - 歌手
+    - [CH]
     semantic_type: tab
   - text: Pi Music Player
     center:
@@ -5519,7 +5519,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - Pi Player
     - app name
     semantic_type: label
@@ -5530,9 +5530,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
+    - [CH]
     - video
-    - 视频
+    - [CH]
     semantic_type: menu_item
   - text: Customizations
     center:
@@ -5541,9 +5541,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
+    - Custom
     - customization
-    - 个性化
+    - [CH]
     semantic_type: setting
   - text: Themes
     center:
@@ -5552,9 +5552,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 主题
+    - Theme
     - theme settings
-    - 外观
+    - [CH]
     semantic_type: setting
   - text: Settings
     center:
@@ -5563,7 +5563,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - app settings
     semantic_type: menu_item
@@ -5574,9 +5574,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 商店
+    - [CH]
     - app store
-    - 应用商店
+    - App[CH]
     semantic_type: menu_item
   - text: Features
     center:
@@ -5585,9 +5585,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
+    - Feature
     - app features
-    - 特性
+    - [CH]
     semantic_type: menu_item
   - text: Equalizer
     center:
@@ -5596,9 +5596,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 均衡器
+    - [CH]
     - eq
-    - 音效
+    - [CH]
     semantic_type: menu_item
   - text: Ringtone Cutter
     center:
@@ -5607,9 +5607,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 铃声剪辑
+    - Ring Tone[CH]
     - ringtone maker
-    - 铃声制作
+    - Ring Tone[CH]
     semantic_type: menu_item
   - text: Smart Playlists
     center:
@@ -5618,9 +5618,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 智能播放列表
+    - [CH]
     - smart lists
-    - 智能歌单
+    - [CH]
     semantic_type: menu_item
   - text: AudioBook and Podcast
     center:
@@ -5629,10 +5629,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 有声书和播客
+    - Yes[CH]
     - audiobooks
     - podcasts
-    - 有声读物
+    - Yes[CH]
     semantic_type: menu_item
   - text: Sleep Timer
     center:
@@ -5641,9 +5641,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 睡眠定时器
+    - Sleep[CH]
     - sleep timer settings
-    - 定时关闭
+    - [CH]Close
     semantic_type: menu_item
   - text: Pi Power Share
     center:
@@ -5652,9 +5652,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi能量共享
+    - Pi[CH]Share
     - power share
-    - 分享
+    - Share
     semantic_type: menu_item
   - text: Help
     center:
@@ -5663,9 +5663,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - help center
-    - 帮助中心
+    - HelpCenter
     semantic_type: menu_item
   - text: Send Feedback
     center:
@@ -5674,9 +5674,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
-    - 意见反馈
+    - [CH]Feedback
     semantic_type: menu_item
   description: Side navigation drawer containing categorized menu options for the
     music library, premium upgrades, app tools, settings, and help.
@@ -5693,7 +5693,7 @@ screens:
     aliases:
     - close menu
     - close drawer
-    - 关闭导航
+    - Close[CH]
     - close sidebar
     semantic_type: button
   - text: My Music
@@ -5703,7 +5703,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - music library
     - local music
     semantic_type: menu_item
@@ -5714,7 +5714,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 升级专业版
+    - [CH]
     - go pro
     - premium upgrade
     - remove ads
@@ -5726,7 +5726,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 排序
+    - [CH]
     - sort by
     - sort order
     semantic_type: button
@@ -5737,7 +5737,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 搜索
+    - Search
     - find
     - search music
     semantic_type: button
@@ -5748,9 +5748,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 曲目
+    - [CH]
     - songs
-    - 歌曲
+    - [CH]
     semantic_type: tab
   - text: PLAYLISTS
     center:
@@ -5759,7 +5759,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - play lists
     semantic_type: tab
   - text: FOLDERS
@@ -5769,7 +5769,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
+    - File夹
     - directories
     semantic_type: tab
   - text: ALBUMS
@@ -5779,7 +5779,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - album
     semantic_type: tab
   - text: ARTISTS
@@ -5789,8 +5789,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 艺术家
-    - 歌手
+    - [CH]
+    - [CH]
     - singers
     semantic_type: tab
   - text: Pi Music Player
@@ -5800,7 +5800,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - Pi音乐播放器
+    - Pi[CH]
     - PiMusic
     - app name
     semantic_type: label
@@ -5811,9 +5811,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 视频播放器
+    - [CH]
     - video
-    - 视频
+    - [CH]
     semantic_type: menu_item
   - text: Customizations
     center:
@@ -5822,7 +5822,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义
+    - Custom
     - customization
     - themes
     semantic_type: menu_item
@@ -5833,7 +5833,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 功能
+    - Feature
     - features list
     semantic_type: menu_item
   - text: Help
@@ -5843,7 +5843,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 帮助
+    - Help
     - support
     - help center
     semantic_type: menu_item
@@ -5854,7 +5854,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发送反馈
+    - [CH]Feedback
     - feedback
     - report issue
     semantic_type: menu_item
@@ -5865,7 +5865,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 用户指南
+    - [CH]Guide
     - guide
     - manual
     semantic_type: menu_item
@@ -5876,7 +5876,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关于
+    - About
     - about app
     semantic_type: menu_item
   - text: Invite Friends
@@ -5886,7 +5886,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 邀请好友
+    - [CH]
     - invite
     - share app
     semantic_type: menu_item
@@ -5897,7 +5897,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 关注我们
+    - [CH]
     - follow
     - social media
     semantic_type: menu_item
@@ -5908,7 +5908,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 信息
+    - Info
     - information
     - details
     semantic_type: menu_item
@@ -5919,7 +5919,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 评价应用
+    - [CH]App
     - rate app
     - review
     semantic_type: menu_item
@@ -5936,8 +5936,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 首页
-    - 主页
+    - Home
+    - Home
     - home screen
     - home page
     semantic_type: tab
@@ -5948,8 +5948,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 连接安全
-    - 安全连接
+    - ConnectionSecurity
+    - SecurityConnection
     - secure connection
     - connection secured
     semantic_type: label
@@ -5960,8 +5960,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 新标签页
-    - 新建标签
+    - NewTab页
+    - [CH]Tab
     - add tab
     - new tab page
     semantic_type: button
@@ -5972,8 +5972,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 切换或关闭标签页
-    - 管理标签页
+    - [CH]CloseTab页
+    - ManageTab页
     - tab manager
     - switch tabs
     semantic_type: button
@@ -5992,7 +5992,7 @@ screens:
     aliases:
     - Duplicate
     - Clipboard
-    - 复制
+    - Copy
     semantic_type: button
   - text: Nearby
     center:
@@ -6003,7 +6003,7 @@ screens:
     aliases:
     - Nearby Share
     - Nearby devices
-    - 附近
+    - [CH]
     semantic_type: menu_item
   - text: Messages
     center:
@@ -6014,7 +6014,7 @@ screens:
     aliases:
     - SMS
     - Text
-    - 短信
+    - [CH]
     semantic_type: menu_item
   - text: Gmail
     center:
@@ -6025,7 +6025,7 @@ screens:
     aliases:
     - Google Mail
     - Email
-    - 邮件
+    - [CH]
     semantic_type: menu_item
   - text: Collections
     center:
@@ -6036,7 +6036,7 @@ screens:
     aliases:
     - Library
     - Saved
-    - 收藏
+    - [CH]
     semantic_type: menu_item
   - text: Drive
     center:
@@ -6047,7 +6047,7 @@ screens:
     aliases:
     - Google Drive
     - Cloud
-    - 云端硬盘
+    - Cloud[CH]
     semantic_type: menu_item
   - text: Apps list
     center:
@@ -6058,7 +6058,7 @@ screens:
     aliases:
     - All apps
     - More apps
-    - 应用列表
+    - App[CH]
     semantic_type: button
   description: Android share sheet displaying sharing options like Nearby, Messages,
     Gmail, Drive, and a list of available apps.
@@ -6075,7 +6075,7 @@ screens:
     aliases:
     - Select theme
     - Choose theme
-    - 选择主题
+    - SelectTheme
     semantic_type: label
   - text: Gloss Theme
     center:
@@ -6086,7 +6086,7 @@ screens:
     aliases:
     - Gloss
     - Glossy theme
-    - 光泽主题
+    - [CH]Theme
     semantic_type: menu_item
   - text: Black Theme
     center:
@@ -6097,7 +6097,7 @@ screens:
     aliases:
     - Black
     - Black mode
-    - 黑色主题
+    - [CH]Theme
     semantic_type: menu_item
   - text: Dark Theme
     center:
@@ -6108,7 +6108,7 @@ screens:
     aliases:
     - Dark
     - Dark mode
-    - 深色主题
+    - DarkTheme
     semantic_type: menu_item
   - text: Light Theme
     center:
@@ -6119,7 +6119,7 @@ screens:
     aliases:
     - Light
     - Light mode
-    - 浅色主题
+    - LightTheme
     semantic_type: menu_item
   description: Theme selection screen where the user can choose between Gloss, Black,
     Dark, and Light visual themes.
@@ -6135,8 +6135,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Set Background
-    - 背景
-    - 选择背景
+    - Background
+    - SelectBackground
     - Background
     semantic_type: button
   - text: My Music
@@ -6146,9 +6146,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 我的音乐
+    - My[CH]
     - Music Library
-    - 本地音乐
+    - Local[CH]
     - Local Music
     semantic_type: tab
   - text: TRACKS
@@ -6158,7 +6158,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 歌曲
+    - [CH]
     - Songs
     - Track
     semantic_type: tab
@@ -6169,8 +6169,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
-    - 歌单
+    - [CH]
+    - [CH]
     - Playlist
     semantic_type: tab
   - text: DISCOVER
@@ -6180,9 +6180,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 发现
+    - [CH]
     - Explore
-    - 探索
+    - [CH]
     semantic_type: tab
   - text: FOLDERS
     center:
@@ -6191,8 +6191,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 文件夹
-    - 目录
+    - File夹
+    - Directory
     - Folder
     semantic_type: tab
   - text: ALBUMS
@@ -6202,9 +6202,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - Album
-    - 唱片
+    - [CH]
     semantic_type: tab
   - text: Choose Picture
     center:
@@ -6213,10 +6213,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 选择图片
+    - Select[CH]
     - Select Image
     - Pick Photo
-    - 选择照片
+    - Select[CH]
     semantic_type: button
   description: Background customization screen allowing users to select a picture
     from various music library categories like tracks, playlists, and albums.
@@ -6232,7 +6232,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Choose album view
-    - 选择专辑视图
+    - Select[CH]
     - Album view selection
     semantic_type: label
   - text: Grid View
@@ -6243,8 +6243,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Grid
-    - 网格视图
-    - 网格布局
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: List View
     center:
@@ -6254,8 +6254,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - List
-    - 列表视图
-    - 列表布局
+    - [CH]
+    - [CH]
     semantic_type: button
   description: Album view selection screen allowing users to choose between grid and
     list display layouts.
@@ -6271,7 +6271,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Back
-    - 返回
+    - Back
     - Up
     - Go back
     semantic_type: button
@@ -6283,7 +6283,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Edit Sections
-    - 自定义分区
+    - Custom[CH]
     - Manage sections
     semantic_type: menu_item
   - text: Tracks
@@ -6294,7 +6294,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Songs
-    - 歌曲
+    - [CH]
     - Audio files
     semantic_type: tab
   - text: Playlists
@@ -6304,7 +6304,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 播放列表
+    - [CH]
     - Lists
     - Song lists
     semantic_type: tab
@@ -6316,7 +6316,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Directories
-    - 文件夹
+    - File夹
     - File folders
     semantic_type: tab
   - text: Albums
@@ -6326,7 +6326,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 专辑
+    - [CH]
     - Records
     - Music albums
     semantic_type: tab
@@ -6337,7 +6337,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 歌手
+    - [CH]
     - Singers
     - Performers
     semantic_type: tab
@@ -6348,7 +6348,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 流派
+    - [CH]
     - Categories
     - Styles
     semantic_type: tab
@@ -6367,7 +6367,7 @@ screens:
     aliases:
     - Back
     - Up
-    - 返回
+    - Back
     semantic_type: button
   - text: Hidden Folders
     center:
@@ -6376,7 +6376,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 隐藏文件夹
+    - [CH]File夹
     - Hidden files
     - Hidden directories
     semantic_type: menu_item
@@ -6388,7 +6388,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Empty
-    - 暂无内容
+    - 暂None[CH]
     - No items
     semantic_type: label
   - text: REMOVE FROM HIDDEN FOLDERS
@@ -6399,7 +6399,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Unhide
-    - 取消隐藏
+    - Cancel[CH]
     - Show folder
     semantic_type: button
   description: Hidden Folders management screen displaying an empty state message
@@ -6417,7 +6417,7 @@ screens:
     aliases:
     - PiMusic
     - Pi Music
-    - 音乐播放器
+    - [CH]
     semantic_type: label
   - text: Rescan Music Library
     center:
@@ -6426,9 +6426,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 重新扫描音乐库
+    - [CH]Scan[CH]
     - Scan Music
-    - 刷新音乐
+    - [CH]
     - Rescan
     semantic_type: button
   - text: Do you want to rescan your music library?
@@ -6438,9 +6438,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 是否重新扫描音乐库？
+    - YesNo[CH]Scan[CH]？
     - Rescan library?
-    - 确认扫描
+    - ConfirmScan
     semantic_type: label
   - text: Cancel
     center:
@@ -6449,9 +6449,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 取消
+    - Cancel
     - Dismiss
-    - 关闭
+    - Close
     semantic_type: button
   - text: OK
     center:
@@ -6460,8 +6460,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 确定
-    - 确认
+    - OK
+    - Confirm
     - Confirm
     - 'Yes'
     semantic_type: button
@@ -6480,7 +6480,7 @@ screens:
     aliases:
     - PiMusic
     - Pi Player
-    - 音乐播放器
+    - [CH]
     semantic_type: label
   - text: Translation Help
     center:
@@ -6491,7 +6491,7 @@ screens:
     aliases:
     - Help Translate
     - Translate
-    - 翻译帮助
+    - [CH]Help
     - Localization
     semantic_type: menu_item
   - text: OK
@@ -6502,7 +6502,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Confirm
-    - 确定
+    - OK
     - Accept
     - Got it
     semantic_type: button

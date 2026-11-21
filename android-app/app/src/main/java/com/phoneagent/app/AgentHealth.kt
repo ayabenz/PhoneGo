@@ -27,7 +27,7 @@ object AgentHealth {
         return if (age < 0) 0 else age
     }
 
-    /** adb_wifi_enabled, i.e. 设置 → 开发者选项 → 无线调试. */
+    /** adb_wifi_enabled, i.e. Settings → [CH] → [CH]Debugging. */
     @JvmStatic
     fun wirelessDebugging(context: Context): Boolean {
         return try {

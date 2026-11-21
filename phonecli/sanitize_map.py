@@ -49,16 +49,16 @@ _KNOWN_SYSTEM = {
     'iphone storage', 'find my iphone', 'apple watch app',
     'transfer or reset iphone', 'erase this iphone',
     # Chinese
-    '搜索', '设置', '通知', '照片', '相机', '日历', '时钟',
-    '地图', '天气', '音乐', '钱包', '健康', '文件', '密码',
-    '显示', '亮度', '声音', '通用', '隐私', '安全', '还原',
-    '传输', '蓝牙', '键盘', '字体', '语言', '日期', '时间',
-    '返回', '取消', '确认', '完成', '关于', '隔空投送',
-    '屏幕使用时间', '触控', '面容', '主屏幕', '控制中心',
-    '勿扰模式', '个人热点', '软件更新', '蜂窝网络', '无线局域网',
-    '电池', '存储', '后台', '隔空', '面容', '家人共享',
+    'Search', 'Settings', 'Notification', '[CH]', 'Camera', '[CH]', '[CH]',
+    '[CH]', '[CH]', '[CH]', '[CH]', '[CH]', 'File', 'Password',
+    '[CH]', 'Brightness', '[CH]', 'General', 'Privacy', 'Security', '[CH]',
+    'Transfer', 'Bluetooth', '[CH]', '[CH]', 'Language', '[CH]', '[CH]',
+    'Back', 'Cancel', 'Confirm', 'Done', 'About', '[CH]',
+    'Screen[CH]', '[CH]', '[CH]', '主Screen', '[CH]Center',
+    '[CH]Mode', 'Personal[CH]', 'SoftwareUpdate', 'CellularNetwork', 'None[CH]',
+    'Battery', '[CH]', '[CH]', '[CH]', '[CH]', '[CH]Share',
     # Keyboard/input
-    '简体中文', '繁体中文', '英文', '拼音', '手写', '笔画',
+    '[CH]Chinese', '[CH]Chinese', 'English', '[CH]', '[CH]', '[CH]',
 }
 _KNOWN_SYSTEM_LOWER = {t.lower() for t in _KNOWN_SYSTEM}
 

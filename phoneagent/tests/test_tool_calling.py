@@ -24,7 +24,7 @@ class ToolDevice(MockDevice):
         self.actions = []
 
     def dump_ui(self):
-        return '<hierarchy><node text="蓝牙" bounds="[0,0][200,120]"/></hierarchy>'
+        return '<hierarchy><node text="Bluetooth" bounds="[0,0][200,120]"/></hierarchy>'
 
     def tap_text(self, label):
         self.actions.append(("tap_text", label))
@@ -57,7 +57,7 @@ def test_tool_schemas_follow_the_labels_available():
 
 def test_named_arguments_map_to_positional():
     assert tool_arguments("tap", {"rx": 0.5, "ry": 0.25}) == [0.5, 0.25]
-    assert tool_arguments("finish", {"message": "已打开"}) == ["已打开"]
+    assert tool_arguments("finish", {"message": "已Open"}) == ["已Open"]
     assert tool_arguments("back", {}) == []
     # unknown tool: keep declaration order rather than dropping values
     assert tool_arguments("mystery", {"a": 1}) == [1]
@@ -65,15 +65,15 @@ def test_named_arguments_map_to_positional():
 
 def test_agent_runs_on_tool_calls():
     device = ToolDevice()
-    llm = ToolLLM("tap_text", {"label": "蓝牙"}, answer="已打开蓝牙设置")
+    llm = ToolLLM("tap_text", {"label": "Bluetooth"}, answer="已OpenBluetoothSettings")
     agent = PhoneAgent(device, [], llm, config=AgentConfig(verify_with_vlm=False),
                        sleep=lambda _s: None)
 
-    result = agent.run("打开蓝牙设置")
+    result = agent.run("OpenBluetoothSettings")
 
     assert result.ok
-    assert result.answer == "已打开蓝牙设置"
-    assert device.actions == [("tap_text", "蓝牙")]
+    assert result.answer == "已OpenBluetoothSettings"
+    assert device.actions == [("tap_text", "Bluetooth")]
     assert [step.kind for step in result.steps][-1] == "finish"
 
 
@@ -101,7 +101,7 @@ def test_client_parses_tool_calls(monkeypatch):
         "choices": [{"message": {
             "content": "",
             "tool_calls": [{"function": {"name": "tap_text",
-                                         "arguments": '{"label": "蓝牙"}'}}],
+                                         "arguments": '{"label": "Bluetooth"}'}}],
         }}]
     }
     monkeypatch.setattr(client, "_post", lambda payload: canned)
@@ -109,7 +109,7 @@ def test_client_parses_tool_calls(monkeypatch):
 
     assert choice.call is not None
     assert choice.call.name == "tap_text"
-    assert choice.call.arguments == {"label": "蓝牙"}
+    assert choice.call.arguments == {"label": "Bluetooth"}
 
 
 def test_client_returns_text_when_the_model_does_not_call(monkeypatch):
@@ -143,7 +143,7 @@ class FrozenDevice(MockDevice):
     """A screen that never changes, however many actions are taken."""
 
     def dump_ui(self):
-        return '<hierarchy><node text="设置" bounds="[0,0][200,120]"/></hierarchy>'
+        return '<hierarchy><node text="Settings" bounds="[0,0][200,120]"/></hierarchy>'
 
 
 class LoopingLLM:
@@ -166,7 +166,7 @@ def test_no_progress_ends_the_run_instead_of_burning_steps():
                            verify_with_vlm=False, include_ui_text=True),
         sleep=lambda _s: None,
     )
-    result = agent.run("打开蓝牙")
+    result = agent.run("OpenBluetooth")
 
     assert not result.ok
     assert result.reason.startswith("no_new_data")
@@ -204,7 +204,7 @@ def test_last_round_only_offers_finish():
                            verify_with_vlm=False, include_ui_text=True),
         sleep=lambda _s: None,
     )
-    agent.run("打开蓝牙")
+    agent.run("OpenBluetooth")
 
     assert llm.offered, "the model was never asked"
     assert "tap" in llm.offered[0]
@@ -221,7 +221,7 @@ def test_two_empty_turns_end_the_run():
         config=AgentConfig(max_rounds=10, no_new_data_limit=99, verify_with_vlm=False),
         sleep=lambda _s: None,
     )
-    result = agent.run("打开蓝牙")
+    result = agent.run("OpenBluetooth")
 
     assert not result.ok
     assert result.reason.startswith("empty_reply")
@@ -248,49 +248,49 @@ class ScriptedFinishLLM:
 
 class LabelledDevice(MockDevice):
     def dump_ui(self):
-        return '<hierarchy><node text="设置" bounds="[0,0][200,120]"/></hierarchy>'
+        return '<hierarchy><node text="Settings" bounds="[0,0][200,120]"/></hierarchy>'
 
 
 def _routed_agent(device, llm, landed):
     agent = PhoneAgent(device, [], llm, config=AgentConfig(verify_with_vlm=False),
                        sleep=lambda _s: None)
-    agent._expectation = (object(), "screen_9", "蓝牙设置")
+    agent._expectation = (object(), "screen_9", "BluetoothSettings")
     agent._landed = lambda _map: landed
     return agent
 
 
 def test_a_false_done_is_sent_back_once_then_accepted():
-    llm = ScriptedFinishLLM(["已打开蓝牙设置", "没能打开蓝牙设置，当前仍在设置首页"])
+    llm = ScriptedFinishLLM(["已OpenBluetoothSettings", "[CH]OpenBluetoothSettings，[CH]SettingsHome"])
     agent = _routed_agent(LabelledDevice(), llm, landed="screen_0")
 
-    result = agent.run("打开蓝牙设置")
+    result = agent.run("OpenBluetoothSettings")
 
     assert result.ok
-    assert "没能打开" in result.answer
+    assert "[CH]Open" in result.answer
     assert any(s.kind == "verify" and s.action == "mismatch" for s in result.steps)
     # the nudge reached the model
     assert "the map puts the current screen" in llm.prompts[1]
 
 
 def test_a_correct_done_is_not_second_guessed():
-    llm = ScriptedFinishLLM(["已打开蓝牙设置"])
+    llm = ScriptedFinishLLM(["已OpenBluetoothSettings"])
     agent = _routed_agent(LabelledDevice(), llm, landed="screen_9")
 
-    result = agent.run("打开蓝牙设置")
+    result = agent.run("OpenBluetoothSettings")
 
     assert result.ok
-    assert result.answer == "已打开蓝牙设置"
+    assert result.answer == "已OpenBluetoothSettings"
     assert not any(s.kind == "verify" for s in result.steps)
 
 
 def test_an_honest_failure_is_never_contradicted():
-    llm = ScriptedFinishLLM(["没有找到蓝牙入口，任务没有完成"])
+    llm = ScriptedFinishLLM(["[CH]Bluetooth[CH]，[CH]Done"])
     agent = _routed_agent(LabelledDevice(), llm, landed="screen_0")
 
-    result = agent.run("打开蓝牙设置")
+    result = agent.run("OpenBluetoothSettings")
 
     assert result.ok
-    assert "没有完成" in result.answer
+    assert "[CH]Done" in result.answer
     assert not any(s.kind == "verify" for s in result.steps)
 
 
@@ -305,14 +305,14 @@ def test_unreadable_screen_cannot_confirm_anything():
         def dump_ui(self):
             self.reads += 1
             if self.reads <= 1:
-                return '<hierarchy><node text="设置" bounds="[0,0][200,120]"/></hierarchy>'
+                return '<hierarchy><node text="Settings" bounds="[0,0][200,120]"/></hierarchy>'
             return "<hierarchy></hierarchy>"
 
     device = BlankDevice()
-    llm = ScriptedFinishLLM(["已打开蓝牙设置", "屏幕上没有可读内容，无法确认"])
+    llm = ScriptedFinishLLM(["已OpenBluetoothSettings", "Screen[CH]，[CH]Confirm"])
     agent = _routed_agent(device, llm, landed="screen_9")
 
-    result = agent.run("打开蓝牙设置")
+    result = agent.run("OpenBluetoothSettings")
 
     assert result.ok
     assert any(s.kind == "verify" and "nothing readable" in s.detail

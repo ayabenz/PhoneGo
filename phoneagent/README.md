@@ -1,4 +1,4 @@
-English · [中文](README.zh.md)
+English · [Chinese](README.zh.md)
 
 # phoneagent
 

@@ -32,8 +32,8 @@ class FakeDevice:
 
 
 def test_has_labels_ignores_empty_attributes():
-    assert _has_labels('<node text="蓝牙" bounds="[0,0][10,10]"/>')
-    assert _has_labels('<node content-desc="返回"/>')
+    assert _has_labels('<node text="Bluetooth" bounds="[0,0][10,10]"/>')
+    assert _has_labels('<node content-desc="Back"/>')
     assert not _has_labels('<node text="" content-desc=""/>')
     assert not _has_labels("<hierarchy display=6 windows=0></hierarchy>")
     assert not _has_labels("")

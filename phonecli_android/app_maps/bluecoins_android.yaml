@@ -16,9 +16,9 @@ screens:
     leads_to: screen_1
     aliases:
     - 7-day average
-    - 7天平均
+    - 7[CH]
     - weekly average
-    - 7日平均
+    - 7[CH]
     semantic_type: label
   - text: 30 days average
     center:
@@ -30,8 +30,8 @@ screens:
     aliases:
     - 30-day average
     - monthly average
-    - 30天平均
-    - 30日平均
+    - 30[CH]
+    - 30[CH]
     semantic_type: label
   - text: Expense
     center:
@@ -41,10 +41,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 支出
+    - [CH]
     - expenses
     - outflow
-    - 花费
+    - [CH]
     semantic_type: label
   - text: Daily Summary
     center:
@@ -54,9 +54,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 每日总结
+    - [CH]
     - daily overview
-    - 日结
+    - [CH]
     - daily report
     semantic_type: label
   - text: EXPENSE
@@ -67,10 +67,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 支出
+    - [CH]
     - expenses
     - outflow
-    - 花费
+    - [CH]
     semantic_type: label
   - text: Budget Summary
     center:
@@ -80,9 +80,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 预算总结
+    - [CH]
     - budget overview
-    - 预算汇总
+    - [CH]
     - budget report
     semantic_type: label
   - text: Main
@@ -93,9 +93,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_3
     aliases:
-    - 主页
+    - Home
     - home
-    - 主界面
+    - 主Interface
     - main screen
     semantic_type: tab
   - text: Transactions
@@ -106,10 +106,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 交易
-    - 交易记录
+    - [CH]
+    - [CH]
     - records
-    - 流水
+    - [CH]
     semantic_type: tab
   - text: Reminders
     center:
@@ -119,8 +119,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 提醒
-    - 提醒事项
+    - Reminder
+    - Reminder[CH]
     - alerts
     - notifications
     semantic_type: tab
@@ -132,10 +132,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_6
     aliases:
-    - 资产负债表
+    - [CH]
     - balance
     - net worth
-    - 净值
+    - [CH]
     semantic_type: label
   - text: Sun
     center:
@@ -145,10 +145,10 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 星期日
+    - [CH]
     - Sunday
-    - 周日
-    - 星期天
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Mon
     center:
@@ -158,10 +158,10 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 星期一
+    - [CH]
     - Monday
-    - 周一
-    - 礼拜一
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Tue
     center:
@@ -171,10 +171,10 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 星期二
+    - [CH]
     - Tuesday
-    - 周二
-    - 礼拜二
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Wed
     center:
@@ -184,10 +184,10 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 星期三
+    - [CH]
     - Wednesday
-    - 周三
-    - 礼拜三
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Thu
     center:
@@ -197,10 +197,10 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 星期四
+    - [CH]
     - Thursday
-    - 周四
-    - 礼拜四
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Fri
     center:
@@ -210,10 +210,10 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 星期五
+    - [CH]
     - Friday
-    - 周五
-    - 礼拜五
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Sat
     center:
@@ -223,10 +223,10 @@ screens:
     found_at_scroll: 1
     leads_to: screen_2
     aliases:
-    - 星期六
+    - [CH]
     - Saturday
-    - 周六
-    - 礼拜六
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Close sheet
     center:
@@ -236,9 +236,9 @@ screens:
     found_at_scroll: 2
     leads_to: screen_1
     aliases:
-    - 关闭表单
+    - Close[CH]
     - close
-    - 关闭
+    - Close
     - dismiss sheet
     semantic_type: button
   - text: Cancel
@@ -249,10 +249,10 @@ screens:
     found_at_scroll: 2
     leads_to: screen_2
     aliases:
-    - 取消
+    - Cancel
     - abort
     - dismiss
-    - 返回
+    - Back
     semantic_type: button
   - text: Phone Storage
     center:
@@ -262,9 +262,9 @@ screens:
     found_at_scroll: 2
     leads_to: screen_2
     aliases:
-    - 手机存储
+    - Phone[CH]
     - local storage
-    - 设备存储
+    - Device[CH]
     - internal storage
     semantic_type: menu_item
   scrollable: true
@@ -281,8 +281,8 @@ screens:
     aliases:
     - Forecast
     - Projection
-    - 未来预测
-    - 预测
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Transaction Type
     center:
@@ -293,8 +293,8 @@ screens:
     leads_to: screen_1
     aliases:
     - Type
-    - 交易类型
-    - 类型
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Expense
     center:
@@ -305,9 +305,9 @@ screens:
     leads_to: screen_7
     aliases:
     - Expenses
-    - 支出
-    - 花费
-    - 开支
+    - [CH]
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Date Range
     center:
@@ -318,8 +318,8 @@ screens:
     leads_to: screen_1
     aliases:
     - Period
-    - 日期范围
-    - 时间范围
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Last 30 Days
     center:
@@ -331,7 +331,7 @@ screens:
     aliases:
     - Past 30 Days
     - 近30天
-    - 过去30天
+    - [CH]30天
     semantic_type: menu_item
   - text: Daily Summary
     center:
@@ -342,8 +342,8 @@ screens:
     leads_to: screen_1
     aliases:
     - Daily Report
-    - 每日汇总
-    - 每日总结
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Chart
     center:
@@ -354,8 +354,8 @@ screens:
     leads_to: screen_1
     aliases:
     - Graph
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Table
     center:
@@ -366,8 +366,8 @@ screens:
     leads_to: screen_9
     aliases:
     - List
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Daily Statistics
     center:
@@ -378,8 +378,8 @@ screens:
     leads_to: screen_10
     aliases:
     - Daily Stats
-    - 每日统计
-    - 日统计
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   description: A financial analytics screen that allows users to filter future projections
     by transaction type and date range, displaying daily summaries via charts and
@@ -396,7 +396,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 交易类型
+    - [CH]
     - Txn Type
     - Type
     semantic_type: label
@@ -408,7 +408,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_11
     aliases:
-    - 支出
+    - [CH]
     - Expenses
     - Outflow
     semantic_type: menu_item
@@ -420,7 +420,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 日期范围
+    - [CH]
     - Time Range
     - Period
     semantic_type: label
@@ -432,9 +432,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_12
     aliases:
-    - 本月
+    - [CH]
     - Current Month
-    - 当月
+    - [CH]
     semantic_type: menu_item
   - text: Chart Type
     center:
@@ -444,7 +444,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     - Chart style
     semantic_type: label
@@ -456,9 +456,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_13
     aliases:
-    - 按类别
+    - [CH]
     - Category
-    - 分类
+    - [CH]
     semantic_type: menu_item
   - text: Budget Summary
     center:
@@ -468,9 +468,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget overview
-    - 预算总结
+    - [CH]
     semantic_type: menu_item
   - text: Chart
     center:
@@ -480,9 +480,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 图表
+    - [CH]
     - Graph
-    - 图形
+    - [CH]
     semantic_type: tab
   - text: Table
     center:
@@ -492,9 +492,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_14
     aliases:
-    - 表格
+    - [CH]
     - List
-    - 列表
+    - [CH]
     semantic_type: tab
   description: Budget summary report page with filters for transaction type, date
     range, and chart type, displaying a category chart and data table.
@@ -588,8 +588,8 @@ screens:
     aliases:
     - Home
     - Dashboard
-    - 主页
-    - 首页
+    - Home
+    - Home
     semantic_type: tab
   - text: Transactions
     center:
@@ -601,8 +601,8 @@ screens:
     aliases:
     - Ledger
     - Records
-    - 交易
-    - 账单
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Reminders
     center:
@@ -614,8 +614,8 @@ screens:
     aliases:
     - Alerts
     - Notifications
-    - 提醒
-    - 备忘
+    - Reminder
+    - [CH]
     semantic_type: menu_item
   - text: Balance Sheet
     center:
@@ -627,8 +627,8 @@ screens:
     aliases:
     - Net Worth
     - Financial Position
-    - 资产负债表
-    - 净资产
+    - [CH]
+    - [CH]
     semantic_type: tab
   description: Main navigation menu providing access to the Transactions, Reminders,
     and Balance Sheet sections.
@@ -646,7 +646,7 @@ screens:
     aliases:
     - dismiss
     - close
-    - 关闭
+    - Close
     - dismiss sheet
     semantic_type: button
   - text: Cannot locate default folder
@@ -659,7 +659,7 @@ screens:
     aliases:
     - folder not found
     - default folder missing
-    - 无法定位默认文件夹
+    - None法LocationDefaultFile夹
     - folder error
     semantic_type: label
   - text: Cancel
@@ -670,7 +670,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_15
     aliases:
-    - 取消
+    - Cancel
     - abort
     - dismiss
     - back
@@ -685,8 +685,8 @@ screens:
     aliases:
     - internal storage
     - device storage
-    - 手机存储
-    - 本地存储
+    - Phone[CH]
+    - Local[CH]
     semantic_type: label
   description: A bottom sheet displaying an error that the default folder cannot be
     located, with options to cancel or choose phone storage.
@@ -820,7 +820,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_28
     aliases:
-    - 全部
+    - All
     - all transactions
     - all records
     semantic_type: tab
@@ -832,7 +832,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 支出
+    - [CH]
     - expenses
     - outflow
     semantic_type: tab
@@ -844,7 +844,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_29
     aliases:
-    - 收入
+    - [CH]
     - inflow
     - earnings
     semantic_type: tab
@@ -876,7 +876,7 @@ screens:
     aliases:
     - Past 3 months
     - Quarter
-    - 近3个月
+    - 近3[CH]
     semantic_type: menu_item
   - text: Last 6 Months
     center:
@@ -888,7 +888,7 @@ screens:
     aliases:
     - Past 6 months
     - Half year
-    - 近6个月
+    - 近6[CH]
     semantic_type: menu_item
   - text: Last 9 Months
     center:
@@ -899,7 +899,7 @@ screens:
     leads_to: screen_32
     aliases:
     - Past 9 months
-    - 近9个月
+    - 近9[CH]
     semantic_type: menu_item
   - text: Last 12 Months
     center:
@@ -911,8 +911,8 @@ screens:
     aliases:
     - Past 12 months
     - 1 year
-    - 近一年
-    - 近12个月
+    - [CH]
+    - 近12[CH]
     semantic_type: menu_item
   description: Time range selection menu allowing users to filter financial data by
     the last 30 days, 3 months, 6 months, 9 months, or 12 months.
@@ -928,7 +928,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 收入
+    - [CH]
     - earnings
     - income category
     semantic_type: tab
@@ -940,7 +940,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 支出
+    - [CH]
     - spending
     - expenses
     semantic_type: tab
@@ -952,10 +952,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 净收入
+    - [CH]
     - net income
     - net profit
-    - 净利润
+    - [CH]
     semantic_type: label
   - text: Daily Summary
     center:
@@ -965,9 +965,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 每日摘要
+    - [CH]Summary
     - daily overview
-    - 日总结
+    - [CH]
     semantic_type: tab
   - text: Chart
     center:
@@ -977,7 +977,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_33
     aliases:
-    - 图表
+    - [CH]
     - graph
     - charts
     semantic_type: tab
@@ -989,9 +989,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_9
     aliases:
-    - 表格
+    - [CH]
     - list view
-    - 列表
+    - [CH]
     semantic_type: tab
   - text: Daily Statistics
     center:
@@ -1001,9 +1001,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_10
     aliases:
-    - 每日统计
+    - [CH]
     - daily stats
-    - 日统计
+    - [CH]
     semantic_type: label
   description: A financial reporting screen displaying daily income, expenses, and
     net earnings through summary metrics, charts, and data tables.
@@ -1021,8 +1021,8 @@ screens:
     aliases:
     - Time Range
     - Period
-    - 日期范围
-    - 时间范围
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Last 7 Days
     center:
@@ -1034,8 +1034,8 @@ screens:
     aliases:
     - Past 7 Days
     - Recent Week
-    - 最近7天
-    - 过去7天
+    - [CH]7天
+    - [CH]7天
     semantic_type: menu_item
   - text: Category
     center:
@@ -1047,8 +1047,8 @@ screens:
     aliases:
     - Categories
     - Transaction Category
-    - 分类
-    - 类别
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: All Categories
     center:
@@ -1060,8 +1060,8 @@ screens:
     aliases:
     - Every Category
     - All
-    - 所有分类
-    - 全部分类
+    - 所Yes[CH]
+    - All[CH]
     semantic_type: menu_item
   - text: Account
     center:
@@ -1073,8 +1073,8 @@ screens:
     aliases:
     - Accounts
     - Wallet
-    - 账户
-    - 账本
+    - Account
+    - [CH]
     semantic_type: setting
   - text: All Accounts
     center:
@@ -1086,8 +1086,8 @@ screens:
     aliases:
     - Every Account
     - All
-    - 所有账户
-    - 全部账户
+    - 所YesAccount
+    - AllAccount
     semantic_type: menu_item
   - text: Labels
     center:
@@ -1099,8 +1099,8 @@ screens:
     aliases:
     - Tags
     - Label
-    - 标签
-    - 标记
+    - Tab
+    - [CH]
     semantic_type: setting
   - text: (No Filter)
     center:
@@ -1112,8 +1112,8 @@ screens:
     aliases:
     - No Filters
     - Clear Filter
-    - 无筛选
-    - 不过滤
+    - None[CH]
+    - [CH]
     semantic_type: menu_item
   - text: Status
     center:
@@ -1125,8 +1125,8 @@ screens:
     aliases:
     - Transaction Status
     - State
-    - 状态
-    - 交易状态
+    - [CH]
+    - [CH]
     semantic_type: setting
   - text: Total
     center:
@@ -1138,8 +1138,8 @@ screens:
     aliases:
     - Sum
     - Total Amount
-    - 总计
-    - 总额
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Number of days
     center:
@@ -1151,8 +1151,8 @@ screens:
     aliases:
     - Days
     - Day Count
-    - 天数
-    - 日数
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Daily average
     center:
@@ -1164,8 +1164,8 @@ screens:
     aliases:
     - Average per Day
     - Avg Daily
-    - 日均
-    - 每日平均
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Daily Summary
     center:
@@ -1177,8 +1177,8 @@ screens:
     aliases:
     - Day Summary
     - Daily Report
-    - 每日汇总
-    - 日结
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Chart
     center:
@@ -1190,8 +1190,8 @@ screens:
     aliases:
     - Graph
     - Charts
-    - 图表
-    - 曲线图
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Table
     center:
@@ -1203,8 +1203,8 @@ screens:
     aliases:
     - List
     - Grid
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Daily Statistics
     center:
@@ -1216,8 +1216,8 @@ screens:
     aliases:
     - Daily Stats
     - Day Statistics
-    - 每日统计
-    - 日统计
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   description: Daily summary and statistics screen with filters for date, category,
     account, and labels, displaying aggregated totals, charts, and tables.
@@ -1233,9 +1233,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 支出
-    - 花费
-    - 开销
+    - [CH]
+    - [CH]
+    - [CH]
     - outflow
     semantic_type: tab
   - text: Income
@@ -1246,9 +1246,9 @@ screens:
     found_at_scroll: 0
     leads_to: screen_38
     aliases:
-    - 收入
-    - 进账
-    - 收益
+    - [CH]
+    - [CH]
+    - [CH]
     - inflow
     semantic_type: tab
   description: Transaction type selection screen allowing the user to choose between
@@ -1267,7 +1267,7 @@ screens:
     aliases:
     - Past 30 days
     - 30 days
-    - 最近30天
+    - [CH]30天
     semantic_type: menu_item
   - text: Last 28 Days
     center:
@@ -1279,7 +1279,7 @@ screens:
     aliases:
     - Past 28 days
     - 28 days
-    - 最近28天
+    - [CH]28天
     semantic_type: menu_item
   - text: Last 14 Days
     center:
@@ -1291,7 +1291,7 @@ screens:
     aliases:
     - Past 14 days
     - 14 days
-    - 最近14天
+    - [CH]14天
     semantic_type: menu_item
   - text: Last 7 Days
     center:
@@ -1303,7 +1303,7 @@ screens:
     aliases:
     - Past 7 days
     - 7 days
-    - 最近7天
+    - [CH]7天
     semantic_type: menu_item
   - text: Today
     center:
@@ -1314,8 +1314,8 @@ screens:
     leads_to: screen_43
     aliases:
     - Current day
-    - 今日
-    - 今天
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: This Week
     center:
@@ -1326,8 +1326,8 @@ screens:
     leads_to: screen_44
     aliases:
     - Current week
-    - 本周
-    - 这周
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: This Bi-month
     center:
@@ -1338,8 +1338,8 @@ screens:
     leads_to: screen_45
     aliases:
     - Current bi-month
-    - 双月
-    - 近两月
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: This Month
     center:
@@ -1350,8 +1350,8 @@ screens:
     leads_to: screen_38
     aliases:
     - Current month
-    - 本月
-    - 这个月
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: This Quarter
     center:
@@ -1362,8 +1362,8 @@ screens:
     leads_to: screen_46
     aliases:
     - Current quarter
-    - 本季度
-    - 这季度
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: This Year
     center:
@@ -1374,8 +1374,8 @@ screens:
     leads_to: screen_47
     aliases:
     - Current year
-    - 本年
-    - 今年
+    - [CH]
+    - [CH]
     - YTD
     semantic_type: menu_item
   - text: Custom Dates
@@ -1387,9 +1387,9 @@ screens:
     leads_to: screen_48
     aliases:
     - Custom range
-    - 自定义日期
+    - Custom[CH]
     - Date range
-    - 自定义范围
+    - Custom[CH]
     semantic_type: menu_item
   description: Date range selection menu providing preset time periods such as Today,
     This Week, This Month, and Custom Dates to filter financial data.
@@ -1405,7 +1405,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_48
     aliases:
-    - 按类别
+    - [CH]
     - Category
     - Group by Category
     semantic_type: menu_item
@@ -1417,7 +1417,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_49
     aliases:
-    - 按类别组
+    - [CH]
     - Category Group
     - Group by Category Group
     semantic_type: menu_item
@@ -1538,8 +1538,8 @@ screens:
     aliases:
     - Home
     - Dashboard
-    - 主页
-    - 首页
+    - Home
+    - Home
     semantic_type: tab
   - text: Transactions
     center:
@@ -1550,8 +1550,8 @@ screens:
     aliases:
     - Records
     - Ledger
-    - 交易
-    - 账单
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Reminders
     center:
@@ -1562,8 +1562,8 @@ screens:
     aliases:
     - Alerts
     - Recurring
-    - 提醒
-    - 账单提醒
+    - Reminder
+    - [CH]Reminder
     semantic_type: menu_item
   - text: Balance Sheet
     center:
@@ -1573,8 +1573,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Net Worth
-    - 资产负债表
-    - 净资产
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Budget
     center:
@@ -1584,8 +1584,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Budgets
-    - 预算
-    - 预算管理
+    - [CH]
+    - [CH]Manage
     semantic_type: menu_item
   description: Main navigation menu with tabs for Main, Transactions, Reminders, Balance
     Sheet, and Budget
@@ -1672,7 +1672,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - data grid
     - tabular view
     - list view
@@ -1684,7 +1684,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - graph
     - diagram
     - visual
@@ -1702,8 +1702,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 编辑
-    - 修改
+    - Edit
+    - [CH]
     - edit transaction
     - modify
     semantic_type: button
@@ -1714,8 +1714,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 银行
-    - 银行账户
+    - [CH]
+    - [CH]Account
     - bank account
     - checking
     semantic_type: menu_item
@@ -1726,8 +1726,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
-    - 列表视图
+    - [CH]
+    - [CH]
     - table view
     - list view
     semantic_type: button
@@ -1738,8 +1738,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
-    - 图形视图
+    - [CH]
+    - [CH]
     - chart view
     - graph
     semantic_type: button
@@ -1756,8 +1756,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 编辑
-    - 修改
+    - Edit
+    - [CH]
     - modify
     semantic_type: button
   - text: Reconcile
@@ -1767,8 +1767,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 对账
-    - 核对
+    - [CH]
+    - [CH]
     - reconciliation
     semantic_type: button
   - text: Table
@@ -1778,8 +1778,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     - grid
     semantic_type: tab
   - text: Chart
@@ -1789,8 +1789,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     - graph
     semantic_type: tab
   description: Transaction reconciliation screen displaying a financial chart and
@@ -1806,8 +1806,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 编辑
-    - 修改
+    - Edit
+    - [CH]
     - modify
     - edit transaction
     semantic_type: button
@@ -1818,8 +1818,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 对账
-    - 核对
+    - [CH]
+    - [CH]
     - reconciliation
     - bank reconcile
     semantic_type: button
@@ -1830,8 +1830,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
-    - 列表视图
+    - [CH]
+    - [CH]
     - table view
     - list view
     semantic_type: tab
@@ -1842,8 +1842,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     - graph
     - chart view
     semantic_type: tab
@@ -1860,8 +1860,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 编辑
-    - 修改
+    - Edit
+    - [CH]
     - modify
     semantic_type: button
   - text: Reconcile
@@ -1871,8 +1871,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 对账
-    - 核对
+    - [CH]
+    - [CH]
     - balance
     semantic_type: button
   - text: Table
@@ -1882,8 +1882,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     - grid
     semantic_type: tab
   - text: Chart
@@ -1893,8 +1893,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     - graph
     semantic_type: tab
   description: Account or transaction management screen displaying data in table and
@@ -1912,8 +1912,8 @@ screens:
     aliases:
     - Debts
     - Loans
-    - 负债
-    - 债务
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Table
     center:
@@ -1924,8 +1924,8 @@ screens:
     aliases:
     - List
     - Grid
-    - 表格
-    - 数据表
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Chart
     center:
@@ -1935,9 +1935,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - Graph
-    - 图表
-    - 图形
-    - 统计图
+    - [CH]
+    - [CH]
+    - [CH]
     semantic_type: button
   description: Liabilities overview screen featuring a visual breakdown chart and
     a detailed table of debt accounts.
@@ -1954,7 +1954,7 @@ screens:
     aliases:
     - Modify
     - Update
-    - 编辑
+    - Edit
     - Pencil
     semantic_type: button
   - text: Table
@@ -1966,7 +1966,7 @@ screens:
     aliases:
     - Grid
     - List
-    - 表格
+    - [CH]
     - Data view
     semantic_type: tab
   - text: Chart
@@ -1978,7 +1978,7 @@ screens:
     aliases:
     - Graph
     - Plot
-    - 图表
+    - [CH]
     - Visual
     semantic_type: tab
   description: Financial report screen displaying a summary chart, a detailed data
@@ -1994,8 +1994,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 编辑
-    - 修改
+    - Edit
+    - [CH]
     - edit action
     - modify
     semantic_type: button
@@ -2006,8 +2006,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     - table view
     - list view
     semantic_type: tab
@@ -2018,8 +2018,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     - chart view
     - graph
     semantic_type: tab
@@ -2068,7 +2068,7 @@ screens:
     aliases:
     - timeline view
     - transaction timeline
-    - 时间线
+    - [CH]
     semantic_type: tab
   - text: EXPENSE
     center:
@@ -2078,7 +2078,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - expenses
-    - 支出
+    - [CH]
     - expense category
     semantic_type: label
   - text: Car
@@ -2088,7 +2088,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 汽车
+    - [CH]
     - vehicle
     - car expenses
     semantic_type: menu_item
@@ -2099,9 +2099,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 汽油
+    - [CH]
     - gas
-    - 加油
+    - [CH]
     - fuel expenses
     semantic_type: menu_item
   - text: Maintenance
@@ -2111,9 +2111,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 维修
+    - [CH]
     - maintenance expenses
-    - 汽车维护
+    - [CH]
     semantic_type: menu_item
   - text: Entertainment
     center:
@@ -2122,7 +2122,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 娱乐
+    - [CH]
     - entertainment expenses
     semantic_type: menu_item
   - text: Dining Out
@@ -2132,7 +2132,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 外出就餐
+    - [CH]
     - eating out
     - restaurant
     semantic_type: menu_item
@@ -2143,7 +2143,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 电影
+    - [CH]
     - cinema
     - movie expenses
     semantic_type: menu_item
@@ -2154,7 +2154,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 购物
+    - [CH]
     - shopping expenses
     semantic_type: menu_item
   - text: Household
@@ -2164,9 +2164,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 家庭
+    - [CH]
     - household expenses
-    - 家居
+    - [CH]
     semantic_type: menu_item
   - text: Clothing
     center:
@@ -2175,7 +2175,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 服装
+    - [CH]
     - clothes
     - apparel
     semantic_type: menu_item
@@ -2186,9 +2186,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 杂货
+    - [CH]
     - groceries
-    - 食品杂货
+    - [CH]
     semantic_type: menu_item
   - text: Medicines
     center:
@@ -2197,7 +2197,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 药品
+    - [CH]
     - medicine
     - medical expenses
     semantic_type: menu_item
@@ -2208,10 +2208,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 学校
+    - [CH]
     - education
     - school expenses
-    - 教育
+    - [CH]
     semantic_type: menu_item
   - text: Reminders
     center:
@@ -2220,9 +2220,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 提醒
+    - Reminder
     - reminders list
-    - 提醒事项
+    - Reminder[CH]
     semantic_type: menu_item
   - text: Balance Sheet
     center:
@@ -2231,7 +2231,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 资产负债表
+    - [CH]
     - balance sheet report
     semantic_type: menu_item
   - text: Budget
@@ -2241,7 +2241,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算
+    - [CH]
     - budget report
     - budgeting
     semantic_type: menu_item
@@ -2252,7 +2252,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 净收入
+    - [CH]
     - net income
     - earnings
     semantic_type: label
@@ -2263,7 +2263,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 项目汇总
+    - [CH]
     - items summary report
     - summary
     semantic_type: menu_item
@@ -2280,7 +2280,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 时间线
+    - [CH]
     - timeline view
     - transaction timeline
     semantic_type: tab
@@ -2291,7 +2291,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 本月
+    - [CH]
     - current month
     - this month's data
     semantic_type: tab
@@ -2302,9 +2302,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 支出
+    - [CH]
     - expenses
-    - 开支
+    - [CH]
     semantic_type: label
   - text: Car
     center:
@@ -2313,8 +2313,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 汽车
-    - 车辆
+    - [CH]
+    - [CH]
     - automobile
     semantic_type: menu_item
   - text: Fuel
@@ -2324,8 +2324,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 燃油
-    - 汽油
+    - [CH]
+    - [CH]
     - gas
     - gasoline
     semantic_type: menu_item
@@ -2336,9 +2336,9 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 维护
-    - 维修
-    - 保养
+    - [CH]
+    - [CH]
+    - [CH]
     - repair
     semantic_type: menu_item
   - text: Entertainment
@@ -2348,7 +2348,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 娱乐
+    - [CH]
     - entertainment expenses
     semantic_type: menu_item
   - text: Dining Out
@@ -2358,8 +2358,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 外出就餐
-    - 餐饮
+    - [CH]
+    - [CH]
     - restaurants
     - eating out
     semantic_type: menu_item
@@ -2370,7 +2370,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 电影
+    - [CH]
     - cinema
     - films
     semantic_type: menu_item
@@ -2381,7 +2381,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 购物
+    - [CH]
     - shopping expenses
     semantic_type: menu_item
   - text: Household
@@ -2391,8 +2391,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 家庭
-    - 家居
+    - [CH]
+    - [CH]
     - home
     semantic_type: menu_item
   - text: Clothing
@@ -2402,8 +2402,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 服装
-    - 衣物
+    - [CH]
+    - [CH]
     - apparel
     semantic_type: menu_item
   - text: Grocery
@@ -2413,10 +2413,10 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 杂货
-    - 日用品
+    - [CH]
+    - [CH]
     - groceries
-    - 超市
+    - [CH]
     semantic_type: menu_item
   - text: Balance Sheet
     center:
@@ -2425,7 +2425,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 资产负债表
+    - [CH]
     - balance sheet report
     semantic_type: menu_item
   - text: Budget
@@ -2435,7 +2435,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算
+    - [CH]
     - budgeting
     semantic_type: menu_item
   - text: Net Earnings
@@ -2445,7 +2445,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 净收入
+    - [CH]
     - net income
     - earnings
     semantic_type: label
@@ -2456,7 +2456,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 项目摘要
+    - [CH]Summary
     - items summary report
     - summary
     semantic_type: menu_item
@@ -2596,8 +2596,8 @@ screens:
     aliases:
     - Forecast
     - Projection
-    - 未来预测
-    - 财务预测
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Transaction Type
     center:
@@ -2607,9 +2607,9 @@ screens:
     found_at_scroll: 0
     aliases:
     - Type
-    - 交易类型
+    - [CH]
     - Txn Type
-    - 交易类别
+    - [CH]
     semantic_type: label
   - text: Income
     center:
@@ -2620,8 +2620,8 @@ screens:
     aliases:
     - Revenue
     - Earnings
-    - 收入
-    - 进账
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Date Range
     center:
@@ -2632,8 +2632,8 @@ screens:
     aliases:
     - Time Period
     - Date Filter
-    - 日期范围
-    - 时间范围
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Last 3 Months
     center:
@@ -2644,8 +2644,8 @@ screens:
     aliases:
     - Past 3 Months
     - Recent 3 Months
-    - 近三个月
-    - 过去三个月
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Daily Summary
     center:
@@ -2656,8 +2656,8 @@ screens:
     aliases:
     - Daily Overview
     - Day Summary
-    - 每日汇总
-    - 每日总结
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Chart
     center:
@@ -2668,8 +2668,8 @@ screens:
     aliases:
     - Graph
     - Visual
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Table
     center:
@@ -2680,8 +2680,8 @@ screens:
     aliases:
     - List
     - Grid
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Daily Statistics
     center:
@@ -2692,8 +2692,8 @@ screens:
     aliases:
     - Daily Stats
     - Day Statistics
-    - 每日统计
-    - 日统计
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   description: Future projection analytics screen allowing users to filter income
     by transaction type and date range, displaying the data in a daily summary chart
@@ -2711,7 +2711,7 @@ screens:
     aliases:
     - projection
     - forecast
-    - 未来预测
+    - [CH]
     - future forecast
     semantic_type: label
   - text: Transaction Type
@@ -2723,7 +2723,7 @@ screens:
     aliases:
     - transaction kind
     - txn type
-    - 交易类型
+    - [CH]
     - type
     semantic_type: label
   - text: Income
@@ -2735,7 +2735,7 @@ screens:
     aliases:
     - revenue
     - earnings
-    - 收入
+    - [CH]
     - inflow
     semantic_type: menu_item
   - text: Date Range
@@ -2747,7 +2747,7 @@ screens:
     aliases:
     - time range
     - period
-    - 日期范围
+    - [CH]
     - date period
     semantic_type: label
   - text: Last 6 Months
@@ -2759,7 +2759,7 @@ screens:
     aliases:
     - past 6 months
     - 6 months
-    - 最近6个月
+    - [CH]6[CH]
     - last half year
     semantic_type: menu_item
   - text: Daily Summary
@@ -2771,7 +2771,7 @@ screens:
     aliases:
     - day summary
     - daily overview
-    - 每日汇总
+    - [CH]
     - daily report
     semantic_type: menu_item
   - text: Chart
@@ -2782,7 +2782,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - graph
-    - 图表
+    - [CH]
     - visualization
     - chart view
     semantic_type: tab
@@ -2794,7 +2794,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - list
-    - 表格
+    - [CH]
     - spreadsheet
     - table view
     semantic_type: tab
@@ -2807,7 +2807,7 @@ screens:
     aliases:
     - day stats
     - daily stats
-    - 每日统计
+    - [CH]
     - daily figures
     semantic_type: menu_item
   description: Future projection analytics screen with transaction and date filters,
@@ -2825,8 +2825,8 @@ screens:
     aliases:
     - Forecast
     - Projection
-    - 未来预测
-    - 预测
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Transaction Type
     center:
@@ -2837,8 +2837,8 @@ screens:
     aliases:
     - Type
     - Txn Type
-    - 交易类型
-    - 类型
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Income
     center:
@@ -2849,8 +2849,8 @@ screens:
     aliases:
     - Revenue
     - Earnings
-    - 收入
-    - 进账
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Date Range
     center:
@@ -2861,8 +2861,8 @@ screens:
     aliases:
     - Period
     - Time Range
-    - 日期范围
-    - 时间段
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Daily Summary
     center:
@@ -2873,8 +2873,8 @@ screens:
     aliases:
     - Daily Report
     - Day Summary
-    - 每日汇总
-    - 日结
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Chart
     center:
@@ -2885,8 +2885,8 @@ screens:
     aliases:
     - Graph
     - Plot
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Table
     center:
@@ -2897,8 +2897,8 @@ screens:
     aliases:
     - List
     - Grid
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Daily Statistics
     center:
@@ -2909,8 +2909,8 @@ screens:
     aliases:
     - Daily Stats
     - Day Stats
-    - 每日统计
-    - 日统计
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   description: Future projection screen for income with transaction type and date
     range filters, featuring a daily summary chart and statistics table.
@@ -2950,7 +2950,7 @@ screens:
     - revenue
     - earnings
     - inflow
-    - 收入
+    - [CH]
     semantic_type: menu_item
   - text: Date Range
     center:
@@ -2983,7 +2983,7 @@ screens:
     aliases:
     - daily report
     - daily overview
-    - 每日汇总
+    - [CH]
     semantic_type: menu_item
   - text: Chart
     center:
@@ -2994,7 +2994,7 @@ screens:
     aliases:
     - graph
     - visual
-    - 图表
+    - [CH]
     semantic_type: tab
   - text: Table
     center:
@@ -3005,7 +3005,7 @@ screens:
     aliases:
     - list
     - grid
-    - 表格
+    - [CH]
     semantic_type: tab
   - text: Daily Statistics
     center:
@@ -3016,7 +3016,7 @@ screens:
     aliases:
     - daily stats
     - daily metrics
-    - 每日统计
+    - [CH]
     semantic_type: menu_item
   description: Future projection screen displaying income trends over the last 12
     months with transaction and date filters, a chart, a table, and daily statistics.
@@ -3034,7 +3034,7 @@ screens:
     - Past 7 days
     - 7 days
     - 近7天
-    - 一周内
+    - [CH]
     semantic_type: menu_item
   - text: Last 14 Days
     center:
@@ -3046,7 +3046,7 @@ screens:
     - Past 14 days
     - 14 days
     - 近14天
-    - 两周内
+    - [CH]
     semantic_type: menu_item
   - text: Last 30 Days
     center:
@@ -3058,7 +3058,7 @@ screens:
     - Past 30 days
     - Past month
     - 近30天
-    - 一个月内
+    - [CH]
     semantic_type: menu_item
   - text: Last 3 Months
     center:
@@ -3069,8 +3069,8 @@ screens:
     aliases:
     - Past 3 months
     - Quarter
-    - 近3个月
-    - 三个月内
+    - 近3[CH]
+    - [CH]
     semantic_type: menu_item
   - text: Custom Dates
     center:
@@ -3081,8 +3081,8 @@ screens:
     aliases:
     - Custom range
     - Date range
-    - 自定义日期
-    - 自定义范围
+    - Custom[CH]
+    - Custom[CH]
     semantic_type: menu_item
   description: Date range selection menu with options for the last 7, 14, and 30 days,
     last 3 months, and custom dates.
@@ -3097,8 +3097,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 所有分类
-    - 全部分类
+    - 所Yes[CH]
+    - All[CH]
     - categories
     semantic_type: menu_item
   - text: Expense
@@ -3108,8 +3108,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 支出
-    - 花费
+    - [CH]
+    - [CH]
     - expenses
     semantic_type: menu_item
   - text: Car
@@ -3119,8 +3119,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 汽车
-    - 车辆
+    - [CH]
+    - [CH]
     - auto
     semantic_type: menu_item
   - text: Fuel
@@ -3130,8 +3130,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 燃料
-    - 油费
+    - [CH]
+    - [CH]
     - gas
     - petrol
     semantic_type: menu_item
@@ -3142,8 +3142,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 维修
-    - 保养
+    - [CH]
+    - [CH]
     - repairs
     semantic_type: menu_item
   - text: Entertainment
@@ -3153,8 +3153,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 娱乐
-    - 休闲娱乐
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Dining Out
     center:
@@ -3163,8 +3163,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 外出就餐
-    - 餐饮
+    - [CH]
+    - [CH]
     - eating out
     semantic_type: menu_item
   - text: Movies
@@ -3174,7 +3174,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 电影
+    - [CH]
     - cinema
     - films
     semantic_type: menu_item
@@ -3185,8 +3185,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 购物
-    - 买东西
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Household
     center:
@@ -3195,8 +3195,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 家庭
-    - 家居
+    - [CH]
+    - [CH]
     - home
     semantic_type: menu_item
   - text: Clothing
@@ -3206,8 +3206,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 服装
-    - 衣服
+    - [CH]
+    - [CH]
     - apparel
     semantic_type: menu_item
   - text: Grocery
@@ -3217,8 +3217,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 杂货
-    - 日用品
+    - [CH]
+    - [CH]
     - groceries
     semantic_type: menu_item
   - text: Medicines
@@ -3228,8 +3228,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 药品
-    - 医药
+    - [CH]
+    - [CH]
     - pharmacy
     semantic_type: menu_item
   description: Category selection screen displaying a list of expense categories such
@@ -3245,8 +3245,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 全部账户
-    - 所有账户
+    - AllAccount
+    - 所YesAccount
     - Accounts
     semantic_type: menu_item
   - text: Assets
@@ -3256,8 +3256,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 资产
-    - 总资产
+    - [CH]
+    - [CH]
     - Assets category
     semantic_type: menu_item
   - text: Bank
@@ -3267,8 +3267,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 银行
-    - 银行账户
+    - [CH]
+    - [CH]Account
     - Bank account
     semantic_type: menu_item
   - text: Checking
@@ -3278,8 +3278,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 支票账户
-    - 活期账户
+    - [CH]Account
+    - [CH]Account
     - Checking account
     semantic_type: menu_item
   - text: Savings
@@ -3289,8 +3289,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 储蓄
-    - 储蓄账户
+    - [CH]
+    - [CH]Account
     - Savings account
     semantic_type: menu_item
   - text: Cash
@@ -3300,8 +3300,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 现金
-    - 手头现金
+    - [CH]
+    - [CH]
     - Cash on hand
     semantic_type: menu_item
   - text: Wallet
@@ -3311,8 +3311,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 钱包
-    - 电子钱包
+    - [CH]
+    - [CH]
     - E-wallet
     semantic_type: menu_item
   - text: Liabilities
@@ -3322,8 +3322,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 负债
-    - 总负债
+    - [CH]
+    - [CH]
     - Liabilities category
     semantic_type: menu_item
   - text: Credit Card
@@ -3333,8 +3333,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 信用卡
-    - 贷记卡
+    - [CH]Lag
+    - [CH]Lag
     - Credit cards
     semantic_type: menu_item
   - text: Mortgages
@@ -3344,8 +3344,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 抵押贷款
-    - 房贷
+    - [CH]
+    - [CH]
     - Mortgage loans
     semantic_type: menu_item
   - text: House Mortgage
@@ -3355,8 +3355,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 房屋抵押贷款
-    - 住房贷款
+    - [CH]
+    - [CH]
     - Home mortgage
     semantic_type: menu_item
   description: Account management screen displaying a categorized list of all user
@@ -3374,8 +3374,8 @@ screens:
     aliases:
     - clear filter
     - all
-    - 无过滤
-    - 取消过滤
+    - None[CH]
+    - Cancel[CH]
     semantic_type: menu_item
   - text: (No Labels)
     center:
@@ -3386,8 +3386,8 @@ screens:
     aliases:
     - hide labels
     - without labels
-    - 无标签
-    - 隐藏标签
+    - NoneTab
+    - [CH]Tab
     semantic_type: menu_item
   - text: (With Labels)
     center:
@@ -3398,8 +3398,8 @@ screens:
     aliases:
     - show labels
     - with labels
-    - 有标签
-    - 显示标签
+    - YesTab
+    - [CH]Tab
     semantic_type: menu_item
   - text: Birthday
     center:
@@ -3408,7 +3408,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 生日
+    - [CH]
     - birthday event
     - bday
     semantic_type: menu_item
@@ -3419,8 +3419,8 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 商业
-    - 工作
+    - [CH]
+    - [CH]
     - business expense
     semantic_type: menu_item
   - text: Movies
@@ -3430,7 +3430,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 电影
+    - [CH]
     - entertainment
     - cinema
     semantic_type: menu_item
@@ -3441,7 +3441,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 个人
+    - Personal
     - personal expense
     semantic_type: menu_item
   - text: Vacation
@@ -3451,7 +3451,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 度假
+    - [CH]
     - travel
     - holiday
     semantic_type: menu_item
@@ -3469,7 +3469,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Txn Type
-    - 交易类型
+    - [CH]
     - Type
     semantic_type: label
   - text: Income
@@ -3479,7 +3479,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Revenue
     semantic_type: menu_item
@@ -3490,7 +3490,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - Time Period
     - Date Filter
     semantic_type: label
@@ -3501,7 +3501,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 本月
+    - [CH]
     - Current Month
     semantic_type: menu_item
   - text: Chart Type
@@ -3511,7 +3511,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     semantic_type: label
   - text: By Category
@@ -3521,7 +3521,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别
+    - [CH]
     - Group by Category
     semantic_type: menu_item
   - text: Budget Summary
@@ -3531,7 +3531,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget Overview
     semantic_type: label
   - text: Chart
@@ -3541,7 +3541,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - Graph
     semantic_type: tab
   - text: Table
@@ -3551,7 +3551,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - List
     semantic_type: tab
   description: Budget summary report screen with filters for transaction type, date
@@ -3569,7 +3569,7 @@ screens:
     aliases:
     - transaction kind
     - type of transaction
-    - 交易类型
+    - [CH]
     semantic_type: label
   - text: Income
     center:
@@ -3578,7 +3578,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - earnings
     - revenue
     semantic_type: menu_item
@@ -3591,8 +3591,8 @@ screens:
     aliases:
     - date period
     - time range
-    - 日期范围
-    - 时间范围
+    - [CH]
+    - [CH]
     semantic_type: label
   - text: Last 30 Days
     center:
@@ -3603,7 +3603,7 @@ screens:
     aliases:
     - past 30 days
     - recent 30 days
-    - 最近30天
+    - [CH]30天
     - 近30天
     semantic_type: menu_item
   - text: Chart Type
@@ -3615,7 +3615,7 @@ screens:
     aliases:
     - chart kind
     - graph type
-    - 图表类型
+    - [CH]
     semantic_type: label
   - text: By Category
     center:
@@ -3626,8 +3626,8 @@ screens:
     aliases:
     - per category
     - grouped by category
-    - 按类别
-    - 分类
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Budget Summary
     center:
@@ -3638,8 +3638,8 @@ screens:
     aliases:
     - budget overview
     - budget report
-    - 预算摘要
-    - 预算汇总
+    - [CH]Summary
+    - [CH]
     semantic_type: label
   - text: Chart
     center:
@@ -3649,7 +3649,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - graph
-    - 图表
+    - [CH]
     - visualization
     semantic_type: menu_item
   - text: Table
@@ -3660,7 +3660,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - list view
-    - 表格
+    - [CH]
     - data table
     semantic_type: menu_item
   description: Income reporting screen with filters for date range and chart type,
@@ -3679,7 +3679,7 @@ screens:
     - Txn Type
     - Transaction Category
     - Type
-    - 交易类型
+    - [CH]
     semantic_type: label
   - text: Income
     center:
@@ -3691,7 +3691,7 @@ screens:
     - Revenue
     - Earnings
     - Inflow
-    - 收入
+    - [CH]
     semantic_type: menu_item
   - text: Date Range
     center:
@@ -3703,7 +3703,7 @@ screens:
     - Time Period
     - Date Filter
     - Period
-    - 日期范围
+    - [CH]
     semantic_type: label
   - text: Last 28 Days
     center:
@@ -3715,7 +3715,7 @@ screens:
     - Past 28 Days
     - Previous 28 Days
     - Last 4 Weeks
-    - 过去28天
+    - [CH]28天
     semantic_type: menu_item
   - text: Chart Type
     center:
@@ -3727,7 +3727,7 @@ screens:
     - Graph Type
     - Visualization
     - Chart Style
-    - 图表类型
+    - [CH]
     semantic_type: label
   - text: By Category
     center:
@@ -3739,7 +3739,7 @@ screens:
     - Category View
     - Group by Category
     - Categorized
-    - 按类别
+    - [CH]
     semantic_type: menu_item
   - text: Budget Summary
     center:
@@ -3751,7 +3751,7 @@ screens:
     - Budget Overview
     - Budget Report
     - Budget Status
-    - 预算摘要
+    - [CH]Summary
     semantic_type: label
   - text: Chart
     center:
@@ -3763,7 +3763,7 @@ screens:
     - Graph
     - Visual
     - Plot
-    - 图表
+    - [CH]
     semantic_type: tab
   - text: Table
     center:
@@ -3775,7 +3775,7 @@ screens:
     - List
     - Data Table
     - Grid
-    - 表格
+    - [CH]
     semantic_type: tab
   description: Reports screen displaying a budget summary with filters for transaction
     type, date range, and chart type, followed by a visual chart and data table.
@@ -3790,7 +3790,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 交易类型
+    - [CH]
     - Txn Type
     - Type
     semantic_type: label
@@ -3801,7 +3801,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Earnings
     semantic_type: menu_item
@@ -3812,7 +3812,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - Time Period
     - Date Filter
     semantic_type: label
@@ -3823,7 +3823,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 过去14天
+    - [CH]14天
     - Past 14 Days
     - 14 Days
     semantic_type: menu_item
@@ -3834,7 +3834,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     - Chart Style
     semantic_type: label
@@ -3845,7 +3845,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别
+    - [CH]
     - Category
     - Group by Category
     semantic_type: menu_item
@@ -3856,7 +3856,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget Overview
     - Budget Report
     semantic_type: label
@@ -3867,7 +3867,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - Graph
     - Visual
     semantic_type: tab
@@ -3878,7 +3878,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - Grid
     - List
     semantic_type: tab
@@ -3896,7 +3896,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 交易类型
+    - [CH]
     - Txn Type
     - Type
     semantic_type: label
@@ -3907,7 +3907,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Earnings
     semantic_type: menu_item
@@ -3918,7 +3918,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - Time Period
     - Period
     semantic_type: label
@@ -3929,7 +3929,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 过去7天
+    - [CH]7天
     - Past 7 Days
     - 7 Days
     semantic_type: menu_item
@@ -3940,7 +3940,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     - Chart Style
     semantic_type: label
@@ -3951,7 +3951,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别
+    - [CH]
     - Category
     - Group by Category
     semantic_type: menu_item
@@ -3962,7 +3962,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget Overview
     - Budget Report
     semantic_type: label
@@ -3973,7 +3973,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - Graph
     - Visual
     semantic_type: tab
@@ -3984,7 +3984,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - List
     - Grid
     semantic_type: tab
@@ -4003,7 +4003,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - txn type
-    - 交易类型
+    - [CH]
     - transaction kind
     semantic_type: label
   - text: Income
@@ -4013,7 +4013,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - inflow
     - earnings
     semantic_type: menu_item
@@ -4024,7 +4024,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - time period
     - date filter
     semantic_type: label
@@ -4035,7 +4035,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 今日
+    - [CH]
     - current day
     semantic_type: menu_item
   - text: Chart Type
@@ -4045,7 +4045,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - graph type
     - visualization
     semantic_type: label
@@ -4056,7 +4056,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别
+    - [CH]
     - group by category
     - category breakdown
     semantic_type: menu_item
@@ -4067,7 +4067,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - budget overview
     - budget report
     semantic_type: label
@@ -4078,7 +4078,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - graph
     - visual view
     semantic_type: tab
@@ -4089,7 +4089,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - list view
     - data table
     semantic_type: tab
@@ -4108,7 +4108,7 @@ screens:
     aliases:
     - Txn Type
     - Type
-    - 交易类型
+    - [CH]
     semantic_type: label
   - text: Income
     center:
@@ -4119,7 +4119,7 @@ screens:
     aliases:
     - Earnings
     - Revenue
-    - 收入
+    - [CH]
     - Inflow
     semantic_type: label
   - text: Date Range
@@ -4131,7 +4131,7 @@ screens:
     aliases:
     - Time Period
     - Period
-    - 日期范围
+    - [CH]
     - Date Filter
     semantic_type: label
   - text: This Week
@@ -4142,7 +4142,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Current Week
-    - 本周
+    - [CH]
     - 7 Days
     semantic_type: menu_item
   - text: Chart Type
@@ -4153,7 +4153,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Graph Type
-    - 图表类型
+    - [CH]
     - Chart Style
     semantic_type: label
   - text: By Category
@@ -4164,7 +4164,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Category
-    - 按类别
+    - [CH]
     - Group by Category
     semantic_type: menu_item
   - text: Budget Summary
@@ -4175,7 +4175,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Budget Overview
-    - 预算摘要
+    - [CH]Summary
     - Budget Report
     semantic_type: menu_item
   - text: Chart
@@ -4186,7 +4186,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Graph
-    - 图表
+    - [CH]
     - Visual
     semantic_type: tab
   - text: Table
@@ -4197,7 +4197,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - List
-    - 表格
+    - [CH]
     - Data Table
     semantic_type: tab
   description: Reports screen displaying an income budget summary with filters for
@@ -4216,7 +4216,7 @@ screens:
     aliases:
     - Txn Type
     - Type
-    - 交易类型
+    - [CH]
     semantic_type: label
   - text: Income
     center:
@@ -4225,7 +4225,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Earnings
     semantic_type: menu_item
@@ -4238,7 +4238,7 @@ screens:
     aliases:
     - Period
     - Time Range
-    - 日期范围
+    - [CH]
     semantic_type: label
   - text: This Bi-month
     center:
@@ -4248,8 +4248,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Current Bi-month
-    - 近两月
-    - 双月
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Chart Type
     center:
@@ -4259,7 +4259,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Graph Type
-    - 图表类型
+    - [CH]
     semantic_type: label
   - text: By Category
     center:
@@ -4269,8 +4269,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Category
-    - 按类别
-    - 分类
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Budget Summary
     center:
@@ -4280,7 +4280,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Budget Overview
-    - 预算摘要
+    - [CH]Summary
     semantic_type: label
   - text: Chart
     center:
@@ -4290,8 +4290,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Graph
-    - 图表
-    - 图形
+    - [CH]
+    - [CH]
     semantic_type: tab
   - text: Table
     center:
@@ -4301,8 +4301,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - List
-    - 表格
-    - 列表
+    - [CH]
+    - [CH]
     semantic_type: tab
   description: A financial report screen displaying a budget summary with filters
     for transaction type, date range, and chart type, alongside a visual chart and
@@ -4318,7 +4318,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 交易类型
+    - [CH]
     - Txn Type
     - Type
     semantic_type: label
@@ -4329,7 +4329,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Earnings
     semantic_type: menu_item
@@ -4340,7 +4340,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - Time Period
     - Date Filter
     semantic_type: label
@@ -4351,7 +4351,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 本季度
+    - [CH]
     - Current Quarter
     - QTD
     semantic_type: menu_item
@@ -4362,7 +4362,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     - Chart Style
     semantic_type: label
@@ -4373,7 +4373,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别
+    - [CH]
     - Category
     - Group by Category
     semantic_type: menu_item
@@ -4384,7 +4384,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget Overview
     - Budget Report
     semantic_type: menu_item
@@ -4395,7 +4395,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - Graph
     - Visual
     semantic_type: tab
@@ -4406,7 +4406,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - List
     - Data Table
     semantic_type: tab
@@ -4424,7 +4424,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Txn Type
-    - 交易类型
+    - [CH]
     - Type
     semantic_type: label
   - text: Income
@@ -4434,7 +4434,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Revenue
     semantic_type: label
@@ -4445,7 +4445,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - Time Period
     - Period
     semantic_type: label
@@ -4456,7 +4456,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 今年
+    - [CH]
     - Current Year
     - YTD
     semantic_type: label
@@ -4467,7 +4467,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     - Visualization
     semantic_type: label
@@ -4478,7 +4478,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别
+    - [CH]
     - Category
     - Group by Category
     semantic_type: label
@@ -4489,7 +4489,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget Overview
     - Summary
     semantic_type: label
@@ -4500,7 +4500,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - Graph
     - Charts
     semantic_type: tab
@@ -4511,7 +4511,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - List
     - Data Table
     semantic_type: tab
@@ -4528,7 +4528,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 交易类型
+    - [CH]
     - Txn Type
     - Type
     semantic_type: label
@@ -4539,7 +4539,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Earnings
     semantic_type: menu_item
@@ -4550,7 +4550,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - Time Range
     - Period
     semantic_type: label
@@ -4561,7 +4561,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义日期
+    - Custom[CH]
     - Custom Range
     - Specific Dates
     semantic_type: menu_item
@@ -4572,7 +4572,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     - Visualization
     semantic_type: label
@@ -4583,7 +4583,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别
+    - [CH]
     - Category
     - Group by Category
     semantic_type: menu_item
@@ -4594,7 +4594,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget Overview
     - Budget Report
     semantic_type: label
@@ -4605,7 +4605,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - Graph
     - Visual
     semantic_type: tab
@@ -4616,7 +4616,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - List
     - Data Table
     semantic_type: tab
@@ -4633,7 +4633,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 交易类型
+    - [CH]
     - Txn Type
     - Type
     semantic_type: label
@@ -4644,7 +4644,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 收入
+    - [CH]
     - Inflow
     - Earnings
     semantic_type: menu_item
@@ -4655,7 +4655,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 日期范围
+    - [CH]
     - Time Period
     - Date Filter
     semantic_type: label
@@ -4666,7 +4666,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 自定义日期
+    - Custom[CH]
     - Custom Range
     - Specific Dates
     semantic_type: menu_item
@@ -4677,7 +4677,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表类型
+    - [CH]
     - Graph Type
     - Chart Style
     semantic_type: label
@@ -4688,7 +4688,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 按类别组
+    - [CH]
     - Category Group
     - Grouped by Category
     semantic_type: menu_item
@@ -4699,7 +4699,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 预算摘要
+    - [CH]Summary
     - Budget Overview
     - Budget Report
     semantic_type: label
@@ -4710,7 +4710,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 图表
+    - [CH]
     - Graph
     - Visual
     semantic_type: tab
@@ -4721,7 +4721,7 @@ screens:
     fixed: false
     found_at_scroll: 0
     aliases:
-    - 表格
+    - [CH]
     - Data Table
     - Grid
     semantic_type: tab

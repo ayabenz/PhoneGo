@@ -21,7 +21,7 @@ class SingleTask_Setting_0(SingleTask):
 class SingleTask_Setting_1(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Turn on Wi‑Fi automatically"
+        # [CH]YesNo[CH] "Turn on Wi‑Fi automatically"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Turn on Wi‑Fi automatically")
         if len(outs) == 0:
             return False
@@ -42,7 +42,7 @@ class SingleTask_Setting_1(SingleTask):
 class SingleTask_Setting_2(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Private DNS provider hostname"
+        # [CH]YesNo[CH] "Private DNS provider hostname"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Private DNS provider hostname")
         if len(outs) == 0:
             return False
@@ -73,7 +73,7 @@ class SingleTask_Setting_3(SingleTask):
 class SingleTask_Setting_4(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Pair new device"
+        # [CH]YesNo[CH] "Pair new device"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Pair new device")
         if len(outs) == 0:
             return False
@@ -92,7 +92,7 @@ class SingleTask_Setting_4(SingleTask):
 class SingleTask_Setting_5(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Battery percentage"
+        # [CH]YesNo[CH] "Battery percentage"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Battery percentage")
         if len(outs) == 0:
             return False
@@ -113,7 +113,7 @@ class SingleTask_Setting_5(SingleTask):
 class SingleTask_Setting_6(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Apps"
+        # [CH]YesNo[CH] "Apps"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Apps")
         if len(outs) == 0:
             return False
@@ -136,7 +136,7 @@ class SingleTask_Setting_6(SingleTask):
 class SingleTask_Setting_7(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Display "
+        # [CH]YesNo[CH] "Display "
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Display ")
         if len(outs) == 0:
             return False
@@ -198,7 +198,7 @@ class SingleTask_Setting_7(SingleTask):
 class SingleTask_Setting_8(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Brightness level "
+        # [CH]YesNo[CH] "Brightness level "
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Brightness level ")
         if len(outs) == 0:
             return False
@@ -291,7 +291,7 @@ class SingleTask_Setting_12(SingleTask):
 class SingleTask_Setting_13(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Ring vibration "
+        # [CH]YesNo[CH] "Ring vibration "
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Ring vibration ")
         if len(outs) == 0:
             return False
@@ -336,7 +336,7 @@ class SingleTask_Setting_14(SingleTask):
 class SingleTask_Setting_15(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Add a language"
+        # [CH]YesNo[CH] "Add a language"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Add a language")
         if len(outs) == 0:
             return False
@@ -399,7 +399,7 @@ class SingleTask_Setting_17(SingleTask):
 class SingleTask_Setting_18(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Allowed"
+        # [CH]YesNo[CH] "Allowed"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Allowed")
         if len(outs) == 0:
             return False
@@ -462,7 +462,7 @@ class SingleTask_Setting_18(SingleTask):
 class SingleTask_Setting_19(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Default browser app" 和 "Firefox"
+        # [CH]YesNo[CH] "Default browser app" 和 "Firefox"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Default browser app")
         if len(outs) == 0:
             return False
@@ -500,7 +500,7 @@ class SingleTask_Setting_20(SingleTask):
 class SingleTask_Setting_21(SingleTask):
 
     def judge_page(self, xml_compressed_tree):
-        # 判断是否包含 "Settings " 和 "Search settings"
+        # [CH]YesNo[CH] "Settings " 和 "Search settings"
         outs = find_subtrees_of_parents_with_key(xml_compressed_tree, "Settings ")
         outs1 = find_subtrees_of_parents_with_key(xml_compressed_tree, "Search settings")
         if len(outs) == 0 or len(outs1) == 0:

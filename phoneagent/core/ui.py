@@ -81,7 +81,7 @@ def labelled(nodes: Iterable[UiNode], limit: int = 0) -> list[UiNode]:
 def find_label(xml: str, label: str, require_unique: bool = True) -> Optional[UiNode]:
     """Locate a label, refusing ambiguous matches.
 
-    Generic labels ("设置", "返回", "同意") appear several times on a screen; a
+    Generic labels ("Settings", "Back", "[CH]") appear several times on a screen; a
     text anchor that silently picks the first one is worse than the compiled
     coordinate, so when ``require_unique`` is set an ambiguous label is
     reported as "not found" and the caller falls back to the coordinates.

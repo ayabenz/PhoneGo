@@ -43,14 +43,14 @@ def handle_giveup(details):
 
 
 @backoff.on_exception(backoff.expo,
-                      Exception,  # 捕获所有异常
+                      Exception,  # [CH]Yes[CH]
                       max_tries=5,
-                      on_backoff=handle_backoff,  # 指定重试时的回调函数
-                      giveup=handle_giveup)  # 指定放弃重试时的回调函数
+                      on_backoff=handle_backoff,  # [CH]Retry[CH]
+                      giveup=handle_giveup)  # [CH]Retry[CH]
 def get_completion_glm4(prompt, glm4_key):
     client = ZhipuAI(api_key=glm4_key)
     response = client.chat.completions.create(
-        model="glm-4",  # 填写需要调用的模型名称
+        model="glm-4",  # [CH]Model[CH]
         messages=[
             {"role": "user", "content": prompt},
         ],
@@ -62,17 +62,17 @@ def time_within_ten_secs(time1, time2):
     def parse_time(t):
         if "+" in t:
             t = t.split()[1]
-            t = t.split('.')[0] + '.' + t.split('.')[1][:6]  # 仅保留到微秒
+            t = t.split('.')[0] + '.' + t.split('.')[1][:6]  # [CH]
             format = "%H:%M:%S.%f"
         else:
             format = "%H:%M:%S"
         return datetime.strptime(t, format)
 
-    # 解析两个时间
+    # [CH]
     time1_parsed = parse_time(time1)
     time2_parsed = parse_time(time2)
 
-    # 计算时间差并判断
+    # [CH]
     time_difference = abs(time1_parsed - time2_parsed)
 
     return time_difference <= timedelta(seconds=10)
@@ -203,30 +203,30 @@ def del_file(path):
 
 
 def copy_directory(source_dir, target_dir):
-    # 检查目标目录是否存在，如果不存在则创建
+    # Check[CH]DirectoryYesNo[CH]，[CH]Create
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 
-    # 遍历源目录
+    # [CH]Directory
     for item in os.listdir(source_dir):
-        # 构建完整的文件/目录路径
+        # [CH]File/DirectoryPath
         source_item = os.path.join(source_dir, item)
         target_item = os.path.join(target_dir, item)
 
-        # 判断是文件还是目录
+        # [CH]YesFile还YesDirectory
         if os.path.isdir(source_item):
-            # 是目录则递归复制
+            # YesDirectory[CH]Copy
             shutil.copytree(source_item, target_item)
         else:
-            # 是文件则直接复制
+            # YesFile[CH]Copy
             shutil.copy2(source_item, target_item)
 
 
 def remove_punctuation(input_string):
-    # 定义一个正则表达式来匹配中文标点符号
+    # [CH]Chinese[CH]
     punc = u'[\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]'
     punc_en = r"[!\"#$%&\'()*+,-./:;<=>?@\[\\\]^_`{|}~\n]"
-    # 使用 sub() 函数把所有匹配的标点符号都替换成空字符串
+    # [CH] sub() [CH]Yes[CH]
     st = re.sub(punc, ' ', input_string)
     st = re.sub(punc_en, " ", st)
     return st
@@ -345,30 +345,30 @@ def del_file(path):
 
 
 def copy_directory(source_dir, target_dir):
-    # 检查目标目录是否存在，如果不存在则创建
+    # Check[CH]DirectoryYesNo[CH]，[CH]Create
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 
-    # 遍历源目录
+    # [CH]Directory
     for item in os.listdir(source_dir):
-        # 构建完整的文件/目录路径
+        # [CH]File/DirectoryPath
         source_item = os.path.join(source_dir, item)
         target_item = os.path.join(target_dir, item)
 
-        # 判断是文件还是目录
+        # [CH]YesFile还YesDirectory
         if os.path.isdir(source_item):
-            # 是目录则递归复制
+            # YesDirectory[CH]Copy
             shutil.copytree(source_item, target_item)
         else:
-            # 是文件则直接复制
+            # YesFile[CH]Copy
             shutil.copy2(source_item, target_item)
 
 
 def remove_punctuation(input_string):
-    # 定义一个正则表达式来匹配中文标点符号
+    # [CH]Chinese[CH]
     punc = u'[\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]'
     punc_en = r"[!\"#$%&\'()*+,-./:;<=>?@\[\\\]^_`{|}~\n]"
-    # 使用 sub() 函数把所有匹配的标点符号都替换成空字符串
+    # [CH] sub() [CH]Yes[CH]
     st = re.sub(punc, ' ', input_string)
     st = re.sub(punc_en, " ", st)
     return st

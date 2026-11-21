@@ -97,7 +97,7 @@ class VirtualDisplayDevice(BaseDevice):
         self.timeout = timeout
         self.display_id: Optional[int] = None
         #: Drive the phone's own screen instead of a virtual one. For apps that
-        #: cannot run anywhere else -- 京东 hands its launcher over to a
+        #: cannot run anywhere else -- [CH] hands its launcher over to a
         #: singleTask activity that the system always places on display 0 -- the
         #: only way to work them is with the user's screen, and the user knowing.
         self.hands_off = hands_off
@@ -190,7 +190,7 @@ class VirtualDisplayDevice(BaseDevice):
     def _is_hands_off(self) -> bool:
         """True when this object is driving the phone's own screen.
 
-        That is either by construction (the user chose 托管模式) or because the
+        That is either by construction (the user chose [CH]Mode) or because the
         app moved itself to display 0 and the agent followed it there. The
         difference only matters for the record; input, screenshots and the tree
         all work the same way on display 0.
@@ -278,7 +278,7 @@ class VirtualDisplayDevice(BaseDevice):
         target = FRAME_PATH
         with _CAPTURE_LOCK:
             # One retry, because a display change can rewrite the frame while it
-            # is being read: moving a task back from the user's screen (小红书's
+            # is being read: moving a task back from the user's screen ([CH]'s
             # search page) produced "frame magic mismatch for 0x003e0001" and
             # killed a whole task over a picture. A torn picture is not a reason
             # to abandon the work; the next frame is fine.
@@ -525,7 +525,7 @@ class VirtualDisplayDevice(BaseDevice):
         # display_id is None by design, and gating on it here sent every Chinese
         # keystroke down the ASCII-only shell path -- "input text only supports
         # ASCII without the accessibility service" while the service was
-        # connected and working. That is why 小红书 tasks could not type a query.
+        # connected and working. That is why [CH] tasks could not type a query.
         if True:
             try:
                 # ACTION_SET_TEXT writes in one go and takes any character,
@@ -548,7 +548,7 @@ class VirtualDisplayDevice(BaseDevice):
         """Close the notification shade without touching it.
 
         `cmd statusbar collapse` is a shell command, so it cannot land a tap on
-        a notification -- one of which ("已连接到无线调试") would turn off the
+        a notification -- one of which ("已ConnectiontoNone线Debugging") would turn off the
         connection the agent runs on.
         """
         try:
@@ -588,7 +588,7 @@ class VirtualDisplayDevice(BaseDevice):
         # In hands-off mode display_id is None *by design*: the display being
         # driven is the phone's own. Guarding on None here made every hands-off
         # launch raise "no display to drive", so the branch below it could never
-        # run -- measured on 微博, which never came to the front.
+        # run -- measured on [CH], which never came to the front.
         if self.display_id is None and not self._is_hands_off():
             raise DeviceError("no display to drive")
         if self._is_hands_off():
@@ -605,7 +605,7 @@ class VirtualDisplayDevice(BaseDevice):
                 # after its first tap.
                 raise LaunchRefused(package, f"resolved to the agent itself: {activity}")
             self._shell(f"am start -S -n {activity}")
-            # A cold start of a large app (小红书) takes longer than six seconds
+            # A cold start of a large app ([CH]) takes longer than six seconds
             # on this phone, and the launch was being reported as refused while
             # the app was still drawing.
             unread = 0
@@ -704,7 +704,7 @@ class VirtualDisplayDevice(BaseDevice):
                 #  - it is a task of its own (MIUI's account centre), which a
                 #    force-stop clears;
                 #  - it sits on top of *this* app's task, because the app handed
-                #    the screen over (Settings hands 移动网络 to com.android.phone).
+                #    the screen over (Settings hands [CH]Network to com.android.phone).
                 #    The launcher activity is singleTask, so the relaunch is
                 #    delivered to that same task and nothing moves. Only a back
                 #    press unwinds it -- measured: back twice, launch works.
@@ -896,10 +896,10 @@ class VirtualDisplayDevice(BaseDevice):
     def pull_back(self, package: str) -> bool:
         """Bring a task that jumped to the phone's screen back onto ours.
 
-        小红书's search page is a NEW_TASK activity, and the system hosts it on
+        [CH]'s search page is a NEW_TASK activity, and the system hosts it on
         the default display even when the app runs on a virtual one (measured:
-        tapping 搜索 at (1192,224) on display 644 left 644 with Settings while
-        the whole 小红书 task moved to display 0). Nothing in the app can stop
+        tapping Search at (1192,224) on display 644 left 644 with Settings while
+        the whole [CH] task moved to display 0). Nothing in the app can stop
         that, but the task can be moved: `am display move-stack <task> <display>`
         took task 8155 back to 644, after which the search page's EditText
         (id=mSearchToolBarEt) was readable and typeable there.
@@ -940,7 +940,7 @@ class VirtualDisplayDevice(BaseDevice):
         """
         # None means hands-off: the display being driven *is* display 0. Saying
         # "unknown" there made every screen look foreign to the crawler -- a
-        # hands-off 微博 crawl counted 36 of 36 taps as "left the app" and
+        # hands-off [CH] crawl counted 36 of 36 taps as "left the app" and
         # recorded a single screen.
         wanted = 0 if self.display_id is None else self.display_id
         out = self._shell("dumpsys activity activities")
@@ -976,7 +976,7 @@ class VirtualDisplayDevice(BaseDevice):
         # The agent must never stop its own host: a crawl that force-stops
         # com.phoneagent.app kills the process running the crawl, and the only
         # evidence is an empty log and a dead API (measured on a hands-off
-        # crawl of 携程: the kill arrived one second after the first tap).
+        # crawl of [CH]: the kill arrived one second after the first tap).
         guard = self._self_stop_guard(command)
         if guard:
             print(f"[device] refused: {guard}")

@@ -6,7 +6,7 @@
     # inside the APK, driving its own virtual display (see ondevice.serve)
     ondevice.serve(8765, api_key=..., ...)
 
-    POST /task          {"text": "打开蓝牙设置"}  -> {"id": "..."}
+    POST /task          {"text": "OpenBluetoothSettings"}  -> {"id": "..."}
     GET  /task/<id>     -> {"state", "steps", "answer", "frame"}
 
 The device is whatever the caller injects, so the same HTTP surface works both
@@ -116,7 +116,7 @@ class ServerConfig:
     hands_off_factory: Optional[Callable[[], object]] = None
     #: Where a crawl writes its map; empty disables the crawl endpoint.
     crawl_dir: str = ""
-    #: App name -> package, so the launch tool can resolve "日历" to a package
+    #: App name -> package, so the launch tool can resolve "[CH]" to a package
     #: even when that app has no map.
     known_apps: dict = field(default_factory=dict)
     #: Credentials for the crawl's classify/enrich calls. The crawl runs the
@@ -179,9 +179,9 @@ def _update(task_id: str, **fields) -> None:
             _prune(TASKS, KEEP_TASKS)
 
 
-#: "停在小红书那个页面" -- the user wants the task to end with that app in front.
+#: "[CH]Page" -- the user wants the task to end with that app in front.
 STAY_RE = re.compile(
-    r"(停在|留在|停到|留在|保持|不要关|别关|别退出|先别退|keep\s+it\s+open|"
+    r"([CH]|[CH]|[CH]|[CH]|[CH]|[CH]|[CH]|别Exit|[CH]|keep\s+it\s+open|"
     r"leave\s+it\s+open|stay\s+(in|on))",
     re.IGNORECASE,
 )
@@ -191,7 +191,7 @@ def _wants_to_stay(text: str) -> bool:
     """Did the user ask to be left on that screen?
 
     The default is to come back to the chat: a task that ends with someone
-    else's app in front leaves the user staring at 小红书 instead of the answer
+    else's app in front leaves the user staring at [CH] instead of the answer
     they asked for.
     """
     return bool(STAY_RE.search(text or ""))
@@ -349,7 +349,7 @@ def _run(task_id: str, text: str, config: ServerConfig,
                     # an actionable error and "reopen the app", which would not
                     # have helped.
                     _update(task_id, state="failed",
-                            answer=message or "adb 连接已断开，重建失败。")
+                            answer=message or "adb Connection已Disconnect，RebuildFailed。")
                     return
         try:
             if config.start_app and not getattr(device, "display_id", None):
@@ -468,7 +468,7 @@ def _run(task_id: str, text: str, config: ServerConfig,
                     # from then on, not replayed
                     risk_path=config.risk_path,
                     user_display_packages=config.user_display_packages,
-                    # "停在小红书" is the one instruction that overrides the
+                    # "[CH]" is the one instruction that overrides the
                     # end-of-task restore.
                     stay_on_user_display=_wants_to_stay(text),
                 ),
@@ -507,10 +507,10 @@ def _run(task_id: str, text: str, config: ServerConfig,
                                 pass
                         cancel_event.set()
                         _update(task_id, state="failed",
-                                answer="这一步卡住了（"
-                                       f"{config.stall_timeout:.0f} 秒没有新进展），已停下。"
-                                       "\n常见原因是网络慢导致模型调用超时——再发一次通常就能继续；"
-                                       "如果反复出现，告诉我，我换个做法。")
+                                answer="[CH]Lag[CH]（"
+                                       f"{config.stall_timeout:.0f} [CH]Yes[CH]），[CH]。"
+                                       "\n[CH]YesNetwork[CH]Model[CH]Timeout——[CH]Continue；"
+                                       "[CH]，[CH]，[CH]。")
                     stop_watch.wait(0.4)
 
             watcher = threading.Thread(target=watch, daemon=True)
@@ -532,7 +532,7 @@ def _run(task_id: str, text: str, config: ServerConfig,
 
             cancelled = result.reason == "cancelled"
             # partial: something was achieved but the task did not finish. The
-            # app renders it as 部分完成 rather than 失败, because the two are
+            # app renders it as [CH]Done rather than Failed, because the two are
             # different things to read.
             if result.ok:
                 outcome_state = "done"
@@ -557,7 +557,7 @@ def _run(task_id: str, text: str, config: ServerConfig,
                 on_user_display=stayed,
                 leave_app=_wants_to_stay(text),
                 state="cancelled" if cancelled else outcome_state,
-                answer="已取消" if cancelled else (result.answer or result.reason),
+                answer="已Cancel" if cancelled else (result.answer or result.reason),
                 steps=[_step_dict(step) for step in result.steps],
             )
         except Exception as exc:  # noqa: BLE001 - surfaced to the app
@@ -578,7 +578,7 @@ def _run(task_id: str, text: str, config: ServerConfig,
             except Exception:  # noqa: BLE001 - housekeeping
                 pass
             # And the user gets their screen back with the chat on it. Without
-            # this a task that followed an app (携程's search page, a singleTask
+            # this a task that followed an app ([CH]'s search page, a singleTask
             # activity) ended with that app still in front, and the answer was
             # sitting behind it.
             try:
@@ -747,10 +747,10 @@ def _crawl_run(crawl_id: str, argv: list[str], device, crawl: dict, recover=None
                     if winner is not None:
                         with LOCK:
                             crawl["lines"].append(
-                                f"注意：新地图 {len(fresh.screens)} 屏，"
-                                f"当前实际使用的是 {os.path.basename(winner[0])}"
-                                f"（{len(winner[1].screens)} 屏）——"
-                                "要换成新的，到「已装地图」里点它「固定使用这份」"
+                                f"Note：[CH] {len(fresh.screens)} Screen，"
+                                f"[CH]Yes {os.path.basename(winner[0])}"
+                                f"（{len(winner[1].screens)} Screen）——"
+                                "[CH]，to「[CH]」[CH]「[CH]」"
                             )
             except Exception:  # noqa: BLE001 - a note is optional
                 pass
@@ -879,10 +879,10 @@ class Handler(BaseHTTPRequestHandler):
         left = pacing_mod.remaining(config.pacing_path, package)
         if left > 0:
             commercial = pacing_mod.is_commercial(package)
-            reason = ("几分钟内连着爬几十次，正是风控要抓的行为"
-                      if commercial else "刚爬过，稍等一下再来")
+            reason = ("[CH]，正Yes[CH]"
+                      if commercial else "[CH]，[CH]")
             return self._send(429, {
-                "error": f"这个 App {reason}，还要等 {int(left // 60) + 1} 分钟。",
+                "error": f"[CH] App {reason}，[CH] {int(left // 60) + 1} [CH]。",
                 "retry_after": int(left),
             })
         os.makedirs(config.crawl_dir, exist_ok=True)
@@ -944,16 +944,16 @@ class Handler(BaseHTTPRequestHandler):
         model = str(body.get("model") or "") or getattr(config, "llm_model", "")
         vision = str(body.get("vision_model") or "") or model
         if not api_key:
-            return self._send(200, {"ok": False, "detail": "没有填 API Key"})
+            return self._send(200, {"ok": False, "detail": "没Yes填 API Key"})
         try:
             # make_llm, not OpenAICompatClient directly: the protocol depends on
             # the base URL, and a connection test that speaks the wrong one
             # reports a 404 from a perfectly good endpoint.
             client = make_llm(api_key, api_base, model, vision)
-            reply = client.text("", "请只回复两个字：可用")
+            reply = client.text("", "[CH]：[CH]")
         except Exception as exc:  # noqa: BLE001 - reported to the settings dialog
             return self._send(200, {"ok": False, "detail": f"{type(exc).__name__}: {exc}"})
-        return self._send(200, {"ok": True, "detail": str(reply)[:80] or "(空回复)"})
+        return self._send(200, {"ok": True, "detail": str(reply)[:80] or "([CH])"})
 
     def _drain_body(self) -> None:
         """Read and discard a request body so the connection stays usable."""
@@ -964,7 +964,7 @@ class Handler(BaseHTTPRequestHandler):
     def _warmup(self) -> None:
         """Launch the apps that have a map, so the first task is not a cold start.
 
-        Measured: the first 小红书 task after the app starts took nine steps and
+        Measured: the first [CH] task after the app starts took nine steps and
         57k tokens, the same task warm took four steps and 13k. Nothing was
         wrong with it; the app simply had to be started and drawn while the
         model watched. Doing that in the background, on the agent's own display
@@ -972,7 +972,7 @@ class Handler(BaseHTTPRequestHandler):
         """
         # Never warm up while work is running: the warm-up launches apps on the
         # same display the crawl or task is driving. Measured today, it started
-        # the clock and Settings underneath a 小红书 crawl, the crawl's taps then
+        # the clock and Settings underneath a [CH] crawl, the crawl's taps then
         # landed in those apps, and the app was killed as a misbehaving process.
         for crawl in list(CRAWLS.values()):
             if crawl.get("state") in ("queued", "running"):
@@ -1299,7 +1299,7 @@ class Handler(BaseHTTPRequestHandler):
         # Pure-GUI tasks get no shell. A model that loses the screen reaches for
         # `am start`/`dumpsys` as a fallback, and those commands run outside the
         # accessibility layer the mode is supposed to be about: measured on
-        # 小红书, half the steps of a GUI run were shell, one of them launching
+        # [CH], half the steps of a GUI run were shell, one of them launching
         # the app onto the user's own display and starting a pull-back cycle.
         SHELL_MODE[task_id] = bool(body.get("shell", True)) and MAPS_MODE[task_id]
         CANCEL[task_id] = threading.Event()
@@ -1309,7 +1309,7 @@ class Handler(BaseHTTPRequestHandler):
         config = self.server.config  # type: ignore[attr-defined]
         hands_off = bool(body.get("display") == 0) if "display" in body else False
         if hands_off and config.hands_off_factory is None:
-            return self._send(400, {"error": "托管模式不可用（设备不支持）"})
+            return self._send(400, {"error": "[CH]Mode[CH]（Device[CH]）"})
         _update(task_id, hands_off=hands_off)
         threading.Thread(target=_run, args=(task_id, text, config, hands_off),
                          daemon=True).start()
@@ -1455,7 +1455,7 @@ class Handler(BaseHTTPRequestHandler):
             crawl_dir = os.path.join(os.path.dirname(config.memory_path), "crawls") \
                 if config.memory_path else ""
             # How many *crawled* maps exist per package, so the app can say
-            # "还有 N 张": choose() shows one and the rest would otherwise be
+            # "还Yes N 张": choose() shows one and the rest would otherwise be
             # invisible. Shipped maps are excluded -- they come back on every
             # start and are not something the user can act on.
             crawl_root = os.path.join(os.path.dirname(config.memory_path), "crawls") \

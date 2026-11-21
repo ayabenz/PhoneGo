@@ -1,4 +1,4 @@
-app: 微博
+app: [CH]
 bundle_id: com.sina.weibo
 dynamic_patterns: []
 preserve_navigation: []

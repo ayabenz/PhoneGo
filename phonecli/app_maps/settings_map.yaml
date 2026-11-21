@@ -12,7 +12,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - configuration
@@ -28,7 +28,7 @@ screens:
     - Apple ID
     - account settings
     - iCloud settings
-    - Apple账户
+    - AppleAccount
     semantic_type: menu_item
   - text: Family
     center:
@@ -38,7 +38,7 @@ screens:
     fixed: false
     leads_to: screen_2
     aliases:
-    - 家人
+    - [CH]
     - family sharing
     - family group
     - parental controls
@@ -50,7 +50,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 飞行模式
+    - [CH]Mode
     - flight mode
     - offline mode
     semantic_type: toggle
@@ -63,7 +63,7 @@ screens:
     leads_to: screen_3
     aliases:
     - WiFi
-    - 无线
+    - None线
     - wireless
     - wifi network
     semantic_type: menu_item
@@ -76,7 +76,7 @@ screens:
     leads_to: screen_4
     aliases:
     - BT
-    - 蓝牙
+    - Bluetooth
     - bluetooth settings
     semantic_type: menu_item
   - text: Cellular
@@ -87,7 +87,7 @@ screens:
     fixed: false
     leads_to: screen_5
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
     - cellular data
     - 4G
@@ -101,7 +101,7 @@ screens:
     fixed: false
     leads_to: screen_6
     aliases:
-    - 热点
+    - [CH]
     - hotspot
     - tethering
     - internet sharing
@@ -114,7 +114,7 @@ screens:
     fixed: false
     leads_to: screen_7
     aliases:
-    - 电池
+    - Battery
     - power
     - battery health
     - low power mode
@@ -128,7 +128,7 @@ screens:
     leads_to: screen_8
     aliases:
     - virtual private network
-    - VPN连接
+    - VPNConnection
     - vpn settings
     semantic_type: menu_item
   - text: General
@@ -139,7 +139,7 @@ screens:
     fixed: false
     leads_to: screen_9
     aliases:
-    - 通用
+    - General
     - about
     - software update
     - storage
@@ -152,7 +152,7 @@ screens:
     fixed: false
     leads_to: screen_10
     aliases:
-    - 辅助功能
+    - [CH]Feature
     - accessibility settings
     - a11y
     - vision
@@ -166,7 +166,7 @@ screens:
     fixed: false
     leads_to: screen_11
     aliases:
-    - 操作按钮
+    - [CH]
     - side button
     - custom button
     - shortcut button
@@ -182,7 +182,7 @@ screens:
     - Apple Intelligence & Siri
     - AI
     - Siri settings
-    - 人工智能与Siri
+    - [CH]Siri
     semantic_type: menu_item
   - text: Camera
     center:
@@ -192,7 +192,7 @@ screens:
     fixed: false
     leads_to: screen_11
     aliases:
-    - 相机
+    - Camera
     - camera settings
     - photo capture
     - formats
@@ -205,7 +205,7 @@ screens:
     fixed: false
     leads_to: screen_11
     aliases:
-    - 控制中心
+    - [CH]Center
     - quick settings
     - control panel
     semantic_type: menu_item
@@ -218,7 +218,7 @@ screens:
     leads_to: screen_11
     aliases:
     - Display & Brightness
-    - 显示与亮度
+    - [CH]Brightness
     - screen
     - dark mode
     - true tone
@@ -232,7 +232,7 @@ screens:
     leads_to: screen_11
     aliases:
     - Home Screen & App Library
-    - 主屏幕与App资源库
+    - 主ScreenandApp[CH]
     - springboard
     - app icons
     - widgets
@@ -245,7 +245,7 @@ screens:
     fixed: false
     leads_to: screen_11
     aliases:
-    - 待机
+    - Standby
     - nightstand mode
     - always-on display
     - clock mode
@@ -258,7 +258,7 @@ screens:
     fixed: false
     leads_to: screen_11
     aliases:
-    - 壁纸
+    - [CH]
     - background
     - lock screen
     - home screen wallpaper
@@ -271,7 +271,7 @@ screens:
     fixed: false
     leads_to: screen_12
     aliases:
-    - 通知
+    - Notification
     - alerts
     - banners
     - notification center
@@ -285,7 +285,7 @@ screens:
     leads_to: screen_11
     aliases:
     - Sounds & Haptics
-    - 声音与触感
+    - [CH]
     - ringtone
     - vibration
     - volume
@@ -298,7 +298,7 @@ screens:
     fixed: false
     leads_to: screen_13
     aliases:
-    - 专注模式
+    - [CH]Mode
     - do not disturb
     - DND
     - sleep
@@ -312,7 +312,7 @@ screens:
     fixed: false
     leads_to: screen_14
     aliases:
-    - 屏幕使用时间
+    - Screen[CH]
     - parental controls
     - downtime
     - app limits
@@ -326,7 +326,7 @@ screens:
     leads_to: screen_13
     aliases:
     - Face ID & Passcode
-    - 面容ID与密码
+    - [CH]IDandPassword
     - biometrics
     - lock screen
     - security
@@ -339,7 +339,7 @@ screens:
     fixed: false
     leads_to: screen_13
     aliases:
-    - 紧急SOS
+    - UrgentSOS
     - emergency call
     - crash detection
     - satellite
@@ -353,7 +353,7 @@ screens:
     leads_to: screen_13
     aliases:
     - Privacy & Security
-    - 隐私与安全性
+    - PrivacyandSecurity性
     - permissions
     - tracking
     - app privacy report
@@ -366,7 +366,7 @@ screens:
     fixed: false
     leads_to: screen_13
     aliases:
-    - 游戏中心
+    - GameCenter
     - gaming
     - achievements
     - friends
@@ -380,7 +380,7 @@ screens:
     fixed: false
     leads_to: screen_13
     aliases:
-    - iCloud云盘
+    - iCloudCloud盘
     - icloud backup
     - icloud drive
     - photos
@@ -395,7 +395,7 @@ screens:
     leads_to: screen_13
     aliases:
     - Wallet & Apple Pay
-    - 钱包与Apple Pay
+    - [CH]Apple Pay
     - passes
     - credit cards
     - transit
@@ -409,7 +409,7 @@ screens:
     fixed: false
     leads_to: screen_15
     aliases:
-    - 应用
+    - App
     - applications
     - app store
     - default apps
@@ -423,7 +423,7 @@ screens:
     fixed: false
     leads_to: screen_16
     aliases:
-    - 开发者
+    - [CH]
     - developer mode
     - Xcode
     - debugging
@@ -443,7 +443,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -462,7 +462,7 @@ screens:
     leads_to: screen_17
     aliases:
     - email address
-    - 邮箱
+    - Email
     - account email
     semantic_type: label
   - text: Personal Information
@@ -472,7 +472,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 个人信息
+    - PersonalInfo
     - profile
     - contact info
     semantic_type: menu_item
@@ -499,7 +499,7 @@ screens:
     leads_to: screen_19
     aliases:
     - payment method
-    - 付款方式
+    - Payment[CH]
     - card
     semantic_type: label
   - text: Subscriptions
@@ -510,7 +510,7 @@ screens:
     fixed: false
     leads_to: screen_20
     aliases:
-    - 订阅
+    - [CH]
     - memberships
     - plans
     semantic_type: menu_item
@@ -522,7 +522,7 @@ screens:
     fixed: false
     leads_to: screen_21
     aliases:
-    - 云服务
+    - CloudService
     - cloud storage
     - icloud settings
     semantic_type: menu_item
@@ -534,9 +534,9 @@ screens:
     fixed: false
     leads_to: screen_22
     aliases:
-    - 家人
+    - [CH]
     - family sharing
-    - 家庭共享
+    - [CH]Share
     semantic_type: menu_item
   - text: 2 Members
     center:
@@ -546,7 +546,7 @@ screens:
     fixed: false
     leads_to: screen_22
     aliases:
-    - 2位成员
+    - 2[CH]
     - family members
     - two members
     semantic_type: label
@@ -558,7 +558,7 @@ screens:
     fixed: true
     leads_to: screen_23
     aliases:
-    - 查找
+    - [CH]
     - find my iphone
     - location
     semantic_type: menu_item
@@ -577,7 +577,7 @@ screens:
     fixed: true
     leads_to: screen_25
     aliases:
-    - 通过Apple登录
+    - [CH]AppleLogin
     - apple login
     - SSO
     semantic_type: menu_item
@@ -589,7 +589,7 @@ screens:
     fixed: true
     aliases:
     - iPad devices
-    - 两台iPad
+    - [CH]iPad
     - ipad list
     semantic_type: label
   - text: '[Device]'
@@ -600,7 +600,7 @@ screens:
     fixed: true
     aliases:
     - iPad Pro model
-    - 平板电脑
+    - TabletComputer
     semantic_type: network
   - text: '[Device]'
     center:
@@ -609,7 +609,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - Jiang的手机
+    - JiangPhone
     - iPhone Jiang
     semantic_type: network
   - text: '[Device]'
@@ -620,7 +620,7 @@ screens:
     fixed: true
     aliases:
     - iPhone 10
-    - 苹果X
+    - [CH]X
     semantic_type: network
   - text: '[Device]'
     center:
@@ -629,8 +629,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - Yangqin的MacBook
-    - 8台设备
+    - YangqinMacBook
+    - 8台Device
     semantic_type: label
   - text: '[Device]'
     center:
@@ -649,7 +649,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设备
+    - Device
     - device name
     semantic_type: label
   - text: '[Device]'
@@ -675,7 +675,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 手表S11
+    - [CH]S11
     - apple watch 11
     semantic_type: network
   - text: '[Device]'
@@ -692,7 +692,7 @@ screens:
     fixed: true
     aliases:
     - iPad device
-    - 平板
+    - Tablet
     semantic_type: network
   - text: Contact Key Verification
     center:
@@ -701,7 +701,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 联系人密钥验证
+    - Contact人API KeyVerify
     - key verification
     - security code
     semantic_type: menu_item
@@ -713,7 +713,7 @@ screens:
     fixed: false
     leads_to: screen_17
     aliases:
-    - 联系人照片
+    - Contact[CH]
     - avatar
     - profile picture
     semantic_type: menu_item
@@ -725,7 +725,7 @@ screens:
     fixed: true
     leads_to: screen_26
     aliases:
-    - Yangqin的手机
+    - YangqinPhone
     - iPhone Yangqin
     semantic_type: label
   - text: '[Device]'
@@ -736,7 +736,7 @@ screens:
     fixed: true
     leads_to: screen_26
     aliases:
-    - 本机iPhone 17 Pro
+    - [CH]iPhone 17 Pro
     - current device
     - this phone
     semantic_type: label
@@ -748,9 +748,9 @@ screens:
     fixed: true
     leads_to: screen_27
     aliases:
-    - 登出
+    - [CH]
     - logout
-    - 退出登录
+    - ExitLogin
     semantic_type: button
   description: Main Settings screen showing Apple Account, iCloud, Family, device
     list, and various account and system settings.
@@ -766,7 +766,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -777,9 +777,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人
+    - [CH]
     - family sharing
-    - 家庭共享
+    - [CH]Share
     semantic_type: menu_item
   - text: '[Name]'
     center:
@@ -801,7 +801,7 @@ screens:
     fixed: true
     leads_to: screen_28
     aliases:
-    - 成年人
+    - [CH]
     - adult account
     semantic_type: label
   - text: '[Name]'
@@ -823,7 +823,7 @@ screens:
     fixed: true
     leads_to: screen_29
     aliases:
-    - 组织者
+    - [CH]
     - family organizer
     semantic_type: label
   - text: See what family members can access and share.
@@ -833,7 +833,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看家人可访问和共享的内容
+    - View[CH]Access和Share[CH]
     - family access info
     semantic_type: label
   - text: Recommended for Your Family
@@ -844,7 +844,7 @@ screens:
     fixed: true
     leads_to: screen_30
     aliases:
-    - 家人推荐
+    - [CH]
     - family recommendations
     semantic_type: label
   - text: 9 active items
@@ -855,7 +855,7 @@ screens:
     fixed: true
     leads_to: screen_30
     aliases:
-    - 9个活跃项目
+    - 9[CH]
     - active subscriptions count
     semantic_type: label
   - text: Subscriptions
@@ -866,7 +866,7 @@ screens:
     fixed: true
     leads_to: screen_31
     aliases:
-    - 订阅
+    - [CH]
     - shared subscriptions
     semantic_type: menu_item
   - text: No shared subscriptions
@@ -877,7 +877,7 @@ screens:
     fixed: true
     leads_to: screen_31
     aliases:
-    - 无共享订阅
+    - NoneShare[CH]
     - no subscriptions
     semantic_type: label
   - text: Purchase Sharing
@@ -887,7 +887,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 购买共享
+    - PurchaseShare
     - shared purchases
     semantic_type: menu_item
   - text: Not Enabled
@@ -897,7 +897,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 未启用
+    - 未Enable
     - disabled
     - 'off'
     semantic_type: label
@@ -909,7 +909,7 @@ screens:
     fixed: true
     leads_to: screen_32
     aliases:
-    - 位置共享
+    - [CH]Share
     - share location
     semantic_type: menu_item
   - text: Not sharing with family
@@ -920,7 +920,7 @@ screens:
     fixed: true
     leads_to: screen_32
     aliases:
-    - 未与家人共享
+    - [CH]Share
     - location not shared
     semantic_type: label
   - text: Apple uses your Apple Account, payment details, and information about your
@@ -955,7 +955,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - configuration
@@ -968,7 +968,7 @@ screens:
     fixed: true
     leads_to: screen_19
     aliases:
-    - 编辑
+    - Edit
     - modify
     - change
     semantic_type: button
@@ -980,7 +980,7 @@ screens:
     fixed: true
     leads_to: screen_34
     aliases:
-    - 更多信息
+    - [CH]Info
     - details
     - information
     semantic_type: button
@@ -994,7 +994,7 @@ screens:
     aliases:
     - WiFi
     - wireless
-    - 无线
+    - None线
     - wifi settings
     semantic_type: setting
   - text: Learn more…
@@ -1005,7 +1005,7 @@ screens:
     fixed: true
     leads_to: screen_36
     aliases:
-    - 了解更多
+    - [CH]
     - more details
     - help
     semantic_type: link
@@ -1019,7 +1019,7 @@ screens:
     aliases:
     - WiFi
     - wireless
-    - 无线
+    - None线
     - wifi network
     semantic_type: toggle
   - text: My Networks
@@ -1030,7 +1030,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 我的网络
+    - MyNetwork
     - saved networks
     - known networks
     semantic_type: label
@@ -1044,7 +1044,7 @@ screens:
     aliases:
     - WiFi HK
     - HKU wireless
-    - 香港大学WiFi
+    - [CH]WiFi
     semantic_type: network
   - text: Other Networks
     center:
@@ -1054,7 +1054,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 其他网络
+    - [CH]Network
     - available networks
     - nearby networks
     semantic_type: label
@@ -1077,7 +1077,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 其他
+    - [CH]
     - more networks
     - hidden network
     semantic_type: menu_item
@@ -1089,7 +1089,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 询问加入网络
+    - [CH]Network
     - network prompt
     - join request
     semantic_type: toggle
@@ -1101,7 +1101,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 通知
+    - Notification
     - alert
     - notification
     semantic_type: toggle
@@ -1116,7 +1116,7 @@ screens:
     aliases:
     - auto-join description
     - network notification info
-    - 自动加入说明
+    - Auto[CH]Instruction
     semantic_type: label
   - text: selected
     center:
@@ -1126,7 +1126,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 已选
+    - [CH]
     - chosen
     - checked
     semantic_type: label
@@ -1138,7 +1138,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 锁定
+    - [CH]
     - secure
     - padlock
     semantic_type: label
@@ -1150,7 +1150,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 自动加入热点
+    - Auto[CH]
     - auto connect hotspot
     - personal hotspot auto-join
     semantic_type: toggle
@@ -1162,7 +1162,7 @@ screens:
     fixed: true
     leads_to: screen_35
     aliases:
-    - 询问加入
+    - [CH]
     - prompt to join
     - join confirmation
     semantic_type: toggle
@@ -1177,7 +1177,7 @@ screens:
     aliases:
     - auto-discover description
     - hotspot discovery info
-    - 自动发现热点说明
+    - Auto[CH]Instruction
     semantic_type: label
   description: Wi-Fi settings page with options to manage networks, auto-join hotspot,
     and ask to join networks
@@ -1193,7 +1193,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -1204,7 +1204,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蓝牙
+    - Bluetooth
     - BT
     - bluetooth settings
     semantic_type: setting
@@ -1216,7 +1216,7 @@ screens:
     fixed: true
     leads_to: screen_37
     aliases:
-    - 更多信息
+    - [CH]Info
     - details
     - information
     semantic_type: button
@@ -1234,7 +1234,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设备
+    - Device
     - device name
     - hardware
     semantic_type: label
@@ -1245,7 +1245,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 已连接
+    - 已Connection
     - paired
     - active
     semantic_type: label
@@ -1258,7 +1258,7 @@ screens:
     aliases:
     - AirPods
     - Apple earphones
-    - 苹果耳机
+    - [CH]
     semantic_type: network
   - text: '[Device]'
     center:
@@ -1267,7 +1267,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 小米汽车
+    - [CH]
     - Xiaomi car
     - MiCar
     semantic_type: network
@@ -1278,7 +1278,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 小米YU7
+    - [CH]YU7
     - Xiaomi SUV
     - YU7 Pro
     semantic_type: network
@@ -1289,7 +1289,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 其他设备
+    - [CH]Device
     - more devices
     - additional devices
     semantic_type: label
@@ -1307,7 +1307,7 @@ screens:
     fixed: true
     leads_to: screen_0
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -1318,7 +1318,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 添加eSIM
+    - [CH]eSIM
     - add esim
     - setup esim
     semantic_type: button
@@ -1330,7 +1330,7 @@ screens:
     fixed: false
     leads_to: screen_39
     aliases:
-    - 了解更多
+    - [CH]
     - learn more about esim
     - info
     semantic_type: link
@@ -1341,7 +1341,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
     - cellular settings
     semantic_type: menu_item
@@ -1353,7 +1353,7 @@ screens:
     fixed: false
     leads_to: screen_40
     aliases:
-    - 蜂窝数据
+    - Cellular[CH]
     - mobile data
     - data usage
     semantic_type: setting
@@ -1367,7 +1367,7 @@ screens:
     aliases:
     - Hong Kong
     - HK
-    - 香港地区
+    - [CH]
     semantic_type: label
   - text: Personal Hotspot
     center:
@@ -1377,7 +1377,7 @@ screens:
     fixed: false
     leads_to: screen_41
     aliases:
-    - 个人热点
+    - Personal[CH]
     - hotspot
     - tethering
     semantic_type: setting
@@ -1389,7 +1389,7 @@ screens:
     fixed: false
     leads_to: screen_42
     aliases:
-    - 默认语音号码
+    - Default[CH]
     - default line
     - voice line
     semantic_type: setting
@@ -1403,7 +1403,7 @@ screens:
     aliases:
     - China number
     - mainland number
-    - 大陆号码
+    - [CH]
     semantic_type: label
   - text: '[Region]'
     center:
@@ -1415,7 +1415,7 @@ screens:
     aliases:
     - Mainland China
     - China
-    - 中国大陆
+    - [CH]
     semantic_type: label
   - text: '[Phone]'
     center:
@@ -1427,7 +1427,7 @@ screens:
     aliases:
     - Hong Kong number
     - HK number
-    - 香港号码
+    - [CH]
     semantic_type: label
   - text: Music
     center:
@@ -1437,7 +1437,7 @@ screens:
     fixed: false
     leads_to: screen_45
     aliases:
-    - 音乐
+    - [CH]
     - Apple Music
     - music app
     semantic_type: label
@@ -1461,7 +1461,7 @@ screens:
     fixed: false
     leads_to: screen_45
     aliases:
-    - 小红书
+    - [CH]
     - RED
     - xiaohongshu
     semantic_type: label
@@ -1475,7 +1475,7 @@ screens:
     aliases:
     - rednote bundle
     - xingin
-    - 小红书id
+    - [CH]id
     semantic_type: label
   - text: '[App]'
     center:
@@ -1485,7 +1485,7 @@ screens:
     fixed: false
     leads_to: screen_45
     aliases:
-    - 哔哩哔哩
+    - [CH]
     - B站
     - bilibili app
     semantic_type: label
@@ -1509,7 +1509,7 @@ screens:
     fixed: false
     leads_to: screen_45
     aliases:
-    - 微博
+    - [CH]
     - sina weibo
     - weibo app
     semantic_type: label
@@ -1523,7 +1523,7 @@ screens:
     aliases:
     - weibo bundle
     - sina
-    - 微博id
+    - [CH]id
     semantic_type: label
   - text: '[Region]'
     center:
@@ -1533,7 +1533,7 @@ screens:
     fixed: false
     leads_to: screen_45
     aliases:
-    - 香港蜂窝数据
+    - [CH]Cellular[CH]
     - HK data usage
     - Hong Kong cellular data
     semantic_type: label
@@ -1545,7 +1545,7 @@ screens:
     fixed: false
     leads_to: screen_45
     aliases:
-    - 当前周期
+    - [CH]
     - this period
     - current billing cycle
     semantic_type: label
@@ -1557,7 +1557,7 @@ screens:
     fixed: false
     leads_to: screen_45
     aliases:
-    - 当前周期漫游
+    - [CH]
     - roaming this period
     - current roaming
     semantic_type: label
@@ -1569,7 +1569,7 @@ screens:
     fixed: false
     leads_to: screen_46
     aliases:
-    - 微信
+    - [CH]
     - Weixin
     - wechat app
     semantic_type: label
@@ -1583,7 +1583,7 @@ screens:
     aliases:
     - wechat bundle
     - tencent
-    - 微信id
+    - [CH]id
     semantic_type: label
   - text: Wi-Fi Assist
     center:
@@ -1593,7 +1593,7 @@ screens:
     fixed: false
     leads_to: screen_47
     aliases:
-    - 无线局域网助理
+    - None[CH]
     - wifi assist
     - wifi helper
     semantic_type: toggle
@@ -1605,7 +1605,7 @@ screens:
     fixed: false
     leads_to: screen_47
     aliases:
-    - iCloud云盘
+    - iCloudCloud盘
     - icloud drive
     - cloud drive
     semantic_type: toggle
@@ -1617,7 +1617,7 @@ screens:
     fixed: false
     leads_to: screen_46
     aliases:
-    - iCloud备份
+    - iCloudBackup
     - icloud backup
     - cloud backup
     semantic_type: toggle
@@ -1629,7 +1629,7 @@ screens:
     fixed: false
     leads_to: screen_47
     aliases:
-    - 显示全部
+    - [CH]All
     - see all
     - expand
     semantic_type: button
@@ -1679,7 +1679,7 @@ screens:
     fixed: false
     leads_to: screen_49
     aliases:
-    - 启用蜂窝数据统计
+    - EnableCellular[CH]
     - enable data tracking
     - usage stats toggle
     semantic_type: toggle
@@ -1690,7 +1690,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 重置统计数据
+    - Reset[CH]
     - reset usage stats
     - clear statistics
     semantic_type: button
@@ -1701,7 +1701,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 通话时间
+    - [CH]
     - call duration
     - voice time
     semantic_type: label
@@ -1712,7 +1712,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 5分钟
+    - 5[CH]
     - 5 min
     - call duration value
     semantic_type: label
@@ -1723,7 +1723,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 总计
+    - [CH]
     - total
     - all time
     semantic_type: label
@@ -1734,7 +1734,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 蜂窝数据统计
+    - Cellular[CH]
     - data usage stats
     - usage statistics
     semantic_type: label
@@ -1816,7 +1816,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - config
@@ -1829,7 +1829,7 @@ screens:
     fixed: false
     aliases:
     - information
-    - 详情
+    - [CH]
     - about
     - details
     semantic_type: menu_item
@@ -1840,7 +1840,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 电量百分比
+    - Battery Level[CH]
     - battery %
     - show percentage
     semantic_type: toggle
@@ -1851,7 +1851,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 电池
+    - Battery
     - power
     - battery settings
     semantic_type: label
@@ -1862,7 +1862,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 充电中
+    - Chargingmiddle
     - plugged in
     - power connected
     semantic_type: label
@@ -1874,7 +1874,7 @@ screens:
     fixed: false
     aliases:
     - charge limit
-    - 充电上限
+    - Charging[CH]
     - optimized charging
     - full charge
     semantic_type: toggle
@@ -1887,7 +1887,7 @@ screens:
     aliases:
     - battery usage insight
     - usage comparison
-    - 电量使用提示
+    - Battery Level[CH]Tip
     semantic_type: label
   - text: Average
     center:
@@ -1896,7 +1896,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 平均
+    - [CH]
     - typical
     - mean
     semantic_type: tab
@@ -1907,7 +1907,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 全天
+    - [CH]
     - 24 hours
     - daily
     semantic_type: tab
@@ -1918,7 +1918,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 每日
+    - [CH]
     - per day
     - daily average
     semantic_type: label
@@ -1929,7 +1929,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 应用与系统活动
+    - App[CH]
     - usage by app
     - battery consumption
     semantic_type: label
@@ -1958,7 +1958,7 @@ screens:
     aliases:
     - B站
     - b station
-    - 哔哩哔哩
+    - [CH]
     semantic_type: menu_item
   - text: 'On screen: 1h 8m&#10;Background: 9m'
     center:
@@ -1973,7 +1973,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 小红书
+    - [CH]
     - RED
     - xiaohongshu
     semantic_type: menu_item
@@ -1990,7 +1990,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 电池健康
+    - Battery[CH]
     - maximum capacity
     - battery condition
     semantic_type: menu_item
@@ -2001,7 +2001,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 正常
+    - [CH]
     - standard
     - healthy
     semantic_type: label
@@ -2012,7 +2012,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 闪光灯
+    - [CH]
     - torch
     - flashlight
     semantic_type: button
@@ -2023,7 +2023,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 快进
+    - [CH]
     - skip
     - next
     semantic_type: button
@@ -2034,7 +2034,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 查看全部电池用量
+    - ViewAllBattery[CH]
     - full usage details
     - all apps
     semantic_type: link
@@ -2045,10 +2045,10 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 电源模式
+    - [CH]Mode
     - low power
     - performance mode
-    - 省电模式
+    - [CH]Mode
     semantic_type: menu_item
   - text: Adaptive
     center:
@@ -2057,7 +2057,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 自适应
+    - [CH]
     - auto
     - dynamic
     semantic_type: label
@@ -2075,7 +2075,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -2086,7 +2086,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 更多信息
+    - [CH]Info
     - details
     - about
     semantic_type: button
@@ -2097,7 +2097,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 添加VPN配置
+    - [CH]VPNConfigure
     - new VPN
     - create VPN profile
     semantic_type: button
@@ -2108,8 +2108,8 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - VPN状态
-    - 未连接
+    - VPN[CH]
+    - 未Connection
     - disconnected
     semantic_type: label
   - text: About VPNs &amp; Privacy…
@@ -2119,7 +2119,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关于VPN与隐私
+    - AboutVPNandPrivacy
     - VPN privacy info
     - learn more
     semantic_type: link
@@ -2130,7 +2130,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 虚拟专用网络
+    - Virtual[CH]Network
     - virtual private network
     - VPN settings
     semantic_type: setting
@@ -2141,7 +2141,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - VPN状态
+    - VPN[CH]
     - connection status
     - status
     semantic_type: menu_item
@@ -2162,7 +2162,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 香港大学VPN
+    - [CH]VPN
     - University VPN
     semantic_type: network
   - text: AnyConnect
@@ -2183,7 +2183,7 @@ screens:
     fixed: true
     aliases:
     - CUHK VPN
-    - 香港中文大学深圳VPN
+    - [CH]Chinese[CH]VPN
     - cuhk vpn
     semantic_type: network
   - text: selected
@@ -2193,7 +2193,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 已选择
+    - 已Select
     - checked
     - active
     semantic_type: label
@@ -2210,10 +2210,10 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 系统设置
+    - [CH]Settings
     - preferences
     - configuration
-    - 系统偏好
+    - [CH]Preferences
     semantic_type: tab
   - text: General
     center:
@@ -2222,7 +2222,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通用
+    - General
     - general settings
     - main settings
     semantic_type: menu_item
@@ -2235,7 +2235,7 @@ screens:
     fixed: false
     aliases:
     - general description
-    - 通用描述
+    - General[CH]
     semantic_type: label
   - text: About
     center:
@@ -2244,7 +2244,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 关于本机
+    - About[CH]
     - device info
     - info
     semantic_type: menu_item
@@ -2255,7 +2255,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 软件更新
+    - SoftwareUpdate
     - iOS update
     - system update
     semantic_type: menu_item
@@ -2266,10 +2266,10 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 存储空间
+    - [CH]
     - storage
     - device storage
-    - iPhone储存空间
+    - iPhone[CH]
     semantic_type: menu_item
   - text: AppleCare &amp; Warranty
     center:
@@ -2284,7 +2284,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 隔空投送
+    - [CH]
     - file sharing
     - nearby share
     semantic_type: menu_item
@@ -2301,7 +2301,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 画中画
+    - [CH]
     - PiP
     - video overlay
     semantic_type: menu_item
@@ -2312,7 +2312,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 屏幕录制
+    - Screen[CH]
     - screenshot
     - screen recording
     semantic_type: menu_item
@@ -2323,9 +2323,9 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 车载
+    - [CH]
     - car dashboard
-    - 车载系统
+    - [CH]
     semantic_type: menu_item
   - text: AutoFill &amp; Passwords
     center:
@@ -2340,9 +2340,9 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 后台应用刷新
+    - [CH]App[CH]
     - background refresh
-    - 后台刷新
+    - [CH]
     semantic_type: menu_item
   - text: Date &amp; Time
     center:
@@ -2357,7 +2357,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 词典
+    - [CH]
     - definitions
     - word lookup
     semantic_type: menu_item
@@ -2368,7 +2368,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 字体
+    - [CH]
     - typeface
     - text style
     semantic_type: menu_item
@@ -2379,10 +2379,10 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 键盘
+    - [CH]
     - keyboards
     - input method
-    - 输入法
+    - Input法
     semantic_type: menu_item
   - text: Language &amp; Region
     center:
@@ -2397,7 +2397,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 电视提供商
+    - TV[CH]
     - cable provider
     - TV login
     semantic_type: menu_item
@@ -2408,7 +2408,7 @@ screens:
     found_at_scroll: 2
     fixed: true
     aliases:
-    - 关机
+    - [CH]
     - power off
     - restart
     semantic_type: button
@@ -2431,11 +2431,11 @@ screens:
     found_at_scroll: 2
     fixed: true
     aliases:
-    - 传输或还原iPhone
+    - Transfer[CH]iPhone
     - reset
     - erase
     - factory reset
-    - 抹掉
+    - [CH]
     semantic_type: menu_item
   description: General settings page for managing iPhone setup and preferences including
     software updates, language, CarPlay, AirDrop, and more.
@@ -2450,7 +2450,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - x button
     semantic_type: button
@@ -2461,11 +2461,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 切换
+    - [CH]
     - switch
     - change
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -2474,9 +2474,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 搜索
+  - text: Search
     center:
     - 0.8706
     - 0.8913
@@ -2485,7 +2485,7 @@ screens:
     aliases:
     - search
     - find
-    - 查找
+    - [CH]
     semantic_type: input
   - text: Apple Account, iCloud+, and more
     center:
@@ -2495,7 +2495,7 @@ screens:
     fixed: true
     aliases:
     - Apple ID
-    - 账户设置
+    - AccountSettings
     - account settings
     semantic_type: menu_item
   - text: Family
@@ -2505,9 +2505,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人共享
+    - [CH]Share
     - family sharing
-    - 家庭
+    - [CH]
     semantic_type: menu_item
   - text: Airplane Mode
     center:
@@ -2516,7 +2516,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 飞行模式
+    - [CH]Mode
     - flight mode
     - offline mode
     semantic_type: toggle
@@ -2528,7 +2528,7 @@ screens:
     fixed: true
     aliases:
     - WiFi
-    - 无线网络
+    - None线Network
     - wireless
     semantic_type: menu_item
   - text: Bluetooth
@@ -2539,7 +2539,7 @@ screens:
     fixed: true
     aliases:
     - BT
-    - 蓝牙
+    - Bluetooth
     - bluetooth settings
     semantic_type: menu_item
   - text: Cellular
@@ -2549,9 +2549,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
-    - 移动数据
+    - [CH]
     semantic_type: menu_item
   - text: Personal Hotspot
     center:
@@ -2560,7 +2560,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 热点
+    - [CH]
     - hotspot
     - tethering
     semantic_type: menu_item
@@ -2571,9 +2571,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 电池
+    - Battery
     - power
-    - 电量
+    - Battery Level
     semantic_type: menu_item
   - text: VPN
     center:
@@ -2582,9 +2582,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 虚拟专用网络
+    - Virtual[CH]Network
     - VPN settings
-    - 代理
+    - Proxy
     semantic_type: menu_item
   - text: General
     center:
@@ -2593,9 +2593,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通用
+    - General
     - system
-    - 基本设置
+    - BasicSettings
     semantic_type: menu_item
   - text: Accessibility
     center:
@@ -2604,9 +2604,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 辅助功能
+    - [CH]Feature
     - accessibility settings
-    - 无障碍
+    - None[CH]
     semantic_type: menu_item
   - text: Action Button
     center:
@@ -2615,9 +2615,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 操作按钮
+    - [CH]
     - action key
-    - 快捷按钮
+    - [CH]
     semantic_type: menu_item
   - text: Apple Intelligence &amp; Siri
     center:
@@ -2628,7 +2628,7 @@ screens:
     aliases:
     - Apple Intelligence & Siri
     - AI
-    - Siri设置
+    - SiriSettings
     semantic_type: menu_item
   - text: Suggestions
     center:
@@ -2637,9 +2637,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 建议
+    - [CH]
     - recommendations
-    - 提示
+    - Tip
     semantic_type: label
   - text: Wi‑Fi
     center:
@@ -2649,7 +2649,7 @@ screens:
     fixed: true
     aliases:
     - WiFi
-    - 无线网络
+    - None线Network
     - wireless
     semantic_type: label
   - text: Recents
@@ -2659,9 +2659,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 最近
+    - [CH]
     - recent items
-    - 历史
+    - [CH]
     semantic_type: label
   - text: General → VPN &amp; Device Management
     center:
@@ -2671,8 +2671,8 @@ screens:
     fixed: true
     aliases:
     - General → VPN & Device Management
-    - VPN管理
-    - 设备管理
+    - VPNManage
+    - DeviceManage
     semantic_type: link
   - text: iCloud
     center:
@@ -2681,7 +2681,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 云服务
+    - CloudService
     - iCloud settings
     - icloud drive
     semantic_type: menu_item
@@ -2693,7 +2693,7 @@ screens:
     fixed: true
     aliases:
     - Apple ID
-    - 账户
+    - Account
     - account
     semantic_type: menu_item
   - text: AirDrop
@@ -2703,9 +2703,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 隔空投送
+    - [CH]
     - air drop
-    - 文件传输
+    - FileTransfer
     semantic_type: menu_item
   - text: iPhone Storage
     center:
@@ -2714,9 +2714,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 存储空间
+    - [CH]
     - storage
-    - 容量
+    - [CH]
     semantic_type: menu_item
   description: Main Settings screen with Apple Account, connectivity toggles, and
     various system and app settings categories.
@@ -2731,7 +2731,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - configuration
@@ -2743,7 +2743,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 热点
+    - [CH]
     - hotspot
     - tethering
     - internet sharing
@@ -2755,7 +2755,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 电池
+    - Battery
     - power
     - battery health
     - charging
@@ -2767,7 +2767,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 虚拟专用网络
+    - Virtual[CH]Network
     - virtual private network
     - VPN settings
     semantic_type: menu_item
@@ -2778,7 +2778,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 通用
+    - General
     - general settings
     - about
     - software update
@@ -2790,7 +2790,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 辅助功能
+    - [CH]Feature
     - accessibility settings
     - a11y
     - ease of access
@@ -2802,7 +2802,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 操作按钮
+    - [CH]
     - action key
     - shortcut button
     semantic_type: menu_item
@@ -2816,7 +2816,7 @@ screens:
     - Apple Intelligence & Siri
     - AI & Siri
     - Siri settings
-    - 苹果智能与Siri
+    - [CH]Siri
     semantic_type: menu_item
   - text: Camera
     center:
@@ -2825,7 +2825,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 相机
+    - Camera
     - camera settings
     - photo settings
     semantic_type: menu_item
@@ -2836,7 +2836,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 控制中心
+    - [CH]Center
     - control panel
     - quick settings
     semantic_type: menu_item
@@ -2848,7 +2848,7 @@ screens:
     fixed: false
     aliases:
     - Display & Brightness
-    - 显示与亮度
+    - [CH]Brightness
     - screen brightness
     - display settings
     semantic_type: menu_item
@@ -2860,7 +2860,7 @@ screens:
     fixed: false
     aliases:
     - Home Screen & App Library
-    - 主屏幕与App资源库
+    - 主ScreenandApp[CH]
     - home screen settings
     - app drawer
     semantic_type: menu_item
@@ -2871,7 +2871,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 待机
+    - Standby
     - standby mode
     - nightstand mode
     semantic_type: menu_item
@@ -2882,7 +2882,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 壁纸
+    - [CH]
     - background
     - lock screen wallpaper
     semantic_type: menu_item
@@ -2893,7 +2893,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通知
+    - Notification
     - alerts
     - notification settings
     - push notifications
@@ -2906,7 +2906,7 @@ screens:
     fixed: true
     aliases:
     - Sounds & Haptics
-    - 声音与触感
+    - [CH]
     - ringtone
     - vibration
     - audio
@@ -2918,7 +2918,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 专注模式
+    - [CH]Mode
     - do not disturb
     - focus modes
     - concentration
@@ -2930,7 +2930,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 屏幕使用时间
+    - Screen[CH]
     - screen time limits
     - parental controls
     - usage
@@ -2943,7 +2943,7 @@ screens:
     fixed: true
     aliases:
     - Face ID & Passcode
-    - 面容ID与密码
+    - [CH]IDandPassword
     - face unlock
     - passcode lock
     - security
@@ -2955,7 +2955,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 紧急SOS
+    - UrgentSOS
     - emergency call
     - SOS settings
     - emergency contacts
@@ -2968,7 +2968,7 @@ screens:
     fixed: true
     aliases:
     - Privacy & Security
-    - 隐私与安全性
+    - PrivacyandSecurity性
     - data privacy
     - security settings
     - permissions
@@ -2980,7 +2980,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 游戏中心
+    - GameCenter
     - gaming
     - game center settings
     - leaderboards
@@ -2995,7 +2995,7 @@ screens:
     - iCloud settings
     - cloud storage
     - icloud backup
-    - 苹果云
+    - [CH]Cloud
     semantic_type: menu_item
   - text: Wallet &amp; Apple Pay
     center:
@@ -3005,7 +3005,7 @@ screens:
     fixed: true
     aliases:
     - Wallet & Apple Pay
-    - 钱包与Apple Pay
+    - [CH]Apple Pay
     - apple pay settings
     - cards & payments
     - NFC
@@ -3017,7 +3017,7 @@ screens:
     found_at_scroll: 2
     fixed: true
     aliases:
-    - 应用
+    - App
     - applications
     - app settings
     - installed apps
@@ -3029,7 +3029,7 @@ screens:
     found_at_scroll: 2
     fixed: true
     aliases:
-    - 开发者
+    - [CH]
     - developer settings
     - dev options
     - debug
@@ -3047,7 +3047,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - x button
     semantic_type: button
@@ -3058,11 +3058,11 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 切换
+    - [CH]
     - switch
     - change
     semantic_type: button
-  - text: 表情符号
+  - text: [CH]
     center:
     - 0.194
     - 0.8913
@@ -3071,9 +3071,9 @@ screens:
     aliases:
     - emoji
     - emoticon
-    - 表情
+    - [CH]
     semantic_type: button
-  - text: 搜索
+  - text: Search
     center:
     - 0.8706
     - 0.8913
@@ -3082,7 +3082,7 @@ screens:
     aliases:
     - search
     - find
-    - 查找
+    - [CH]
     semantic_type: input
   - text: Personal Hotspot
     center:
@@ -3091,7 +3091,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 热点
+    - [CH]
     - hotspot
     - tethering
     semantic_type: menu_item
@@ -3102,7 +3102,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 电池
+    - Battery
     - power
     - battery health
     semantic_type: menu_item
@@ -3113,7 +3113,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 虚拟专用网络
+    - Virtual[CH]Network
     - vpn settings
     semantic_type: menu_item
   - text: General
@@ -3123,7 +3123,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通用
+    - General
     - general settings
     - about
     semantic_type: menu_item
@@ -3134,7 +3134,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 辅助功能
+    - [CH]Feature
     - a11y
     - accessibility settings
     semantic_type: menu_item
@@ -3145,7 +3145,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 操作按钮
+    - [CH]
     - action key
     - shortcut button
     semantic_type: menu_item
@@ -3167,7 +3167,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 相机
+    - Camera
     - camera settings
     - photo
     semantic_type: menu_item
@@ -3178,7 +3178,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 控制中心
+    - [CH]Center
     - cc
     - quick settings
     semantic_type: menu_item
@@ -3190,7 +3190,7 @@ screens:
     fixed: true
     aliases:
     - Display & Brightness
-    - 显示与亮度
+    - [CH]Brightness
     - screen brightness
     semantic_type: menu_item
   - text: Home Screen &amp; App Library
@@ -3201,7 +3201,7 @@ screens:
     fixed: true
     aliases:
     - Home Screen & App Library
-    - 主屏幕与App资源库
+    - 主ScreenandApp[CH]
     - home screen
     semantic_type: menu_item
   - text: StandBy
@@ -3211,7 +3211,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 待机
+    - Standby
     - standby mode
     - nightstand
     semantic_type: menu_item
@@ -3222,9 +3222,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 壁纸
+    - [CH]
     - background
-    - 锁屏
+    - [CH]
     semantic_type: menu_item
   - text: Notifications
     center:
@@ -3233,7 +3233,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通知
+    - Notification
     - alerts
     - notification settings
     semantic_type: menu_item
@@ -3245,7 +3245,7 @@ screens:
     fixed: true
     aliases:
     - Sounds & Haptics
-    - 声音与触感
+    - [CH]
     - ringtone
     semantic_type: menu_item
   - text: Suggestions
@@ -3255,7 +3255,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 建议
+    - [CH]
     - siri suggestions
     - recommendations
     semantic_type: menu_item
@@ -3267,7 +3267,7 @@ screens:
     fixed: true
     aliases:
     - Wi-Fi
-    - 无线局域网
+    - None[CH]
     - wifi
     - wlan
     semantic_type: menu_item
@@ -3278,7 +3278,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
     - 4g
     - 5g
@@ -3290,7 +3290,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人
+    - [CH]
     - family sharing
     - parental controls
     semantic_type: menu_item
@@ -3301,7 +3301,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蓝牙
+    - Bluetooth
     - bt
     - bluetooth settings
     semantic_type: menu_item
@@ -3312,7 +3312,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 最近
+    - [CH]
     - recent calls
     - history
     semantic_type: tab
@@ -3324,7 +3324,7 @@ screens:
     fixed: true
     aliases:
     - General → VPN & Device Management
-    - 通用 → VPN与设备管理
+    - General → VPNandDeviceManage
     - vpn device management
     semantic_type: link
   - text: iCloud
@@ -3335,7 +3335,7 @@ screens:
     fixed: true
     aliases:
     - icloud
-    - 云盘
+    - Cloud盘
     - apple cloud
     semantic_type: menu_item
   - text: Apple Account
@@ -3346,7 +3346,7 @@ screens:
     fixed: true
     aliases:
     - apple id
-    - 账户
+    - Account
     - account settings
     semantic_type: menu_item
   - text: AirDrop
@@ -3356,7 +3356,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 隔空投送
+    - [CH]
     - air drop
     - share
     semantic_type: menu_item
@@ -3367,7 +3367,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 存储空间
+    - [CH]
     - storage
     - capacity
     semantic_type: menu_item
@@ -3384,7 +3384,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - config
@@ -3402,7 +3402,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 待机
+    - Standby
     - standby mode
     - nightstand mode
     - always-on display
@@ -3414,7 +3414,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 壁纸
+    - [CH]
     - background
     - lock screen
     - home screen wallpaper
@@ -3426,7 +3426,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通知
+    - Notification
     - alerts
     - push notifications
     - notification center
@@ -3444,7 +3444,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 专注模式
+    - [CH]Mode
     - do not disturb
     - dnd
     - focus modes
@@ -3457,7 +3457,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 屏幕使用时间
+    - Screen[CH]
     - screen time limits
     - parental controls
     - usage
@@ -3475,7 +3475,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 紧急SOS
+    - UrgentSOS
     - emergency call
     - crash detection
     - emergency contacts
@@ -3493,7 +3493,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 游戏中心
+    - GameCenter
     - gaming
     - game center account
     - achievements
@@ -3523,7 +3523,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 应用
+    - App
     - applications
     - app management
     - installed apps
@@ -3535,7 +3535,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 开发者
+    - [CH]
     - developer mode
     - developer options
     - xcode
@@ -3553,7 +3553,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - Preferences
     - System Settings
     semantic_type: label
@@ -3564,7 +3564,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 计数
+    - [CH]
     - Badge Count
     - Number
     semantic_type: label
@@ -3575,7 +3575,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 列表
+    - [CH]
     - List View
     - Grouped
     semantic_type: label
@@ -3586,7 +3586,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通知
+    - Notification
     - Alerts
     - Notification Settings
     semantic_type: menu_item
@@ -3597,7 +3597,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 定时推送摘要
+    - [CH]Summary
     - Notification Summary
     - Scheduled Digest
     semantic_type: menu_item
@@ -3608,7 +3608,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 显示预览
+    - [CH]
     - Preview Notifications
     - Message Previews
     semantic_type: menu_item
@@ -3619,7 +3619,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 解锁时
+    - [CH]
     - Unlocked Only
     - Show When Unlocked
     semantic_type: setting
@@ -3630,7 +3630,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 屏幕共享
+    - ScreenShare
     - Share Screen
     - Screen Mirroring
     semantic_type: menu_item
@@ -3641,7 +3641,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 通知关闭
+    - NotificationClose
     - Silent
     - Alerts Off
     semantic_type: label
@@ -3652,7 +3652,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 播报通知
+    - [CH]Notification
     - Siri Announce
     - Read Notifications
     semantic_type: menu_item
@@ -3663,7 +3663,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - Siri 建议
+    - Siri [CH]
     - Siri Recommendations
     - Proactive Suggestions
     semantic_type: menu_item
@@ -3674,7 +3674,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 安可达
+    - [CH]
     - Hotel Booking
     - Agoda App
     semantic_type: menu_item
@@ -3685,7 +3685,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 爱彼迎
+    - [CH]
     - Vacation Rental
     - Airbnb App
     semantic_type: menu_item
@@ -3707,7 +3707,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 应用商店
+    - App[CH]
     - AppStore
     - Apple Store Apps
     semantic_type: menu_item
@@ -3718,7 +3718,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 横幅、声音、标记、播报
+    - [CH]、[CH]、[CH]、[CH]
     - All Alerts
     - Full Notification
     semantic_type: setting
@@ -3729,7 +3729,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 苹果商店
+    - [CH]
     - Apple Retail
     - Apple Store App
     semantic_type: menu_item
@@ -3741,7 +3741,7 @@ screens:
     fixed: false
     aliases:
     - HKU Attendance
-    - 香港大学考勤
+    - [CH]
     - Attendance App
     semantic_type: menu_item
   - text: Authenticator
@@ -3751,7 +3751,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 验证器
+    - Verify器
     - 2FA App
     - Authenticator App
     semantic_type: menu_item
@@ -3763,7 +3763,7 @@ screens:
     fixed: false
     aliases:
     - B站
-    - 哔哩哔哩
+    - [CH]
     - Bilibili App
     semantic_type: menu_item
   - text: BoC Pay+
@@ -3773,7 +3773,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 中银支付
+    - [CH]Payment
     - Bank of China Pay
     - BoC Payment
     semantic_type: menu_item
@@ -3784,7 +3784,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 中银香港
+    - [CH]
     - Bank of China Hong Kong
     - BOCHK App
     semantic_type: menu_item
@@ -3795,7 +3795,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 缤客
+    - [CH]
     - Hotel Reservations
     - Booking App
     semantic_type: menu_item
@@ -3806,7 +3806,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 横幅、声音、标记
+    - [CH]、[CH]、[CH]
     - Standard Alerts
     - Visual and Sound
     semantic_type: setting
@@ -3817,7 +3817,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 图书
+    - [CH]
     - Apple Books
     - iBooks
     semantic_type: menu_item
@@ -3828,7 +3828,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 横幅、声音、播报
+    - [CH]、[CH]、[CH]
     - Alerts with Announce
     - Audio Alerts
     semantic_type: setting
@@ -3839,9 +3839,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 日历
+    - [CH]
     - Apple Calendar
-    - 日程
+    - [CH]
     semantic_type: menu_item
   - text: Chrome
     center:
@@ -3850,7 +3850,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 谷歌浏览器
+    - [CH]
     - Google Chrome
     - Chrome Browser
     semantic_type: menu_item
@@ -3861,7 +3861,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 静默送达
+    - [CH]
     - Quiet Delivery
     - Silent Notifications
     semantic_type: setting
@@ -3872,7 +3872,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 可立拍
+    - [CH]
     - Apple Clips
     - Video Clips
     semantic_type: menu_item
@@ -3883,7 +3883,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 倒数日
+    - [CH]
     - Countdown App
     - Days Matter
     semantic_type: menu_item
@@ -3894,7 +3894,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 户户送
+    - [CH]
     - Food Delivery
     - Deliveroo App
     semantic_type: menu_item
@@ -3905,7 +3905,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 大众点评
+    - [CH]
     - Dianping App
     - Reviews
     semantic_type: menu_item
@@ -3916,7 +3916,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 钉钉
+    - [CH]
     - DingTalk
     - DingDing App
     semantic_type: menu_item
@@ -3927,7 +3927,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 脸书
+    - [CH]
     - Meta
     - FB
     semantic_type: menu_item
@@ -3938,7 +3938,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 视频通话
+    - [CH]
     - Apple FaceTime
     - FaceTime App
     semantic_type: menu_item
@@ -3949,7 +3949,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 飞书
+    - [CH]
     - Lark
     - Feishu App
     semantic_type: menu_item
@@ -3960,7 +3960,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 文件
+    - File
     - Apple Files
     - File Manager
     semantic_type: menu_item
@@ -3971,7 +3971,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 查找
+    - [CH]
     - Find My iPhone
     - Locator
     semantic_type: menu_item
@@ -3982,7 +3982,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 富途牛牛
+    - [CH]
     - Futu
     - Stock Trading
     semantic_type: menu_item
@@ -3993,7 +3993,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 游戏中心
+    - GameCenter
     - Apple Game Center
     - Gaming
     semantic_type: menu_item
@@ -4004,7 +4004,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 谷歌邮箱
+    - [CH]Email
     - Google Mail
     - Gmail App
     semantic_type: menu_item
@@ -4015,7 +4015,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 高高客
+    - [CH]
     - Van Delivery
     - GoGoVan
     semantic_type: menu_item
@@ -4026,7 +4026,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 谷歌地图
+    - [CH]
     - Google Maps App
     - Navigation
     semantic_type: menu_item
@@ -4037,7 +4037,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 播报
+    - [CH]
     - Announce Only
     - Siri Announce
     semantic_type: setting
@@ -4048,7 +4048,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 健康
+    - [CH]
     - Apple Health
     - Health App
     semantic_type: menu_item
@@ -4059,7 +4059,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 香港电影
+    - [CH]
     - Movie Tickets
     - HKMovie App
     semantic_type: menu_item
@@ -4070,7 +4070,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 香港的士
+    - [CH]
     - Taxi Booking
     - HKTaxi App
     semantic_type: menu_item
@@ -4081,7 +4081,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 港大赛马会第四学生村
+    - [CH]
     - HKU Dorm
     - Student Village App
     semantic_type: menu_item
@@ -4092,7 +4092,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 家庭
+    - [CH]
     - Apple Home
     - HomeKit
     semantic_type: menu_item
@@ -4103,7 +4103,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 重要警告、横幅、声音、标记、播报
+    - ImportantWarning、[CH]、[CH]、[CH]、[CH]
     - Critical Notifications
     - Override Alerts
     semantic_type: setting
@@ -4125,7 +4125,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - iTunes商店
+    - iTunes[CH]
     - Music Store
     - iTunes
     semantic_type: menu_item
@@ -4142,7 +4142,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 京东
+    - [CH]
     - Jingdong
     - JD App
     semantic_type: menu_item
@@ -4153,7 +4153,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - Keep 健身
+    - Keep [CH]
     - Fitness App
     - Keep App
     semantic_type: menu_item
@@ -4181,7 +4181,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 长桥
+    - [CH]
     - Longbridge Securities
     - Stock App
     semantic_type: menu_item
@@ -4503,13 +4503,13 @@ screens:
     - 0.1442
     found_at_scroll: 0
     fixed: false
-  - text: 中国农业银行
+  - text: [CH]
     center:
     - 0.1269
     - 0.1442
     found_at_scroll: 0
     fixed: false
-  - text: 中国工商银行
+  - text: [CH]
     center:
     - 0.1269
     - 0.1442
@@ -4563,7 +4563,7 @@ screens:
     - 0.1442
     found_at_scroll: 0
     fixed: false
-  - text: 希尔顿荣誉客会
+  - text: [CH]
     center:
     - 0.1468
     - 0.1442
@@ -4684,7 +4684,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - System Preferences
     - Config
     semantic_type: tab
@@ -4696,7 +4696,7 @@ screens:
     fixed: true
     aliases:
     - Applications
-    - 应用
+    - App
     - App List
     semantic_type: menu_item
   - text: Default Apps
@@ -4706,7 +4706,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 默认应用
+    - DefaultApp
     - Default Applications
     semantic_type: menu_item
   - text: Manage default apps on iPhone
@@ -4716,7 +4716,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 管理默认应用
+    - ManageDefaultApp
     - Default App Management
     semantic_type: label
   - text: Agoda
@@ -4727,7 +4727,7 @@ screens:
     fixed: false
     aliases:
     - Agoda App
-    - 安可达
+    - [CH]
     semantic_type: menu_item
   - text: Airbnb
     center:
@@ -4736,7 +4736,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 爱彼迎
+    - [CH]
     - Airbnb App
     semantic_type: menu_item
   - text: '[Payment]'
@@ -4747,7 +4747,7 @@ screens:
     fixed: false
     aliases:
     - Payment Settings
-    - 支付设置
+    - PaymentSettings
     - Billing
     semantic_type: menu_item
   - text: '[Payment]'
@@ -4773,7 +4773,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 应用商店
+    - App[CH]
     - AppStore
     - Store
     semantic_type: menu_item
@@ -4785,7 +4785,7 @@ screens:
     fixed: false
     aliases:
     - Apple Retail Store
-    - 苹果商店
+    - [CH]
     semantic_type: menu_item
   - text: Attendance@HKU
     center:
@@ -4795,7 +4795,7 @@ screens:
     fixed: false
     aliases:
     - HKU Attendance
-    - 港大考勤
+    - [CH]
     semantic_type: menu_item
   - text: Authenticator
     center:
@@ -4805,7 +4805,7 @@ screens:
     fixed: false
     aliases:
     - Authenticator App
-    - 身份验证器
+    - [CH]Verify器
     - 2FA
     semantic_type: menu_item
   - text: '[App]'
@@ -4816,7 +4816,7 @@ screens:
     fixed: false
     aliases:
     - B站
-    - 哔哩哔哩
+    - [CH]
     - BiliBili
     semantic_type: menu_item
   - text: BoC Pay+
@@ -4826,7 +4826,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 中银支付
+    - [CH]Payment
     - Bank of China Pay
     semantic_type: menu_item
   - text: '[Name]'
@@ -4837,7 +4837,7 @@ screens:
     fixed: false
     aliases:
     - Bank of China Hong Kong
-    - 中银香港
+    - [CH]
     - BOCHK
     semantic_type: menu_item
   - text: Booking.com
@@ -4848,7 +4848,7 @@ screens:
     fixed: false
     aliases:
     - Booking
-    - 缤客
+    - [CH]
     semantic_type: menu_item
   - text: Books
     center:
@@ -4858,7 +4858,7 @@ screens:
     fixed: false
     aliases:
     - Apple Books
-    - 图书
+    - [CH]
     - iBooks
     semantic_type: menu_item
   - text: '[App]'
@@ -4869,7 +4869,7 @@ screens:
     fixed: false
     aliases:
     - Account Settings
-    - 账户
+    - Account
     - Profile
     semantic_type: menu_item
   - text: '[App]'
@@ -4891,7 +4891,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 计算器
+    - [CH]
     - Calc
     semantic_type: menu_item
   - text: Calendar
@@ -4901,8 +4901,8 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 日历
-    - 日程
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Carousell
     center:
@@ -4911,7 +4911,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 旋转拍卖
+    - [CH]
     - Carousell App
     semantic_type: menu_item
   - text: Chrome
@@ -4922,7 +4922,7 @@ screens:
     fixed: false
     aliases:
     - Google Chrome
-    - 谷歌浏览器
+    - [CH]
     semantic_type: menu_item
   - text: CHSI
     center:
@@ -4950,7 +4950,7 @@ screens:
     fixed: false
     aliases:
     - Apple Clips
-    - 可立拍
+    - [CH]
     semantic_type: menu_item
   - text: Clock
     center:
@@ -4959,9 +4959,9 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 时钟
+    - [CH]
     - Alarm
-    - 闹钟
+    - [CH]
     semantic_type: menu_item
   - text: Compass
     center:
@@ -4970,7 +4970,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 指南针
+    - Guide针
     - Compass App
     semantic_type: menu_item
   - text: Contacts
@@ -4980,7 +4980,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 通讯录
+    - [CH]
     - Address Book
     semantic_type: menu_item
   - text: Days Matter Air
@@ -4990,7 +4990,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 倒数日
+    - [CH]
     - Days Matter
     semantic_type: menu_item
   - text: Deliveroo
@@ -5000,7 +5000,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 户户送
+    - [CH]
     - Deliveroo App
     semantic_type: menu_item
   - text: Developer
@@ -5010,7 +5010,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 开发者
+    - [CH]
     - Developer Mode
     semantic_type: menu_item
   - text: Dianping
@@ -5020,8 +5020,8 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 大众点评
-    - 点评
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: DingDing
     center:
@@ -5030,7 +5030,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 钉钉
+    - [CH]
     - DingTalk
     semantic_type: menu_item
   - text: '[App]'
@@ -5047,7 +5047,7 @@ screens:
     fixed: false
     aliases:
     - FB
-    - 脸书
+    - [CH]
     - Meta
     semantic_type: menu_item
   - text: FaceTime
@@ -5057,8 +5057,8 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - FaceTime通话
-    - 视频通话
+    - FaceTime[CH]
+    - [CH]
     semantic_type: menu_item
   - text: Feishu
     center:
@@ -5067,7 +5067,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 飞书
+    - [CH]
     - Lark
     semantic_type: menu_item
   - text: Files
@@ -5077,7 +5077,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 文件
+    - File
     - File Manager
     semantic_type: menu_item
   - text: FilmeGoTV
@@ -5096,7 +5096,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 查找
+    - [CH]
     - Find My iPhone
     semantic_type: menu_item
   - text: Fitness
@@ -5106,7 +5106,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 健身
+    - [CH]
     - Apple Fitness
     - Fitness+
     semantic_type: menu_item
@@ -5123,7 +5123,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 系统设置
+    - [CH]Settings
     - preferences
     - configuration
     semantic_type: label
@@ -5134,7 +5134,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 清除受信任电脑
+    - [CH]Computer
     - reset trusted devices
     - remove trusted
     semantic_type: button
@@ -5145,7 +5145,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 启用UI自动化
+    - EnableUIAuto化
     - UI auto
     - automation toggle
     semantic_type: toggle
@@ -5156,7 +5156,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 了解更多
+    - [CH]
     - more info
     - help link
     semantic_type: link
@@ -5167,7 +5167,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 开发者
+    - [CH]
     - dev mode
     - developer options
     semantic_type: menu_item
@@ -5178,7 +5178,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 挂起检测
+    - [CH]
     - freeze detection
     - ANR monitoring
     semantic_type: setting
@@ -5189,7 +5189,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 性能跟踪
+    - [CH]
     - trace profiling
     - performance logging
     semantic_type: setting
@@ -5200,7 +5200,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 网络链接调节器
+    - Network[CH]
     - link conditioner
     - network simulation
     semantic_type: menu_item
@@ -5211,7 +5211,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 网络覆盖
+    - Network[CH]
     - override network
     - force network
     semantic_type: setting
@@ -5223,7 +5223,7 @@ screens:
     fixed: false
     aliases:
     - Low Latency Low Loss Scalable
-    - 低延迟低损耗
+    - 低Latency[CH]
     - L4S throughput
     semantic_type: toggle
   - text: Responsiveness
@@ -5233,7 +5233,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 响应性
+    - [CH]
     - UI responsiveness
     - interaction speed
     semantic_type: setting
@@ -5244,7 +5244,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 测试
+    - Test
     - testing
     - run test
     semantic_type: button
@@ -5255,7 +5255,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 关联域开发
+    - [CH]
     - domain association
     - dev domains
     semantic_type: setting
@@ -5266,7 +5266,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 打开提交
+    - Open[CH]
     - commit f67c01e
     - view commit
     semantic_type: button
@@ -5277,7 +5277,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 广告归因开发者模式
+    - [CH]Mode
     - AdAttribution dev mode
     - attribution testing
     semantic_type: toggle
@@ -5288,7 +5288,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 诊断
+    - [CH]
     - system diagnostics
     - troubleshooting
     semantic_type: menu_item
@@ -5299,7 +5299,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 认证服务测试
+    - [CH]ServiceTest
     - auth testing
     - sign-in testing
     semantic_type: setting
@@ -5310,7 +5310,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 广告归因测试
+    - [CH]Test
     - attribution test
     - ad testing
     semantic_type: setting
@@ -5321,7 +5321,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 开发回传
+    - [CH]
     - dev postbacks
     - testing postbacks
     semantic_type: setting
@@ -5346,7 +5346,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 快速终止应用
+    - [CH]App
     - quick app kill
     - force quit
     semantic_type: toggle
@@ -5357,7 +5357,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 清除体验缓存
+    - [CH]
     - reset experience
     - clear cache
     semantic_type: button
@@ -5368,7 +5368,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 运行吞吐量测试
+    - [CH]Test
     - throughput test
     - speed test
     semantic_type: button
@@ -5379,7 +5379,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 本地体验
+    - Local[CH]
     - local testing
     - on-device experiences
     semantic_type: setting
@@ -5390,7 +5390,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 允许HTTP服务
+    - [CH]HTTPService
     - enable HTTP
     - insecure HTTP
     semantic_type: toggle
@@ -5401,7 +5401,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 禁用速率限制
+    - Disable[CH]
     - rate limit off
     - throttle disable
     semantic_type: toggle
@@ -5412,7 +5412,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - NFC通行密钥可选
+    - NFC[CH]API Key[CH]
     - optional NFC key
     - passkey NFC
     semantic_type: toggle
@@ -5423,7 +5423,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 重置媒体服务
+    - Reset[CH]Service
     - media reset
     - restart media
     semantic_type: button
@@ -5434,7 +5434,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 使用路由共享策略
+    - [CH]Share[CH]
     - route sharing
     - share route policy
     semantic_type: toggle
@@ -5445,7 +5445,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 钱包测试
+    - [CH]Test
     - wallet dev
     - pass testing
     semantic_type: setting
@@ -5456,7 +5456,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 媒体服务测试
+    - [CH]ServiceTest
     - media test
     - playback testing
     semantic_type: setting
@@ -5467,7 +5467,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - AirPlay测试
+    - AirPlayTest
     - airplay test
     - streaming test
     semantic_type: setting
@@ -5496,7 +5496,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - configuration
@@ -5509,7 +5509,7 @@ screens:
     fixed: true
     aliases:
     - profile picture
-    - 头像
+    - Avatar
     - contact photo
     - user image
     semantic_type: label
@@ -5572,7 +5572,7 @@ screens:
     aliases:
     - email address
     - account email
-    - 邮箱
+    - Email
     semantic_type: label
   - text: Personal Information
     center:
@@ -5582,7 +5582,7 @@ screens:
     fixed: true
     aliases:
     - personal info
-    - 个人信息
+    - PersonalInfo
     - name
     - birthday
     semantic_type: menu_item
@@ -5607,7 +5607,7 @@ screens:
     aliases:
     - payment method
     - card
-    - 付款方式
+    - Payment[CH]
     semantic_type: label
   - text: Subscriptions
     center:
@@ -5617,7 +5617,7 @@ screens:
     fixed: true
     aliases:
     - manage subscriptions
-    - 订阅
+    - [CH]
     - memberships
     - in-app purchases
     semantic_type: menu_item
@@ -5631,7 +5631,7 @@ screens:
     - iCloud settings
     - cloud storage
     - iCloud drive
-    - 云服务
+    - CloudService
     semantic_type: menu_item
   - text: Family
     center:
@@ -5641,7 +5641,7 @@ screens:
     fixed: true
     aliases:
     - family sharing
-    - 家人共享
+    - [CH]Share
     - family group
     - parental controls
     semantic_type: menu_item
@@ -5664,7 +5664,7 @@ screens:
     fixed: true
     aliases:
     - find my iphone
-    - 查找
+    - [CH]
     - location sharing
     - find my friends
     semantic_type: menu_item
@@ -5683,7 +5683,7 @@ screens:
     aliases:
     - Apple login
     - hide my email
-    - 通过Apple登录
+    - [CH]AppleLogin
     - private relay
     semantic_type: menu_item
   - text: '[Device]'
@@ -5705,7 +5705,7 @@ screens:
     fixed: true
     aliases:
     - iPad Pro model
-    - iPad专业版
+    - iPad[CH]
     semantic_type: label
   - text: '[Device]'
     center:
@@ -5753,7 +5753,7 @@ screens:
     fixed: true
     aliases:
     - device name
-    - 设备
+    - Device
     - hardware
     semantic_type: label
   - text: '[Device]'
@@ -5782,7 +5782,7 @@ screens:
     aliases:
     - watch series 11
     - Apple Watch 11
-    - 手表S11
+    - [CH]S11
     semantic_type: label
   - text: '[Device]'
     center:
@@ -5798,7 +5798,7 @@ screens:
     fixed: true
     aliases:
     - iPad device
-    - 平板
+    - Tablet
     semantic_type: label
   - text: Contact Key Verification
     center:
@@ -5809,7 +5809,7 @@ screens:
     aliases:
     - key verification
     - iMessage security
-    - 联系人密钥验证
+    - Contact人API KeyVerify
     - encryption
     semantic_type: menu_item
   - text: Choose Your Avatar
@@ -5821,7 +5821,7 @@ screens:
     aliases:
     - select avatar
     - pick avatar
-    - 选择头像
+    - SelectAvatar
     semantic_type: label
   - text: Share an image of yourself when communicating with others.
     center:
@@ -5832,7 +5832,7 @@ screens:
     aliases:
     - avatar description
     - profile sharing info
-    - 分享头像
+    - ShareAvatar
     semantic_type: label
   - text: Photos
     center:
@@ -5842,7 +5842,7 @@ screens:
     fixed: true
     aliases:
     - photo library
-    - 图片
+    - [CH]
     - camera roll
     - gallery
     semantic_type: tab
@@ -5854,7 +5854,7 @@ screens:
     fixed: true
     aliases:
     - text avatar
-    - 字母头像
+    - [CH]Avatar
     - initials
     semantic_type: tab
   - text: Memoji
@@ -5865,7 +5865,7 @@ screens:
     fixed: true
     aliases:
     - animated avatar
-    - 拟我表情
+    - [CH]
     - 3D avatar
     semantic_type: tab
   - text: Emoji
@@ -5876,7 +5876,7 @@ screens:
     fixed: true
     aliases:
     - emoji avatar
-    - 表情符号
+    - [CH]
     - smiley
     semantic_type: tab
   - text: Contact Photo
@@ -5887,7 +5887,7 @@ screens:
     fixed: true
     aliases:
     - profile image
-    - 联系人照片
+    - Contact[CH]
     - avatar image
     semantic_type: label
   - text: New Photo
@@ -5899,7 +5899,7 @@ screens:
     aliases:
     - take photo
     - add photo
-    - 拍照
+    - Camera
     - choose photo
     semantic_type: button
   - text: 'Surprised face with open mouth, Memoji, skin tone: Fairest Skin Tone 1;
@@ -5912,7 +5912,7 @@ screens:
     aliases:
     - surprised memoji
     - memoji sticker 1
-    - 惊讶表情
+    - [CH]
     semantic_type: button
   - text: 'Person holding hands in the shape of a heart, Memoji, skin tone: Fairest
       Skin Tone 1; hairstyle: Golden Blond, Short and straight shag; eyes: Bright
@@ -5925,7 +5925,7 @@ screens:
     aliases:
     - heart hands memoji
     - memoji sticker 2
-    - 比心表情
+    - [CH]
     semantic_type: button
   - text: 蒋,Rounded
     center:
@@ -5936,7 +5936,7 @@ screens:
     aliases:
     - Jiang rounded font
     - rounded monogram
-    - 圆体
+    - [CH]
     semantic_type: button
   - text: 'Grinning face with drop of sweat at brow, Memoji, skin tone: Fairest Skin
       Tone 1; hairstyle: Golden Blond, Short and straight shag; eyes: Bright Blue;'
@@ -5948,7 +5948,7 @@ screens:
     aliases:
     - grinning sweat memoji
     - memoji sticker 3
-    - 尴尬笑表情
+    - [CH]
     semantic_type: button
   - text: 'Smiling face with open mouth, Memoji, skin tone: Fairest Skin Tone 1; hairstyle:
       Golden Blond, Short and straight shag; eyes: Bright Blue;'
@@ -5960,7 +5960,7 @@ screens:
     aliases:
     - smiling memoji
     - memoji sticker 4
-    - 微笑表情
+    - [CH]
     semantic_type: button
   - text: 蒋,Condensed
     center:
@@ -5971,7 +5971,7 @@ screens:
     aliases:
     - Jiang condensed font
     - condensed monogram
-    - 窄体
+    - [CH]
     semantic_type: button
   - text: 蒋,Sans-serif
     center:
@@ -5982,7 +5982,7 @@ screens:
     aliases:
     - Jiang sans-serif font
     - sans-serif monogram
-    - 无衬线体
+    - None[CH]
     semantic_type: button
   - text: 'Person with thumb and index finger crossed in a heart shape with a slight
       smile, Memoji, skin tone: Fairest Skin Tone 1; hairstyle: Golden Blond, Short
@@ -5995,7 +5995,7 @@ screens:
     aliases:
     - finger heart memoji
     - memoji sticker 5
-    - 手指比心表情
+    - [CH]
     semantic_type: button
   - text: 'Face blowing a party horn surrounded by confetti, Memoji, skin tone: Fairest
       Skin Tone 1; hairstyle: Golden Blond, Short and straight shag; eyes: Bright
@@ -6008,7 +6008,7 @@ screens:
     aliases:
     - party horn memoji
     - memoji sticker 6
-    - 庆祝表情
+    - [CH]
     semantic_type: button
   - text: 蒋,Serif
     center:
@@ -6019,7 +6019,7 @@ screens:
     aliases:
     - Jiang serif font
     - serif monogram
-    - 衬线体
+    - [CH]
     semantic_type: button
   - text: 'Head with small birds flying around head with dazed expression, Memoji,
       skin tone: Fairest Skin Tone 1; hairstyle: Golden Blond, Short and straight
@@ -6049,7 +6049,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 主邮箱
+    - 主Email
     - main email
     semantic_type: label
   - text: Sign-In &amp; Security
@@ -6066,7 +6066,7 @@ screens:
     fixed: true
     aliases:
     - email address
-    - 邮箱地址
+    - Email[CH]
     semantic_type: label
   - text: '[Phone]'
     center:
@@ -6081,7 +6081,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 添加邮箱或手机号
+    - [CH]Email或Phone号
     - add contact info
     semantic_type: button
   - text: These email addresses and phone numbers can be used to sign in, verify your
@@ -6103,7 +6103,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 修改密码
+    - [CH]Password
     - update password
     semantic_type: menu_item
   - text: Two-Factor Authentication
@@ -6113,7 +6113,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 双重认证
+    - [CH]
     - 2FA
     - two factor auth
     semantic_type: menu_item
@@ -6135,7 +6135,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 恢复联系人
+    - RestoreContact人
     - account recovery contacts
     semantic_type: menu_item
   - text: Set up
@@ -6145,7 +6145,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - configure
     - add
     semantic_type: button
@@ -6156,7 +6156,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 恢复密钥
+    - RestoreAPI Key
     - recovery code
     semantic_type: menu_item
   - text: Regain access to your account and data if you forget your password or device
@@ -6177,7 +6177,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 遗产联系人
+    - [CH]Contact人
     - digital legacy contact
     semantic_type: menu_item
   - text: A legacy contact is someone you trust to have access to the data in your
@@ -6198,7 +6198,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 自动验证
+    - AutoVerify
     - auto verify
     - bypass CAPTCHA
     semantic_type: menu_item
@@ -6217,7 +6217,7 @@ screens:
     fixed: true
     aliases:
     - mute
-    - 静音
+    - Mute
     - silent
     - vibrate
     semantic_type: toggle
@@ -6229,7 +6229,7 @@ screens:
     fixed: true
     aliases:
     - retry face id
-    - 重新尝试面容ID
+    - [CH]ID
     - face scan retry
     semantic_type: button
   - text: Face Not Recognized
@@ -6240,7 +6240,7 @@ screens:
     fixed: true
     aliases:
     - face unknown
-    - 面容未识别
+    - [CH]
     - recognition failed
     semantic_type: label
   - text: Try Again
@@ -6251,7 +6251,7 @@ screens:
     fixed: true
     aliases:
     - retry
-    - 重试
+    - Retry
     - attempt again
     semantic_type: button
   description: Face ID authentication screen with options to retry after failure or
@@ -6278,7 +6278,7 @@ screens:
     - 0.3478
     found_at_scroll: 0
     fixed: true
-  - text: Keep - AI 运动教练, 连续包月会员, Renews 18 July, ¥19.00
+  - text: Keep - AI [CH], [CH], Renews 18 July, ¥19.00
     center:
     - 0.5
     - 0.4497
@@ -6326,7 +6326,7 @@ screens:
     - 0.0961
     found_at_scroll: 0
     fixed: true
-  - text: iCloud 由云上贵州运营
+  - text: iCloud 由Cloud[CH]
     center:
     - 0.5
     - 0.0961
@@ -6334,7 +6334,7 @@ screens:
     fixed: true
     aliases:
     - iCloud operated by GCBD
-    - 云上贵州
+    - Cloud[CH]
     - iCloud China
     semantic_type: label
   - text: Storage
@@ -6344,9 +6344,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 存储空间
+    - [CH]
     - storage usage
-    - 容量
+    - [CH]
     semantic_type: menu_item
   - text: 43.1 of 50 GB
     center:
@@ -6357,7 +6357,7 @@ screens:
     aliases:
     - storage bar
     - usage
-    - 容量使用情况
+    - [CH]
     semantic_type: label
   - text: Recommended For You
     center:
@@ -6366,7 +6366,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 推荐
+    - [CH]
     - suggestions
     - upgrade suggestion
     semantic_type: label
@@ -6378,7 +6378,7 @@ screens:
     fixed: true
     aliases:
     - upgrade iCloud+
-    - 更多存储
+    - [CH]
     - expand storage
     semantic_type: button
   - text: Saved to iCloud
@@ -6388,9 +6388,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud存储
+    - iCloud[CH]
     - apps using iCloud
-    - 已存储
+    - [CH]
     semantic_type: label
   - text: See All
     center:
@@ -6399,9 +6399,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看全部
+    - ViewAll
     - show all
-    - 全部
+    - All
     semantic_type: button
   - text: Photos
     center:
@@ -6410,9 +6410,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 照片
+    - [CH]
     - iCloud Photos
-    - 相册
+    - Gallery
     semantic_type: menu_item
   - text: 3,622 Items
     center:
@@ -6422,7 +6422,7 @@ screens:
     fixed: true
     aliases:
     - photo count
-    - 项目数
+    - [CH]
     - items
     semantic_type: label
   - text: Drive
@@ -6433,7 +6433,7 @@ screens:
     fixed: true
     aliases:
     - iCloud Drive
-    - 云盘
+    - Cloud盘
     - files
     semantic_type: menu_item
   - text: Passwords
@@ -6443,7 +6443,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 密码
+    - Password
     - keychain
     - iCloud Keychain
     semantic_type: menu_item
@@ -6454,9 +6454,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 备忘录
+    - [CH]
     - iCloud Notes
-    - 笔记
+    - [CH]
     semantic_type: menu_item
   - text: Messages
     center:
@@ -6465,9 +6465,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 信息
+    - Info
     - iMessage
-    - 短信
+    - [CH]
     semantic_type: menu_item
   - text: Mail
     center:
@@ -6476,9 +6476,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 邮件
+    - [CH]
     - iCloud Mail
-    - 邮箱
+    - Email
     semantic_type: menu_item
   - text: Set Up
     center:
@@ -6487,9 +6487,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - configure
-    - 启用
+    - Enable
     semantic_type: button
   - text: iCloud Backup
     center:
@@ -6498,9 +6498,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud备份
+    - iCloudBackup
     - backup
-    - 云备份
+    - CloudBackup
     semantic_type: menu_item
   - text: This iPhone
     center:
@@ -6509,9 +6509,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 本机
+    - [CH]
     - this device
-    - 当前设备
+    - [CH]Device
     semantic_type: label
   - text: iCloud+ Features
     center:
@@ -6520,9 +6520,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud+功能
+    - iCloud+Feature
     - premium features
-    - 订阅功能
+    - [CH]Feature
     semantic_type: label
   - text: Manage Plan
     center:
@@ -6531,9 +6531,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 管理方案
+    - Manage[CH]
     - subscription
-    - 升级方案
+    - [CH]
     semantic_type: button
   - text: Family
     center:
@@ -6542,9 +6542,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人
+    - [CH]
     - family sharing
-    - 家庭共享
+    - [CH]Share
     semantic_type: menu_item
   - text: Start Sharing
     center:
@@ -6553,9 +6553,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 开始共享
+    - StartShare
     - share with family
-    - 开启共享
+    - [CH]Share
     semantic_type: button
   - text: header-section
     center:
@@ -6565,7 +6565,7 @@ screens:
     fixed: false
     aliases:
     - section header
-    - 分组标题
+    - [CH]
     - header
     semantic_type: label
   - text: iCloud
@@ -6576,7 +6576,7 @@ screens:
     fixed: false
     aliases:
     - iCloud settings
-    - 云服务
+    - CloudService
     - iCloud menu
     semantic_type: setting
   - text: Forward
@@ -6586,7 +6586,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 前进
+    - [CH]
     - next
     - arrow
     semantic_type: button
@@ -6597,7 +6597,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 圆形图标
+    - [CH]
     - icon
     - circle icon
     semantic_type: other
@@ -6609,7 +6609,7 @@ screens:
     fixed: true
     aliases:
     - app bundle
-    - 六件套图标
+    - [CH]
     - icon grid
     semantic_type: other
   - text: Private Relay
@@ -6620,7 +6620,7 @@ screens:
     fixed: true
     aliases:
     - iCloud Private Relay
-    - 隐私中转
+    - Privacy[CH]
     - VPN-like
     semantic_type: menu_item
   - text: Hide My Email
@@ -6630,8 +6630,8 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 隐藏邮件
-    - 匿名邮箱
+    - [CH]
+    - [CH]Email
     - email privacy
     semantic_type: menu_item
   - text: 18 Addresses
@@ -6641,9 +6641,9 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 18个地址
+    - 18[CH]
     - email count
-    - 地址数量
+    - [CH]
     semantic_type: label
   - text: Advanced Data Protection
     center:
@@ -6652,7 +6652,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 高级数据保护
+    - AdvancedData Protection
     - end-to-end encryption
     - ADP
     semantic_type: menu_item
@@ -6663,9 +6663,9 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - iCloud网站
+    - iCloud[CH]
     - web access
-    - iCloud网页
+    - iCloud[CH]
     semantic_type: link
   description: iCloud settings page showing storage usage, saved data categories,
     and iCloud+ features management.
@@ -6798,7 +6798,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查找
+    - [CH]
     - Find My app
     - location tracking
     semantic_type: setting
@@ -6809,7 +6809,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查找我的iPhone
+    - [CH]MyiPhone
     - device tracking
     - locate iPhone
     semantic_type: toggle
@@ -6830,7 +6830,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 我的位置
+    - My[CH]
     - current location
     - location source
     semantic_type: label
@@ -6841,7 +6841,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 此设备
+    - 此Device
     - current device
     - this iPhone
     semantic_type: label
@@ -6852,7 +6852,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 共享我的位置
+    - ShareMy[CH]
     - location sharing
     - share location
     semantic_type: toggle
@@ -6874,7 +6874,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人
+    - [CH]
     - family sharing
     - family group
     semantic_type: menu_item
@@ -6902,7 +6902,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -6915,7 +6915,7 @@ screens:
     aliases:
     - logout
     - sign off
-    - 退出登录
+    - ExitLogin
     semantic_type: button
   - text: View Account
     center:
@@ -6925,7 +6925,7 @@ screens:
     fixed: true
     aliases:
     - account details
-    - 查看账户
+    - ViewAccount
     - manage account
     semantic_type: link
   - text: '[App]'
@@ -6936,7 +6936,7 @@ screens:
     fixed: true
     aliases:
     - Apple ID
-    - 苹果账户
+    - [CH]Account
     - account
     semantic_type: label
   - text: '[Email]'
@@ -6947,7 +6947,7 @@ screens:
     fixed: true
     aliases:
     - email address
-    - 邮箱
+    - Email
     - account email
     semantic_type: label
   - text: Personal Information
@@ -6957,7 +6957,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 个人信息
+    - PersonalInfo
     - profile
     - personal details
     semantic_type: menu_item
@@ -6968,7 +6968,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 登录与安全
+    - LoginandSecurity
     - security settings
     - password & security
     semantic_type: menu_item
@@ -6979,7 +6979,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 支付与配送
+    - Payment[CH]
     - billing
     - payment methods
     semantic_type: menu_item
@@ -6991,7 +6991,7 @@ screens:
     fixed: true
     aliases:
     - payment method
-    - 支付方式
+    - Payment[CH]
     - card
     semantic_type: label
   - text: Subscriptions
@@ -7001,7 +7001,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 订阅
+    - [CH]
     - manage subscriptions
     - plans
     semantic_type: menu_item
@@ -7013,7 +7013,7 @@ screens:
     fixed: true
     aliases:
     - iCloud settings
-    - 云服务
+    - CloudService
     - icloud storage
     semantic_type: menu_item
   - text: Family
@@ -7023,7 +7023,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人共享
+    - [CH]Share
     - family sharing
     - family group
     semantic_type: menu_item
@@ -7035,7 +7035,7 @@ screens:
     fixed: true
     aliases:
     - two members
-    - 2位成员
+    - 2[CH]
     - family size
     semantic_type: label
   - text: Find My
@@ -7045,7 +7045,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查找
+    - [CH]
     - find my iphone
     - location tracking
     semantic_type: menu_item
@@ -7056,7 +7056,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 媒体与购买
+    - [CH]Purchase
     - purchase history
     - media settings
     semantic_type: menu_item
@@ -7067,7 +7067,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - Apple登录
+    - AppleLogin
     - sign in with apple id
     - apple auth
     semantic_type: menu_item
@@ -7079,7 +7079,7 @@ screens:
     fixed: true
     aliases:
     - iPad devices
-    - 两台iPad
+    - [CH]iPad
     - ipad count
     semantic_type: label
   - text: '[Device]'
@@ -7090,7 +7090,7 @@ screens:
     fixed: true
     aliases:
     - iPad Pro model
-    - iPad专业版
+    - iPad[CH]
     semantic_type: network
   - text: '[Device]'
     center:
@@ -7100,7 +7100,7 @@ screens:
     fixed: true
     aliases:
     - iPhone of Jiang
-    - Jiang的手机
+    - JiangPhone
     - Jiang iPhone
     semantic_type: network
   - text: '[Device]'
@@ -7111,7 +7111,7 @@ screens:
     fixed: true
     aliases:
     - iPhone 10
-    - 苹果X
+    - [CH]X
     - iPhone ten
     semantic_type: network
   - text: '[Device]'
@@ -7123,7 +7123,7 @@ screens:
     aliases:
     - Yangqin's MacBook
     - MacBook Pro 8
-    - 杨琴的MacBook
+    - [CH]MacBook
     semantic_type: network
   - text: '[Device]'
     center:
@@ -7143,7 +7143,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设备
+    - Device
     - device name
     - hardware
     semantic_type: label
@@ -7172,7 +7172,7 @@ screens:
     fixed: true
     aliases:
     - Apple Watch S11
-    - 苹果手表11
+    - [CH]11
     - watch series 11
     semantic_type: network
   - text: '[Device]'
@@ -7189,7 +7189,7 @@ screens:
     fixed: true
     aliases:
     - iPad device
-    - 苹果平板
+    - [CH]Tablet
     semantic_type: network
   - text: Contact Key Verification
     center:
@@ -7198,7 +7198,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 联系人密钥验证
+    - Contact人API KeyVerify
     - key verification
     - contact security
     semantic_type: menu_item
@@ -7209,7 +7209,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 联系人照片
+    - Contact[CH]
     - avatar
     - contact image
     semantic_type: menu_item
@@ -7235,7 +7235,7 @@ screens:
     aliases:
     - Apple login
     - Apple SSO
-    - 通过Apple登录
+    - [CH]AppleLogin
     semantic_type: button
   - text: Sign in with Apple is the fast, easy and more private way to sign in to
       third-party apps and websites using the Apple Account that you already have.
@@ -7342,7 +7342,7 @@ screens:
     fixed: false
     aliases:
     - dating app
-    - 探探
+    - [CH]
     semantic_type: menu_item
   - text: '[App]'
     center:
@@ -7505,7 +7505,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -7522,7 +7522,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 云服务
+    - CloudService
     - iCloud settings
     - icloud
     semantic_type: menu_item
@@ -7533,9 +7533,9 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 家人共享
+    - [CH]Share
     - family sharing
-    - 家庭
+    - [CH]
     semantic_type: menu_item
   - text: 2 Members
     center:
@@ -7545,7 +7545,7 @@ screens:
     fixed: false
     aliases:
     - two members
-    - 2位成员
+    - 2[CH]
     semantic_type: label
   - text: Find My
     center:
@@ -7554,7 +7554,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查找
+    - [CH]
     - find my iphone
     - location
     semantic_type: menu_item
@@ -7571,7 +7571,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通过Apple登录
+    - [CH]AppleLogin
     - apple sign in
     - SSO
     semantic_type: button
@@ -7582,7 +7582,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 杨琴的iPhone
+    - [CH]iPhone
     - this device
     - my iphone
     semantic_type: label
@@ -7594,7 +7594,7 @@ screens:
     fixed: true
     aliases:
     - iPhone 17 Pro
-    - 本机
+    - [CH]
     - current device
     semantic_type: label
   - text: '[Device]'
@@ -7604,7 +7604,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iPad两台
+    - iPad[CH]
     - two ipads
     - ipad devices
     semantic_type: label
@@ -7625,7 +7625,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 江的iPhone
+    - [CH]iPhone
     - jiang iphone
     semantic_type: network
   - text: '[Device]'
@@ -7645,7 +7645,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 杨琴MacBook Pro
+    - [CH]MacBook Pro
     - macbook pro 8 devices
     semantic_type: label
   - text: '[Device]'
@@ -7665,7 +7665,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设备
+    - Device
     - unknown device
     - generic device
     semantic_type: network
@@ -7693,7 +7693,7 @@ screens:
     fixed: true
     aliases:
     - Apple Watch S11
-    - 手表
+    - [CH]
     - series 11
     semantic_type: network
   - text: '[Device]'
@@ -7710,7 +7710,7 @@ screens:
     fixed: true
     aliases:
     - iPad
-    - 平板
+    - Tablet
     semantic_type: network
   - text: Contact Key Verification
     center:
@@ -7719,7 +7719,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 联系人密钥验证
+    - Contact人API KeyVerify
     - key verification
     - security
     semantic_type: menu_item
@@ -7730,9 +7730,9 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 登出
+    - [CH]
     - logout
-    - 退出登录
+    - ExitLogin
     semantic_type: button
   description: Main Settings screen showing Apple Account, iCloud, Family, and a list
     of linked devices with options to manage account and sign out.
@@ -7747,7 +7747,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -7758,7 +7758,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 登出
+    - [CH]
     - log out
     - sign off
     semantic_type: button
@@ -7769,7 +7769,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - x button
     semantic_type: button
@@ -7786,7 +7786,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查找
+    - [CH]
     - find my device
     - location tracking
     semantic_type: menu_item
@@ -7803,7 +7803,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通过Apple登录
+    - [CH]AppleLogin
     - Apple SSO
     - single sign-on
     semantic_type: button
@@ -7820,7 +7820,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 本机
+    - [CH]
     - current device
     - iPhone 17 Pro
     semantic_type: label
@@ -7833,7 +7833,7 @@ screens:
     aliases:
     - iPad devices
     - two iPads
-    - 平板
+    - Tablet
     semantic_type: label
   - text: '[Device]'
     center:
@@ -7843,7 +7843,7 @@ screens:
     fixed: true
     aliases:
     - iPad Pro model
-    - 高端iPad
+    - [CH]iPad
     - pro tablet
     semantic_type: label
   - text: '[Device]'
@@ -7872,7 +7872,7 @@ screens:
     aliases:
     - MacBook Pro
     - laptop
-    - 苹果笔记本
+    - [CH]
     semantic_type: label
   - text: '[Device]'
     center:
@@ -7894,7 +7894,7 @@ screens:
     aliases:
     - unknown device
     - generic device
-    - 设备
+    - Device
     semantic_type: label
   - text: '[Device]'
     center:
@@ -7922,7 +7922,7 @@ screens:
     aliases:
     - Apple Watch
     - smartwatch
-    - 手表
+    - [CH]
     semantic_type: label
   - text: '[Device]'
     center:
@@ -7939,7 +7939,7 @@ screens:
     aliases:
     - iPad device
     - Apple tablet
-    - 平板电脑
+    - TabletComputer
     semantic_type: label
   - text: Contact Key Verification
     center:
@@ -7948,7 +7948,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 联系人密钥验证
+    - Contact人API KeyVerify
     - iMessage security
     - key transparency
     semantic_type: setting
@@ -7959,7 +7959,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 抹掉iPhone
+    - [CH]iPhone
     - factory reset
     - wipe device
     semantic_type: label
@@ -7982,7 +7982,7 @@ screens:
     aliases:
     - help link
     - what to do
-    - 选择帮助
+    - SelectHelp
     semantic_type: link
   - text: Erase this iPhone
     center:
@@ -7991,7 +7991,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 抹掉此iPhone
+    - [CH]iPhone
     - delete all
     - factory reset confirm
     semantic_type: button
@@ -8026,7 +8026,7 @@ screens:
     fixed: true
     aliases:
     - leave family sharing
-    - 退出家庭共享
+    - Exit[CH]Share
     - stop sharing
     semantic_type: button
   - text: '[Name]'
@@ -8038,7 +8038,7 @@ screens:
     aliases:
     - Jiang Yangqin
     - current user
-    - 本人
+    - [CH]
     semantic_type: label
   - text: Adult
     center:
@@ -8048,7 +8048,7 @@ screens:
     fixed: true
     aliases:
     - adult account
-    - 成年人
+    - [CH]
     - parent
     semantic_type: label
   - text: '[App]'
@@ -8065,7 +8065,7 @@ screens:
     fixed: true
     aliases:
     - email address
-    - 邮箱
+    - Email
     - account email
     semantic_type: label
   - text: Subscriptions
@@ -8075,7 +8075,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 订阅
+    - [CH]
     - membership
     - in-app purchases
     semantic_type: menu_item
@@ -8087,7 +8087,7 @@ screens:
     fixed: true
     aliases:
     - accessible items
-    - 可访问内容
+    - 可Access[CH]
     - shared access
     semantic_type: label
   - text: Purchases
@@ -8097,7 +8097,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 购买项目
+    - Purchase[CH]
     - purchase history
     - shared purchases
     semantic_type: menu_item
@@ -8109,7 +8109,7 @@ screens:
     fixed: true
     aliases:
     - needs purchase sharing
-    - 需要购买共享
+    - [CH]PurchaseShare
     - purchase sharing required
     semantic_type: label
   - text: Location Sharing
@@ -8119,7 +8119,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 共享位置
+    - Share[CH]
     - share location
     - find my
     semantic_type: menu_item
@@ -8130,7 +8130,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 未与家人共享
+    - [CH]Share
     - location not shared
     - sharing off
     semantic_type: label
@@ -8142,7 +8142,7 @@ screens:
     fixed: true
     aliases:
     - member details
-    - 成员详情
+    - [CH]
     - family member info
     semantic_type: label
   - text: Forward
@@ -8151,7 +8151,7 @@ screens:
     - 0.3593
     found_at_scroll: 0
     fixed: true
-  description: Family Sharing member details screen for 蒋杨钦 showing account info,
+  description: Family Sharing member details screen for [CH] showing account info,
     subscriptions, purchases, and location sharing status with option to stop using
     Family Sharing.
   scrollable: true
@@ -8178,7 +8178,7 @@ screens:
     aliases:
     - share
     - send
-    - 转发
+    - [CH]
     semantic_type: button
   - text: Organizer
     center:
@@ -8189,7 +8189,7 @@ screens:
     aliases:
     - family organizer
     - admin
-    - 组织者
+    - [CH]
     semantic_type: label
   - text: '[App]'
     center:
@@ -8205,7 +8205,7 @@ screens:
     fixed: true
     aliases:
     - in-app purchases
-    - 订阅
+    - [CH]
     - memberships
     semantic_type: menu_item
   - text: '[Name]'
@@ -8217,7 +8217,7 @@ screens:
     aliases:
     - shared access
     - family access
-    - 访问权限
+    - AccessPermission
     semantic_type: label
   - text: Purchases
     center:
@@ -8228,7 +8228,7 @@ screens:
     aliases:
     - buy
     - transactions
-    - 购买项目
+    - Purchase[CH]
     semantic_type: menu_item
   - text: Requires Purchase Sharing
     center:
@@ -8239,7 +8239,7 @@ screens:
     aliases:
     - needs sharing
     - purchase sharing off
-    - 需要购买共享
+    - [CH]PurchaseShare
     semantic_type: label
   - text: Location Sharing
     center:
@@ -8250,7 +8250,7 @@ screens:
     aliases:
     - share location
     - Find My
-    - 位置共享
+    - [CH]Share
     semantic_type: menu_item
   - text: Not sharing with you
     center:
@@ -8261,7 +8261,7 @@ screens:
     aliases:
     - location not shared
     - unshared
-    - 未与你共享
+    - [CH]Share
     semantic_type: label
   - text: MEMBER_DETAILS_HEADER
     center:
@@ -8272,9 +8272,9 @@ screens:
     aliases:
     - member details
     - family member info
-    - 成员详情
+    - [CH]
     semantic_type: label
-  description: Family Sharing member details screen for 蒋莉, showing organizer role,
+  description: Family Sharing member details screen for [CH], showing organizer role,
     Apple Account, subscriptions, purchases, and location sharing status.
   scrollable: true
   scroll_direction: vertical
@@ -8287,7 +8287,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -8298,7 +8298,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - exit
     semantic_type: button
@@ -8309,7 +8309,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 添加紧急联系人
+    - [CH]UrgentContact人
     - emergency contact setup
     semantic_type: button
   - text: Set Up Location Sharing
@@ -8319,7 +8319,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 设置位置共享
+    - Settings[CH]Share
     - enable location sharing
     semantic_type: button
   - text: Family
@@ -8329,9 +8329,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人
+    - [CH]
     - family group
-    - 家庭
+    - [CH]
     semantic_type: label
   - text: '[Name]'
     center:
@@ -8351,7 +8351,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 成人
+    - [CH]
     - grown-up
     semantic_type: label
   - text: '[Name]'
@@ -8371,7 +8371,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 组织者
+    - [CH]
     - family organizer
     - admin
     semantic_type: label
@@ -8382,7 +8382,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 查看家人可访问和共享的内容
+    - View[CH]Access和Share[CH]
     - family access info
     semantic_type: label
   - text: Recommended for Your Family
@@ -8392,7 +8392,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 为您的家人推荐
+    - [CH]
     - family suggestions
     semantic_type: label
   - text: 9 active items
@@ -8402,7 +8402,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 9个活跃项目
+    - 9[CH]
     - active subscriptions count
     semantic_type: label
   - text: Subscriptions
@@ -8412,7 +8412,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 订阅
+    - [CH]
     - memberships
     - plans
     semantic_type: menu_item
@@ -8423,7 +8423,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 无共享订阅
+    - NoneShare[CH]
     - no family subscriptions
     semantic_type: label
   - text: Purchase Sharing
@@ -8433,9 +8433,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 购买共享
+    - PurchaseShare
     - shared purchases
-    - 购买分享
+    - PurchaseShare
     semantic_type: setting
   - text: Not Enabled
     center:
@@ -8444,7 +8444,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 未启用
+    - 未Enable
     - disabled
     - 'off'
     semantic_type: label
@@ -8455,9 +8455,9 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 位置共享
+    - [CH]Share
     - share location
-    - 位置分享
+    - [CH]Share
     semantic_type: setting
   - text: Not sharing with family
     center:
@@ -8466,7 +8466,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 未与家人共享
+    - [CH]Share
     - location not shared
     semantic_type: label
   - text: Apple uses your Apple Account, payment details, and information about your
@@ -8486,7 +8486,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 充分利用家人共享的建议
+    - [CH]Share[CH]
     - family sharing tips
     semantic_type: label
   - text: Safety and Privacy
@@ -8496,7 +8496,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 安全与隐私
+    - SecurityandPrivacy
     - security and privacy
     semantic_type: label
   - text: Add Family to Emergency Contacts
@@ -8506,7 +8506,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 将家人添加到紧急联系人
+    - [CH]UrgentContact人
     - family emergency contacts
     semantic_type: button
   - text: You can make a family member one of your emergency contacts.
@@ -8516,7 +8516,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 可以将家人设为紧急联系人
+    - [CH]UrgentContact人
     - emergency contact description
     semantic_type: label
   - text: Share Your Location
@@ -8526,7 +8526,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 共享您的位置
+    - Share[CH]
     - share my location
     semantic_type: button
   - text: Family members will be able to see where you are and help you find lost
@@ -8537,7 +8537,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 家人可查看您的位置并帮助查找丢失设备
+    - [CH]View[CH]Help[CH]Device
     - location sharing benefit
     semantic_type: label
   - text: Add a Recovery Contact
@@ -8547,7 +8547,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 添加恢复联系人
+    - [CH]RestoreContact人
     - recovery contact setup
     semantic_type: button
   - text: Add a family member as a recovery contact. They can help you get back into
@@ -8558,7 +8558,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 将家人设为恢复联系人以帮助找回账户
+    - [CH]RestoreContact[CH]Help[CH]Account
     - recovery contact description
     semantic_type: label
   - text: Forward
@@ -8568,7 +8568,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 前进
+    - [CH]
     - next
     - arrow
     semantic_type: button
@@ -8590,7 +8590,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 添加恢复联系人
+    - [CH]RestoreContact人
     - recovery contact
     semantic_type: button
   - text: Add a Legacy Contact
@@ -8600,7 +8600,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 添加遗产联系人
+    - [CH]Contact人
     - legacy contact setup
     semantic_type: button
   - text: Share iCloud+
@@ -8610,7 +8610,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 共享iCloud+
+    - ShareiCloud+
     - iCloud+ sharing
     semantic_type: button
   - text: Add a family member to have access to the data in your account after your
@@ -8621,7 +8621,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 添加家人以便在您去世后访问账户数据
+    - [CH]AccessAccount[CH]
     - legacy contact description
     semantic_type: label
   - text: Subscriptions and Purchases
@@ -8631,7 +8631,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 订阅与购买
+    - [CH]Purchase
     - subscriptions & purchases
     semantic_type: label
   - text: Share iCloud+ with Family
@@ -8641,7 +8641,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 与家人共享iCloud+
+    - [CH]ShareiCloud+
     - family iCloud+ sharing
     semantic_type: button
   - text: Give your family access to additional iCloud storage, Private Relay, Hide
@@ -8652,7 +8652,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 让家人免费使用额外iCloud存储等功能
+    - [CH]iCloud[CH]Feature
     - iCloud+ sharing benefit
     semantic_type: label
   - text: Turn On
@@ -8662,7 +8662,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 打开
+    - Open
     - enable
     - activate
     semantic_type: button
@@ -8673,7 +8673,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 创建共享列表
+    - CreateShare[CH]
     - shared list setup
     semantic_type: button
   - text: Create Shared Calendar
@@ -8683,7 +8683,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 创建共享日历
+    - CreateShare[CH]
     - shared calendar setup
     semantic_type: button
   - text: To share media, books, apps, and subscriptions with family, ask your organizer
@@ -8694,7 +8694,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 要共享媒体等内容，请让组织者开启购买共享
+    - wantShare[CH]，[CH]PurchaseShare
     - purchase sharing prompt
     semantic_type: label
   - text: More Recommendations
@@ -8704,7 +8704,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 更多推荐
+    - [CH]
     - additional suggestions
     semantic_type: button
   - text: Family Grocery List
@@ -8714,7 +8714,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 家庭购物清单
+    - [CH]
     - shared grocery list
     semantic_type: menu_item
   - text: Create a shared grocery list for everyone to add their favorite items before
@@ -8725,7 +8725,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 创建共享购物清单，让每个人添加喜欢的物品
+    - CreateShare[CH]，[CH]Personal[CH]
     - grocery list description
     semantic_type: label
   - text: Family Calendar
@@ -8735,7 +8735,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 家庭日历
+    - [CH]
     - shared family calendar
     semantic_type: menu_item
   - text: Create a shared calendar for your family so everyone can stay up to date
@@ -8746,7 +8746,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 创建共享日历，让家人了解重要事件
+    - CreateShare[CH]，[CH]Important[CH]
     - calendar description
     semantic_type: label
   - text: Shared Passwords
@@ -8756,7 +8756,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 共享密码
+    - SharePassword
     - family passwords
     semantic_type: menu_item
   - text: Set Up Family Passwords
@@ -8766,7 +8766,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 设置家庭密码
+    - Settings[CH]Password
     - family password setup
     semantic_type: button
   - text: Share logins and passwords to shopping sites, utilities, streaming services,
@@ -8777,7 +8777,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 共享购物网站等登录信息和密码
+    - Share[CH]LoginInfo和Password
     - password sharing description
     semantic_type: label
   description: Family Sharing settings screen showing family members, shared subscriptions,
@@ -8794,7 +8794,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 已订阅
+    - [CH]
     - active subscription
     - subscribed status
     semantic_type: label
@@ -8805,7 +8805,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 订阅
+    - [CH]
     - subscription management
     - manage subs
     semantic_type: menu_item
@@ -8819,7 +8819,7 @@ screens:
     aliases:
     - family sharing info
     - subscription sharing description
-    - 共享说明
+    - ShareInstruction
     semantic_type: label
   - text: Learn more...
     center:
@@ -8828,7 +8828,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 了解更多
+    - [CH]
     - more info
     - help link
     semantic_type: link
@@ -8839,7 +8839,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 无共享订阅
+    - NoneShare[CH]
     - empty shared list
     - no family subs
     semantic_type: label
@@ -8850,7 +8850,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 管理订阅
+    - Manage[CH]
     - edit subscriptions
     - subscription settings
     semantic_type: button
@@ -8862,7 +8862,7 @@ screens:
     fixed: true
     aliases:
     - subscription description
-    - 管理说明
+    - ManageInstruction
     - manage subs info
     semantic_type: label
   - text: iCloud+
@@ -8873,7 +8873,7 @@ screens:
     fixed: true
     aliases:
     - iCloud Plus
-    - iCloud订阅
+    - iCloud[CH]
     - icloud storage
     semantic_type: setting
   - text: Apple Subscriptions
@@ -8883,7 +8883,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - Apple订阅
+    - Apple[CH]
     - Apple services
     - Apple subs
     semantic_type: label
@@ -8894,7 +8894,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家庭订阅
+    - [CH]
     - family subscriptions
     - shared family subs
     semantic_type: label
@@ -8907,7 +8907,7 @@ screens:
     aliases:
     - iCloud app
     - iCloud+ icon
-    - iCloud应用
+    - iCloudApp
     semantic_type: other
   - text: app-AS-v3
     center:
@@ -8918,7 +8918,7 @@ screens:
     aliases:
     - App Store icon
     - Apple subscriptions icon
-    - App Store应用
+    - App StoreApp
     semantic_type: other
   - text: app-ASS-v3
     center:
@@ -8929,7 +8929,7 @@ screens:
     aliases:
     - Apple subscriptions icon
     - Apple services icon
-    - Apple订阅图标
+    - Apple[CH]
     semantic_type: other
   description: Subscriptions management screen showing Apple and App Store subscriptions,
     with options to manage and share eligible subscriptions with family.
@@ -8944,7 +8944,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 打开查找
+    - Open[CH]
     - Find My app
     - open find my app
     semantic_type: button
@@ -8955,7 +8955,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 了解更多
+    - [CH]
     - more info
     - learn more about location sharing
     semantic_type: link
@@ -8966,7 +8966,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 位置共享
+    - [CH]Share
     - share location
     - location sharing settings
     semantic_type: label
@@ -8977,7 +8977,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 与您共享位置的对象
+    - [CH]Share[CH]
     - share with
     - location sharing recipients
     semantic_type: label
@@ -8999,7 +8999,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 没有家人共享位置
+    - 没Yes[CH]Share[CH]
     - no shared locations
     - empty state
     semantic_type: label
@@ -9010,7 +9010,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 自动共享位置
+    - AutoShare[CH]
     - auto share
     - automatic location sharing
     semantic_type: toggle
@@ -9022,7 +9022,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 自动与新家人共享
+    - Auto[CH]Share
     - auto share description
     - share with future family members
     semantic_type: label
@@ -9183,7 +9183,7 @@ screens:
     aliases:
     - WiFi
     - wireless
-    - 无线
+    - None线
     - wifi network
     semantic_type: setting
   - text: Auto-Join
@@ -9194,7 +9194,7 @@ screens:
     fixed: false
     aliases:
     - auto connect
-    - 自动加入
+    - Auto[CH]
     - auto join network
     semantic_type: toggle
   - text: Low Data Mode
@@ -9205,7 +9205,7 @@ screens:
     fixed: false
     aliases:
     - data saver
-    - 低数据模式
+    - [CH]Mode
     - reduce data usage
     semantic_type: toggle
   - text: Limit IP Address Tracking
@@ -9216,7 +9216,7 @@ screens:
     fixed: true
     aliases:
     - IP tracking
-    - 限制IP地址跟踪
+    - [CH]IP[CH]
     - privacy
     semantic_type: toggle
   - text: Forget This Network
@@ -9227,7 +9227,7 @@ screens:
     fixed: false
     aliases:
     - remove network
-    - 忽略此网络
+    - [CH]Network
     - delete network
     semantic_type: button
   - text: Username
@@ -9237,7 +9237,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 用户名
+    - Username
     - user
     - login name
     semantic_type: label
@@ -9259,7 +9259,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 密码
+    - Password
     - passcode
     - wifi password
     semantic_type: label
@@ -9283,7 +9283,7 @@ screens:
     aliases:
     - 6GHz band
     - WiFi 6E
-    - 无线6E模式
+    - None线6EMode
     semantic_type: menu_item
   - text: Automatic
     center:
@@ -9293,7 +9293,7 @@ screens:
     fixed: true
     aliases:
     - auto
-    - 自动
+    - Auto
     - default mode
     semantic_type: label
   - text: Private Wi‑Fi Address
@@ -9304,7 +9304,7 @@ screens:
     fixed: true
     aliases:
     - MAC randomization
-    - 私有无线地址
+    - 私YesNone[CH]
     - privacy address
     semantic_type: menu_item
   - text: Fixed
@@ -9315,7 +9315,7 @@ screens:
     fixed: true
     aliases:
     - static
-    - 固定
+    - [CH]
     - unchanging
     semantic_type: label
   - text: Wi‑Fi Address
@@ -9326,7 +9326,7 @@ screens:
     fixed: true
     aliases:
     - MAC address
-    - 无线地址
+    - None[CH]
     - hardware address
     semantic_type: label
   - text: 02:78:B3:A1:AE:FC
@@ -9338,7 +9338,7 @@ screens:
     aliases:
     - MAC
     - physical address
-    - 硬件地址
+    - [CH]
     semantic_type: label
   - text: Configure IP
     center:
@@ -9348,7 +9348,7 @@ screens:
     fixed: true
     aliases:
     - IP settings
-    - 配置IP
+    - ConfigureIP
     - IP configuration
     semantic_type: menu_item
   - text: IP Address
@@ -9359,7 +9359,7 @@ screens:
     fixed: true
     aliases:
     - IP
-    - IP地址
+    - IP[CH]
     - IPv4
     semantic_type: label
   - text: 10.71.43.7
@@ -9381,7 +9381,7 @@ screens:
     fixed: true
     aliases:
     - netmask
-    - 子网掩码
+    - [CH]
     - subnet
     semantic_type: label
   - text: 255.255.192.0
@@ -9393,7 +9393,7 @@ screens:
     aliases:
     - netmask value
     - subnet
-    - 子网掩码值
+    - [CH]
     semantic_type: label
   - text: Router
     center:
@@ -9403,7 +9403,7 @@ screens:
     fixed: true
     aliases:
     - gateway
-    - 路由器
+    - [CH]
     - default gateway
     semantic_type: label
   - text: 10.71.0.1
@@ -9415,7 +9415,7 @@ screens:
     aliases:
     - gateway IP
     - router address
-    - 网关地址
+    - [CH]
     semantic_type: label
   - text: Configure DNS
     center:
@@ -9425,7 +9425,7 @@ screens:
     fixed: true
     aliases:
     - DNS settings
-    - 配置DNS
+    - ConfigureDNS
     - domain name server
     semantic_type: menu_item
   - text: Configure Proxy
@@ -9436,7 +9436,7 @@ screens:
     fixed: true
     aliases:
     - proxy settings
-    - 配置代理
+    - ConfigureProxy
     - HTTP proxy
     semantic_type: menu_item
   - text: IPv4 Address
@@ -9447,7 +9447,7 @@ screens:
     fixed: true
     aliases:
     - IP address
-    - IPv4地址
+    - IPv4[CH]
     - internet protocol v4
     semantic_type: label
   - text: DNS
@@ -9458,7 +9458,7 @@ screens:
     fixed: true
     aliases:
     - domain name system
-    - 域名系统
+    - [CH]
     - DNS server
     semantic_type: label
   - text: HTTP Proxy
@@ -9469,7 +9469,7 @@ screens:
     fixed: true
     aliases:
     - web proxy
-    - HTTP代理
+    - HTTPProxy
     - proxy server
     semantic_type: label
   description: Detailed Wi-Fi network settings screen showing connection options,
@@ -9485,7 +9485,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - configuration
     - options
@@ -9497,7 +9497,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 编辑
+    - Edit
     - modify
     - change
     semantic_type: button
@@ -9510,7 +9510,7 @@ screens:
     aliases:
     - WiFi
     - wireless
-    - 无线
+    - None线
     - wifi network
     semantic_type: setting
   - text: Learn more…
@@ -9520,7 +9520,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 了解更多
+    - [CH]
     - more info
     - details
     semantic_type: link
@@ -9533,7 +9533,7 @@ screens:
     aliases:
     - WiFi
     - wireless
-    - 无线
+    - None线
     - wifi network
     semantic_type: toggle
   - text: AirDrop, AirPlay, Notify When Left Behind, and improved location accuracy
@@ -9560,7 +9560,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - configuration
@@ -9572,7 +9572,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 编辑
+    - Edit
     - modify
     - change
     semantic_type: button
@@ -9583,7 +9583,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 显示目录
+    - [CH]Directory
     - TOC
     - contents
     - index
@@ -9595,7 +9595,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 前进
+    - [CH]
     - next
     - advance
     semantic_type: button
@@ -9606,7 +9606,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - exit
     - x
@@ -9619,7 +9619,7 @@ screens:
     fixed: true
     aliases:
     - WiFi
-    - 无线
+    - None线
     - wireless
     - wifi network
     semantic_type: setting
@@ -9630,7 +9630,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 了解更多
+    - [CH]
     - more info
     - details
     - help
@@ -9643,7 +9643,7 @@ screens:
     fixed: true
     aliases:
     - WiFi
-    - 无线
+    - None线
     - wireless
     - wifi network
     semantic_type: label
@@ -9665,7 +9665,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 连接互联网
+    - Connection[CH]
     - internet connection
     - get online
     semantic_type: label
@@ -9687,7 +9687,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 查看可用网络
+    - View[CH]Network
     - network list
     - scan networks
     semantic_type: label
@@ -9710,7 +9710,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 打开设置
+    - OpenSettings
     - open settings
     - navigate to settings
     semantic_type: label
@@ -9721,7 +9721,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 在iPhone上
+    - atiPhoneabove
     - iPhone device
     semantic_type: label
   - text: Tap Wi-Fi, then turn on Wi-Fi.
@@ -9732,7 +9732,7 @@ screens:
     fixed: false
     aliases:
     - enable Wi-Fi
-    - 打开无线
+    - OpenNone线
     - activate wifi
     semantic_type: label
   - text: iPhone automatically joins known networks.
@@ -9743,7 +9743,7 @@ screens:
     fixed: false
     aliases:
     - auto-join networks
-    - 自动连接已知网络
+    - AutoConnection[CH]Network
     - remembered networks
     semantic_type: label
   - text: 'To join a new network, do one of the following:'
@@ -9753,7 +9753,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 加入新网络
+    - [CH]Network
     - connect new network
     - new network options
     semantic_type: label
@@ -9764,7 +9764,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 加入可用网络
+    - [CH]Network
     - connect to visible network
     semantic_type: label
   - text: Tap the name of the network. If asked, enter the password.
@@ -9775,7 +9775,7 @@ screens:
     fixed: false
     aliases:
     - select network
-    - 输入密码
+    - InputPassword
     - network password prompt
     semantic_type: label
   - text: 'Join a hidden network:'
@@ -9785,7 +9785,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 加入隐藏网络
+    - [CH]Network
     - hidden SSID
     - manual network entry
     semantic_type: label
@@ -9797,7 +9797,7 @@ screens:
     fixed: false
     aliases:
     - other network
-    - 手动输入网络
+    - ManualInputNetwork
     - manual network setup
     semantic_type: label
   - text: When iPhone is connected to Wi-Fi, a blue checkmark appears next to the
@@ -9809,7 +9809,7 @@ screens:
     fixed: false
     aliases:
     - connected indicator
-    - 蓝色勾选
+    - [CH]
     - checkmark status
     semantic_type: label
   - text: appears at the top of the screen.
@@ -9820,7 +9820,7 @@ screens:
     fixed: false
     aliases:
     - status bar icon
-    - 顶部显示
+    - [CH]
     semantic_type: label
   - text: Share a Wi-Fi password
     center:
@@ -9829,7 +9829,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 分享Wi-Fi密码
+    - ShareWi-FiPassword
     - password sharing
     - share network key
     semantic_type: label
@@ -9840,7 +9840,7 @@ screens:
     found_at_scroll: 1
     fixed: false
     aliases:
-    - 无线图标
+    - None[CH]
     - wifi symbol
     - signal icon
     semantic_type: label
@@ -9854,7 +9854,7 @@ screens:
     aliases:
     - share password feature
     - nearby device sharing
-    - 密码共享条件
+    - PasswordShare[CH]
     semantic_type: label
   - text: Make sure your iPhone is unlocked, connected to the Wi-Fi network, and signed
       in to your
@@ -9865,7 +9865,7 @@ screens:
     fixed: false
     aliases:
     - sharing prerequisites
-    - 解锁并连接
+    - [CH]Connection
     - requirements
     semantic_type: label
   - text: Apple Account
@@ -9876,7 +9876,7 @@ screens:
     fixed: false
     aliases:
     - Apple ID
-    - 苹果账户
+    - [CH]Account
     - iCloud account
     semantic_type: label
   - text: 'Make sure of the following:'
@@ -9886,7 +9886,7 @@ screens:
     found_at_scroll: 2
     fixed: false
     aliases:
-    - 确认以下事项
+    - Confirm[CH]
     - checklist
     - verify
     semantic_type: label
@@ -9899,7 +9899,7 @@ screens:
     fixed: false
     aliases:
     - recipient signed in
-    - 对方已登录Apple账户
+    - [CH]LoginAppleAccount
     semantic_type: label
   - text: The person is in your contacts list in the Contacts app
     center:
@@ -9909,7 +9909,7 @@ screens:
     fixed: false
     aliases:
     - in contacts
-    - 通讯录中有对方
+    - [CH]Yes[CH]
     - contact list requirement
     semantic_type: label
   - text: The other device is close to your iPhone.
@@ -9920,7 +9920,7 @@ screens:
     fixed: false
     aliases:
     - nearby device
-    - 设备靠近
+    - Device[CH]
     - proximity
     semantic_type: label
   - text: On the other device, choose the Wi-Fi network.
@@ -9931,7 +9931,7 @@ screens:
     fixed: false
     aliases:
     - select network on other device
-    - 对方选择网络
+    - [CH]SelectNetwork
     semantic_type: label
   - text: On your iPhone, wait a few moments for the Wi-Fi Password notification to
       appear, then tap Share Password.
@@ -9942,7 +9942,7 @@ screens:
     fixed: false
     aliases:
     - tap share password
-    - 点击分享密码
+    - [CH]SharePassword
     - password notification
     semantic_type: label
   - text: Join a Personal Hotspot
@@ -9952,7 +9952,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 加入个人热点
+    - [CH]Personal[CH]
     - connect to hotspot
     - personal hotspot connection
     semantic_type: label
@@ -9964,7 +9964,7 @@ screens:
     fixed: false
     aliases:
     - cellular device
-    - 蜂窝网络设备
+    - CellularNetworkDevice
     semantic_type: label
   - text: sharing a Personal Hotspot
     center:
@@ -9973,7 +9973,7 @@ screens:
     found_at_scroll: 3
     fixed: false
     aliases:
-    - 分享个人热点
+    - SharePersonal[CH]
     - hotspot sharing
     - tethering
     semantic_type: label
@@ -9985,7 +9985,7 @@ screens:
     fixed: false
     aliases:
     - use cellular data
-    - 使用蜂窝数据
+    - [CH]Cellular[CH]
     semantic_type: label
   - text: Tap Wi-Fi, then choose the name of the device sharing the Personal Hotspot.
     center:
@@ -9995,7 +9995,7 @@ screens:
     fixed: false
     aliases:
     - select hotspot
-    - 选择热点设备
+    - Select[CH]Device
     - connect to hotspot name
     semantic_type: label
   - text: If asked, enter the password. (On the device sharing the Personal Hotspot,
@@ -10007,7 +10007,7 @@ screens:
     fixed: false
     aliases:
     - hotspot password
-    - 热点密码
+    - [CH]Password
     - find hotspot password
     semantic_type: label
   description: Wi-Fi settings page with on/off toggle, connected network 'HomeNet'
@@ -10024,7 +10024,7 @@ screens:
     fixed: true
     aliases:
     - BT
-    - 蓝牙
+    - Bluetooth
     - bluetooth settings
     semantic_type: setting
   - text: Apple Watch app
@@ -10036,7 +10036,7 @@ screens:
     aliases:
     - Watch
     - Apple Watch
-    - 手表应用
+    - [CH]App
     semantic_type: menu_item
   - text: '[Device]'
     center:
@@ -10046,7 +10046,7 @@ screens:
     fixed: true
     aliases:
     - device name
-    - 设备
+    - Device
     - connected device
     semantic_type: label
   description: Bluetooth settings page showing the toggle and a connected Apple Watch
@@ -10410,7 +10410,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     - configuration
@@ -10423,7 +10423,7 @@ screens:
     fixed: true
     aliases:
     - add esim
-    - 添加eSIM
+    - [CH]eSIM
     - setup esim
     - esim activation
     semantic_type: button
@@ -10434,7 +10434,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 目录
+    - Directory
     - TOC
     - contents
     - index
@@ -10446,7 +10446,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 前进
+    - [CH]
     - next
     - share
     - send
@@ -10458,7 +10458,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 关闭
+    - Close
     - dismiss
     - x
     - exit
@@ -10470,7 +10470,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 了解更多
+    - [CH]
     - more info
     - details
     - help
@@ -10482,7 +10482,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
     - cellular settings
     - mobile network
@@ -10494,7 +10494,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝数据
+    - Cellular[CH]
     - mobile data
     - data usage
     - cellular data toggle
@@ -10517,7 +10517,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 个人热点
+    - Personal[CH]
     - hotspot
     - tethering
     - internet sharing
@@ -10529,7 +10529,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 默认语音号码
+    - Default[CH]
     - primary line
     - voice line
     - default line
@@ -10543,7 +10543,7 @@ screens:
     aliases:
     - China number
     - mainland number
-    - 大陆号码
+    - [CH]
     - primary number
     semantic_type: label
   - text: '[Region]'
@@ -10555,7 +10555,7 @@ screens:
     aliases:
     - Mainland
     - China
-    - 中国内地
+    - [CH]
     - Dalu
     semantic_type: label
   - text: '[Phone]'
@@ -10567,7 +10567,7 @@ screens:
     aliases:
     - Hong Kong number
     - HK number
-    - 香港号码
+    - [CH]
     - secondary number
     semantic_type: label
   - text: View or change cellular data settings on iPhone
@@ -10580,7 +10580,7 @@ screens:
     - cellular data settings
     - manage cellular
     - data options
-    - 蜂窝数据设置
+    - Cellular[CH]Settings
     semantic_type: label
   - text: You can turn cellular data and roaming on or off, set which apps and services
       use cellular data, see cellular data usage, and set other cellular data options.
@@ -10601,7 +10601,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 注意
+    - Note
     - notice
     - important
     - remark
@@ -10617,7 +10617,7 @@ screens:
     - contact carrier
     - support info
     - carrier help
-    - 运营商支持
+    - [CH]
     semantic_type: label
   - text: How cellular networks handle voice and data
     center:
@@ -10629,7 +10629,7 @@ screens:
     - voice and data info
     - network handling
     - cellular network behavior
-    - 语音和数据
+    - [CH]
     semantic_type: label
   - text: If your iPhone is connected to the internet using a cellular data network,
       an
@@ -10652,7 +10652,7 @@ screens:
     - network icon
     - cellular icon
     - status bar icon
-    - 信号图标
+    - [CH]
     semantic_type: label
   - text: appears in the status bar.
     center:
@@ -10747,7 +10747,7 @@ screens:
     aliases:
     - Wi-Fi calling link
     - make calls over Wi-Fi
-    - 无线局域网通话
+    - None[CH]
     semantic_type: label
   - text: Make calls using Wi-Fi
     center:
@@ -10757,7 +10757,7 @@ screens:
     fixed: false
     aliases:
     - Wi-Fi calling
-    - 无线局域网通话
+    - None[CH]
     - WiFi calls
     - VoWiFi
     semantic_type: link
@@ -10770,7 +10770,7 @@ screens:
     aliases:
     - roaming settings
     - data options management
-    - 漫游设置
+    - [CH]Settings
     semantic_type: label
   - text: To turn Cellular Data on or off, go to Settings
     center:
@@ -10839,7 +10839,7 @@ screens:
     aliases:
     - roaming charges warning
     - prevent roaming fees
-    - 漫游费用
+    - [CH]Cost
     semantic_type: label
   - text: Turn off Data Roaming. When you’re in a region not covered by your carrier’s
       network, Data Roaming permits internet access over a cellular data network.
@@ -10853,7 +10853,7 @@ screens:
     - data roaming toggle
     - roaming off
     - disable roaming
-    - 数据漫游
+    - [CH]
     semantic_type: label
   - text: 'Reduce cellular usage:'
     center:
@@ -10864,7 +10864,7 @@ screens:
     aliases:
     - low data mode
     - reduce data
-    - 节省流量
+    - [CH]Data
     - data saving
     semantic_type: label
   - text: Tap Data Mode, then choose Low Data Mode. This mode pauses automatic updates
@@ -10878,7 +10878,7 @@ screens:
     - low data mode setting
     - data mode option
     - background task pause
-    - 低数据模式
+    - [CH]Mode
     semantic_type: label
   - text: 'Depending on your iPhone model, carrier, and region, the following options
       may be available:'
@@ -10901,7 +10901,7 @@ screens:
     aliases:
     - voice roaming toggle
     - CDMA roaming
-    - 语音漫游
+    - [CH]
     semantic_type: label
   - text: (CDMA) Turn Voice Roaming off to avoid charges from using other carrier’s
       networks. When your carrier’s network isn’t available, iPhone won’t have cellular
@@ -10956,7 +10956,7 @@ screens:
     fixed: true
     aliases:
     - Mobile
-    - 蜂窝网络
+    - CellularNetwork
     - Mobile Data
     - Cellular Network
     semantic_type: menu_item
@@ -10969,7 +10969,7 @@ screens:
     aliases:
     - tick
     - selected
-    - 勾选
+    - [CH]
     - checked
     semantic_type: label
   - text: Allow Cellular Data Switching
@@ -10980,7 +10980,7 @@ screens:
     fixed: true
     aliases:
     - Mobile Data Switch
-    - 允许切换蜂窝数据
+    - [CH]Cellular[CH]
     - Data Switching
     semantic_type: toggle
   - text: Cellular Data
@@ -10991,7 +10991,7 @@ screens:
     fixed: true
     aliases:
     - Mobile Data
-    - 蜂窝数据
+    - Cellular[CH]
     - Data Usage
     semantic_type: menu_item
   - text: '[Phone]'
@@ -11002,7 +11002,7 @@ screens:
     fixed: true
     aliases:
     - China number
-    - 大陆号码
+    - [CH]
     - primary line
     semantic_type: label
   - text: '[Region]'
@@ -11014,7 +11014,7 @@ screens:
     aliases:
     - Mainland
     - China
-    - 中国内地
+    - [CH]
     semantic_type: label
   - text: '[Phone]'
     center:
@@ -11024,7 +11024,7 @@ screens:
     fixed: true
     aliases:
     - HK number
-    - 香港号码
+    - [CH]
     - secondary line
     semantic_type: label
   - text: '[Region]'
@@ -11051,7 +11051,7 @@ screens:
     fixed: true
     aliases:
     - Mobile Data
-    - 蜂窝网络
+    - CellularNetwork
     - Cellular Data
     - Mobile
     semantic_type: menu_item
@@ -11064,7 +11064,7 @@ screens:
     aliases:
     - Enable Sharing
     - Allow Connections
-    - 允许其他人加入
+    - [CH]
     semantic_type: toggle
   - text: Maximize Compatibility
     center:
@@ -11074,7 +11074,7 @@ screens:
     fixed: true
     aliases:
     - Compatibility Mode
-    - 最大兼容性
+    - [CH]
     - Legacy Mode
     semantic_type: toggle
   - text: Learn more…
@@ -11085,7 +11085,7 @@ screens:
     fixed: true
     aliases:
     - More Info
-    - 了解更多
+    - [CH]
     - Help
     semantic_type: link
   - text: Personal Hotspot
@@ -11096,7 +11096,7 @@ screens:
     fixed: true
     aliases:
     - Hotspot
-    - 个人热点
+    - Personal[CH]
     - Tethering
     - Internet Sharing
     semantic_type: setting
@@ -11108,7 +11108,7 @@ screens:
     fixed: true
     aliases:
     - Password
-    - 无线局域网密码
+    - None[CH]Password
     - Network Key
     - Security Key
     semantic_type: input
@@ -11131,7 +11131,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 家人共享
+    - [CH]Share
     - Family Plan
     - iCloud Family
     semantic_type: menu_item
@@ -11143,7 +11143,7 @@ screens:
     fixed: true
     aliases:
     - Usage
-    - 数据用量
+    - [CH]
     - Data Consumption
     - Traffic
     semantic_type: menu_item
@@ -11162,7 +11162,7 @@ screens:
     fixed: true
     aliases:
     - Mobile Data
-    - 蜂窝网络
+    - CellularNetwork
     - Mobile Network
     - Cellular Data
     semantic_type: menu_item
@@ -11175,7 +11175,7 @@ screens:
     aliases:
     - selected
     - tick
-    - 勾选
+    - [CH]
     - checked
     semantic_type: label
   - text: Default Voice Line
@@ -11186,7 +11186,7 @@ screens:
     fixed: true
     aliases:
     - Primary Voice Line
-    - 默认语音线路
+    - Default[CH]
     - Default Line
     semantic_type: setting
   - text: '[Phone]'
@@ -11197,7 +11197,7 @@ screens:
     fixed: true
     aliases:
     - China Mobile
-    - 中国移动
+    - [CH]
     - Mainland Number
     - Primary SIM
     semantic_type: menu_item
@@ -11210,7 +11210,7 @@ screens:
     aliases:
     - Mainland China
     - China
-    - 中国内地
+    - [CH]
     - Dalu
     semantic_type: label
   - text: '[Phone]'
@@ -11221,7 +11221,7 @@ screens:
     fixed: true
     aliases:
     - Hong Kong Number
-    - 香港号码
+    - [CH]
     - Secondary SIM
     semantic_type: menu_item
   - text: '[Region]'
@@ -11249,7 +11249,7 @@ screens:
     fixed: true
     aliases:
     - Mobile Data
-    - 蜂窝网络
+    - CellularNetwork
     - Cellular Data
     - Mobile Network
     semantic_type: setting
@@ -11262,7 +11262,7 @@ screens:
     aliases:
     - Enable Line
     - Activate SIM
-    - 打开此线路
+    - Open[CH]
     semantic_type: toggle
   - text: Limit IP Address Tracking
     center:
@@ -11272,7 +11272,7 @@ screens:
     fixed: true
     aliases:
     - IP Tracking
-    - 限制IP地址跟踪
+    - [CH]IP[CH]
     - Privacy
     semantic_type: toggle
   - text: Data Roaming
@@ -11283,7 +11283,7 @@ screens:
     fixed: true
     aliases:
     - Roaming
-    - 数据漫游
+    - [CH]
     - International Data
     semantic_type: toggle
   - text: '[App]'
@@ -11294,7 +11294,7 @@ screens:
     fixed: true
     aliases:
     - Carrier Account
-    - 账户
+    - Account
     - Profile
     semantic_type: menu_item
   - text: Cellular Plan Label
@@ -11305,7 +11305,7 @@ screens:
     fixed: true
     aliases:
     - Plan Name
-    - 套餐标签
+    - PlanTab
     - Data Plan
     semantic_type: label
   - text: '[Region]'
@@ -11317,7 +11317,7 @@ screens:
     aliases:
     - Mainland
     - China
-    - 中国
+    - [CH]
     - CN
     semantic_type: label
   - text: Network Selection
@@ -11328,7 +11328,7 @@ screens:
     fixed: true
     aliases:
     - Carrier Selection
-    - 网络选择
+    - NetworkSelect
     - Operator
     semantic_type: menu_item
   - text: CSL
@@ -11339,7 +11339,7 @@ screens:
     fixed: true
     aliases:
     - CSL Mobile
-    - 香港移动通讯
+    - [CH]
     - Carrier
     semantic_type: network
   - text: My Number
@@ -11350,7 +11350,7 @@ screens:
     fixed: true
     aliases:
     - Phone Number
-    - 本机号码
+    - [CH]
     - MSISDN
     semantic_type: label
   - text: '[Phone]'
@@ -11361,7 +11361,7 @@ screens:
     fixed: true
     aliases:
     - Phone Number
-    - 电话号码
+    - [CH]
     - Contact
     semantic_type: label
   - text: Calls on Other Devices
@@ -11372,7 +11372,7 @@ screens:
     fixed: true
     aliases:
     - Call Forwarding
-    - 其他设备通话
+    - [CH]Device[CH]
     - Multi-device Calls
     semantic_type: menu_item
   - text: When Nearby
@@ -11383,7 +11383,7 @@ screens:
     fixed: true
     aliases:
     - Nearby Devices
-    - 附近时
+    - [CH]
     - Proximity
     semantic_type: label
   - text: Voice &amp; Data
@@ -11394,7 +11394,7 @@ screens:
     fixed: true
     aliases:
     - Voice and Data
-    - 语音与数据
+    - [CH]
     - Network Mode
     semantic_type: menu_item
   - text: 5G Auto
@@ -11405,7 +11405,7 @@ screens:
     fixed: true
     aliases:
     - 5G Automatic
-    - 5G 自动
+    - 5G Auto
     - Network Type
     semantic_type: label
   - text: Data Mode
@@ -11416,7 +11416,7 @@ screens:
     fixed: true
     aliases:
     - Data Saver
-    - 数据模式
+    - [CH]Mode
     - Low Data Mode
     semantic_type: menu_item
   - text: Standard
@@ -11427,7 +11427,7 @@ screens:
     fixed: true
     aliases:
     - Normal
-    - 标准
+    - [CH]
     - Default
     semantic_type: label
   - text: Carrier Services
@@ -11438,7 +11438,7 @@ screens:
     fixed: true
     aliases:
     - Operator Services
-    - 运营商服务
+    - [CH]Service
     - Network Services
     semantic_type: menu_item
   - text: SIM PIN
@@ -11449,7 +11449,7 @@ screens:
     fixed: true
     aliases:
     - SIM Lock
-    - SIM卡PIN码
+    - SIMLagPIN码
     - PIN Code
     semantic_type: menu_item
   description: Cellular settings page with options for line activation, data roaming,
@@ -11466,7 +11466,7 @@ screens:
     fixed: true
     aliases:
     - Mobile Data
-    - 蜂窝网络
+    - CellularNetwork
     - Cellular Data
     - Mobile Network
     semantic_type: setting
@@ -11479,7 +11479,7 @@ screens:
     aliases:
     - Enable Line
     - Activate SIM
-    - 打开此线路
+    - Open[CH]
     semantic_type: toggle
   - text: Limit IP Address Tracking
     center:
@@ -11490,7 +11490,7 @@ screens:
     aliases:
     - IP Tracking
     - Limit Tracking
-    - 限制IP地址跟踪
+    - [CH]IP[CH]
     semantic_type: toggle
   - text: Data Roaming
     center:
@@ -11500,7 +11500,7 @@ screens:
     fixed: true
     aliases:
     - Roaming
-    - 漫游
+    - [CH]
     - Data Roam
     semantic_type: toggle
   - text: Hutchison HK
@@ -11512,7 +11512,7 @@ screens:
     aliases:
     - 3 HK
     - Hutchison
-    - 和记香港
+    - [CH]
     semantic_type: network
   - text: Cellular Plan Label
     center:
@@ -11522,7 +11522,7 @@ screens:
     fixed: false
     aliases:
     - Plan Label
-    - 蜂窝计划标签
+    - Cellular[CH]Tab
     - Plan Name
     semantic_type: label
   - text: '[Region]'
@@ -11545,7 +11545,7 @@ screens:
     aliases:
     - Select Network
     - Carrier
-    - 网络选择
+    - NetworkSelect
     - Operator
     semantic_type: menu_item
   - text: My Number
@@ -11556,7 +11556,7 @@ screens:
     fixed: true
     aliases:
     - Phone Number
-    - 我的号码
+    - My[CH]
     - MSISDN
     - Number
     semantic_type: label
@@ -11568,7 +11568,7 @@ screens:
     fixed: true
     aliases:
     - Phone Number
-    - 电话号码
+    - [CH]
     - Contact
     semantic_type: label
   - text: Wi-Fi Calling
@@ -11580,7 +11580,7 @@ screens:
     aliases:
     - WiFi Calling
     - VoWiFi
-    - 无线局域网通话
+    - None[CH]
     - WLAN Call
     semantic_type: toggle
   - text: Calls on Other Devices
@@ -11591,7 +11591,7 @@ screens:
     fixed: true
     aliases:
     - Call Forwarding
-    - 其他设备通话
+    - [CH]Device[CH]
     - Multi-device Calls
     semantic_type: menu_item
   - text: When Nearby
@@ -11602,7 +11602,7 @@ screens:
     fixed: true
     aliases:
     - Nearby
-    - 在附近时
+    - [CH]
     - Proximity
     semantic_type: label
   - text: Voice &amp; Data
@@ -11613,7 +11613,7 @@ screens:
     fixed: true
     aliases:
     - Voice and Data
-    - 语音与数据
+    - [CH]
     - Network Mode
     - 5G/4G
     semantic_type: menu_item
@@ -11625,7 +11625,7 @@ screens:
     fixed: true
     aliases:
     - 5G Automatic
-    - 5G 自动
+    - 5G Auto
     - Auto 5G
     semantic_type: label
   - text: Cellular Data Network
@@ -11636,7 +11636,7 @@ screens:
     fixed: true
     aliases:
     - APN Settings
-    - 蜂窝数据网络
+    - Cellular[CH]Network
     - Access Point
     semantic_type: menu_item
   - text: Data Mode
@@ -11647,7 +11647,7 @@ screens:
     fixed: true
     aliases:
     - Data Saver
-    - 数据模式
+    - [CH]Mode
     - Low Data
     semantic_type: menu_item
   - text: Standard
@@ -11658,7 +11658,7 @@ screens:
     fixed: true
     aliases:
     - Default
-    - 标准
+    - [CH]
     - Normal
     semantic_type: label
   - text: Delete eSIM
@@ -11669,7 +11669,7 @@ screens:
     fixed: true
     aliases:
     - Remove eSIM
-    - 删除eSIM
+    - DeleteeSIM
     - Erase SIM
     semantic_type: button
   - text: SIM PIN
@@ -11680,7 +11680,7 @@ screens:
     fixed: true
     aliases:
     - SIM Lock
-    - SIM卡密码
+    - SIMLagPassword
     - PIN Code
     semantic_type: menu_item
   description: Cellular settings page with options for line activation, data roaming,
@@ -11696,7 +11696,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -11707,7 +11707,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 添加eSIM
+    - [CH]eSIM
     - add esim
     - esim setup
     semantic_type: button
@@ -11718,7 +11718,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 音乐
+    - [CH]
     - apple music
     - music app
     semantic_type: setting
@@ -11740,7 +11740,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 小红书
+    - [CH]
     - xiaohongshu
     - red note
     semantic_type: setting
@@ -11753,7 +11753,7 @@ screens:
     aliases:
     - rednote bundle id
     - xingin discover
-    - 小红书id
+    - [CH]id
     semantic_type: label
   - text: '[App]'
     center:
@@ -11763,7 +11763,7 @@ screens:
     fixed: false
     aliases:
     - b站
-    - 哔哩哔哩
+    - [CH]
     - bilibili app
     semantic_type: setting
   - text: '[App]'
@@ -11784,7 +11784,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 微博
+    - [CH]
     - sina weibo
     - weibo app
     semantic_type: setting
@@ -11797,7 +11797,7 @@ screens:
     aliases:
     - weibo bundle id
     - sina weibo id
-    - 微博id
+    - [CH]id
     semantic_type: label
   - text: '[App]'
     center:
@@ -11806,7 +11806,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 微信
+    - [CH]
     - weixin
     - wechat app
     semantic_type: setting
@@ -11819,7 +11819,7 @@ screens:
     aliases:
     - wechat bundle id
     - tencent xin
-    - 微信id
+    - [CH]id
     semantic_type: label
   - text: Cellular
     center:
@@ -11828,7 +11828,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
     - cellular settings
     semantic_type: menu_item
@@ -11839,7 +11839,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 默认语音线路
+    - Default[CH]
     - primary line
     - voice line
     semantic_type: setting
@@ -11852,7 +11852,7 @@ screens:
     aliases:
     - Hong Kong
     - HK
-    - 香港地区
+    - [CH]
     semantic_type: label
   - text: '[Phone]'
     center:
@@ -11863,7 +11863,7 @@ screens:
     aliases:
     - china number
     - mainland number
-    - 大陆号码
+    - [CH]
     semantic_type: label
   - text: '[Region]'
     center:
@@ -11874,7 +11874,7 @@ screens:
     aliases:
     - Mainland
     - China
-    - 中国大陆
+    - [CH]
     semantic_type: label
   - text: '[Phone]'
     center:
@@ -11885,7 +11885,7 @@ screens:
     aliases:
     - hong kong number
     - HK number
-    - 香港号码
+    - [CH]
     semantic_type: label
   - text: '[Region]'
     center:
@@ -11894,7 +11894,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 香港蜂窝数据
+    - [CH]Cellular[CH]
     - HK cellular data
     - data for hong kong
     semantic_type: setting
@@ -11905,7 +11905,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 当前周期
+    - [CH]
     - this period
     - current billing
     semantic_type: label
@@ -11916,7 +11916,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 当前周期漫游
+    - [CH]
     - roaming this period
     - current roaming
     semantic_type: label
@@ -11927,7 +11927,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 显示全部
+    - [CH]All
     - view all
     - expand
     semantic_type: button
@@ -11938,7 +11938,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 无线局域网助理
+    - None[CH]
     - wifi assist
     - wifi helper
     semantic_type: toggle
@@ -11949,7 +11949,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - icloud云盘
+    - icloudCloud盘
     - icloud drive
     - cloud drive
     semantic_type: toggle
@@ -11960,7 +11960,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - icloud备份
+    - icloudBackup
     - icloud backup
     - cloud backup
     semantic_type: toggle
@@ -11972,7 +11972,7 @@ screens:
     fixed: true
     aliases:
     - wifi assist description
-    - 自动使用蜂窝数据
+    - Auto[CH]Cellular[CH]
     - poor wifi fallback
     semantic_type: label
   - text: When not connected to Wi-Fi, use cellular network to transfer documents
@@ -11984,7 +11984,7 @@ screens:
     fixed: true
     aliases:
     - icloud drive description
-    - 蜂窝传输文档
+    - CellularTransferDocumentation
     - cellular data transfer
     semantic_type: label
   - text: When not connected to Wi-Fi, use your cellular network to automatically
@@ -11996,7 +11996,7 @@ screens:
     fixed: true
     aliases:
     - icloud backup description
-    - 蜂窝备份提醒
+    - CellularBackupReminder
     - cellular backup warning
     semantic_type: label
   - text: Call Time
@@ -12006,7 +12006,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 通话时间
+    - [CH]
     - call duration
     - talk time
     semantic_type: label
@@ -12017,7 +12017,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 5分钟
+    - 5[CH]
     - 5 min
     - five minutes
     semantic_type: label
@@ -12028,7 +12028,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 总计
+    - [CH]
     - total
     - all time
     semantic_type: label
@@ -12039,7 +12039,7 @@ screens:
     found_at_scroll: 2
     fixed: true
     aliases:
-    - 启用蜂窝统计
+    - EnableCellular[CH]
     - cellular stats toggle
     - usage tracking
     semantic_type: toggle
@@ -12050,7 +12050,7 @@ screens:
     found_at_scroll: 2
     fixed: true
     aliases:
-    - 重置统计数据
+    - Reset[CH]
     - reset stats
     - clear usage
     semantic_type: button
@@ -12061,7 +12061,7 @@ screens:
     found_at_scroll: 2
     fixed: true
     aliases:
-    - 蜂窝使用统计
+    - Cellular[CH]
     - usage stats
     - data usage statistics
     semantic_type: label
@@ -12248,7 +12248,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -12259,7 +12259,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 小红书
+    - [CH]
     - RED
     - xiaohongshu
     semantic_type: setting
@@ -12271,7 +12271,7 @@ screens:
     fixed: false
     aliases:
     - rednote bundle id
-    - 小红书包名
+    - [CH]
     semantic_type: label
   - text: '[App]'
     center:
@@ -12281,7 +12281,7 @@ screens:
     fixed: false
     aliases:
     - B站
-    - 哔哩哔哩
+    - [CH]
     - bilibili app
     semantic_type: setting
   - text: '[App]'
@@ -12292,7 +12292,7 @@ screens:
     fixed: false
     aliases:
     - bilibili bundle id
-    - 哔哩哔哩包名
+    - [CH]
     semantic_type: label
   - text: '[App]'
     center:
@@ -12301,7 +12301,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 微博
+    - [CH]
     - sina weibo
     - weibo app
     semantic_type: setting
@@ -12313,7 +12313,7 @@ screens:
     fixed: false
     aliases:
     - weibo bundle id
-    - 微博包名
+    - [CH]
     semantic_type: label
   - text: '[App]'
     center:
@@ -12322,7 +12322,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 微信
+    - [CH]
     - weixin
     - wechat app
     semantic_type: setting
@@ -12334,7 +12334,7 @@ screens:
     fixed: false
     aliases:
     - wechat bundle id
-    - 微信包名
+    - [CH]
     semantic_type: label
   - text: Wi-Fi Assist
     center:
@@ -12343,7 +12343,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 无线局域网助理
+    - None[CH]
     - wifi assist
     - cellular assist
     semantic_type: toggle
@@ -12354,7 +12354,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud云盘
+    - iCloudCloud盘
     - icloud drive settings
     - cloud drive
     semantic_type: toggle
@@ -12365,7 +12365,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud备份
+    - iCloudBackup
     - icloud backup settings
     - cloud backup
     semantic_type: toggle
@@ -12376,7 +12376,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
     - cellular data
     semantic_type: menu_item
@@ -12387,7 +12387,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 蜂窝数据 香港
+    - Cellular[CH] [CH]
     - mobile data hong kong
     - cellular hk
     semantic_type: menu_item
@@ -12398,7 +12398,7 @@ screens:
     found_at_scroll: 0
     fixed: false
     aliases:
-    - 显示全部
+    - [CH]All
     - view all
     - expand
     semantic_type: button
@@ -12410,7 +12410,7 @@ screens:
     fixed: true
     aliases:
     - Wi-Fi Assist description
-    - 自动使用蜂窝数据
+    - Auto[CH]Cellular[CH]
     semantic_type: label
   - text: When not connected to Wi-Fi, use cellular network to transfer documents
       and data.
@@ -12421,7 +12421,7 @@ screens:
     fixed: true
     aliases:
     - iCloud Drive cellular description
-    - 未连接Wi-Fi时使用蜂窝网络
+    - 未ConnectionWi-Fi[CH]CellularNetwork
     semantic_type: label
   - text: When not connected to Wi-Fi, use your cellular network to automatically
       back up to iCloud. This may cause you to exceed your cellular data plan.
@@ -12432,7 +12432,7 @@ screens:
     fixed: true
     aliases:
     - iCloud Backup cellular description
-    - 未连接Wi-Fi时自动备份
+    - 未ConnectionWi-Fi时AutoBackup
     semantic_type: label
   - text: Call Time
     center:
@@ -12441,7 +12441,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通话时间
+    - [CH]
     - call duration
     - voice call time
     semantic_type: label
@@ -12452,7 +12452,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 当前周期
+    - [CH]
     - this period
     - current cycle
     semantic_type: label
@@ -12463,7 +12463,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 5分钟
+    - 5[CH]
     - five minutes
     - call time value
     semantic_type: label
@@ -12474,7 +12474,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 总计
+    - [CH]
     - total time
     - all time
     semantic_type: label
@@ -12485,7 +12485,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 启用蜂窝数据统计
+    - EnableCellular[CH]
     - cellular stats toggle
     - mobile data statistics
     semantic_type: toggle
@@ -12496,7 +12496,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 重置统计数据
+    - Reset[CH]
     - clear statistics
     - reset stats
     semantic_type: button
@@ -12507,7 +12507,7 @@ screens:
     found_at_scroll: 1
     fixed: true
     aliases:
-    - 蜂窝数据用量统计
+    - Cellular[CH]
     - mobile usage stats
     - data usage statistics
     semantic_type: label
@@ -12718,7 +12718,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 设置
+    - Settings
     - preferences
     - system settings
     semantic_type: label
@@ -12730,7 +12730,7 @@ screens:
     fixed: true
     aliases:
     - WiFi Assist
-    - 无线局域网助理
+    - None[CH]
     - WLAN assist
     semantic_type: toggle
   - text: iCloud Drive
@@ -12740,7 +12740,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud 云盘
+    - iCloud Cloud盘
     - cloud drive
     semantic_type: toggle
   - text: iCloud Backup
@@ -12750,7 +12750,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - iCloud 备份
+    - iCloud Backup
     - cloud backup
     semantic_type: toggle
   - text: Enable Cellular Usage Statistics
@@ -12760,7 +12760,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 启用蜂窝数据统计
+    - EnableCellular[CH]
     - cellular stats toggle
     semantic_type: toggle
   - text: Reset Statistics
@@ -12770,7 +12770,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 重置统计数据
+    - Reset[CH]
     - clear stats
     semantic_type: button
   - text: Cellular
@@ -12780,7 +12780,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝网络
+    - CellularNetwork
     - mobile data
     - cellular data
     semantic_type: menu_item
@@ -12823,7 +12823,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 通话时间
+    - [CH]
     - call duration
     semantic_type: label
   - text: Current Period
@@ -12833,7 +12833,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 当前周期
+    - [CH]
     - this period
     semantic_type: label
   - text: 5 minutes
@@ -12844,7 +12844,7 @@ screens:
     fixed: true
     aliases:
     - 5 min
-    - 5分
+    - 5minute
     semantic_type: label
   - text: Lifetime
     center:
@@ -12853,7 +12853,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 总计
+    - [CH]
     - total time
     - all time
     semantic_type: label
@@ -12864,7 +12864,7 @@ screens:
     found_at_scroll: 0
     fixed: true
     aliases:
-    - 蜂窝数据用量统计
+    - Cellular[CH]
     - mobile data usage
     semantic_type: label
   - text: 'Disabling cellular usage statistics will disable all cellular usage tracking,

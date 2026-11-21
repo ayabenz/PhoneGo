@@ -210,7 +210,7 @@ object Pairing {
         timeoutMs: Int = 20000,
         storeDir: String? = null,
     ): Result {
-        if (code.isBlank()) return Result(false, "配对码为空")
+        if (code.isBlank()) return Result(false, "Pairing[CH]")
         return try {
             // Reuse the stored identity when there is one: every pairing must
             // present the same key, otherwise the device ends up holding a key
@@ -293,7 +293,7 @@ object Pairing {
                 )
                 android.util.Log.i("Pairing", "identity stored in $storeDir")
             }
-            Result(true, "配对成功，type=$type 设备信息=${data.take(60)}")
+            Result(true, "PairingSuccess，type=$type DeviceInfo=${data.take(60)}")
         } catch (t: Throwable) {
             Result(false, "${t.javaClass.simpleName}: ${t.message}")
         }

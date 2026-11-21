@@ -211,9 +211,9 @@ _DYNAMIC_PATTERNS = [
     r'^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$',  # UUID
     r'^[\d,]+$',               # comma-separated counts: 1,159 / 5,408
     r'^\d+\s*/\s*\d+$',         # image carousel: 1/2, 3/4
-    r'^\d+[\.\d]*\s*(km|m|mi|mile|公里|米)$',  # distance: 1.8km, 500m
-    r'^\d+\s*(分钟|小时|天|周|月|年)前$',       # Chinese relative time
-    r'^\d+\s*(赞|评论|收藏|转发|粉丝|看过|浏览)$',  # Chinese stat labels
+    r'^\d+[\.\d]*\s*(km|m|mi|mile|[CH]|米)$',  # distance: 1.8km, 500m
+    r'^\d+\s*([CH]|[CH]|天|周|月|年)front$',       # Chinese relative time
+    r'^\d+\s*(赞|[CH]|[CH]|[CH]|[CH]|[CH]|[CH])$',  # Chinese stat labels
 ]
 
 SKIP_TEXTS = {
@@ -268,8 +268,8 @@ def _build_signature(elements: list[dict], max_items: int = 10,
 # Patterns to detect personal screens
 _EMAIL_RE = re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')
 _PHONE_RE = re.compile(r'\+?\d[\d\s\xa0\-]{7,}')
-_PAYMENT_KEYS = ('支付宝', 'alipay', 'paypal', '微信支付', 'apple pay', 'unionpay', '云闪付')
-_DEVICE_RE = re.compile(r'.{1,5}的\s*(Apple\s*Watch|iPhone|iPad|Mac|AirPods|HomePod)')
+_PAYMENT_KEYS = ('Payment宝', 'alipay', 'paypal', '[CH]Payment', 'apple pay', 'unionpay', 'Cloud[CH]')
+_DEVICE_RE = re.compile(r'.{1,5}\s*(Apple\s*Watch|iPhone|iPad|Mac|AirPods|HomePod)')
 
 
 def _detect_pii(screens: list[dict]) -> set:
@@ -321,16 +321,16 @@ def _redact_screens(screens: list[dict]) -> list[dict]:
             elif 2 <= len(t) <= 5 and '一' <= t[0] <= '鿿' and all('一' <= c <= '鿿' for c in t):
                 # Chinese name candidate — collect for global replacement
                 # Skip known system labels
-                skip = ("设置", "显示", "通知", "通用", "邮件", "相机", "日历",
-                        "照片", "时钟", "天气", "地图", "音乐", "钱包", "健康",
-                        "文件", "备忘", "通讯", "信息", "电话", "隐私", "安全",
-                        "密码", "蓝牙", "无线", "蜂窝", "隔空", "隔空投送",
-                        "家人", "家人共享", "屏幕", "控制", "个人", "专注",
-                        "声音", "触感", "亮度", "亮度与", "主屏幕",
-                        "搜索", "待机", "墙纸", "面容", "面容ID", "紧急",
-                        "软件", "关于", "键盘", "字体", "词典", "自动",
-                        "日期", "时间", "语言", "地区", "还原", "传输",
-                        "苹果", "苹果智能")
+                skip = ("Settings", "[CH]", "Notification", "General", "[CH]", "Camera", "[CH]",
+                        "[CH]", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]", "[CH]",
+                        "File", "[CH]", "[CH]", "Info", "[CH]", "Privacy", "Security",
+                        "Password", "Bluetooth", "None线", "Cellular", "[CH]", "[CH]",
+                        "[CH]", "[CH]Share", "Screen", "[CH]", "Personal", "[CH]",
+                        "[CH]", "[CH]", "Brightness", "Brightnessand", "主Screen",
+                        "Search", "Standby", "[CH]", "[CH]", "[CH]ID", "Urgent",
+                        "Software", "About", "[CH]", "[CH]", "[CH]", "Auto",
+                        "[CH]", "[CH]", "Language", "[CH]", "[CH]", "Transfer",
+                        "[CH]", "[CH]")
                 if t not in skip:
                     names.add(t)
 
@@ -338,7 +338,7 @@ def _redact_screens(screens: list[dict]) -> list[dict]:
     def _is_name_match(text: str) -> bool:
         if text in names:
             return True
-        # e.g. "蒋杨钦 (You)" matches base name "蒋杨钦"
+        # e.g. "[CH] (You)" matches base name "[CH]"
         for name in names:
             if text.startswith(name):
                 return True

@@ -84,7 +84,7 @@ def selected_texts_from_android_xml(xml_str: str) -> set[str]:
     """Labels of the nodes the app marks as selected -- a highlighted tab.
 
     A tab bar looks the same on every tab; which entry is selected is the only
-    thing that tells 推荐 from 消息, and it is not in ``text``/``content-desc``.
+    thing that tells [CH] from Message, and it is not in ``text``/``content-desc``.
     """
     texts: set[str] = set()
     for tag in re.finditer(r"<node\b([^>]*)>", xml_str):
@@ -119,7 +119,7 @@ class ScreenElement:
     leads_to: Optional[str] = None
     found_at_scroll: int = 0
     fixed: bool = False
-    aliases: list[str] = field(default_factory=list)  # ["WiFi", "wireless", "无线"]
+    aliases: list[str] = field(default_factory=list)  # ["WiFi", "wireless", "None线"]
     semantic_type: str = ""  # toggle/button/network/input/tab/label/link
     redacted: bool = False  # text was replaced by a placeholder at export time
     #: Content, not chrome: it changes between launches, so it identifies a
@@ -332,8 +332,8 @@ class AppMap:
             if not screen_texts:
                 continue
             matched = texts & screen_texts
-            # Weight by rarity across the map's screens. A tab label ("闹钟",
-            # "计时") lives on every screen of the app, so matching it says
+            # Weight by rarity across the map's screens. A tab label ("[CH]",
+            # "[CH]") lives on every screen of the app, so matching it says
             # nothing; a label unique to one screen is the evidence. Without
             # this the scores of near-identical screens differ by a rounding
             # error and identification flips between runs -- which is what made
@@ -441,15 +441,15 @@ class AppMap:
             stripped = text.strip()
             # A single character is noise in Latin script ("x", "-") but a whole
             # word in Chinese: 我, 赞, 转 are the profile tab and the two buttons
-            # a feed is full of. Dropping them left 小红书's map with no 我
-            # operation at all, so "看我的页面" could never be routed.
+            # a feed is full of. Dropping them left [CH]'s map with no 我
+            # operation at all, so "lookMyPage" could never be routed.
             if len(stripped) <= 1 and stripped.isascii():
                 return True
             return any(s in lowered for s in skips)
 
         def _op_id(texts: list[str]) -> str:
             # Consecutive repeats are the same word twice, not a path: a screen
-            # whose tab is also the way in produced 世界时钟_世界时钟, which reads
+            # whose tab is also the way in produced [CH]_[CH], which reads
             # like a mistake in the app.
             collapsed: list = []
             for text in texts:

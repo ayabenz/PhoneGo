@@ -16,7 +16,7 @@ screens:
     leads_to: screen_0
     aliases:
     - Report advertisement
-    - 举报广告
+    - [CH]
     - Report this ad
     semantic_type: link
   - text: Tasks
@@ -28,7 +28,7 @@ screens:
     leads_to: screen_1
     aliases:
     - To-dos
-    - 任务
+    - [CH]
     - To Do
     semantic_type: tab
   - text: Calendar
@@ -39,7 +39,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 日历
+    - [CH]
     - Schedule
     - Agenda
     semantic_type: tab
@@ -51,7 +51,7 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 日程
+    - [CH]
     - Appointments
     - Meetings
     semantic_type: tab
@@ -68,8 +68,8 @@ screens:
     leads_to: screen_1
     aliases:
     - To-Do
-    - 待办
-    - 任务
+    - [CH]
+    - [CH]
     - Reminders
     semantic_type: tab
   - text: New task
@@ -82,8 +82,8 @@ screens:
     aliases:
     - Add task
     - Create task
-    - 新建任务
-    - 添加任务
+    - [CH]
+    - [CH]
     semantic_type: button
   - text: Calendar
     center:
@@ -93,8 +93,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 日历
-    - 日程
+    - [CH]
+    - [CH]
     - Cal
     semantic_type: label
   - text: Events
@@ -105,10 +105,10 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 日程
-    - 活动
+    - [CH]
+    - [CH]
     - Appointments
-    - 日程安排
+    - [CH]
     semantic_type: tab
   description: Main dashboard screen with navigation tabs for Tasks and Calendar,
     featuring options to add a new task and view upcoming events.
@@ -124,8 +124,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_2
     aliases:
-    - 日程
-    - 活动
+    - [CH]
+    - [CH]
     - events list
     - event list
     semantic_type: tab
@@ -137,8 +137,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_4
     aliases:
-    - 新建日程
-    - 添加事件
+    - [CH]
+    - [CH]
     - create event
     - add event
     semantic_type: button
@@ -150,8 +150,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_1
     aliases:
-    - 任务
-    - 待办
+    - [CH]
+    - [CH]
     - to-do
     - task list
     semantic_type: tab
@@ -163,8 +163,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_0
     aliases:
-    - 日历
-    - 月历
+    - [CH]
+    - [CH]
     - calendar view
     semantic_type: tab
   description: Navigation menu with options for Events, Tasks, and Calendar, and a
@@ -181,8 +181,8 @@ screens:
     found_at_scroll: 0
     leads_to: screen_5
     aliases:
-    - 设置通知
-    - 设置提醒
+    - SettingsNotification
+    - SettingsReminder
     - Add alert
     - Alert
     semantic_type: button
@@ -202,7 +202,7 @@ screens:
     aliases:
     - Event title
     - Title
-    - 事件
+    - [CH]
     - Add event
     semantic_type: input
   - text: Today
@@ -214,8 +214,8 @@ screens:
     leads_to: screen_6
     aliases:
     - Current day
-    - 今日
-    - 今天
+    - [CH]
+    - [CH]
     - Jump to today
     semantic_type: tab
   - text: At time of event
@@ -227,8 +227,8 @@ screens:
     leads_to: screen_7
     aliases:
     - At event time
-    - 事件发生时
-    - 准时提醒
+    - [CH]
+    - [CH]Reminder
     - Default alert
     semantic_type: menu_item
   - text: Set recurrence
@@ -241,8 +241,8 @@ screens:
     aliases:
     - Repeat
     - Recurrence
-    - 重复
-    - 设置重复
+    - [CH]
+    - Settings[CH]
     semantic_type: menu_item
   - text: Note…
     center:
@@ -254,8 +254,8 @@ screens:
     aliases:
     - Notes
     - Description
-    - 备注
-    - 添加备注
+    - [CH]
+    - [CH]
     semantic_type: input
   description: Event creation screen where users can define the event title, date,
     reminder, recurrence, and notes.
@@ -272,7 +272,7 @@ screens:
     aliases:
     - Notifications
     - Alerts
-    - 通知
+    - Notification
     - Reminders
     semantic_type: setting
   - text: Pick a date &amp; time
@@ -284,7 +284,7 @@ screens:
     aliases:
     - Select date and time
     - Choose date & time
-    - 选择日期和时间
+    - Select[CH]
     - Date & Time Picker
     semantic_type: input
   description: Date and time selection screen prompting the user to pick a specific
@@ -374,8 +374,8 @@ screens:
     aliases:
     - Alerts
     - Reminders
-    - 通知
-    - 提醒
+    - Notification
+    - Reminder
     semantic_type: setting
   - text: At time of event
     center:
@@ -386,8 +386,8 @@ screens:
     aliases:
     - 0 minutes before
     - Event time
-    - 事件发生时
-    - 准时
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: 10 minutes before
     center:
@@ -398,7 +398,7 @@ screens:
     aliases:
     - 10 mins before
     - 10m before
-    - 提前10分钟
+    - [CH]10[CH]
     semantic_type: menu_item
   - text: 30 minutes before
     center:
@@ -409,7 +409,7 @@ screens:
     aliases:
     - 30 mins before
     - 30m before
-    - 提前30分钟
+    - [CH]30[CH]
     semantic_type: menu_item
   - text: 1 hour before
     center:
@@ -420,7 +420,7 @@ screens:
     aliases:
     - 60 minutes before
     - 1 hr before
-    - 提前1小时
+    - [CH]1[CH]
     semantic_type: menu_item
   - text: 1 day before
     center:
@@ -431,7 +431,7 @@ screens:
     aliases:
     - 24 hours before
     - 1 day prior
-    - 提前1天
+    - [CH]1天
     semantic_type: menu_item
   description: Event notification settings screen allowing users to select reminder
     times before a calendar event.
@@ -448,8 +448,8 @@ screens:
     aliases:
     - Repeat
     - Repeats
-    - 重复
-    - 循环
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Daily
     center:
@@ -459,8 +459,8 @@ screens:
     found_at_scroll: 0
     aliases:
     - Every day
-    - 每天
-    - 每日
+    - [CH]
+    - [CH]
     semantic_type: menu_item
   - text: Weekly
     center:
@@ -470,7 +470,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Every week
-    - 每周
+    - [CH]
     semantic_type: menu_item
   - text: Monthly
     center:
@@ -480,7 +480,7 @@ screens:
     found_at_scroll: 0
     aliases:
     - Every month
-    - 每月
+    - [CH]
     semantic_type: menu_item
   - text: Yearly
     center:
@@ -491,7 +491,7 @@ screens:
     aliases:
     - Every year
     - Annually
-    - 每年
+    - [CH]
     semantic_type: menu_item
   description: Event recurrence selection screen with options to set an event to repeat
     daily, weekly, monthly, or yearly.
