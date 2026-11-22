@@ -283,7 +283,7 @@ public class MainActivity extends Activity {
                 com.phoneagent.app.pairing.Pairing.Result r =
                         com.phoneagent.app.pairing.Pairing.INSTANCE.pair(pairHost, pairPort, pairCode, null, "phoneagent", 20000, null);
                 android.util.Log.i("Pairing", "result ok=" + r.getOk() + " detail=" + r.getDetail());
-                ui(() -> append("PhoneGo", (r.getOk() ? "✅ " : "❌ ") + r.getDetail()));
+                ui(() -> append("PhoneGo", (r.getOk() ? "✅ " : "❌ ") + Tr.t(r.getDetail())));
             }).start();
         }
 
@@ -1825,8 +1825,8 @@ public class MainActivity extends Activity {
                 } catch (Throwable t) {
                     if (t instanceof java.net.ConnectException) {
                         ui(() -> restartAgentService("test connection: " + t));
-                        result = "❌ " + Tr.t("本地 agent 没有响应，已触发重启；"
-                                + "十几秒后再点一次「测试连接」。");
+                        result = "❌ " + Tr.t("本地 agent 没有响应，已触发重启；")
+                                + Tr.t("十几秒后再点一次「测试连接」。");
                     } else {
                         result = "❌ " + t;
                     }
@@ -2248,7 +2248,11 @@ public class MainActivity extends Activity {
      * read in English and the phone it runs on may not be.
      */
     private void chooseLanguage() {
-        String[] labels = {"跟随系统 / Follow system", "中文", "English"};
+        String[] labels = {
+                Tr.t("跟随系统 / Follow system"),
+                Tr.t("中文"),
+                Tr.t("English")
+        };
         String[] modes = {"system", "zh", "en"};
         String current = getSharedPreferences("agent", MODE_PRIVATE).getString("lang", "system");
         int checked = 0;
@@ -2258,7 +2262,7 @@ public class MainActivity extends Activity {
             }
         }
         new AlertDialog.Builder(this)
-                .setTitle("语言 / Language")
+                .setTitle(Tr.t("语言 / Language"))
                 .setSingleChoiceItems(labels, checked, (d, which) -> {
                     getSharedPreferences("agent", MODE_PRIVATE).edit()
                             .putString("lang", modes[which]).apply();
