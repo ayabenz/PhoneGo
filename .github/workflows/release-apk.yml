@@ -4,7 +4,7 @@ name: Android APK Build
 on:
   push:
     branches:
-      - fix
+      - fixing
   workflow_dispatch:
 
 permissions:
